@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro Estetico Bussola — Centro estetico a Lugagnano di Sona</title>
+<meta name="description" content="Centro Estetico Bussola, centro estetico a Lugagnano di Sona (Via Robert Kennedy 6/A, 37060 Lugagnano (VR)). Valutazione 4,8★ su 106 recensioni Google. Prenota il tuo trattamento di bellezza e benessere.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f7f1ec; --cream2:#f2e9e1; --blush:#f4e7e2; --blush2:#efdcd6; --tan:#a5825a;
+  --tan-d:#876a41; --brown:#2b2320; --sub:#7c7067; --line:#e6dcd2; --white:#fff;
+  --serif:'Playfair Display',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+  --sh:0 24px 60px rgba(43,35,32,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--brown);background:var(--cream);line-height:1.75;font-weight:300;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+.serif{font-family:var(--serif)}
+.label{font-family:var(--sans);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.72rem;color:var(--tan)}
+
+/* Nav pill */
+header{position:fixed;top:18px;left:0;right:0;z-index:60}
+.navpill{max-width:1180px;margin:0 auto;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);border-radius:60px;display:flex;align-items:center;justify-content:space-between;padding:12px 14px 12px 30px;box-shadow:0 10px 34px rgba(43,35,32,.08);border:1px solid rgba(255,255,255,.6)}
+.navpill nav{display:flex;gap:26px}
+.navpill nav a{font-size:.9rem;color:var(--brown);transition:.2s}
+.navpill nav a:hover{color:var(--tan)}
+.brand{position:absolute;left:50%;transform:translateX(-50%);display:flex;align-items:center;gap:8px;font-family:var(--serif);font-size:1.5rem;color:var(--brown)}
+.brand .fl{color:var(--tan);font-size:1.1rem}
+.nav-right{display:flex;align-items:center;gap:18px}
+.nav-tel{font-size:.88rem;color:var(--brown);display:flex;align-items:center;gap:6px}
+.pill-cta{background:var(--tan);color:#fff;padding:12px 24px;border-radius:50px;font-size:.85rem;display:inline-flex;align-items:center;gap:8px;transition:.25s}
+.pill-cta:hover{background:var(--tan-d)}
+.menu-toggle{display:none;background:none;border:0;font-size:1.4rem;color:var(--brown);cursor:pointer}
+
+/* Hero */
+.hero{position:relative;height:100vh;min-height:620px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydh76GbzKDZuE5l3470TuG35i0LkMxNNL6EULbNDMyLWYclB-9m7xsM8O5IQp4Lg9gUeDdcpurch7-0N9hMOhUwBvqKchuh-XhmnXpuzyQjKmCvLhH_y3SHT0XO-D8jiIbIrjIPcWR5nT-21FVDsSEundjWlzl-crgGT1iGRvk6F1F9fsgayT-Wl7srZLVEtky_svlJqbmoGlIkDYAfTLGGo6yeieyiTqnEzf0JTAb6w82RfCZ4llNmPpzThdT-eRfKspIWhaGZVrmnx0BEKtbRwwuMOnE82XMUVaqijd70OzasW3AFi0iRrc3N-qfIzioOQIsbWjHPIgNA4-L6pGwbnqc0Cb64fbTHqVnotPKMPhWszwT-eFBNOoLxGtgTRfFMrwZQvet1ysTptr_qiU6btJssu7qT3gkOtkK291PJMMu9a&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(43,35,32,.42),rgba(43,35,32,.34))}
+.hero-inner{position:relative;z-index:2;padding:0 20px}
+.hero .label{color:rgba(255,255,255,.9);margin-bottom:20px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(2.8rem,7vw,5.4rem);line-height:1.05;margin-bottom:20px}
+.hero h1 em{font-style:italic}
+.hero p{font-size:1.12rem;max-width:520px;margin:0 auto 30px;color:rgba(255,255,255,.92);font-weight:300}
+.hero .pill-cta{background:#fff;color:var(--brown)}
+.hero .pill-cta:hover{background:#f3e9e2}
+.dots{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:2;display:flex;gap:8px}
+.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.5)}
+.dots i.on{background:#fff;width:22px;border-radius:6px}
+
+/* Badge section */
+.badge-sec{background:var(--blush);text-align:center;padding:90px 0}
+.badge{width:170px;height:170px;margin:0 auto 34px;position:relative;display:flex;align-items:center;justify-content:center}
+.badge svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 22s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.badge .c{font-family:var(--serif);font-size:2.6rem;color:var(--brown);position:relative;z-index:2}
+.badge .c small{display:block;font-family:var(--sans);font-size:.7rem;letter-spacing:.2em;color:var(--tan);margin-top:-4px}
+.badge-sec h2{font-family:var(--serif);font-weight:500;font-size:clamp(1.8rem,3.6vw,2.7rem);max-width:760px;margin:0 auto;line-height:1.25;color:var(--brown)}
+
+/* Statement band */
+.band{position:relative;height:82vh;min-height:520px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.band-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgEP98n4Hbf95vXwiJJHmbta7suflRWJoIlnowvcn_5lXOx212tsl_qcr4GF-fc6tjTKe75nEJ7ueGFRGJ5SgK86ldh5IKK7wikMAVeTCnndlp8VulfDQgOnK17fuwMPR0NIx4w7M9tUnxxfBsffnPSrKPUEyGIhVVGiW7zkYYA0NT0UZblwl4cgK3ulTLzLvUP-WbclPANb_FlMHnoCjmfn2nvDwQjkFuhWbrleCErTNYT3UZQowUV_uXrRUIIBKQL3m4IdYJoKUYB52Ipnbv5ccQFbCFtT1pNRdAmNJmv2AO6rMbcDbEW-JX4e2sgrwVJhUm0wzJA1FMekN3VBYHjyT4S_vZJFWkv2j6lyFV4tYU_YDlOYTcOkmSmkQBHoflWYaqp2KxyLEgd3xdlkGTIJ4z1hYi1jZVUEfk8bvI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
+.band-bg::after{content:"";position:absolute;inset:0;background:rgba(43,35,32,.45)}
+.band p{position:relative;z-index:2;font-family:var(--serif);font-weight:400;font-style:italic;font-size:clamp(1.5rem,3vw,2.3rem);max-width:820px;padding:0 24px;line-height:1.4}
+
+/* About */
+.about{background:var(--cream);padding:110px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-img img{width:100%;height:560px;object-fit:cover;border-radius:26px}
+.about-txt .label{margin-bottom:16px;display:block}
+.about-txt h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,4vw,3rem);line-height:1.15;margin-bottom:20px}
+.about-txt p{color:var(--sub);margin-bottom:16px}
+.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.4rem;color:var(--tan);margin-top:6px}
+
+/* Services */
+.services{background:var(--cream2);padding:110px 0}
+.sec-h{text-align:center;max-width:600px;margin:0 auto 56px}
+.sec-h h2{font-family:var(--serif);font-weight:500;font-size:clamp(2rem,4vw,2.9rem);margin:12px 0;color:var(--brown)}
+.sec-h p{color:var(--sub)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:var(--white);border-radius:24px;padding:38px 32px;transition:.3s;border:1px solid var(--line)}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--sh)}
+.svc .n{font-family:var(--serif);font-style:italic;font-size:1.3rem;color:var(--tan);margin-bottom:14px}
+.svc h3{font-family:var(--serif);font-weight:500;font-size:1.4rem;margin-bottom:8px;color:var(--brown)}
+.svc p{color:var(--sub);font-size:.95rem}
+.svc-note{text-align:center;margin-top:30px;color:var(--sub);font-style:italic;font-family:var(--serif);font-size:1.2rem}
+
+/* Testimonial */
+.testi{background:var(--cream);padding:110px 0}
+.testi-card{background:var(--blush);border-radius:34px;padding:64px;max-width:1000px;margin:0 auto;position:relative}
+.testi-card .q{font-family:var(--serif);font-size:5rem;color:var(--tan);line-height:.6;margin-bottom:10px}
+.testi-card blockquote{font-family:var(--serif);font-weight:400;font-size:clamp(1.4rem,2.6vw,2rem);line-height:1.4;color:var(--brown);margin-bottom:26px}
+.testi-card .who{display:flex;align-items:center;gap:14px}
+.testi-card .who img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.testi-card .who b{font-family:var(--sans);font-weight:500;color:var(--brown)}
+.testi-card .who span{display:block;font-size:.82rem;color:var(--tan)}
+.mini-rev{display:grid;grid-template-columns:1fr 1fr;gap:22px;max-width:1000px;margin:24px auto 0}
+.mini{background:var(--white);border:1px solid var(--line);border-radius:22px;padding:26px}
+.mini .stars{color:var(--tan);letter-spacing:2px;margin-bottom:8px;font-size:.9rem}
+.mini p{color:var(--sub);font-size:.94rem;margin-bottom:10px}
+.mini b{font-family:var(--sans);font-weight:500;font-size:.88rem}
+
+/* Contact */
+.contact{background:var(--cream2);padding:110px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:stretch}
+.cinfo{background:var(--white);border:1px solid var(--line);border-radius:26px;padding:40px}
+.cinfo h3{font-family:var(--serif);font-weight:500;font-size:1.7rem;color:var(--brown);margin-bottom:6px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.06em;padding:6px 14px;border-radius:40px;margin:12px 0 20px}
+.open-badge.open{background:#e7f0e3;color:#5c7a4e}
+.open-badge.closed{background:#f4e2dc;color:#a5674b}
+.open-badge .dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:11px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--sub)}
+.hours-list li:last-child{border-bottom:0}
+.hours-list li.today{color:var(--brown);font-weight:500}
+.hours-list li.today .d{color:var(--tan)}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line)}
+.crow .ic{width:40px;height:40px;flex:0 0 40px;background:var(--blush);color:var(--tan);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.crow h4{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--tan);font-weight:500;margin-bottom:2px}
+.crow a,.crow p{color:var(--brown);font-size:1rem}
+.cinfo .pill-cta{margin-top:22px}
+.map-wrap{border-radius:26px;overflow:hidden;min-height:460px;box-shadow:var(--sh)}
+.map-wrap iframe{width:100%;height:100%;min-height:460px;border:0}
+
+footer{background:var(--brown);color:rgba(255,255,255,.75);padding:56px 0 26px;text-align:center}
+footer .brand{position:static;transform:none;justify-content:center;color:#fff;margin-bottom:10px}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;color:#fff;transition:.25s}
+.socials a:hover{background:var(--tan);border-color:var(--tan)}
+.foot-line{border-top:1px solid rgba(255,255,255,.12);margin-top:22px;padding-top:18px;font-size:.82rem;opacity:.6}
+.foot-note{font-size:.72rem;opacity:.45;margin-top:6px}
+
+.mobile-bar{display:none}
+@media(max-width:960px){
+  .about-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .svc-grid{grid-template-columns:1fr 1fr}
+  .mini-rev{grid-template-columns:1fr}
+  .navpill nav,.nav-tel{display:none}
+  .menu-toggle{display:block}
+  .brand{position:static;transform:none}
+  .navpill{justify-content:space-between}
+}
+@media(max-width:560px){
+  .svc-grid{grid-template-columns:1fr}
+  .testi-card{padding:38px 26px}
+  .hero h1{font-size:2.8rem}
+  .about-img img{height:400px}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:16px;font-size:.9rem;color:#fff;background:var(--tan);letter-spacing:.04em}
+  body{padding-bottom:54px}
+  .dots{display:none}
+}
+
+.hero-bg{background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwyditwwnkJXBFG239C6qHLHp6eArwqpA9WYZhUe_XkyvPu7kAa9u2YYQLBgPLFGFbKCkI0s4i9QVgzTmnPx0IXQxz3GJ10lg_JKjMxk3xVqvBjcz6sOoyJKPscgvvHpOM6VuhbAFyUMqs7NNmWNVg_wcf_XvD40ts-fptV0yUYmwXBE69ncLzPKWaTu5KA4GatVvGN6JDCl9qVKrv9OP5bdU6kS8lXrRj8pRuuBHetD-0xRnqKOTcB1O6N186nENiDoSgkiuKyb7ziN0kWz3BOKVTFAqFyl2rKeT6WR1ixtRVeHtc5YpP8ZfMoV2XKecu9bcldN0UtCG3iWN3A7e_dI1ZBFB6i3mgpC_wXyazEY1KAWh4NEVyK4yCjkUGwb41K74eXceJFBL4WnmWT0l4nPnpPJ1m2vvaEg966DbtK5k&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
+.band-bg{background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwyditwwnkJXBFG239C6qHLHp6eArwqpA9WYZhUe_XkyvPu7kAa9u2YYQLBgPLFGFbKCkI0s4i9QVgzTmnPx0IXQxz3GJ10lg_JKjMxk3xVqvBjcz6sOoyJKPscgvvHpOM6VuhbAFyUMqs7NNmWNVg_wcf_XvD40ts-fptV0yUYmwXBE69ncLzPKWaTu5KA4GatVvGN6JDCl9qVKrv9OP5bdU6kS8lXrRj8pRuuBHetD-0xRnqKOTcB1O6N186nENiDoSgkiuKyb7ziN0kWz3BOKVTFAqFyl2rKeT6WR1ixtRVeHtc5YpP8ZfMoV2XKecu9bcldN0UtCG3iWN3A7e_dI1ZBFB6i3mgpC_wXyazEY1KAWh4NEVyK4yCjkUGwb41K74eXceJFBL4WnmWT0l4nPnpPJ1m2vvaEg966DbtK5k&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="navpill">
+    <nav>
+      <a href="#chi">Chi siamo</a>
+      <a href="#trattamenti">Trattamenti</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="#" class="brand"><span class="fl">✿</span>Centro Estetico Bussola</a>
+    <div class="nav-right">
+      <span class="nav-tel">📞 348 629 4239</span>
+      <a href="tel:+393486294239" class="pill-cta">Prenota ›</a>
+      <button class="menu-toggle" onclick="document.querySelector('.navpill nav').scrollIntoView()">☰</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <div class="label">Centro estetico · Lugagnano di Sona</div>
+    <h1>Benessere<br><em>e ritrovato equilibrio</em></h1>
+    <p>A Lugagnano, un centro dove estetica e benessere si incontrano: massaggi, trattamenti e mani esperte per rimetterti in forma.</p>
+    <a href="tel:+393486294239" class="pill-cta">Prenota il tuo trattamento ›</a>
+  </div>
+  <div class="dots"><i class="on"></i><i></i><i></i></div>
+</section>
+
+<section class="badge-sec">
+  <div class="wrap">
+    <div class="badge">
+      <svg viewBox="0 0 200 200"><defs><path id="cp" d="M100,100 m-74,0 a74,74 0 1,1 148,0 a74,74 0 1,1 -148,0"/></defs><text font-family="Jost" font-size="11" letter-spacing="2.5" fill="#a5825a"><textPath href="#cp" startOffset="0%">· RECENSIONI GOOGLE · CENTRO ESTETICO BUSSOLA </textPath></text></svg>
+      <div class="c">4,8<small>★ 106 REC.</small></div>
+    </div>
+    <h2>Professionalità, competenza e un ambiente familiare che ti fa sentire a tuo agio: a Lugagnano da oltre cento clienti soddisfatti.</h2>
+  </div>
+</section>
+
+<section class="band">
+  <div class="band-bg"></div>
+  <p>“Ti ascoltiamo, capiamo il tuo problema e sappiamo come trattarlo. Fissare una seduta è una coccola irrinunciabile.”</p>
+</section>
+
+<section class="about" id="chi">
+  <div class="wrap about-grid">
+    <div class="about-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydh9mQ8vyoyR86DwTNFOxbGArY7TBb1dZ5Qw2cWi7cxJTiw4_LPgzn1DaSvuHu9hciTcNvKuLFHHYT7X991hOaZT17ZXmySvts1nkOFduObo7SpxlETlds8ph8tuQsNos8hB3SszH3dTB2BNvGnPWgbb1ZorF-6b5AGTL6USqNc_2qRmmUh2IAyLnHb8HDP-qWhH6vKvWUie3UYMudlZVqoVX0Xm88iF1yO7nxd_vrIRVZgdsY0P4WtsHAw-ZGBEZxHcIiv7kbTc2pcBlmGSX7diP2ZxVQm2twgQ2609uWOsFATzgMBYYAPCf3qEnepeCp2lsgBRtLMDjaddHJEfRjiJ96TIEUyMa8x29Vzw8P3slE4PNG26UnUpoBT9gVOHvPVKnoix5MksAj9OAOTeLO3l4dTIFLzmLRraeSOWiMFYDQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Centro Estetico Bussola">
+    </div>
+    <div class="about-txt">
+      <span class="label">Chi siamo</span>
+      <h2>Estetica e benessere,<br>in famiglia</h2>
+      <p>Il Centro Estetico Bussola è una realtà familiare di Lugagnano dove estetica e benessere si uniscono. Un ambiente accogliente in cui ci si sente subito a proprio agio.</p>
+      <p>Massaggi e trattamenti mirati, competenza e ascolto: molti clienti raccontano di essere stati rimessi in forma dopo tensioni e piccoli dolori. Bravi, cordiali e preparati.</p>
+      <div class="sign">— mani esperte, ambiente familiare</div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="trattamenti">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="label">I trattamenti</span>
+      <h2>Rituali di bellezza su misura</h2>
+      <p>Estetica, massaggi e trattamenti benessere su misura.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="n">i</div><h3>Massaggi</h3><p>Massaggi decontratturanti e distensivi per sciogliere tensioni e ritrovare leggerezza.</p></div>
+      <div class="svc"><div class="n">ii</div><h3>Trattamenti benessere</h3><p>Percorsi mirati per il benessere di schiena, collo e spalle, con ascolto e competenza.</p></div>
+      <div class="svc"><div class="n">iii</div><h3>Trattamenti viso</h3><p>Cura del viso con trattamenti personalizzati e prodotti di qualità.</p></div>
+      <div class="svc"><div class="n">iv</div><h3>Cerette &amp; epilazione</h3><p>Depilazione delicata e accurata, per una pelle liscia e curata.</p></div>
+      <div class="svc"><div class="n">v</div><h3>Trattamenti corpo</h3><p>Trattamenti corpo su misura per rimetterti in forma e in equilibrio.</p></div>
+      <div class="svc"><div class="n">vi</div><h3>Consulenza</h3><p>Un ascolto attento per capire le tue esigenze e il percorso più adatto a te.</p></div>
+    </div>
+    <p class="svc-note">Chiamaci per il listino completo e per prenotare il tuo appuntamento.</p>
+  </div>
+</section>
+
+<section class="testi" id="recensioni">
+  <div class="wrap">
+    <div class="testi-card">
+      <div class="q">&ldquo;</div>
+      <blockquote>Ero bloccata e dolorante: qui hanno mani magiche, sono uscita senza dolore dopo aver provato in vari posti senza riuscire a risolvere. Assolutamente consigliato, il migliore!</blockquote>
+      <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjVXO1KhbUmYiRBUVutNhw5eZcf0sXnO1Y1j_p5M-cI9QmGWzQ=s128-c0x00000000-cc-rp-mo-ba3" alt="Ilona Seceni"><div><b>Ilona Seceni</b><span>Recensione Google · ★★★★★</span></div></div>
+    </div>
+    <div class="mini-rev">
+      <div class="mini">
+        <div class="stars">★★★★★</div>
+        <p>“Consigliatissimi! Dopo una distorsione avevo un dolore che persisteva da mesi: già dopo una seduta riuscivo a camminare bene. Super professionisti, grazie!”</p>
+        <b>Alexandru Ionescu</b>
+      </div>
+      <div class="mini">
+        <div class="stars">★★★★★</div>
+        <p>“Bravissimi, cordiali e competenti. Ti fanno sentire accolta, capiscono il problema e sanno come trattarlo. Ambiente pulito e curato.”</p>
+        <b>Tizy Ana</b>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:26px"><a href="https://maps.google.com/?cid=3312313467588181526" target="_blank" rel="noopener" style="color:var(--tan);border-bottom:1px solid var(--line);padding-bottom:2px;font-size:.92rem">Tutte le 106 recensioni su Google →</a></div>
+  </div>
+</section>
+<section class="contact" id="contatti">
+  <div class="wrap">
+    <div class="sec-h">
+      <span class="label">Dove siamo</span>
+      <h2>Orari &amp; Contatti</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="cinfo">
+        <h3>Orari di apertura</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>Chiuso</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>09:00 – 18:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>09:00 – 18:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>09:00 – 18:00</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>09:00 – 18:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>09:00 – 14:00</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>Chiuso</span></li>
+        </ul>
+        <div class="crow"><div class="ic">◍</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=3312313467588181526" target="_blank" rel="noopener">Via Robert Kennedy 6/A, 37060 Lugagnano (VR)</a></div></div>
+        <div class="crow"><div class="ic">☎</div><div><h4>Telefono</h4><a href="tel:+393486294239">348 629 4239</a></div></div>
+        <div class="crow"><div class="ic">✆</div><div><h4>WhatsApp</h4><a href="https://wa.me/393486294239" target="_blank" rel="noopener">Scrivici su WhatsApp</a></div></div>
+
+        <a href="tel:+393486294239" class="pill-cta">Prenota il tuo trattamento ›</a>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Robert+Kennedy+6A,+37060+Lugagnano+VR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><span class="fl">✿</span>Centro Estetico Bussola</div>
+    <div class="socials">
+      <a href="tel:+393486294239" title="Telefono">☎</a>
+      <a href="https://maps.google.com/?cid=3312313467588181526" target="_blank" rel="noopener" title="Mappa">◍</a>
+    </div>
+    <div class="foot-line">© 2026 Centro Estetico Bussola · Via Robert Kennedy 6/A, 37060 Lugagnano (VR)</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+393486294239">✿ Prenota il tuo trattamento ›</a>
+</div>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const periods={1:null,2:[900,1800],3:[900,1800],4:[900,1800],5:[900,1800],6:[900,1400],0:null};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const p=periods[day],badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+if(p&&hm>=p[0]&&hm<p[1]){badge.className='open-badge open';txt.textContent='Aperto ora';}
+else{badge.className='open-badge closed';txt.textContent='Chiuso ora';}
+</script>
+</body>
+</html>
