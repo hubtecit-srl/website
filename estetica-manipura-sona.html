@@ -158,6 +158,37 @@ footer .brand{position:static;transform:none;justify-content:center;color:#fff;m
 
 .hero-bg{background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjdBANx5Eq3RR7Kmd0OMSAungzLfvl0Z_YxxH__SjRSFfnHx_P9f56ZmTrIlvNxiHunj0v36rSWTt3WJq5Qz10SdmlC7XRVyMDdvi25km7Nrr3XJQm3NZf2y_3PKFmDYTiD7wARH45w9HP_n05z12t2rpP3nN8s_ArBL7T88kduPZxKE3ZghIFnUeqaf0pVG4PFGSIEDZrNQMMSvCgM1Cde4X9xNZ7dllNv-eYNg7MhyR4ZgYR6p5HCUCV1ATXtknei8Cuce9XJ0YyV9jQ-Bc-q4UeIVz109KkJTIe8omLc5sp4u6cdvJry5SQnIZnUPxBdYUWYusVYcmBQtU4_AfXYQgYiYa-B4LlfQLhC13BrCN4Qd6ZQItV6TYBf6gJ9hivM4VYf89vZjDcCLkYTvytG4YK0EsJZF7Df9ttwkSL3Yga9-Le3RwIsIv4YKu4t&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
 .band-bg{background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjdBANx5Eq3RR7Kmd0OMSAungzLfvl0Z_YxxH__SjRSFfnHx_P9f56ZmTrIlvNxiHunj0v36rSWTt3WJq5Qz10SdmlC7XRVyMDdvi25km7Nrr3XJQm3NZf2y_3PKFmDYTiD7wARH45w9HP_n05z12t2rpP3nN8s_ArBL7T88kduPZxKE3ZghIFnUeqaf0pVG4PFGSIEDZrNQMMSvCgM1Cde4X9xNZ7dllNv-eYNg7MhyR4ZgYR6p5HCUCV1ATXtknei8Cuce9XJ0YyV9jQ-Bc-q4UeIVz109KkJTIe8omLc5sp4u6cdvJry5SQnIZnUPxBdYUWYusVYcmBQtU4_AfXYQgYiYa-B4LlfQLhC13BrCN4Qd6ZQItV6TYBf6gJ9hivM4VYf89vZjDcCLkYTvytG4YK0EsJZF7Df9ttwkSL3Yga9-Le3RwIsIv4YKu4t&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
+/* ===== HubTec mobile refinements ===== */
+html,body{overflow-x:hidden}
+@media(max-width:960px){
+  header{top:10px}
+  .navpill{flex-wrap:wrap;align-items:center;padding:10px 12px 10px 18px;column-gap:8px}
+  .navpill .brand{order:1;position:static;transform:none;font-size:1.2rem;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:58vw}
+  .nav-right{order:2;margin-left:auto;gap:8px}
+  .menu-toggle{order:3;display:block;line-height:1;padding:4px 6px}
+  .navpill nav{order:4;display:none;flex-basis:100%;width:100%;flex-direction:column;gap:0;margin-top:8px;border-top:1px solid var(--line)}
+  header.open .navpill nav{display:flex}
+  .navpill nav a{padding:13px 2px;border-bottom:1px solid var(--line);font-size:1rem}
+  .navpill nav a:last-child{border-bottom:0}
+  .nav-tel{display:none}
+  .pill-cta{padding:10px 16px;font-size:.8rem}
+}
+@media(max-width:560px){
+  .wrap{padding:0 18px}
+  .navpill .brand{font-size:1.1rem;max-width:52vw}
+  .hero{min-height:560px}
+  .hero h1{font-size:2.4rem}
+  .hero p{font-size:1rem}
+  .badge-sec,.about,.services,.testi,.contact{padding:64px 0}
+  .badge{width:140px;height:140px;margin-bottom:26px}
+  .badge-sec h2{font-size:1.5rem}
+  .about-img img,.about-img > div{height:340px!important}
+  .testi-card{padding:32px 22px;border-radius:24px}
+  .testi-card blockquote{font-size:1.15rem}
+  .cinfo{padding:28px 22px}
+  .map-wrap{min-height:340px}
+  .map-wrap iframe{min-height:340px}
+}
 </style>
 </head>
 <body>
@@ -174,7 +205,7 @@ footer .brand{position:static;transform:none;justify-content:center;color:#fff;m
     <div class="nav-right">
       <span class="nav-tel">📞 045 608 0750</span>
       <a href="tel:+390456080750" class="pill-cta">Prenota ›</a>
-      <button class="menu-toggle" onclick="document.querySelector('.navpill nav').scrollIntoView()">☰</button>
+      <button class="menu-toggle" aria-label="Apri menu" onclick="document.querySelector('header').classList.toggle('open')">☰</button>
     </div>
   </div>
 </header>
@@ -284,7 +315,7 @@ footer .brand{position:static;transform:none;justify-content:center;color:#fff;m
 </div>
 
 <script>
-document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));document.querySelector('header').classList.remove('open');if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
 const periods={1:[830,1530],2:[830,1530],3:[830,1530],4:[830,1530],5:[830,1530],6:[800,1300],0:null};
 const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
 document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
