@@ -16,7 +16,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.75;font-weight:300;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.75;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 img{display:block;max-width:100%}
 .wrap{max-width:1280px;margin:0 auto;padding:0 40px}
@@ -44,7 +44,7 @@ header.scrolled .book:hover{background:rgba(43,37,33,.06)}
 .menu-toggle{display:none;background:none;border:0;color:#f3eee7;font-size:1.5rem;cursor:pointer}
 header.scrolled .menu-toggle{color:var(--ink)}
 
-.hero{position:relative;height:100vh;min-height:640px;display:flex;align-items:flex-end;overflow:hidden;color:#f3eee7}
+.hero{position:relative;height:100svh;min-height:640px;display:flex;align-items:flex-end;overflow:hidden;color:#f3eee7}
 .hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydh22XTIPAKYmtRm7YL0E4YmulcMzgWQXQEWdRH6hHFtX-jsh8UxGDSdm8u7oJZWzOpBFQF4dorjTPP2n7Kndbw7dMUBVImL_KJOa2NPsecFiY41JOPSAoQhCb-aA5CLOZtFGVrHgZqWNJJcT7BGE7yrB9ujecGmCWC7pF4j6TNP0LNNfkIXNqvOP5YGIwM63ehXiFRGXC4VWchtC0myO7ghR81wjLLewVjJkN5JObJO37nclONDqhld8wmDgTTnQAIJRlhQlwk10aUeobRkFoRZNSOUyCrOy0g-78EN1QLwRVIM7uHH1V7YwyXM9xMaNNIHI-xxAGjxxY_Gx9eJEy1N8SlkLr9bLcUk_xm-scwsC_94a7gHUrv6IrSocGk791lijJyRi0dheN-7OQvYN_xZb93DHYx50xXh9-hLAexBWo5DBvpfXiov8nF2yg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,22,20,.55) 0%,rgba(25,22,20,.2) 35%,rgba(25,22,20,.82) 100%)}
 .hero-inner{position:relative;z-index:2;width:100%;padding-bottom:8vh}
@@ -155,6 +155,7 @@ section{padding:120px 0}
   .mobile-bar .bk{background:#3a322c}
   body{padding-bottom:50px}
 }
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
 </style>
 </head>
 <body>

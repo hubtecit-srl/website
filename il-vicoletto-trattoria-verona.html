@@ -16,7 +16,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased}
+body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 img{display:block;max-width:100%}
 .wrap{max-width:1200px;margin:0 auto;padding:0 26px}
@@ -38,7 +38,7 @@ header nav a:hover{color:var(--gold)}
 header.scrolled{background:rgba(20,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .menu-toggle{display:none;background:none;border:0;color:var(--cream);font-size:1.6rem;cursor:pointer}
 
-.hero{position:relative;min-height:100vh;display:flex;align-items:flex-end;overflow:hidden}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydj7Gd6EFqrUq_ItFG2C03TCmKOi-tks7gmjMdHn6JJZdk7g4GN3yb-bCgFPLFNIJYypYKAh8DGWK_mwWzv28MLU-irU0jzpvZ1hVqnfgIwkY0SPPZUP-BEBKJMWYQXZ3JpMrHhoxOHAInF2ETyDOYw2qNZUtJwkhi0lepRf2Pout6EvvjyZENQhx9TF76LBtbAV7i9q3Fj2IuYdI6JiICqQlswvnwJ2vAT2JoBfS0oU545CxLkCmvlpFiC55Zcq1AaNG50MbP-Y6o11j_d7OeYw0sAtSKIpyIZyO9H7TyEoaQ39V23983sZ8ZsOkLCdx_Itj6dNqXXcukLWliMdruuM48yjW4jSosJLywyzsICR6X1nFyq3itTgAejvJEqrSez5-zFoB-hKhdplSvl8E23fNzRyoiiBz5I7RhqQQjI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.06)}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.6) 0%,rgba(20,16,14,.15) 45%,rgba(20,16,14,.92) 100%)}
 .hero-inner{position:relative;z-index:2;padding:0 0 88px;width:100%}
@@ -150,6 +150,7 @@ footer .brand{font-size:2rem;display:inline-block;margin-bottom:12px}
   .mobile-bar a{flex:1;text-align:center;padding:16px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#14100e;background:var(--gold);font-weight:500}
   body{padding-bottom:54px}
 }
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
 </style>
 </head>
 <body>

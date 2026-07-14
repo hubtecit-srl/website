@@ -16,7 +16,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--f);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased}
+body{font-family:var(--f);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 img{display:block;max-width:100%}
 .wrap{max-width:1280px;margin:0 auto;padding:0 34px}
@@ -40,7 +40,7 @@ header .bar{display:flex;align-items:center;justify-content:space-between;height
 .btn-ghost:hover{border-color:var(--ink)}
 
 /* Hero */
-.hero{position:relative;min-height:100vh;background:var(--dark);color:#f3ece2;overflow:hidden;display:flex;align-items:center}
+.hero{position:relative;min-height:100svh;background:var(--dark);color:#f3ece2;overflow:hidden;display:flex;align-items:center}
 .hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhkn1_wypF8vun8UIeN1AiU0SdFqyqytPuy1ja3zafkjuajLieJPk4kRb_sKMfiSKi9mKxewejZOX9I3bHI4LSAqL4ozl5RG8j5y-H5eZPI2TwbFGHNvMZr2bgJ05SSL-ZN_vMohFiBfpNASTZZ7vhm-vEkiPGddE5zZjrIvtIun-_9TVYMatqeFHirkwycIYDVoW0k1Q8lF7zwyMyIxKnC6xNyfquod-ybV_mHPFWYLKxhSQiPIog2ogcl5733-TqJ9y7r1C4Xro9C2rnaSCwnV9DHdxnDWPm3vagiiR04sMB6o016T6cphseZGBjl2NxjZjFaS6gEdiKfP6J5mB-UgzuAenp72wog5V5nCrnGimW6JY6J0coubRCVWvlWmfQuJf9StjZthYWL4MAC7MAZwHZ1S1kAjGhr8m0oSFjFymWS&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
 .hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,21,16,.92) 0%,rgba(28,21,16,.7) 42%,rgba(28,21,16,.25) 100%)}
 .hero-inner{position:relative;z-index:2;width:100%;padding-top:70px}
@@ -135,6 +135,7 @@ header .bar{display:flex;align-items:center;justify-content:space-between;height
   .mobile-bar .bk{background:var(--red)}
   body{padding-bottom:50px}
 }
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
 </style>
 </head>
 <body>
