@@ -1,0 +1,22 @@
+{
+  "_nota": "Libreria immagini d'ambiente per settore. Fonte: Pexels (licenza libera, uso commerciale, nessuna attribuzione richiesta). USO: solo come atmosfera/sfondo dove mancano le foto reali del cliente. NON spacciarle per foto della sua attivita. Nel sito venduto vanno sostituite con foto reali. Costruire URL cambiando il parametro w (es. w=1600 hero, w=800 gallery). Tutti gli ID sono stati verificati come caricabili.",
+  "estetiste": [
+    "https://images.pexels.com/photos/36436447/pexels-photo-36436447.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/34930123/pexels-photo-34930123.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/37229299/pexels-photo-37229299.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/3852204/pexels-photo-3852204.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/3979134/pexels-photo-3979134.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/3973089/pexels-photo-3973089.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/3768926/pexels-photo-3768926.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/9146381/pexels-photo-9146381.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/5240818/pexels-photo-5240818.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/16041439/pexels-photo-16041439.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/17553843/pexels-photo-17553843.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "https://images.pexels.com/photos/30809947/pexels-photo-30809947.jpeg?auto=compress&cs=tinysrgb&w=1600"
+  ],
+  "parrucchieri": [],
+  "ristoranti": [],
+  "dentisti": [],
+  "artigiani": [],
+  "negozi": []
+}
