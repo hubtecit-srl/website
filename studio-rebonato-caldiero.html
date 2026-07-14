@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Dentistico Dr. Paolo Rebonato — Dentista a Caldiero</title>
+<meta name="description" content="Studio Dentistico Dr. Paolo Rebonato, studio dentistico a Caldiero (Via Strà 63, 37042 Caldiero (VR)). Valutazione 5★ su 8 recensioni Google. Prenota la tua visita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#efeae2; --paper2:#e7e1d7; --dark:#211d1b; --dark2:#191614; --ink:#2b2521;
+  --sub:#736a62; --line:#d9d1c7; --hair:rgba(43,37,33,.13); --cream:#f3eee7;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.75;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1280px;margin:0 auto;padding:0 40px}
+.serif{font-family:var(--serif)}
+.label{font-family:var(--sans);font-weight:400;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--ink)}
+.num{font-family:var(--sans);font-weight:400;letter-spacing:.1em;font-size:.9rem;color:var(--sub)}
+.linkbtn{display:inline-flex;align-items:center;gap:12px;font-family:var(--sans);font-weight:400;letter-spacing:.2em;text-transform:uppercase;font-size:.72rem;color:var(--ink)}
+.linkbtn .ln{width:34px;height:1px;background:currentColor;display:inline-block}
+
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:86px}
+.brand{font-family:var(--serif);font-size:1.55rem;letter-spacing:.24em;color:#f3eee7;transition:.4s;font-weight:500}
+header nav{display:flex;gap:40px}
+header nav a{color:rgba(243,238,231,.85);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;transition:.2s}
+header nav a:hover{color:#fff}
+.book{display:inline-flex;align-items:center;gap:12px;border:1px solid rgba(243,238,231,.5);color:#f3eee7;padding:12px 22px;border-radius:2px;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;transition:.25s}
+.book .ln{width:26px;height:1px;background:currentColor}
+.book:hover{background:rgba(243,238,231,.12)}
+header.scrolled{background:rgba(239,234,226,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--hair)}
+header.scrolled .brand{color:var(--ink)}
+header.scrolled nav a{color:var(--sub)}
+header.scrolled nav a:hover{color:var(--ink)}
+header.scrolled .book{border-color:var(--ink);color:var(--ink)}
+header.scrolled .book:hover{background:rgba(43,37,33,.06)}
+.menu-toggle{display:none;background:none;border:0;color:#f3eee7;font-size:1.5rem;cursor:pointer}
+header.scrolled .menu-toggle{color:var(--ink)}
+
+.hero{position:relative;height:100svh;min-height:640px;display:flex;align-items:flex-end;overflow:hidden;color:#f3eee7}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydh22XTIPAKYmtRm7YL0E4YmulcMzgWQXQEWdRH6hHFtX-jsh8UxGDSdm8u7oJZWzOpBFQF4dorjTPP2n7Kndbw7dMUBVImL_KJOa2NPsecFiY41JOPSAoQhCb-aA5CLOZtFGVrHgZqWNJJcT7BGE7yrB9ujecGmCWC7pF4j6TNP0LNNfkIXNqvOP5YGIwM63ehXiFRGXC4VWchtC0myO7ghR81wjLLewVjJkN5JObJO37nclONDqhld8wmDgTTnQAIJRlhQlwk10aUeobRkFoRZNSOUyCrOy0g-78EN1QLwRVIM7uHH1V7YwyXM9xMaNNIHI-xxAGjxxY_Gx9eJEy1N8SlkLr9bLcUk_xm-scwsC_94a7gHUrv6IrSocGk791lijJyRi0dheN-7OQvYN_xZb93DHYx50xXh9-hLAexBWo5DBvpfXiov8nF2yg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(25,22,20,.55) 0%,rgba(25,22,20,.2) 35%,rgba(25,22,20,.82) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-bottom:8vh}
+.hero .label{color:rgba(243,238,231,.8);margin-bottom:20px}
+.hero h1{font-family:var(--serif);font-weight:400;font-size:clamp(3.2rem,9vw,8rem);line-height:.94;letter-spacing:.01em}
+.hero h1 em{font-style:italic}
+.hero .sub{margin-top:22px;font-size:1.1rem;max-width:440px;color:rgba(243,238,231,.85);font-weight:300}
+
+section{padding:120px 0}
+.sec-top{display:flex;align-items:baseline;gap:60px;margin-bottom:56px}
+.sec-top .label{color:var(--ink)}
+
+/* 01 care */
+.care{background:var(--paper)}
+.care-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.care h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.6rem,5vw,4.4rem);line-height:1.02;margin-bottom:26px}
+.care p{color:var(--sub);max-width:400px;margin-bottom:38px;font-size:1.02rem}
+.care-img img{width:100%;height:600px;object-fit:cover}
+
+/* 02 space words */
+.space{background:var(--paper2)}
+.space-words{display:flex;flex-wrap:wrap;gap:14px 54px;align-items:center}
+.space-words .w{font-family:var(--serif);font-weight:400;font-size:clamp(1.8rem,3.4vw,2.9rem);color:var(--ink);line-height:1.2}
+.space-words .w.dim{color:var(--sub);opacity:.5}
+.space-row{display:grid;grid-template-columns:1.4fr .6fr;gap:60px;align-items:end;margin-top:10px}
+.space-img img{width:100%;height:340px;object-fit:cover}
+
+/* 03 overview */
+.overview{background:var(--paper)}
+.ov-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:36px}
+.ov .ic{width:34px;height:34px;stroke:var(--ink);fill:none;stroke-width:1;margin-bottom:22px}
+.ov h4{font-family:var(--serif);font-weight:500;font-size:1.5rem;margin-bottom:8px}
+.ov p{color:var(--sub);font-size:.92rem;max-width:230px}
+
+/* 04 treatments */
+.treat{background:var(--paper2)}
+.treat-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.treat-img img{width:100%;height:560px;object-fit:cover;filter:brightness(.82) saturate(.95)}
+.acc{border-top:1px solid var(--line)}
+.acc-item{border-bottom:1px solid var(--line)}
+.acc-head{width:100%;background:none;border:0;text-align:left;cursor:pointer;padding:26px 0;display:flex;justify-content:space-between;align-items:center;font-family:var(--serif);font-weight:400;font-size:2rem;color:var(--ink);transition:.2s}
+.acc-head:hover{color:#000}
+.acc-head .pl{font-family:var(--sans);font-weight:300;font-size:1.3rem;color:var(--sub);transition:.3s}
+.acc-item.on .acc-head .pl{transform:rotate(45deg)}
+.acc-body{max-height:0;overflow:hidden;transition:max-height .4s ease}
+.acc-body .in{padding:0 0 28px;color:var(--sub);max-width:440px}
+.acc-body .in .linkbtn{margin-top:16px}
+
+/* 05 reviews */
+.reviews{background:var(--dark);color:#e8e1d8}
+.reviews .sec-top .label{color:#e8e1d8}
+.reviews .sec-top .num{color:rgba(232,225,216,.55)}
+.rev-lead{font-family:var(--serif);font-weight:400;font-size:clamp(2rem,4vw,3.2rem);line-height:1.1;max-width:900px;margin-bottom:64px}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px}
+.rev .stars{color:#c9a86a;letter-spacing:3px;margin-bottom:14px;font-size:.9rem}
+.rev p{color:rgba(232,225,216,.86);font-size:.96rem;margin-bottom:20px;font-weight:300}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:42px;height:42px;border-radius:50%;object-fit:cover;filter:grayscale(.2)}
+.rev .who b{font-family:var(--sans);font-weight:400;font-size:.9rem;color:#fff}
+.rev .who span{display:block;font-size:.76rem;color:rgba(232,225,216,.55)}
+.rev-more{margin-top:48px}
+.rev-more .linkbtn{color:#e8e1d8}
+
+/* footer cta */
+.foot{background:var(--dark2);color:#e8e1d8;padding:110px 0 40px}
+.cta-row{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:center;padding-bottom:90px;border-bottom:1px solid rgba(232,225,216,.14)}
+.cta-row .label{color:rgba(232,225,216,.7)}
+.cta-row h2{font-family:var(--serif);font-weight:400;font-size:clamp(2.4rem,5vw,4rem);line-height:1;margin:14px 0 12px}
+.cta-row p{color:rgba(232,225,216,.7)}
+.cta-book{display:inline-flex;align-items:center;gap:14px;border:1px solid rgba(232,225,216,.45);color:#e8e1d8;padding:18px 30px;border-radius:2px;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;transition:.25s}
+.cta-book .ln{width:30px;height:1px;background:currentColor}
+.cta-book:hover{background:rgba(232,225,216,.12)}
+.foot-cols{display:grid;grid-template-columns:1fr 1fr 1.4fr;gap:40px;padding:64px 0 40px}
+.foot-cols .label{color:rgba(232,225,216,.55);margin-bottom:20px}
+.foot-cols p,.foot-cols a{color:#e8e1d8;font-size:.96rem;font-weight:300}
+.foot-cols .stack a{display:block;margin-bottom:8px;color:rgba(232,225,216,.8)}
+.foot-cols .stack a:hover{color:#fff}
+.foot-sub{margin-top:26px}
+.sitemap{display:grid;grid-template-columns:1fr 1fr;gap:8px 40px}
+.foot-bot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:26px;border-top:1px solid rgba(232,225,216,.14);font-size:.8rem;color:rgba(232,225,216,.55)}
+.foot-bot .l{display:flex;gap:26px;flex-wrap:wrap}
+.disc{max-width:640px;margin-top:16px;font-size:.74rem;color:rgba(232,225,216,.4);line-height:1.6}
+
+.lb{position:fixed;inset:0;background:rgba(20,17,15,.95);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%}
+.lb .x{position:absolute;top:22px;right:30px;color:#e8e1d8;font-size:2rem;cursor:pointer}
+.mobile-bar{display:none}
+
+@media(max-width:960px){
+  .wrap{padding:0 26px}
+  .care-grid,.treat-grid,.space-row{grid-template-columns:1fr;gap:36px}
+  .ov-grid{grid-template-columns:1fr 1fr;gap:34px}
+  .rev-grid{grid-template-columns:1fr}
+  .cta-row{grid-template-columns:1fr;gap:24px}
+  .foot-cols{grid-template-columns:1fr 1fr}
+  header nav{display:none}
+  .menu-toggle{display:block}
+  .book{display:none}
+}
+@media(max-width:560px){
+  .ov-grid,.foot-cols,.sitemap{grid-template-columns:1fr}
+  section{padding:80px 0}
+  .care-img img,.treat-img img{height:400px}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:15px;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#f3eee7}
+  .mobile-bar .call{background:var(--dark)}
+  .mobile-bar .bk{background:#3a322c}
+  body{padding-bottom:50px}
+}
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
+
+.hero-bg{background:linear-gradient(135deg,#3a322c,#191614)}
+
+/* ===== HubTec mobile refinements ===== */
+@media(max-width:960px){
+  header .bar{flex-wrap:wrap;height:auto;padding-top:14px;padding-bottom:14px;row-gap:0}
+  .menu-toggle{display:block;order:3}
+  .brand{order:1}
+  header nav{order:4;flex-basis:100%;width:100%;flex-direction:column;gap:0;display:none;margin-top:12px;background:rgba(25,22,20,.97);border-radius:3px;padding:4px 12px}
+  header.scrolled nav{background:rgba(239,234,226,.99);border:1px solid var(--hair)}
+  header.open nav{display:flex}
+  header nav a{padding:14px 4px;border-bottom:1px solid rgba(243,238,231,.14);font-size:.8rem}
+  header.scrolled nav a{border-color:var(--hair)}
+  header nav a:last-child{border-bottom:0}
+}
+.ph-fill{width:100%;background:linear-gradient(135deg,#3a322c,#191614);display:flex;align-items:center;justify-content:center;color:rgba(243,238,231,.4);font-family:var(--serif);font-size:3rem}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand">REBONATO</a>
+    <nav>
+      <a href="#studio">Studio</a>
+      <a href="#trattamenti">Trattamenti</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="tel:+390457652062" class="book">Prenota<span class="ln"></span></a>
+    <button class="menu-toggle" aria-label="Apri menu" onclick="document.getElementById('hd').classList.toggle('open')">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="label">Studio dentistico · Caldiero</div>
+    <h1>La cura del sorriso,<br><em>con esperienza</em></h1>
+    <p class="sub">Uno studio dentistico a Caldiero dove serietà, competenza e uno staff di eccellenza si prendono cura di te, passo dopo passo.</p>
+  </div>
+</section>
+
+<section class="care" id="cura">
+  <div class="wrap">
+    <div class="care-grid">
+      <div>
+        <div class="sec-top" style="margin-bottom:34px"><span class="num">01</span><span class="label">Cura dentale</span></div>
+        <h2>Professionalità<br>e fiducia</h2>
+        <p>Dalle cure quotidiane all&#x27;implantologia più complessa, ogni percorso è seguito con precisione e attenzione, per farti sentire sempre a tuo agio e con risultati che durano nel tempo.</p>
+        <a href="#trattamenti" class="linkbtn">Trattamenti <span class="ln"></span></a>
+      </div>
+      <div class="care-img"><div class="ph-fill" style="height:600px">✚</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="space" id="studio">
+  <div class="wrap">
+    <div class="sec-top"><span class="num">02</span><span class="label">Lo studio</span></div>
+    <div class="space-row">
+      <div class="space-words">
+        <span class="w">Ascolto</span>
+        <span class="w dim">Chiarezza</span>
+        <span class="w">Precisione</span>
+        <span class="w dim">Serenità</span>
+        <span class="w">Benvenuto</span>
+      </div>
+      <div class="space-img"><div class="ph-fill" style="height:340px">✚</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="overview">
+  <div class="wrap">
+    <div class="sec-top"><span class="num">03</span><span class="label">Panoramica</span></div>
+    <div class="ov-grid">
+      <div class="ov">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M12 21s7-6.5 7-12a7 7 0 10-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="9" r="2.5"/></svg>
+        <h4>A Caldiero</h4>
+        <p>Via Strà 63, 37042 Caldiero (VR), comodo da raggiungere.</p>
+      </div>
+      <div class="ov">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M9 3c-2 0-3.5 1.6-3.5 3.8 0 1.2.4 2.5.4 4C5.9 14 6.4 21 8 21c1.2 0 1.2-4 2.5-4h3c1.3 0 1.3 4 2.5 4 1.6 0 2.1-7 2.1-10.2 0-1.5.4-2.8.4-4C18.5 4.6 17 3 15 3c-1.5 0-2.2 1-3 1s-1.5-1-3-1z"/></svg>
+        <h4>Cure complete</h4>
+        <p>Odontoiatria generale, estetica, implantologia e prevenzione.</p>
+      </div>
+      <div class="ov">
+        <svg class="ic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><path d="M12 8v4l2.6 1.6"/></svg>
+        <h4>Su appuntamento</h4>
+        <p>Visite pianificate con calma, senza attese e senza stress.</p>
+      </div>
+      <div class="ov">
+        <svg class="ic" viewBox="0 0 24 24"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M6 6l2 2M16 16l2 2M6 18l2-2M16 8l2-2"/></svg>
+        <h4>Cura su misura</h4>
+        <p>Un percorso pensato attorno a te, per risultati duraturi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="treat" id="trattamenti">
+  <div class="wrap">
+    <div class="sec-top" style="justify-content:space-between"><div style="display:flex;gap:60px"><span class="num">04</span><span class="label">Trattamenti</span></div></div>
+    <div class="treat-grid">
+      <div class="treat-img"><div class="ph-fill" style="height:560px">✚</div></div>
+      <div class="acc" id="acc">
+        <div class="acc-item on">
+          <button class="acc-head">Odontoiatria generale <span class="pl">+</span></button>
+          <div class="acc-body"><div class="in">Controlli, otturazioni e cure quotidiane con un approccio attento e senza stress.<br><a href="tel:+390457652062" class="linkbtn">Prenota <span class="ln"></span></a></div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head">Igiene e prevenzione <span class="pl">+</span></button>
+          <div class="acc-body"><div class="in">Sedute di igiene professionale e controlli periodici per denti e gengive sani nel tempo.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head">Implantologia <span class="pl">+</span></button>
+          <div class="acc-body"><div class="in">Sostituzione dei denti mancanti con impianti sicuri e duraturi, per tornare a masticare e sorridere.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head">Ortodonzia <span class="pl">+</span></button>
+          <div class="acc-body"><div class="in">Apparecchi e allineatori per bambini e adulti, seguiti passo dopo passo.</div></div>
+        </div>
+        <div class="acc-item">
+          <button class="acc-head">Estetica dentale <span class="pl">+</span></button>
+          <div class="acc-body"><div class="in">Sbiancamento e trattamenti estetici per un sorriso luminoso e naturale.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="sec-top"><span class="num">05</span><span class="label">Recensioni</span></div>
+    <div class="rev-lead">“Un’esperienza dal dentista serena e attenta, raccontata dai pazienti con 5 stelle su 8 recensioni Google.”</div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Un professionista serio e competente, coadiuvato da uno staff di eccellenza. Ho fatto e sto facendo lavori molto importanti e mi sono sempre sentito a mio agio. Lo consiglio caldamente.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjU6WXUf3axaEifdxkrmHrPU04WlLQJkgQn3OL0wxVQ3gXYOGMLHow=s128-c0x00000000-cc-rp-mo" alt="Fulvio Anselmi"><div><b>Fulvio Anselmi</b><span>un mese fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Ottimo dottore, preciso e puntuale, il migliore in zona! Mia moglie ha risolto dei problemi che altri dentisti in città non erano riusciti a risolvere nemmeno dopo anni di cure.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocKIkU2YhS_o4g9T36XSBw3TAl9qmstM0pISSNNCm6YG74fckw=s128-c0x00000000-cc-rp-mo" alt="Mario Scaggion"><div><b>Mario Scaggion</b><span>3 anni fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Un lavoro importante di implantologia con ben 16 denti nuovi: complimenti all&#x27;intero staff, dal Dott. Rebonato al tecnico e alle assistenti. Pienamente soddisfatto e ottimo rapporto qualità-prezzo.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocIxG9Bxn3mZtH2u8vMjVDqnXhb8J0p1RP6roQ7auiSL2p1T9Q=s128-c0x00000000-cc-rp-mo" alt="Fabio Tinazzi"><div><b>Fabio Tinazzi</b><span>4 anni fa</span></div></div>
+      </div>
+    </div>
+    <div class="rev-more"><a href="https://maps.google.com/?cid=15254271366373410999" target="_blank" rel="noopener" class="linkbtn">Tutte le 8 recensioni <span class="ln"></span></a></div>
+  </div>
+</section>
+<footer class="foot" id="contatti">
+  <div class="wrap">
+    <div class="cta-row">
+      <div>
+        <div class="label">Prenota una visita</div>
+        <h2>Quando vuoi tu</h2>
+        <p>Un'esperienza dal dentista calma e su misura, pensata attorno a te.</p>
+      </div>
+      <a href="tel:+390457652062" class="cta-book">Chiama per prenotare <span class="ln"></span></a>
+    </div>
+    <div class="foot-cols">
+      <div>
+        <div class="label">Indirizzo</div>
+        <p>Via Strà 63, 37042 Caldiero (VR)</p>
+        <div class="foot-sub"><div class="label">Orari</div><p>Su appuntamento<br>Chiama per gli orari</p></div>
+      </div>
+      <div>
+        <div class="label">Contatti</div>
+        <p><a href="tel:+390457652062">045 765 2062</a></p>
+        <div class="foot-sub"><p><a href="https://maps.google.com/?cid=15254271366373410999" target="_blank" rel="noopener">Indicazioni →</a></p></div>
+      </div>
+      <div>
+        <div class="label">Menu</div>
+        <div class="sitemap stack">
+          <a href="#studio">Studio</a>
+          <a href="#trattamenti">Trattamenti</a>
+          <a href="#recensioni">Recensioni</a>
+          <a href="#trattamenti">Implantologia</a>
+          <a href="#trattamenti">Ortodonzia</a>
+          <a href="#contatti">Contatti</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <div class="l"><span>© 2026 Studio Dentistico Dr. Paolo Rebonato</span><span>Caldiero</span></div>
+      <div>Sito dimostrativo realizzato da HubTec</div>
+    </div>
+    <div class="disc">Sito dimostrativo realizzato da HubTec a scopo di proposta commerciale. Dati e recensioni provengono dalla scheda Google dell'attività.</div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+390457652062" class="call">Chiama</a>
+  <a href="tel:+390457652062" class="bk">Prenota</a>
+</div>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>60));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));hd.classList.remove('open');if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+document.querySelectorAll('.acc-item').forEach(it=>{
+  const h=it.querySelector('.acc-head'),b=it.querySelector('.acc-body');
+  const set=o=>{b.style.maxHeight=o?b.querySelector('.in').offsetHeight+'px':0;it.classList.toggle('on',o)};
+  if(it.classList.contains('on'))set(true);
+  h.addEventListener('click',()=>{const open=it.classList.contains('on');document.querySelectorAll('.acc-item').forEach(x=>{x.classList.remove('on');x.querySelector('.acc-body').style.maxHeight=0});if(!open)set(true)});
+});
+</script>
+</body>
+</html>
