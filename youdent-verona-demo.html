@@ -3,219 +3,375 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Centro Dentistico You Dent | Dentista a Verona</title>
-<meta name="description" content="Centro Dentistico You Dent a Verona: igiene, implantologia, ortodonzia ed estetica dentale. Prenota la tua visita in Via Goffredo Mameli 152.">
+<title>Centro Dentistico You Dent — Dentista a Verona (Borgo Trento)</title>
+<meta name="description" content="Centro Dentistico You Dent a Verona: odontoiatria, igiene, ortodonzia e implantologia. Struttura moderna, staff dedicato. 4,9★ su 143 recensioni. Prenota online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --blu:#0a6e8a; --blu-scuro:#084f63; --azzurro:#e8f5f9;
-    --testo:#1f2a30; --grigio:#5b6b73; --bianco:#ffffff; --oro:#c9a24b;
-    --radius:14px; --ombra:0 8px 30px rgba(8,79,99,.10);
-  }
-  *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;color:var(--testo);line-height:1.6;background:var(--bianco);}
-  a{text-decoration:none;color:inherit;}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 22px;}
-  /* Header */
-  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid #eef2f4;}
-  .nav{display:flex;align-items:center;justify-content:space-between;height:74px;}
-  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.3rem;color:var(--blu-scuro);}
-  .logo span{color:var(--oro);}
-  .logo .tooth{width:34px;height:34px;background:var(--blu);border-radius:50% 50% 45% 45%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;}
-  nav ul{display:flex;gap:26px;list-style:none;font-weight:600;font-size:.95rem;}
-  nav a:hover{color:var(--blu);}
-  .cta-tel{background:var(--blu);color:#fff!important;padding:11px 20px;border-radius:40px;font-weight:700;transition:.2s;}
-  .cta-tel:hover{background:var(--blu-scuro);}
-  .menu-btn{display:none;background:none;border:0;font-size:1.6rem;color:var(--blu-scuro);cursor:pointer;}
-  /* Hero */
-  .hero{background:linear-gradient(135deg,#0a6e8a 0%,#084f63 100%);color:#fff;position:relative;overflow:hidden;}
-  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:rgba(255,255,255,.06);border-radius:50%;}
-  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:72px 0;}
-  .hero h1{font-size:2.8rem;line-height:1.15;margin-bottom:18px;font-weight:800;}
-  .hero p.lead{font-size:1.18rem;opacity:.94;margin-bottom:28px;max-width:520px;}
-  .hero-badges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;}
-  .badge{background:rgba(255,255,255,.12);padding:9px 16px;border-radius:30px;font-size:.9rem;font-weight:600;}
-  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;}
-  .btn{display:inline-block;padding:15px 30px;border-radius:44px;font-weight:700;transition:.2s;font-size:1rem;}
-  .btn-oro{background:var(--oro);color:#3a2c07;}
-  .btn-oro:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,75,.4);}
-  .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);}
-  .btn-ghost:hover{background:rgba(255,255,255,.12);}
-  .hero-card{background:#fff;color:var(--testo);border-radius:var(--radius);padding:28px;box-shadow:var(--ombra);}
-  .hero-card h3{color:var(--blu-scuro);margin-bottom:14px;font-size:1.15rem;}
-  .rating{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
-  .stars{color:var(--oro);font-size:1.25rem;letter-spacing:2px;}
-  .rating b{font-size:1.4rem;color:var(--blu-scuro);}
-  .hours-mini{font-size:.92rem;color:var(--grigio);border-top:1px solid #eef2f4;padding-top:14px;margin-top:6px;}
-  /* Sezioni */
-  section{padding:76px 0;}
-  .sec-head{text-align:center;max-width:640px;margin:0 auto 50px;}
-  .sec-head .kick{color:var(--oro);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.82rem;}
-  .sec-head h2{font-size:2.1rem;color:var(--blu-scuro);margin:8px 0 12px;}
-  .sec-head p{color:var(--grigio);}
-  /* Servizi */
-  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-  .card{background:#fff;border:1px solid #eef2f4;border-radius:var(--radius);padding:30px;transition:.25s;}
-  .card:hover{transform:translateY(-5px);box-shadow:var(--ombra);border-color:transparent;}
-  .card .ico{width:56px;height:56px;background:var(--azzurro);color:var(--blu);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:16px;}
-  .card h3{color:var(--blu-scuro);margin-bottom:8px;font-size:1.2rem;}
-  .card p{color:var(--grigio);font-size:.96rem;}
-  /* Perché */
-  .why{background:var(--azzurro);}
-  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;}
-  .stat b{display:block;font-size:2.4rem;color:var(--blu);font-weight:800;}
-  .stat span{color:var(--grigio);font-weight:600;}
-  /* Contatti */
-  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
-  .info-row{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px;}
-  .info-row .ico{width:46px;height:46px;flex:0 0 46px;background:var(--blu);color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
-  .info-row h4{color:var(--blu-scuro);font-size:1rem;}
-  .info-row p{color:var(--grigio);}
-  .map{width:100%;height:100%;min-height:340px;border:0;border-radius:var(--radius);box-shadow:var(--ombra);}
-  .contact-box{background:#fff;border:1px solid #eef2f4;border-radius:var(--radius);padding:30px;}
-  /* Footer */
-  footer{background:var(--blu-scuro);color:#cfe3ea;padding:40px 0 22px;}
-  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:24px;}
-  footer h4{color:#fff;margin-bottom:8px;}
-  .foot-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;font-size:.85rem;opacity:.8;text-align:center;}
-  @media(max-width:900px){
-    .hero-grid,.contact-grid{grid-template-columns:1fr;}
-    .grid{grid-template-columns:1fr 1fr;}
-    .why-grid{grid-template-columns:1fr 1fr;gap:30px;}
-    nav ul{display:none;}
-    .menu-btn{display:block;}
-    .hero h1{font-size:2.1rem;}
-  }
-  @media(max-width:560px){.grid{grid-template-columns:1fr;}}
+:root{
+  --teal:#0f8a99; --teal-d:#0a6b78; --deep:#0d3b46; --mint:#e7f6f8; --mint2:#f2fbfc;
+  --ink:#173842; --muted:#5f7883; --line:#e3edf0; --bg:#f4fafb; --white:#fff; --accent:#4fc3d1;
+  --head:'Poppins',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif;
+  --sh:0 16px 44px rgba(13,59,70,.10); --sh-sm:0 6px 20px rgba(13,59,70,.07); --r:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--ink);background:var(--white);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+h1,h2,h3,.head{font-family:var(--head)}
+.kicker{font-family:var(--head);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;color:var(--teal)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.35s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:80px}
+.brand{display:flex;align-items:center;gap:10px;font-family:var(--head);font-weight:700;font-size:1.35rem;color:var(--deep)}
+.brand .mk{width:38px;height:38px;background:var(--teal);color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
+.brand span{color:var(--teal)}
+header nav{display:flex;gap:32px;align-items:center}
+header nav a{color:var(--muted);font-weight:400;font-size:.92rem;transition:.2s}
+header nav a:hover{color:var(--teal)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:600;font-size:.9rem;padding:13px 26px;border-radius:44px;transition:.25s;cursor:pointer;border:2px solid transparent}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-d);transform:translateY(-2px);box-shadow:0 10px 24px rgba(15,138,153,.32)}
+.btn-ghost{background:var(--mint);color:var(--teal-d)}
+.btn-ghost:hover{background:#d6eef1}
+.btn-white{background:#fff;color:var(--teal-d)}
+.btn-out{background:transparent;color:var(--teal-d);border-color:var(--line)}
+.btn-out:hover{border-color:var(--teal)}
+header.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(10px);box-shadow:var(--sh-sm)}
+.menu-toggle{display:none;background:none;border:0;color:var(--deep);font-size:1.6rem;cursor:pointer}
+
+.hero{position:relative;padding:150px 0 90px;background:linear-gradient(160deg,var(--mint2) 0%,var(--bg) 60%,#fff 100%);overflow:hidden}
+.hero::before{content:"";position:absolute;top:-140px;right:-140px;width:460px;height:460px;background:radial-gradient(circle,rgba(79,195,209,.22),transparent 68%);border-radius:50%}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(2.5rem,5.2vw,3.9rem);line-height:1.08;font-weight:700;color:var(--deep);margin:14px 0 16px}
+.hero h1 span{color:var(--teal)}
+.hero .sub{font-size:1.15rem;color:var(--muted);max-width:500px;margin-bottom:28px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px}
+.hero-trust{display:flex;gap:26px;align-items:center;flex-wrap:wrap}
+.hero-trust .r{display:flex;flex-direction:column}
+.hero-trust .stars{color:#f4b942;letter-spacing:1px}
+.hero-trust b{font-family:var(--head);font-weight:700;font-size:1.15rem;color:var(--deep)}
+.hero-trust small{color:var(--muted);font-size:.82rem}
+.hero-trust .sep{width:1px;height:38px;background:var(--line)}
+.hero-img{position:relative}
+.hero-img img{width:100%;height:500px;object-fit:cover;border-radius:var(--r);box-shadow:var(--sh)}
+.hero-badge{position:absolute;bottom:-22px;left:-22px;background:#fff;border-radius:16px;padding:16px 22px;box-shadow:var(--sh);display:flex;align-items:center;gap:12px}
+.hero-badge .ic{width:44px;height:44px;background:var(--mint);color:var(--teal);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.hero-badge b{font-family:var(--head);font-weight:600;color:var(--deep);display:block;font-size:.98rem}
+.hero-badge span{font-size:.8rem;color:var(--muted)}
+
+section{padding:96px 0}
+.head-c{text-align:center;max-width:620px;margin:0 auto 54px}
+.head-c h2{font-size:clamp(1.9rem,3.8vw,2.7rem);color:var(--deep);margin:12px 0;font-weight:700}
+.head-c p{color:var(--muted)}
+
+.services{background:var(--bg)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:#fff;border-radius:var(--r);padding:34px 30px;transition:.3s;border:1px solid var(--line)}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--sh)}
+.svc .ic{width:58px;height:58px;background:var(--mint);color:var(--teal);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:16px}
+.svc h3{font-family:var(--head);font-weight:600;font-size:1.2rem;color:var(--deep);margin-bottom:8px}
+.svc p{color:var(--muted);font-size:.95rem}
+
+.why{background:#fff}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.why-img img{width:100%;height:480px;object-fit:cover;border-radius:var(--r);box-shadow:var(--sh)}
+.why-txt .kicker{display:block;margin-bottom:12px}
+.why-txt h2{font-size:clamp(1.9rem,3.6vw,2.6rem);color:var(--deep);margin-bottom:22px;font-weight:700;line-height:1.15}
+.feat{display:flex;gap:16px;margin-bottom:20px}
+.feat .ic{width:46px;height:46px;flex:0 0 46px;background:var(--mint);color:var(--teal);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem}
+.feat h4{font-family:var(--head);font-weight:600;color:var(--deep);font-size:1.05rem;margin-bottom:2px}
+.feat p{color:var(--muted);font-size:.92rem}
+
+.gallery{background:var(--bg)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+.gal-grid figure{overflow:hidden;border-radius:var(--r);cursor:pointer;position:relative}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gal-grid figure:hover img{transform:scale(1.08)}
+.gal-grid .wide{grid-column:span 2}
+.gal-grid .tall{grid-row:span 2}
+
+.reviews{background:linear-gradient(160deg,var(--deep),#0a2d36);color:#e8f4f6}
+.reviews .head-c h2{color:#fff}
+.reviews .head-c p{color:rgba(232,244,246,.75)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:28px}
+.rev .stars{color:#f4b942;letter-spacing:2px;margin-bottom:12px}
+.rev p{color:rgba(232,244,246,.92);font-size:.94rem;margin-bottom:18px}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.rev .who b{font-family:var(--head);font-weight:500;font-size:.92rem;color:#fff}
+.rev .who span{display:block;font-size:.76rem;color:rgba(232,244,246,.6)}
+.rev-foot{text-align:center;margin-top:32px}
+.rev-foot a{color:var(--accent);border-bottom:1px solid rgba(79,195,209,.4);padding-bottom:2px;font-size:.9rem}
+
+.cta-band{background:var(--teal);color:#fff;text-align:center;padding:70px 0}
+.cta-band h2{font-family:var(--head);font-weight:700;font-size:clamp(1.8rem,3.5vw,2.5rem);margin-bottom:12px}
+.cta-band p{opacity:.92;margin-bottom:26px;max-width:520px;margin-left:auto;margin-right:auto}
+.cta-band .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+.info{background:#fff}
+.info-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:stretch}
+.hours-card{background:var(--mint2);border:1px solid var(--line);border-radius:var(--r);padding:36px}
+.hours-card h3{font-family:var(--head);font-weight:600;font-size:1.5rem;color:var(--deep);margin-bottom:4px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-size:.78rem;font-weight:500;padding:6px 14px;border-radius:40px;margin:12px 0 20px}
+.open-badge.open{background:#e0f5e9;color:#1c8a54}
+.open-badge.closed{background:#fdecea;color:#c14a3a}
+.open-badge .dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:11px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted)}
+.hours-list li:last-child{border-bottom:0}
+.hours-list li.today{color:var(--ink);font-weight:500}
+.hours-list li.today .d{color:var(--teal)}
+.contact-rows{margin-top:24px}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
+.crow .ic{width:40px;height:40px;flex:0 0 40px;background:var(--mint);color:var(--teal);border-radius:12px;display:flex;align-items:center;justify-content:center}
+.crow h4{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--teal);font-family:var(--head);font-weight:600;margin-bottom:2px}
+.crow a,.crow p{color:var(--ink);font-size:1rem}
+.info-cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.map-wrap{border-radius:var(--r);overflow:hidden;min-height:470px;box-shadow:var(--sh)}
+.map-wrap iframe{width:100%;height:100%;min-height:470px;border:0}
+
+footer{background:var(--deep);color:rgba(255,255,255,.72);padding:56px 0 26px;text-align:center}
+footer .brand{justify-content:center;color:#fff;margin-bottom:10px}
+footer .brand span{color:var(--accent)}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:42px;height:42px;border-radius:12px;border:1px solid rgba(255,255,255,.18);display:flex;align-items:center;justify-content:center;color:#fff;transition:.25s}
+.socials a:hover{background:var(--teal);border-color:var(--teal)}
+.foot-line{border-top:1px solid rgba(255,255,255,.12);margin-top:22px;padding-top:18px;font-size:.82rem;opacity:.65}
+.foot-note{font-size:.72rem;opacity:.45;margin-top:6px}
+
+.lb{position:fixed;inset:0;background:rgba(10,45,54,.95);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%;border-radius:10px}
+.lb .x{position:absolute;top:22px;right:30px;color:#fff;font-size:2rem;cursor:pointer;opacity:.8}
+.mobile-bar{display:none}
+
+@media(max-width:960px){
+  .hero-grid,.why-grid,.info-grid{grid-template-columns:1fr;gap:44px}
+  .svc-grid,.rev-grid{grid-template-columns:1fr 1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  header nav{display:none}
+  .menu-toggle{display:block}
+}
+@media(max-width:560px){
+  .svc-grid,.rev-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
+  .hero{padding:120px 0 70px}
+  section{padding:70px 0}
+  .header-cta{display:none}
+  .hero-img img,.why-img img{height:340px}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:15px;font-family:var(--head);font-weight:600;font-size:.9rem;color:#fff}
+  .mobile-bar .call{background:var(--deep)}
+  .mobile-bar .book{background:var(--teal)}
+  body{padding-bottom:52px}
+}
 </style>
 </head>
 <body>
 
-<header>
-  <div class="wrap nav">
-    <a href="#" class="logo"><span class="tooth">🦷</span>You<span>Dent</span></a>
-    <nav><ul>
-      <li><a href="#servizi">Servizi</a></li>
-      <li><a href="#perche">Perché noi</a></li>
-      <li><a href="#contatti">Contatti</a></li>
-    </ul></nav>
-    <a href="tel:+390459788582" class="cta-tel">📞 045 978 8582</a>
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand"><span class="mk">🦷</span>You<span>Dent</span></a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#perche">Perché noi</a>
+      <a href="#gallery">Studio</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="https://prenota.alfadocs.com/p/verona-ricaricadent-verona-21155" target="_blank" rel="noopener" class="btn btn-teal header-cta">Prenota online</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').scrollIntoView()">☰</button>
   </div>
 </header>
 
 <section class="hero">
   <div class="wrap hero-grid">
     <div>
-      <h1>Il tuo sorriso in mani sicure, nel cuore di Verona</h1>
-      <p class="lead">Centro Dentistico You Dent: cure odontoiatriche complete, tecnologia moderna e un team che mette il paziente al primo posto. A Borgo Trento, in Via Goffredo Mameli 152.</p>
-      <div class="hero-badges">
-        <span class="badge">✔ Prima visita e preventivo</span>
-        <span class="badge">✔ Tecnologie digitali</span>
-        <span class="badge">✔ Pagamenti personalizzati</span>
-      </div>
+      <div class="kicker">Centro dentistico · Verona</div>
+      <h1>Il tuo sorriso <span>in mani sicure</span></h1>
+      <p class="sub">Cure odontoiatriche complete in una struttura moderna, con un team giovane e attento a Borgo Trento. Ti mettiamo a tuo agio dalla prima visita.</p>
       <div class="hero-cta">
-        <a href="tel:+390459788582" class="btn btn-oro">Prenota una visita</a>
-        <a href="#servizi" class="btn btn-ghost">Scopri i servizi</a>
+        <a href="https://prenota.alfadocs.com/p/verona-ricaricadent-verona-21155" target="_blank" rel="noopener" class="btn btn-teal">Prenota online</a>
+        <a href="tel:+390459788582" class="btn btn-out">📞 045 978 8582</a>
+      </div>
+      <div class="hero-trust">
+        <div class="r"><span class="stars">★★★★★</span><b>4,9 / 5</b></div>
+        <div class="sep"></div>
+        <div class="r"><b>143</b><small>recensioni Google</small></div>
+        <div class="sep"></div>
+        <div class="r"><b>Borgo Trento</b><small>Via G. Mameli 152</small></div>
       </div>
     </div>
-    <div class="hero-card">
-      <h3>La fiducia dei pazienti veronesi</h3>
-      <div class="rating">
-        <span class="stars">★★★★★</span>
-        <b>4,9</b>
-      </div>
-      <p style="color:var(--grigio);font-size:.95rem;">Valutazione media su oltre <b>140 recensioni</b> Google verificate.</p>
-      <div class="hours-mini">
-        <b style="color:var(--blu-scuro)">Orari</b><br>
-        Lun – Ven: 9:00 – 19:00<br>
-        Sabato: su appuntamento<br>
-        Domenica: chiuso
-      </div>
+    <div class="hero-img">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydhIP1b8W_3GMZNhtjXYEVo5tP1TuecoRKRXTzCP9_8ULYGU4LLN3QDY3o17rL2qCm1fwCAPakFvixvTxim3EtaAp84mV1DSlCbQiKLDEwJ9i5zGPKWHwcuaznhVdEOjCpFacRy4Vph5lH_uxBCxigmvHnlhLDSvEueb1zA2LIsz1q_hLdrMB4CrPfMN1Xyd_om1gG9JHHbEGO6iZx8PoE4MVEhbIY-KI6a-pOBt2uwwhXjV9dMJx2EoScB83AB6Dvijf2BJb1dmfImY2wDidXrfr5EcjFLUl8UujpBTQQ_cIGJHVZ7N8q51fEYiSYMcFIVXj9zW4d2aCzuBONRLisbz55FBHj0EU5XeXh2MIPG79YojRScx9T2jyMwklIoOpvOmtvBtJdQOnMYA0l4_YSkAYUHoP05uJx3A_qe6TDw68qQN&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Centro Dentistico You Dent">
+      <div class="hero-badge"><div class="ic">✓</div><div><b>Struttura moderna</b><span>Attrezzature all'avanguardia</span></div></div>
     </div>
   </div>
 </section>
 
-<section id="servizi">
+<section class="services" id="servizi">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="kick">I nostri servizi</div>
+    <div class="head-c">
+      <div class="kicker">I nostri servizi</div>
       <h2>Cure complete per tutta la famiglia</h2>
-      <p>Dalla prevenzione all'estetica, un unico centro per ogni esigenza del tuo sorriso.</p>
+      <p>Dalla prevenzione all'estetica del sorriso, un unico centro per ogni esigenza.</p>
     </div>
-    <div class="grid">
-      <div class="card"><div class="ico">🪥</div><h3>Igiene e prevenzione</h3><p>Sedute di igiene professionale e controlli periodici per mantenere denti e gengive sani nel tempo.</p></div>
-      <div class="card"><div class="ico">🦷</div><h3>Implantologia</h3><p>Sostituzione dei denti mancanti con impianti dentali sicuri e duraturi, per tornare a masticare e sorridere.</p></div>
-      <div class="card"><div class="ico">😁</div><h3>Ortodonzia</h3><p>Apparecchi tradizionali e allineatori trasparenti per bambini e adulti, per un sorriso allineato.</p></div>
-      <div class="card"><div class="ico">✨</div><h3>Estetica dentale</h3><p>Sbiancamento professionale e faccette per un sorriso luminoso e naturale.</p></div>
-      <div class="card"><div class="ico">🔧</div><h3>Conservativa e protesi</h3><p>Otturazioni estetiche, corone e protesi realizzate su misura con materiali di qualità.</p></div>
-      <div class="card"><div class="ico">🩺</div><h3>Prima visita</h3><p>Valutazione completa dello stato di salute orale con piano di cura e preventivo trasparente.</p></div>
-    </div>
-  </div>
-</section>
-
-<section id="perche" class="why">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="kick">Perché sceglierci</div>
-      <h2>Un centro dentistico su cui contare</h2>
-    </div>
-    <div class="why-grid">
-      <div class="stat"><b>4,9★</b><span>Valutazione Google</span></div>
-      <div class="stat"><b>140+</b><span>Recensioni positive</span></div>
-      <div class="stat"><b>6+</b><span>Aree di specializzazione</span></div>
-      <div class="stat"><b>100%</b><span>Preventivi trasparenti</span></div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ic">🪥</div><h3>Igiene e prevenzione</h3><p>Sedute di igiene professionale e controlli periodici per mantenere denti e gengive sani.</p></div>
+      <div class="svc"><div class="ic">🦷</div><h3>Odontoiatria generale</h3><p>Diagnosi, conservativa e cure quotidiane con un approccio attento e senza stress.</p></div>
+      <div class="svc"><div class="ic">😁</div><h3>Ortodonzia</h3><p>Apparecchi e allineatori per bambini e adulti, seguiti dal nostro ortodontista.</p></div>
+      <div class="svc"><div class="ic">⚙️</div><h3>Implantologia</h3><p>Sostituzione dei denti mancanti con impianti sicuri e duraturi.</p></div>
+      <div class="svc"><div class="ic">✨</div><h3>Estetica dentale</h3><p>Sbiancamento e trattamenti estetici per un sorriso luminoso e naturale.</p></div>
+      <div class="svc"><div class="ic">🩺</div><h3>Prima visita</h3><p>Valutazione completa dello stato di salute orale con piano di cura personalizzato.</p></div>
     </div>
   </div>
 </section>
 
-<section id="contatti">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="kick">Contatti</div>
-      <h2>Prenota la tua visita</h2>
-      <p>Siamo a Verona, in Via Goffredo Mameli 152. Chiamaci o scrivici: ti richiamiamo noi.</p>
+<section class="why" id="perche">
+  <div class="wrap why-grid">
+    <div class="why-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydhQELaEai_p2v_p5gFGFxpgUEMzUsEiB8hzd0OFO7KV2VVYzlApF_5GTLUquXFqKuM3P0ul3Fqhe_5Q8GkqcuG7JjTdfnozF1JG8FJpeTk2N9laaZyn0wYyQShakhMe7f4Ci5x-n7fuzpVO9XxOTgOl5l4mbaPFYj1Jq_3szVXSt59aVTgzr_si93UkQph1iAhZt57WjhbL2un7P9aktJsbPBpaO1Y1eKpf2q3mL_Er2DJHRLd3c6tcEwDzdlpNvAQy_2kPfDYj5ys6JDUrQoA3CJPYaAWO1BCA0YvBo6O1Fc52zWF8DGipOCsyU5dLSves0kUCS-_pm0FaFcWhnnJGd5POReS7xS1prU-tvrpWj5cjOJxZUMjky_YxyWZ14z-dth0U9zm0Hs79FkxoGm4dHo3EuPJ6ESwxNlNOJr3hAg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Studio You Dent">
     </div>
-    <div class="contact-grid">
-      <div class="contact-box">
-        <div class="info-row"><div class="ico">📍</div><div><h4>Indirizzo</h4><p>Via Goffredo Mameli, 152<br>37124 Verona (VR)</p></div></div>
-        <div class="info-row"><div class="ico">📞</div><div><h4>Telefono</h4><p><a href="tel:+390459788582">045 978 8582</a></p></div></div>
-        <div class="info-row"><div class="ico">🕒</div><div><h4>Orari</h4><p>Lun – Ven 9:00–19:00<br>Sabato su appuntamento</p></div></div>
-        <div class="info-row"><div class="ico">✉️</div><div><h4>Email</h4><p>info@youdentverona.it</p></div></div>
-        <a href="tel:+390459788582" class="btn btn-oro" style="margin-top:8px;">Chiama ora</a>
+    <div class="why-txt">
+      <span class="kicker">Perché sceglierci</span>
+      <h2>Un'esperienza dal dentista senza stress</h2>
+      <div class="feat"><div class="ic">🏥</div><div><h4>Struttura moderna</h4><p>Spazi ampi e accoglienti con attrezzature all'avanguardia, pensati per il tuo benessere.</p></div></div>
+      <div class="feat"><div class="ic">👩‍⚕️</div><div><h4>Team dedicato</h4><p>Sotto la guida del Direttore Sanitario Dott. Mykola, un'équipe giovane, competente e sempre disponibile.</p></div></div>
+      <div class="feat"><div class="ic">💬</div><div><h4>Ti spieghiamo tutto</h4><p>Ogni passaggio del trattamento spiegato con chiarezza e pazienza, per scelte consapevoli.</p></div></div>
+      <div class="feat"><div class="ic">👨‍👩‍👧</div><div><h4>Per tutta la famiglia</h4><p>Dai più piccoli agli adulti: seguiamo ogni paziente con cura e attenzione.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head-c">
+      <div class="kicker">Il nostro studio</div>
+      <h2>Uno spazio pensato per te</h2>
+    </div>
+    <div class="gal-grid">
+      <figure class="wide tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydh22XTIPAKYmtRm7YL0E4YmulcMzgWQXQEWdRH6hHFtX-jsh8UxGDSdm8u7oJZWzOpBFQF4dorjTPP2n7Kndbw7dMUBVImL_KJOa2NPsecFiY41JOPSAoQhCb-aA5CLOZtFGVrHgZqWNJJcT7BGE7yrB9ujecGmCWC7pF4j6TNP0LNNfkIXNqvOP5YGIwM63ehXiFRGXC4VWchtC0myO7ghR81wjLLewVjJkN5JObJO37nclONDqhld8wmDgTTnQAIJRlhQlwk10aUeobRkFoRZNSOUyCrOy0g-78EN1QLwRVIM7uHH1V7YwyXM9xMaNNIHI-xxAGjxxY_Gx9eJEy1N8SlkLr9bLcUk_xm-scwsC_94a7gHUrv6IrSocGk791lijJyRi0dheN-7OQvYN_xZb93DHYx50xXh9-hLAexBWo5DBvpfXiov8nF2yg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Studio"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydhQELaEai_p2v_p5gFGFxpgUEMzUsEiB8hzd0OFO7KV2VVYzlApF_5GTLUquXFqKuM3P0ul3Fqhe_5Q8GkqcuG7JjTdfnozF1JG8FJpeTk2N9laaZyn0wYyQShakhMe7f4Ci5x-n7fuzpVO9XxOTgOl5l4mbaPFYj1Jq_3szVXSt59aVTgzr_si93UkQph1iAhZt57WjhbL2un7P9aktJsbPBpaO1Y1eKpf2q3mL_Er2DJHRLd3c6tcEwDzdlpNvAQy_2kPfDYj5ys6JDUrQoA3CJPYaAWO1BCA0YvBo6O1Fc52zWF8DGipOCsyU5dLSves0kUCS-_pm0FaFcWhnnJGd5POReS7xS1prU-tvrpWj5cjOJxZUMjky_YxyWZ14z-dth0U9zm0Hs79FkxoGm4dHo3EuPJ6ESwxNlNOJr3hAg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Ambiente"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydjer6VGnyfupcKCXxYvzaZIEVrIWFAYdrj6olcsVp4DoizKQ9OX1ILtEMl8L4YVeNmq1ITkfkpInRrMJVccEGeryRXxKS9dUXRfzUGVcq1rUW0FdqowjI2GwJzyhmY6DHbNDjoNDyJS6Gnk57sTQIDrZ4nEjWWaDV_88tcCE8Wd5ShfFsprXMT_AqDGr8lH_Tq4ovxjqzv38b-_Rr33d8EqMeWmW0qW8qoCg0V7XDeGHMO-P1CQhN16np2qyOzpXJujafxRFXXxRDgZ6oA1k5-d53onJhsr6ugUHXXGJWIUpEmpxQypUmmjH2tay32scX9C38Bcm-baE6_ihNUAj2V5qLl_yd15_sjunKgdVllafRcx0PZyXMDPNROxHy19OWN8A3lOXO3ef-9Y9_wNPlGiz55tvrvOzaZYQaO8GI459KYI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydhbUaTH1Fk8fmbzX78DBs6BC1K1h3soF_1_-lgITsc9JFJqNLs07KPJ_rjZK0xo7J7-9LaNxQS29wa1e1gwaw1kowKuVkTfRKbTXSxec62H8FU3sFnYCsu67FLNzKMm255BNoZD-lyFE92qNl2F1cq310J5qA0XbD-z6HSzWRVCY1orGtZIrqAgQDgLZHlBx32EpAR47JX0oTSnZ1wDZfEo9H6uPTSuhEz22dQzkguUUoq9hOXOwQRRQ1FGlM4zMzMAO5l8Kh96kgWZnJeS6oQSSlSVfWidr7ws_Ksc-M5y9kNmCVPZxBAWD6GXkEvaBn429dM24Qz65JZARlrB6ZK_ZNgvWcWFdqMb4dRaJCGpz88c47oxZmTsoFz8niXUFA28JCEhUXXfcfQ7yyDJEXdd32tY5NT_1rN_rgflZIu2lDGqE6f2e-vMtWzGuQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Poltrona"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydhWUY_LCW6at7LVywBSkBKHZ_D_Rz8ieMKJfzHEEjDXkfSzj3cSfaoOZ7OAo4lTc1r_609mCp2v3GD3idnk9bcJTLfWwHX9oBc9kj5fJ2QnaKEELMlU30B2YX_Hq1RuxlC9X0Zh2efr5J_SaDDPccqpwu4WSPssldvn2t99R_VgV9CLLxZNWi2pbtbHg_wTQx0O8-RfvPYzFghwTJrjGyF_9z304W4o25AGIE9eRMHAAStoMtHvlWUjmfTFvdaQ1WrJdqEnR6HeJEeJpHp4vNW_4eVP3Py8vRea-OVr0HappUw4jdt8cI6YPnha85XpQdV4QaGG6slU3kG8jq43y9gDiNxKXOC6ngvv4JR4M5xdNXimOhmAM-mqrFmXwE3y84zscHOgwLRt3sTOVS0kzp_vIyotVlr-cc47KRcd6pTWO02l&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Reception"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="head-c">
+      <div class="kicker" style="color:var(--accent)">Dicono di noi</div>
+      <h2>4,9 su 143 recensioni</h2>
+      <p>La soddisfazione dei nostri pazienti è il nostro biglietto da visita.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Professionista molto competente, attento e gentile. Mi ha fatto sentire subito a mio agio, spiegandomi ogni passaggio con chiarezza e pazienza. Studio pulito e ben organizzato, staff cordiale. Tutta la famiglia è seguita qui.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocJWbyWkswBR6ak4AkpVRUTIPGrjASdirDveVVzsU9rIv3I=s128-c0x00000000-cc-rp-mo" alt="Luba"><div><b>Luba Nedilska</b><span>4 mesi fa</span></div></div>
       </div>
-      <iframe class="map" loading="lazy" allowfullscreen
-        src="https://www.google.com/maps?q=Via+Goffredo+Mameli+152,+37124+Verona&output=embed"></iframe>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Esperienza superlativa! Struttura modernissima con attrezzature all'avanguardia, spazi ampi e accoglienti. Il Dott. Mykola e la Dott.ssa Olga sono professionali e rassicuranti. Ogni visita è senza stress e davvero piacevole.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocLkvhfJ_1uSck1eGkd9WBXjvJNlypBdzdWCbSQLQGuhYbkIhg=s128-c0x00000000-cc-rp-mo" alt="Domenico"><div><b>Domenico</b><span>5 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“L'équipe è formata da personale gentile e professionale, sanno prendersi cura dei pazienti. Un centro che sicuramente consiglio!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjU4RxoS9sRuBT_1_AudcqHSGjHVwa7jAAWhn6dwvh7TUluu5h4U=s128-c0x00000000-cc-rp-mo-ba4" alt="Silvia"><div><b>Silvia Caporaso</b><span>una settimana fa</span></div></div>
+      </div>
+    </div>
+    <div class="rev-foot"><a href="https://maps.google.com/?cid=7634464801010499987" target="_blank" rel="noopener">Leggi tutte le 143 recensioni su Google →</a></div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Prenota la tua prima visita</h2>
+    <p>Scegli l'orario che preferisci comodamente online, oppure chiamaci: pensiamo a tutto noi.</p>
+    <div class="btns">
+      <a href="https://prenota.alfadocs.com/p/verona-ricaricadent-verona-21155" target="_blank" rel="noopener" class="btn btn-white">Prenota online</a>
+      <a href="tel:+390459788582" class="btn btn-out" style="color:#fff;border-color:rgba(255,255,255,.5)">Chiama 045 978 8582</a>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="contatti">
+  <div class="wrap">
+    <div class="head-c">
+      <div class="kicker">Dove siamo</div>
+      <h2>Orari &amp; Contatti</h2>
+    </div>
+    <div class="info-grid">
+      <div class="hours-card">
+        <h3>Orari di apertura</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>09:00 – 19:00</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>09:00 – 19:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>09:00 – 19:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>09:00 – 19:00</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>09:00 – 19:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>Chiuso</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>Chiuso</span></li>
+        </ul>
+        <div class="contact-rows">
+          <div class="crow"><div class="ic">📍</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=7634464801010499987" target="_blank" rel="noopener">Via Goffredo Mameli 152, 37124 Verona (VR)</a></div></div>
+          <div class="crow"><div class="ic">📞</div><div><h4>Telefono</h4><a href="tel:+390459788582">045 978 8582</a></div></div>
+        </div>
+        <div class="info-cta">
+          <a href="https://prenota.alfadocs.com/p/verona-ricaricadent-verona-21155" target="_blank" rel="noopener" class="btn btn-teal">Prenota online</a>
+          <a href="tel:+390459788582" class="btn btn-ghost">Chiama ora</a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Goffredo+Mameli+152,+37124+Verona&output=embed"></iframe>
+      </div>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <h4>Centro Dentistico You Dent</h4>
-        <p>Via Goffredo Mameli 152, 37124 Verona (VR)</p>
-        <p>Tel. 045 978 8582</p>
-      </div>
-      <div>
-        <h4>Link utili</h4>
-        <p><a href="#servizi">Servizi</a> · <a href="#perche">Perché noi</a> · <a href="#contatti">Contatti</a></p>
-      </div>
+    <div class="brand" style="display:inline-flex"><span class="mk">🦷</span>You<span>Dent</span></div>
+    <div class="foot-line" style="border:0;padding-top:0;margin-top:8px;opacity:.75">Centro Dentistico · Via Goffredo Mameli 152, Verona</div>
+    <div class="socials">
+      <a href="https://prenota.alfadocs.com/p/verona-ricaricadent-verona-21155" target="_blank" rel="noopener" title="Prenota">🗓</a>
+      <a href="tel:+390459788582" title="Telefono">☎</a>
+      <a href="https://maps.google.com/?cid=7634464801010499987" target="_blank" rel="noopener" title="Mappa">📍</a>
     </div>
-    <div class="foot-bottom">
-      © 2026 Centro Dentistico You Dent — Tutti i diritti riservati · P.IVA da inserire<br>
-      <span style="opacity:.6;font-size:.78rem;">Sito dimostrativo realizzato da HubTec — bozza non ufficiale a scopo di proposta commerciale.</span>
-    </div>
+    <div class="foot-line">© 2026 Centro Dentistico You Dent · Via Goffredo Mameli 152, 37124 Verona · P.IVA da inserire</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
   </div>
 </footer>
 
+<div class="mobile-bar">
+  <a href="tel:+390459788582" class="call">📞 Chiama</a>
+  <a href="https://prenota.alfadocs.com/p/verona-ricaricadent-verona-21155" target="_blank" rel="noopener" class="book">Prenota online</a>
+</div>
+
+<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
+
 <script>
-  document.querySelectorAll('a[href^="#"]').forEach(a=>{
-    a.addEventListener('click',e=>{
-      const t=document.querySelector(a.getAttribute('href'));
-      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
-    });
-  });
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1400');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+const periods={1:[900,1900],2:[900,1900],3:[900,1900],4:[900,1900],5:[900,1900],6:null,0:null};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const p=periods[day],badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+if(p&&hm>=p[0]&&hm<p[1]){badge.className='open-badge open';txt.textContent='Aperto ora';}
+else{badge.className='open-badge closed';txt.textContent='Chiuso ora';}
 </script>
 </body>
 </html>
