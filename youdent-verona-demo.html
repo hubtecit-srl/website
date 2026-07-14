@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro Dentistico You Dent | Dentista a Verona</title>
+<meta name="description" content="Centro Dentistico You Dent a Verona: igiene, implantologia, ortodonzia ed estetica dentale. Prenota la tua visita in Via Goffredo Mameli 152.">
+<style>
+  :root{
+    --blu:#0a6e8a; --blu-scuro:#084f63; --azzurro:#e8f5f9;
+    --testo:#1f2a30; --grigio:#5b6b73; --bianco:#ffffff; --oro:#c9a24b;
+    --radius:14px; --ombra:0 8px 30px rgba(8,79,99,.10);
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:'Segoe UI',system-ui,-apple-system,Arial,sans-serif;color:var(--testo);line-height:1.6;background:var(--bianco);}
+  a{text-decoration:none;color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px;}
+  /* Header */
+  header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid #eef2f4;}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:74px;}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.3rem;color:var(--blu-scuro);}
+  .logo span{color:var(--oro);}
+  .logo .tooth{width:34px;height:34px;background:var(--blu);border-radius:50% 50% 45% 45%;display:inline-flex;align-items:center;justify-content:center;color:#fff;font-size:1rem;}
+  nav ul{display:flex;gap:26px;list-style:none;font-weight:600;font-size:.95rem;}
+  nav a:hover{color:var(--blu);}
+  .cta-tel{background:var(--blu);color:#fff!important;padding:11px 20px;border-radius:40px;font-weight:700;transition:.2s;}
+  .cta-tel:hover{background:var(--blu-scuro);}
+  .menu-btn{display:none;background:none;border:0;font-size:1.6rem;color:var(--blu-scuro);cursor:pointer;}
+  /* Hero */
+  .hero{background:linear-gradient(135deg,#0a6e8a 0%,#084f63 100%);color:#fff;position:relative;overflow:hidden;}
+  .hero::after{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;background:rgba(255,255,255,.06);border-radius:50%;}
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding:72px 0;}
+  .hero h1{font-size:2.8rem;line-height:1.15;margin-bottom:18px;font-weight:800;}
+  .hero p.lead{font-size:1.18rem;opacity:.94;margin-bottom:28px;max-width:520px;}
+  .hero-badges{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;}
+  .badge{background:rgba(255,255,255,.12);padding:9px 16px;border-radius:30px;font-size:.9rem;font-weight:600;}
+  .hero-cta{display:flex;gap:14px;flex-wrap:wrap;}
+  .btn{display:inline-block;padding:15px 30px;border-radius:44px;font-weight:700;transition:.2s;font-size:1rem;}
+  .btn-oro{background:var(--oro);color:#3a2c07;}
+  .btn-oro:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(201,162,75,.4);}
+  .btn-ghost{background:transparent;color:#fff;border:2px solid rgba(255,255,255,.6);}
+  .btn-ghost:hover{background:rgba(255,255,255,.12);}
+  .hero-card{background:#fff;color:var(--testo);border-radius:var(--radius);padding:28px;box-shadow:var(--ombra);}
+  .hero-card h3{color:var(--blu-scuro);margin-bottom:14px;font-size:1.15rem;}
+  .rating{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
+  .stars{color:var(--oro);font-size:1.25rem;letter-spacing:2px;}
+  .rating b{font-size:1.4rem;color:var(--blu-scuro);}
+  .hours-mini{font-size:.92rem;color:var(--grigio);border-top:1px solid #eef2f4;padding-top:14px;margin-top:6px;}
+  /* Sezioni */
+  section{padding:76px 0;}
+  .sec-head{text-align:center;max-width:640px;margin:0 auto 50px;}
+  .sec-head .kick{color:var(--oro);font-weight:700;letter-spacing:2px;text-transform:uppercase;font-size:.82rem;}
+  .sec-head h2{font-size:2.1rem;color:var(--blu-scuro);margin:8px 0 12px;}
+  .sec-head p{color:var(--grigio);}
+  /* Servizi */
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+  .card{background:#fff;border:1px solid #eef2f4;border-radius:var(--radius);padding:30px;transition:.25s;}
+  .card:hover{transform:translateY(-5px);box-shadow:var(--ombra);border-color:transparent;}
+  .card .ico{width:56px;height:56px;background:var(--azzurro);color:var(--blu);border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:16px;}
+  .card h3{color:var(--blu-scuro);margin-bottom:8px;font-size:1.2rem;}
+  .card p{color:var(--grigio);font-size:.96rem;}
+  /* Perché */
+  .why{background:var(--azzurro);}
+  .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center;}
+  .stat b{display:block;font-size:2.4rem;color:var(--blu);font-weight:800;}
+  .stat span{color:var(--grigio);font-weight:600;}
+  /* Contatti */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;}
+  .info-row{display:flex;gap:14px;align-items:flex-start;margin-bottom:22px;}
+  .info-row .ico{width:46px;height:46px;flex:0 0 46px;background:var(--blu);color:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.2rem;}
+  .info-row h4{color:var(--blu-scuro);font-size:1rem;}
+  .info-row p{color:var(--grigio);}
+  .map{width:100%;height:100%;min-height:340px;border:0;border-radius:var(--radius);box-shadow:var(--ombra);}
+  .contact-box{background:#fff;border:1px solid #eef2f4;border-radius:var(--radius);padding:30px;}
+  /* Footer */
+  footer{background:var(--blu-scuro);color:#cfe3ea;padding:40px 0 22px;}
+  .foot-grid{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;margin-bottom:24px;}
+  footer h4{color:#fff;margin-bottom:8px;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;font-size:.85rem;opacity:.8;text-align:center;}
+  @media(max-width:900px){
+    .hero-grid,.contact-grid{grid-template-columns:1fr;}
+    .grid{grid-template-columns:1fr 1fr;}
+    .why-grid{grid-template-columns:1fr 1fr;gap:30px;}
+    nav ul{display:none;}
+    .menu-btn{display:block;}
+    .hero h1{font-size:2.1rem;}
+  }
+  @media(max-width:560px){.grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#" class="logo"><span class="tooth">🦷</span>You<span>Dent</span></a>
+    <nav><ul>
+      <li><a href="#servizi">Servizi</a></li>
+      <li><a href="#perche">Perché noi</a></li>
+      <li><a href="#contatti">Contatti</a></li>
+    </ul></nav>
+    <a href="tel:+390459788582" class="cta-tel">📞 045 978 8582</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <h1>Il tuo sorriso in mani sicure, nel cuore di Verona</h1>
+      <p class="lead">Centro Dentistico You Dent: cure odontoiatriche complete, tecnologia moderna e un team che mette il paziente al primo posto. A Borgo Trento, in Via Goffredo Mameli 152.</p>
+      <div class="hero-badges">
+        <span class="badge">✔ Prima visita e preventivo</span>
+        <span class="badge">✔ Tecnologie digitali</span>
+        <span class="badge">✔ Pagamenti personalizzati</span>
+      </div>
+      <div class="hero-cta">
+        <a href="tel:+390459788582" class="btn btn-oro">Prenota una visita</a>
+        <a href="#servizi" class="btn btn-ghost">Scopri i servizi</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3>La fiducia dei pazienti veronesi</h3>
+      <div class="rating">
+        <span class="stars">★★★★★</span>
+        <b>4,9</b>
+      </div>
+      <p style="color:var(--grigio);font-size:.95rem;">Valutazione media su oltre <b>140 recensioni</b> Google verificate.</p>
+      <div class="hours-mini">
+        <b style="color:var(--blu-scuro)">Orari</b><br>
+        Lun – Ven: 9:00 – 19:00<br>
+        Sabato: su appuntamento<br>
+        Domenica: chiuso
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servizi">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kick">I nostri servizi</div>
+      <h2>Cure complete per tutta la famiglia</h2>
+      <p>Dalla prevenzione all'estetica, un unico centro per ogni esigenza del tuo sorriso.</p>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="ico">🪥</div><h3>Igiene e prevenzione</h3><p>Sedute di igiene professionale e controlli periodici per mantenere denti e gengive sani nel tempo.</p></div>
+      <div class="card"><div class="ico">🦷</div><h3>Implantologia</h3><p>Sostituzione dei denti mancanti con impianti dentali sicuri e duraturi, per tornare a masticare e sorridere.</p></div>
+      <div class="card"><div class="ico">😁</div><h3>Ortodonzia</h3><p>Apparecchi tradizionali e allineatori trasparenti per bambini e adulti, per un sorriso allineato.</p></div>
+      <div class="card"><div class="ico">✨</div><h3>Estetica dentale</h3><p>Sbiancamento professionale e faccette per un sorriso luminoso e naturale.</p></div>
+      <div class="card"><div class="ico">🔧</div><h3>Conservativa e protesi</h3><p>Otturazioni estetiche, corone e protesi realizzate su misura con materiali di qualità.</p></div>
+      <div class="card"><div class="ico">🩺</div><h3>Prima visita</h3><p>Valutazione completa dello stato di salute orale con piano di cura e preventivo trasparente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="perche" class="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kick">Perché sceglierci</div>
+      <h2>Un centro dentistico su cui contare</h2>
+    </div>
+    <div class="why-grid">
+      <div class="stat"><b>4,9★</b><span>Valutazione Google</span></div>
+      <div class="stat"><b>140+</b><span>Recensioni positive</span></div>
+      <div class="stat"><b>6+</b><span>Aree di specializzazione</span></div>
+      <div class="stat"><b>100%</b><span>Preventivi trasparenti</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contatti">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="kick">Contatti</div>
+      <h2>Prenota la tua visita</h2>
+      <p>Siamo a Verona, in Via Goffredo Mameli 152. Chiamaci o scrivici: ti richiamiamo noi.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-box">
+        <div class="info-row"><div class="ico">📍</div><div><h4>Indirizzo</h4><p>Via Goffredo Mameli, 152<br>37124 Verona (VR)</p></div></div>
+        <div class="info-row"><div class="ico">📞</div><div><h4>Telefono</h4><p><a href="tel:+390459788582">045 978 8582</a></p></div></div>
+        <div class="info-row"><div class="ico">🕒</div><div><h4>Orari</h4><p>Lun – Ven 9:00–19:00<br>Sabato su appuntamento</p></div></div>
+        <div class="info-row"><div class="ico">✉️</div><div><h4>Email</h4><p>info@youdentverona.it</p></div></div>
+        <a href="tel:+390459788582" class="btn btn-oro" style="margin-top:8px;">Chiama ora</a>
+      </div>
+      <iframe class="map" loading="lazy" allowfullscreen
+        src="https://www.google.com/maps?q=Via+Goffredo+Mameli+152,+37124+Verona&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>Centro Dentistico You Dent</h4>
+        <p>Via Goffredo Mameli 152, 37124 Verona (VR)</p>
+        <p>Tel. 045 978 8582</p>
+      </div>
+      <div>
+        <h4>Link utili</h4>
+        <p><a href="#servizi">Servizi</a> · <a href="#perche">Perché noi</a> · <a href="#contatti">Contatti</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      © 2026 Centro Dentistico You Dent — Tutti i diritti riservati · P.IVA da inserire<br>
+      <span style="opacity:.6;font-size:.78rem;">Sito dimostrativo realizzato da HubTec — bozza non ufficiale a scopo di proposta commerciale.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(a=>{
+    a.addEventListener('click',e=>{
+      const t=document.querySelector(a.getAttribute('href'));
+      if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'});}
+    });
+  });
+</script>
+</body>
+</html>
