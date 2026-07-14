@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estetica Anna — Centro estetico a Verona | Trattamenti viso e corpo</title>
+<meta name="description" content="Estetica Anna, centro estetico a Verona in Via Ghetto 63B. Trattamenti viso, corpo, sopracciglia e abbronzatura con prodotti naturali. 4,9★ su 109 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#f7f2ec; --paper:#fdfbf8; --sage:#9aa88f; --sage-d:#6d7b64; --blush:#d8b5a8;
+  --clay:#b0866a; --ink:#413a33; --muted:#8b8178; --line:#e9e0d6; --gold:#b5946a;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+  --sh:0 20px 60px rgba(65,58,51,.10); --r:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.75;font-weight:300;-webkit-font-smoothing:antialiased}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
+.kicker{font-family:var(--sans);font-weight:400;letter-spacing:.36em;text-transform:uppercase;font-size:.7rem;color:var(--clay)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:80px}
+.brand{font-family:var(--serif);font-size:1.55rem;color:var(--paper);transition:.4s;letter-spacing:.03em}
+.brand small{display:block;font-family:var(--sans);font-size:.56rem;letter-spacing:.42em;text-transform:uppercase;font-weight:400;margin-top:-3px;opacity:.85}
+header nav{display:flex;gap:34px;align-items:center}
+header nav a{color:rgba(253,251,248,.9);font-size:.88rem;letter-spacing:.04em;transition:.2s}
+header nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:400;letter-spacing:.05em;font-size:.86rem;padding:13px 28px;border-radius:40px;transition:.3s;cursor:pointer;border:1px solid transparent}
+.btn-clay{background:var(--clay);color:#fff}
+.btn-clay:hover{background:#9a725a;transform:translateY(-2px)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-line:hover{background:rgba(255,255,255,.14)}
+.btn-sage{background:var(--sage-d);color:#fff}
+.btn-sage:hover{background:#5c6a54;transform:translateY(-2px)}
+header.scrolled{background:rgba(247,242,236,.94);backdrop-filter:blur(10px);box-shadow:0 4px 20px rgba(65,58,51,.06)}
+header.scrolled .brand{color:var(--ink)}
+header.scrolled nav a{color:var(--muted)}
+header.scrolled nav a:hover{color:var(--ink)}
+.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:1.6rem;cursor:pointer}
+header.scrolled .menu-toggle{color:var(--ink)}
+
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydj2iq2J_gkHlxxG55pF6YmuX1-sdoxeZs--9jqzN7UxGP7AMehnwlOh_91xAZbRSfaKf9XOBcphF22KI_eCKl1DFJ0iuEXhi-KWSKyaRMwmY0AdV8-FdxU5SRfkXx6ax0aRfR4yQKT6Czt6_gjStVBClHWiTmi2SkRlolWtP6eSRf7woOB-vCPMp998MWqM8sZVcpY1nJ_izp5q4XLT08uWXL54fxGJz8Ru1IuEQ5y1sIvANmjWua2CEx7l6EFJEpoihXzNpAhan3RV780G6Frz6Rv6BF7t2qf3qQ-ZMnZSY_Nd7eJiJUf0wPeWD7Hl0U7xdixK-QyZNAlMlUaF45VZV0HxaC0dJ0t4tT_V8i7qdSlFokaJ9oIXHPPjqNfddiYfyjs1ML9XA00vw5Z-bkzz1Cmo2Mm-EDK7v_EnMK5c-p9T&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.05)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(65,58,51,.42) 0%,rgba(65,58,51,.28) 40%,rgba(65,58,51,.72) 100%)}
+.hero-inner{position:relative;z-index:2;padding:120px 0 80px}
+.hero .kicker{color:#e8d3c6}
+.hero h1{font-size:clamp(2.9rem,7vw,5.4rem);line-height:1.04;margin:16px 0 12px;font-weight:600}
+.hero h1 em{font-style:italic;color:#eeddcf}
+.hero .sub{font-size:1.18rem;max-width:520px;opacity:.96;margin-bottom:28px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px}
+.rating-pill{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);padding:11px 20px;border-radius:50px}
+.rating-pill .stars{color:#f0c987;letter-spacing:2px}
+.rating-pill b{font-family:var(--serif);font-size:1.2rem}
+.rating-pill span{font-size:.84rem;opacity:.92}
+
+section{padding:100px 0}
+.head{text-align:center;max-width:600px;margin:0 auto 56px}
+.head h2{font-size:clamp(2.1rem,4.4vw,3.1rem);margin:12px 0;color:var(--ink)}
+.head p{color:var(--muted)}
+.leaf{color:var(--sage);font-size:1.3rem;letter-spacing:.4em}
+
+.about{background:var(--paper)}
+.about-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:60px;align-items:center}
+.about-txt .kicker{display:block;margin-bottom:14px}
+.about-txt h2{font-size:clamp(2rem,4vw,2.9rem);line-height:1.12;margin-bottom:18px}
+.about-txt p{color:var(--muted);margin-bottom:15px}
+.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--clay);margin-top:6px}
+.about-img{position:relative}
+.about-img img{width:100%;height:540px;object-fit:cover;border-radius:200px 200px var(--r) var(--r)}
+.about-badge{position:absolute;bottom:-24px;left:-24px;background:var(--sage-d);color:#fff;border-radius:50%;width:130px;height:130px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;box-shadow:var(--sh)}
+.about-badge b{font-family:var(--serif);font-size:2.1rem;line-height:1}
+.about-badge span{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;margin-top:4px;opacity:.9}
+
+.services{background:var(--cream)}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.svc{background:var(--paper);border-radius:var(--r);padding:38px 30px;transition:.3s;border:1px solid var(--line)}
+.svc:hover{transform:translateY(-6px);box-shadow:var(--sh)}
+.svc .ic{width:56px;height:56px;border-radius:50%;background:#eef1ea;color:var(--sage-d);display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px}
+.svc h3{font-size:1.4rem;color:var(--ink);margin-bottom:8px}
+.svc p{color:var(--muted);font-size:.95rem}
+.svc-note{text-align:center;margin-top:30px;color:var(--muted);font-style:italic;font-family:var(--serif);font-size:1.25rem}
+
+.gallery{background:var(--paper)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:14px}
+.gal-grid figure{overflow:hidden;border-radius:var(--r);cursor:pointer;position:relative}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.gal-grid figure:hover img{transform:scale(1.08)}
+.gal-grid .tall{grid-row:span 2}
+.gal-grid .wide{grid-column:span 2}
+
+.reviews{background:var(--sage-d);color:#f3f1ea}
+.reviews .head h2{color:#fff}
+.reviews .head p{color:rgba(243,241,234,.82)}
+.reviews .leaf{color:#cdd7c4}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:var(--r);padding:30px}
+.rev .stars{color:#f0c987;letter-spacing:3px;margin-bottom:12px}
+.rev p{color:rgba(243,241,234,.92);font-size:.96rem;margin-bottom:18px;font-weight:300}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.rev .who b{font-weight:500;font-size:.92rem;color:#fff;font-family:var(--sans)}
+.rev .who span{display:block;font-size:.76rem;color:rgba(243,241,234,.6)}
+.rev-foot{text-align:center;margin-top:34px}
+.rev-foot a{color:#fff;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:2px;font-size:.9rem}
+
+.info{background:var(--cream)}
+.info-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:50px;align-items:stretch}
+.hours-card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:38px}
+.hours-card h3{font-size:1.7rem;margin-bottom:6px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;padding:6px 14px;border-radius:40px;margin:12px 0 20px}
+.open-badge.open{background:#e7f0e3;color:#5c7a4e}
+.open-badge.closed{background:#f4e6df;color:#a5674b}
+.open-badge .dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:11px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted)}
+.hours-list li:last-child{border-bottom:0}
+.hours-list li.today{color:var(--ink);font-weight:500}
+.hours-list li.today .d{color:var(--clay)}
+.contact-rows{margin-top:24px}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
+.crow .ic{width:40px;height:40px;flex:0 0 40px;background:#eef1ea;color:var(--sage-d);border-radius:50%;display:flex;align-items:center;justify-content:center}
+.crow h4{font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--clay);font-weight:500;margin-bottom:2px}
+.crow a,.crow p{color:var(--ink);font-size:1rem}
+.info-cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.map-wrap{border-radius:var(--r);overflow:hidden;min-height:470px;box-shadow:var(--sh)}
+.map-wrap iframe{width:100%;height:100%;min-height:470px;border:0}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:58px 0 26px;text-align:center}
+footer .brand{color:#fff;font-size:1.8rem;display:inline-block;margin-bottom:10px}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;color:#fff;transition:.25s}
+.socials a:hover{background:var(--clay);border-color:var(--clay)}
+.foot-line{border-top:1px solid rgba(255,255,255,.12);margin-top:24px;padding-top:18px;font-size:.82rem;opacity:.6}
+.foot-note{font-size:.72rem;opacity:.45;margin-top:6px}
+
+.lb{position:fixed;inset:0;background:rgba(45,40,35,.94);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%;border-radius:8px}
+.lb .x{position:absolute;top:22px;right:30px;color:#fff;font-size:2rem;cursor:pointer;opacity:.8}
+.mobile-bar{display:none}
+
+@media(max-width:960px){
+  .about-grid,.info-grid{grid-template-columns:1fr;gap:44px}
+  .svc-grid,.rev-grid{grid-template-columns:1fr 1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  header nav{display:none}
+  .menu-toggle{display:block}
+}
+@media(max-width:560px){
+  .svc-grid,.rev-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
+  .hero h1{font-size:2.9rem}
+  section{padding:72px 0}
+  .header-cta{display:none}
+  .about-img img{height:420px}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:16px;font-size:.9rem;color:#fff;background:var(--clay);letter-spacing:.05em}
+  body{padding-bottom:54px}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand">Estetica Anna<small>Centro estetico · Verona</small></a>
+    <nav>
+      <a href="#storia">Chi siamo</a>
+      <a href="#trattamenti">Trattamenti</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="tel:+390458621514" class="btn btn-clay header-cta">Prenota</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').scrollIntoView()">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Centro estetico · Verona</div>
+    <h1>Prenditi cura di te,<br><em>ti aspettiamo</em></h1>
+    <p class="sub">Un angolo di benessere in Via Ghetto, dove ogni trattamento è pensato per te, con prodotti naturali e tutta la cura che meriti.</p>
+    <div class="hero-cta">
+      <a href="tel:+390458621514" class="btn btn-clay">Prenota il tuo trattamento</a>
+      <a href="#trattamenti" class="btn btn-line">Scopri i trattamenti</a>
+    </div>
+    <div class="rating-pill">
+      <span class="stars">★★★★★</span>
+      <b>4,9</b>
+      <span>su 109 recensioni Google</span>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="storia">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <span class="kicker">Chi siamo</span>
+      <h2>Un ambiente accogliente, come a casa</h2>
+      <p>Da Estetica Anna troverai molto più di un trattamento: un ambiente rilassante e curato, dove Anna e Maria mettono passione, gentilezza e competenza in ogni gesto.</p>
+      <p>Utilizziamo prodotti di origine naturale, perfetti anche per le pelli più sensibili, e ti consigliamo con sincerità il percorso più adatto a te. Perché prendersi cura di sé dovrebbe essere sempre un piccolo momento di coccole.</p>
+      <div class="sign">— ci si sente davvero a casa</div>
+    </div>
+    <div class="about-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydh76GbzKDZuE5l3470TuG35i0LkMxNNL6EULbNDMyLWYclB-9m7xsM8O5IQp4Lg9gUeDdcpurch7-0N9hMOhUwBvqKchuh-XhmnXpuzyQjKmCvLhH_y3SHT0XO-D8jiIbIrjIPcWR5nT-21FVDsSEundjWlzl-crgGT1iGRvk6F1F9fsgayT-Wl7srZLVEtky_svlJqbmoGlIkDYAfTLGGo6yeieyiTqnEzf0JTAb6w82RfCZ4llNmPpzThdT-eRfKspIWhaGZVrmnx0BEKtbRwwuMOnE82XMUVaqijd70OzasW3AFi0iRrc3N-qfIzioOQIsbWjHPIgNA4-L6pGwbnqc0Cb64fbTHqVnotPKMPhWszwT-eFBNOoLxGtgTRfFMrwZQvet1ysTptr_qiU6btJssu7qT3gkOtkK291PJMMu9a&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Estetica Anna">
+      <div class="about-badge"><b>4,9</b><span>109 recensioni</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="trattamenti">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">I trattamenti</span>
+      <h2>Bellezza e benessere su misura</h2>
+      <div class="leaf">❧</div>
+      <p>Viso, corpo e piccoli rituali di cura, con prodotti naturali di qualità.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="ic">✿</div><h3>Trattamenti viso</h3><p>Pulizia, trattamenti purificanti e idratanti su misura per la tua pelle, anche la più sensibile.</p></div>
+      <div class="svc"><div class="ic">◍</div><h3>Maschere specifiche</h3><p>Maschere in tessuto e trattamenti mirati, ad esempio per borse e occhiaie, per un viso disteso e luminoso.</p></div>
+      <div class="svc"><div class="ic">❀</div><h3>Sopracciglia &amp; make-up</h3><p>Ritocco e definizione delle sopracciglia con mano delicata, per uno sguardo sempre curato.</p></div>
+      <div class="svc"><div class="ic">☀</div><h3>Abbronzatura</h3><p>Lampada solare professionale Ergoline per un colorito sano e uniforme tutto l'anno.</p></div>
+      <div class="svc"><div class="ic">✧</div><h3>Trattamenti corpo</h3><p>Percorsi di benessere e cura del corpo per ritrovare leggerezza e relax.</p></div>
+      <div class="svc"><div class="ic">♡</div><h3>Coccole &amp; consulenza</h3><p>Consigli sinceri e trattamenti personalizzati: qui il cliente viene sempre coccolato.</p></div>
+    </div>
+    <p class="svc-note">Prezzi onesti e trasparenti — chiamaci per il listino completo e per il trattamento più adatto a te.</p>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Galleria</span>
+      <h2>Il nostro centro</h2>
+      <div class="leaf">❧</div>
+    </div>
+    <div class="gal-grid">
+      <figure class="wide"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydgEP98n4Hbf95vXwiJJHmbta7suflRWJoIlnowvcn_5lXOx212tsl_qcr4GF-fc6tjTKe75nEJ7ueGFRGJ5SgK86ldh5IKK7wikMAVeTCnndlp8VulfDQgOnK17fuwMPR0NIx4w7M9tUnxxfBsffnPSrKPUEyGIhVVGiW7zkYYA0NT0UZblwl4cgK3ulTLzLvUP-WbclPANb_FlMHnoCjmfn2nvDwQjkFuhWbrleCErTNYT3UZQowUV_uXrRUIIBKQL3m4IdYJoKUYB52Ipnbv5ccQFbCFtT1pNRdAmNJmv2AO6rMbcDbEW-JX4e2sgrwVJhUm0wzJA1FMekN3VBYHjyT4S_vZJFWkv2j6lyFV4tYU_YDlOYTcOkmSmkQBHoflWYaqp2KxyLEgd3xdlkGTIJ4z1hYi1jZVUEfk8bvI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Interno centro estetico"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydj2BJWNC2EqJpTqXxL1tWmAB_6HeseIfE2o2zGJFKVI18CVZh6hTk5ooOzngP5zi7CdEmC5nN1b7Pi18mTZ36r6giVR-SYKuDgw6cVuXHtKcAoSUALBs9QYnDFhjh1aMD4SNVIjJGCnFmvzC2tuUjwESuuJB4Lbz6m4_3r9ZlGKIEP-slzHXkM7wvka6QZMLt8AMe-akk4HtQ_7mDRW-buItiQagtXI03_BJ3LsBNVYOy9h1jGnOv-5rChMbMHymFWnbu461_LAsNN-uC_jKSfN8GbrpFH10CJvnvJMiy-jzTPOz7SzSTS5Wz_Kvf5g71eQbpFedLyy0XPt7WuT8iuPnLYQBFnBZqSfmQnf1rpFr0Bz6Vk5WVh56pxtsbnmL86eYPxweIuIT0VVgQtwkJFm6KYkdWlwvFFiG-IPXa8Lohss&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattamento"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydgEP98n4Hbf95vXwiJJHmbta7suflRWJoIlnowvcn_5lXOx212tsl_qcr4GF-fc6tjTKe75nEJ7ueGFRGJ5SgK86ldh5IKK7wikMAVeTCnndlp8VulfDQgOnK17fuwMPR0NIx4w7M9tUnxxfBsffnPSrKPUEyGIhVVGiW7zkYYA0NT0UZblwl4cgK3ulTLzLvUP-WbclPANb_FlMHnoCjmfn2nvDwQjkFuhWbrleCErTNYT3UZQowUV_uXrRUIIBKQL3m4IdYJoKUYB52Ipnbv5ccQFbCFtT1pNRdAmNJmv2AO6rMbcDbEW-JX4e2sgrwVJhUm0wzJA1FMekN3VBYHjyT4S_vZJFWkv2j6lyFV4tYU_YDlOYTcOkmSmkQBHoflWYaqp2KxyLEgd3xdlkGTIJ4z1hYi1jZVUEfk8bvI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydjsA1-GInxw5kovoYKUdI-QEgdzLqNFeN4DlrwEZJg7sFAjpT7YEJKjpzS-xpD9ljLEjUQKezi7685DYJGyidX6GaN0Kw0JJascfbpfTfntXe7OewcIa5QYmoSG--S1F6ziU4wp7VWrTQ4UeTCceBKOpfgN8R02dwFZExkpO28nJGhYyURXZZPOuTBoDqvkyHTM-W1HmhtEBYZXCqXtF7agyFVDj0iTPDJ83tO2OLq9kFPb4WniIGs5m85hCz6M170pGdlCKfrMZzmkX6hDegUXOQeOKAH-zmxY4S5I76oXzuIshGCxgYYSNXAe5_UHuCTN7miOYaaPYx79oqt6uAKtl7_jrC1fAiaUKLomqVMsurcYWqsrhJpJSGoZpREgXquZzs2oj1AIV60JdUiH2vDmY7xgcDKRzdeEcz_pM0ip-6z4&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Ambiente"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydh1hAi304HEoY_uEeJhTVRz7DNOJFMS8VkSRV_p7JygLWnF3uQ7Z6Aw2bfqG_CL3KtelGdwwR2aEboPAzdoMju9ohwOWXL2PwnnBMhimglQ8axRqXnMkwUWdrCUN5T1tvzXGHrPP8v3DpEfvbrQeymCSMKLtq4zpUira6OiWL2HLOmX76mfRhaSvM0cSpzvtr2iQgqOI5cNvD63FZ9hpybRmenOK2e0YCDAFyN6Vews1TtTaO4S59VS1LbBy1IuLknE6MHBX3MSeMPNmxQwmo1ri4YQKb2xe9-lDJo1y3jbAct8JXUk7m5dwNVkT6ClFiK5oZSHbqxAwKP_w-IZz6Er-mrJ4kyK6ppwQOTqGl_U3UI-Bxi5lKsi2id9oRSgQ55BlVPZbfJFYF9W4fcJp5dVOZzbQMs0Ts4iUzcwN_eVDg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Cabina"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydj2iq2J_gkHlxxG55pF6YmuX1-sdoxeZs--9jqzN7UxGP7AMehnwlOh_91xAZbRSfaKf9XOBcphF22KI_eCKl1DFJ0iuEXhi-KWSKyaRMwmY0AdV8-FdxU5SRfkXx6ax0aRfR4yQKT6Czt6_gjStVBClHWiTmi2SkRlolWtP6eSRf7woOB-vCPMp998MWqM8sZVcpY1nJ_izp5q4XLT08uWXL54fxGJz8Ru1IuEQ5y1sIvANmjWua2CEx7l6EFJEpoihXzNpAhan3RV780G6Frz6Rv6BF7t2qf3qQ-ZMnZSY_Nd7eJiJUf0wPeWD7Hl0U7xdixK-QyZNAlMlUaF45VZV0HxaC0dJ0t4tT_V8i7qdSlFokaJ9oIXHPPjqNfddiYfyjs1ML9XA00vw5Z-bkzz1Cmo2Mm-EDK7v_EnMK5c-p9T&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Estetica Anna"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dicono di noi</span>
+      <h2>Le parole delle nostre clienti</h2>
+      <div class="leaf">❧</div>
+      <p>4,9 stelle su 109 recensioni Google.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Trattamento viso purificante e idratante, poi una maschera per borse e occhiaie. Tutti prodotti naturali, si sente la differenza sulla pelle sensibile. Ambiente rilassante: Anna ti fa sentire a tuo agio. Consiglio a tutti!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjVJN_yK6gvCMXEIgctNxEtCPSJdUPO1sgeQqBx10D0E9P6EmhQ=s128-c0x00000000-cc-rp-mo" alt="Vittoria"><div><b>Vittoria Toffalini</b><span>recensione Google</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Bravissima e super precisa! Adoro la cura che mette in ogni servizio. Prezzi molto onesti, sincera nei consigli e ti mette sempre a tuo agio. Ambiente super accogliente: ci si sente a casa!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjX40LzHyXuoU9xr0AonySzTKEStHCitFLnJ23wjWSWPR95PBRiL=s128-c0x00000000-cc-rp-mo-ba2" alt="Stefania"><div><b>Stefania Morabito</b><span>recensione Google</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Centro estetico eccellente: gentilezza e professionalità di alto livello. Il personale è sempre accogliente e molto competente. Ottima la lampada solare Ergoline!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocIRrBG5-t05mL1Ow58W2sgM1Ya1ntbGSIXiJqZxcp2nYXFnLQ=s128-c0x00000000-cc-rp-mo" alt="Davide"><div><b>Davide Moletta</b><span>3 mesi fa</span></div></div>
+      </div>
+    </div>
+    <div class="rev-foot"><a href="https://maps.google.com/?cid=4526940053737465846" target="_blank" rel="noopener">Leggi tutte le 109 recensioni su Google →</a></div>
+  </div>
+</section>
+
+<section class="info" id="contatti">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dove siamo</span>
+      <h2>Orari &amp; Contatti</h2>
+      <div class="leaf">❧</div>
+    </div>
+    <div class="info-grid">
+      <div class="hours-card">
+        <h3>Orari di apertura</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>09:00 – 18:30</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>09:00 – 18:30</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>09:00 – 18:30</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>09:00 – 18:30</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>09:00 – 18:30</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>Chiuso</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>Chiuso</span></li>
+        </ul>
+        <div class="contact-rows">
+          <div class="crow"><div class="ic">◍</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=4526940053737465846" target="_blank" rel="noopener">Via Ghetto 63 B, 37137 Verona (VR)</a></div></div>
+          <div class="crow"><div class="ic">☎</div><div><h4>Telefono</h4><a href="tel:+390458621514">045 862 1514</a></div></div>
+        </div>
+        <div class="info-cta">
+          <a href="tel:+390458621514" class="btn btn-clay">Prenota ora</a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Ghetto+63B,+37137+Verona&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">Estetica Anna</div>
+    <div class="foot-line" style="border:0;opacity:.75;margin-top:0;padding-top:0">Centro estetico · Via Ghetto 63B, Verona</div>
+    <div class="socials">
+      <a href="tel:+390458621514" title="Telefono">☎</a>
+      <a href="https://maps.google.com/?cid=4526940053737465846" target="_blank" rel="noopener" title="Mappa">◍</a>
+    </div>
+    <div class="foot-line">© 2026 Estetica Anna · Via Ghetto 63B, 37137 Verona · P.IVA da inserire</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+390458621514">☎ Prenota il tuo trattamento</a>
+</div>
+
+<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1400');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+const periods={1:[900,1830],2:[900,1830],3:[900,1830],4:[900,1830],5:[900,1830],6:null,0:null};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const p=periods[day],badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+if(p&&hm>=p[0]&&hm<p[1]){badge.className='open-badge open';txt.textContent='Aperto ora';}
+else{badge.className='open-badge closed';txt.textContent='Chiuso ora';}
+</script>
+</body>
+</html>
