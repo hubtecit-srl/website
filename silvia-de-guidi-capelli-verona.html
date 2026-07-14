@@ -4,278 +4,249 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Silvia De Guidi Capelli — Parrucchiere a Verona (Golosine)</title>
-<meta name="description" content="Silvia De Guidi Capelli, parrucchiere a Verona in Via Golosine 117. Taglio, colore, acconciature sposa e trattamenti. 4,9★ su 71 recensioni. Prenota su WhatsApp.">
+<meta name="description" content="Silvia De Guidi Capelli, parrucchiere a Verona in Via Golosine 117. Taglio, colore, acconciature sposa e trattamenti. 4,9★ su 71 recensioni. Prenota.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#211b1c; --charcoal:#2c2426; --nude:#c9a98e; --rose:#b98a7a; --sand:#f6efe9;
-  --cream:#fbf7f3; --gold:#b8925a; --muted:#7c6f68; --line:#ece2d9; --white:#fff;
-  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
-  --sh:0 18px 50px rgba(44,36,38,.14); --sh-sm:0 8px 24px rgba(44,36,38,.08);
+  --dark:#241d18; --dark2:#1b1510; --cream:#f3ece2; --cream2:#efe5d8; --card:#f7f1e8;
+  --ink:#2e2620; --sub:#8a7d6f; --red:#b02a1c; --red-d:#94210f; --line:#e4d9c9; --white:#fff;
+  --f:'Archivo',system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:300;-webkit-font-smoothing:antialiased}
+body{font-family:var(--f);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased}
 a{text-decoration:none;color:inherit}
 img{display:block;max-width:100%}
-.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-h1,h2,h3,.serif{font-family:var(--serif)}
-.kicker{font-family:var(--sans);font-weight:500;letter-spacing:.32em;text-transform:uppercase;font-size:.72rem;color:var(--gold)}
+.wrap{max-width:1280px;margin:0 auto;padding:0 34px}
+.display{font-weight:900;letter-spacing:-.02em;line-height:.92;text-transform:uppercase}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.tag b{background:var(--red);color:#fff;padding:3px 9px;border-radius:4px;font-weight:700}
 
-header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.35s}
-header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
-.brand{font-family:var(--serif);font-size:1.55rem;font-weight:600;letter-spacing:.02em;color:var(--white);transition:.35s}
-.brand small{display:block;font-family:var(--sans);font-size:.58rem;letter-spacing:.4em;text-transform:uppercase;font-weight:400;opacity:.85;margin-top:-2px}
-header nav{display:flex;gap:34px;align-items:center}
-header nav a{color:rgba(255,255,255,.9);font-size:.9rem;font-weight:400;letter-spacing:.03em;transition:.2s}
-header nav a:hover{color:var(--white)}
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:500;letter-spacing:.04em;font-size:.9rem;padding:13px 26px;border-radius:40px;transition:.25s;cursor:pointer;border:1px solid transparent}
-.btn-wa{background:#25d366;color:#fff}
-.btn-wa:hover{background:#1eb457;transform:translateY(-2px)}
-.btn-ink{background:var(--ink);color:#fff}
-.btn-ink:hover{background:#000;transform:translateY(-2px)}
-.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
-.btn-line:hover{background:rgba(255,255,255,.12)}
-header.scrolled{background:rgba(251,247,243,.95);backdrop-filter:blur(10px);box-shadow:var(--sh-sm)}
-header.scrolled .brand{color:var(--ink)}
-header.scrolled nav a{color:var(--muted)}
-header.scrolled nav a:hover{color:var(--ink)}
-.menu-toggle{display:none;background:none;border:0;color:#fff;font-size:1.7rem;cursor:pointer}
-header.scrolled .menu-toggle{color:var(--ink)}
+header{position:absolute;top:0;left:0;right:0;z-index:40}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:88px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:1.25rem;letter-spacing:.02em;color:#f3ece2}
+.brand .mk{width:26px;height:26px;background:var(--red);border-radius:6px;display:inline-block;transform:rotate(45deg)}
+.hd-right{display:flex;align-items:center;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--f);font-weight:600;font-size:.9rem;padding:13px 22px;border-radius:8px;cursor:pointer;transition:.22s;border:1px solid transparent}
+.btn-white{background:#f3ece2;color:var(--ink)}
+.btn-white:hover{background:#fff}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-dark{background:rgba(255,255,255,.1);color:#f3ece2;border-color:rgba(255,255,255,.25)}
+.btn-dark:hover{background:rgba(255,255,255,.18)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
 
-.hero{position:relative;min-height:100vh;display:flex;align-items:center;color:#fff;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhkn1_wypF8vun8UIeN1AiU0SdFqyqytPuy1ja3zafkjuajLieJPk4kRb_sKMfiSKi9mKxewejZOX9I3bHI4LSAqL4ozl5RG8j5y-H5eZPI2TwbFGHNvMZr2bgJ05SSL-ZN_vMohFiBfpNASTZZ7vhm-vEkiPGddE5zZjrIvtIun-_9TVYMatqeFHirkwycIYDVoW0k1Q8lF7zwyMyIxKnC6xNyfquod-ybV_mHPFWYLKxhSQiPIog2ogcl5733-TqJ9y7r1C4Xro9C2rnaSCwnV9DHdxnDWPm3vagiiR04sMB6o016T6cphseZGBjl2NxjZjFaS6gEdiKfP6J5mB-UgzuAenp72wog5V5nCrnGimW6JY6J0coubRCVWvlWmfQuJf9StjZthYWL4MAC7MAZwHZ1S1kAjGhr8m0oSFjFymWS&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.05)}
-.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(33,27,28,.55) 0%,rgba(33,27,28,.35) 40%,rgba(33,27,28,.8) 100%)}
-.hero-inner{position:relative;z-index:2;padding:120px 0 70px}
-.hero .kicker{color:#e7d8c4}
-.hero h1{font-size:clamp(2.8rem,7vw,5.4rem);font-weight:600;line-height:1.02;margin:14px 0 10px;letter-spacing:.01em}
-.hero .sub{font-size:1.15rem;font-weight:300;max-width:520px;opacity:.95;margin-bottom:26px}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
-.rating-pill{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(6px);padding:12px 20px;border-radius:50px}
-.rating-pill .stars{color:#f2c66b;letter-spacing:2px;font-size:1rem}
-.rating-pill b{font-size:1.15rem;font-weight:600;font-family:var(--serif)}
-.rating-pill span{font-size:.85rem;opacity:.9}
-.scroll-hint{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;color:rgba(255,255,255,.7);font-size:.75rem;letter-spacing:.25em;text-transform:uppercase;animation:bob 2.2s ease-in-out infinite}
-@keyframes bob{0%,100%{transform:translateX(-50%) translateY(0)}50%{transform:translateX(-50%) translateY(7px)}}
+/* Hero */
+.hero{position:relative;min-height:100vh;background:var(--dark);color:#f3ece2;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhkn1_wypF8vun8UIeN1AiU0SdFqyqytPuy1ja3zafkjuajLieJPk4kRb_sKMfiSKi9mKxewejZOX9I3bHI4LSAqL4ozl5RG8j5y-H5eZPI2TwbFGHNvMZr2bgJ05SSL-ZN_vMohFiBfpNASTZZ7vhm-vEkiPGddE5zZjrIvtIun-_9TVYMatqeFHirkwycIYDVoW0k1Q8lF7zwyMyIxKnC6xNyfquod-ybV_mHPFWYLKxhSQiPIog2ogcl5733-TqJ9y7r1C4Xro9C2rnaSCwnV9DHdxnDWPm3vagiiR04sMB6o016T6cphseZGBjl2NxjZjFaS6gEdiKfP6J5mB-UgzuAenp72wog5V5nCrnGimW6JY6J0coubRCVWvlWmfQuJf9StjZthYWL4MAC7MAZwHZ1S1kAjGhr8m0oSFjFymWS&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,21,16,.92) 0%,rgba(28,21,16,.7) 42%,rgba(28,21,16,.25) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-top:70px}
+.hero .tag{color:#e9dccb;margin-bottom:22px}
+.hero h1{font-size:clamp(3.4rem,10vw,8.5rem);margin-bottom:22px}
+.hero .sub{max-width:440px;color:rgba(243,236,226,.82);font-size:1.06rem;margin-bottom:30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.float-card{position:absolute;left:34px;bottom:38px;z-index:3;display:flex;align-items:center;gap:16px;background:rgba(35,28,22,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px;max-width:340px}
+.float-card img{width:66px;height:66px;border-radius:10px;object-fit:cover}
+.float-card h4{font-weight:800;text-transform:uppercase;font-size:1rem;color:#f3ece2;letter-spacing:.02em}
+.float-card p{font-size:.82rem;color:rgba(243,236,226,.7)}
+.float-card .plus{margin-left:auto;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.dots{position:absolute;right:40px;bottom:52px;z-index:3;display:flex;gap:8px}
+.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35)}
+.dots i.on{background:#fff}
 
-section{padding:96px 0}
-.head{max-width:640px;margin:0 auto 56px;text-align:center}
-.head h2{font-size:clamp(2rem,4vw,2.9rem);font-weight:600;margin:12px 0;color:var(--charcoal)}
-.head p{color:var(--muted);font-weight:300}
-.divider{width:52px;height:1px;background:var(--nude);margin:18px auto;position:relative}
-.divider::after{content:"";position:absolute;top:-3px;left:50%;transform:translateX(-50%);width:7px;height:7px;border-radius:50%;background:var(--gold)}
+/* Statement + gallery */
+.state{background:var(--cream);padding:100px 0 0;text-align:center}
+.rev-badge{display:inline-flex;flex-direction:column;align-items:center;margin-bottom:26px}
+.rev-badge .st{color:var(--red);letter-spacing:2px}
+.rev-badge small{font-size:.78rem;color:var(--sub);font-weight:500;margin-top:2px}
+.state h2{font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.9rem);line-height:1.12;max-width:920px;margin:0 auto 26px;color:var(--ink)}
+.gallery4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:60px}
+.gallery4 img{width:100%;height:440px;object-fit:cover}
 
-.services{background:var(--white)}
-.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden}
-.svc{background:var(--white);padding:40px 32px;transition:.3s}
-.svc:hover{background:var(--sand)}
-.svc .n{font-family:var(--serif);font-size:1.5rem;color:var(--gold);margin-bottom:12px}
-.svc h3{font-size:1.35rem;font-weight:600;margin-bottom:8px;color:var(--charcoal)}
-.svc p{color:var(--muted);font-size:.95rem}
-.listino-note{text-align:center;margin-top:26px;color:var(--muted);font-size:.9rem;font-style:italic}
+/* Services */
+.services{background:var(--cream2);padding:110px 0}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:56px}
+.svc-top .lab{color:var(--red);font-weight:700;letter-spacing:.14em;font-size:.78rem;text-transform:uppercase}
+.svc-top h2{font-size:clamp(3rem,7vw,6rem);margin:12px 0 10px}
+.svc-top p{color:var(--sub);max-width:420px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 30px 30px;position:relative;min-height:220px;transition:.25s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(46,38,32,.1)}
+.svc .no{font-weight:900;font-size:3rem;color:rgba(46,38,32,.12);line-height:1}
+.svc .ic{position:absolute;top:34px;right:30px;color:var(--red);font-size:1.6rem}
+.svc h3{font-weight:800;text-transform:uppercase;font-size:1.3rem;margin:44px 0 8px;letter-spacing:.01em}
+.svc p{color:var(--sub);font-size:.94rem}
+.svc-note{text-align:center;margin-top:32px;color:var(--sub)}
 
-.gallery{background:var(--sand)}
-.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
-.gal-grid figure{overflow:hidden;border-radius:12px;cursor:pointer;position:relative}
-.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.6s}
-.gal-grid figure:hover img{transform:scale(1.08)}
-.gal-grid .big{grid-column:span 2;grid-row:span 2}
-.gal-grid figure::after{content:"⤢";position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;background:rgba(33,27,28,0);opacity:0;transition:.3s}
-.gal-grid figure:hover::after{background:rgba(33,27,28,.25);opacity:1}
+/* Reviews */
+.reviews{background:var(--dark);color:#f3ece2;padding:110px 0}
+.reviews .svc-top h2{font-size:clamp(2.6rem,6vw,5rem)}
+.reviews .svc-top .lab{color:#e09b8f}
+.reviews .svc-top p{color:rgba(243,236,226,.6)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:30px}
+.rv .st{color:var(--red);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:rgba(243,236,226,.86);font-size:.96rem;margin-bottom:18px}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.rv .who b{font-weight:700;font-size:.9rem}
+.rv .who span{display:block;font-size:.76rem;color:rgba(243,236,226,.55)}
 
-.reviews{background:var(--charcoal);color:#f3ebe3}
-.reviews .head h2{color:#fff}
-.reviews .head p{color:rgba(243,235,227,.7)}
-.rev-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-.rev{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.09);border-radius:16px;padding:30px}
-.rev .top{display:flex;align-items:center;gap:14px;margin-bottom:14px}
-.rev img{width:48px;height:48px;border-radius:50%;object-fit:cover;border:2px solid rgba(255,255,255,.15)}
-.rev .who{font-weight:500;font-size:1rem}
-.rev .when{font-size:.8rem;color:rgba(243,235,227,.55)}
-.rev .stars{color:#f2c66b;letter-spacing:2px;margin-bottom:10px;font-size:.95rem}
-.rev p{font-weight:300;font-size:.96rem;color:rgba(243,235,227,.9);line-height:1.7}
-.rev-foot{text-align:center;margin-top:34px}
-.rev-foot a{color:#f2c66b;border-bottom:1px solid rgba(242,198,107,.4);padding-bottom:2px;font-size:.92rem}
-
-.info{background:var(--white)}
-.info-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:48px;align-items:stretch}
-.hours-card{background:var(--cream);border:1px solid var(--line);border-radius:18px;padding:36px}
-.hours-card h3{font-size:1.6rem;color:var(--charcoal);margin-bottom:6px}
-.open-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-size:.82rem;font-weight:500;padding:6px 14px;border-radius:40px;margin-bottom:20px}
-.open-badge.open{background:#e5f5ea;color:#1c7a41}
-.open-badge.closed{background:#f7e7e5;color:#b23a2c}
-.open-badge .dot{width:8px;height:8px;border-radius:50%;background:currentColor}
+/* Contact / footer */
+.foot{background:var(--dark2);color:#f3ece2;padding:100px 0 34px}
+.foot-cta{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;padding-bottom:70px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-cta h2{font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,6vw,5rem);line-height:.95}
+.foot-cta .lab{color:var(--red);font-weight:700;letter-spacing:.14em;font-size:.78rem;text-transform:uppercase;margin-bottom:10px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding:60px 0 40px}
+.foot-grid h4{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,236,226,.5);font-weight:600;margin-bottom:16px}
+.foot-grid p,.foot-grid a{color:rgba(243,236,226,.9);font-weight:400}
 .hours-list{list-style:none}
-.hours-list li{display:flex;justify-content:space-between;padding:11px 4px;border-bottom:1px solid var(--line);font-size:.96rem;color:var(--muted)}
-.hours-list li:last-child{border-bottom:0}
-.hours-list li.today{color:var(--ink);font-weight:500}
-.hours-list li.today .d{position:relative;padding-left:16px}
-.hours-list li.today .d::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:7px;height:7px;border-radius:50%;background:var(--gold)}
-.contact-rows{margin:26px 0 0}
-.crow{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-top:1px solid var(--line)}
-.crow .ic{width:40px;height:40px;flex:0 0 40px;background:var(--sand);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem}
-.crow h4{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:2px}
-.crow p,.crow a{color:var(--ink);font-size:1rem}
-.map-wrap{border-radius:18px;overflow:hidden;box-shadow:var(--sh);min-height:440px}
-.map-wrap iframe{width:100%;height:100%;min-height:440px;border:0}
-.info-cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
-
-footer{background:var(--ink);color:rgba(255,255,255,.75);padding:56px 0 26px;text-align:center}
-footer .brand{color:#fff;display:inline-block;margin-bottom:8px}
-.socials{display:flex;gap:16px;justify-content:center;margin:20px 0}
-.socials a{width:42px;height:42px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;transition:.25s;color:#fff}
-.socials a:hover{background:var(--gold);border-color:var(--gold)}
-.foot-line{border-top:1px solid rgba(255,255,255,.12);margin-top:26px;padding-top:20px;font-size:.82rem;opacity:.6}
-.foot-note{font-size:.74rem;opacity:.45;margin-top:6px}
-
-.lb{position:fixed;inset:0;background:rgba(20,15,16,.94);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
-.lb.on{display:flex}
-.lb img{max-width:92%;max-height:90%;border-radius:8px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
-.lb .x{position:absolute;top:22px;right:30px;color:#fff;font-size:2rem;cursor:pointer;opacity:.8}
+.hours-list li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.92rem;color:rgba(243,236,226,.75);gap:16px}
+.hours-list li.today{color:#fff;font-weight:600}
+.hours-list li.today .d{color:var(--red)}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:600;padding:5px 12px;border-radius:40px;margin-bottom:14px}
+.open-badge.open{background:rgba(120,180,120,.2);color:#93d19a}
+.open-badge.closed{background:rgba(176,42,28,.22);color:#e79b8f}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.foot-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem;color:rgba(243,236,226,.5)}
 
 .mobile-bar{display:none}
 @media(max-width:960px){
-  .info-grid{grid-template-columns:1fr}
-  .svc-grid{grid-template-columns:1fr 1fr}
-  .rev-grid{grid-template-columns:1fr}
-  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}
-  header nav{display:none}
-  .menu-toggle{display:block}
+  .gallery4{grid-template-columns:repeat(2,1fr)}
+  .svc-grid,.rv-grid{grid-template-columns:1fr 1fr}
+  .svc-top,.foot-cta{flex-direction:column;align-items:flex-start}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hd-right .btn{display:none}
 }
 @media(max-width:560px){
-  .svc-grid{grid-template-columns:1fr}
-  .hero h1{font-size:2.9rem}
-  section{padding:70px 0}
-  .header-cta{display:none}
-  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70;gap:0}
-  .mobile-bar a{flex:1;text-align:center;padding:15px;font-weight:500;font-size:.95rem;color:#fff}
-  .mobile-bar .call{background:var(--ink)}
-  .mobile-bar .wa{background:#25d366}
-  body{padding-bottom:52px}
-  .scroll-hint{display:none}
+  .wrap{padding:0 20px}
+  .gallery4{grid-template-columns:1fr 1fr}
+  .gallery4 img{height:230px}
+  .svc-grid,.rv-grid,.foot-grid{grid-template-columns:1fr}
+  .hero h1{font-size:3.6rem}
+  .float-card{left:16px;right:16px;bottom:74px;max-width:none}
+  .dots{display:none}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:15px;font-weight:700;font-size:.82rem;text-transform:uppercase;color:#fff}
+  .mobile-bar .call{background:var(--dark)}
+  .mobile-bar .bk{background:var(--red)}
+  body{padding-bottom:50px}
 }
 </style>
 </head>
 <body>
 
-<header id="hd">
+<header>
   <div class="wrap bar">
-    <a href="#" class="brand">Silvia De Guidi<small>Capelli · Verona</small></a>
-    <nav>
-      <a href="#servizi">Servizi</a>
-      <a href="#gallery">Galleria</a>
-      <a href="#recensioni">Recensioni</a>
-      <a href="#contatti">Contatti</a>
-    </nav>
-    <a href="https://wa.me/393335037075" class="btn btn-wa header-cta">WhatsApp</a>
-    <button class="menu-toggle" onclick="document.querySelector('nav').scrollIntoView()">☰</button>
+    <a href="#" class="brand"><span class="mk"></span>SILVIA DE GUIDI</a>
+    <div class="hd-right">
+      <a href="tel:+393335037075" class="btn btn-white">Prenota →</a>
+    </div>
   </div>
 </header>
 
 <section class="hero">
   <div class="hero-bg"></div>
   <div class="wrap hero-inner">
-    <div class="kicker">Parrucchiere · Verona Golosine</div>
-    <h1>Il tuo capello,<br>la nostra arte</h1>
-    <p class="sub">Taglio, colore e acconciature sposa curati nei minimi dettagli. Un salone accogliente dove sentirti valorizzata, in Via Golosine 117.</p>
+    <div class="tag"><b>#01</b> Parrucchiere · Verona Golosine</div>
+    <h1 class="display">Silvia<br>De Guidi</h1>
+    <p class="sub">Taglio, colore e acconciature su misura — studiati sul tuo viso, sul tuo capello e sullo stile che desideri davvero.</p>
     <div class="hero-cta">
-      <a href="https://wa.me/393335037075" class="btn btn-wa">Prenota su WhatsApp</a>
-      <a href="tel:+393335037075" class="btn btn-line">Chiama 333 503 7075</a>
-    </div>
-    <div class="rating-pill">
-      <span class="stars">★★★★★</span>
-      <b>4,9</b>
-      <span>su 71 recensioni Google</span>
+      <a href="#servizi" class="btn btn-white">I servizi →</a>
+      <a href="#contatti" class="btn btn-dark">Contatti →</a>
     </div>
   </div>
-  <div class="scroll-hint">scorri</div>
+  <div class="float-card">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photo_reference=AWCwydir9s2IqNwocQGO9_Jp7vqnBSqS246PIDVGrjVWimb2mFwsIz96SdC8zbLIblIJuq7_fb44GNLL9Bv8VewEBbTZzKPW33DCrYlUUOR4kLAoybuVKS0PmVJS71A7xsaaoRys1y4_Q3nRPVa4xHXMu3EJP6W0oiK0Q3DhizSj61JZ72x5DXCtrXvrfRSmOx7xi_e1yGwdEpVb4E9tmAEn0V4YtQs-Vepd5YTm6m1Q-GvB0ML2A5qVs5PuiuQeCgAjEuHMpBSyWItYJJ3m4kIXellgUMp_QwnNkecWNTGu1-Vp_MJkaabtYqRNC9t-K8B9q6JrSMzlx1vf2xq5QTXtbTBz4_p0r15uAge9AG4yDt3V1rD9PU9L8___2_qLTK108QCJKmfZCQQBex4LleeB6aDUg0CpeovJm9dNBdmm5zhNBg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piega e colore">
+    <div>
+      <h4>Piega &amp; Colore</h4>
+      <p>Il servizio più richiesto · su appuntamento →</p>
+    </div>
+    <div class="plus">+</div>
+  </div>
+  <div class="dots"><i class="on"></i><i></i><i></i></div>
+</section>
+
+<section class="state">
+  <div class="wrap">
+    <div class="rev-badge"><span class="st">★★★★★</span><small>4,9 / 5 · 71 recensioni Google</small></div>
+    <h2>Mani esperte, prodotti di qualità e un salone dove ti senti subito a casa.</h2>
+    <a href="tel:+393335037075" class="btn btn-red">Prenota un appuntamento →</a>
+    <div class="gallery4">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydjC-Hz3TaJvnVIxRrdcnzwjEfAO9NikC_qjWYUMJIQXmV_GDNrG0DsPTkNCkxGNttX1FyK0hjPclyHV7G4s4N5Z5aNSAmSw7H9SQIL3JUAizAWs0_E-fzEL4huLKk_M6PWxTh4UTmF9EvZuXmsVtVQplKemoltoa0vRSRxv8HRs3uf32jTeAvFpZUjlVCzbaB_392I-JsarCBNxISTYLHn2xluVhAwUePKoFSy5Ocxh10QFm6lfC_K0560R8mFAvEzhPBx-IB25C9Jxv5QTv_WahZdqu3jSPqGcgdvxxEiSCn46EsK9oG_EWbJdD0qxcFUaZtKymc9rJ-EIaxb9B8-qCMg5eEidI8_XkhMzysDRWKH3sYx1tYS8qQHNJVGGAGmX1W6nYOIIgJJiO4HC1mPvn0lVDSgmtD5Lv5h44tYDniI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro capelli">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydgj-OneLyQSD5MeOTs1X0hbClM8Ok4ebzi8q9190wDB2WKK0dZxkIlXjXwwSK9TTTxT1x1tEc2rp5ngWpPCHWcBDanMlUACJolpRKXgettRkK3J1gGynPKrNWh3J0LO_tGYhLaX-eNHTVYDa4i6RUfummmswLSwoulm-TgrOxerjzMy9v5s9NsCbbpL1vbXlhm7NlYXn6sgGjAyG8Rc4q78w_enJnVccREBGaJjzQ45C0p7I-ZgguS-vfIin46rs8uIIl7b_LJPdLvObg7hMO9vEW7qcLYPk1Hbf3Mxk-xuLJlK0kWp0CLp3bkcj-_5a7QCxE41vkBgvHwBDBXcYU3CxYEUFdQMRCFVfkyt8wt_N1xyz3wXphE-CVEpdTEU1fmhrLpfXOwfRZjd0n3bQQUSWdUWqMNcFyrWvtzbJr650A&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Colore">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydiF60z29ik2g0FOy3kQhKcIY4xiaZ62amLr6h-wCapaxph-IBj4vZjgiIAMNs4DnGRl8SeTjussyLZ0g6kakoE3nLhZwpY1ohj2jw1x0A6zlEUBCtkurfojBKbdjoKqRN8-s0dgM2Xz1SYWD9r4p1g34JXP1srFewskQfU329hmghAcdzWBFsI3VLqzC6PErMjzQChERSsCpETgI_vNzS_VzMu7tK-eGEbs0LknHyYidZ3aicCIjYAlUWAToKbZ9HCa2ntlueLeuVZY_14D32xLpOUPem6inRx7ZTqHGOVDCeS-b1UpctpCo6nk175nkP5aKVjkHbSfI2LYNhytSh2lACUosuMC4kQUzNR4hwcJ1kPquw1jK_Ax_XzoiYuNkLIFHxk8vpkAiwIBE-sgXuPy5VfpDeKDmQpj0XnLRhkFDub3&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Acconciatura">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydiILrhdR2HDtQhW4aOes4HvDVX83zdD83FK5qcobrq5T4r4phpJz_cucuNCMX8NfpiV8mFAbEcYVZiq_W77T-GJPvkzwMq1DADrui-7ywSC1sGlXhRrOre2d265In4YNgJxBDCnmbDyhyz8yymnoe6vpDHryRma27jzh13PwFje358iq3Zl_UWGBBFnkNJ8rcyJmcaqmQCN2OWjP8HiOdYC8Wl3-G5hxreV-mmk2ednGYzKjrMzzrHJRDQzA_iQAAwFKXnNpKFpDBfnXFPoJ8mKsuC7HYTO9_gWMLCh6iQF0L5ydhxxq3-bsxamEz3VtMDEG1JqahaY2IQmq__ENZYyA5qVz51tB1sBm_JxfIoDSX5aHgjuwFmcm_3geo6_mz8dVWdiWamOhkI1wupmmZ-7fs4vJq7K-82fcGQNZSM&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Salone">
+    </div>
+  </div>
 </section>
 
 <section class="services" id="servizi">
   <div class="wrap">
-    <div class="head">
-      <div class="kicker">I nostri servizi</div>
-      <h2>Cura e stile su misura</h2>
-      <div class="divider"></div>
-      <p>Ogni testa è unica: studiamo insieme il look che ti valorizza di più.</p>
+    <div class="svc-top">
+      <div>
+        <div class="lab">[ Servizi ]</div>
+        <h2 class="display">Servizi</h2>
+        <p>Ogni testa è unica: studiamo insieme il look che ti valorizza di più.</p>
+      </div>
+      <a href="tel:+393335037075" class="btn btn-red">Prenota →</a>
     </div>
     <div class="svc-grid">
-      <div class="svc"><div class="n">01</div><h3>Taglio &amp; Piega</h3><p>Tagli personalizzati e pieghe che durano, pensati per la forma del tuo viso e il tuo stile di vita.</p></div>
-      <div class="svc"><div class="n">02</div><h3>Colore &amp; Riflessi</h3><p>Colorazioni, meches e schiariture con prodotti delicati sulla cute — risultati naturali e luminosi.</p></div>
-      <div class="svc"><div class="n">03</div><h3>Acconciature Sposa</h3><p>Prove e acconciature per il tuo giorno speciale, per sentirti una vera principessa.</p></div>
-      <div class="svc"><div class="n">04</div><h3>Trattamenti</h3><p>Trattamenti ristrutturanti e nutrienti per capelli forti, sani e pieni di vita.</p></div>
-      <div class="svc"><div class="n">05</div><h3>Uomo &amp; Bambini</h3><p>Tagli per tutta la famiglia, con pazienza e simpatia anche per i più piccoli.</p></div>
-      <div class="svc"><div class="n">06</div><h3>Consulenza</h3><p>Analisi del capello e consigli su misura per prenderti cura della tua chioma anche a casa.</p></div>
+      <div class="svc"><div class="no">01</div><span class="ic">✂</span><h3>Taglio &amp; Piega</h3><p>Tagli personalizzati e pieghe che durano, pensati per la forma del tuo viso.</p></div>
+      <div class="svc"><div class="no">02</div><span class="ic">✦</span><h3>Colore &amp; Riflessi</h3><p>Colorazioni, meches e schiariture con prodotti delicati, risultati naturali e luminosi.</p></div>
+      <div class="svc"><div class="no">03</div><span class="ic">♛</span><h3>Acconciature Sposa</h3><p>Prove e acconciature per il tuo giorno speciale, per sentirti una vera principessa.</p></div>
+      <div class="svc"><div class="no">04</div><span class="ic">❋</span><h3>Trattamenti</h3><p>Trattamenti ristrutturanti e nutrienti per capelli forti, sani e pieni di vita.</p></div>
+      <div class="svc"><div class="no">05</div><span class="ic">✄</span><h3>Uomo &amp; Bambini</h3><p>Tagli per tutta la famiglia, con pazienza e simpatia anche per i più piccoli.</p></div>
+      <div class="svc"><div class="no">06</div><span class="ic">✚</span><h3>Consulenza</h3><p>Analisi del capello e consigli su misura per la cura anche a casa.</p></div>
     </div>
-    <p class="listino-note">Vuoi il listino completo con i prezzi? Chiedicelo su WhatsApp: te lo inviamo subito.</p>
-  </div>
-</section>
-
-<section class="gallery" id="gallery">
-  <div class="wrap">
-    <div class="head">
-      <div class="kicker">Galleria</div>
-      <h2>Il salone e i nostri lavori</h2>
-      <div class="divider"></div>
-      <p>Alcuni scatti dal nostro salone in Via Golosine.</p>
-    </div>
-    <div class="gal-grid">
-      <figure class="big"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydjC-Hz3TaJvnVIxRrdcnzwjEfAO9NikC_qjWYUMJIQXmV_GDNrG0DsPTkNCkxGNttX1FyK0hjPclyHV7G4s4N5Z5aNSAmSw7H9SQIL3JUAizAWs0_E-fzEL4huLKk_M6PWxTh4UTmF9EvZuXmsVtVQplKemoltoa0vRSRxv8HRs3uf32jTeAvFpZUjlVCzbaB_392I-JsarCBNxISTYLHn2xluVhAwUePKoFSy5Ocxh10QFm6lfC_K0560R8mFAvEzhPBx-IB25C9Jxv5QTv_WahZdqu3jSPqGcgdvxxEiSCn46EsK9oG_EWbJdD0qxcFUaZtKymc9rJ-EIaxb9B8-qCMg5eEidI8_XkhMzysDRWKH3sYx1tYS8qQHNJVGGAGmX1W6nYOIIgJJiO4HC1mPvn0lVDSgmtD5Lv5h44tYDniI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Salone Silvia De Guidi"></figure>
-      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydir9s2IqNwocQGO9_Jp7vqnBSqS246PIDVGrjVWimb2mFwsIz96SdC8zbLIblIJuq7_fb44GNLL9Bv8VewEBbTZzKPW33DCrYlUUOR4kLAoybuVKS0PmVJS71A7xsaaoRys1y4_Q3nRPVa4xHXMu3EJP6W0oiK0Q3DhizSj61JZ72x5DXCtrXvrfRSmOx7xi_e1yGwdEpVb4E9tmAEn0V4YtQs-Vepd5YTm6m1Q-GvB0ML2A5qVs5PuiuQeCgAjEuHMpBSyWItYJJ3m4kIXellgUMp_QwnNkecWNTGu1-Vp_MJkaabtYqRNC9t-K8B9q6JrSMzlx1vf2xq5QTXtbTBz4_p0r15uAge9AG4yDt3V1rD9PU9L8___2_qLTK108QCJKmfZCQQBex4LleeB6aDUg0CpeovJm9dNBdmm5zhNBg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro salone"></figure>
-      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydiILrhdR2HDtQhW4aOes4HvDVX83zdD83FK5qcobrq5T4r4phpJz_cucuNCMX8NfpiV8mFAbEcYVZiq_W77T-GJPvkzwMq1DADrui-7ywSC1sGlXhRrOre2d265In4YNgJxBDCnmbDyhyz8yymnoe6vpDHryRma27jzh13PwFje358iq3Zl_UWGBBFnkNJ8rcyJmcaqmQCN2OWjP8HiOdYC8Wl3-G5hxreV-mmk2ednGYzKjrMzzrHJRDQzA_iQAAwFKXnNpKFpDBfnXFPoJ8mKsuC7HYTO9_gWMLCh6iQF0L5ydhxxq3-bsxamEz3VtMDEG1JqahaY2IQmq__ENZYyA5qVz51tB1sBm_JxfIoDSX5aHgjuwFmcm_3geo6_mz8dVWdiWamOhkI1wupmmZ-7fs4vJq7K-82fcGQNZSM&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Interno salone"></figure>
-      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydgj-OneLyQSD5MeOTs1X0hbClM8Ok4ebzi8q9190wDB2WKK0dZxkIlXjXwwSK9TTTxT1x1tEc2rp5ngWpPCHWcBDanMlUACJolpRKXgettRkK3J1gGynPKrNWh3J0LO_tGYhLaX-eNHTVYDa4i6RUfummmswLSwoulm-TgrOxerjzMy9v5s9NsCbbpL1vbXlhm7NlYXn6sgGjAyG8Rc4q78w_enJnVccREBGaJjzQ45C0p7I-ZgguS-vfIin46rs8uIIl7b_LJPdLvObg7hMO9vEW7qcLYPk1Hbf3Mxk-xuLJlK0kWp0CLp3bkcj-_5a7QCxE41vkBgvHwBDBXcYU3CxYEUFdQMRCFVfkyt8wt_N1xyz3wXphE-CVEpdTEU1fmhrLpfXOwfRZjd0n3bQQUSWdUWqMNcFyrWvtzbJr650A&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio salone"></figure>
-      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydiF60z29ik2g0FOy3kQhKcIY4xiaZ62amLr6h-wCapaxph-IBj4vZjgiIAMNs4DnGRl8SeTjussyLZ0g6kakoE3nLhZwpY1ohj2jw1x0A6zlEUBCtkurfojBKbdjoKqRN8-s0dgM2Xz1SYWD9r4p1g34JXP1srFewskQfU329hmghAcdzWBFsI3VLqzC6PErMjzQChERSsCpETgI_vNzS_VzMu7tK-eGEbs0LknHyYidZ3aicCIjYAlUWAToKbZ9HCa2ntlueLeuVZY_14D32xLpOUPem6inRx7ZTqHGOVDCeS-b1UpctpCo6nk175nkP5aKVjkHbSfI2LYNhytSh2lACUosuMC4kQUzNR4hwcJ1kPquw1jK_Ax_XzoiYuNkLIFHxk8vpkAiwIBE-sgXuPy5VfpDeKDmQpj0XnLRhkFDub3&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro capelli"></figure>
-      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydjHxdNiq70PM9cRry89YxaprxVipOinDWOHAYzrL5MTOBA-pC-_X3B-tG8nbZqtN-wh2EuLzSsByVpRZGSPWlKHx13mFqUasR27NlqhnY0Utxt_4_l3BIEfrVOC47KdtgfmEEAKMEGwoiOEf7tQ_ILWiR3eagY_gv8XBo1c3jyquID8_XU4yDYI5WO4xsbP5EuYyVwfGeSi6xYoP4Y0h7OUSr2zAj8-uxMk7UvbZrAt4AHYi9RaXD-wEwGGFRcHGaTzdnZaSrVOzMdxc98OaIhLvs7tZhomNEOeEkiWI5H822q-MCnu6WkpfWJt-emMbMdY3XcPlvIXRrNwLe8xdRf1jlt0qNr40-Jv4COk5qWLlAdCqb9rh_Q8ukkO1O2qB_ojFuI1ONxhN6lGHRvt7TFhsEfFV7Kdcg2lTZPXq1Hrvw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Salone parrucchiere Verona"></figure>
-    </div>
+    <p class="svc-note">Prezzi onesti e trasparenti — chiamaci per il listino e per prenotare.</p>
   </div>
 </section>
 
 <section class="reviews" id="recensioni">
   <div class="wrap">
-    <div class="head">
-      <div class="kicker">Dicono di noi</div>
-      <h2>Recensioni verificate</h2>
-      <div class="divider"></div>
-      <p>4,9 stelle su 71 recensioni Google. Ecco alcune voci delle nostre clienti.</p>
-    </div>
-    <div class="rev-grid">
-      <div class="rev">
-        <div class="top"><img src="https://lh3.googleusercontent.com/a/ACg8ocKYZPC0FPjNxUab_ETwBd7kApfKgRmGFmITmWnEOMvhFEO5qQ=s128-c0x00000000-cc-rp-mo" alt="Veronica"><div><div class="who">Veronica Giberti</div><div class="when">un anno fa</div></div></div>
-        <div class="stars">★★★★★</div>
-        <p>“Mi sono affidata a Silvia per l'acconciatura del mio matrimonio. Gentilezza e simpatia infinita, mi sono sentita a mio agio da subito. È stata in grado di valorizzarmi e di farmi sentire una vera principessa. Non finirò mai di ringraziarvi ❣️”</p>
-      </div>
-      <div class="rev">
-        <div class="top"><img src="https://lh3.googleusercontent.com/a-/ALV-UjXDqjipjbXDEVfR6Ex17SsDv0OkSOvQBDhTJX94eqyjVUXW-XsywA=s128-c0x00000000-cc-rp-mo-ba3" alt="Manuel"><div><div class="who">Manuel Nardo</div><div class="when">3 anni fa</div></div></div>
-        <div class="stars">★★★★★</div>
-        <p>“Puntuale, competente e veloce. Ho portato anche i miei figli: felicissimi, soprattutto il più grande che si sente super figo dopo il nuovo taglio. Bravissime ragazze, continuate così. 10+”</p>
-      </div>
-      <div class="rev">
-        <div class="top"><img src="https://lh3.googleusercontent.com/a/ACg8ocLOGzP9U04fQ6GRRAbhOV40jVUffHXYEKyHKz2YWv7XwIcA2A=s128-c0x00000000-cc-rp-mo" alt="Jessica"><div><div class="who">Jessica Marconcini</div><div class="when">recensione Google</div></div></div>
-        <div class="stars">★★★★★</div>
-        <p>“Negozio accogliente e molto carino. Professionale, gentile e disponibile. Ho fatto il colore e sono stata contentissima, sono uscita perfetta. Ottimo rapporto qualità-prezzo. Consigliatissima!”</p>
-      </div>
-      <div class="rev">
-        <div class="top"><img src="https://lh3.googleusercontent.com/a/ACg8ocKZcrjsGC-F9ASiNpy9ai3bvKo2m9cY3SPROmMgMeaNCH-H6w=s128-c0x00000000-cc-rp-mo" alt="Cliente"><div><div class="who">Cliente Google</div><div class="when">2 anni fa</div></div></div>
-        <div class="stars">★★★★★</div>
-        <p>“Gentilissima! Silvia ha capito cosa volevo e ha saputo consigliarmi, sono uscita contenta. Mi sono sentita accolta e sicuramente tornerò. Prezzo onesto, senza cifre aggiuntive a sorpresa. Brava!”</p>
+    <div class="svc-top">
+      <div>
+        <div class="lab">[ Recensioni ]</div>
+        <h2 class="display">Dicono di noi</h2>
+        <p>4,9 stelle su 71 recensioni Google verificate.</p>
       </div>
     </div>
-    <div class="rev-foot"><a href="https://maps.google.com/?cid=3290711706439048689" target="_blank" rel="noopener">Leggi tutte le 71 recensioni su Google →</a></div>
+    <div class="rv-grid">
+      <div class="rv">
+        <div class="st">★★★★★</div>
+        <p>“Mi sono affidata a Silvia per l'acconciatura del mio matrimonio. Gentilezza e simpatia infinita, mi ha fatto sentire una vera principessa. Non finirò mai di ringraziarvi.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocKYZPC0FPjNxUab_ETwBd7kApfKgRmGFmITmWnEOMvhFEO5qQ=s128-c0x00000000-cc-rp-mo" alt="Veronica"><div><b>Veronica Giberti</b><span>un anno fa</span></div></div>
+      </div>
+      <div class="rv">
+        <div class="st">★★★★★</div>
+        <p>“Puntuale, competente e veloce. Ho portato anche i miei figli: felicissimi, soprattutto il più grande che si sente super figo dopo il nuovo taglio. Bravissime ragazze!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjXDqjipjbXDEVfR6Ex17SsDv0OkSOvQBDhTJX94eqyjVUXW-XsywA=s128-c0x00000000-cc-rp-mo-ba3" alt="Manuel"><div><b>Manuel Nardo</b><span>3 anni fa</span></div></div>
+      </div>
+      <div class="rv">
+        <div class="st">★★★★★</div>
+        <p>“Negozio accogliente, professionale e disponibile. Ho fatto il colore e sono uscita perfetta. Ottimo rapporto qualità-prezzo. Consigliatissima!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocLOGzP9U04fQ6GRRAbhOV40jVUffHXYEKyHKz2YWv7XwIcA2A=s128-c0x00000000-cc-rp-mo" alt="Jessica"><div><b>Jessica Marconcini</b><span>recensione Google</span></div></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="info" id="contatti">
+<footer class="foot" id="contatti">
   <div class="wrap">
-    <div class="head">
-      <div class="kicker">Dove siamo</div>
-      <h2>Orari &amp; Contatti</h2>
-      <div class="divider"></div>
+    <div class="foot-cta">
+      <div>
+        <div class="lab">[ Prenota ]</div>
+        <h2 class="display">Il tuo prossimo<br>look ti aspetta</h2>
+      </div>
+      <a href="tel:+393335037075" class="btn btn-red">Prenota ora →</a>
     </div>
-    <div class="info-grid">
-      <div class="hours-card">
-        <h3>Orari di apertura</h3>
+    <div class="foot-grid">
+      <div>
+        <h4>Orari</h4>
         <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
         <ul class="hours-list" id="hoursList">
           <li data-day="1"><span class="d">Lunedì</span><span>08:30 – 15:00</span></li>
@@ -286,50 +257,32 @@ footer .brand{color:#fff;display:inline-block;margin-bottom:8px}
           <li data-day="6"><span class="d">Sabato</span><span>08:00 – 16:00</span></li>
           <li data-day="0"><span class="d">Domenica</span><span>Chiuso</span></li>
         </ul>
-        <div class="contact-rows">
-          <div class="crow"><div class="ic">📍</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=3290711706439048689" target="_blank" rel="noopener">Via Golosine 117, 37136 Verona (VR)</a></div></div>
-          <div class="crow"><div class="ic">📞</div><div><h4>Telefono</h4><a href="tel:+393335037075">333 503 7075</a></div></div>
-          <div class="crow"><div class="ic">✉️</div><div><h4>Email</h4><a href="mailto:deguidisilvia@gmail.com">deguidisilvia@gmail.com</a></div></div>
-        </div>
-        <div class="info-cta">
-          <a href="https://wa.me/393335037075" class="btn btn-wa">Prenota su WhatsApp</a>
-          <a href="tel:+393335037075" class="btn btn-ink">Chiama ora</a>
-        </div>
       </div>
-      <div class="map-wrap">
-        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Golosine+117,+37136+Verona&output=embed"></iframe>
+      <div>
+        <h4>Contatti</h4>
+        <p style="margin-bottom:8px"><a href="tel:+393335037075">333 503 7075</a></p>
+        <p style="margin-bottom:8px"><a href="mailto:deguidisilvia@gmail.com">deguidisilvia@gmail.com</a></p>
+        <p><a href="https://maps.google.com/?cid=3290711706439048689" target="_blank" rel="noopener">Via Golosine 117, 37136 Verona →</a></p>
+      </div>
+      <div>
+        <h4>Salone</h4>
+        <p>Parrucchiere unisex a Verona, zona Golosine. Taglio, colore, acconciature sposa e trattamenti con prodotti di qualità.</p>
       </div>
     </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <a href="#" class="brand">Silvia De Guidi<small>Capelli · Verona</small></a>
-    <div class="socials">
-      <a href="https://www.facebook.com/silviadeguidi" target="_blank" rel="noopener" title="Facebook">f</a>
-      <a href="https://wa.me/393335037075" title="WhatsApp">✆</a>
-      <a href="tel:+393335037075" title="Telefono">☎</a>
+    <div class="foot-bot">
+      <span>© 2026 Silvia De Guidi Capelli · Verona</span>
+      <span>Sito dimostrativo — HubTec</span>
     </div>
-    <div class="foot-line">© 2026 Silvia De Guidi Capelli · Via Golosine 117, Verona · P.IVA da inserire</div>
-    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
   </div>
 </footer>
 
 <div class="mobile-bar">
-  <a href="tel:+393335037075" class="call">📞 Chiama</a>
-  <a href="https://wa.me/393335037075" class="wa">WhatsApp</a>
+  <a href="tel:+393335037075" class="call">Chiama</a>
+  <a href="tel:+393335037075" class="bk">Prenota</a>
 </div>
 
-<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
-
 <script>
-const hd=document.getElementById('hd');
-addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
 document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
-const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
-document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace('maxwidth=600','maxwidth=1400').replace('maxwidth=1000','maxwidth=1600');lb.classList.add('on')}));
-lb.addEventListener('click',()=>lb.classList.remove('on'));
 const periods={1:[830,1500],2:[900,1800],3:[900,1800],4:[1200,2100],5:[900,1800],6:[800,1600],0:null};
 const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
 document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
