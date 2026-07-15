@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osteria del Fil de Fero — Cucina veronese a Sommacampagna</title>
+<meta name="description" content="Osteria del Fil de Fero, cucina della tradizione veronese a Sommacampagna (VR), Piazza Carlo Alberto 4. Piatti curati, materie prime fresche. 4,5★ su 589 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14100e; --bg2:#1c1613; --panel:#211a16; --cream:#f4ece0; --muted:#b8a998;
+  --gold:#c9a24b; --gold2:#e0bf74; --line:rgba(244,236,224,.12); --terra:#b56a3d;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 26px}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
+.kicker{font-family:var(--sans);font-weight:400;letter-spacing:.42em;text-transform:uppercase;font-size:.7rem;color:var(--gold)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:82px}
+.brand{font-family:var(--serif);font-size:1.6rem;color:var(--cream);letter-spacing:.04em}
+.brand span{color:var(--gold)}
+header nav{display:flex;gap:36px;align-items:center}
+header nav a{color:rgba(244,236,224,.82);font-size:.88rem;letter-spacing:.06em;transition:.2s}
+header nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;padding:14px 28px;border-radius:2px;transition:.3s;cursor:pointer;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#211a16}
+.btn-gold:hover{background:var(--gold2)}
+.btn-out{background:transparent;color:var(--cream);border-color:rgba(244,236,224,.4)}
+.btn-out:hover{border-color:var(--gold);color:var(--gold)}
+header.scrolled{background:rgba(20,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.menu-toggle{display:none;background:none;border:0;color:var(--cream);font-size:1.6rem;cursor:pointer}
+
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhoPpY8zf4WSXgqK46LXpHOUe9ktwi1kjp7DUCWPMZL_dekyyy3z1AeQEAmxqtFZGw2VscjuzPFYYLuSalMWBkawEyCEn-ZlEqGmNG5w4-x32Xz9Obe9i8kdoeyUK6agwdDsb_FoZw1YaPApzvdkWH7f4735rg_1h_A7eYfXelXKwy3lCH_zARnVgdYJmw4ai3MvctjQRfBsJfTazbHqJ_AAAcNoc-XoYWTVzHSEJYYS5-WG6eOcemFUqO2O_rAMROpVuFx3Rh6oOhKgUTQH49w0bA2j0r_sU_2CzS3smi8ftVGjkyh7SJxqqBQhqtFjz8ub7d1c3Yk5hfA5YwwojTS4yA7jE-YeeeV7GOFKc_9W0d0xncLgi1G_WzAVE0C08g_kQ2yerDlaGQNW4Y6X0toFKq8X-rgcuU2CgFr6fzJ-ieslE8hRj2VZ-9UkCgO&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.06)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.6) 0%,rgba(20,16,14,.15) 45%,rgba(20,16,14,.92) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 0 88px;width:100%}
+.hero .kicker{color:var(--gold2)}
+.hero h1{font-size:clamp(3rem,8.5vw,6.6rem);line-height:.98;margin:16px 0 14px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero .sub{font-size:1.2rem;max-width:560px;color:rgba(244,236,224,.9);margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-meta{display:flex;gap:26px;align-items:center;margin-top:34px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.hero-meta .stars{color:var(--gold);letter-spacing:2px}
+.hero-meta b{color:var(--cream);font-family:var(--serif);font-size:1.25rem}
+.hero-meta .sep{width:1px;height:28px;background:var(--line)}
+
+section{padding:110px 0}
+.head{text-align:center;max-width:620px;margin:0 auto 60px}
+.head h2{font-size:clamp(2.2rem,4.5vw,3.3rem);margin:14px 0}
+.head p{color:var(--muted)}
+.orn{color:var(--gold);letter-spacing:.5em;font-size:.9rem;margin-top:10px}
+
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-txt .kicker{margin-bottom:14px;display:block}
+.about-txt h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:20px;line-height:1.1}
+.about-txt p{color:var(--muted);margin-bottom:16px}
+.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold2);margin-top:8px}
+.about-img{position:relative}
+.about-img img{width:100%;height:560px;object-fit:cover;border-radius:3px}
+.about-img::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,162,75,.5);border-radius:3px;pointer-events:none;margin:-14px;top:22px;left:22px;right:-22px;bottom:-22px;z-index:-1}
+
+.menu{background:var(--bg)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 60px;max-width:960px;margin:0 auto}
+.dish{border-bottom:1px dashed var(--line);padding-bottom:16px}
+.dish .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.dish h4{font-family:var(--serif);font-size:1.5rem;color:var(--cream);font-weight:600}
+.dish .tag{font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:6px}
+.dish p{color:var(--muted);font-size:.94rem;margin-top:4px}
+.menu-note{text-align:center;color:var(--muted);font-style:italic;margin-top:48px;font-family:var(--serif);font-size:1.25rem}
+
+.gallery{background:var(--bg2)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
+.gal-grid figure{overflow:hidden;border-radius:3px;cursor:pointer;position:relative}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.7s;filter:saturate(1.02)}
+.gal-grid figure:hover img{transform:scale(1.09)}
+.gal-grid .tall{grid-row:span 2}
+.gal-grid .wide{grid-column:span 2}
+
+.reviews{background:var(--bg);position:relative}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:32px}
+.rev .stars{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
+.rev p{color:rgba(244,236,224,.86);font-size:.98rem;margin-bottom:20px;font-weight:300}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.rev .who b{font-family:var(--sans);font-weight:500;font-size:.92rem;color:var(--cream)}
+.rev .who span{display:block;font-size:.78rem;color:var(--muted)}
+.rev-foot{text-align:center;margin-top:36px}
+.rev-foot a{color:var(--gold);border-bottom:1px solid rgba(201,162,75,.4);padding-bottom:2px;font-size:.9rem;letter-spacing:.04em}
+
+.info{background:var(--bg2)}
+.info-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:stretch}
+.hours-card h3{font-size:1.9rem;margin-bottom:6px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin:14px 0 22px}
+.open-badge.open{background:rgba(120,180,120,.16);color:#8fd08f}
+.open-badge.closed{background:rgba(200,90,70,.16);color:#e09a86}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted);gap:16px}
+.hours-list li.today{color:var(--cream)}
+.hours-list li.today .d{color:var(--gold)}
+.hours-list li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.contact-rows{margin-top:28px}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
+.crow .ic{color:var(--gold);font-size:1.05rem;width:26px}
+.crow h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:2px}
+.crow a,.crow p{color:var(--cream);font-size:1rem}
+.info-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.map-wrap{border-radius:3px;overflow:hidden;min-height:480px;filter:grayscale(.3) contrast(1.05)}
+.map-wrap iframe{width:100%;height:100%;min-height:480px;border:0}
+
+footer{background:#0e0b09;padding:66px 0 28px;text-align:center;border-top:1px solid var(--line)}
+footer .brand{font-size:2rem;display:inline-block;margin-bottom:12px}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:.25s}
+.socials a:hover{background:var(--gold);color:#14100e;border-color:var(--gold)}
+.foot-line{color:var(--muted);font-size:.82rem;margin-top:18px}
+.foot-note{color:rgba(184,169,152,.5);font-size:.72rem;margin-top:8px}
+
+.lb{position:fixed;inset:0;background:rgba(10,8,6,.96);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%;border-radius:3px}
+.lb .x{position:absolute;top:22px;right:30px;color:var(--cream);font-size:2rem;cursor:pointer;opacity:.8}
+.mobile-bar{display:none}
+
+@media(max-width:960px){
+  .about-grid,.info-grid{grid-template-columns:1fr;gap:40px}
+  .menu-grid{grid-template-columns:1fr;gap:22px}
+  .rev-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  header nav{display:none}
+  .menu-toggle{display:block}
+  .about-img::after{display:none}
+}
+@media(max-width:560px){
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
+  section{padding:76px 0}
+  .header-cta{display:none}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:16px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#14100e;background:var(--gold);font-weight:500}
+  body{padding-bottom:54px}
+}
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand">Osteria del Fil de Fero<span>.</span></a>
+    <nav>
+      <a href="#storia">La trattoria</a>
+      <a href="#menu">Menù</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="tel:+390458969097" class="btn btn-gold header-cta">Prenota</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').scrollIntoView()">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Osteria · Sommacampagna</div>
+    <h1>La tradizione<br><em>nel piatto</em></h1>
+    <p class="sub">Nel cuore di Sommacampagna, un'osteria curata dove i piatti della tradizione incontrano materie prime fresche e di stagione.</p>
+    <div class="hero-cta">
+      <a href="tel:+390458969097" class="btn btn-gold">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-out">Scopri il menù</a>
+    </div>
+    <div class="hero-meta">
+      <div><span class="stars">★★★★★</span> <b>4,5</b></div>
+      <div class="sep"></div>
+      <div>589 recensioni Google</div>
+      <div class="sep"></div>
+      <div>Piazza Carlo Alberto 4</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="storia">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <span class="kicker">La nostra storia</span>
+      <h2>Cucina curata, sapori veri</h2>
+      <p>L'Osteria del Fil de Fero è un locale curato e accogliente nel centro di Sommacampagna, dove ci si sente subito a proprio agio, tra sala pulita e ambiente piacevole.</p>
+      <p>Piatti della tradizione eseguiti con cura, materie prime fresche e di stagione, presentazioni ricercate: dai primi ai secondi fino ai dolci fatti in casa, ogni portata sorprende. In sala, gentilezza e accoglienza.</p>
+      <div class="sign">— un best in town, da tornare a scoprire</div>
+    </div>
+    <div class="about-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydgLKgTQv6Cp1U6o9vAD--DunJqVb-isdvw3IYk6uYZzR-Zrr_XesjQ-_PmdUNpJd752p0RTn0jQKowupE9mA8f2_OCx0QaqksiRfdE-roWjnrZv7gmcFmkxOlrNfxPyDRSysySVwtbqyW2I9iWPPTYRlSRNrTn3CsTG5KwEz0qC2yUQlw8Pu4vbYommvuABdIbD9yRZwBufTwshE0xoXZ90bCypYVny2tZstQEhcZe4PolP1u3vhVAF-QiUVqjvGLP8A4zhyAtvgVYxNb60YUC8XW1dN7Soj5unZOwCXeKtMZHk-U4i64w-tMXnzNASwL0Q82yQzggNFKyNMjB2eaxsEeK1LS8bn7nWAr7m6MpB0LmGSuJ84076yhURTaU2_Qgp-7lHu3M1PMrAuk3dWzXLzqlL89mK9IWHa8tsvgVofNbrc8upHXjTnqcRXmp1&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto Osteria del Fil de Fero">
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Il menù</span>
+      <h2>I nostri piatti</h2>
+      <div class="orn">✦ ✦ ✦</div>
+      <p>Una selezione della nostra cucina, curata e di stagione.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="dish"><div class="r"><h4>Antipasti della casa</h4><span class="tag">Antipasti</span></div><p>Tortini di verdure e sfizi di stagione, freschi e ben presentati.</p></div>
+      <div class="dish"><div class="r"><h4>Primi fatti in casa</h4><span class="tag">Primi</span></div><p>Pasta con ragù dalla cottura perfetta e primi della tradizione.</p></div>
+      <div class="dish"><div class="r"><h4>Tartare & carni</h4><span class="tag">Secondi</span></div><p>Tartare lavorata con cura e secondi di carne dalla cottura impeccabile.</p></div>
+      <div class="dish"><div class="r"><h4>Tagliata & grigliate</h4><span class="tag">Secondi</span></div><p>Tagliata e secondi di carne serviti con contorni di stagione.</p></div>
+      <div class="dish"><div class="r"><h4>Piatti di stagione</h4><span class="tag">Menù del giorno</span></div><p>Proposte che cambiano con la stagione, chiedile in sala.</p></div>
+      <div class="dish"><div class="r"><h4>Dolci della casa</h4><span class="tag">Dessert</span></div><p>Tartine al limone, al cioccolato e dolci fatti in casa.</p></div>
+    </div>
+    <p class="menu-note">Il menù cambia con la stagione — chiedi in sala i piatti del giorno e la carta dei vini.</p>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Galleria</span>
+      <h2>Assaggia con gli occhi</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="gal-grid">
+      <figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydiIkmmpRnW6AjOocPhX69Ccewd10YlpKOZGBXHe-El0oqQX5r-ve-clUFPiI71S4tlDdD2q5Uo5fW5r-alAKGWEaPDd2LeeZ1XFO3qglNyRw-DoEhRR_l4Vf-0FEY-F_cU3B0trDQvasMs4VCvzijWDylDXZC_TsPTi8-wSSPWXyOTYrV1OkS6DjCBGimL-ybBmQmVD8ZKWO-p7rYKIK6bF1wIKkik3nb1XULwyfxzfqqEfivqYZ_lF3TgRFPTGM-v8pgh54UTMwnt6CUDa0vG7SjJqlZCg4WGgdj17R58iOy53OkPVacg7wcIduUCS9WVC7gqNyW86G150ZilILlOK4WkoHEZ2weOY1394mmr0oA6glJlLDM5mXDWyA4rjesBHMA7jathMZdtJfbWiC5Um7Oth_raZLQ0stxWe-cM&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydi3A-4Qs8LEhwkusUmKhWr0vKsP4iOKgiqKPoXb9Wb-HyXgqog5AzBUHLMlioCOmSh-4vxu8XuoDwktC9uPdpe3GBPzlH7eWm88qc9fYFeJEYh466svZrJ4-LZZH2iluxiOYomUI_Qb8KutBCjti00TMEF2OJjNJkPrGUlhKdRb7ezm2T3r8gsDMhA9doPrLbjvom1GAOhFWwqtH6l82QW60jmsBhzyv8GyrNpICndFHPAREXz7rLcEHCkhJjqgL7wEsrQbrzaZn2srtI0UtgjAqeg6Qe7yxKVGvjKiE-mVXvver3YEEZENeFFx1M02y3gnNYb1Kt9jvKCHuAxmGk-QvTE4Mn6yEgyk7zobui4PJJf96sJe8mXiSDNE8lA82GYicJWiBQAP1wJkpLOJzRSFLq_68P-iXlyvFaVZwYbO0IurKyz32soqFSjI8rHo&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydh20_u7bUM7GEFjiFthHp6hdacHPZUOi8_lq5MSqQrdbpi51Nwe8y2LgbxJM-IsNw_2Y2BOTgntiAZHiUn4FGaW0mGTfAgQIve4B39rUmiuGeLnklBCTLVJeTVk4jt7Wiai76YdnGNRhaYtQYGbHdZXE4sDH_r7m_q_NUiF4t0KDyzvFXSn-Pl62RNIS5LFp8iKgC8pcPo6DvlTVQ_IXeGBVxE5b56CbQlY9uEuKuxzkpivly4CAduZ-g3WlNibyfEQbYVzGaTnOP78VG9IptPWp5sthl6HHTH33F7NWB88qg0jvUPUVVaYzK9wfs8VohoVNLunq-LE3sKkXTWddNv0GTxIkLjtfEvBW1fEBwhNIx_N1J9RX8tEYbujvLp-lt_7oYvmO8pFYaFP4itzMczkHQQn-eGbr8GGiQQLo1ToxtMw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Interno"></figure>
+      <figure class="wide"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydhoPpY8zf4WSXgqK46LXpHOUe9ktwi1kjp7DUCWPMZL_dekyyy3z1AeQEAmxqtFZGw2VscjuzPFYYLuSalMWBkawEyCEn-ZlEqGmNG5w4-x32Xz9Obe9i8kdoeyUK6agwdDsb_FoZw1YaPApzvdkWH7f4735rg_1h_A7eYfXelXKwy3lCH_zARnVgdYJmw4ai3MvctjQRfBsJfTazbHqJ_AAAcNoc-XoYWTVzHSEJYYS5-WG6eOcemFUqO2O_rAMROpVuFx3Rh6oOhKgUTQH49w0bA2j0r_sU_2CzS3smi8ftVGjkyh7SJxqqBQhqtFjz8ub7d1c3Yk5hfA5YwwojTS4yA7jE-YeeeV7GOFKc_9W0d0xncLgi1G_WzAVE0C08g_kQ2yerDlaGQNW4Y6X0toFKq8X-rgcuU2CgFr6fzJ-ieslE8hRj2VZ-9UkCgO&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydgLKgTQv6Cp1U6o9vAD--DunJqVb-isdvw3IYk6uYZzR-Zrr_XesjQ-_PmdUNpJd752p0RTn0jQKowupE9mA8f2_OCx0QaqksiRfdE-roWjnrZv7gmcFmkxOlrNfxPyDRSysySVwtbqyW2I9iWPPTYRlSRNrTn3CsTG5KwEz0qC2yUQlw8Pu4vbYommvuABdIbD9yRZwBufTwshE0xoXZ90bCypYVny2tZstQEhcZe4PolP1u3vhVAF-QiUVqjvGLP8A4zhyAtvgVYxNb60YUC8XW1dN7Soj5unZOwCXeKtMZHk-U4i64w-tMXnzNASwL0Q82yQzggNFKyNMjB2eaxsEeK1LS8bn7nWAr7m6MpB0LmGSuJ84076yhURTaU2_Qgp-7lHu3M1PMrAuk3dWzXLzqlL89mK9IWHa8tsvgVofNbrc8upHXjTnqcRXmp1&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydiIkmmpRnW6AjOocPhX69Ccewd10YlpKOZGBXHe-El0oqQX5r-ve-clUFPiI71S4tlDdD2q5Uo5fW5r-alAKGWEaPDd2LeeZ1XFO3qglNyRw-DoEhRR_l4Vf-0FEY-F_cU3B0trDQvasMs4VCvzijWDylDXZC_TsPTi8-wSSPWXyOTYrV1OkS6DjCBGimL-ybBmQmVD8ZKWO-p7rYKIK6bF1wIKkik3nb1XULwyfxzfqqEfivqYZ_lF3TgRFPTGM-v8pgh54UTMwnt6CUDa0vG7SjJqlZCg4WGgdj17R58iOy53OkPVacg7wcIduUCS9WVC7gqNyW86G150ZilILlOK4WkoHEZ2weOY1394mmr0oA6glJlLDM5mXDWyA4rjesBHMA7jathMZdtJfbWiC5Um7Oth_raZLQ0stxWe-cM&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dicono di noi</span>
+      <h2>4,5 su 589 recensioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Accogliente e gradevole, servizio informale e amichevole, piatti della tradizione curati e semplici. Un best in town da tenere in considerazione per più occasioni. Prezzo bilanciato con l'offerta. Sorprende piacevolmente, consigliato.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjWWbYgOsYKbU7pVi3ZUUMQRHR9E-CxB0sXUaGwDztB3Gj5aVs37=s128-c0x00000000-cc-rp-mo-ba6" alt="Andrea Giuriato"><div><b>Andrea Giuriato</b><span>4 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Piacevolmente sorpresi! Pasta col ragù dalla cottura perfetta, tartare gustosa e dolci ottimi. Camerieri gentili e locale super pulito. Torneremo sicuramente!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocLr6vXY-Kj85yURcfetv9EcyTgqWnJcQkahy3vUvhoiFVpTXw=s128-c0x00000000-cc-rp-mo-ba2" alt="Noemi Vento"><div><b>Noemi Vento</b><span>2 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Ottimo locale, tranquillo e pulito. Personale attento e disponibile. Tagliolini porcini e finferli e un'ottima tagliata. Soddisfatto, ci tornerò.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUesH9sHEiVE8fN1BF36EhdRHbCo-VRii7QddrQQggFucHai8GuBQ=s128-c0x00000000-cc-rp-mo-ba5" alt="Paolo Ava"><div><b>Paolo Ava</b><span>5 anni fa</span></div></div>
+      </div>
+    </div>
+    <div class="rev-foot"><a href="https://maps.google.com/?cid=15811029997350706782" target="_blank" rel="noopener">Leggi tutte le 589 recensioni su Google →</a></div>
+  </div>
+</section>
+
+<section class="info" id="contatti">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dove trovarci</span>
+      <h2>Orari & Prenotazioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="info-grid">
+      <div class="hours-card">
+        <h3>Orari</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>Chiuso</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>09:00–14:30 · 19:30–22:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>12:00–14:30 · 19:30–22:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>12:00–14:30 · 19:30–22:00</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>12:00–14:30 · 19:30–22:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>12:00–14:30 · 19:00–22:00</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>12:00–14:30</span></li>
+        </ul>
+        <div class="contact-rows">
+          <div class="crow"><div class="ic">◉</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=15811029997350706782" target="_blank" rel="noopener">Piazza Carlo Alberto 4, 37066 Sommacampagna (VR)</a></div></div>
+          <div class="crow"><div class="ic">☎</div><div><h4>Telefono / Prenotazioni</h4><a href="tel:+390458969097">045 896 9097</a></div></div>
+        </div>
+        <div class="info-cta">
+          <a href="tel:+390458969097" class="btn btn-gold">Prenota un tavolo</a>
+          <a href="https://maps.google.com/?cid=15811029997350706782" target="_blank" rel="noopener" class="btn btn-out">Indicazioni ›</a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Piazza+Carlo+Alberto+4,+37066+Sommacampagna+VR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">Osteria del Fil de Fero<span style="color:var(--gold)">.</span></div>
+    <div class="foot-line">Osteria · Cucina della tradizione</div>
+    <div class="socials">
+      <a href="https://maps.google.com/?cid=15811029997350706782" target="_blank" rel="noopener" title="Facebook">f</a>
+      <a href="tel:+390458969097" title="Telefono">☎</a>
+      <a href="https://maps.google.com/?cid=15811029997350706782" target="_blank" rel="noopener" title="Mappa">◉</a>
+    </div>
+    <div class="foot-line">© 2026 Osteria del Fil de Fero · Piazza Carlo Alberto 4, 37066 Sommacampagna (VR) · P.IVA da inserire</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+390458969097">☎ Prenota un tavolo</a>
+</div>
+
+<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1500');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+const periods={0:[[1200,1430]],1:[],2:[[900,1430],[1930,2200]],3:[[1200,1430],[1930,2200]],4:[[1200,1430],[1930,2200]],5:[[1200,1430],[1930,2200]],6:[[1200,1430],[1900,2200]]};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const open=(periods[day]||[]).some(p=>hm>=p[0]&&hm<p[1]);
+const badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+badge.className='open-badge '+(open?'open':'closed');
+txt.textContent=open?'Aperto ora':'Chiuso ora';
+</script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Locanda Vecchia Custoza — Ristorante con vista a Custoza</title>
+<meta name="description" content="Locanda Vecchia Custoza, ristorante tipico con terrazza panoramica a Custoza di Sommacampagna (VR), Via Bellavista 37. Cucina del territorio e vini locali. 4,5★ su 792 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14100e; --bg2:#1c1613; --panel:#211a16; --cream:#f4ece0; --muted:#b8a998;
+  --gold:#c9a24b; --gold2:#e0bf74; --line:rgba(244,236,224,.12); --terra:#b56a3d;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 26px}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
+.kicker{font-family:var(--sans);font-weight:400;letter-spacing:.42em;text-transform:uppercase;font-size:.7rem;color:var(--gold)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:82px}
+.brand{font-family:var(--serif);font-size:1.6rem;color:var(--cream);letter-spacing:.04em}
+.brand span{color:var(--gold)}
+header nav{display:flex;gap:36px;align-items:center}
+header nav a{color:rgba(244,236,224,.82);font-size:.88rem;letter-spacing:.06em;transition:.2s}
+header nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;padding:14px 28px;border-radius:2px;transition:.3s;cursor:pointer;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#211a16}
+.btn-gold:hover{background:var(--gold2)}
+.btn-out{background:transparent;color:var(--cream);border-color:rgba(244,236,224,.4)}
+.btn-out:hover{border-color:var(--gold);color:var(--gold)}
+header.scrolled{background:rgba(20,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.menu-toggle{display:none;background:none;border:0;color:var(--cream);font-size:1.6rem;cursor:pointer}
+
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjgxvoMtfwvLDFLTphOzyS-5vTAqqnOJHeAcFxWC9fbZDYGAE0mUj7Fujn0qXUwu7QJnB0O5p9RisKF_jhkAOIcyA2NUcLnM6t244d2chJFMRPIYqz-jWCDaUlr7AgpUXklMuUD3p5TwcoUrq3HqD1jOgBmWpUWXPQFHem3wfpekLFlO91s9gZhIjsn49bUjUCzrZ1joZFWGXXtJ3etjx4rZp8Awy-S6kJOFlf3NR_bPJDUo5olDVmlH1MJPUT3W3xeUwHkRJa_LIV9LL3T54MI0OT3lCOgPOKF7tXgr7YyhrLCmcqnrB5nArYtVxKWW7Q9cOeDYVhRbJFt0EAyZLdQrKl8tOfTWe-5c3Jn4JSWzYWYEckCL2pHUX1K2NhMCUj5TnkGkNK3cLZpU2riIbtCoPgqeOPY6cSdkxkPdP_GX00lGISIGc81j9XZlw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.06)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.6) 0%,rgba(20,16,14,.15) 45%,rgba(20,16,14,.92) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 0 88px;width:100%}
+.hero .kicker{color:var(--gold2)}
+.hero h1{font-size:clamp(3rem,8.5vw,6.6rem);line-height:.98;margin:16px 0 14px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero .sub{font-size:1.2rem;max-width:560px;color:rgba(244,236,224,.9);margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-meta{display:flex;gap:26px;align-items:center;margin-top:34px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.hero-meta .stars{color:var(--gold);letter-spacing:2px}
+.hero-meta b{color:var(--cream);font-family:var(--serif);font-size:1.25rem}
+.hero-meta .sep{width:1px;height:28px;background:var(--line)}
+
+section{padding:110px 0}
+.head{text-align:center;max-width:620px;margin:0 auto 60px}
+.head h2{font-size:clamp(2.2rem,4.5vw,3.3rem);margin:14px 0}
+.head p{color:var(--muted)}
+.orn{color:var(--gold);letter-spacing:.5em;font-size:.9rem;margin-top:10px}
+
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-txt .kicker{margin-bottom:14px;display:block}
+.about-txt h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:20px;line-height:1.1}
+.about-txt p{color:var(--muted);margin-bottom:16px}
+.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold2);margin-top:8px}
+.about-img{position:relative}
+.about-img img{width:100%;height:560px;object-fit:cover;border-radius:3px}
+.about-img::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,162,75,.5);border-radius:3px;pointer-events:none;margin:-14px;top:22px;left:22px;right:-22px;bottom:-22px;z-index:-1}
+
+.menu{background:var(--bg)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 60px;max-width:960px;margin:0 auto}
+.dish{border-bottom:1px dashed var(--line);padding-bottom:16px}
+.dish .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.dish h4{font-family:var(--serif);font-size:1.5rem;color:var(--cream);font-weight:600}
+.dish .tag{font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:6px}
+.dish p{color:var(--muted);font-size:.94rem;margin-top:4px}
+.menu-note{text-align:center;color:var(--muted);font-style:italic;margin-top:48px;font-family:var(--serif);font-size:1.25rem}
+
+.gallery{background:var(--bg2)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
+.gal-grid figure{overflow:hidden;border-radius:3px;cursor:pointer;position:relative}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.7s;filter:saturate(1.02)}
+.gal-grid figure:hover img{transform:scale(1.09)}
+.gal-grid .tall{grid-row:span 2}
+.gal-grid .wide{grid-column:span 2}
+
+.reviews{background:var(--bg);position:relative}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:32px}
+.rev .stars{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
+.rev p{color:rgba(244,236,224,.86);font-size:.98rem;margin-bottom:20px;font-weight:300}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.rev .who b{font-family:var(--sans);font-weight:500;font-size:.92rem;color:var(--cream)}
+.rev .who span{display:block;font-size:.78rem;color:var(--muted)}
+.rev-foot{text-align:center;margin-top:36px}
+.rev-foot a{color:var(--gold);border-bottom:1px solid rgba(201,162,75,.4);padding-bottom:2px;font-size:.9rem;letter-spacing:.04em}
+
+.info{background:var(--bg2)}
+.info-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:stretch}
+.hours-card h3{font-size:1.9rem;margin-bottom:6px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin:14px 0 22px}
+.open-badge.open{background:rgba(120,180,120,.16);color:#8fd08f}
+.open-badge.closed{background:rgba(200,90,70,.16);color:#e09a86}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted);gap:16px}
+.hours-list li.today{color:var(--cream)}
+.hours-list li.today .d{color:var(--gold)}
+.hours-list li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.contact-rows{margin-top:28px}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
+.crow .ic{color:var(--gold);font-size:1.05rem;width:26px}
+.crow h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:2px}
+.crow a,.crow p{color:var(--cream);font-size:1rem}
+.info-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.map-wrap{border-radius:3px;overflow:hidden;min-height:480px;filter:grayscale(.3) contrast(1.05)}
+.map-wrap iframe{width:100%;height:100%;min-height:480px;border:0}
+
+footer{background:#0e0b09;padding:66px 0 28px;text-align:center;border-top:1px solid var(--line)}
+footer .brand{font-size:2rem;display:inline-block;margin-bottom:12px}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:.25s}
+.socials a:hover{background:var(--gold);color:#14100e;border-color:var(--gold)}
+.foot-line{color:var(--muted);font-size:.82rem;margin-top:18px}
+.foot-note{color:rgba(184,169,152,.5);font-size:.72rem;margin-top:8px}
+
+.lb{position:fixed;inset:0;background:rgba(10,8,6,.96);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%;border-radius:3px}
+.lb .x{position:absolute;top:22px;right:30px;color:var(--cream);font-size:2rem;cursor:pointer;opacity:.8}
+.mobile-bar{display:none}
+
+@media(max-width:960px){
+  .about-grid,.info-grid{grid-template-columns:1fr;gap:40px}
+  .menu-grid{grid-template-columns:1fr;gap:22px}
+  .rev-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  header nav{display:none}
+  .menu-toggle{display:block}
+  .about-img::after{display:none}
+}
+@media(max-width:560px){
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
+  section{padding:76px 0}
+  .header-cta{display:none}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:16px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#14100e;background:var(--gold);font-weight:500}
+  body{padding-bottom:54px}
+}
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand">Locanda Vecchia Custoza<span>.</span></a>
+    <nav>
+      <a href="#storia">La trattoria</a>
+      <a href="#menu">Menù</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="tel:+39045516026" class="btn btn-gold header-cta">Prenota</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').scrollIntoView()">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Ristorante · Custoza di Sommacampagna</div>
+    <h1>Cucina del territorio,<br><em>vista sulla vallata</em></h1>
+    <p class="sub">A Custoza, tra le colline dei vini: cucina tipica ben eseguita e una terrazza panoramica con vista sulla pianura.</p>
+    <div class="hero-cta">
+      <a href="tel:+39045516026" class="btn btn-gold">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-out">Scopri il menù</a>
+    </div>
+    <div class="hero-meta">
+      <div><span class="stars">★★★★★</span> <b>4,5</b></div>
+      <div class="sep"></div>
+      <div>792 recensioni Google</div>
+      <div class="sep"></div>
+      <div>Via Bellavista 37, Custoza</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="storia">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <span class="kicker">La nostra storia</span>
+      <h2>Un gioiello tra le colline</h2>
+      <p>La Locanda Vecchia Custoza è un gioiello in un luogo suggestivo, con una bella vista sulla vallata e un'atmosfera calda e familiare, adatta a coppie e famiglie.</p>
+      <p>Cucina tipica del territorio, egregiamente eseguita: antipasti curati, primi come le pappardelle ai carciofi e i tortelli al pecorino, carni e dolci fatti in casa. Ottima la selezione di vini locali.</p>
+      <div class="sign">— la tradizione, con vista sulla vallata</div>
+    </div>
+    <div class="about-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydjDA_IXid5MPueLLciQCOS0Nq42CJNc10uY-tcAJsD-DHkPYV6zQLoV654_ppsL4h_FAyHKxT5p5M4LGnrpBrL0mfKFV9H8PHRiuq-NzJCS1dBLBWdEnIfkFVVSW8BTsObYmsBqO67Z9Lk__-MXDVjtSsCWra6IZmtizdA-zkvQxiMZDluOUAGEY0wyD9O4KsTrFzVHPVp6RQVuPekz7_fOi3SKr72EFhR0GJ7MlNhM3saKMXnOn8WW6vzq-FOBUSQASF_zCEk3E5DldKlEqK6-q70_dlTkLPK1uVu_CW0tfTP5b26w6sF7-mB1zU-CPQjW0Elz8SwqIRKCdKZIz4iRDyM-ki2RxuBrY9z2-xkaARg04Z7g2PjT3_YLZR5W16ougtH4ZmEWhxCnvsPVUUDQsyN5wXzv-1kcUMHCk1-4aJRx&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto Locanda Vecchia Custoza">
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Il menù</span>
+      <h2>La cucina del territorio</h2>
+      <div class="orn">✦ ✦ ✦</div>
+      <p>Piatti tipici e vini locali, con vista sulle colline.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="dish"><div class="r"><h4>Antipasti del territorio</h4><span class="tag">Antipasti</span></div><p>Crostoni, salumi e sfizi curati per iniziare.</p></div>
+      <div class="dish"><div class="r"><h4>Pappardelle ai carciofi</h4><span class="tag">Primi</span></div><p>Pasta fresca con carciofi di stagione, un classico.</p></div>
+      <div class="dish"><div class="r"><h4>Tortelli al pecorino e basilico</h4><span class="tag">Primi</span></div><p>Tortelli fatti in casa dal sapore deciso e delicato.</p></div>
+      <div class="dish"><div class="r"><h4>Carni alla griglia</h4><span class="tag">Secondi</span></div><p>Fiorentina e carni del territorio cotte a puntino.</p></div>
+      <div class="dish"><div class="r"><h4>Piatti tipici del giorno</h4><span class="tag">Menù del giorno</span></div><p>Proposte tipiche che cambiano con la stagione.</p></div>
+      <div class="dish"><div class="r"><h4>Dolci della casa</h4><span class="tag">Dessert</span></div><p>Sfogliatine con crema, semifreddi e gelato al limone.</p></div>
+    </div>
+    <p class="menu-note">Il menù cambia con la stagione — chiedi in sala i piatti del giorno e la carta dei vini del territorio.</p>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Galleria</span>
+      <h2>Assaggia con gli occhi</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="gal-grid">
+      <figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydgk2UzlV6tXoltm1Tj6qDbEhlO7PNYRqe8D9uQpfsACEN0_nGxxKAkvOcp5Pur3uizismqEoAacRukaZn9gs_TSKrBzHjrQgVODmFqAUb8x5YVjBqSKBc4OrcAMNbCCbKN3zzImH965BvGL3IX7dhD1eEBsczG5FPY_kFlND2cIv8dUfsiBHumbna2lJfFGoloErUrUAfV2DsZvBaUCZr3Omfqtsj-ZK3YUdkQ_JviivRVHbbmhpLEv4oYRPhoIhAk5q4SgGpUEJLxgHOpjOBTarfI4d3Ij_puaklKzgSjZFApGY4CL0JwCaAy4ELBDbH_oL78_AaIc3Ya7z9EovTaLyYS7GyjKI5c3cMw0FEgI0l5_jX1CVVJBz-MRTutqY2dKATA_zSHGtsZfBJ5B0OciKSYWktTiBmT6227nw1Rv-i-s&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydi785V9IUG-MjAELPyQflom0MvBJjTNb1o1YmVJZEWEvaqD1sUWzVTlPHe46kZ5Jw3zoiiVYPT8CXc5vXh3ouBrUlgsiL4jlJ0aOdpUkSlUjeRmiYQ0vKYu1sR3mTVNsm9szg4yUQvn_o-uyUsrUb_79_iPtKLk1JL-oHVCTOIzERzuG35ruY4ge1_5_iPhY3Msyx4JJof_bdbZr8LDqU2WQFlBvoC9P097AuBna67fSVsPGeyZXJsuq3O-M1lTFMOw1QL4H4VNqbBLibpeyzl90w01LpB_EGRH5YwY31FnIwQbTppNdCFxoWiy5RuuVhNq2OAdEwFRJchN_2i6IbQnWsdRHte0ysm9Na0Cg8WTAHmeejscdP_gLgvaWcLgp3hQwaIPuUCy9dRCK-gDVWoFYYtwyikwXMWbPAx4HebU7dtes5UuloJAY1tXqsve&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydheOLInLqkejTzPkgbNsX1-9z-YtFBTk5RQ7qmrsoWMi8ErdeMiQ-8Hhhu_F7m3-sbW4CcYmeueBjkKEw6n6-Q9OaGXK4CF5AOKaFWd2551gYmC_3MHdXZvQT3kFA9frZUs6QjliCV9lD9EWBKAwc4vncvafRBkWDYXU2tgWCX0Ws546-N0RnxH3uG3rvfUgm_gXP3-VZVTf7oiRwYnkxroSlDVNYOYNfHEgd-GfqHHLbMN5K1kmmZ7u6H_n41u5zxpsqtioogDKjQSxBFJyy1MV32Q7IsuTtgUVLFiykM-DiINpz5aWLGXm2lt0FSk11or31ilRH7n4-xwQqn7YNLDqRNF9p-rP_OZ0SEH9OUIHcNDnEpgOGGapYN1LL7TbWCWup9ZPB5aw1WUmobw3tggMmH0t2M0zJ2OMiK4_-v_kAbc&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Interno"></figure>
+      <figure class="wide"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydjgxvoMtfwvLDFLTphOzyS-5vTAqqnOJHeAcFxWC9fbZDYGAE0mUj7Fujn0qXUwu7QJnB0O5p9RisKF_jhkAOIcyA2NUcLnM6t244d2chJFMRPIYqz-jWCDaUlr7AgpUXklMuUD3p5TwcoUrq3HqD1jOgBmWpUWXPQFHem3wfpekLFlO91s9gZhIjsn49bUjUCzrZ1joZFWGXXtJ3etjx4rZp8Awy-S6kJOFlf3NR_bPJDUo5olDVmlH1MJPUT3W3xeUwHkRJa_LIV9LL3T54MI0OT3lCOgPOKF7tXgr7YyhrLCmcqnrB5nArYtVxKWW7Q9cOeDYVhRbJFt0EAyZLdQrKl8tOfTWe-5c3Jn4JSWzYWYEckCL2pHUX1K2NhMCUj5TnkGkNK3cLZpU2riIbtCoPgqeOPY6cSdkxkPdP_GX00lGISIGc81j9XZlw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydjDA_IXid5MPueLLciQCOS0Nq42CJNc10uY-tcAJsD-DHkPYV6zQLoV654_ppsL4h_FAyHKxT5p5M4LGnrpBrL0mfKFV9H8PHRiuq-NzJCS1dBLBWdEnIfkFVVSW8BTsObYmsBqO67Z9Lk__-MXDVjtSsCWra6IZmtizdA-zkvQxiMZDluOUAGEY0wyD9O4KsTrFzVHPVp6RQVuPekz7_fOi3SKr72EFhR0GJ7MlNhM3saKMXnOn8WW6vzq-FOBUSQASF_zCEk3E5DldKlEqK6-q70_dlTkLPK1uVu_CW0tfTP5b26w6sF7-mB1zU-CPQjW0Elz8SwqIRKCdKZIz4iRDyM-ki2RxuBrY9z2-xkaARg04Z7g2PjT3_YLZR5W16ougtH4ZmEWhxCnvsPVUUDQsyN5wXzv-1kcUMHCk1-4aJRx&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydgk2UzlV6tXoltm1Tj6qDbEhlO7PNYRqe8D9uQpfsACEN0_nGxxKAkvOcp5Pur3uizismqEoAacRukaZn9gs_TSKrBzHjrQgVODmFqAUb8x5YVjBqSKBc4OrcAMNbCCbKN3zzImH965BvGL3IX7dhD1eEBsczG5FPY_kFlND2cIv8dUfsiBHumbna2lJfFGoloErUrUAfV2DsZvBaUCZr3Omfqtsj-ZK3YUdkQ_JviivRVHbbmhpLEv4oYRPhoIhAk5q4SgGpUEJLxgHOpjOBTarfI4d3Ij_puaklKzgSjZFApGY4CL0JwCaAy4ELBDbH_oL78_AaIc3Ya7z9EovTaLyYS7GyjKI5c3cMw0FEgI0l5_jX1CVVJBz-MRTutqY2dKATA_zSHGtsZfBJ5B0OciKSYWktTiBmT6227nw1Rv-i-s&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dicono di noi</span>
+      <h2>4,5 su 792 recensioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“La Locanda Vecchia Custoza è un gioiello in un luogo piacevole, con una bella vista sulla pianura e un'atmosfera movimentata. Menù tipico con piatti semplici e porzioni oneste, vini molto buoni. Da provare!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjWloB9QbgWvoMghE2Oi_iReIzN8HOrxK1esrhtcO4lJc0cbO4uQ=s128-c0x00000000-cc-rp-mo-ba4" alt="Marco Gioè"><div><b>Marco Gioè</b><span>4 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Locale molto bello e accogliente, con una terrazza spettacolare in estate. Piatti locali buoni e ben presentati. Un posto dove ritornare.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjVJbD4uY_6v9oKWsuQCi5iKmNhdKwEEHcSaF_tm74R6MU218smGjQ=s128-c0x00000000-cc-rp-mo-ba4" alt="Franca Lovisari"><div><b>Franca Lovisari</b><span>7 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Ottima location, giardino con vista panoramica. Ottimi antipasti e primi ben curati, carni buone e dolci ottimi. Bagni puliti e parcheggio comodo.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocJ8GfIIWZ3fIOsEl76ZkSEcKHeBNpj3W-kaLHohHqgND2Zx-g=s128-c0x00000000-cc-rp-mo-ba6" alt="Elena Mantovani"><div><b>Elena Mantovani</b><span>2 anni fa</span></div></div>
+      </div>
+    </div>
+    <div class="rev-foot"><a href="https://maps.google.com/?cid=11604765563870069906" target="_blank" rel="noopener">Leggi tutte le 792 recensioni su Google →</a></div>
+  </div>
+</section>
+
+<section class="info" id="contatti">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dove trovarci</span>
+      <h2>Orari & Prenotazioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="info-grid">
+      <div class="hours-card">
+        <h3>Orari</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>12:00–15:00 · 19:00–00:00</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>12:00–15:00 · 19:00–00:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>12:00–15:00 · 19:00–00:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>Chiuso</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>12:00–15:00 · 19:00–00:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>12:00–15:00 · 19:00–00:00</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>12:00–15:00</span></li>
+        </ul>
+        <div class="contact-rows">
+          <div class="crow"><div class="ic">◉</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=11604765563870069906" target="_blank" rel="noopener">Via Bellavista 37, 37066 Custoza di Sommacampagna (VR)</a></div></div>
+          <div class="crow"><div class="ic">☎</div><div><h4>Telefono / Prenotazioni</h4><a href="tel:+39045516026">045 516026</a></div></div>
+        </div>
+        <div class="info-cta">
+          <a href="tel:+39045516026" class="btn btn-gold">Prenota un tavolo</a>
+          <a href="https://maps.google.com/?cid=11604765563870069906" target="_blank" rel="noopener" class="btn btn-out">Indicazioni ›</a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Bellavista+37,+37066+Custoza+Sommacampagna+VR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">Locanda Vecchia Custoza<span style="color:var(--gold)">.</span></div>
+    <div class="foot-line">Ristorante · Cucina del territorio</div>
+    <div class="socials">
+      <a href="https://maps.google.com/?cid=11604765563870069906" target="_blank" rel="noopener" title="Facebook">f</a>
+      <a href="tel:+39045516026" title="Telefono">☎</a>
+      <a href="https://maps.google.com/?cid=11604765563870069906" target="_blank" rel="noopener" title="Mappa">◉</a>
+    </div>
+    <div class="foot-line">© 2026 Locanda Vecchia Custoza · Via Bellavista 37, 37066 Custoza di Sommacampagna (VR) · P.IVA da inserire</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+39045516026">☎ Prenota un tavolo</a>
+</div>
+
+<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1500');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+const periods={0:[[1200,1500]],1:[[1200,1500],[1900,2400]],2:[[1200,1500],[1900,2400]],3:[[1200,1500],[1900,2400]],4:[],5:[[1200,1500],[1900,2400]],6:[[1200,1500],[1900,2400]]};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const open=(periods[day]||[]).some(p=>hm>=p[0]&&hm<p[1]);
+const badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+badge.className='open-badge '+(open?'open':'closed');
+txt.textContent=open?'Aperto ora':'Chiuso ora';
+</script>
+</body>
+</html>
