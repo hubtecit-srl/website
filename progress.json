@@ -1,6 +1,11 @@
 {
   "_nota": "Puntatore di avanzamento del motore. comuneIndex = indice nel file comuni.json; categoryIndex = indice in categories. Il motore aggiorna e committa questo file a fine di ogni esecuzione.",
-  "categories": ["dentisti", "estetiste", "parrucchieri", "ristoranti"],
+  "categories": [
+    "dentisti",
+    "estetiste",
+    "parrucchieri",
+    "ristoranti"
+  ],
   "comuneIndex": 0,
-  "categoryIndex": 0
+  "categoryIndex": 2
 }
