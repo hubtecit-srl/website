@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ristorante Ginepro — Fine dining a Verona | Prenota</title>
+<meta name="description" content="Ristorante Ginepro, cucina raffinata e stagionale a Verona. Percorsi degustazione, cantina d'autore, sala elegante. 4,9★ su 210 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#22261f; --ink2:#4c5145; --sub:#8b9082; --line:#e2e4dc; --paper:#f4f5ef; --white:#fff;
+  --accent:#4a5c3f; --accent-d:#3a4a31; --gold:#a08a5a; --green:#25d366;
+  --h:'Playfair Display',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--b);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.serif{font-family:var(--h);font-weight:400}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:var(--h);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:1.2rem}
+header nav{display:flex;gap:32px}
+header nav a{font-family:var(--b);font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;padding:13px 26px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-fill{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-fill:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.65)}
+.btn-light:hover{background:#fff;color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,38,31,.5),rgba(34,38,31,.68))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:820px}
+.hero .kick{color:#d8ddcf;display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(2.4rem,7vw,5.4rem);line-height:1.06;margin-bottom:26px}
+.hero p{font-size:1.08rem;font-weight:300;color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center;background:var(--white)}
+.intro .kick{display:block;margin-bottom:20px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.3;max-width:20ch;margin:0 auto 22px}
+.intro p{color:var(--ink2);font-weight:300;max-width:600px;margin:0 auto;font-size:1.05rem}
+
+/* Split */
+.split{padding:0 0 110px;background:var(--white)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h3{font-family:var(--h);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:18px;line-height:1.2}
+.split-txt p{color:var(--ink2);font-weight:300;margin-bottom:16px}
+
+/* Menu */
+.menu{padding:110px 0;background:var(--paper)}
+.menu-head{text-align:center;margin-bottom:60px}
+.menu-head .kick{display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;letter-spacing:.05em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:52px 72px;max-width:960px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem;text-align:center;padding-bottom:14px;margin-bottom:20px;border-bottom:1px solid var(--sub)}
+.dish{text-align:center;padding:14px 0}
+.dish h5{font-family:var(--h);font-weight:400;font-size:1.12rem;margin-bottom:4px}
+.dish span{color:var(--sub);font-weight:300;font-size:.9rem;display:block;margin-bottom:6px}
+.dish .price{font-family:var(--b);font-weight:500;letter-spacing:.1em;color:var(--accent);font-size:.92rem}
+
+/* Gallery */
+.gallery{padding:110px 0;background:var(--white)}
+.gal-head{text-align:center;margin-bottom:50px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);text-transform:uppercase;letter-spacing:.05em}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal-grid img{width:100%;height:360px;object-fit:cover}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--paper);text-align:center}
+.reviews .stars{color:var(--gold);letter-spacing:4px;font-size:1.1rem;margin-bottom:10px}
+.reviews h2{font-family:var(--h);font-weight:400;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:46px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.rv{background:#fff;border:1px solid var(--line);padding:34px 28px}
+.rv .st{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.rv p{font-family:var(--h);font-weight:400;font-style:italic;color:var(--ink2);font-size:1.05rem;margin-bottom:16px;line-height:1.5}
+.rv b{font-family:var(--b);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem}
+
+/* Visit / reserve */
+.visit{position:relative;padding:130px 0;text-align:center;color:#fff}
+.visit-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.visit-bg::after{content:"";position:absolute;inset:0;background:rgba(34,38,31,.72)}
+.visit .wrap{position:relative;z-index:2}
+.visit .kick{color:#d8ddcf;display:block;margin-bottom:18px}
+.visit h2{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px}
+.visit p{max-width:520px;margin:0 auto 18px;font-weight:300;color:rgba(255,255,255,.88)}
+.visit .hours{font-weight:300;color:rgba(255,255,255,.82);margin-bottom:28px;line-height:1.9}
+.visit .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 38px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#d8ddcf;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;font-weight:300;line-height:1.95;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.8rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;letter-spacing:.06em}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .menu-cols{grid-template-columns:1fr;gap:38px}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-hide{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:260px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--b);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Ginepro</a>
+    <nav>
+      <a href="#intro">Il ristorante</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#visita">Prenota</a>
+    </nav>
+    <a href="#visita" class="btn btn-out hd-hide">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Fine dining · Verona</span>
+    <h1>L'arte della tavola</h1>
+    <p>Cucina raffinata e stagionale, in una sala elegante nel cuore di Verona. Un'esperienza da vivere con calma.</p>
+    <div class="hero-cta">
+      <a href="#visita" class="btn btn-light">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-light">Il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="intro" class="intro">
+  <div class="wrap">
+    <span class="kick">Il ristorante</span>
+    <h2>Dove ogni piatto è un piccolo racconto</h2>
+    <p>Al Ristorante Ginepro celebriamo la materia prima con tecnica e misura. Percorsi degustazione che cambiano con le stagioni, una cantina curata e un servizio discreto e attento.</p>
+  </div>
+</section>
+
+<section class="split">
+  <div class="wrap split-grid">
+    <img class="split-img" src="https://images.pexels.com/photos/2696064/pexels-photo-2696064.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Piatto d'autore">
+    <div class="split-txt">
+      <span class="kick">La filosofia</span>
+      <h3>Stagionalità, territorio, eleganza</h3>
+      <p>Lavoriamo con piccoli produttori locali per portare in tavola solo il meglio di ogni stagione. Ogni dettaglio, dalla mise en place al calice, è pensato per l'ospite.</p>
+      <p>Un luogo intimo, ideale per cene speciali, anniversari e occasioni da ricordare.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La carta</span>
+      <h2>Menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><h5>Capasanta scottata</h5><span>Topinambur, nocciola, agrumi</span><div class="price">18 €</div></div>
+        <div class="dish"><h5>Uovo &amp; tartufo</h5><span>Fonduta leggera, tartufo nero</span><div class="price">16 €</div></div>
+        <div class="dish"><h5>Tartare di manzo</h5><span>Senape antica, capperi, tuorlo</span><div class="price">17 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><h5>Risotto agli agrumi</h5><span>Mantecato, gambero rosso</span><div class="price">20 €</div></div>
+        <div class="dish"><h5>Raviolo di zucca</h5><span>Burro nocciola, amaretto</span><div class="price">18 €</div></div>
+        <div class="dish"><h5>Tagliolino al tartufo</h5><span>Fatto in casa, tartufo nero</span><div class="price">22 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Secondi</h3>
+        <div class="dish"><h5>Filetto di manzo</h5><span>Jus al vino rosso, sedano rapa</span><div class="price">28 €</div></div>
+        <div class="dish"><h5>Branzino in crosta</h5><span>Verdure di stagione, beurre blanc</span><div class="price">26 €</div></div>
+        <div class="dish"><h5>Piccione arrosto</h5><span>Frutti rossi, patata affumicata</span><div class="price">30 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Degustazione &amp; Dolci</h3>
+        <div class="dish"><h5>Percorso Ginepro</h5><span>5 portate a sorpresa dello chef</span><div class="price">65 €</div></div>
+        <div class="dish"><h5>Abbinamento vini</h5><span>Calici in accompagnamento</span><div class="price">35 €</div></div>
+        <div class="dish"><h5>Dessert del giorno</h5><span>Creazione del pasticcere</span><div class="price">10 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galleria" class="gallery">
+  <div class="wrap">
+    <div class="gal-head">
+      <span class="kick">Galleria</span>
+      <h2>Atmosfera &amp; piatti</h2>
+    </div>
+    <div class="gal-grid">
+      <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Piatto">
+      <img src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sala">
+      <img src="https://images.pexels.com/photos/3184183/pexels-photo-3184183.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dettaglio">
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,9 su 210 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Un'esperienza raffinata dall'inizio alla fine. Ogni piatto un'emozione."</p><b>Chiara F.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Servizio impeccabile e cantina straordinaria. Il posto per le occasioni."</p><b>Davide N.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Cucina elegante e mai banale. Il percorso degustazione vale il viaggio."</p><b>Francesca L.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="visita" class="visit">
+  <div class="visit-bg"></div>
+  <div class="wrap">
+    <span class="kick">Prenotazioni</span>
+    <h2>Prenota la tua serata</h2>
+    <p>Consigliamo la prenotazione. Per menù degustazione ed eventi privati, contattaci.</p>
+    <div class="hours">Via Esempio 12, Verona · Mar–Dom 19:00–23:00 · Lunedì chiuso</div>
+    <div class="btns">
+      <a href="tel:+390450000000" class="btn btn-fill">Chiama 045 000 0000</a>
+      <a href="https://wa.me/390450000000" class="btn btn-light">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Ginepro</div>
+        <p>Cucina raffinata e stagionale nel cuore di Verona.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via Esempio 12, Verona<br><a href="tel:+390450000000">045 000 0000</a><br><a href="mailto:info@ristoranteginepro.it">info@ristoranteginepro.it</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Mar–Dom 19:00–23:00<br>Lunedì chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Ristorante Ginepro — Verona</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390450000000" class="call">Chiama</a>
+  <a href="https://wa.me/390450000000" class="wa">WhatsApp</a>
+</div>
+
+</body>
+</html>

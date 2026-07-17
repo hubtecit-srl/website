@@ -1,0 +1,21 @@
+{
+  "_nota": "Template flagship per categoria. Il motore, per ogni lead, sceglie UNA variante a rotazione (così attivita vicine non ricevono lo stesso layout). Per aggiungere un template: crea il file HTML nel repo e aggiungi il nome qui.",
+  "ristoranti": [
+    "il-vicoletto-trattoria-verona.html",
+    "ristorante-atlantic-flagship.html",
+    "ristorante-auburn-flagship.html",
+    "ristorante-juniper-flagship.html"
+  ],
+  "estetiste": [
+    "estetica-anna-verona.html"
+  ],
+  "parrucchieri": [
+    "silvia-de-guidi-capelli-verona.html"
+  ],
+  "dentisti": [
+    "youdent-verona-demo.html"
+  ],
+  "artigiani": [
+    "idraulico-gallo-verona.html"
+  ]
+}
