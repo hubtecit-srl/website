@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gastronomia De Gusto — Cucina di casa e piatti pronti | Affi (VR)</title>
+<meta name="description" content="Gastronomia De Gusto ad Affi (VR): cucina di casa, piatti pronti e specialità da asporto. 4,7★ su 50 recensioni Google. Chiama o passa a trovarci.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14100e; --bg2:#1c1613; --panel:#211a16; --cream:#f4ece0; --muted:#b8a998;
+  --gold:#c9a24b; --gold2:#e0bf74; --line:rgba(244,236,224,.12); --terra:#b56a3d;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 26px}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
+.kicker{font-family:var(--sans);font-weight:400;letter-spacing:.42em;text-transform:uppercase;font-size:.7rem;color:var(--gold)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:82px}
+.brand{font-family:var(--serif);font-size:1.6rem;color:var(--cream);letter-spacing:.04em}
+.brand span{color:var(--gold)}
+header nav{display:flex;gap:36px;align-items:center}
+header nav a{color:rgba(244,236,224,.82);font-size:.88rem;letter-spacing:.06em;transition:.2s}
+header nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;padding:14px 28px;border-radius:2px;transition:.3s;cursor:pointer;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#211a16}
+.btn-gold:hover{background:var(--gold2)}
+.btn-out{background:transparent;color:var(--cream);border-color:rgba(244,236,224,.4)}
+.btn-out:hover{border-color:var(--gold);color:var(--gold)}
+header.scrolled{background:rgba(20,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.menu-toggle{display:none;background:none;border:0;color:var(--cream);font-size:1.6rem;cursor:pointer}
+
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydi5e2xcXWUxFHJ4Y-p4wJu53nDh_Pf3apKt6xEceyQdPxT0CmJamvk4SZ84qeT_7ggYxpZ83c9n38UkesabfgooXWWI7n7MiXWGnGgXY15dkxHHJOEciHhRXIJVAXBXZ2VBK08R4Z7uk0TcP_AwyfwerCoIXRsYnP01c4eDKlvETrNUK9JiMyOM_hMZPrDHUuJ7URChnGF84YOOLhpfFFg0cRVYCn-k1I9SnqSNr-3ySBPbzfjXPA8i6h--8jsz2udA7CqHGjul7UiXej4MUfSSmv-cBmuKsNrlXtl6oYnjpDNSjBw6egXz5M579DVOdpI-l44UxmJqV4JFJQaGE6vLRrGf6p9_lOHfQ9_sbrMnp0JeKkKh2hd2ZoskyiApg2BDx0aB5SOmrnJy4jZjOAd-q42D-RiVDI6_3ytqcoWxPm33&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.06)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.6) 0%,rgba(20,16,14,.15) 45%,rgba(20,16,14,.92) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 0 88px;width:100%}
+.hero .kicker{color:var(--gold2)}
+.hero h1{font-size:clamp(3rem,8.5vw,6.6rem);line-height:.98;margin:16px 0 14px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero .sub{font-size:1.2rem;max-width:560px;color:rgba(244,236,224,.9);margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-meta{display:flex;gap:26px;align-items:center;margin-top:34px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.hero-meta .stars{color:var(--gold);letter-spacing:2px}
+.hero-meta b{color:var(--cream);font-family:var(--serif);font-size:1.25rem}
+.hero-meta .sep{width:1px;height:28px;background:var(--line)}
+
+section{padding:110px 0}
+.head{text-align:center;max-width:620px;margin:0 auto 60px}
+.head h2{font-size:clamp(2.2rem,4.5vw,3.3rem);margin:14px 0}
+.head p{color:var(--muted)}
+.orn{color:var(--gold);letter-spacing:.5em;font-size:.9rem;margin-top:10px}
+
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-txt .kicker{margin-bottom:14px;display:block}
+.about-txt h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:20px;line-height:1.1}
+.about-txt p{color:var(--muted);margin-bottom:16px}
+.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold2);margin-top:8px}
+.about-img{position:relative}
+.about-img img{width:100%;height:560px;object-fit:cover;border-radius:3px}
+.about-img::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,162,75,.5);border-radius:3px;pointer-events:none;margin:-14px;top:22px;left:22px;right:-22px;bottom:-22px;z-index:-1}
+
+.menu{background:var(--bg)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 60px;max-width:960px;margin:0 auto}
+.dish{border-bottom:1px dashed var(--line);padding-bottom:16px}
+.dish .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.dish h4{font-family:var(--serif);font-size:1.5rem;color:var(--cream);font-weight:600}
+.dish .tag{font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:6px}
+.dish p{color:var(--muted);font-size:.94rem;margin-top:4px}
+.menu-note{text-align:center;color:var(--muted);font-style:italic;margin-top:48px;font-family:var(--serif);font-size:1.25rem}
+
+.gallery{background:var(--bg2)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
+.gal-grid figure{overflow:hidden;border-radius:3px;cursor:pointer;position:relative}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.7s;filter:saturate(1.02)}
+.gal-grid figure:hover img{transform:scale(1.09)}
+.gal-grid .tall{grid-row:span 2}
+.gal-grid .wide{grid-column:span 2}
+
+.reviews{background:var(--bg);position:relative}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:32px}
+.rev .stars{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
+.rev p{color:rgba(244,236,224,.86);font-size:.98rem;margin-bottom:20px;font-weight:300}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.rev .who b{font-family:var(--sans);font-weight:500;font-size:.92rem;color:var(--cream)}
+.rev .who span{display:block;font-size:.78rem;color:var(--muted)}
+.rev-foot{text-align:center;margin-top:36px}
+.rev-foot a{color:var(--gold);border-bottom:1px solid rgba(201,162,75,.4);padding-bottom:2px;font-size:.9rem;letter-spacing:.04em}
+
+.info{background:var(--bg2)}
+.info-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:stretch}
+.hours-card h3{font-size:1.9rem;margin-bottom:6px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin:14px 0 22px}
+.open-badge.open{background:rgba(120,180,120,.16);color:#8fd08f}
+.open-badge.closed{background:rgba(200,90,70,.16);color:#e09a86}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted);gap:16px}
+.hours-list li.today{color:var(--cream)}
+.hours-list li.today .d{color:var(--gold)}
+.hours-list li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.contact-rows{margin-top:28px}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
+.crow .ic{color:var(--gold);font-size:1.05rem;width:26px}
+.crow h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:2px}
+.crow a,.crow p{color:var(--cream);font-size:1rem}
+.info-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.map-wrap{border-radius:3px;overflow:hidden;min-height:480px;filter:grayscale(.3) contrast(1.05)}
+.map-wrap iframe{width:100%;height:100%;min-height:480px;border:0}
+
+footer{background:#0e0b09;padding:66px 0 28px;text-align:center;border-top:1px solid var(--line)}
+footer .brand{font-size:2rem;display:inline-block;margin-bottom:12px}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:.25s}
+.socials a:hover{background:var(--gold);color:#14100e;border-color:var(--gold)}
+.foot-line{color:var(--muted);font-size:.82rem;margin-top:18px}
+.foot-note{color:rgba(184,169,152,.5);font-size:.72rem;margin-top:8px}
+
+.lb{position:fixed;inset:0;background:rgba(10,8,6,.96);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%;border-radius:3px}
+.lb .x{position:absolute;top:22px;right:30px;color:var(--cream);font-size:2rem;cursor:pointer;opacity:.8}
+.mobile-bar{display:none}
+
+@media(max-width:960px){
+  .about-grid,.info-grid{grid-template-columns:1fr;gap:40px}
+  .menu-grid{grid-template-columns:1fr;gap:22px}
+  .rev-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  header nav{display:none}
+  .menu-toggle{display:block}
+  .about-img::after{display:none}
+}
+@media(max-width:560px){
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
+  section{padding:76px 0}
+  .header-cta{display:none}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:16px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#14100e;background:var(--gold);font-weight:500}
+  body{padding-bottom:54px}
+}
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand">De Gusto<span>.</span></a>
+    <nav>
+      <a href="#storia">La trattoria</a>
+      <a href="#menu">Menù</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="tel:+390456260963" class="btn btn-gold header-cta">Chiama</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').scrollIntoView()">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Gastronomia · Affi (VR)</div>
+    <h1>Gastronomia &amp;<br><em>cucina di casa</em></h1>
+    <p class="sub">Ad Affi, in Via Napoleone: piatti pronti preparati ogni giorno con materie prime fresche, da gustare sul posto o da asporto.</p>
+    <div class="hero-cta">
+      <a href="tel:+390456260963" class="btn btn-gold">Chiama ora</a>
+      <a href="#menu" class="btn btn-out">Scopri il menù</a>
+    </div>
+    <div class="hero-meta">
+      <div><span class="stars">★★★★★</span> <b>4,7</b></div>
+      <div class="sep"></div>
+      <div>50 recensioni Google</div>
+      <div class="sep"></div>
+      <div>Via Napoleone 9, Affi</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="storia">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <span class="kicker">La nostra storia</span>
+      <h2>La cucina di casa, ogni giorno</h2>
+      <p>De Gusto è la gastronomia di Affi dove trovare piatti cucinati bene, con varietà e cura, dai primi ai dolci. La cucina di Roberto mette al centro il gusto e la qualità.</p>
+      <p>Materie prime fresche, tanta passione e un banco sempre ricco: primi, secondi di carne e pesce, verdure di stagione e dolci fatti in casa. Perfetta per un pranzo veloce o per portare a casa il meglio.</p>
+      <div class="sign">— si sente l'amore in ogni piatto</div>
+    </div>
+    <div class="about-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydhLLOiJGfamshG4eOFMK3cg1-xrxJk_6FdK--gl5B5J3kWlrUiawKYH-IaXk3IbWLq2zUJNsfMSpI89euuiMa88pi4wsyiSx-ybXS4u0XfFug5jLIdhzQQVi_LLtIcWMlahpvUywmT9hhoA-szXsOF9LV41V1W3XJz71SXdJRHrz4ahxieRmkHjLJxU0YnSCwfOT9edCkLuBk9J-VsYFfJfPTC8FFABS8qZSf8LUUzzs3xPOspOxSVNvLr1-p09jTpXifdD6431ZN3r8VmZBoKWdKYcGunp_hGFiIFxPSX-juQMpnreVjneVFvMLhgnUYbBURZYSIHpEZ4cLvj290Sak-0mqeEHHd0qjbwuov19SN1r_6s4CQYP5JWk_dZsVUR6WT2UIEaVx9vAr0-iaSX24efHYm3Pgixg1wb1jX0fcfE&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Gastronomia De Gusto">
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Il menù</span>
+      <h2>I piatti della tradizione</h2>
+      <div class="orn">✦ ✦ ✦</div>
+      <p>Una selezione dei nostri piatti simbolo, nel rispetto della cucina veronese.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="dish"><div class="r"><h4>Primi del giorno</h4><span class="tag">Cucina</span></div><p>Paste e primi preparati ogni mattina con ingredienti freschi.</p></div>
+      <div class="dish"><div class="r"><h4>Secondi di carne e pesce</h4><span class="tag">Cucina</span></div><p>Secondi cucinati come a casa, sempre diversi.</p></div>
+      <div class="dish"><div class="r"><h4>Verdure e contorni di stagione</h4><span class="tag">Cucina</span></div><p>Contorni genuini che seguono la stagione.</p></div>
+      <div class="dish"><div class="r"><h4>Paste al forno e lasagne</h4><span class="tag">Cucina</span></div><p>I classici del pranzo della domenica, pronti da gustare.</p></div>
+      <div class="dish"><div class="r"><h4>Piatti pronti da asporto</h4><span class="tag">Asporto</span></div><p>Porta a casa il meglio della nostra cucina.</p></div>
+      <div class="dish"><div class="r"><h4>Dolci fatti in casa</h4><span class="tag">Dessert</span></div><p>Dolci genuini preparati con cura.</p></div>
+    </div>
+    <p class="menu-note">Il menù cambia con la stagione — chiedi in sala i piatti del giorno e la carta dei vini.</p>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Galleria</span>
+      <h2>Assaggia con gli occhi</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="gal-grid">
+      <figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydiqm56A19KmX5736RGQAHdhv4eHQngwkYdzPl4nc_3ZUyVah97nqxrNzFjlISVmFR9ojk9kZo3qVloA5eD6OOdQHTkN3-o4SoGUX4JKtFHpVkcSj9zFRy-KsPHyucyvBjRiV5rU2og8IbvATtbDYXhYZpftDBJ4kyIIt7oc5EEKn8rAMA5jvGcynGkfcXuN-XOV3eJCa2meK2gogmwjSXfBhbpITr7FYF91h0Nz9mqwixx3XBJYpaGlvfQf69GPDbybDcvX39GTA64PuzDg-1-yUuRpBprRQP_4ff_PaaroU5y5Ktu83DSaa0pMyexSh8Oii_pA0iAbghvbRvpvmH0K6Pn3ALf7CEo-4eRFY2vRWaQ20DkAK6xuFh4ucOQITZa10Pc90KlD8LA49wgM3pODuJt90VrO8I1a1BOg7b3FUhU&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydggsbGTzjJ97bfe09W5O-RiRoL8lmAxCGsaZmaaeyGJGlAk2R-gHQVVsy155DwC4E2NJsWDFOcKZJma6WdCcc-bOgeEIFsz63Bek-F0ApZtpgQqWkPY28McTojTqlEksAEJTQyjA6tVuGrwxDy67kuWqg2IXFNA-wWgNvZ-ySc2kaP9btPpLp9Yoq48G2cUzkSCH0omsgHMhmKzhU2c_OZng8nZv92B3i1Jaa6K9yUKSHKBqXCbiM4em7rd4v-_YvT5VvpHUNITfzAD6wo8xNL3sNvx5sXfbyEXSOCyxYp1w5UXRc9HDMHCugKTiH5vCwfkSa9vB3j_-KG6wMIJvGNq1W04R6UTzbBYOObwfqAzu9iqXmuP5ae_A4SuOU-uHTur86W7U59m_h5N8oSUdCfIPo2qASD7nnSjcAoifAkRSw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydgrXAfzT3G-Z-6gKWvDwbTJ0m5ZWdaiTGgEOunEHyr3penAWza7lxtQEjoR7vX2GVGz3fI5IEfOFQuUVb6duvvOsrp7D-PSfTbm2HBf1n4G-cyhhvfioXPldJEAaWkPGpm553Ua6uS9SFJD4KCVNXt52kXnxV7ivlrNeBgp6V5Bki2w45I_sDIIC9uIxOAWPMwQB2WiD_PD9in71rjG1MfUc--Q7xoGJVv7EOxtURPbZ1mFVstT8Bqct1WAfS1lrcpSvx8MgiDpMF7TqnennPIDaSpiOsJ_NBaswLFSC9H3C8LqenCaprHfMzJErF0rIpkAP6VDa31eXU3irVmT1C4d2JeM9AX27odQqBRT1Bf5Vi5wVQlXBpBm2srUBk8VRStZ73DOSjS-Myik3ztEX8kUspuyNO0gVKd1UnLT4z3ehbw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Interno"></figure>
+      <figure class="wide"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydiG41HoJjLwwjRvgg6KG05D3af5wZfImdqR0h5BuJmufCAaDq2OyNS_xztXImRQc27IgVb-6q1oSz9i9BfLAax08Y-ay59P_OZLFOKnHoZgBTz_rSViUcQ9SQmnxvgDwK9HAVhpFNkInkP6uxzWsZgdkDXVu0cKMWvFqK0AQdIZlv97gqHeDz9e9kYN5VNAz3upiCRJntmqxr4w2tiV2QuBToi7KTzsbLD5ZRY3-3CbnS52uMv54tqGJdKpD95v_m0UegWnbv773-MsMgQXudzAVzwYlKmy3lGt1kuflZI7L-_s2d8bcVwRS1g1V_TaqqGUU5IQZ4WhCmIeDhXhYAPoLkqDAOmA_1UvWNo4FEVe2-dzoHnSnplzCcLJbgtJoXvzlBlFEkaKru9bfqlloMLE7-MAVIgxJPsu4dzxcFgLwcei&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydi5e2xcXWUxFHJ4Y-p4wJu53nDh_Pf3apKt6xEceyQdPxT0CmJamvk4SZ84qeT_7ggYxpZ83c9n38UkesabfgooXWWI7n7MiXWGnGgXY15dkxHHJOEciHhRXIJVAXBXZ2VBK08R4Z7uk0TcP_AwyfwerCoIXRsYnP01c4eDKlvETrNUK9JiMyOM_hMZPrDHUuJ7URChnGF84YOOLhpfFFg0cRVYCn-k1I9SnqSNr-3ySBPbzfjXPA8i6h--8jsz2udA7CqHGjul7UiXej4MUfSSmv-cBmuKsNrlXtl6oYnjpDNSjBw6egXz5M579DVOdpI-l44UxmJqV4JFJQaGE6vLRrGf6p9_lOHfQ9_sbrMnp0JeKkKh2hd2ZoskyiApg2BDx0aB5SOmrnJy4jZjOAd-q42D-RiVDI6_3ytqcoWxPm33&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydhLLOiJGfamshG4eOFMK3cg1-xrxJk_6FdK--gl5B5J3kWlrUiawKYH-IaXk3IbWLq2zUJNsfMSpI89euuiMa88pi4wsyiSx-ybXS4u0XfFug5jLIdhzQQVi_LLtIcWMlahpvUywmT9hhoA-szXsOF9LV41V1W3XJz71SXdJRHrz4ahxieRmkHjLJxU0YnSCwfOT9edCkLuBk9J-VsYFfJfPTC8FFABS8qZSf8LUUzzs3xPOspOxSVNvLr1-p09jTpXifdD6431ZN3r8VmZBoKWdKYcGunp_hGFiIFxPSX-juQMpnreVjneVFvMLhgnUYbBURZYSIHpEZ4cLvj290Sak-0mqeEHHd0qjbwuov19SN1r_6s4CQYP5JWk_dZsVUR6WT2UIEaVx9vAr0-iaSX24efHYm3Pgixg1wb1jX0fcfE&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dicono di noi</span>
+      <h2>4,7 su 50 recensioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“In questa gastronomia si trovano pietanze cucinate bene. C'è molta varietà, dai primi piatti ai dolci. Vini ottimi. L'ambiente è accogliente e invitante.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjVoIraXEdzr4PHMbVYv-qFi6HdKtBKKW1rPZfKIRR6RcgULXxQQ3Q=s128-c0x00000000-cc-rp-mo-ba4" alt="Raffaella"><div><b>Raffaella Bazzoli</b><span>un anno fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Abbiamo mangiato coda di rospo grigliata, carciofi trifolati, parmigiana e verdure al forno. Serviti da una signora molto gentile. Era tutto molto fresco e gustoso. Consigliato.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocLMfGa2FRvc_q-HnAb3ssTL5AXc3lep_RTwuKIruAd0roYRaA=s128-c0x00000000-cc-rp-mo-ba2" alt="Christina"><div><b>Christina Ruffo</b><span>3 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Un lavoro impressionante! La cucina di Roberto è veramente speciale, ci mette tantissimo amore e mangiando qualsiasi cosa nel banco si sente. Tappa fissa per un pranzetto.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUFDzxOz8C8VVX3cdwVqDCCsw-45iqVHkttVM3np69w847atTA62w=s128-c0x00000000-cc-rp-mo-ba2" alt="Giulia"><div><b>Giulia Bru</b><span>6 anni fa</span></div></div>
+      </div>
+    </div>
+    <div class="rev-foot"><a href="https://maps.google.com/?cid=5770004165399720418" target="_blank" rel="noopener">Leggi tutte le 50 recensioni su Google →</a></div>
+  </div>
+</section>
+
+<section class="info" id="contatti">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dove trovarci</span>
+      <h2>Orari & Prenotazioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="info-grid">
+      <div class="hours-card">
+        <h3>Orari</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>12:00–14:30 · 19:00–22:30</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>12:00–14:30 · 19:00–22:30</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>12:00–14:30 · 19:00–22:30</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>12:00–14:30 · 19:00–22:30</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>12:00–14:30 · 19:00–23:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>12:00–15:00 · 19:00–23:00</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>12:00–15:00 · 19:00–22:30</span></li>
+        </ul>
+        <div class="contact-rows">
+          <div class="crow"><div class="ic">◉</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=5770004165399720418" target="_blank" rel="noopener">Via Napoleone, 9, 37010 Affi VR</a></div></div>
+          <div class="crow"><div class="ic">☎</div><div><h4>Telefono / Prenotazioni</h4><a href="tel:+390456260963">045 626 0963</a></div></div>
+        </div>
+        <div class="info-cta">
+          <a href="tel:+390456260963" class="btn btn-gold">Chiama ora</a>
+          <a href="https://maps.google.com/?cid=5770004165399720418" target="_blank" rel="noopener" class="btn btn-out">Come arrivare</a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Napoleone%2C+9%2C+37010+Affi+VR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">De Gusto<span style="color:var(--gold)">.</span></div>
+    <div class="foot-line">Gastronomia · Cucina di casa e asporto</div>
+    <div class="socials">
+      <a href="https://maps.google.com/?cid=5770004165399720418" target="_blank" rel="noopener" title="Facebook">f</a>
+      <a href="tel:+390456260963" title="Telefono">☎</a>
+      <a href="https://maps.google.com/?cid=5770004165399720418" target="_blank" rel="noopener" title="Mappa">◉</a>
+    </div>
+    <div class="foot-line">© 2026 Gastronomia De Gusto · Via Napoleone, 9, 37010 Affi VR · P.IVA da inserire</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+390456260963">☎ Chiama / Asporto</a>
+</div>
+
+<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1500');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+const periods={0:[[1200,1500],[1900,2230]],1:[[1200,1430],[1900,2230]],2:[[1200,1430],[1900,2230]],3:[[1200,1430],[1900,2230]],4:[[1200,1430],[1900,2230]],5:[[1200,1430],[1900,2300]],6:[[1200,1500],[1900,2300]]};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const open=(periods[day]||[]).some(p=>hm>=p[0]&&hm<p[1]);
+const badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+badge.className='open-badge '+(open?'open':'closed');
+txt.textContent=open?'Aperto ora':'Chiuso ora';
+</script>
+</body>
+</html>
