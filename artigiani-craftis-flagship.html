@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bottega Artigiana — Creazioni artigianali a Verona</title>
+<meta name="description" content="Bottega Artigiana a Verona: creazioni artigianali fatte a mano, su misura e con passione. 4,9★ su 120 recensioni. Scopri i nostri lavori e richiedi un preventivo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --clay:#b5623c; --clay-d:#9a4f2e; --dark:#2b241f; --ink:#332b24; --ink2:#5f544a; --sub:#968a7d;
+  --line:#e8e0d4; --cream:#f5efe6; --soft:#efe6d8; --white:#fff; --green:#25d366;
+  --h:'Playfair Display',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.8;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.28em;text-transform:uppercase;font-size:.72rem;color:var(--clay);font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;padding:15px 30px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--clay)}
+.btn-clay{background:var(--clay);color:#fff}
+.btn-clay:hover{background:var(--clay-d);border-color:var(--clay-d)}
+.btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.55)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:600;font-size:1.5rem;letter-spacing:.02em}
+header nav{display:flex;gap:32px}
+header nav a{letter-spacing:.1em;text-transform:uppercase;font-size:.78rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--clay)}
+
+/* Hero */
+.hero{padding:150px 0 100px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero .kick{display:block;margin-bottom:20px}
+.hero h1{font-family:var(--h);font-weight:400;font-size:clamp(2.8rem,6.5vw,5rem);line-height:1.05;margin-bottom:22px}
+.hero h1 em{font-style:italic;color:var(--clay)}
+.hero p{color:var(--ink2);font-size:1.08rem;margin-bottom:30px;max-width:470px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img img{width:100%;height:540px;object-fit:cover;background:var(--soft) url('https://images.pexels.com/photos/3094035/pexels-photo-3094035.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+
+/* About */
+.about{padding:100px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-img{width:100%;height:500px;object-fit:cover;background:var(--soft) url('https://images.pexels.com/photos/4207892/pexels-photo-4207892.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+.about-txt .kick{display:block;margin-bottom:14px}
+.about-txt h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:18px;line-height:1.2}
+.about-txt p{color:var(--ink2);margin-bottom:14px}
+
+/* Works */
+.works{padding:0 0 100px}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 50px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:400;font-size:clamp(2.1rem,4.6vw,3.3rem)}
+.sec-h p{color:var(--ink2);margin-top:8px}
+.works-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.work{position:relative;overflow:hidden}
+.work img{width:100%;height:360px;object-fit:cover;transition:.6s}
+.work:hover img{transform:scale(1.06)}
+.work .cap{position:absolute;left:0;right:0;bottom:0;padding:20px;background:linear-gradient(transparent,rgba(43,36,31,.8));color:#fff}
+.work .cap h3{font-family:var(--h);font-weight:500;font-size:1.3rem}
+
+/* Why */
+.why{padding:100px 0;background:var(--cream)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.why-c{text-align:center;padding:20px}
+.why-c .ic{width:64px;height:64px;margin:0 auto 16px;background:#fff;color:var(--clay);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.why-c h3{font-family:var(--h);font-weight:500;font-size:1.3rem;margin-bottom:8px}
+.why-c p{color:var(--ink2);font-size:.94rem}
+
+/* Reviews */
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:var(--soft);padding:32px}
+.rv .st{color:var(--clay);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.15rem;color:var(--ink);margin-bottom:16px;line-height:1.45}
+.rv b{font-weight:500;font-size:.9rem;letter-spacing:.06em}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/6069114/pexels-photo-6069114.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(43,36,31,.74)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--dark);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#e0b39c;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.95;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.8rem;letter-spacing:.04em;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-img img{height:380px}
+  .about-grid{grid-template-columns:1fr;gap:28px}
+  .about-img{height:340px}
+  .works-grid,.why-grid,.rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem}
+  .mbar .call{color:var(--clay)}
+  .mbar .book{background:var(--clay);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Bottega Artigiana</a>
+    <nav>
+      <a href="#storia">La bottega</a>
+      <a href="#lavori">Creazioni</a>
+      <a href="#perche">Perché noi</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="#contatti" class="btn btn-out">Preventivo</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Artigianato · Verona</span>
+      <h1>Creazioni fatte a mano, con <em>passione</em></h1>
+      <p>Ogni pezzo è unico, realizzato con cura e materiali di qualità. Creazioni su misura per la tua casa e i tuoi progetti.</p>
+      <div class="hero-cta">
+        <a href="#contatti" class="btn btn-clay">Richiedi un preventivo</a>
+        <a href="#lavori" class="btn btn-out">Le creazioni</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="https://images.pexels.com/photos/3094035/pexels-photo-3094035.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Laboratorio artigiano"></div>
+  </div>
+</section>
+
+<section id="storia" class="about">
+  <div class="wrap about-grid">
+    <div class="about-img" role="img" aria-label="Il laboratorio"></div>
+    <div class="about-txt">
+      <span class="kick">La bottega</span>
+      <h2>Un mestiere fatto di mani e dettagli</h2>
+      <p>Nella nostra bottega di Verona diamo forma alle idee con tecniche artigianali e amore per il bello. Ogni creazione nasce dall'ascolto e dalla cura del particolare.</p>
+      <p>Lavori su misura, restauri e pezzi unici: mettiamo la nostra esperienza al servizio dei tuoi progetti.</p>
+    </div>
+  </div>
+</section>
+
+<section id="lavori" class="works">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Le creazioni</span><h2>I nostri lavori</h2></div>
+    <div class="works-grid">
+      <div class="work"><img src="https://images.pexels.com/photos/4992461/pexels-photo-4992461.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Creazione 1"><div class="cap"><h3>Su misura</h3></div></div>
+      <div class="work"><img src="https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Creazione 2"><div class="cap"><h3>Fatto a mano</h3></div></div>
+      <div class="work"><img src="https://images.pexels.com/photos/2079246/pexels-photo-2079246.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Creazione 3"><div class="cap"><h3>Restauro</h3></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="perche" class="why">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Perché sceglierci</span><h2>Qualità che si vede e si tocca</h2></div>
+    <div class="why-grid">
+      <div class="why-c"><div class="ic">✋</div><h3>Fatto a mano</h3><p>Ogni pezzo è realizzato artigianalmente, senza scorciatoie.</p></div>
+      <div class="why-c"><div class="ic">🪵</div><h3>Materiali scelti</h3><p>Solo materie prime di qualità, selezionate con cura.</p></div>
+      <div class="why-c"><div class="ic">📐</div><h3>Su misura</h3><p>Realizziamo creazioni personalizzate sulle tue esigenze.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>Cosa dicono i clienti</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Lavoro impeccabile e cura maniacale dei dettagli. Un vero artigiano."</p><b>Paolo M.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Ha realizzato esattamente quello che immaginavo. Bravissimo!"</p><b>Laura F.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Professionalità e passione. Consiglio a chi cerca qualità vera."</p><b>Giovanni R.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="contatti" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Raccontaci il tuo progetto</h2>
+    <p>Chiamaci o scrivici su WhatsApp: studiamo insieme la soluzione su misura per te.</p>
+    <div class="btns">
+      <a href="tel:+390450000000" class="btn btn-light">📞 045 000 0000</a>
+      <a href="https://wa.me/390450000000" class="btn btn-ghost">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Bottega Artigiana</div><p>Creazioni artigianali fatte a mano, a Verona.</p></div>
+      <div><h4>Contatti</h4><p>Via Esempio 12, Verona<br><a href="tel:+390450000000">045 000 0000</a><br><a href="mailto:info@bottegartigiana.it">info@bottegartigiana.it</a></p></div>
+      <div><h4>Orari</h4><p>Lun–Ven 8:30–18:00<br>Sab su appuntamento</p></div>
+    </div>
+    <div class="foot-bot"><span>© Bottega Artigiana — Verona</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390450000000" class="call">Chiama</a>
+  <a href="#contatti" class="book">Preventivo</a>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Falegnameria Nova — Falegname a Verona | Preventivo</title>
+<meta name="description" content="Falegnameria Nova a Verona: mobili su misura, arredi, restauri e lavorazioni in legno. 4,9★ su 130 recensioni. Richiedi un preventivo gratuito.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --wood:#bc9770; --wood-d:#a37f58; --dark:#262421; --dark2:#1c1a17; --ink:#2a2724; --ink2:#57524b; --sub:#8f887d;
+  --line:#e6e1d8; --cream:#f5f1ea; --soft:#efe9df; --white:#fff; --green:#25d366;
+  --f:'Hanken Grotesk',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;color:var(--wood-d);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--f);font-weight:600;font-size:.9rem;padding:14px 28px;border-radius:3px;cursor:pointer;transition:.2s;border:1px solid transparent}
+.btn-dark{background:var(--dark);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-wood{background:var(--wood);color:var(--dark)}
+.btn-wood:hover{background:var(--wood-d)}
+.btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.btn-ghost:hover{background:#fff;color:var(--dark)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(38,36,33,.92);backdrop-filter:blur(8px)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:1.2rem;color:#fff}
+.brand .mk{width:32px;height:32px;background:var(--wood);border-radius:4px;display:flex;align-items:center;justify-content:center;color:var(--dark);font-size:1rem}
+header nav{display:flex;gap:28px}
+header nav a{font-weight:500;font-size:.9rem;color:rgba(255,255,255,.82);transition:.2s}
+header nav a:hover{color:var(--wood)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/5974330/pexels-photo-5974330.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,26,23,.9),rgba(28,26,23,.5))}
+.hero-inner{position:relative;z-index:2;max-width:640px;padding-top:60px}
+.hero .kick{color:var(--wood);display:block;margin-bottom:18px}
+.hero h1{font-weight:700;font-size:clamp(2.6rem,6.5vw,4.8rem);line-height:1.05;margin-bottom:20px;letter-spacing:-.01em}
+.hero p{font-size:1.1rem;color:rgba(255,255,255,.85);max-width:480px;margin-bottom:30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Stats */
+.stats{background:var(--dark);color:#fff;padding:40px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
+.stats .n{font-size:2.3rem;font-weight:800;color:var(--wood)}
+.stats p{color:rgba(255,255,255,.7);font-size:.9rem;margin-top:4px}
+
+/* About */
+.about{padding:100px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-img{width:100%;height:500px;object-fit:cover;border-radius:4px;background:var(--soft) url('https://images.pexels.com/photos/3637786/pexels-photo-3637786.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+.about-txt .kick{display:block;margin-bottom:14px}
+.about-txt h2{font-weight:700;font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:18px;letter-spacing:-.01em}
+.about-txt p{color:var(--ink2);margin-bottom:14px}
+.about-list{list-style:none;margin-top:12px}
+.about-list li{display:flex;gap:10px;align-items:center;margin-bottom:10px;font-weight:500}
+.about-list .ck{width:24px;height:24px;flex:0 0 24px;background:var(--wood);color:var(--dark);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700}
+
+/* Services */
+.serv{padding:100px 0;background:var(--cream)}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 50px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-weight:700;font-size:clamp(2rem,4.4vw,3.1rem);letter-spacing:-.01em}
+.sec-h p{color:var(--ink2);margin-top:8px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.serv-c{background:#fff;border:1px solid var(--line);border-radius:6px;padding:32px 28px;transition:.25s}
+.serv-c:hover{border-color:var(--wood);box-shadow:0 18px 40px rgba(38,36,33,.08);transform:translateY(-5px)}
+.serv-c .ic{width:56px;height:56px;background:var(--soft);color:var(--wood-d);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px}
+.serv-c h3{font-weight:700;font-size:1.18rem;margin-bottom:6px}
+.serv-c p{color:var(--ink2);font-size:.93rem}
+
+/* Projects */
+.proj{padding:100px 0}
+.proj-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.proj-c{position:relative;overflow:hidden;border-radius:4px}
+.proj-c img{width:100%;height:340px;object-fit:cover;transition:.6s}
+.proj-c:hover img{transform:scale(1.05)}
+.proj-c .cap{position:absolute;left:0;bottom:0;right:0;padding:22px;background:linear-gradient(transparent,rgba(28,26,23,.82));color:#fff}
+.proj-c .cap h3{font-weight:700;font-size:1.3rem}
+.proj-c .cap span{color:var(--wood);font-size:.85rem;font-weight:500}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--cream)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border-radius:6px;padding:30px;border-top:3px solid var(--wood)}
+.rv .st{color:var(--wood-d);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:16px}
+.rv b{font-weight:700;font-size:.92rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/1094767/pexels-photo-1094767.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(28,26,23,.8)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-weight:700;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.85)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--dark2);color:rgba(255,255,255,.72);padding:56px 0 34px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{margin-bottom:12px}
+.foot-grid h4{font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.74rem;color:var(--wood);margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .about-grid{grid-template-columns:1fr;gap:28px}
+  .about-img{height:340px}
+  .serv-grid,.rv-grid{grid-template-columns:1fr}
+  .proj-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--dark);border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.9rem}
+  .mbar .call{color:#fff}
+  .mbar .book{background:var(--wood);color:var(--dark)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand"><span class="mk">🪵</span> Falegnameria Nova</a>
+    <nav>
+      <a href="#chisiamo">Chi siamo</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#progetti">Progetti</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="#contatti" class="btn btn-wood">Preventivo</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap"><div class="hero-inner">
+    <span class="kick">Falegname · Verona</span>
+    <h1>L'arte del legno, su misura per te</h1>
+    <p>Mobili e arredi realizzati a mano, restauri e lavorazioni personalizzate. Qualità artigianale che dura nel tempo.</p>
+    <div class="hero-cta">
+      <a href="#contatti" class="btn btn-wood">Richiedi un preventivo</a>
+      <a href="#progetti" class="btn btn-ghost">I nostri progetti</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div><div class="n">20+</div><p>Anni di esperienza</p></div>
+    <div><div class="n">500+</div><p>Progetti realizzati</p></div>
+    <div><div class="n">4,9★</div><p>130 recensioni</p></div>
+    <div><div class="n">100%</div><p>Fatto a mano</p></div>
+  </div>
+</section>
+
+<section id="chisiamo" class="about">
+  <div class="wrap about-grid">
+    <div class="about-img" role="img" aria-label="Il laboratorio"></div>
+    <div class="about-txt">
+      <span class="kick">Chi siamo</span>
+      <h2>Passione per il legno, da generazioni</h2>
+      <p>La Falegnameria Nova unisce tecniche tradizionali e strumenti moderni per creare arredi unici. Ascoltiamo le tue idee e le trasformiamo in realtà.</p>
+      <ul class="about-list">
+        <li><span class="ck">✓</span> Progettazione e sopralluogo gratuiti</li>
+        <li><span class="ck">✓</span> Legni selezionati e finiture di pregio</li>
+        <li><span class="ck">✓</span> Lavori su misura per casa e attività</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Cosa facciamo</span><h2>I nostri servizi</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div class="ic">🛋️</div><h3>Mobili su misura</h3><p>Arredi progettati e realizzati per i tuoi spazi.</p></div>
+      <div class="serv-c"><div class="ic">🚪</div><h3>Porte e infissi</h3><p>Porte, finestre e serramenti in legno su misura.</p></div>
+      <div class="serv-c"><div class="ic">🔨</div><h3>Restauri</h3><p>Recupero e restauro di mobili e arredi d'epoca.</p></div>
+      <div class="serv-c"><div class="ic">🍽️</div><h3>Cucine</h3><p>Cucine artigianali personalizzate in legno.</p></div>
+      <div class="serv-c"><div class="ic">🏢</div><h3>Arredo negozi</h3><p>Allestimenti e arredi su misura per attività.</p></div>
+      <div class="serv-c"><div class="ic">📐</div><h3>Progettazione</h3><p>Consulenza e progetto su misura per te.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="progetti" class="proj">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Portfolio</span><h2>Progetti realizzati</h2></div>
+    <div class="proj-grid">
+      <div class="proj-c"><img src="https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Progetto 1"><div class="cap"><span>Su misura</span><h3>Libreria in rovere</h3></div></div>
+      <div class="proj-c"><img src="https://images.pexels.com/photos/2098405/pexels-photo-2098405.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Progetto 2"><div class="cap"><span>Cucine</span><h3>Cucina artigianale</h3></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>Cosa dicono i clienti</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Mobile su misura perfetto, montaggio impeccabile. Veri professionisti."</p><b>Marco T.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Hanno restaurato la credenza di famiglia meravigliosamente. Grazie!"</p><b>Anna B.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Preventivo chiaro, tempi rispettati e qualità altissima. Consigliati."</p><b>Luca G.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="contatti" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Hai un progetto in mente?</h2>
+    <p>Chiamaci o scrivici su WhatsApp: sopralluogo e preventivo gratuiti.</p>
+    <div class="btns">
+      <a href="tel:+390450000000" class="btn btn-wood">📞 045 000 0000</a>
+      <a href="https://wa.me/390450000000" class="btn btn-ghost">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand"><span class="mk">🪵</span> Falegnameria Nova</div><p>Falegname artigiano a Verona, mobili e arredi su misura.</p></div>
+      <div><h4>Contatti</h4><p>Via Esempio 12, Verona<br><a href="tel:+390450000000">045 000 0000</a><br><a href="mailto:info@falegnamerianova.it">info@falegnamerianova.it</a></p></div>
+      <div><h4>Orari</h4><p>Lun–Ven 8:00–18:00<br>Sab 8:00–12:00</p></div>
+    </div>
+    <div class="foot-bot"><span>© Falegnameria Nova — Verona</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390450000000" class="call">Chiama</a>
+  <a href="#contatti" class="book">Preventivo</a>
+</div>
+
+</body>
+</html>

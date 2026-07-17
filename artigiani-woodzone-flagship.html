@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legno &amp; Bottega — Falegname e artigiano a Verona | Preventivo</title>
+<meta name="description" content="Legno & Bottega a Verona: mobili su misura, arredi, infissi e lavorazioni artigianali in legno. 25 anni di esperienza. 4,8★ su 145 recensioni. Chiedi un preventivo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=Heebo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brown:#9e6726; --brown-d:#83531c; --dark:#241a10; --ink:#2c2318; --ink2:#5c5142; --sub:#93887a;
+  --line:#e8e0d2; --cream:#f6f0e5; --soft:#efe6d5; --white:#fff; --green:#25d366;
+  --h:'Lato',system-ui,sans-serif; --b:'Heebo',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--h);letter-spacing:.16em;text-transform:uppercase;font-size:.76rem;color:var(--brown);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;font-size:.88rem;letter-spacing:.02em;padding:14px 28px;border-radius:3px;cursor:pointer;transition:.2s;border:2px solid transparent;text-transform:uppercase}
+.btn-brown{background:var(--brown);color:#fff}
+.btn-brown:hover{background:var(--brown-d)}
+.btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.btn-ghost:hover{background:#fff;color:var(--dark)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{display:flex;align-items:center;gap:9px;font-family:var(--h);font-weight:900;font-size:1.25rem;text-transform:uppercase;letter-spacing:.02em}
+.brand .mk{width:34px;height:34px;background:var(--brown);border-radius:4px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1rem}
+header nav{display:flex;gap:28px}
+header nav a{font-family:var(--h);font-weight:700;font-size:.84rem;text-transform:uppercase;letter-spacing:.03em;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--brown)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/1094770/pexels-photo-1094770.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,26,16,.9),rgba(36,26,16,.5))}
+.hero-inner{position:relative;z-index:2;max-width:660px;padding-top:60px}
+.hero .kick{color:#e0ad63;display:block;margin-bottom:18px}
+.hero h1{font-family:var(--h);font-weight:900;font-size:clamp(2.6rem,6.5vw,5rem);line-height:1.04;margin-bottom:20px;text-transform:uppercase;letter-spacing:-.01em}
+.hero p{font-size:1.1rem;color:rgba(255,255,255,.85);max-width:480px;margin-bottom:30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Feature strip */
+.fstrip{background:var(--brown);color:#fff}
+.fstrip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding:30px 0}
+.fstrip .c{display:flex;align-items:center;gap:14px}
+.fstrip .ic{font-size:1.8rem}
+.fstrip h4{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:1rem;letter-spacing:.02em}
+.fstrip p{font-size:.88rem;opacity:.9}
+
+/* About */
+.about{padding:100px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-img{width:100%;height:500px;object-fit:cover;background:var(--soft) url('https://images.pexels.com/photos/5089152/pexels-photo-5089152.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+.about-txt .kick{display:block;margin-bottom:14px}
+.about-txt h2{font-family:var(--h);font-weight:900;font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:18px;text-transform:uppercase;letter-spacing:-.01em;line-height:1.08}
+.about-txt p{color:var(--ink2);margin-bottom:14px}
+.about-badge{display:inline-flex;align-items:center;gap:14px;margin-top:16px;background:var(--cream);padding:16px 22px;border-radius:6px}
+.about-badge .n{font-family:var(--h);font-weight:900;font-size:2.4rem;color:var(--brown);line-height:1}
+.about-badge span{font-size:.9rem;color:var(--ink2)}
+
+/* Services */
+.serv{padding:100px 0;background:var(--cream)}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 50px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:900;font-size:clamp(2rem,4.4vw,3.1rem);text-transform:uppercase;letter-spacing:-.01em}
+.sec-h p{color:var(--ink2);margin-top:8px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.serv-c{background:#fff;border-radius:6px;padding:32px 28px;transition:.25s;border-bottom:3px solid transparent}
+.serv-c:hover{border-color:var(--brown);box-shadow:0 18px 40px rgba(36,26,16,.08);transform:translateY(-5px)}
+.serv-c .ic{font-size:2rem;margin-bottom:12px}
+.serv-c h3{font-family:var(--h);font-weight:700;font-size:1.18rem;margin-bottom:6px;text-transform:uppercase;letter-spacing:.01em}
+.serv-c p{color:var(--ink2);font-size:.93rem}
+
+/* Projects */
+.proj{padding:100px 0}
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.proj-c{position:relative;overflow:hidden;border-radius:4px}
+.proj-c img{width:100%;height:320px;object-fit:cover;transition:.6s}
+.proj-c:hover img{transform:scale(1.06)}
+.proj-c .cap{position:absolute;left:0;bottom:0;right:0;padding:20px;background:linear-gradient(transparent,rgba(36,26,16,.85));color:#fff}
+.proj-c .cap h3{font-family:var(--h);font-weight:700;text-transform:uppercase;font-size:1.15rem}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--cream)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border-radius:6px;padding:30px}
+.rv .st{color:var(--brown);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:16px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.92rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/3637739/pexels-photo-3637739.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(36,26,16,.82)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:900;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px;text-transform:uppercase}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.85)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--dark);color:rgba(255,255,255,.72);padding:56px 0 34px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-size:.76rem;color:#e0ad63;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .fstrip-grid{grid-template-columns:1fr;gap:14px}
+  .about-grid{grid-template-columns:1fr;gap:28px}
+  .about-img{height:340px}
+  .serv-grid,.proj-grid,.rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--dark);border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-family:var(--h);font-weight:700;text-transform:uppercase;font-size:.86rem}
+  .mbar .call{color:#fff}
+  .mbar .book{background:var(--brown);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand"><span class="mk">🪵</span> Legno &amp; Bottega</a>
+    <nav>
+      <a href="#chisiamo">Chi siamo</a>
+      <a href="#servizi">Servizi</a>
+      <a href="#progetti">Progetti</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="#contatti" class="btn btn-brown">Preventivo</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap"><div class="hero-inner">
+    <span class="kick">Falegname · Verona</span>
+    <h1>Qualità artigianale nel legno</h1>
+    <p>Mobili su misura, infissi, restauri e arredi. 25 anni di esperienza al servizio dei tuoi progetti.</p>
+    <div class="hero-cta">
+      <a href="#contatti" class="btn btn-brown">Chiedi un preventivo</a>
+      <a href="#progetti" class="btn btn-ghost">I nostri lavori</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="fstrip">
+  <div class="wrap fstrip-grid">
+    <div class="c"><span class="ic">🏆</span><div><h4>25 anni</h4><p>di esperienza artigianale</p></div></div>
+    <div class="c"><span class="ic">📐</span><div><h4>Su misura</h4><p>ogni progetto è unico</p></div></div>
+    <div class="c"><span class="ic">🤝</span><div><h4>Preventivo gratuito</h4><p>sopralluogo senza impegno</p></div></div>
+  </div>
+</section>
+
+<section id="chisiamo" class="about">
+  <div class="wrap about-grid">
+    <div class="about-img" role="img" aria-label="Il laboratorio"></div>
+    <div class="about-txt">
+      <span class="kick">Chi siamo</span>
+      <h2>Il legno è la nostra passione</h2>
+      <p>Da oltre 25 anni realizziamo arredi e lavorazioni in legno per case e attività. Materiali selezionati, tecniche collaudate e cura del dettaglio in ogni progetto.</p>
+      <p>Ti seguiamo dall'idea alla posa, con soluzioni su misura e tempi rispettati.</p>
+      <div class="about-badge"><span class="n">500+</span><span>progetti realizzati<br>in tutta la provincia</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Cosa facciamo</span><h2>I nostri servizi</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div class="ic">🛋️</div><h3>Mobili su misura</h3><p>Arredi progettati e costruiti per i tuoi spazi.</p></div>
+      <div class="serv-c"><div class="ic">🚪</div><h3>Porte &amp; infissi</h3><p>Serramenti in legno realizzati su misura.</p></div>
+      <div class="serv-c"><div class="ic">🔨</div><h3>Restauri</h3><p>Recupero di mobili e arredi d'epoca.</p></div>
+      <div class="serv-c"><div class="ic">🍽️</div><h3>Cucine</h3><p>Cucine artigianali in legno personalizzate.</p></div>
+      <div class="serv-c"><div class="ic">🪜</div><h3>Scale &amp; parquet</h3><p>Scale, pavimenti e rivestimenti in legno.</p></div>
+      <div class="serv-c"><div class="ic">🏢</div><h3>Arredo attività</h3><p>Allestimenti su misura per negozi e locali.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="progetti" class="proj">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Portfolio</span><h2>Progetti realizzati</h2></div>
+    <div class="proj-grid">
+      <div class="proj-c"><img src="https://images.pexels.com/photos/6474343/pexels-photo-6474343.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Progetto 1"><div class="cap"><h3>Arredo su misura</h3></div></div>
+      <div class="proj-c"><img src="https://images.pexels.com/photos/2098405/pexels-photo-2098405.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Progetto 2"><div class="cap"><h3>Cucina in legno</h3></div></div>
+      <div class="proj-c"><img src="https://images.pexels.com/photos/6474471/pexels-photo-6474471.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Progetto 3"><div class="cap"><h3>Libreria su misura</h3></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>Cosa dicono i clienti</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Lavoro eccellente e materiali di qualità. Consigliatissimo!"</p><b>Roberto M.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Cucina su misura bellissima, montata a regola d'arte. Grazie!"</p><b>Cristina L.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Esperienza e serietà. Preventivo rispettato al centesimo."</p><b>Alberto S.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="contatti" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Costruiamo il tuo progetto</h2>
+    <p>Chiamaci o scrivici su WhatsApp: sopralluogo e preventivo gratuiti, senza impegno.</p>
+    <div class="btns">
+      <a href="tel:+390450000000" class="btn btn-brown">📞 045 000 0000</a>
+      <a href="https://wa.me/390450000000" class="btn btn-ghost">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff"><span class="mk">🪵</span> Legno &amp; Bottega</div><p>Falegname artigiano a Verona da oltre 25 anni.</p></div>
+      <div><h4>Contatti</h4><p>Via Esempio 12, Verona<br><a href="tel:+390450000000">045 000 0000</a><br><a href="mailto:info@legnoebottega.it">info@legnoebottega.it</a></p></div>
+      <div><h4>Orari</h4><p>Lun–Ven 8:00–18:00<br>Sab 8:00–12:00</p></div>
+    </div>
+    <div class="foot-bot"><span>© Legno &amp; Bottega — Verona</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390450000000" class="call">Chiama</a>
+  <a href="#contatti" class="book">Preventivo</a>
+</div>
+
+</body>
+</html>
