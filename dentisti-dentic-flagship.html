@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Dentistico Sorriso — Dentista a Verona | Prenota</title>
+<meta name="description" content="Studio Dentistico Sorriso a Verona: igiene, implantologia, ortodonzia ed estetica dentale. 4,9★ su 150 recensioni. Prenota la tua visita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#3267ff; --blue-d:#2450e0; --ink:#0f1533; --ink2:#4b5270; --sub:#8a90a8;
+  --line:#e6e9f5; --soft:#f2f5ff; --white:#fff; --green:#25d366;
+  --f:'Manrope',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.kick{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.75rem;color:var(--blue)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--f);font-weight:700;font-size:.92rem;padding:13px 26px;border-radius:8px;cursor:pointer;transition:.2s;border:2px solid transparent}
+.btn-blue{background:var(--blue);color:#fff}
+.btn-blue:hover{background:var(--blue-d)}
+.btn-soft{background:var(--soft);color:var(--blue)}
+.btn-soft:hover{background:#e6ecff}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-line:hover{border-color:var(--blue);color:var(--blue)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem}
+.brand .mk{width:34px;height:34px;background:var(--blue);border-radius:9px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem}
+header nav{display:flex;gap:28px}
+header nav a{font-weight:600;font-size:.92rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--blue)}
+
+/* Hero */
+.hero{padding:130px 0 90px;background:linear-gradient(180deg,var(--soft),#fff)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero .kick{margin-bottom:16px;display:block}
+.hero h1{font-size:clamp(2.4rem,5vw,3.9rem);font-weight:800;line-height:1.08;letter-spacing:-.02em;margin-bottom:20px}
+.hero p{color:var(--ink2);font-size:1.1rem;margin-bottom:28px;max-width:520px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:26px}
+.hero-trust{display:flex;align-items:center;gap:14px;font-size:.92rem;color:var(--ink2)}
+.hero-trust .st{color:#f5a623;letter-spacing:2px}
+.hero-img{position:relative}
+.hero-img img{width:100%;height:460px;object-fit:cover;border-radius:20px;background:var(--soft) url('https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+.hero-badge{position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:14px;box-shadow:0 18px 40px rgba(15,21,51,.12);padding:16px 20px;display:flex;align-items:center;gap:12px}
+.hero-badge .n{font-size:1.5rem;font-weight:800;color:var(--blue)}
+.hero-badge small{color:var(--sub);font-size:.8rem}
+
+/* Contact strip */
+.cstrip{margin-top:-40px}
+.cstrip-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.cstrip .c{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;display:flex;gap:14px;align-items:center;box-shadow:0 10px 30px rgba(15,21,51,.05)}
+.cstrip .ic{width:48px;height:48px;flex:0 0 48px;background:var(--soft);color:var(--blue);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.3rem}
+.cstrip h4{font-size:.78rem;color:var(--sub);text-transform:uppercase;letter-spacing:.08em;margin-bottom:2px}
+.cstrip p{font-weight:700}
+
+/* Features */
+.feat{padding:90px 0}
+.sec-h{text-align:center;max-width:620px;margin:0 auto 52px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+.sec-h p{color:var(--ink2);margin-top:12px}
+.feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feat-c{text-align:center;padding:30px 22px;border:1px solid var(--line);border-radius:18px;transition:.25s}
+.feat-c:hover{border-color:var(--blue);box-shadow:0 18px 40px rgba(50,103,255,.1);transform:translateY(-5px)}
+.feat-c .ic{width:60px;height:60px;margin:0 auto 16px;background:var(--soft);color:var(--blue);border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:1.6rem}
+.feat-c h3{font-weight:700;font-size:1.1rem;margin-bottom:6px}
+.feat-c p{color:var(--ink2);font-size:.92rem}
+
+/* Services */
+.serv{padding:90px 0;background:var(--soft)}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.serv-c{background:#fff;border-radius:18px;padding:30px 26px;transition:.25s}
+.serv-c:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(15,21,51,.08)}
+.serv-c .ic{font-size:1.9rem;margin-bottom:12px}
+.serv-c h3{font-weight:700;font-size:1.18rem;margin-bottom:8px}
+.serv-c p{color:var(--ink2);font-size:.94rem}
+
+/* About doctor */
+.doc{padding:90px 0}
+.doc-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.doc-img img{width:100%;height:480px;object-fit:cover;border-radius:20px;background:var(--soft) url('https://images.pexels.com/photos/6812540/pexels-photo-6812540.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+.doc-txt .kick{display:block;margin-bottom:12px}
+.doc-txt h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
+.doc-txt p{color:var(--ink2);margin-bottom:14px}
+.doc-list{list-style:none;margin-top:14px}
+.doc-list li{display:flex;gap:10px;align-items:center;margin-bottom:10px;font-weight:600}
+.doc-list .ck{width:24px;height:24px;flex:0 0 24px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--soft)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border-radius:18px;padding:30px}
+.rv .st{color:#f5a623;letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.95rem;margin-bottom:16px}
+.rv b{font-weight:700}
+
+/* CTA */
+.cta{padding:80px 0}
+.cta-box{background:var(--blue);border-radius:26px;padding:60px;text-align:center;color:#fff}
+.cta-box h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;margin-bottom:12px}
+.cta-box p{opacity:.9;max-width:520px;margin:0 auto 26px}
+.cta-box .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-box .btn-white{background:#fff;color:var(--blue)}
+.cta-box .btn-glass{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.4)}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:56px 0 34px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:#8fa6ff;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .cstrip-grid{grid-template-columns:1fr}
+  .feat-grid{grid-template-columns:1fr 1fr}
+  .serv-grid,.rv-grid{grid-template-columns:1fr}
+  .doc-grid{grid-template-columns:1fr;gap:28px}
+  .doc-img img{height:340px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .feat-grid{grid-template-columns:1fr}
+  .cta-box{padding:40px 24px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.9rem}
+  .mbar .call{color:var(--blue)}
+  .mbar .book{background:var(--blue);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand"><span class="mk">🦷</span> Studio Sorriso</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#studio">Lo studio</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-blue">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Dentista a Verona</span>
+      <h1>Il tuo sorriso, nelle mani giuste</h1>
+      <p>Cure dentali complete in un ambiente moderno e accogliente. Dall'igiene all'implantologia, ci prendiamo cura di te con tecnologia e attenzione.</p>
+      <div class="hero-cta">
+        <a href="#prenota" class="btn btn-blue">Prenota una visita</a>
+        <a href="#servizi" class="btn btn-line">I nostri servizi</a>
+      </div>
+      <div class="hero-trust"><span class="st">★★★★★</span> <span><b>4,9</b> su 150 recensioni Google</span></div>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.pexels.com/photos/3779705/pexels-photo-3779705.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Studio dentistico">
+      <div class="hero-badge"><span class="n">15+</span><small>anni di<br>esperienza</small></div>
+    </div>
+  </div>
+</section>
+
+<section class="cstrip">
+  <div class="wrap cstrip-grid">
+    <div class="c"><div class="ic">📞</div><div><h4>Telefono</h4><p><a href="tel:+390450000000">045 000 0000</a></p></div></div>
+    <div class="c"><div class="ic">📍</div><div><h4>Indirizzo</h4><p>Via Esempio 12, Verona</p></div></div>
+    <div class="c"><div class="ic">🕐</div><div><h4>Orari</h4><p>Lun–Ven 9:00–19:00</p></div></div>
+  </div>
+</section>
+
+<section class="feat">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Perché sceglierci</span><h2>Cura, esperienza e tecnologia</h2></div>
+    <div class="feat-grid">
+      <div class="feat-c"><div class="ic">💰</div><h3>Prezzi trasparenti</h3><p>Preventivo chiaro prima di ogni cura, senza sorprese.</p></div>
+      <div class="feat-c"><div class="ic">👨‍⚕️</div><h3>Team qualificato</h3><p>Professionisti aggiornati e attenti a ogni paziente.</p></div>
+      <div class="feat-c"><div class="ic">🦷</div><h3>Cure complete</h3><p>Dall'igiene all'implantologia, tutto in un unico studio.</p></div>
+      <div class="feat-c"><div class="ic">🕐</div><h3>Orari flessibili</h3><p>Appuntamenti anche in pausa pranzo e sera.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">I nostri servizi</span><h2>Trattamenti per tutta la famiglia</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div class="ic">✨</div><h3>Igiene e prevenzione</h3><p>Pulizia professionale e controlli periodici per un sorriso sano.</p></div>
+      <div class="serv-c"><div class="ic">🦷</div><h3>Implantologia</h3><p>Impianti dentali per ritrovare funzione ed estetica.</p></div>
+      <div class="serv-c"><div class="ic">😁</div><h3>Ortodonzia</h3><p>Apparecchi tradizionali e trasparenti per allineare i denti.</p></div>
+      <div class="serv-c"><div class="ic">💎</div><h3>Estetica dentale</h3><p>Sbiancamento e faccette per un sorriso luminoso.</p></div>
+      <div class="serv-c"><div class="ic">🔧</div><h3>Conservativa</h3><p>Otturazioni e cure per preservare i denti naturali.</p></div>
+      <div class="serv-c"><div class="ic">🦷</div><h3>Protesi</h3><p>Soluzioni fisse e mobili su misura.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="studio" class="doc">
+  <div class="wrap doc-grid">
+    <div class="doc-img" role="img" aria-label="Il dottore"></div>
+    <div class="doc-txt">
+      <span class="kick">Lo studio</span>
+      <h2>Un team che mette il paziente al centro</h2>
+      <p>Da oltre 15 anni ci prendiamo cura del sorriso dei nostri pazienti con competenza e delicatezza. Ambienti moderni, strumentazione all'avanguardia e percorsi di cura personalizzati.</p>
+      <ul class="doc-list">
+        <li><span class="ck">✓</span> Prima visita e preventivo senza impegno</li>
+        <li><span class="ck">✓</span> Tecnologie digitali e radiografia a basse dosi</li>
+        <li><span class="ck">✓</span> Pagamenti dilazionati disponibili</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="recensioni" class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>Cosa dicono i pazienti</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Professionali e gentili. Mi hanno messo a mio agio dalla prima visita."</p><b>Laura M.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Studio moderno e pulito, spiegazioni chiare sui costi. Consigliato."</p><b>Paolo R.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Ottimo lavoro sull'impianto, nessun dolore. Grazie a tutto il team."</p><b>Anna T.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Prenota la tua visita</h2>
+      <p>Chiamaci o scrivici: fisseremo un appuntamento comodo per te. Prima visita conoscitiva senza impegno.</p>
+      <div class="btns">
+        <a href="tel:+390450000000" class="btn btn-white">📞 045 000 0000</a>
+        <a href="https://wa.me/390450000000" class="btn btn-glass">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">🦷 Studio Sorriso</div><p>Cure dentali complete a Verona, con attenzione e tecnologia.</p></div>
+      <div><h4>Contatti</h4><p>Via Esempio 12, Verona<br><a href="tel:+390450000000">045 000 0000</a><br><a href="mailto:info@studiosorriso.it">info@studiosorriso.it</a></p></div>
+      <div><h4>Orari</h4><p>Lun–Ven 9:00–19:00<br>Sab su appuntamento</p></div>
+    </div>
+    <div class="foot-bot"><span>© Studio Dentistico Sorriso — Verona</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390450000000" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>

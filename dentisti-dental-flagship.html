@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dental Smile — Studio dentistico a Verona | Prenota</title>
+<meta name="description" content="Dental Smile, studio dentistico a Verona: prevenzione, ortodonzia, sbiancamento e implantologia. 4,9★ su 170 recensioni. Prenota una visita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#f9669d; --pink-d:#e84f89; --indigo:#3a3089; --indigo-d:#2c2570; --ink:#241f45; --ink2:#5b5677; --sub:#918dab;
+  --line:#eee7f3; --soft:#fbf1f6; --lav:#f1eefb; --white:#fff; --green:#25d366;
+  --h:'Fredoka',system-ui,sans-serif; --b:'Nunito',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.kick{font-family:var(--h);font-weight:600;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem;color:var(--pink)}
+h1,h2,h3,h4,.brand{font-family:var(--h)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:600;font-size:.95rem;padding:13px 28px;border-radius:100px;cursor:pointer;transition:.2s;border:2px solid transparent}
+.btn-pink{background:var(--pink);color:#fff}
+.btn-pink:hover{background:var(--pink-d)}
+.btn-indigo{background:var(--indigo);color:#fff}
+.btn-indigo:hover{background:var(--indigo-d)}
+.btn-line{background:transparent;color:var(--indigo);border-color:#d9d3ef}
+.btn-line:hover{background:var(--lav)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:700;font-size:1.3rem;color:var(--indigo)}
+.brand .mk{width:36px;height:36px;background:var(--pink);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.1rem}
+header nav{display:flex;gap:28px}
+header nav a{font-family:var(--h);font-weight:500;font-size:.95rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--pink)}
+
+/* Hero */
+.hero{padding:130px 0 90px;background:linear-gradient(180deg,var(--lav),#fff)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.hero .kick{display:block;margin-bottom:16px}
+.hero h1{font-size:clamp(2.5rem,5.2vw,4.1rem);font-weight:700;line-height:1.05;margin-bottom:18px;color:var(--indigo)}
+.hero h1 span{color:var(--pink)}
+.hero p{color:var(--ink2);font-size:1.1rem;margin-bottom:26px;max-width:520px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+.hero-trust{display:flex;align-items:center;gap:12px;font-size:.95rem;color:var(--ink2)}
+.hero-trust .st{color:var(--pink);letter-spacing:2px}
+.hero-img{position:relative}
+.hero-img img{width:100%;height:470px;object-fit:cover;border-radius:200px 200px 28px 28px;background:var(--soft) url('https://images.pexels.com/photos/6529157/pexels-photo-6529157.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+.blob{position:absolute;width:120px;height:120px;background:var(--pink);opacity:.14;border-radius:50%;top:-20px;left:-20px;z-index:-1}
+
+/* Features pills */
+.feat{padding:70px 0}
+.feat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.feat-c{text-align:center;padding:32px 20px;background:var(--lav);border-radius:24px;transition:.25s}
+.feat-c:nth-child(even){background:var(--soft)}
+.feat-c:hover{transform:translateY(-6px)}
+.feat-c .ic{width:62px;height:62px;margin:0 auto 14px;background:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.feat-c h3{font-weight:600;font-size:1.08rem;margin-bottom:5px;color:var(--indigo)}
+.feat-c p{color:var(--ink2);font-size:.9rem}
+
+/* Services */
+.serv{padding:90px 0;background:var(--lav)}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 50px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-size:clamp(2rem,4.2vw,3rem);font-weight:700;color:var(--indigo)}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.serv-c{background:#fff;border-radius:24px;padding:32px 26px;transition:.25s}
+.serv-c:hover{transform:translateY(-6px);box-shadow:0 22px 48px rgba(58,48,137,.1)}
+.serv-c .ic{width:60px;height:60px;background:var(--soft);border-radius:18px;display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:14px}
+.serv-c h3{font-weight:600;font-size:1.18rem;margin-bottom:6px;color:var(--indigo)}
+.serv-c p{color:var(--ink2);font-size:.93rem}
+
+/* About */
+.about{padding:90px 0}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-img img{width:100%;height:480px;object-fit:cover;border-radius:28px;background:var(--soft) url('https://images.pexels.com/photos/3881449/pexels-photo-3881449.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+.about-txt .kick{display:block;margin-bottom:12px}
+.about-txt h2{font-size:clamp(1.9rem,3.8vw,2.7rem);font-weight:700;color:var(--indigo);margin-bottom:14px}
+.about-txt p{color:var(--ink2);margin-bottom:14px}
+.about-list{list-style:none;margin-top:12px}
+.about-list li{display:flex;gap:10px;align-items:center;margin-bottom:10px;font-weight:600}
+.about-list .ck{width:26px;height:26px;flex:0 0 26px;background:var(--pink);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--lav)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border-radius:24px;padding:32px}
+.rv .st{color:var(--pink);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.95rem;margin-bottom:16px}
+.rv b{font-family:var(--h);font-weight:600;color:var(--indigo)}
+
+/* CTA */
+.cta{padding:80px 0}
+.cta-box{background:linear-gradient(120deg,var(--indigo),#5a4bc4);border-radius:32px;padding:64px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.cta-box::after{content:"";position:absolute;width:260px;height:260px;background:var(--pink);opacity:.25;border-radius:50%;right:-60px;bottom:-90px}
+.cta-box h2{font-size:clamp(2rem,4.2vw,3rem);font-weight:700;margin-bottom:12px;position:relative}
+.cta-box p{opacity:.92;max-width:520px;margin:0 auto 26px;position:relative}
+.cta-box .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;position:relative}
+.cta-box .btn-white{background:#fff;color:var(--indigo)}
+.cta-box .btn-p{background:var(--pink);color:#fff}
+
+footer{background:var(--indigo);color:rgba(255,255,255,.78);padding:56px 0 34px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-weight:600;font-size:.82rem;text-transform:uppercase;letter-spacing:.1em;color:#f3a6c6;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.78)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.16);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.55);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .feat-grid{grid-template-columns:1fr 1fr}
+  .serv-grid,.rv-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr;gap:28px}
+  .about-img img{height:340px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .feat-grid{grid-template-columns:1fr}
+  .cta-box{padding:44px 24px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-family:var(--h);font-weight:600;font-size:.92rem}
+  .mbar .call{color:var(--indigo)}
+  .mbar .book{background:var(--pink);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand"><span class="mk">🦷</span> Dental Smile</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#studio">Chi siamo</a>
+      <a href="#recensioni">Recensioni</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-pink">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Studio dentistico · Verona</span>
+      <h1>Miglioriamo la salute e <span>il tuo sorriso</span></h1>
+      <p>Un dentista amico di tutta la famiglia. Cure moderne e senza stress, in un ambiente pensato per farti stare bene.</p>
+      <div class="hero-cta">
+        <a href="#prenota" class="btn btn-pink">Prenota una visita</a>
+        <a href="#servizi" class="btn btn-line">I trattamenti</a>
+      </div>
+      <div class="hero-trust"><span class="st">★★★★★</span> <span><b>4,9</b> su 170 recensioni</span></div>
+    </div>
+    <div class="hero-img">
+      <span class="blob"></span>
+      <img src="https://images.pexels.com/photos/6529157/pexels-photo-6529157.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Sorriso sano">
+    </div>
+  </div>
+</section>
+
+<section class="feat">
+  <div class="wrap feat-grid">
+    <div class="feat-c"><div class="ic">😌</div><h3>Cure senza dolore</h3><p>Tecniche delicate e ambiente rilassante.</p></div>
+    <div class="feat-c"><div class="ic">💰</div><h3>Prezzi chiari</h3><p>Preventivo trasparente, niente sorprese.</p></div>
+    <div class="feat-c"><div class="ic">👨‍👩‍👧</div><h3>Per la famiglia</h3><p>Cure per adulti e bambini.</p></div>
+    <div class="feat-c"><div class="ic">⚡</div><h3>Appuntamenti veloci</h3><p>Orari flessibili, anche urgenze.</p></div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Conosci i trattamenti</span><h2>Tutto per il tuo sorriso</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div class="ic">✨</div><h3>Igiene e prevenzione</h3><p>Pulizia e controlli regolari per denti sani.</p></div>
+      <div class="serv-c"><div class="ic">😁</div><h3>Ortodonzia</h3><p>Apparecchi fissi e trasparenti per allineare il sorriso.</p></div>
+      <div class="serv-c"><div class="ic">💎</div><h3>Sbiancamento</h3><p>Un sorriso più bianco in modo sicuro.</p></div>
+      <div class="serv-c"><div class="ic">🦷</div><h3>Implantologia</h3><p>Impianti per sostituire i denti mancanti.</p></div>
+      <div class="serv-c"><div class="ic">🔧</div><h3>Conservativa</h3><p>Otturazioni e cure per i denti naturali.</p></div>
+      <div class="serv-c"><div class="ic">👶</div><h3>Bambini</h3><p>Prima visita giocosa e senza paura.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="studio" class="about">
+  <div class="wrap about-grid">
+    <div class="about-img" role="img" aria-label="Lo studio"></div>
+    <div class="about-txt">
+      <span class="kick">Chi siamo</span>
+      <h2>Un sorriso in più, ad ogni visita</h2>
+      <p>Da Dental Smile crediamo che andare dal dentista possa essere un'esperienza serena. Un team giovane e preparato, tecnologie moderne e tanta attenzione per te.</p>
+      <ul class="about-list">
+        <li><span class="ck">✓</span> Prima visita e preventivo gratuiti</li>
+        <li><span class="ck">✓</span> Pagamenti a rate a tasso zero</li>
+        <li><span class="ck">✓</span> Ambiente accogliente e a misura di bambino</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="recensioni" class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>I nostri pazienti sorridono</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Finalmente vado dal dentista senza ansia! Team fantastico."</p><b>Giorgia P.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"I miei bambini adorano venire qui. Gentili e super professionali."</p><b>Marco D.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Sbiancamento perfetto e prezzo onesto. Consigliatissimi!"</p><b>Sara B.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="wrap">
+    <div class="cta-box">
+      <h2>Prenota la tua visita</h2>
+      <p>Chiamaci o scrivici su WhatsApp: pensiamo a tutto noi. La prima visita è gratuita e senza impegno.</p>
+      <div class="btns">
+        <a href="tel:+390450000000" class="btn btn-white">📞 045 000 0000</a>
+        <a href="https://wa.me/390450000000" class="btn btn-p">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">🦷 Dental Smile</div><p>Uno studio dentistico amico della famiglia, a Verona.</p></div>
+      <div><h4>Contatti</h4><p>Via Esempio 12, Verona<br><a href="tel:+390450000000">045 000 0000</a><br><a href="mailto:info@dentalsmile.it">info@dentalsmile.it</a></p></div>
+      <div><h4>Orari</h4><p>Lun–Ven 9:00–19:00<br>Sab 9:00–13:00</p></div>
+    </div>
+    <div class="foot-bot"><span>© Dental Smile — Verona</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390450000000" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>

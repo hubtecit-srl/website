@@ -6,14 +6,17 @@
     "ristorante-auburn-flagship.html",
     "ristorante-juniper-flagship.html"
   ],
+  "dentisti": [
+    "youdent-verona-demo.html",
+    "dentisti-dentic-flagship.html",
+    "dentisti-dentique-flagship.html",
+    "dentisti-dental-flagship.html"
+  ],
   "estetiste": [
     "estetica-anna-verona.html"
   ],
   "parrucchieri": [
     "silvia-de-guidi-capelli-verona.html"
-  ],
-  "dentisti": [
-    "youdent-verona-demo.html"
   ],
   "artigiani": [
     "idraulico-gallo-verona.html"
