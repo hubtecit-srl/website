@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Beauty Concept Affi — Parrucchieri &amp; Estetica | Prenota</title>
+<meta name="description" content="Beauty Concept ad Affi (VR): parrucchieri, estetica, unghie, extension ciglia e trucco semipermanente. 4★ su 119 recensioni al Grand'Affi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lustria&family=Alex+Brush&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --pink:#f74b90; --pink-d:#e0367c; --plum:#3b1f2e; --ink:#3a2630; --ink2:#6b5560; --sub:#a2909a;
+  --line:#f2e2ea; --soft:#fdeef5; --cream:#fff7fb; --white:#fff; --gold:#c99a6a; --green:#25d366;
+  --h:'Lustria',Georgia,serif; --s:'Alex Brush',cursive; --b:'Roboto',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.2em;text-transform:uppercase;font-size:.72rem;color:var(--pink);font-weight:700}
+.script{font-family:var(--s);color:var(--pink);font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:500;font-size:.88rem;padding:14px 30px;border-radius:4px;cursor:pointer;transition:.2s;border:1px solid var(--pink)}
+.btn-pink{background:var(--pink);color:#fff}
+.btn-pink:hover{background:var(--pink-d);border-color:var(--pink-d)}
+.btn-out{background:transparent;color:var(--pink)}
+.btn-out:hover{background:var(--pink);color:#fff}
+.btn-light{background:#fff;color:var(--pink);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.5)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{font-family:var(--h);font-size:1.4rem;letter-spacing:.02em}
+.brand b{color:var(--pink)}
+header nav{display:flex;gap:28px}
+header nav a{font-weight:500;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--pink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydj4THCqqI9lfUXOTKM5Y4QkERQhQKo9eQekO5zrlTFFYQhIlcR4XrHepdk_lpOkITBIB-Y1SGO7S2BitXSnY1vVUaAFQhI5MzakEqMqUvOLJtbSng7BmvsaX8x1k0-v39_PqDKWDnoqTJV70iPOKbejGhd6poxwbTqEI00uxz26Fqqq0WvgO7qpPYVJuYbg0K4sY_FKQj7zuU11KEXp2Z_BgteGLTOwri1VwCuidSHXHYhvQhrOPWW1kW--LupwteGqECnqVlwLqG2KWFTNLlyAER335k4gj_AtIzHWhqCrFCexLofdlX8cYIa4u7Gb9cbD4fZVN_QP4FCk91JCj_GFDz82qU0iEhuZco9HYAGAnWk0V5jtOtE0g1MltvCsW0JZ7vwVGLw2fAC4VCshfXuJmMKUl5GUuR5SQLxHiBI0Aw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(59,31,46,.8),rgba(59,31,46,.4))}
+.hero-inner{position:relative;z-index:2;max-width:620px;padding-top:60px}
+.hero .script{font-size:clamp(2.2rem,6vw,3.6rem);color:#ffc2dd;display:block;line-height:1;margin-bottom:6px}
+.hero h1{font-family:var(--h);font-size:clamp(2.4rem,6vw,4.4rem);line-height:1.08;margin-bottom:20px}
+.hero p{font-size:1.1rem;color:rgba(255,255,255,.9);max-width:480px;margin-bottom:30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:100px 0;text-align:center;background:var(--cream)}
+.intro .script{font-size:2.4rem;display:block;margin-bottom:2px}
+.intro h2{font-family:var(--h);font-size:clamp(1.9rem,4.2vw,3rem);line-height:1.25;max-width:20ch;margin:0 auto 16px}
+.intro p{color:var(--ink2);max-width:600px;margin:0 auto}
+
+/* Services */
+.serv{padding:100px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 54px}
+.sec-h .script{font-size:2.2rem;display:block}
+.sec-h h2{font-family:var(--h);font-size:clamp(2rem,4.4vw,3rem);margin-top:2px}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.serv-c{text-align:center;padding:38px 28px;border:1px solid var(--line);border-radius:8px;transition:.25s}
+.serv-c:hover{border-color:var(--pink);box-shadow:0 20px 44px rgba(247,75,144,.12);transform:translateY(-6px)}
+.serv-c .ic{width:66px;height:66px;margin:0 auto 16px;background:var(--soft);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.serv-c h3{font-family:var(--h);font-size:1.35rem;margin-bottom:8px}
+.serv-c p{color:var(--ink2);font-size:.93rem}
+
+/* Split */
+.split{padding:0 0 100px}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.split-img{width:100%;height:520px;object-fit:cover;border-radius:8px;background:var(--soft) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgn-_C8h_lusRTatZttzeGVcO0onv_Q-kYgRvAho7VOI50WN5CQz1AQ-2S_vjH1PqbOJ75DBUFv4RE-gD5jzq01GgYCJkrHAcYUgJEsqqoo4bDN84o0UGI-1T-bLAhQTMheodzvK4kyaAyU0u_y-0lnmDfYVPH2-w25LTHpGH-YHqgShE3EUMhS0pby0JMvSxuzOCUsozZ33DCHmRxlmlLiK2wdoHiYdtM8z6L0mO7W1_bXhTMDqIN7zAmznXqxQ_WMpvpO4EpJEpbe9T1XqZL43WgHzXnABrOLAOB1ONz8XW5hUnwE6GyZr-kg6BNpfl0JDD8HFGj5ySKYbq6dpy2b_lHDsb2FVhsuW1THvv8DrdJCJK6K2okleUDBBdXnw8YfUW30i9o5Le9smBgHJEtmELJ2AiffoWdTSjiWV61XjQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.split-txt .script{font-size:2.2rem;display:block}
+.split-txt h2{font-family:var(--h);font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:16px}
+.split-txt p{color:var(--ink2);margin-bottom:14px}
+.split-list{list-style:none;margin-top:12px}
+.split-list li{display:flex;gap:10px;align-items:center;margin-bottom:10px;font-weight:500}
+.split-list .ck{width:26px;height:26px;flex:0 0 26px;background:var(--pink);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem}
+
+/* Pricing */
+.pricing{padding:100px 0;background:var(--cream)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.price-c{background:#fff;border:1px solid var(--line);border-radius:12px;padding:40px 30px;text-align:center;transition:.25s}
+.price-c.feat{background:var(--plum);color:#fff;border-color:var(--plum)}
+.price-c:hover{transform:translateY(-6px);box-shadow:0 22px 48px rgba(59,31,46,.14)}
+.price-c h3{font-family:var(--h);font-size:1.5rem;margin-bottom:4px}
+.price-c .amt{font-family:var(--h);font-size:2.6rem;color:var(--pink);margin:10px 0}
+.price-c.feat .amt{color:#ffb3d3}
+.price-c ul{list-style:none;margin:18px 0 26px;text-align:left}
+.price-c li{padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem;color:var(--ink2)}
+.price-c.feat li{border-color:rgba(255,255,255,.14);color:rgba(255,255,255,.82)}
+
+/* Reviews */
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:var(--soft);border-radius:12px;padding:32px}
+.rv .st{color:var(--pink);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.1rem;color:var(--ink);margin-bottom:16px;line-height:1.5}
+.rv b{font-weight:700;font-size:.9rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiiKi48dMmJu_vSWNV_IzVr5eKAafA3tomr4Kcy-074SYODne9qsM5OfuCVA8USUgHpCV-tFfe-56OIDKyHOwpVd_jyIB6QJHAS1d7APPFS7vn0wLJVby9DcZcCo9jUhw4R1-M9A3yfwa_PirrNvbHJ3LdW7zdFM2ZUNtHj5Yeu4Nl0wnwOK5xaKfemjSGP63vkkN9DEUCJ_HJTjz7a_PH0DEPFwlGHj1N1hlj6EL7PFM6vnB7eAvaT5BhslZs_KYT8Ovq4hN98-syc4sYLOI3PiUz5yZYspJ81nqS5YUoUd5yh8sSwTSy3BZkmn--3ojxDSdXUeWsNrnHeVt5niz7LkyEL34EOurCfaJM_TZVnkpil8ynT6fuRsVmCeOAu61bDTL5Z4xgcRCd_Rbhy4sdsG7Txgzy8L5SEbSeHR6Q&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(59,31,46,.76)}
+.cta .wrap{position:relative;z-index:2}
+.cta .script{font-size:2.6rem;color:#ffc2dd;display:block}
+.cta h2{font-family:var(--h);font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--plum);color:rgba(255,255,255,.78);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#ffb3d3;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.78)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.16);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.55);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .serv-grid,.rv-grid,.price-grid{grid-template-columns:1fr}
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:340px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.9rem}
+  .mbar .call{color:var(--pink)}
+  .mbar .book{background:var(--pink);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Beauty <b>Concept</b></a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#centro">Il centro</a>
+      <a href="#prezzi">Listino</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap"><div class="hero-inner">
+    <span class="script">Sentiti speciale</span>
+    <h1>La tua bellezza, la nostra passione</h1>
+    <p>Parrucchieri ed estetica in un unico spazio: capelli, unghie, extension ciglia e make-up al Grand'Affi.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-light">Prenota ora</a>
+      <a href="#servizi" class="btn btn-glass">I servizi</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <span class="script">Benvenuta</span>
+    <h2>Parrucchieri ed estetica ad Affi</h2>
+    <p>Da Beauty Concept uniamo competenza, prodotti di qualità e tanta cura per farti sentire bella: dal taglio al trattamento viso.</p>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="script">Cosa facciamo</span><h2>I nostri servizi</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div class="ic">🌷</div><h3>Trattamenti viso</h3><p>Pulizia, anti-age e trattamenti illuminanti su misura.</p></div>
+      <div class="serv-c"><div class="ic">💆‍♀️</div><h3>Corpo &amp; massaggi</h3><p>Massaggi e trattamenti corpo rilassanti e rassodanti.</p></div>
+      <div class="serv-c"><div class="ic">🕊️</div><h3>Epilazione</h3><p>Ceretta e trattamenti delicati per pelle liscia a lungo.</p></div>
+      <div class="serv-c"><div class="ic">💅</div><h3>Unghie</h3><p>Manicure, pedicure, gel e ricostruzione.</p></div>
+      <div class="serv-c"><div class="ic">💄</div><h3>Make-up &amp; PMU</h3><p>Trucco per eventi e trucco semipermanente.</p></div>
+      <div class="serv-c"><div class="ic">💇</div><h3>Capelli</h3><p>Taglio, piega e colore nel salone hair al primo piano.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="centro" class="split">
+  <div class="wrap split-grid">
+    <div class="split-img" role="img" aria-label="Il centro estetico"></div>
+    <div class="split-txt">
+      <span class="script">Chi siamo</span>
+      <h2>Cura, esperienza e un tocco di magia</h2>
+      <p>Un centro accogliente dove ogni trattamento è pensato per te. Ti ascoltiamo, ti consigliamo e ti coccoliamo con professionalità.</p>
+      <ul class="split-list">
+        <li><span class="ck">✓</span> Consulenza di bellezza gratuita</li>
+        <li><span class="ck">✓</span> Prodotti professionali selezionati</li>
+        <li><span class="ck">✓</span> Pacchetti e promozioni dedicate</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="prezzi" class="pricing">
+  <div class="wrap">
+    <div class="sec-h"><span class="script">Listino</span><h2>I nostri pacchetti</h2></div>
+    <div class="price-grid">
+      <div class="price-c"><h3>Viso Radiosa</h3><div class="amt">40€</div><ul><li>Pulizia viso</li><li>Trattamento illuminante</li><li>Maschera personalizzata</li></ul><a href="#prenota" class="btn btn-out">Prenota</a></div>
+      <div class="price-c feat"><h3>Coccola Total</h3><div class="amt">85€</div><ul><li>Trattamento viso</li><li>Massaggio 50 min</li><li>Manicure</li></ul><a href="#prenota" class="btn btn-light">Prenota</a></div>
+      <div class="price-c"><h3>Beauty Unghie</h3><div class="amt">35€</div><ul><li>Manicure</li><li>Ricostruzione gel</li><li>Nail art</li></ul><a href="#prenota" class="btn btn-out">Prenota</a></div>
+    </div>
+    <p style="text-align:center;color:var(--sub);margin-top:22px;font-size:.9rem">Prezzi indicativi. Chiedici un preventivo su misura per il tuo trattamento.</p>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="script">Recensioni</span><h2>4★ su 119 recensioni Google</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Veramente gentili e professionali, complimenti a tutte! Sono entrata con un colore orribile e sono uscita con i capelli trasformati."</p><b>Paola Righetti</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <span class="script">Ti aspettiamo</span>
+    <h2>Prenota il tuo momento di bellezza</h2>
+    <p>Chiamaci o scrivici sui social: fissiamo insieme il tuo appuntamento.</p>
+    <div class="btns">
+      <a href="tel:+390457238309" class="btn btn-light">📞 045 723 8309</a>
+      <a href="https://www.facebook.com/beautyconceptaffi/" target="_blank" rel="noopener" class="btn btn-glass">Facebook</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Beauty Concept Affi</div><p>Parrucchieri &amp; estetica al Grand'Affi (VR).</p></div>
+      <div><h4>Contatti</h4><p><a href="https://maps.google.com/?cid=2369544215639656625" target="_blank" rel="noopener">Localita Canove 1, Grand'Affi (VR)</a><br><a href="tel:+390457238309">045 723 8309</a><br><a href="https://www.facebook.com/beautyconceptaffi/" target="_blank" rel="noopener">facebook.com/beautyconceptaffi</a></p></div>
+      <div><h4>Orari</h4><p>Tutti i giorni 9:00–21:00</p></div>
+    </div>
+    <div class="foot-bot"><span>© Beauty Concept Affi — Affi</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390457238309" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>
