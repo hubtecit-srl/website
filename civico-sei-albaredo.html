@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Civico Sei — Bar Bistrot ad Albaredo d'Adige | Colazioni &amp; Aperitivi</title>
+<meta name="description" content="Civico Sei, bar bistrot ad Albaredo d'Adige (VR): colazioni, pasticceria fresca, pranzi veloci e aperitivi con stuzzichini. Ambiente accogliente e curato. 4,5★ su 247 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#22261f; --ink2:#4c5145; --sub:#8b9082; --line:#e2e4dc; --paper:#f4f5ef; --white:#fff;
+  --accent:#4a5c3f; --accent-d:#3a4a31; --gold:#a08a5a; --green:#25d366;
+  --h:'Playfair Display',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--b);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.serif{font-family:var(--h);font-weight:400}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:var(--h);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:1.2rem}
+header nav{display:flex;gap:32px}
+header nav a{font-family:var(--b);font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;padding:13px 26px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-fill{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-fill:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.65)}
+.btn-light:hover{background:#fff;color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhtJGz2Q7vs_C16K9aZdwC6LqJcggMCinY5v-x-aNo7pZzxVC8UQXxfkumdPRI0aCRZPOZq1Cs8XWaVIjfJ7P7VEYriHohsv9jAvE9k5qvL-pZuVa89XkFbm4vZdnMHEFoKDvVKhIHibwikteRLPUcqk4qsNtYB6QxclTya1Pf001sKg_97cXCO8I58b3ubpat8IAPhtMNgDdMwfsJdWBAabelmVXi5h1qNVssHpaBsf_ZlQKVDntih2DnSPHHtu1Q2iHzD3VlB4OlVsvnMqRFT92FseIBg43wXiK5-z4KlsZkAuj4EfHMn2N24vbrlx9E-8RKz4pYGv6BfHMNAg7GLyEKzVTFYmo5qttTN6heCo51xz8SOk5wIlS33j08SUXMnZ8AnQRiVMnY3PMHae8KkvP27bdx0iyHnwazRuLyVNw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,38,31,.5),rgba(34,38,31,.68))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:820px}
+.hero .kick{color:#d8ddcf;display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(2.4rem,7vw,5.4rem);line-height:1.06;margin-bottom:26px}
+.hero p{font-size:1.08rem;font-weight:300;color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center;background:var(--white)}
+.intro .kick{display:block;margin-bottom:20px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.3;max-width:20ch;margin:0 auto 22px}
+.intro p{color:var(--ink2);font-weight:300;max-width:600px;margin:0 auto;font-size:1.05rem}
+
+/* Split */
+.split{padding:0 0 110px;background:var(--white)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h3{font-family:var(--h);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:18px;line-height:1.2}
+.split-txt p{color:var(--ink2);font-weight:300;margin-bottom:16px}
+
+/* Menu */
+.menu{padding:110px 0;background:var(--paper)}
+.menu-head{text-align:center;margin-bottom:60px}
+.menu-head .kick{display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;letter-spacing:.05em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:52px 72px;max-width:960px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem;text-align:center;padding-bottom:14px;margin-bottom:20px;border-bottom:1px solid var(--sub)}
+.dish{text-align:center;padding:14px 0}
+.dish h5{font-family:var(--h);font-weight:400;font-size:1.12rem;margin-bottom:4px}
+.dish span{color:var(--sub);font-weight:300;font-size:.9rem;display:block;margin-bottom:6px}
+.dish .price{font-family:var(--b);font-weight:500;letter-spacing:.1em;color:var(--accent);font-size:.92rem}
+
+/* Gallery */
+.gallery{padding:110px 0;background:var(--white)}
+.gal-head{text-align:center;margin-bottom:50px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);text-transform:uppercase;letter-spacing:.05em}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal-grid img{width:100%;height:360px;object-fit:cover}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--paper);text-align:center}
+.reviews .stars{color:var(--gold);letter-spacing:4px;font-size:1.1rem;margin-bottom:10px}
+.reviews h2{font-family:var(--h);font-weight:400;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:46px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.rv{background:#fff;border:1px solid var(--line);padding:34px 28px}
+.rv .st{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.rv p{font-family:var(--h);font-weight:400;font-style:italic;color:var(--ink2);font-size:1.05rem;margin-bottom:16px;line-height:1.5}
+.rv b{font-family:var(--b);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem}
+
+/* Visit / reserve */
+.visit{position:relative;padding:130px 0;text-align:center;color:#fff}
+.visit-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhR0vKfNJvrVMPLBLrdZTuKELcn4J1J93Mbb3MaeZ0F4KrVc6QLflHreTm3ZDzEnQcIPnvJ3RGPMfEiF_rZI7i1ldh4FYd2g_-guRBe69SZqYsobhU98w2LyhL-n3Ln6LScxRAtMklII57I-OdPlblO4rk0rh1KLdfWVWgbx00htFxgSwFnP2FiUdzeniVh0gx73CxEGx7Z1on5qkVEgWrg9OLLI9SVjDeVJGzO22GCd_keip7SFgs-VbTOSpEvz3HSjNhpGsf00qGdWOjG2UfkQvFISk_Nkrbhf9Rw4VbTRFLon5eXWuE63e8Gfu8vI1TaE4pVx8QacGC8O3hLiv67Gwuv_79r0iSzjWsDg48XN6SnwT5s8oSxJLlz_8lRng_CKLgLfSKc5cbFPpU_SKrylMuiUSWz7C8nvHyHG8i14Qqj&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.visit-bg::after{content:"";position:absolute;inset:0;background:rgba(34,38,31,.72)}
+.visit .wrap{position:relative;z-index:2}
+.visit .kick{color:#d8ddcf;display:block;margin-bottom:18px}
+.visit h2{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px}
+.visit p{max-width:520px;margin:0 auto 18px;font-weight:300;color:rgba(255,255,255,.88)}
+.visit .hours{font-weight:300;color:rgba(255,255,255,.82);margin-bottom:28px;line-height:1.9}
+.visit .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 38px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#d8ddcf;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;font-weight:300;line-height:1.95;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.8rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;letter-spacing:.06em}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .menu-cols{grid-template-columns:1fr;gap:38px}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-hide{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:260px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--b);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Civico Sei</a>
+    <nav>
+      <a href="#intro">Il ristorante</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#visita">Prenota</a>
+    </nav>
+    <a href="#visita" class="btn btn-out hd-hide">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Bar Bistrot · Albaredo d'Adige</span>
+    <h1>Colazioni, pranzi e aperitivi</h1>
+    <p>Cucina raffinata e stagionale, in una sala elegante nel cuore di Verona. Un'esperienza da vivere con calma.</p>
+    <div class="hero-cta">
+      <a href="#visita" class="btn btn-light">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-light">Il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="intro" class="intro">
+  <div class="wrap">
+    <span class="kick">Il locale</span>
+    <h2>Un bistrot accogliente nel cuore di Albaredo</h2>
+    <p>Al Civico Sei si comincia la giornata con una buona colazione e si finisce con l'aperitivo. Pasticceria fresca, pranzi veloci, stuzzichini e un ambiente caldo e informale, ma curato.</p>
+  </div>
+</section>
+
+<section class="split">
+  <div class="wrap split-grid">
+    <img class="split-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhI4MZv9JTtjj8MpM3CwKt7m3MhuBaa0UbbI7gxrRmBmSaYO2L_Jayl6wOAOOqIS5NeaaVF4W6oDBZignmN88xfr-m0t9l5iDVHNFdV8QWggiF53af2Ve71wmZLQRk7sC0haTErTOPtg80nwYOHhhduxIF1feLdlV1I9JTpjh3IblkDB7SOkzRWQ12VjmEgd_iPBgv01gHUQSDEYSqyiK2kfMQzz0NRhte4ZUpbqFJQ3tLJg1Fs0laxqNfswe_3_shX-EGY9G5lsiMnYQtezTrCPDeIzmepyyx_zfCZSFLpxNQjIgK3GWteBzqOAkX2-4WSmb4LMo-65zShMK9_oRVNlrWsq97u_i1FgxiyrwB_6kX3T0Om-z2wSmaX-kspl1PL40h56K1uV2YJNvkLhZUt8M8-2Bso4TOOX6b3ald8Aw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto d'autore">
+    <div class="split-txt">
+      <span class="kick">Dalla mattina alla sera</span>
+      <h3>Colazione, pranzo e aperitivo</h3>
+      <p>Cappuccino e brioche appena sfornate, pasticceria di qualità e caffè come si deve. A pranzo proposte veloci e sfiziose, dalla pizza al trancio ai panini.</p>
+      <p>Nel tardo pomeriggio l'aperitivo con stuzzichini, dentro o nel dehors esterno. Il posto giusto per una pausa in compagnia.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La carta</span>
+      <h2>Menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Colazione</h3>
+        <div class="dish"><h5>Caffè</h5><span>Espresso, macchiato, decaffeinato</span><div class="price">1,3 €</div></div>
+        <div class="dish"><h5>Cappuccino &amp; brioche</h5><span>Brioche fresca del mattino</span><div class="price">3 €</div></div>
+        <div class="dish"><h5>Pasticceria</h5><span>Assortimento del giorno</span><div class="price">1,5 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Pranzo</h3>
+        <div class="dish"><h5>Pizza al trancio</h5><span>Anche d'asporto</span><div class="price">3,5 €</div></div>
+        <div class="dish"><h5>Panini &amp; toast</h5><span>Farciti al momento</span><div class="price">4 €</div></div>
+        <div class="dish"><h5>Piatto del giorno</h5><span>Chiedi al banco</span><div class="price">8 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Aperitivo</h3>
+        <div class="dish"><h5>Spritz</h5><span>Con stuzzichini</span><div class="price">4 €</div></div>
+        <div class="dish"><h5>Calice di vino</h5><span>Selezione della casa</span><div class="price">3,5 €</div></div>
+        <div class="dish"><h5>Tagliere</h5><span>Salumi e formaggi</span><div class="price">10 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Birre &amp; Bibite</h3>
+        <div class="dish"><h5>Birra alla spina</h5><span>Media</span><div class="price">4 €</div></div>
+        <div class="dish"><h5>Bibite</h5><span>Analcoliche</span><div class="price">2,5 €</div></div>
+        <div class="dish"><h5>Dolce del giorno</h5><span>Dalla nostra pasticceria</span><div class="price">3 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galleria" class="gallery">
+  <div class="wrap">
+    <div class="gal-head">
+      <span class="kick">Galleria</span>
+      <h2>Atmosfera &amp; piatti</h2>
+    </div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydikZaaCClVKq3oq-U09MLIlfrApEEd7MJMNoh3UodSCHT4MPCOzFkQD__-O16Du2AJO_-n4l5CN7VVW_alQYLDy2d5V9A0jsCm0l_YWAe7H5t9kEJhv7QPIXk_nL4HeVasXGEVBoY40P5qaka4_tNULLka3AXoSW2Cw6rfdfvNwbjXPYXAffKdIYSzdIYEe_8VjZt4OKVbMXcNxtK9LGTAQ51du4xCOK5anta9ucr2SosgX-_con-z1oB8iBvpm7colv5i6f1RfE3bz8NnHE5W9fSm93R8G_VmWHEanptqV9us_hZ21nx3oK2hP1PTZWIoodL2Y2OVQQdGaYd9EvZvXE8VyqSsip6Zy43DBLr29_H9PHfxWDOHeB0Iq67oJY8-N3XPSby0iHsNPHb0tD1eVdolq5c3IuQm6hT1lGUBHvw4&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydgSnZGsCp-ZHlG-nkQf1s_HdAWnwD6nCm-tslkJ2Rm8wubGO8nGR8LsiRJIf4r5o42zUGQVcCWWf3GCjfn5MamNl2yRpG1nZaesfqdP-L1HBIrO_X3HWIdOU6UYYAdHm4WDP4LAdEFCLbjXnmvCaKw3pLflNbverOg_NjJj3LAHkhT9A8PnBYBTgjS52u11f31msxRL1_J0cEWYYVlQD0CeZrm5YhYxYQn5MCWP6Z1v5jvC2pYW_ZAHjkex1FwNkMRcCeY-VCqd8DkghYUNoDqWTaEbMnsXU5z3AlxvO6rOhAzmRfe_HFsV7QjjWjW0a1xMX2Zmx5b7vqbGeOa2PQNlvzLL8fNw97F3tbD4qPETdhGFic_89XXPdCrzyQ3jH2Pld2Vu5tNc83-ugtlVaUtwbTmu3Dgkm0vW_AYuYiGH8TH7&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydjxeV1-7akwpPpZ2Ra-srVI53u02PvXhTeM5XUO8tR0eTpPUHkv0ijX_5FMIZ4NLZIBsXnn3LRWPi5nO8K4K0hlpb3bxdTN8JrXlOfYv0QlgIt9h1hxMkPqnw4ZwQQwVBSJ4vfWluSXkmSoTuttr5Hbafo-yAGdXCFVasoim3spcnecdS75LpoYe0KXoPZIKXvDeEFXAMABtRWKhmTDRcja_UCT-TNfDAGITf-LFdCut78A9uEBMpjb3OgeSchgR9QVyFE2kPTsyBxMOkRFG2MfcPK4shbKONHBAixasbnaq_7t3mOnIZ5ACHXXwM8uJQTSsXdPu7JOEnvMxq7LN1NEpmrQXNEU9DgTVdgMrdnXfjSCW7mJ7RSsSRS36DzfbhCCUQQL2_464z33tLDA-VSeXQztIZT5KpXl5LyEa2ERRQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio">
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,5 su 247 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Ci sono stato diverse volte per colazioni e aperitivi: la qualità è sempre buona e con l'aperitivo portano anche stuzzichini. Locale accogliente."</p><b>Antonio Gualtieri</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Un lunghissimo bancone e un ambiente caldo ed informale, ma estremamente curato. Si può scegliere di stare dentro o fuori."</p><b>Lord George</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Ambiente pulito, vasto assortimento di pasticceria, personale molto gentile e professionale."</p><b>Nathalie</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="visita" class="visit">
+  <div class="visit-bg"></div>
+  <div class="wrap">
+    <span class="kick">Prenotazioni</span>
+    <h2>Vieni a trovarci</h2>
+    <p>Consigliamo la prenotazione. Per menù degustazione ed eventi privati, contattaci.</p>
+    <div class="hours">Via Alpone 6, Albaredo d'Adige (VR) · Mar–Gio 6:30–20:00 · Ven–Sab 6:30–22:00 · Dom 7:00–13:00 e 16:30–22:00 · Lun chiuso</div>
+    <div class="btns">
+      <a href="tel:+393890405001" class="btn btn-fill">Chiama 389 040 5001</a>
+      <a href="https://wa.me/393890405001" class="btn btn-light">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Civico Sei</div>
+        <p>Cucina raffinata e stagionale nel cuore di Verona.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via Alpone 6, Albaredo d'Adige (VR)<br><a href="tel:+393890405001">389 040 5001</a><br><a href="https://maps.google.com/?cid=12806126563244002226" target="_blank" rel="noopener">Indicazioni</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Mar–Sab dalle 6:30<br>Dom mattina e pomeriggio · Lun chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Civico Sei — Albaredo d'Adige</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393890405001" class="call">Chiama</a>
+  <a href="https://wa.me/393890405001" class="wa">WhatsApp</a>
+</div>
+
+</body>
+</html>
