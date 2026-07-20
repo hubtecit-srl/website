@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Dentistico Dr. Giuseppe Scala — Dentista a Affi</title>
+<meta name="description" content="Studio dentistico del Dr. Giuseppe Scala a Affi (VR): igiene, prevenzione e cure dentali per adulti e bambini. Via Napoleone 8. Prenota una visita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#179dc2; --teal-d:#12839f; --yellow:#ffd100; --ink:#12313a; --ink2:#456068; --sub:#7f989f;
+  --line:#e2edf0; --soft:#eef8fb; --white:#fff; --green:#25d366;
+  --f:'Poppins',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--ink);background:var(--white);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.kick{font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.76rem;color:var(--teal)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--f);font-weight:600;font-size:.92rem;padding:13px 26px;border-radius:8px;cursor:pointer;transition:.2s;border:2px solid transparent}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-d)}
+.btn-yellow{background:var(--yellow);color:var(--ink)}
+.btn-yellow:hover{filter:brightness(.95)}
+.btn-line{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-line:hover{border-color:var(--teal);color:var(--teal)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.2rem}
+.brand .mk{width:34px;height:34px;background:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.05rem}
+header nav{display:flex;gap:26px}
+header nav a{font-weight:500;font-size:.92rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--teal)}
+
+/* Hero */
+.hero{padding:130px 0 80px;background:radial-gradient(1200px 500px at 80% -10%,var(--soft),#fff)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.hero .kick{display:block;margin-bottom:16px}
+.hero h1{font-size:clamp(2.4rem,5vw,3.9rem);font-weight:800;line-height:1.08;letter-spacing:-.01em;margin-bottom:18px}
+.hero h1 span{color:var(--teal)}
+.hero p{color:var(--ink2);font-size:1.08rem;margin-bottom:26px;max-width:520px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.hero-img img{width:100%;height:470px;object-fit:cover;border-radius:24px 24px 120px 24px;background:var(--soft) url('https://images.pexels.com/photos/4269694/pexels-photo-4269694.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+
+/* Stats */
+.stats{padding:46px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.stat{background:var(--soft);border-radius:18px;padding:28px 22px;text-align:center}
+.stat .n{font-size:2.2rem;font-weight:800;color:var(--teal);line-height:1}
+.stat p{color:var(--ink2);font-size:.9rem;margin-top:6px}
+
+/* Services */
+.serv{padding:90px 0}
+.sec-h{text-align:center;max-width:620px;margin:0 auto 50px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;letter-spacing:-.01em}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.serv-c{border:1px solid var(--line);border-radius:20px;padding:30px 26px;transition:.25s}
+.serv-c:hover{border-color:var(--teal);box-shadow:0 20px 44px rgba(23,157,194,.12);transform:translateY(-5px)}
+.serv-c .ic{width:58px;height:58px;background:var(--soft);color:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:14px}
+.serv-c h3{font-weight:700;font-size:1.15rem;margin-bottom:6px}
+.serv-c p{color:var(--ink2);font-size:.93rem}
+
+/* Split about */
+.about{padding:90px 0;background:var(--soft)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.about-img img{width:100%;height:470px;object-fit:cover;border-radius:24px;background:#fff url('https://images.pexels.com/photos/3845810/pexels-photo-3845810.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+.about-txt .kick{display:block;margin-bottom:12px}
+.about-txt h2{font-size:clamp(1.8rem,3.6vw,2.6rem);font-weight:800;margin-bottom:14px;letter-spacing:-.01em}
+.about-txt p{color:var(--ink2);margin-bottom:14px}
+.about-list{list-style:none;margin-top:12px}
+.about-list li{display:flex;gap:10px;align-items:center;margin-bottom:10px;font-weight:500}
+.about-list .ck{width:24px;height:24px;flex:0 0 24px;background:var(--yellow);color:var(--ink);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem;font-weight:700}
+
+/* FAQ */
+.faq{padding:90px 0}
+.faq-wrap{max-width:780px;margin:0 auto}
+.faq-item{border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden}
+.faq-item summary{list-style:none;cursor:pointer;padding:20px 24px;font-weight:600;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--teal);font-size:1.4rem;font-weight:700}
+.faq-item[open] summary::after{content:"–"}
+.faq-item .a{padding:0 24px 20px;color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--soft)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{background:#fff;border-radius:20px;padding:30px}
+.rv .st{color:var(--yellow);letter-spacing:2px;margin-bottom:12px;-webkit-text-stroke:.3px #e0b400}
+.rv p{color:var(--ink2);font-size:.95rem;margin-bottom:16px}
+.rv b{font-weight:700}
+
+/* CTA */
+.cta{position:relative;padding:90px 0;background:var(--teal);color:#fff;text-align:center}
+.cta h2{font-size:clamp(1.9rem,4vw,2.8rem);font-weight:800;margin-bottom:12px}
+.cta p{opacity:.92;max-width:520px;margin:0 auto 26px}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta .btn-white{background:#fff;color:var(--teal)}
+.cta .btn-y{background:var(--yellow);color:var(--ink)}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:56px 0 34px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-weight:600;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:#7fd3e6;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:32px}
+  .stats-grid{grid-template-columns:1fr 1fr}
+  .serv-grid,.rv-grid{grid-template-columns:1fr}
+  .about-grid{grid-template-columns:1fr;gap:28px}
+  .about-img img{height:340px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.9rem}
+  .mbar .call{color:var(--teal)}
+  .mbar .book{background:var(--teal);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand"><span class="mk">🦷</span> Dr. Scala</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#studio">Chi siamo</a>
+      <a href="#faq">FAQ</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-teal">Appuntamento</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Studio dentistico · Affi</span>
+      <h1>Denti sani, <span>vita felice</span></h1>
+      <p>Nello studio del Dr. Giuseppe Scala ad Affi trovi prevenzione, cure attente e un rapporto di fiducia, per adulti e bambini, in un ambiente sereno.</p>
+      <div class="hero-cta">
+        <a href="#prenota" class="btn btn-teal">Prenota ora</a>
+        <a href="#servizi" class="btn btn-line">Scopri i servizi</a>
+      </div>
+    </div>
+    <div class="hero-img">
+      <img src="https://images.pexels.com/photos/4269694/pexels-photo-4269694.jpeg?auto=compress&cs=tinysrgb&w=1000" alt="Clinica dentale">
+    </div>
+  </div>
+</section>
+
+<section class="stats">
+  <div class="wrap stats-grid">
+    <div class="stat"><div class="n">Affi</div><p>Via Napoleone 8</p></div>
+    <div class="stat"><div class="n">Lun–Ven</div><p>Su appuntamento</p></div>
+    <div class="stat"><div class="n">🦷</div><p>Cure per tutta la famiglia</p></div>
+    <div class="stat"><div class="n">✓</div><p>Prima visita conoscitiva</p></div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">I nostri servizi</span><h2>Tutte le cure di cui hai bisogno</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div class="ic">✨</div><h3>Igiene e prevenzione</h3><p>Pulizia professionale e controlli per mantenere il sorriso sano.</p></div>
+      <div class="serv-c"><div class="ic">🦷</div><h3>Implantologia</h3><p>Impianti sicuri per sostituire i denti mancanti.</p></div>
+      <div class="serv-c"><div class="ic">😁</div><h3>Ortodonzia</h3><p>Apparecchi fissi e invisibili per adulti e ragazzi.</p></div>
+      <div class="serv-c"><div class="ic">💎</div><h3>Sbiancamento</h3><p>Trattamenti estetici per un sorriso più luminoso.</p></div>
+      <div class="serv-c"><div class="ic">🔧</div><h3>Conservativa</h3><p>Otturazioni e cure per salvare i denti naturali.</p></div>
+      <div class="serv-c"><div class="ic">👶</div><h3>Pedodonzia</h3><p>Cure delicate e serene per i più piccoli.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="studio" class="about">
+  <div class="wrap about-grid">
+    <div class="about-img" role="img" aria-label="La clinica"></div>
+    <div class="about-txt">
+      <span class="kick">Chi siamo</span>
+      <h2>Uno studio dove sentirti a tuo agio</h2>
+      <p>Da anni il Dr. Giuseppe Scala si prende cura del sorriso dei pazienti di Affi e dintorni, unendo competenza clinica e ascolto per farti vivere ogni visita con serenità.</p>
+      <ul class="about-list">
+        <li><span class="ck">✓</span> Prima visita conoscitiva su appuntamento</li>
+        <li><span class="ck">✓</span> Attenzione alla prevenzione</li>
+        <li><span class="ck">✓</span> Cure per adulti e bambini</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Domande frequenti</span><h2>Le risposte alle tue domande</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item" open><summary>La prima visita è gratuita?</summary><div class="a">Sì, la prima visita conoscitiva e il preventivo sono senza impegno.</div></details>
+      <details class="faq-item"><summary>Fate pagamenti a rate?</summary><div class="a">Offriamo piani di pagamento personalizzati e finanziamenti a tasso agevolato.</div></details>
+      <details class="faq-item"><summary>Trattate anche i bambini?</summary><div class="a">Certo, abbiamo un servizio dedicato di pedodonzia con un approccio delicato.</div></details>
+      <details class="faq-item"><summary>Come prenoto un appuntamento?</summary><div class="a">Puoi chiamare lo studio allo 045 723 5188 negli orari di apertura: fisseremo insieme l'appuntamento.</div></details>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiama lo studio negli orari di apertura: troviamo insieme l'orario più comodo per te.</p>
+    <div class="btns">
+      <a href="tel:+390457235188" class="btn btn-white">📞 045 723 5188</a>
+      <a href="https://maps.google.com/?cid=10604484846312157914" target="_blank" rel="noopener" class="btn btn-y">📍 Via Napoleone 8, Affi</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">🦷 Studio Dr. Scala</div><p>Studio dentistico a Affi (VR).</p></div>
+      <div><h4>Contatti</h4><p>Via Napoleone 8<br>37010 Affi (VR)<br><a href="tel:+390457235188">045 723 5188</a></p></div>
+      <div><h4>Orari</h4><p>Lun–Gio 9:00–12:30 · 14:00–19:00<br>Ven 9:00–13:00<br>Sab–Dom chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Studio Dentistico Dr. Giuseppe Scala — Affi</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390457235188" class="call">Chiama</a>
+  <a href="#prenota" class="book">Appuntamento</a>
+</div>
+
+</body>
+</html>
