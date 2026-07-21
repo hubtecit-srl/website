@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Love The Hair — Parrucchiere ad Albaredo d'Adige (VR) | Prenota</title>
+<meta name="description" content="Love The Hair di Tania Rossignoli, parrucchiere ad Albaredo d'Adige (VR): taglio, colore, trattamenti e acconciature. 5,0★ su Google. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --peach:#ee965b; --peach-d:#d97f44; --dark:#2a2320; --ink:#2e2723; --ink2:#5f554e; --sub:#978c82;
+  --line:#ece3d8; --cream:#faf5ee; --soft:#f5ece1; --white:#fff; --green:#25d366;
+  --h:'Fraunces',Georgia,serif; --b:'Mulish',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--peach);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:15px 30px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--peach)}
+.btn-peach{background:var(--peach);color:#fff}
+.btn-peach:hover{background:var(--peach-d);border-color:var(--peach-d)}
+.btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.5)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:600;font-size:1.6rem;letter-spacing:.01em}
+header nav{display:flex;gap:30px}
+header nav a{font-weight:600;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--peach)}
+
+/* Hero */
+.hero{padding:150px 0 100px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero .kick{display:block;margin-bottom:18px}
+.hero h1{font-family:var(--h);font-weight:500;font-size:clamp(2.8rem,6.5vw,5rem);line-height:1.02;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--peach)}
+.hero p{color:var(--ink2);font-size:1.1rem;margin-bottom:30px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img img{width:100%;height:540px;object-fit:cover;background:var(--soft) url('https://images.pexels.com/photos/3993456/pexels-photo-3993456.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+
+/* Why */
+.why{padding:100px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 54px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:500;font-size:clamp(2.1rem,4.5vw,3.3rem);line-height:1.14}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.why-c{text-align:center;padding:20px}
+.why-c .ic{width:64px;height:64px;margin:0 auto 16px;background:var(--soft);color:var(--peach);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.why-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:8px}
+.why-c p{color:var(--ink2);font-size:.94rem}
+
+/* Services */
+.serv{padding:100px 0;background:var(--cream)}
+.serv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px;max-width:900px;margin:0 auto}
+.serv-c{display:flex;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.serv-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:4px}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+.serv-c .price{font-family:var(--h);font-weight:600;font-size:1.3rem;color:var(--peach);white-space:nowrap}
+
+/* Gallery */
+.gallery{padding:100px 0}
+.gal-head{text-align:center;margin-bottom:44px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:500;font-size:clamp(2rem,4.4vw,3rem)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+
+/* FAQ */
+.faq{padding:100px 0;background:var(--cream)}
+.faq-wrap{max-width:780px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{list-style:none;cursor:pointer;padding:22px 4px;font-family:var(--h);font-weight:600;font-size:1.15rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--peach);font-size:1.4rem}
+.faq-item[open] summary::after{content:"–"}
+.faq-item .a{padding:0 4px 22px;color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:var(--soft);padding:32px}
+.rv .st{color:var(--peach);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.15rem;color:var(--ink);margin-bottom:16px;line-height:1.45}
+.rv b{font-weight:700;font-size:.9rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/3992874/pexels-photo-3992874.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(42,35,32,.72)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:500;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--dark);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#f0b58c;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-img img{height:380px}
+  .why-grid,.rv-grid{grid-template-columns:1fr}
+  .serv-grid{grid-template-columns:1fr;gap:0}
+  .gal-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .mbar .call{color:var(--peach)}
+  .mbar .book{background:var(--peach);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Love The Hair</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#lavori">Lavori</a>
+      <a href="#faq">FAQ</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Parrucchiere · Albaredo d'Adige</span>
+      <h1>Cura e stile per i tuoi <em>capelli</em></h1>
+      <p>Taglio, colore e trattamenti con cura e passione. Da Tania e dal suo team, ad Albaredo d'Adige, i tuoi capelli sono in ottime mani.</p>
+      <div class="hero-cta">
+        <a href="#prenota" class="btn btn-peach">Prenota ora</a>
+        <a href="#servizi" class="btn btn-out">Listino</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiG7mLirFN14IE-YUKZ52bTGZ0yx0pdhx_qWiAtjP87Us8h3bheQ8KqL-Ti4vMOBW8LNkct1nELY5tbWJIstwrbmMAXvRS7COM6w69ix3TG1dIrgEmTn5MvSpUp9VYm3trs_OBWec4DGHl0O2sy_ceuYu4Yv4-UplzP20tziLaiPIOYL91cCKje4cJsyM2V82W-BK7Blz7qSs8uxv8T3NL1niyhCMVAmbzewK9UOUT4y5hyuXZ6RqR86gmLu__w5ExMXbqs8ATLci4cevhXMyY43Xa9ajoTZfxnC1MEQuSQGXzAKmikrrcQ_KV6lEQ1HmR4YnZvtiAnUQtAgt8PGGaflH_o0sr2wYLqki5KS4tTvRrppyiQIjGIoht7WEXIZsy3967wuznvNrda7yAR2Ww5uyonxqAcebizqWlkLDN3iw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Love The Hair — salone ad Albaredo d'Adige"></div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Perché sceglierci</span><h2>Cura, stile ed esperienza</h2></div>
+    <div class="why-grid">
+      <div class="why-c"><div class="ic">🌿</div><h3>Prodotti naturali</h3><p>Trattamenti e colori rispettosi dei capelli e della pelle.</p></div>
+      <div class="why-c"><div class="ic">✂️</div><h3>Team esperto</h3><p>Professionisti aggiornati sulle ultime tendenze.</p></div>
+      <div class="why-c"><div class="ic">💆‍♀️</div><h3>Esperienza su misura</h3><p>Consulenza e look personalizzato ad ogni visita.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Listino</span><h2>I nostri servizi</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div><h3>Taglio &amp; piega</h3><p>Consulenza, taglio e styling</p></div><div class="price">da 28€</div></div>
+      <div class="serv-c"><div><h3>Colore</h3><p>Colorazione e ritocco</p></div><div class="price">da 40€</div></div>
+      <div class="serv-c"><div><h3>Meches &amp; balayage</h3><p>Schiariture e tecniche di luce</p></div><div class="price">da 60€</div></div>
+      <div class="serv-c"><div><h3>Trattamenti</h3><p>Ricostruzione e cura profonda</p></div><div class="price">da 25€</div></div>
+      <div class="serv-c"><div><h3>Acconciature</h3><p>Sposa, cerimonia ed eventi</p></div><div class="price">da 50€</div></div>
+      <div class="serv-c"><div><h3>Piega</h3><p>Styling e messa in piega</p></div><div class="price">da 20€</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="lavori" class="gallery">
+  <div class="wrap">
+    <div class="gal-head"><span class="kick">I nostri lavori</span><h2>Look &amp; atmosfera</h2></div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydg1C_xwyLeO9lRmsXuaM490ydEKIrP8IYUAIlP32EtPwDLfgzzfe9snS98cEHKV1TCFyky4OvLnnOF1Qp6Qw9s4BXwQXar1e2qt6VydH5uXTbLNphMEE2Js-W28_WAhvpCfQvT36WE-ujFYgXHstD1g1x7apYJYJQiGBfbrB0OR_0Jqva93wm-VPJ7qbm30p0DBPQNjGn6mtY4dbLX3GSOIsludyaqiMRU86Mor1QfGj0L6tm2MHtZwHdH0OrSl_89F62UHqc_chFQWc0YlfL8QOmFWPVms9t4Dc2cuz6VINGKPcr3s69oMf_-BDe0hxeJYHQla-zjKgRPblGRhbhIh2cRPTnVCakU3bCjQIVhivM1rx8J8FlECE0c2qSRbMh1nwfPTqkim0kTTf0zJVwfZLuYh370yKvWdm50YQPT4qjge&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 1">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhm29p4tkSZaUKYmsxxJk6b-18km4kuH_Rvjx3rtnFcfFfDzNiL5-GYmb3zX9Bqfo9airCLQU-beM-bhj44SOl7J54xaObM0gcQgeSUMwqM0VOnJaVbQGzUVxLfmzmd_4jIHL_bWKcho0tcOH_-0f6IfGrBbwzF9BN1K2BnKN0uc85Twyx1fkGM84rz3zTnz4f7tZXEQdibkqMCBO7bu9GM_WQuK1VK_KWmi94nrql8SMCO9-mTOzRPCX9CIo_CUW4IYuTWRtUFZOzZDn2NEzkY_hqDVZWSBa2gfHpoD_wKJmtFCWy6qq65Oz_ZtPFkS0a3a5RQJZPrdZ6kZX4_dyX-l5Ozf3TPHfc5QpmKenaVaDzgVvRT34uYj6EEyMRJTVFWLzPgcV0hz7FB-UZ4GuIiur8GL6GdYV4YEPFrdE5oog&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 2">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydg-h1F6UbJXQ3-kEUGdTFfR7mb6UXUjgi0K6c5cltJoj7-li39LifkIN7o1denpzdTOJ8C6lz5iNPN6Rumw5zE0Spm_0u-Sf5IicqGXXzf9Hz9BL4_bMsn-xuyehoULqNWTUA7AW4hXS30hberxjGf85GCXhiRT5gAFMSPORygi1J_GGA4mg4TIHiOrXznduR_AI3r-1eUcKtsJOOf_Ygxxsy66DzPaBFT2r2mT6vC3OWV4Ps8wnBQ7hKbjKFi1p1127ygWA6C3FxnbqW6ecRspwEip67Gb2zFqBtI1Kc99NnkNJmvWgPsLFKa8-SOAN-9xpBhsGv8Egf1g6g06lllDT9kWrtQeuwRUJ_w5kDN_G8Q2FVpglWjzalniV_qACXxd6Pggh4eX6zlmu6veIhvzOE4Lw23WKx190nDhi8u6br0P&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 3">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydg9YlQLa5rFLM7sza9O_yBrQK7ZWZEEX7VmoolT7Bp1pceCDrZwir9pNoDkwe0Tuc0j-xjoIN8-hPivBH3TG7VaRhZaCYC_oJGIQacdg2Rer6ocj4LEK3wMr-h7Jgq9xvmlPDx9RL0lIZvJtCHwySiZx6CY82rgUyeUUEOksSslCB56ENJuoD19UBrx4RxyYVmUMM5ypcynhZhdEvWjdBXIjMmZumZrh1Kbv9mPO_EzpgykF4FfDFvscr6vn5fJPzTEQPEA9ZA-hMOHgRaPYRungnmXMAt3xIFJTOjSL48nszPInoFYRIa7ggmIn-P8JBRXe1O6TlSfXvIEnJGuRJ_oIChMlmgRtmOE1JFgwBuwwWyGYMCCZDvsMfAkyEz99LD3m5_AKnH5lpNBGLoqbSkFgl6hpxfIrbAsa3kVadNteg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 4">
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Domande frequenti</span><h2>Le risposte per te</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item" open><summary>Serve prenotare?</summary><div class="a">Consigliamo la prenotazione per garantirti il momento migliore. Puoi chiamarci o scriverci su WhatsApp.</div></details>
+      <details class="faq-item"><summary>Fate una consulenza prima del taglio?</summary><div class="a">Sì, ogni servizio inizia con una breve consulenza per capire i tuoi desideri e la salute dei capelli.</div></details>
+      <details class="faq-item"><summary>Usate prodotti naturali?</summary><div class="a">Lavoriamo con linee professionali attente al rispetto di capelli e cuoio capelluto.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>Le nostre clienti</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Ottimo salone dove la cordialità, la professionalità e l'esperienza la fanno da padroni. Ci tornerò sicuramente."</p><b>Massimo F.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"L'ambiente è molto sereno, il personale ha molta cura dei tuoi capelli. Lo consiglio."</p><b>Damiana F.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Parrucchiere molto ma molto simpatiche e brave nelle acconciature."</p><b>Giorgia M.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci o scrivici su WhatsApp: troviamo insieme il momento giusto per te.</p>
+    <div class="btns">
+      <a href="tel:+390457001883" class="btn btn-light">📞 045 700 1883</a>
+      <a href="https://wa.me/393451296078" class="btn btn-glass">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Love The Hair</div><p>Parrucchiere ad Albaredo d'Adige: taglio, colore e cura del capello.</p></div>
+      <div><h4>Contatti</h4><p>C.so Umberto I, 76 · Albaredo d'Adige (VR)<br><a href="tel:+390457001883">045 700 1883</a><br><a href="https://www.facebook.com/pages/category/Hair-Salon/Love-The-Hair-di-Rossignoli-Tania-930889770286030/" target="_blank">Facebook</a></p></div>
+      <div><h4>Orari</h4><p>Mer 13:30–21:30 · Gio 9–12:30, 15–19:30<br>Ven 9–19:30 · Sab 9–18:30 · Dom–Mar chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Love The Hair — Albaredo d'Adige (VR)</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390457001883" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>

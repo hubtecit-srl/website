@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bar Trattoria Isolani — Trattoria ad Albaredo d'Adige (VR)</title>
+<meta name="description" content="Bar Trattoria Isolani ad Albaredo d'Adige (VR): colazione, pranzo di lavoro e cucina casalinga. Aperti dalle 6 a mezzanotte. 4,2★ su 43 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#22261f; --ink2:#4c5145; --sub:#8b9082; --line:#e2e4dc; --paper:#f4f5ef; --white:#fff;
+  --accent:#4a5c3f; --accent-d:#3a4a31; --gold:#a08a5a; --green:#25d366;
+  --h:'Playfair Display',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--b);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.serif{font-family:var(--h);font-weight:400}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:var(--h);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:1.2rem}
+header nav{display:flex;gap:32px}
+header nav a{font-family:var(--b);font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;padding:13px 26px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-fill{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-fill:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.65)}
+.btn-light:hover{background:#fff;color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgE6Tvs5oaMiPsDPKDM5C-bNJJVCS7Ct0h_O2siGBdR5MyQe6NyxoQ9xv9QGRcvRXzHUDAiuK8b6SX1LCN2Wc0dqksu92-WTDEedACsZiXfsDBkwOMJH4glBhJWPFlePjPawVuXgpLDb0xOD8iNncHE5w3wysNbMUFkPuAiC50ifYvVZ9qxRPcH-DpwrEzDJZfKmoyg2NUByaErK0bs3-JfGdjqFa_3PQRNlzl1p8PFJ5xkbTruam3zxhJ5F9lhXXN_8OStLuFgb4I50XNL28UmzChEGpYew2J8iJxOsTN4__5CBTK3uatfkhYXwlPJWuinqmDJG0ilTGrPWCzfMwF-UkmPlK7v7jqdztkJat7yxJ0jBDopos48HsRul9MSEgSv-U-bo0M-a_I6rysa0pSd363fjjqCLWDyeAGe-mCod571qtSwfedoiqroNNO3&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,38,31,.5),rgba(34,38,31,.68))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:820px}
+.hero .kick{color:#d8ddcf;display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(2.4rem,7vw,5.4rem);line-height:1.06;margin-bottom:26px}
+.hero p{font-size:1.08rem;font-weight:300;color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center;background:var(--white)}
+.intro .kick{display:block;margin-bottom:20px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.3;max-width:20ch;margin:0 auto 22px}
+.intro p{color:var(--ink2);font-weight:300;max-width:600px;margin:0 auto;font-size:1.05rem}
+
+/* Split */
+.split{padding:0 0 110px;background:var(--white)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h3{font-family:var(--h);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:18px;line-height:1.2}
+.split-txt p{color:var(--ink2);font-weight:300;margin-bottom:16px}
+
+/* Menu */
+.menu{padding:110px 0;background:var(--paper)}
+.menu-head{text-align:center;margin-bottom:60px}
+.menu-head .kick{display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;letter-spacing:.05em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:52px 72px;max-width:960px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem;text-align:center;padding-bottom:14px;margin-bottom:20px;border-bottom:1px solid var(--sub)}
+.dish{text-align:center;padding:14px 0}
+.dish h5{font-family:var(--h);font-weight:400;font-size:1.12rem;margin-bottom:4px}
+.dish span{color:var(--sub);font-weight:300;font-size:.9rem;display:block;margin-bottom:6px}
+.dish .price{font-family:var(--b);font-weight:500;letter-spacing:.1em;color:var(--accent);font-size:.92rem}
+
+/* Gallery */
+.gallery{padding:110px 0;background:var(--white)}
+.gal-head{text-align:center;margin-bottom:50px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);text-transform:uppercase;letter-spacing:.05em}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal-grid img{width:100%;height:360px;object-fit:cover}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--paper);text-align:center}
+.reviews .stars{color:var(--gold);letter-spacing:4px;font-size:1.1rem;margin-bottom:10px}
+.reviews h2{font-family:var(--h);font-weight:400;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:46px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.rv{background:#fff;border:1px solid var(--line);padding:34px 28px}
+.rv .st{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.rv p{font-family:var(--h);font-weight:400;font-style:italic;color:var(--ink2);font-size:1.05rem;margin-bottom:16px;line-height:1.5}
+.rv b{font-family:var(--b);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem}
+
+/* Visit / reserve */
+.visit{position:relative;padding:130px 0;text-align:center;color:#fff}
+.visit-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjoKBpw7JLhN3RAaFZSH8sziO8HxdNuVBgdg9s5Cp7JxTYHLo7xSizA6vlOZEJwEIjaCSbVdWnWuH8iFyH6G0jwMvprpG-OrwzsMdDAqobUNSOUbcNPd2cAW5YzcuE0HADPkMdx7sOfrBUmAFrC_yqA-4OMXvtEC-cK9da7XmW_3Wo__Uf8-GD_M6JcaW1zJYFXrY4fJJav2aBQDrx7a4CkeG1nhi2UXPfmDN2C3ESGN-SzU-tZNmEKltMxwhIezg-EkUn0YQfDpN-9798ZF6oaREZYNyHtn8kWzn00SGuUl4RuOBFhThJmEfP2yksPBkb_9HXG1cXf7CJX_FoAJm0g2HQWIK5bwAEgpNqDwAvZRcdANSkt606RFnzXhNIC03vqhZroIK370K-8PI5CLCGblOIaBJo6-NEujHprBr9ctdECc4WVAeClPAZttg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.visit-bg::after{content:"";position:absolute;inset:0;background:rgba(34,38,31,.72)}
+.visit .wrap{position:relative;z-index:2}
+.visit .kick{color:#d8ddcf;display:block;margin-bottom:18px}
+.visit h2{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px}
+.visit p{max-width:520px;margin:0 auto 18px;font-weight:300;color:rgba(255,255,255,.88)}
+.visit .hours{font-weight:300;color:rgba(255,255,255,.82);margin-bottom:28px;line-height:1.9}
+.visit .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 38px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#d8ddcf;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;font-weight:300;line-height:1.95;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.8rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;letter-spacing:.06em}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .menu-cols{grid-template-columns:1fr;gap:38px}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-hide{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:260px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--b);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Trattoria Isolani</a>
+    <nav>
+      <a href="#intro">Il ristorante</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#visita">Prenota</a>
+    </nav>
+    <a href="#visita" class="btn btn-out hd-hide">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Bar & Trattoria · Albaredo d'Adige</span>
+    <h1>La tua trattoria di paese</h1>
+    <p>Colazione al bancone, pranzo di lavoro e cucina casalinga. Un punto d'incontro ad Albaredo d'Adige, dal mattino fino a sera.</p>
+    <div class="hero-cta">
+      <a href="#visita" class="btn btn-light">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-light">Il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="intro" class="intro">
+  <div class="wrap">
+    <span class="kick">Il ristorante</span>
+    <h2>Cucina semplice, fatta in casa</h2>
+    <p>Al Bar Trattoria Isolani trovi la cucina di casa: primi e secondi della tradizione, un menù di lavoro a pranzo e l'accoglienza di sempre. Il bar è aperto dalle 6 del mattino.</p>
+  </div>
+</section>
+
+<section class="split">
+  <div class="wrap split-grid">
+    <img class="split-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydh8HdPwquZHQeFia1SaGrpBoPPkumbj2IBEkUSertXdnqe59v2uqSTpZfwOevtUzyOiDA7C-4AKgofD993LfhPwn67KiOS2mg5Wgx1g41cDyuOC3R3g00pjUZuiozAgdH7Q8Z7oKPrA9w7t0ovQnNCGitiwZCnNbufn_QMRkXY3OEQGvJpd-sUC7LH_C2gco7Ct4YNIZFvdXdLvryizdDNW90HWEfOe8eUYdsb9e7zryHpkmm1vGLkyDYUAwRQoJjXSf8V77t7ZJ5e7uTjMzPAligC8ljA35lCXa-zey-FvIMX2xy2W84bsI3vz0MrW14dUmW7vaDH_0c5Sl792Eg0la-1xxbG7SO_s5TcFcNR2_Wc2_FWzh7ApYIBjmUoRwo4OZ4YgsfPUay-glKx3K9Chk8GBhsHo-zgGDOyCGZwoT7k&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="La trattoria">
+    <div class="split-txt">
+      <span class="kick">La filosofia</span>
+      <h3>Genuinità e porzioni giuste</h3>
+      <p>Piatti casalinghi preparati ogni giorno, primi e secondi di una volta. Ideale per la pausa pranzo di chi lavora in zona.</p>
+      <p>Un locale alla mano, dove fermarsi per un caffè, un pranzo veloce o una cena in compagnia.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La carta</span>
+      <h2>Menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Colazione &amp; Bar</h3>
+        <div class="dish"><h5>Caffè &amp; brioche</h5><span>Al bancone, dalle 6:00</span><div class="price">2 €</div></div>
+        <div class="dish"><h5>Cappuccino</h5><span>Con pasticceria fresca</span><div class="price">1,5 €</div></div>
+        <div class="dish"><h5>Aperitivo</h5><span>Con stuzzichini</span><div class="price">5 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><h5>Pasta al ragù</h5><span>Fatta in casa</span><div class="price">7 €</div></div>
+        <div class="dish"><h5>Risotto del giorno</h5><span>Secondo disponibilità</span><div class="price">8 €</div></div>
+        <div class="dish"><h5>Minestra / zuppa</h5><span>Della tradizione</span><div class="price">6 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Secondi</h3>
+        <div class="dish"><h5>Carne del giorno</h5><span>Con contorno</span><div class="price">10 €</div></div>
+        <div class="dish"><h5>Scaloppine</h5><span>Al limone o funghi</span><div class="price">9 €</div></div>
+        <div class="dish"><h5>Contorni di stagione</h5><span>Verdure fresche</span><div class="price">3,5 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Menù pranzo</h3>
+        <div class="dish"><h5>Menù di lavoro</h5><span>Primo, secondo, contorno</span><div class="price">12 €</div></div>
+        <div class="dish"><h5>Primo + contorno</h5><span>Pausa veloce</span><div class="price">9 €</div></div>
+        <div class="dish"><h5>Caffè incluso</h5><span>Con il menù pranzo</span><div class="price">—</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galleria" class="gallery">
+  <div class="wrap">
+    <div class="gal-head">
+      <span class="kick">Galleria</span>
+      <h2>Atmosfera &amp; piatti</h2>
+    </div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjoKBpw7JLhN3RAaFZSH8sziO8HxdNuVBgdg9s5Cp7JxTYHLo7xSizA6vlOZEJwEIjaCSbVdWnWuH8iFyH6G0jwMvprpG-OrwzsMdDAqobUNSOUbcNPd2cAW5YzcuE0HADPkMdx7sOfrBUmAFrC_yqA-4OMXvtEC-cK9da7XmW_3Wo__Uf8-GD_M6JcaW1zJYFXrY4fJJav2aBQDrx7a4CkeG1nhi2UXPfmDN2C3ESGN-SzU-tZNmEKltMxwhIezg-EkUn0YQfDpN-9798ZF6oaREZYNyHtn8kWzn00SGuUl4RuOBFhThJmEfP2yksPBkb_9HXG1cXf7CJX_FoAJm0g2HQWIK5bwAEgpNqDwAvZRcdANSkt606RFnzXhNIC03vqhZroIK370K-8PI5CLCGblOIaBJo6-NEujHprBr9ctdECc4WVAeClPAZttg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgE6Tvs5oaMiPsDPKDM5C-bNJJVCS7Ct0h_O2siGBdR5MyQe6NyxoQ9xv9QGRcvRXzHUDAiuK8b6SX1LCN2Wc0dqksu92-WTDEedACsZiXfsDBkwOMJH4glBhJWPFlePjPawVuXgpLDb0xOD8iNncHE5w3wysNbMUFkPuAiC50ifYvVZ9qxRPcH-DpwrEzDJZfKmoyg2NUByaErK0bs3-JfGdjqFa_3PQRNlzl1p8PFJ5xkbTruam3zxhJ5F9lhXXN_8OStLuFgb4I50XNL28UmzChEGpYew2J8iJxOsTN4__5CBTK3uatfkhYXwlPJWuinqmDJG0ilTGrPWCzfMwF-UkmPlK7v7jqdztkJat7yxJ0jBDopos48HsRul9MSEgSv-U-bo0M-a_I6rysa0pSd363fjjqCLWDyeAGe-mCod571qtSwfedoiqroNNO3&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Locale">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydh8HdPwquZHQeFia1SaGrpBoPPkumbj2IBEkUSertXdnqe59v2uqSTpZfwOevtUzyOiDA7C-4AKgofD993LfhPwn67KiOS2mg5Wgx1g41cDyuOC3R3g00pjUZuiozAgdH7Q8Z7oKPrA9w7t0ovQnNCGitiwZCnNbufn_QMRkXY3OEQGvJpd-sUC7LH_C2gco7Ct4YNIZFvdXdLvryizdDNW90HWEfOe8eUYdsb9e7zryHpkmm1vGLkyDYUAwRQoJjXSf8V77t7ZJ5e7uTjMzPAligC8ljA35lCXa-zey-FvIMX2xy2W84bsI3vz0MrW14dUmW7vaDH_0c5Sl792Eg0la-1xxbG7SO_s5TcFcNR2_Wc2_FWzh7ApYIBjmUoRwo4OZ4YgsfPUay-glKx3K9Chk8GBhsHo-zgGDOyCGZwoT7k&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio">
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,2 su 43 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Cucina tradizionale, molto buoni sia i primi che i secondi."</p><b>Agostino R.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Quando sono in zona mi fermo sempre e sono sempre soddisfatta."</p><b>Rosa Maria G.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Cucina semplice ma di qualità, ottimo per la pausa pranzo."</p><b>Stefano O.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="visita" class="visit">
+  <div class="visit-bg"></div>
+  <div class="wrap">
+    <span class="kick">Prenotazioni</span>
+    <h2>Prenota la tua serata</h2>
+    <p>Passa a trovarci per colazione, pranzo o cena. Per il menù di lavoro e informazioni, chiamaci pure.</p>
+    <div class="hours">Via Motta, Albaredo d'Adige (VR) · Lun–Sab 6:00–24:00 · Domenica chiuso</div>
+    <div class="btns">
+      <a href="tel:+390457000069" class="btn btn-fill">Chiama 045 700 0069</a>
+      <a href="https://maps.google.com/?cid=17857696104779878211" target="_blank" class="btn btn-light">Come arrivare</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Trattoria Isolani</div>
+        <p>Bar e trattoria casalinga ad Albaredo d'Adige.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via Motta, Albaredo d'Adige (VR)<br><a href="tel:+390457000069">045 700 0069</a><br><a href="https://maps.google.com/?cid=17857696104779878211" target="_blank">Indicazioni</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Lun–Sab 6:00–24:00<br>Domenica chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Bar Trattoria Isolani — Albaredo d'Adige (VR)</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390457000069" class="call">Chiama</a>
+  <a href="https://maps.google.com/?cid=17857696104779878211" target="_blank" class="wa">Mappa</a>
+</div>
+
+</body>
+</html>
