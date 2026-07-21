@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capelli Studio — Parrucchiere a Bardolino | Prenota</title>
+<meta name="description" content="Capelli Studio, parrucchiere a Bardolino: taglio, colore e styling d'autore. Un salone dal design minimal ed elegante. 4,9★ su 180 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111111; --ink2:#3f3f3f; --sub:#8b8b8b; --line:#e6e6e6; --paper:#f5f3f0; --white:#fff; --green:#25d366;
+  --h:'Bodoni Moda',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.8;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.kick{letter-spacing:.34em;text-transform:uppercase;font-size:.7rem;color:var(--ink2);font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:400;letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;padding:15px 32px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:500;font-size:1.5rem;letter-spacing:.28em;padding-left:.28em}
+header nav{display:flex;gap:34px}
+header nav a{letter-spacing:.16em;text-transform:uppercase;font-size:.76rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjMmlFw1bh6O_7t0p-imawdYgCn0lWf5EJcLCR4tUtiJhBexzmZMzKKh2Rkl7EfuXUFwiVNMbgAb1RrM2GluNbJ1wqaXGPE1MfcqRW8VlQbDut5id4tOTccjcWR4HHXSS1yq8v8Fyob9WRinSdsSaNqdFsxkGAmss_gL68N9CzWgem32n0hWgG36wIGOk46VrcgK7AuOCLJqU026PMyKX_Am6zYKI255fIe-S759ITNcbUK_oJjTLe8vWjugrRsf-ECt2dbJoPqgT4LsilfdmX94VFxiE5qEjFGeHq4d0v3Kx1hWo2SiUz9gatNDRRTlBRafv5dOmI4QCY76PQJ3G2xY53zmOYuia3iOt7U7rCeQwMpP0Dyxh0YkCId15aDV5a4260hDySP7oSMb-OcMq85IXMHzUp5Y27gjnTF0Eiqjg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0;filter:grayscale(.4)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:rgba(17,17,17,.42)}
+.hero-inner{position:relative;z-index:2;padding:80px 24px 0;max-width:900px}
+.hero .kick{color:rgba(255,255,255,.85);display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;font-size:clamp(3rem,9vw,7rem);line-height:1;margin-bottom:26px;letter-spacing:.02em}
+.hero p{font-size:1.05rem;color:rgba(255,255,255,.85);max-width:460px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center}
+.intro .kick{display:block;margin-bottom:22px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4.2vw,3rem);line-height:1.32;max-width:22ch;margin:0 auto}
+
+/* Services */
+.serv{padding:0 0 110px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.serv-c{background:#fff;padding:44px 34px;text-align:center;transition:.25s}
+.serv-c:hover{background:var(--paper)}
+.serv-c .n{font-family:var(--h);font-size:.9rem;color:var(--sub);letter-spacing:.1em}
+.serv-c h3{font-family:var(--h);font-weight:400;font-size:1.5rem;margin:12px 0 8px;letter-spacing:.02em}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+
+/* Portfolio */
+.folio{padding:0 0 110px}
+.folio-head{text-align:center;margin-bottom:50px}
+.folio-head .kick{display:block;margin-bottom:14px}
+.folio-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2rem,4.4vw,3rem);letter-spacing:.02em}
+.folio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.folio-grid figure{overflow:hidden;position:relative}
+.folio-grid img{width:100%;height:360px;object-fit:cover;filter:grayscale(.3);transition:.6s}
+.folio-grid figure:hover img{filter:grayscale(0);transform:scale(1.05)}
+
+/* Split */
+.split{padding:110px 0;background:var(--paper)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover;filter:grayscale(.2);background:#ddd url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydhLF6XoQPf2P8PjXfUaaLk5XJmqfYuJgNdf5himKOD-ogO2aey3_ezM9zcN6HGiSLkjTe4Ysq9-s3ytWJp2ng8kPbUXUn-FPKUPJDiUZPcAskletpH8Qx9HcXQvpgmSeOpObxtrS7T0PAKSOSVSm8v8ol2J8Fua6sAYnxDSpTShRbZLfoWOWqm61DyI1S9DOkm-dFYjsbzacA6BNn6rTwU8NxmLEWBu2W39KJNSLRRhiVt9Mi40ablDNCcBlknt-iCaMZVBcY8Ufcgfh3Eomf4iBn9Ehz32yna0gBOFPma17ObPYFOO-3Qu6GsZMnZM-RCTP8lJ9m17-1DMFxjxYkH0kx4Ug438Mn0DuAwmhZSVuwh7x9XxYD21Gaj_rqqayT2kLZMS5LD4Cqyk4L0iCvkxthS_wR--4x96pypv6NtPbxvF&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:18px;line-height:1.2;letter-spacing:.02em}
+.split-txt p{color:var(--ink2);margin-bottom:16px}
+.split-hours{list-style:none;margin-top:18px;border-top:1px solid var(--line)}
+.split-hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.split-hours span:last-child{letter-spacing:.06em}
+
+/* Reviews */
+.reviews{padding:110px 0;text-align:center}
+.reviews .kick{display:block;margin-bottom:30px}
+.rv-track{max-width:760px;margin:0 auto}
+.rv q{font-family:var(--h);font-weight:400;font-size:clamp(1.4rem,3vw,2rem);line-height:1.4;display:block;margin-bottom:20px;font-style:italic}
+.rv .st{color:var(--ink);letter-spacing:3px;margin-bottom:10px}
+.rv b{letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:400;color:var(--ink2)}
+.rv-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:60px;text-align:left}
+.rv-row .c q{font-size:1.05rem;margin-bottom:12px;font-style:normal}
+
+/* CTA */
+.cta{position:relative;padding:130px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjxsF3qC7hKUNgvCOs-QE9Bxfp9l6BciwZXFOtxC1XWk605ItSCNMuYwFFmbHJg3MaxaHhPkDA9TNoXPjpu6MKq0aJ-iIPHy3LwSZtfw_GMWkSeX8CW2lCd59ZEpHfY-rqkdaj6v7GaehxL2ExqC9ZF2_VhBOb8yBYL-i4UoobGW7GhIji9i19KOGTPpUlQ2f050k5ePPj_Q2bt6uFniE_RK_A9zZHDS9JvfFsz5wStnoPV95iYdYWkO2IpeJGYHFjVQBKo2AFUf6evJ7gEqAYwxlDcr--CubVbcrVkhP8t1IXQuWm28pdddXUwumVhnNpDJ2S02zv_qjjAiPS7ILNTZ_sB6MMx93LiWw2f_xoxfRhrm-PtE5zWMdvsPWGx_xZMZgCIOUuBBcWEHF7Sx_rb3Nfv69oVgk36miPjGq8&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0;filter:grayscale(.4)}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(17,17,17,.6)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:16px;letter-spacing:.02em}
+.cta p{max-width:480px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px;padding-left:0}
+.foot-grid h4{letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;color:rgba(255,255,255,.55);margin-bottom:14px}
+.foot-grid p,.foot-grid a{font-size:.9rem;line-height:2;color:rgba(255,255,255,.7)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.78rem;letter-spacing:.06em;color:rgba(255,255,255,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .serv-grid{grid-template-columns:1fr}
+  .folio-grid{grid-template-columns:1fr 1fr}
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .rv-row{grid-template-columns:1fr;gap:26px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 22px}
+  .folio-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem}
+  .mbar .call{color:var(--ink)}
+  .mbar .book{background:var(--ink);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">CAPELLI STUDIO</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#studio">Studio</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Hair Studio · Bardolino</span>
+    <h1>Capelli Studio</h1>
+    <p>Taglio, colore e styling d'autore. Un salone dove l'eleganza incontra la cura del dettaglio.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-light">Prenota ora</a>
+      <a href="#portfolio" class="btn btn-ghost">Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <span class="kick">Il salone</span>
+    <h2>Uno studio dedicato allo stile, in ogni dettaglio</h2>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="serv-grid">
+      <div class="serv-c"><div class="n">01</div><h3>Cut &amp; Style</h3><p>Taglio e styling personalizzati sul tuo viso.</p></div>
+      <div class="serv-c"><div class="n">02</div><h3>Hair Color</h3><p>Colore, meches e balayage d'autore.</p></div>
+      <div class="serv-c"><div class="n">03</div><h3>Treatment</h3><p>Trattamenti di cura e ricostruzione.</p></div>
+      <div class="serv-c"><div class="n">04</div><h3>Piega &amp; Styling</h3><p>Messa in piega ed eventi speciali.</p></div>
+      <div class="serv-c"><div class="n">05</div><h3>Acconciature</h3><p>Sposa e cerimonie su misura.</p></div>
+      <div class="serv-c"><div class="n">06</div><h3>Consulenza</h3><p>Analisi e consulenza d'immagine.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="folio">
+  <div class="wrap folio-head">
+    <span class="kick">Portfolio</span>
+    <h2>I nostri lavori</h2>
+  </div>
+  <div class="folio-grid">
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhZPX6xywJ72ND_YI32O2VshkL92iaSd6U7Na3WMDvJU5vbhfsDtyCLkQbyJpD_H_Pwp4APf-PwnlsvRrG5N7AV1M6Rk9dYmBO2086xPNjojAG-J3pbvIeWjw5XHMMY1Xb_mlUfqQwU_XXMZ43fGGmG7ZQ5n2V3enpquRIHL4ta-ZLzjI9Kg9emkOb1CGUZh2ey9jmnVy-DUHvYws8wlNRPxGBYiIDrBHe7SkBF9VKxgKTlheH27-9lkzG-8ME0AraekevQSE0stNOQQOe4YE4M1ynIJZdKqa11hLSnxCxXZ6ggbCmE4-BmO3oxlLBTzjYswbasVTAJ7JYIKP7LI3FXcu2j17G2phBkQjV6OUKIrF-qmcx9kLRYQFEIVw_Rd4xUTKs86oq2QERlf_KeNASXheETCDOBeprJi_LtiYPk5NUw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 1"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydjaFZS_IcVu0jl7N6GDse3tCwdmijigR_MoTqHUPKJ1uI7kfy7CQiKNHxdeSkKXHs6djKM2KJrgmCJXeN5KJNjB_FAX3csM4QAWxYejCc96pTPtAi2DQLxChANALb-7L14RqQmPsaaVh6MhTVHfy0GvZmO29uaR6O0pC7ZY6looi7GLZ1zvGcvfkqQnzUeWigHCzuoJQ3Ie4IsAwnu1T2x4glLToRc-rhxsM5e1QCoZOlIR9vbI7HhD9XHCnSahoeGYXo5Rw7PrfE5Dwo6zpfIG8ZcLxDg6T7C0tHtH3aTnPzqyXgnP6gaJKusA6iP-LT2wwMtknQcDnCJShpPTzO-lmLXyBF3KZEcEdvkV55KCK0BkjNSvaRzNGKsGXkQklvJi2KAZzIfxcCpp7r8K3B9RGJi0XGUGfKxrRV7FPjWfwfU_&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 2"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydg6WvoSqajZRDaqLEguys6BjVcbyBNHDMnhmKVoQVKK3SWYLWyQ3R5kXCKxaQH3aPUHIEb8L6mI6W4nRdpy8olvWQ3JwaJSrtZ7rQ21uCSySXgsSXzMP0erjFe2mlgeUW9Dn_CuWPXaM0YrrxBGdl7VkpL6VfOy_SZZrocgKgDsaXsuk9CiBL1uq7q-C0zHWQ6kEO46hPy_wnxS632uOiE51ceJnOhcpTY6iKEXea_5ZaM8Jkz_TJgkBFY4Lemj9Kd_ykv7KpKnQscHcs0ZiQN1nTDjDQ_bTbhOG8YW0it8EgXxp1YZoBG9KeralHfmr1iv4DEgzDY4t6gTjrTAjk9Rc6En5hNRlx1zw9CiQJDBOIf5d3SbQnwdUML2KiyrTg-GbvcRyZnwnYE_-KrBWmDfirDFMSMhx6TMSseuUPYDRA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 3"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydjtMp6Xnv3FsM5JPEKZ63FK7_4euDifrUeu6zgnSuIpMGki5FzMLI5zMkOJAu25smU1MV-CS-udh-ApQ1RdNfxfD2FZcptLcgo0ao_Ej1AZbtRFZ97jEXgIYUmGNKbhXaejkZ3Mcki97qZKDvGnblEuZ1SN-a5nE-UGuMbV9JCfLsyl9AL7DTycoEKBAeoQ5JVGVJFo9W6t17pczzAmu14M6N0djBVCvtM35gYeyDxmisP8fP29Y5VB0vV4QFE5In__20E0xJGX7MZsML18fG02I833GrHwGYfoeuTu4qxw89tL22C8-dAcmbhD7RRfpIcwcsSMcJ-YUXj3Nvd9wjrEaWM5mUOcnWQnTP74th3jXqoRqHfgU4S9Nkz1chIkIwOeZyHGvXlpuf0G8bQyxdBCipdptp-mHo4yUd329CS4_8Y&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 4"></figure>
+  </div>
+</section>
+
+<section id="studio" class="split">
+  <div class="wrap split-grid">
+    <div class="split-img" role="img" aria-label="Lo studio"></div>
+    <div class="split-txt">
+      <span class="kick">Lo studio</span>
+      <h2>Dove il tuo stile prende forma</h2>
+      <p>Un ambiente essenziale ed elegante, pensato per farti vivere un'esperienza di bellezza fuori dal comune. Professionisti attenti, tecniche moderne e ascolto.</p>
+      <ul class="split-hours"><li><span>Lunedì</span><span>Chiuso</span></li><li><span>Martedì</span><span>08:30-12:30, 14:30-18:30</span></li><li><span>Mercoledì</span><span>08:30-12:30, 14:30-18:00</span></li><li><span>Giovedì</span><span>08:30-12:30, 14:30-18:00</span></li><li><span>Venerdì</span><span>08:30-12:30, 14:30-18:00</span></li><li><span>Sabato</span><span>08:30-12:30, 14:00-18:00</span></li><li><span>Domenica</span><span>Chiuso</span></li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <span class="kick">Recensioni</span><p style="opacity:.7;margin:.4em 0 0">★ 4.5 su Google · 82 recensioni</p>
+    <div class="rv-track rv">
+      <div class="st">★★★★★</div>
+      <q>In questo negozio di parrucchiere sia per donna e uomo, é un locale molto ben arredato ma è anche un locale molto pulito, curato, ordinato, con i…</q>
+      <b>Calimero 8.</b>
+    </div>
+    <div class="rv-row">
+      <div class="c rv"><div class="st">★★★★★</div><q>"Bella sorpresa per me e i miei capelli, trovare un parucchiere che și intende ( experiența 35 anni) , con una squadra coordinata, un ambiente…"</q><b>Daniela B.</b></div>
+      <div class="c rv"><div class="st">★★★★★</div><q>"Ambiente moderno, professionalità, velocità e stile. Molto attenti alla salute del capello. Ottimi prodotti all&#x27;avanguardia per la cura del capello."</q><b>Avamposto M.</b></div>
+      <div class="c rv"><div class="st">★★★★★</div><q>"Renato è eccezionale. Può fare qualunque cosa con i capelli. Poi è simpatico e disponibile. Sia per uomo che per donna, è il mio barbiere preferito"</q><b>paolo D.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci o scrivici su WhatsApp: dai forma al tuo nuovo look.</p>
+    <div class="btns">
+      <a href="tel:+390454624359" class="btn btn-light">045 462 4359</a>
+      <a href="tel:+390454624359" class="btn btn-ghost">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff;letter-spacing:.22em">CAPELLI STUDIO</div><p>Hair studio d'autore a Bardolino.</p></div>
+      <div><h4>Contatti</h4><p><a href="https://maps.google.com/?cid=4901901288103950819" target="_blank" rel="noopener">Piazza Statuto 7, 37011 Bardolino VR</a><br><a href="tel:+390454624359">045 462 4359</a></p></div>
+      <div><h4>Orari</h4><p>Lunedì: Chiuso<br>Martedì: 08:30-12:30, 14:30-18:30<br>Mercoledì: 08:30-12:30, 14:30-18:00<br>Giovedì: 08:30-12:30, 14:30-18:00<br>Venerdì: 08:30-12:30, 14:30-18:00<br>Sabato: 08:30-12:30, 14:00-18:00<br>Domenica: Chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Capelli Studio — Bardolino</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390454624359" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>

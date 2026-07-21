@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Petinos — Parrucchiere a Bardolino | Prenota</title>
+<meta name="description" content="Le Petinos, parrucchiere a Bardolino: taglio, colore, trattamenti e acconciature. Un approccio olistico alla bellezza. 4,9★ su 160 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --peach:#ee965b; --peach-d:#d97f44; --dark:#2a2320; --ink:#2e2723; --ink2:#5f554e; --sub:#978c82;
+  --line:#ece3d8; --cream:#faf5ee; --soft:#f5ece1; --white:#fff; --green:#25d366;
+  --h:'Fraunces',Georgia,serif; --b:'Mulish',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--peach);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:15px 30px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--peach)}
+.btn-peach{background:var(--peach);color:#fff}
+.btn-peach:hover{background:var(--peach-d);border-color:var(--peach-d)}
+.btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.5)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:600;font-size:1.6rem;letter-spacing:.01em}
+header nav{display:flex;gap:30px}
+header nav a{font-weight:600;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--peach)}
+
+/* Hero */
+.hero{padding:150px 0 100px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero .kick{display:block;margin-bottom:18px}
+.hero h1{font-family:var(--h);font-weight:500;font-size:clamp(2.8rem,6.5vw,5rem);line-height:1.02;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--peach)}
+.hero p{color:var(--ink2);font-size:1.1rem;margin-bottom:30px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img img{width:100%;height:540px;object-fit:cover;background:var(--soft) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydiUSdeEO9f3VpXPiawJuhmhBADD3T1bK_P06pl6PYB_nf7LauscEU2Vu6XHgjQ0BccbuvG4j857SyLPUlxM8pIwbHNFDKn90LkAL7-Hi9xwnK7tSj6PGEvFGdd_JDpBNGxUMugZJaVhczXmxZB5-JYI583EZz6wpnQb4yAAB9SRZSHqyvRTCSSeAxFTXck2tAdU74Kxg060lVfvEiOOfE1mUvkfxKduKILfWKrKvGxUvR3oIhlaUwiwz_N7HviVmlXWy9QMjA6sMUhfspLPHQU4Sl-gU1Epk1foHjKj2Cjg4h1M-ywjQ5cAm5uoRXQd3pd5A3y7J4nmK32Ne_sJck0VQqnbuLEpaiHz-CYGwCWBSQ10JG2vduzTWAgu67PCLgSOLIY6YZ4rrp4jHGp4HIs4BlTIKMeubpqnBYbmGOgaLp4&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+
+/* Why */
+.why{padding:100px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 54px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:500;font-size:clamp(2.1rem,4.5vw,3.3rem);line-height:1.14}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.why-c{text-align:center;padding:20px}
+.why-c .ic{width:64px;height:64px;margin:0 auto 16px;background:var(--soft);color:var(--peach);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.why-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:8px}
+.why-c p{color:var(--ink2);font-size:.94rem}
+
+/* Services */
+.serv{padding:100px 0;background:var(--cream)}
+.serv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px;max-width:900px;margin:0 auto}
+.serv-c{display:flex;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.serv-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:4px}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+.serv-c .price{font-family:var(--h);font-weight:600;font-size:1.3rem;color:var(--peach);white-space:nowrap}
+
+/* Gallery */
+.gallery{padding:100px 0}
+.gal-head{text-align:center;margin-bottom:44px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:500;font-size:clamp(2rem,4.4vw,3rem)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+
+/* FAQ */
+.faq{padding:100px 0;background:var(--cream)}
+.faq-wrap{max-width:780px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{list-style:none;cursor:pointer;padding:22px 4px;font-family:var(--h);font-weight:600;font-size:1.15rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--peach);font-size:1.4rem}
+.faq-item[open] summary::after{content:"–"}
+.faq-item .a{padding:0 4px 22px;color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:var(--soft);padding:32px}
+.rv .st{color:var(--peach);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.15rem;color:var(--ink);margin-bottom:16px;line-height:1.45}
+.rv b{font-weight:700;font-size:.9rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhr-STRZ4ivwz-zzwPOuW8R43KLpJqHJNilb9PpZ_d0KuPN2Pp1MynZ_uI6RMi3Il3-HqgG70i6GSkpQLqBGAxpZ8tM-sK1rid_bVVL2kxrpXs43aepCaIG_93EZpwoBNfG3ngIjsHbT3KYQS4Th8a9M3oImNoV2Gzjd0lnr-X8mbR8k1LWJ_ngKkNn3Ph1fCCQUk3kWMURbJfRjRXNtKw4vdezT-g3NqHck77oQxpyZba7cb6fpD4C1el6MNwl9pXreoqeidhkSePfWB0wSMqoseWEm9W21WMZ9X197njv6dQ9IQ_FyReBAMeGSZZQuoYjyTDysqzOJYSdvLHSpH52giOtjkjz5xg0jdgiudjmkipEjWhswaFPZ_jVJIBe41ActetK9Q1ARsywYRGJmpyR9tdGERrncLmxXNoNFqY&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(42,35,32,.72)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:500;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--dark);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#f0b58c;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-img img{height:380px}
+  .why-grid,.rv-grid{grid-template-columns:1fr}
+  .serv-grid{grid-template-columns:1fr;gap:0}
+  .gal-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .mbar .call{color:var(--peach)}
+  .mbar .book{background:var(--peach);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Le Petinos</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#lavori">Lavori</a>
+      <a href="#faq">FAQ</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Parrucchiere · Bardolino</span>
+      <h1>Dove l'hairstyling è <em>olistico</em></h1>
+      <p>Taglio, colore e trattamenti pensati per te e per la salute dei tuoi capelli. Un salone dove bellezza e benessere si incontrano.</p>
+      <div class="hero-cta">
+        <a href="#prenota" class="btn btn-peach">Prenota ora</a>
+        <a href="#servizi" class="btn btn-out">Listino</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydhW4gojQWjMJPY4MruiU9xlxHP2kPnPXA8sUdnFSuVqbjpoS28YfN3CZUHxRQPa24MmyWSaMKtQMyN1ISYWLp49BCm9Gb1qnu6VuVUEbFcZJ8fsJ4i47MqBjXXspAVsNvp-EXvLirh3OqFFk6wQwC_lpxfu7PGqjnXD_jmWB85NAD5x_aYBz-wC7YrmlmKI-Ps59WZZSFDXFF58EudMV8OktiY1cqHAsoTOyzu04l2nMX78JMlZ77K7PWNUFRufQf6nWiteusm8Iw60c3wqeKQqrzwhEV2ZXLogmMuAHYIuL7neJyUgx1R5tvjH5Wn6tmuPYbyhpbGUqHiqfY1ypxRSLB2T8k1B-ZiOiebhiYsDm9VyAHErMr_41jELi4sGjCimW7hVGFYr9PSDsvofRFOqkrcQjeJA3VCcC2uyIHNKZV2tUAfwEdH6Lf5ifw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Salone di parrucchiere"></div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Perché sceglierci</span><h2>Cura, stile ed esperienza</h2></div>
+    <div class="why-grid">
+      <div class="why-c"><div class="ic">🌿</div><h3>Prodotti naturali</h3><p>Trattamenti e colori rispettosi dei capelli e della pelle.</p></div>
+      <div class="why-c"><div class="ic">✂️</div><h3>Team esperto</h3><p>Professionisti aggiornati sulle ultime tendenze.</p></div>
+      <div class="why-c"><div class="ic">💆‍♀️</div><h3>Esperienza su misura</h3><p>Consulenza e look personalizzato ad ogni visita.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Listino</span><h2>I nostri servizi</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div><h3>Taglio &amp; piega</h3><p>Consulenza, taglio e styling</p></div><div class="price">da 28€</div></div>
+      <div class="serv-c"><div><h3>Colore</h3><p>Colorazione e ritocco</p></div><div class="price">da 40€</div></div>
+      <div class="serv-c"><div><h3>Meches &amp; balayage</h3><p>Schiariture e tecniche di luce</p></div><div class="price">da 60€</div></div>
+      <div class="serv-c"><div><h3>Trattamenti</h3><p>Ricostruzione e cura profonda</p></div><div class="price">da 25€</div></div>
+      <div class="serv-c"><div><h3>Acconciature</h3><p>Sposa, cerimonia ed eventi</p></div><div class="price">da 50€</div></div>
+      <div class="serv-c"><div><h3>Piega</h3><p>Styling e messa in piega</p></div><div class="price">da 20€</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="lavori" class="gallery">
+  <div class="wrap">
+    <div class="gal-head"><span class="kick">I nostri lavori</span><h2>Look &amp; atmosfera</h2></div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhcFuYs7RQ2gVmyW0TO6VcpbN2SX7ArmA3x838rGMEGoE55uR-SIx4NtNgaL5EHeONILGhBBbUDukx_RzePShkE5r-zf9wRHViEPexEKKVnvFJXbdNpDFj4D6V48DYQkB-nYs2A2hD0tbJulQjig6UGh6_A65-qkik9_vZ0smwMDMcMgpW2BkDOkZRXNmG3nMs5xIA8Eg4FwQgnlJ1FkrOi-0w-acWtJB_RdWbVxnXrSbVZZOQSgelEV_dnsffjaEmNdEFFBS3lTDh6sbPjakVGf5RDreH3MGzBwbfWO1LpcfFo_vNN8NI4jmunmIg3wa23IirhnjxTghxQrUizpHD9CnxLQ4O9s8MQGhJZR81f1fY4WMLw9umoz2ZAxXzKUOrzRyRQKyBRV2ZRC4_odxVKCy36tP_VmWekJ5ow0VT0TA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 1">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydiUSdeEO9f3VpXPiawJuhmhBADD3T1bK_P06pl6PYB_nf7LauscEU2Vu6XHgjQ0BccbuvG4j857SyLPUlxM8pIwbHNFDKn90LkAL7-Hi9xwnK7tSj6PGEvFGdd_JDpBNGxUMugZJaVhczXmxZB5-JYI583EZz6wpnQb4yAAB9SRZSHqyvRTCSSeAxFTXck2tAdU74Kxg060lVfvEiOOfE1mUvkfxKduKILfWKrKvGxUvR3oIhlaUwiwz_N7HviVmlXWy9QMjA6sMUhfspLPHQU4Sl-gU1Epk1foHjKj2Cjg4h1M-ywjQ5cAm5uoRXQd3pd5A3y7J4nmK32Ne_sJck0VQqnbuLEpaiHz-CYGwCWBSQ10JG2vduzTWAgu67PCLgSOLIY6YZ4rrp4jHGp4HIs4BlTIKMeubpqnBYbmGOgaLp4&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 2">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhr-STRZ4ivwz-zzwPOuW8R43KLpJqHJNilb9PpZ_d0KuPN2Pp1MynZ_uI6RMi3Il3-HqgG70i6GSkpQLqBGAxpZ8tM-sK1rid_bVVL2kxrpXs43aepCaIG_93EZpwoBNfG3ngIjsHbT3KYQS4Th8a9M3oImNoV2Gzjd0lnr-X8mbR8k1LWJ_ngKkNn3Ph1fCCQUk3kWMURbJfRjRXNtKw4vdezT-g3NqHck77oQxpyZba7cb6fpD4C1el6MNwl9pXreoqeidhkSePfWB0wSMqoseWEm9W21WMZ9X197njv6dQ9IQ_FyReBAMeGSZZQuoYjyTDysqzOJYSdvLHSpH52giOtjkjz5xg0jdgiudjmkipEjWhswaFPZ_jVJIBe41ActetK9Q1ARsywYRGJmpyR9tdGERrncLmxXNoNFqY&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 3">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhW4gojQWjMJPY4MruiU9xlxHP2kPnPXA8sUdnFSuVqbjpoS28YfN3CZUHxRQPa24MmyWSaMKtQMyN1ISYWLp49BCm9Gb1qnu6VuVUEbFcZJ8fsJ4i47MqBjXXspAVsNvp-EXvLirh3OqFFk6wQwC_lpxfu7PGqjnXD_jmWB85NAD5x_aYBz-wC7YrmlmKI-Ps59WZZSFDXFF58EudMV8OktiY1cqHAsoTOyzu04l2nMX78JMlZ77K7PWNUFRufQf6nWiteusm8Iw60c3wqeKQqrzwhEV2ZXLogmMuAHYIuL7neJyUgx1R5tvjH5Wn6tmuPYbyhpbGUqHiqfY1ypxRSLB2T8k1B-ZiOiebhiYsDm9VyAHErMr_41jELi4sGjCimW7hVGFYr9PSDsvofRFOqkrcQjeJA3VCcC2uyIHNKZV2tUAfwEdH6Lf5ifw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 4">
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Domande frequenti</span><h2>Le risposte per te</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item" open><summary>Serve prenotare?</summary><div class="a">Consigliamo la prenotazione per garantirti il momento migliore. Puoi chiamarci o scriverci su WhatsApp.</div></details>
+      <details class="faq-item"><summary>Fate una consulenza prima del taglio?</summary><div class="a">Sì, ogni servizio inizia con una breve consulenza per capire i tuoi desideri e la salute dei capelli.</div></details>
+      <details class="faq-item"><summary>Usate prodotti naturali?</summary><div class="a">Lavoriamo con linee professionali attente al rispetto di capelli e cuoio capelluto.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>Le nostre clienti — ★ 4.7 su Google (43 recensioni)</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Che dire...ho trovato il parrucchiere migliore, sono sempre soddisfatta dal taglio e colore. Luca mette passione nel suo lavoro, mi sento ascoltata e…"</p><b>Elena T.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Luca è fantastico! Un luogo dove alla professionalità di Luca si aggiunge una preziosa gentilezza e cortesia. È il luogo ideale per avere un&#x27;ottima…"</p><b>Katia M.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Mi chiedo se la recensione antecedente sia davvero riguardante questo salone Petra e Luca sono due professionisti. Attualmente vivo a Verona, eppure…"</p><b>Anna T.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci o scrivici su WhatsApp: troviamo insieme il momento giusto per te.</p>
+    <div class="btns">
+      <a href="tel:+390457210206" class="btn btn-light">📞 045 721 0206</a>
+      <a href="tel:+390457210206" class="btn btn-glass">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Le Petinos</div><p>Parrucchiere olistico a Bardolino.</p></div>
+      <div><h4>Contatti</h4><p><a href="https://maps.google.com/?cid=6272455492161330903" target="_blank" rel="noopener">Via Fosse 19, 37011 Bardolino VR</a><br><a href="tel:+390457210206">045 721 0206</a></p></div>
+      <div><h4>Orari</h4><p>Lunedì: Chiuso<br>Martedì: 08:30-14:00<br>Mercoledì: 08:30-18:00<br>Giovedì: 08:30-18:00<br>Venerdì: 08:30-18:00<br>Sabato: 08:30-18:00<br>Domenica: Chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Le Petinos — Bardolino</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390457210206" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>
