@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ristorante Pizzeria Biri — Bardolino | Prenota</title>
+<meta name="description" content="Ristorante Pizzeria Biri, storico locale nel centro di Bardolino. Pizza, cucina di lago, primi e secondi di pesce e carne. 4,7★ su 1.595 recensioni. Prenota un tavolo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14100e; --bg2:#1c1613; --panel:#211a16; --cream:#f4ece0; --muted:#b8a998;
+  --gold:#c9a24b; --gold2:#e0bf74; --line:rgba(244,236,224,.12); --terra:#b56a3d;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 26px}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
+.kicker{font-family:var(--sans);font-weight:400;letter-spacing:.42em;text-transform:uppercase;font-size:.7rem;color:var(--gold)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:82px}
+.brand{font-family:var(--serif);font-size:1.6rem;color:var(--cream);letter-spacing:.04em}
+.brand span{color:var(--gold)}
+header nav{display:flex;gap:36px;align-items:center}
+header nav a{color:rgba(244,236,224,.82);font-size:.88rem;letter-spacing:.06em;transition:.2s}
+header nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;padding:14px 28px;border-radius:2px;transition:.3s;cursor:pointer;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#211a16}
+.btn-gold:hover{background:var(--gold2)}
+.btn-out{background:transparent;color:var(--cream);border-color:rgba(244,236,224,.4)}
+.btn-out:hover{border-color:var(--gold);color:var(--gold)}
+header.scrolled{background:rgba(20,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.menu-toggle{display:none;background:none;border:0;color:var(--cream);font-size:1.6rem;cursor:pointer}
+
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydi9-FMPecccihupTJ-nDVHEOsO15xi4TVuv3wCdh4QusCgeWczv5Fd3ediAtLFkJCljAfLfnT6cBQWkehaXET27-AzyZGTFk-guM1Pbo9gDIWMbvkWRK-54qnUubIk18OEGo02qtTRdS2dIbrZY8n8Eu6nxsktuWTbwBrmFa6QWi45lZa_b7W_1vvnQEroEv9GdSC67pw9t5fmnHEIPGOshwcFPGsO8llPqFxJXmxfXte_G-v4YnQOAGPScCUR-7yPxPRKnPU1j81kuQYizl9AuGQ-Nmbr8y-4X0_OzEdAW-446IC0RSn6z2BJFEJ-LQoPh1Z-7VebMKI09lzz1BxKo6mW_96y7wr9ibS8b3oTwhId3MhtOpHT-O7WZQmlVsmQ6UmWRC-isyrJiIFNbXpRqzD0rTpR6DMCOtROsd8P2L-wNl6MXAGaA6QSfRGmL&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.06)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.6) 0%,rgba(20,16,14,.15) 45%,rgba(20,16,14,.92) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 0 88px;width:100%}
+.hero .kicker{color:var(--gold2)}
+.hero h1{font-size:clamp(3rem,8.5vw,6.6rem);line-height:.98;margin:16px 0 14px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero .sub{font-size:1.2rem;max-width:560px;color:rgba(244,236,224,.9);margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-meta{display:flex;gap:26px;align-items:center;margin-top:34px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.hero-meta .stars{color:var(--gold);letter-spacing:2px}
+.hero-meta b{color:var(--cream);font-family:var(--serif);font-size:1.25rem}
+.hero-meta .sep{width:1px;height:28px;background:var(--line)}
+
+section{padding:110px 0}
+.head{text-align:center;max-width:620px;margin:0 auto 60px}
+.head h2{font-size:clamp(2.2rem,4.5vw,3.3rem);margin:14px 0}
+.head p{color:var(--muted)}
+.orn{color:var(--gold);letter-spacing:.5em;font-size:.9rem;margin-top:10px}
+
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-txt .kicker{margin-bottom:14px;display:block}
+.about-txt h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:20px;line-height:1.1}
+.about-txt p{color:var(--muted);margin-bottom:16px}
+.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold2);margin-top:8px}
+.about-img{position:relative}
+.about-img img{width:100%;height:560px;object-fit:cover;border-radius:3px}
+.about-img::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,162,75,.5);border-radius:3px;pointer-events:none;margin:-14px;top:22px;left:22px;right:-22px;bottom:-22px;z-index:-1}
+
+.menu{background:var(--bg)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 60px;max-width:960px;margin:0 auto}
+.dish{border-bottom:1px dashed var(--line);padding-bottom:16px}
+.dish .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.dish h4{font-family:var(--serif);font-size:1.5rem;color:var(--cream);font-weight:600}
+.dish .tag{font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:6px}
+.dish p{color:var(--muted);font-size:.94rem;margin-top:4px}
+.menu-note{text-align:center;color:var(--muted);font-style:italic;margin-top:48px;font-family:var(--serif);font-size:1.25rem}
+
+.gallery{background:var(--bg2)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
+.gal-grid figure{overflow:hidden;border-radius:3px;cursor:pointer;position:relative}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.7s;filter:saturate(1.02)}
+.gal-grid figure:hover img{transform:scale(1.09)}
+.gal-grid .tall{grid-row:span 2}
+.gal-grid .wide{grid-column:span 2}
+
+.reviews{background:var(--bg);position:relative}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:32px}
+.rev .stars{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
+.rev p{color:rgba(244,236,224,.86);font-size:.98rem;margin-bottom:20px;font-weight:300}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.rev .who b{font-family:var(--sans);font-weight:500;font-size:.92rem;color:var(--cream)}
+.rev .who span{display:block;font-size:.78rem;color:var(--muted)}
+.rev-foot{text-align:center;margin-top:36px}
+.rev-foot a{color:var(--gold);border-bottom:1px solid rgba(201,162,75,.4);padding-bottom:2px;font-size:.9rem;letter-spacing:.04em}
+
+.info{background:var(--bg2)}
+.info-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:stretch}
+.hours-card h3{font-size:1.9rem;margin-bottom:6px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin:14px 0 22px}
+.open-badge.open{background:rgba(120,180,120,.16);color:#8fd08f}
+.open-badge.closed{background:rgba(200,90,70,.16);color:#e09a86}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted);gap:16px}
+.hours-list li.today{color:var(--cream)}
+.hours-list li.today .d{color:var(--gold)}
+.hours-list li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.contact-rows{margin-top:28px}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
+.crow .ic{color:var(--gold);font-size:1.05rem;width:26px}
+.crow h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:2px}
+.crow a,.crow p{color:var(--cream);font-size:1rem}
+.info-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.map-wrap{border-radius:3px;overflow:hidden;min-height:480px;filter:grayscale(.3) contrast(1.05)}
+.map-wrap iframe{width:100%;height:100%;min-height:480px;border:0}
+
+footer{background:#0e0b09;padding:66px 0 28px;text-align:center;border-top:1px solid var(--line)}
+footer .brand{font-size:2rem;display:inline-block;margin-bottom:12px}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:.25s}
+.socials a:hover{background:var(--gold);color:#14100e;border-color:var(--gold)}
+.foot-line{color:var(--muted);font-size:.82rem;margin-top:18px}
+.foot-note{color:rgba(184,169,152,.5);font-size:.72rem;margin-top:8px}
+
+.lb{position:fixed;inset:0;background:rgba(10,8,6,.96);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%;border-radius:3px}
+.lb .x{position:absolute;top:22px;right:30px;color:var(--cream);font-size:2rem;cursor:pointer;opacity:.8}
+.mobile-bar{display:none}
+
+@media(max-width:960px){
+  .about-grid,.info-grid{grid-template-columns:1fr;gap:40px}
+  .menu-grid{grid-template-columns:1fr;gap:22px}
+  .rev-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  header nav{display:none}
+  .menu-toggle{display:block}
+  .about-img::after{display:none}
+}
+@media(max-width:560px){
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
+  section{padding:76px 0}
+  .header-cta{display:none}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:16px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#14100e;background:var(--gold);font-weight:500}
+  body{padding-bottom:54px}
+}
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand">Biri<span>.</span></a>
+    <nav>
+      <a href="#storia">La trattoria</a>
+      <a href="#menu">Menù</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="tel:+390457210873" class="btn btn-gold header-cta">Prenota</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').scrollIntoView()">☰</button>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Ristorante &amp; Pizzeria · Bardolino</div>
+    <h1>Pizza e cucina,<br><em>nel cuore di Bardolino</em></h1>
+    <p class="sub">Uno storico locale nel centro di Bardolino, con sale ampie e dehors. Pizza cotta a puntino, cucina di lago e di carne, prezzi giusti e porzioni abbondanti.</p>
+    <div class="hero-cta">
+      <a href="tel:+390457210873" class="btn btn-gold">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-out">Scopri il menù</a>
+    </div>
+    <div class="hero-meta">
+      <div><span class="stars">★★★★★</span> <b>4,7</b></div>
+      <div class="sep"></div>
+      <div>1.595 recensioni Google</div>
+      <div class="sep"></div>
+      <div>Via Solferino 13, Bardolino</div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="storia">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <span class="kicker">La nostra storia</span>
+      <h2>Un locale storico, una tavola per tutti</h2>
+      <p>Biri è uno dei locali storici di Bardolino, con ambienti ampi e ben tenuti e un dehors nel centro. Un'offerta per tutti i gusti, dalla pizza ai piatti di pesce.</p>
+      <p>Ingredienti scelti e porzioni generose: dalla pizza cotta al momento agli antipasti di polenta, dai primi di pesce ai secondi di carne. In sala, un servizio veloce e cordiale che mette l'ospite a proprio agio.</p>
+      <div class="sign">— dove si mangia bene senza spendere una fortuna</div>
+    </div>
+    <div class="about-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydgpMU91sJuGEbgIE7CEa5xLYUoidHZ8ivI53C2Rim5X2-k6-ZlYM6CVHDKLHaAlx2AESXnxj09iartyx-VZjjUq9Lx9JCO2yUACZdi6zMV24-MFBYbrcKK-UWoqrvVy9_XzcyvGRiBxHr30n7kGEYklxjEPa8tIiU7Q8JXzMi6xI6b0tO2bA1fOMJ3PZxoZdZZ8uxb011lk2xNrKrhf0JR9OSeaFJvnh2tRCeeEsjxl8gNZSAIdTEb60k32ZtU1QG_gqGCxheJ-tPxBIaboLsWMOOkzHJvBZb3r_8eA8E32ykTWIN-PIoFtohBeRkJJ_Rbs33Bmq8jlHW7OZSzKIFjLEoaMUXrcXQUe2rEtSiEc-IqJ_0mgPJ6cj8HcmF_3-4hjhLwY-fsR-QEjdYBj565tyr3APkdMy7Ur5svqY1U9jQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Ristorante Pizzeria Biri Bardolino">
+    </div>
+  </div>
+</section>
+
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Il menù</span>
+      <h2>I piatti della tradizione</h2>
+      <div class="orn">✦ ✦ ✦</div>
+      <p>Una selezione della nostra proposta: pizza, cucina di lago e piatti di carne.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="dish"><div class="r"><h4>Antipasti di polenta e sfizi</h4><span class="tag">Antipasti</span></div><p>Polenta e specialità del territorio per iniziare come si deve.</p></div>
+      <div class="dish"><div class="r"><h4>Pizza cotta al momento</h4><span class="tag">Pizze</span></div><p>Impasto curato e tante combinazioni, anche da asporto.</p></div>
+      <div class="dish"><div class="r"><h4>Spaghetti allo scoglio</h4><span class="tag">Primi</span></div><p>Frutti di mare freschi, un grande classico di lago e mare.</p></div>
+      <div class="dish"><div class="r"><h4>Primi di pesce</h4><span class="tag">Primi</span></div><p>Pasta fresca con il pescato del giorno.</p></div>
+      <div class="dish"><div class="r"><h4>Secondi di carne e pesce</h4><span class="tag">Secondi</span></div><p>Grigliate e piatti di pesce, cucinati con cura.</p></div>
+      <div class="dish"><div class="r"><h4>Dolci della casa</h4><span class="tag">Dessert</span></div><p>Piccola pasticceria e dolci per chiudere in dolcezza.</p></div>
+    </div>
+    <p class="menu-note">Il menù cambia con la stagione — chiedi in sala i piatti del giorno e la carta dei vini.</p>
+  </div>
+</section>
+
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Galleria</span>
+      <h2>Assaggia con gli occhi</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="gal-grid">
+      <figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydguhOmHO9ethOcUE6lb2pKF2DN2jI8aLEVgZ8xyHKgmcrGWWmysCKT8jdWqloVddS1cLaATtQ8EnzuDgbyVXKOhJBPg73iuhsT1ECXrV3TiSxe58K3cnPY1PBfqipxMhXpuo8iT9Kwc-h_z6kxHtRhzIkwJU2Ug_i63kFly1o2TK2NFrnLcq0fDrPcR1BMeUNUMG0EzMnbexlU6ea7QGktJ16qdzSDA5gCl-3C6j-mmKD71J4hy35fycckBXRv-kW4WnjpATJCJqUdtJvLQz1Cgyu02pQKrRSnbK2BvHY0TcOzRN_6USn1FZjYqawG5NYShUYjIIWVZixQjpZq9CEtOBb7dMXtWdIo3Tr8DJTnD4NOX8imaGB3RIfRu2SUJTlagEiNvEyFFvDZ6uXraEHUgagUPVtgoHCRXRo-TQD-iRSQb6DrBbfDjkXXg0MOx&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydjHjKm5dBlAvSiQKFRFR2g46-fU40k15qlozSibdNty0SK_mOognjTdB9pqzLtinDNZ1n_inAszjr-IUiEOptkNrB8ZSnj21zQfJdm5p_nHOeIDIrx7lKcvXL52TNSg621dO5_uwZnCKE8qVFlsNJpxyQkBq51-pp7O6-jqQWL5_fN60svIeVCejE7fZCUOWramXzZ7M7C8gFP28qb9fR1LNkS-6qF7S_pzgr_taW7vPQzeWRZkUzTe6WgZ9Q774v0SZoiR6LX_Nk1_Tuwob0vQpXIxW4ovH8drTuLSbjSM-oOU39v2tPMzSeYiEXwP6jrvFtD0Gb2_lMM6d77Bl4n-VEyF80tjDchldzqdAPQaGxJWj9yNtdMoYMm0tE3wLjU8Hi3GXXn55lels3YgdQpINhgFmr1MC4tLlrVYMtJT4lUsRunhfGDwh5EmgT-Z&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydhlbxRiUgWvdIkwpiR8tYHT5UJIDE-DlGx5NsOpkhP-0kqbirWVVrbYN11VVL05OpAwH-k555rKsY2uaLCELAz0zlHJ94Ehvvo1r0Va4-YqdJD3nis7cmIt_AOZk96JXHQbO8nOggWbXHkIHuOjacwg3D68M_X4G5-IXJZYSd1XfpWDXqQGb_RnJAibkHnEXPSnBXMLUAUUzr49iACROKAm50qEdVWu-ryHxSsvfRiVNvZXwHCfNpLmfE1DJXsbg3lYsNyw0gHT_aJ2JO_wKOLdrrzry9SCFXQD7KGBClLGY2gEJsoFXf57MKldoelwrrYz3_E9haGSwVWT3TrxN-7YPvYYSa1QTDVdFiY8anKIKzxVaAyC394-WYRNEARWZnuNY10XTFEy15umw_0BDmW2fHzeaH3JOoTVVJqtf5obRkz_nF378qlZebCUmg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Interno"></figure>
+      <figure class="wide"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydiUmN6JdzVrK_VbW5gKei5qnFxMBCOBRQdYzZjmhy83NKHk1aKfjbbDFYT6mJuWHjFcgURi0_8wB-a6ex12wdXIcDvohbXRw-2nePpzd9o2yMjlnn_KalBYGyacLqm9-HVQi_0URGN89hymrNF-YmWu_4k5wgEf5CfldYwjQhD_wti4a_DFmPgVivStPGYLPLD-KZ24tWBpDAFEAdJxRY5IQuVCoUdOeMdp_lZenpkpjkzX5IOCNKwg_y4TthvavL5HGhlipaXFyGKKYjTA9TGX8Wp28L6SHWk8eZQ4rmgCIJkmIswQunhJKA0nMXc2pvxXm7SUqbwbqZwZdoQt_lnxLxWlFsYICevdG4L5IbeB34jh6oC3YjN_1Umql3c10aaTZrWJ_zYhYVGDYvmO6s5FNLYIibE3ymMFe9mMgYtbLOp_6eS_Rvx_IMHQ1g&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydi9-FMPecccihupTJ-nDVHEOsO15xi4TVuv3wCdh4QusCgeWczv5Fd3ediAtLFkJCljAfLfnT6cBQWkehaXET27-AzyZGTFk-guM1Pbo9gDIWMbvkWRK-54qnUubIk18OEGo02qtTRdS2dIbrZY8n8Eu6nxsktuWTbwBrmFa6QWi45lZa_b7W_1vvnQEroEv9GdSC67pw9t5fmnHEIPGOshwcFPGsO8llPqFxJXmxfXte_G-v4YnQOAGPScCUR-7yPxPRKnPU1j81kuQYizl9AuGQ-Nmbr8y-4X0_OzEdAW-446IC0RSn6z2BJFEJ-LQoPh1Z-7VebMKI09lzz1BxKo6mW_96y7wr9ibS8b3oTwhId3MhtOpHT-O7WZQmlVsmQ6UmWRC-isyrJiIFNbXpRqzD0rTpR6DMCOtROsd8P2L-wNl6MXAGaA6QSfRGmL&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydgpMU91sJuGEbgIE7CEa5xLYUoidHZ8ivI53C2Rim5X2-k6-ZlYM6CVHDKLHaAlx2AESXnxj09iartyx-VZjjUq9Lx9JCO2yUACZdi6zMV24-MFBYbrcKK-UWoqrvVy9_XzcyvGRiBxHr30n7kGEYklxjEPa8tIiU7Q8JXzMi6xI6b0tO2bA1fOMJ3PZxoZdZZ8uxb011lk2xNrKrhf0JR9OSeaFJvnh2tRCeeEsjxl8gNZSAIdTEb60k32ZtU1QG_gqGCxheJ-tPxBIaboLsWMOOkzHJvBZb3r_8eA8E32ykTWIN-PIoFtohBeRkJJ_Rbs33Bmq8jlHW7OZSzKIFjLEoaMUXrcXQUe2rEtSiEc-IqJ_0mgPJ6cj8HcmF_3-4hjhLwY-fsR-QEjdYBj565tyr3APkdMy7Ur5svqY1U9jQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dicono di noi</span>
+      <h2>4,7 su 1.595 recensioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“L'offerta è per tutti i gusti: dalla pizza agli antipasti di polenta, primi e secondi di pesce e carne. Prezzi molto buoni e porzioni abbondanti. Personale gentile e rapido.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUwISzNMqiX3IUZNimt9KFzC0beJRslV2bDDOHLY5JfDBPBHpJz=s128-c0x00000000-cc-rp-mo-ba7" alt="Davide"><div><b>Davide Daverio</b><span>4 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“In un luogo turistico come Bardolino, una pizza buona da asporto. Serviti velocemente, in un giorno di festa, offrendoci pure un bicchiere di prosecco nell'attesa.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjXTAAQfg8rnXmFA-TCTHaGJYDcmtOecw3Dhrdr8f8uSea4oeitb=s128-c0x00000000-cc-rp-mo" alt="Sergio"><div><b>Sergio Di Bella</b><span>2 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Buonissimo ristorante in pieno centro a Bardolino. Abbiamo mangiato molto bene e in tranquillità all'esterno. Servizio rapido e gentile.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocJ6jOUMGaZ3P2J7giyykTGtBlFQv8euzZf-zo0hwzGiS1IwxA=s128-c0x00000000-cc-rp-mo-ba2" alt="Tonia"><div><b>Tonia Ciccocioppo</b><span>2 mesi fa</span></div></div>
+      </div>
+    </div>
+    <div class="rev-foot"><a href="https://maps.google.com/?cid=9301541046733303606" target="_blank" rel="noopener">Leggi tutte le 1.595 recensioni su Google →</a></div>
+  </div>
+</section>
+
+<section class="info" id="contatti">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dove trovarci</span>
+      <h2>Orari & Prenotazioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="info-grid">
+      <div class="hours-card">
+        <h3>Orari</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>11:30–22:00</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>11:30–22:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>11:30–22:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>11:30–22:00</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>11:30–22:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>11:30–22:00</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>11:30–22:00</span></li>
+        </ul>
+        <div class="contact-rows">
+          <div class="crow"><div class="ic">◉</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=9301541046733303606" target="_blank" rel="noopener">Via Solferino 13, 37011 Bardolino (VR)</a></div></div>
+          <div class="crow"><div class="ic">☎</div><div><h4>Telefono / Prenotazioni</h4><a href="tel:+390457210873">045 721 0873</a></div></div>
+        </div>
+        <div class="info-cta">
+          <a href="tel:+390457210873" class="btn btn-gold">Prenota un tavolo</a>
+          <a href="https://www.facebook.com/Ristorante-biri-bardolino-519006398114308" target="_blank" rel="noopener" class="btn btn-out">Facebook</a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Solferino+13,+37011+Bardolino+VR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">Biri<span style="color:var(--gold)">.</span></div>
+    <div class="foot-line">Ristorante &amp; Pizzeria · Bardolino, Lago di Garda</div>
+    <div class="socials">
+      <a href="https://www.facebook.com/Ristorante-biri-bardolino-519006398114308" target="_blank" rel="noopener" title="Facebook">f</a>
+      <a href="tel:+390457210873" title="Telefono">☎</a>
+      <a href="https://maps.google.com/?cid=9301541046733303606" target="_blank" rel="noopener" title="Mappa">◉</a>
+    </div>
+    <div class="foot-line">© 2026 Ristorante Pizzeria Biri · Via Solferino 13, 37011 Bardolino (VR) · P.IVA 02029710239</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+390457210873">☎ Prenota un tavolo</a>
+</div>
+
+<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
+
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1500');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+const periods={0:[[1130,2200]],1:[[1130,2200]],2:[[1130,2200]],3:[[1130,2200]],4:[[1130,2200]],5:[[1130,2200]],6:[[1130,2200]]};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const open=(periods[day]||[]).some(p=>hm>=p[0]&&hm<p[1]);
+const badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+badge.className='open-badge '+(open?'open':'closed');
+txt.textContent=open?'Aperto ora':'Chiuso ora';
+</script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Virata Trattoria del Pesce — Bardolino | Prenota</title>
+<meta name="description" content="La Virata Trattoria del Pesce a Bardolino, sul Lago di Garda. Pesce di lago e di mare, ricette della tradizione, a due passi dal centro. 4,6★ su 1.059 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#22261f; --ink2:#4c5145; --sub:#8b9082; --line:#e2e4dc; --paper:#f4f5ef; --white:#fff;
+  --accent:#4a5c3f; --accent-d:#3a4a31; --gold:#a08a5a; --green:#25d366;
+  --h:'Playfair Display',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--b);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.serif{font-family:var(--h);font-weight:400}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:var(--h);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:1.2rem}
+header nav{display:flex;gap:32px}
+header nav a{font-family:var(--b);font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;padding:13px 26px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-fill{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-fill:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.65)}
+.btn-light:hover{background:#fff;color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjDjRn8QJKP0_H0X7_6NShH-sDbGoIevRz_0Jnr188mM9BPHjC5Lma4LAK6oSjCNLMrAxMHzmfSSUc8Ra1FPvJmYLAIm-dnnaAgoGIHXQcHBXUJeLYcFCqiiVlzf_BAo-2SbYcPeQFJdZmkpGKbAt7Wk7hLiV41Z1bln8h23BmOb49n7ubjTIVUqc5TCBtU2XcvxSi_mDbb56S5qfjHFqgPmhssnPCx-PVmVbJF0onuDEwoRDkabWAcQ2tpdpmtQjRRqNJMFUJLuJh0kzPaqnkuc7dI4ZVa1XGNZ4fWYEtw9AhLzfOP39fRF20rmDJvqJQRJUV1sVXmtQ_tr69P6ZeNoB2Em6_2SyG0Jw414cSe8zgML-m9HESzMa1QkwCFR9Wlg3HuPul3WJ1S96-6ZMJ4vEDE3Qsad6R5dwc1fIAOuBd3&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,38,31,.5),rgba(34,38,31,.68))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:820px}
+.hero .kick{color:#d8ddcf;display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(2.4rem,7vw,5.4rem);line-height:1.06;margin-bottom:26px}
+.hero p{font-size:1.08rem;font-weight:300;color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center;background:var(--white)}
+.intro .kick{display:block;margin-bottom:20px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.3;max-width:20ch;margin:0 auto 22px}
+.intro p{color:var(--ink2);font-weight:300;max-width:600px;margin:0 auto;font-size:1.05rem}
+
+/* Split */
+.split{padding:0 0 110px;background:var(--white)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h3{font-family:var(--h);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:18px;line-height:1.2}
+.split-txt p{color:var(--ink2);font-weight:300;margin-bottom:16px}
+
+/* Menu */
+.menu{padding:110px 0;background:var(--paper)}
+.menu-head{text-align:center;margin-bottom:60px}
+.menu-head .kick{display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;letter-spacing:.05em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:52px 72px;max-width:960px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem;text-align:center;padding-bottom:14px;margin-bottom:20px;border-bottom:1px solid var(--sub)}
+.dish{text-align:center;padding:14px 0}
+.dish h5{font-family:var(--h);font-weight:400;font-size:1.12rem;margin-bottom:4px}
+.dish span{color:var(--sub);font-weight:300;font-size:.9rem;display:block;margin-bottom:6px}
+.dish .price{font-family:var(--b);font-weight:500;letter-spacing:.1em;color:var(--accent);font-size:.92rem}
+
+/* Gallery */
+.gallery{padding:110px 0;background:var(--white)}
+.gal-head{text-align:center;margin-bottom:50px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);text-transform:uppercase;letter-spacing:.05em}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal-grid img{width:100%;height:360px;object-fit:cover}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--paper);text-align:center}
+.reviews .stars{color:var(--gold);letter-spacing:4px;font-size:1.1rem;margin-bottom:10px}
+.reviews h2{font-family:var(--h);font-weight:400;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:46px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.rv{background:#fff;border:1px solid var(--line);padding:34px 28px}
+.rv .st{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.rv p{font-family:var(--h);font-weight:400;font-style:italic;color:var(--ink2);font-size:1.05rem;margin-bottom:16px;line-height:1.5}
+.rv b{font-family:var(--b);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem}
+
+/* Visit / reserve */
+.visit{position:relative;padding:130px 0;text-align:center;color:#fff}
+.visit-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydggSrJ97BvlaSK5kYOzqWvNh5URO6yfH9QC1FueAYZzMVJSgogVd6uwhdqQ6Yg7ZUoINNKjmi_uPT5S3ED1pXUfHFyZ8ZQ57CfqMzd0ShEl3HGkYYDuRnn8s00uSS8ugw2Cg_7DgVRVwpxvj1-M103BLuaRJE4YyCHVAkU4HYTrbf7k_-2Nq0idFz4z6ipjEgyHuCCwmvi7wQ_cacZLq9CY5YXGDUlQ2lwox47Tg3T24nno5jbGEKE_G_86VtjM7IP_FznQ0nZcNPZYSFSs6nJ3x9fqONQJdBTHUuI5xh8njGAoFw2yNEloaz3qWoiaXXJK1S-a1XI22YFSomAtiJCfbBZkxz51tt82RHOCv1w7h66LNARmd0UN7LkGOVz_HNx6u3derFSXta_S6LQcboj_a6wmLkjr37nmTjtB2OP3Qtb4&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.visit-bg::after{content:"";position:absolute;inset:0;background:rgba(34,38,31,.72)}
+.visit .wrap{position:relative;z-index:2}
+.visit .kick{color:#d8ddcf;display:block;margin-bottom:18px}
+.visit h2{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px}
+.visit p{max-width:520px;margin:0 auto 18px;font-weight:300;color:rgba(255,255,255,.88)}
+.visit .hours{font-weight:300;color:rgba(255,255,255,.82);margin-bottom:28px;line-height:1.9}
+.visit .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 38px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#d8ddcf;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;font-weight:300;line-height:1.95;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.8rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;letter-spacing:.06em}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .menu-cols{grid-template-columns:1fr;gap:38px}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-hide{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:260px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--b);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">La Virata</a>
+    <nav>
+      <a href="#intro">Il ristorante</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#visita">Prenota</a>
+    </nav>
+    <a href="#visita" class="btn btn-out hd-hide">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Trattoria di pesce · Bardolino</span>
+    <h1>Il pesce, come una volta</h1>
+    <p>Pesce di lago e di mare, ricette della tradizione mediterranea. A due passi dal centro di Bardolino, con dehors all'aperto.</p>
+    <div class="hero-cta">
+      <a href="#visita" class="btn btn-light">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-light">Il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="intro" class="intro">
+  <div class="wrap">
+    <span class="kick">Il ristorante</span>
+    <h2>Il gusto genuino del pesce fresco</h2>
+    <p>Alla Virata celebriamo il pescato con semplicità e cura: piatti dai sapori netti, porzioni generose e un'accoglienza sincera che mette l'ospite a proprio agio.</p>
+  </div>
+</section>
+
+<section class="split">
+  <div class="wrap split-grid">
+    <img class="split-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydggSrJ97BvlaSK5kYOzqWvNh5URO6yfH9QC1FueAYZzMVJSgogVd6uwhdqQ6Yg7ZUoINNKjmi_uPT5S3ED1pXUfHFyZ8ZQ57CfqMzd0ShEl3HGkYYDuRnn8s00uSS8ugw2Cg_7DgVRVwpxvj1-M103BLuaRJE4YyCHVAkU4HYTrbf7k_-2Nq0idFz4z6ipjEgyHuCCwmvi7wQ_cacZLq9CY5YXGDUlQ2lwox47Tg3T24nno5jbGEKE_G_86VtjM7IP_FznQ0nZcNPZYSFSs6nJ3x9fqONQJdBTHUuI5xh8njGAoFw2yNEloaz3qWoiaXXJK1S-a1XI22YFSomAtiJCfbBZkxz51tt82RHOCv1w7h66LNARmd0UN7LkGOVz_HNx6u3derFSXta_S6LQcboj_a6wmLkjr37nmTjtB2OP3Qtb4&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto d'autore">
+    <div class="split-txt">
+      <span class="kick">La filosofia</span>
+      <h3>Freschezza, tradizione, accoglienza</h3>
+      <p>Selezioniamo ogni giorno il pesce migliore per portare in tavola sapori autentici. Dalla sala al dehors, ogni dettaglio è pensato per farvi stare bene.</p>
+      <p>Un luogo cordiale e familiare, ideale per un pranzo veloce o una cena tra amici, a Bardolino.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La carta</span>
+      <h2>Menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><h5>Antipasto di pesce</h5><span>Selezione della casa, di lago e di mare</span><div class="price">16 €</div></div>
+        <div class="dish"><h5>Cozze alla marinara</h5><span>Prezzemolo, pane croccante</span><div class="price">12 €</div></div>
+        <div class="dish"><h5>Tartare di pescato</h5><span>Del giorno, agrumi e olio EVO</span><div class="price">15 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><h5>Spaghetti con le sarde di lago</h5><span>Il nostro classico</span><div class="price">15 €</div></div>
+        <div class="dish"><h5>Spaghetti allo scoglio</h5><span>Frutti di mare freschi</span><div class="price">17 €</div></div>
+        <div class="dish"><h5>Gnocchetti ai frutti di mare</h5><span>Pasta fresca fatta in casa</span><div class="price">16 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Secondi</h3>
+        <div class="dish"><h5>Frittura di pesce</h5><span>Croccante, servita calda</span><div class="price">20 €</div></div>
+        <div class="dish"><h5>Grigliata di pesce</h5><span>Pescato del giorno alla griglia</span><div class="price">22 €</div></div>
+        <div class="dish"><h5>Branzino al forno</h5><span>Con verdure di stagione</span><div class="price">21 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Vini &amp; Dolci</h3>
+        <div class="dish"><h5>Vini del Garda</h5><span>Calici in accompagnamento</span><div class="price">5 €</div></div>
+        <div class="dish"><h5>Bardolino &amp; Chiaretto</h5><span>Selezione della casa</span><div class="price">6 €</div></div>
+        <div class="dish"><h5>Dolce della casa</h5><span>Creazione del giorno</span><div class="price">6 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galleria" class="gallery">
+  <div class="wrap">
+    <div class="gal-head">
+      <span class="kick">Galleria</span>
+      <h2>Atmosfera &amp; piatti</h2>
+    </div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydjvzeVHWz7rp7AhQHlXM4zcfEsGDein2ZR_b5xhcx4j-W2Ir7ySt878OXidjTlfzPtE58X9W-Qq28nIBfcIEU3uZveT-MeH0NdOKYNosRngqIdUCDBwvJOMCoVbq4i8lVIv8C9vqtiM1HEjxhrml7a4bLOuF9-vhkjrZETqqeIBqJPdCH3UlQjlF2WtNxuGbahLzX1DiQO4mFXyPQ4EXsEaYlqZb9LlwHNWzQxIJexBpJ8JJbmvXEfGglEGpSpyn9vRzG3t1-goduC7MpX3EtoYqzsMpmu6hf2vrMrfIk8-RKMF7A0aGuLWQbnqoFIkU1ypmoR-KVBdQDQVXMegJfyEW5VX3bWxn_giHWJovmyT6qAxnYkFnIUaRGDFZkLCpam0ToexUtbSUv5BgN1FjuzYKxxVWrPsQwPirUjTW-t8gN1oEDBH7IUF84sPjysd&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydjk3ws5-IUf6IV__vaMrG7ySk2ggnaHm3ik3TeD6Uj9gfBbt5IhJ71OxRbYvRYzuuHPcO4M97PqaYvyfNIX7RcTCDDLSCaJQkt91NCoLNs4ORGrp806ye0NQQw3CN8gBO0IpNeLGZAexxsE1rMkwojUBXXExjO7gd9yAUDio5XRyA3oEjtPomND9AlFL2HHupz3k262QatAb7XOpO0Oj3-E5-W5CWz4qDCfy3TbGv6TVGe38YmwfkgHzxqKtHHvKeqUDT8vN7uB9bJNmH2IPLwyFTAKqyhgw_7jfUquYwbKF60s4KX898jYZ39yHbmlXyirjPHWEJ2Ib1JSRFqE0naVMVc9m7pLV4zrQnkA8GpjpBzw-4ssFYRvP7OYC9P9jDHrbS04pxwzTbmbWG_1Q8gsD5DaRVdDj4vB_cdhV_O9JglK&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydj1xYQOL3us5xfD6TqKw0BAzCLcKG9-C0B8b4797Mxmf_itptYjGm10fUg99oysJia0dNH9j0-HHScNZ3PcxrjHUIM0JxEOJ23DRZgfAH7Br1fsTFQDzEKAxzEJHdN6kaLIBmzSbVZf9QNGZFaN6k3X3ZfGVTKqeDxaFb9DunFUvXbdxrjojXe0LXPaZkWlDH1xoJPHVTo519HFBV21zZstMHSyHK3IuNogPtjs8otw3ojV9668GXgSbUf2gHAmWJcjkUht1rc_BSgBoaBCPl2l66cyemNU199M2WDyDDe_Se7rod99smY_OsEEuTg7AozCI_ZjgGi8foWUBGYgyjnPeCIDUfpq99bsrnjRrCr2VOx09KLgqIA0sAkb8R4ZEWO-_3cfL3iJat7vn7SPeO05QeiLrpdNZtTjp0Y1fx-0C_7YdX1T3Maxl3LZEg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio">
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,6 su 1.059 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Piacevole pranzo con buoni piatti. Servizio attento, veloce e cortese. Da tornare."</p><b>Luca C.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Ottima cucina di pesce, personale gentilissimo e sempre col sorriso. Prezzi onesti e porzioni ottime."</p><b>Fernando</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Piatti gustosi e abbondanti. Gli spaghetti con le sarde di lago: ottimi davvero!"</p><b>Victor P.</b></div>
+    </div>
+    <div style="text-align:center;margin-top:30px"><a href="https://maps.google.com/?cid=2342322579943830284" target="_blank" rel="noopener" style="color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:2px;font-size:.92rem">Tutte le recensioni su Google →</a></div>
+  </div>
+</section>
+
+<section id="visita" class="visit">
+  <div class="visit-bg"></div>
+  <div class="wrap">
+    <span class="kick">Prenotazioni</span>
+    <h2>Prenota la tua serata</h2>
+    <p>Consigliamo la prenotazione. Per menù degustazione ed eventi privati, contattaci.</p>
+    <div class="hours">Via Fosse 40, Bardolino (VR) · Aperto 12:00–14:30 e 17:30–22:00 · Martedì solo cena</div>
+    <div class="btns">
+      <a href="tel:+390457211636" class="btn btn-fill">Chiama 045 721 1636</a>
+      <a href="tel:+390457211636" class="btn btn-light">Prenota un tavolo</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">La Virata</div>
+        <p>Trattoria di pesce a due passi dal centro di Bardolino.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via Fosse 40, 37011 Bardolino (VR)<br><a href="tel:+390457211636">045 721 1636</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Lun, Mer–Dom 12:00–14:30 · 17:30–22:00<br>Martedì solo cena</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© La Virata Trattoria del Pesce — Bardolino</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390457211636" class="call">Chiama</a>
+  <a href="tel:+390457211636" class="wa" style="background:var(--accent)">Prenota</a>
+</div>
+
+</body>
+</html>
