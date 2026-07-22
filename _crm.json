@@ -175,5 +175,35 @@
   "place_id": "ChIJVavkRvntgUcR1165hwk9DFc",
   "sito_google": "https://maps.google.com/?cid=6272455492161330903",
   "stato_mail": "Da fare"
+ },
+ {
+  "name": "Pizzeria Bardolino",
+  "file": "pizzeria-bardolino.html",
+  "phone": "045 621 2069",
+  "intl": "390456212069",
+  "comune": "Bardolino",
+  "zona": "Centro",
+  "cid": "10095431233782896264",
+  "tmpl": "ristorante-atlantic",
+  "url": "https://hubtecit-srl.github.io/website/pizzeria-bardolino.html",
+  "place_id": "ChIJz6uFUvntgUcRiFYDIDgtGow",
+  "canale": "Da contattare a mano",
+  "email": "",
+  "wa": ""
+ },
+ {
+  "name": "Alla Vecchia Osteria",
+  "file": "alla-vecchia-osteria-bardolino.html",
+  "phone": "045 621 0737",
+  "intl": "390456210737",
+  "comune": "Bardolino",
+  "zona": "Centro",
+  "cid": "12850443219996009798",
+  "tmpl": "ristorante-auburn",
+  "url": "https://hubtecit-srl.github.io/website/alla-vecchia-osteria-bardolino.html",
+  "place_id": "ChIJx9pTb_ntgUcRRmUwJgbyVbI",
+  "canale": "Da contattare a mano",
+  "email": "",
+  "wa": ""
  }
 ]
