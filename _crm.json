@@ -205,5 +205,32 @@
   "canale": "Da contattare a mano",
   "email": "",
   "wa": ""
+ },
+ {
+  "name": "La Piccola Osteria",
+  "file": "la-piccola-osteria-bardolino.html",
+  "phone": "045 621 0421",
+  "intl": "390456210421",
+  "comune": "Bardolino",
+  "cid": "17263438522595899867",
+  "tmpl": "ristorante-atlantic",
+  "url": "https://hubtecit-srl.github.io/website/la-piccola-osteria-bardolino.html",
+  "channel": "Da contattare a mano",
+  "place_id": "ChIJ-xSRYvntgUcR23kf5d4NlO8",
+  "sito_reale": "Solo social/booking"
+ },
+ {
+  "name": "Locanda Pescadoro",
+  "file": "locanda-pescadoro-bardolino.html",
+  "phone": "379 176 7708",
+  "intl": "393791767708",
+  "comune": "Bardolino",
+  "cid": "16724970489204001571",
+  "tmpl": "ristorante-juniper",
+  "url": "https://hubtecit-srl.github.io/website/locanda-pescadoro-bardolino.html",
+  "wa": "https://wa.me/393791767708?text=Buongiorno%2C%0ASono%20Laura%20di%20HubTec%2C%20azienda%20di%20Verona.%0A%0AHo%20notato%20che%20avete%20ottime%20recensioni%20ma%20nessun%20sito%20web%2C%20cosi%20ne%20ho%20gia%20preparato%20uno%20per%20voi%2C%20potete%20vederlo%20qui%3A%20https%3A%2F%2Fhubtecit-srl.github.io%2Fwebsite%2Flocanda-pescadoro-bardolino.html%0A%0ASe%20vi%20piace%2C%20lo%20attiviamo%20con%20soli%20200%E2%82%AC.%0A%0AIn%20piu%2C%20se%20volete%20gestirlo%20in%20autonomia%20%28cambiare%20testi%2C%20foto%2C%20orari%E2%80%A6%29%2C%20possiamo%20aggiungere%20un%20gestionale%20semplice%20a%20soli%20100%E2%82%AC.%0A%0AChiaramente%20lo%20possiamo%20modificare%20con%20logo%20e%20altri%20minimi%20dettagli%20vostri.%0A%0ANessun%20impegno%3A%20dateci%20un%27occhiata%20e%20fatemi%20sapere%20cosa%20ne%20pensate%21%0A%0ALaura%20Borin%20-%20HubTec",
+  "channel": "WhatsApp",
+  "place_id": "ChIJnd3Q5q3tgUcRI0vlFwwIG-g",
+  "sito_reale": "No"
  }
 ]
