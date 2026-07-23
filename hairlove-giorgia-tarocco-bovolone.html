@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HairLove di Giorgia Tarocco — Parrucchiere a Bovolone (VR)</title>
+<meta name="description" content="HairLove di Giorgia Tarocco, parrucchiere donna e uomo a Bovolone in Via Garibaldi 31/A. Taglio, colore, meches e trattamenti. 4,8★ su 20 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dark:#241d18; --dark2:#1b1510; --cream:#f3ece2; --cream2:#efe5d8; --card:#f7f1e8;
+  --ink:#2e2620; --sub:#8a7d6f; --red:#b02a1c; --red-d:#94210f; --line:#e4d9c9; --white:#fff;
+  --f:'Archivo',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1280px;margin:0 auto;padding:0 34px}
+.display{font-weight:900;letter-spacing:-.02em;line-height:.92;text-transform:uppercase}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.tag b{background:var(--red);color:#fff;padding:3px 9px;border-radius:4px;font-weight:700}
+
+header{position:absolute;top:0;left:0;right:0;z-index:40}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:88px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:1.25rem;letter-spacing:.02em;color:#f3ece2}
+.brand .mk{width:26px;height:26px;background:var(--red);border-radius:6px;display:inline-block;transform:rotate(45deg)}
+.hd-right{display:flex;align-items:center;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--f);font-weight:600;font-size:.9rem;padding:13px 22px;border-radius:8px;cursor:pointer;transition:.22s;border:1px solid transparent}
+.btn-white{background:#f3ece2;color:var(--ink)}
+.btn-white:hover{background:#fff}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-dark{background:rgba(255,255,255,.1);color:#f3ece2;border-color:rgba(255,255,255,.25)}
+.btn-dark:hover{background:rgba(255,255,255,.18)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;background:var(--dark);color:#f3ece2;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhTjMf1VRx5C85ZMXyNzeWQGBeYtA5a0rB6jdfY0myvOutqejTCzuHtCdM5FgwHlj4ATn9-jhUUsFsmIEL3MbR4zQ_b64Rg6g6kBTlmQRB-xY1kXmAl-lbu5W9VUZZIR8TwzqOosP2RHeFbUVI7yUxa7kT5ruqN4aEeyPlhB2zukWcl8k-S0itSR1XuEJdR5d2ImPyf4sYTpqTjBzu0P68ELatKSFWYTGE6d1iLSXpN68pBLCPnRQEyn_sDzCAn9ahzi0kfCk5vy4-vqLnb49SFVyevu1aRiPI_aZhk4qARv7G1Lg-aM1V8UzGT_FXXardyXCm2eclrSFA3gSK8ik8OOotdgswdK4xIJN_SrL3IPg1uCumeXgUk6pXvwGYaA_QaJMy6Z2-k9zJsiWX8D5HP-gmi7O5M4-68HYQYRX989R-0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,21,16,.92) 0%,rgba(28,21,16,.7) 42%,rgba(28,21,16,.25) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-top:70px}
+.hero .tag{color:#e9dccb;margin-bottom:22px}
+.hero h1{font-size:clamp(3.4rem,10vw,8.5rem);margin-bottom:22px}
+.hero .sub{max-width:440px;color:rgba(243,236,226,.82);font-size:1.06rem;margin-bottom:30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.float-card{position:absolute;left:34px;bottom:38px;z-index:3;display:flex;align-items:center;gap:16px;background:rgba(35,28,22,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px;max-width:340px}
+.float-card img{width:66px;height:66px;border-radius:10px;object-fit:cover}
+.float-card h4{font-weight:800;text-transform:uppercase;font-size:1rem;color:#f3ece2;letter-spacing:.02em}
+.float-card p{font-size:.82rem;color:rgba(243,236,226,.7)}
+.float-card .plus{margin-left:auto;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.dots{position:absolute;right:40px;bottom:52px;z-index:3;display:flex;gap:8px}
+.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35)}
+.dots i.on{background:#fff}
+
+/* Statement + gallery */
+.state{background:var(--cream);padding:100px 0 0;text-align:center}
+.rev-badge{display:inline-flex;flex-direction:column;align-items:center;margin-bottom:26px}
+.rev-badge .st{color:var(--red);letter-spacing:2px}
+.rev-badge small{font-size:.78rem;color:var(--sub);font-weight:500;margin-top:2px}
+.state h2{font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.9rem);line-height:1.12;max-width:920px;margin:0 auto 26px;color:var(--ink)}
+.gallery4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:60px}
+.gallery4 img{width:100%;height:440px;object-fit:cover}
+
+/* Services */
+.services{background:var(--cream2);padding:110px 0}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:56px}
+.svc-top .lab{color:var(--red);font-weight:700;letter-spacing:.14em;font-size:.78rem;text-transform:uppercase}
+.svc-top h2{font-size:clamp(3rem,7vw,6rem);margin:12px 0 10px}
+.svc-top p{color:var(--sub);max-width:420px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 30px 30px;position:relative;min-height:220px;transition:.25s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(46,38,32,.1)}
+.svc .no{font-weight:900;font-size:3rem;color:rgba(46,38,32,.12);line-height:1}
+.svc .ic{position:absolute;top:34px;right:30px;color:var(--red);font-size:1.6rem}
+.svc h3{font-weight:800;text-transform:uppercase;font-size:1.3rem;margin:44px 0 8px;letter-spacing:.01em}
+.svc p{color:var(--sub);font-size:.94rem}
+.svc-note{text-align:center;margin-top:32px;color:var(--sub)}
+
+/* Reviews */
+.reviews{background:var(--dark);color:#f3ece2;padding:110px 0}
+.reviews .svc-top h2{font-size:clamp(2.6rem,6vw,5rem)}
+.reviews .svc-top .lab{color:#e09b8f}
+.reviews .svc-top p{color:rgba(243,236,226,.6)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:30px}
+.rv .st{color:var(--red);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:rgba(243,236,226,.86);font-size:.96rem;margin-bottom:18px}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.rv .who b{font-weight:700;font-size:.9rem}
+.rv .who span{display:block;font-size:.76rem;color:rgba(243,236,226,.55)}
+
+/* Contact / footer */
+.foot{background:var(--dark2);color:#f3ece2;padding:100px 0 34px}
+.foot-cta{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;padding-bottom:70px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-cta h2{font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,6vw,5rem);line-height:.95}
+.foot-cta .lab{color:var(--red);font-weight:700;letter-spacing:.14em;font-size:.78rem;text-transform:uppercase;margin-bottom:10px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding:60px 0 40px}
+.foot-grid h4{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,236,226,.5);font-weight:600;margin-bottom:16px}
+.foot-grid p,.foot-grid a{color:rgba(243,236,226,.9);font-weight:400}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.92rem;color:rgba(243,236,226,.75);gap:16px}
+.hours-list li.today{color:#fff;font-weight:600}
+.hours-list li.today .d{color:var(--red)}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:600;padding:5px 12px;border-radius:40px;margin-bottom:14px}
+.open-badge.open{background:rgba(120,180,120,.2);color:#93d19a}
+.open-badge.closed{background:rgba(176,42,28,.22);color:#e79b8f}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.foot-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem;color:rgba(243,236,226,.5)}
+
+.mobile-bar{display:none}
+@media(max-width:960px){
+  .gallery4{grid-template-columns:repeat(2,1fr)}
+  .svc-grid,.rv-grid{grid-template-columns:1fr 1fr}
+  .svc-top,.foot-cta{flex-direction:column;align-items:flex-start}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hd-right .btn{display:none}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  .gallery4{grid-template-columns:1fr 1fr}
+  .gallery4 img{height:230px}
+  .svc-grid,.rv-grid,.foot-grid{grid-template-columns:1fr}
+  .hero h1{font-size:3.6rem}
+  .float-card{left:16px;right:16px;bottom:74px;max-width:none}
+  .dots{display:none}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:15px;font-weight:700;font-size:.82rem;text-transform:uppercase;color:#fff}
+  .mobile-bar .call{background:var(--dark)}
+  .mobile-bar .bk{background:var(--red)}
+  body{padding-bottom:50px}
+}
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#" class="brand"><span class="mk"></span>HAIRLOVE</a>
+    <div class="hd-right">
+      <a href="tel:+393455995697" class="btn btn-white">Prenota →</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="tag"><b>#01</b> Parrucchiere · Bovolone (VR)</div>
+    <h1 class="display">Hair<br>Love</h1>
+    <p class="sub">Il salone di Giorgia Tarocco: taglio, colore e meches per donna e uomo, studiati su misura con prodotti Davines.</p>
+    <div class="hero-cta">
+      <a href="#servizi" class="btn btn-white">I servizi →</a>
+      <a href="#contatti" class="btn btn-dark">Contatti →</a>
+    </div>
+  </div>
+  <div class="float-card">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photo_reference=AWCwydjnvSmD2-6ShEGA6lQgVCc331ujMCiSCEkoWChPr-euxJTZmI9hT8mpaW1_MCoqf0SN3Gb0Fs3EOUBOvFxn8GmdmOP47XMtsifOCVM0Bm4n3JZOcntUtyMN8ynp1cRzsFrBrH0kCKN5VzMUZMV7-d7MGpanFyqbdl9mKFzYPIEtCjQFdrRLRfDGdFMoK7slIOcsAqGH4GyCQQApWgUkPOuB7BPbRI-NIHniO8haye-DzB8ryzDTOVwbOKAM3gT0q2IILiT24vIeHx90BAcfchtms-B5yuU_58gWPMQLKOB0G0L98X2mNspdciLRpODuKUvJSsrIKcq-I5st26rOzgl4K6zxBw1blil_h9_s9fG3xl_56Pq2QDd-zMyiDFxZsZ7CDd6cL2spLM_4vHdTnXxa1GcSFknBw3tH_l3n_vY4d4DgTrWlwMJSoqRZKjPj&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Colore e piega">
+    <div>
+      <h4>Colore &amp; Meches</h4>
+      <p>Il servizio più richiesto · su appuntamento →</p>
+    </div>
+    <div class="plus">+</div>
+  </div>
+  <div class="dots"><i class="on"></i><i></i><i></i></div>
+</section>
+
+<section class="state">
+  <div class="wrap">
+    <div class="rev-badge"><span class="st">★★★★★</span><small>4,8 / 5 · 20 recensioni Google</small></div>
+    <h2>Mani esperte, prodotti Davines e un salone curato dove ti senti subito a casa.</h2>
+    <a href="tel:+393455995697" class="btn btn-red">Prenota un appuntamento →</a>
+    <div class="gallery4">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydjVCAg4SWOnfTcX1uZYZAYyULy_RwPSCaIANGY-9gd8TmiOLsLvs00b1S9YV4LKwcJLg7em6Knq786E1CyQG4V8BDM-yi0aHWQT3Oxx3bgSQRE7DPbbjMqdJOpvewg23v9AoODMugCkvUDo9y27C6-gaO66DEfSlBtQE2kwhelrWWTEyBJaWV2nKlUH8717eyOZoIIDnlYo_ZXm81tHVYnacQVhz2AxqP9RHUQozFzfnYOpH23xVGdrf2anNVBcc38Fdj40S_JRApY7dv8wv7Ha8IWMLWJMSaPSPnJYCo_PhjdBZNB7RYA92jYKjCz_kqZA3ncQDGKX4CzQjdGMEcmLhJhfUytyRdWKV6KJ4MeLKqsvETGZJYMMTHsNY_5E9i2LFOSay3gyOV8uNwyTHHezDfkK49ywKiArpmIkFNYzHAfG&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro capelli">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydih5bqNAHQfjC-tm6DMR1Sxn8AY3vyi6V3hYojrAcawbhdKgFkdTBU1QKQ7O5f102K30gwMTPWQ64vqEhPvyeoo7vw8geXcSNL2Xq0WCz0efN6fFZElGZro7bI--oDQuZ701r2KXyt69PgR6umSYFRymsvp5pKrA_9PBeajrmPMmYkjssoW-ZtYB23wb_JgTYg3h7KtL5d9p9mWKcjjEzjKVENwohTXgXy5amMFto7BkLMe0p2Cr-WdZYi3Kzk3Hh1lTxts6H4xHqvu4LjhgjEQWrH-0QVISgIDaIxzr7zXVMvuffQ6EtHLQQJDWAhDdh77PUo3drqGGiCuHHhaUqghIEyxtnjNPCawKvDfftSk5GMvEiLVpoEmedLee6-wKhtdtdGb7pofS01V1WASW35oyDS7B1lme1o-w2a6z9KD5V3w&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Colore">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydgdZB-7zAgKul2arWpHUlLbqclO1KCdjXR_UXpNAY5XxKN8Hn-503RceU67bOezvnKBlEPu-3hchQBJcnCayZx32n2tN6BvskPwRD8SbxSBBXx7M5eYXz334fis1cRfR1aP8FbxIsC9RcbGbDs79JSmLukU7uZBxhqSz2gY59zuDPx5Hyl5pYuJMElw978_eLBngMGa25TXIpe7Gt8XajuRsuYr4k04ncFsY7i9bnhjzqZg1n5Du9fPPexM5zRAMTRV8FXzj3e4fO42_85S5IivB1H4eV9LChagvfrhy35834G5WmAv41cELaBU45ObTpNkYoAeECNoaUGFh0mIdwnGAwB96bnzLy2ZV_2w3sWUtvcNpXg6kbA63ppu3ttmjKGKgHb2DQqpcHWnbBO4Vzv5652QLDnk2yaWiydRquVebKQ4&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piega">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydhRisce_78NUwB9tH3GvEgkUnABzwrloLtk5FBjCkgmUHm3gF9TzbQZGrs13LdYvjzjTCgenL9JQnUWgjxw35fVMHN9mIBUpJxHmbflYiQz3MhlXQF6oZaJQysrS7NbulMn9JJy2HEMXRrPmrjlyQUh8vP19raI3JvDOzsP7EU7I5-E4EMjrmv0RnqkAZiIfNw2XOWNgJDgqHIIoj9rLYQO7TvKyPglKnC5DPRQPh3rxfvHLO9km39S6xlWZQwNXtSoQw0NjKzBfJau3U3yWKOAxgr0rlcqvj53kGPWkuLp0wlpH7BXNMD_3x9XeCKw-DairBgjVZbhzNl_e9In_DojZsfAVkvpyZ6QJLxo61buf7huwzgS4QMzu1rdi40-yJGdoWqD3jSqN2TWnb-AG7DfhRC2lsvcRWJ4fmmXPj_0Hw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Salone">
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servizi">
+  <div class="wrap">
+    <div class="svc-top">
+      <div>
+        <div class="lab">[ Servizi ]</div>
+        <h2 class="display">Servizi</h2>
+        <p>Ogni testa è unica: studiamo insieme il look che ti valorizza di più.</p>
+      </div>
+      <a href="tel:+393455995697" class="btn btn-red">Prenota →</a>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="no">01</div><span class="ic">✂</span><h3>Taglio &amp; Piega</h3><p>Tagli personalizzati e pieghe che durano, pensati per la forma del tuo viso.</p></div>
+      <div class="svc"><div class="no">02</div><span class="ic">✦</span><h3>Colore &amp; Meches</h3><p>Colorazioni, meches e schiariture con prodotti Davines, risultati naturali e luminosi.</p></div>
+      <div class="svc"><div class="no">03</div><span class="ic">❋</span><h3>Trattamenti</h3><p>Trattamenti ristrutturanti e nutrienti per capelli forti, sani e pieni di vita.</p></div>
+      <div class="svc"><div class="no">04</div><span class="ic">✄</span><h3>Uomo</h3><p>Taglio e styling maschile, per un look curato ad ogni visita.</p></div>
+      <div class="svc"><div class="no">05</div><span class="ic">♛</span><h3>Consulenza</h3><p>Consulenza iniziale per capire i tuoi desideri e la salute del capello.</p></div>
+      <div class="svc"><div class="no">06</div><span class="ic">✚</span><h3>Cura a casa</h3><p>Prodotti professionali e consigli su misura per mantenere il risultato.</p></div>
+    </div>
+    <p class="svc-note">Prezzi onesti e trasparenti — chiamaci per il listino e per prenotare.</p>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="svc-top">
+      <div>
+        <div class="lab">[ Recensioni ]</div>
+        <h2 class="display">Dicono di noi</h2>
+        <p>4,8 stelle su 20 recensioni Google verificate.</p>
+      </div>
+    </div>
+    <div class="rv-grid">
+      <div class="rv">
+        <div class="st">★★★★★</div>
+        <p>“Esperienza davvero eccezionale! Giorgia è una vera professionista: ascolta con cura le esigenze del cliente e riesce a superare ogni aspettativa. Negozio curato nei minimi dettagli. Cinque stelle meritatissime!”</p>
+        <div class="who"><div><b>Aurora Tarocco</b><span>3 settimane fa</span></div></div>
+      </div>
+      <div class="rv">
+        <div class="st">★★★★★</div>
+        <p>“Sono rimasta super soddisfatta! Giorgia è solare e accogliente, mi ha spiegato tutto nei minimi dettagli con una consulenza iniziale. Il negozio è bellissimo e pulito. Ho già preso un altro appuntamento.”</p>
+        <div class="who"><div><b>Alessia Lanza</b><span>2 mesi fa</span></div></div>
+      </div>
+      <div class="rv">
+        <div class="st">★★★★★</div>
+        <p>“Super consigliato! Mi sono affidata a Giorgia per delle meches bionde ed il risultato è oltre le aspettative. Colore luminoso, naturale e capelli morbidissimi. Cinque stelle meritatissime!”</p>
+        <div class="who"><div><b>marissa bighellini</b><span>4 mesi fa</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" id="contatti">
+  <div class="wrap">
+    <div class="foot-cta">
+      <div>
+        <div class="lab">[ Prenota ]</div>
+        <h2 class="display">Il tuo prossimo<br>look ti aspetta</h2>
+      </div>
+      <a href="tel:+393455995697" class="btn btn-red">Prenota ora →</a>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h4>Orari</h4>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>Chiuso</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>09:00 – 19:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>09:00 – 19:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>12:00 – 21:00</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>09:00 – 18:30</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>09:00 – 16:30</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>Chiuso</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p style="margin-bottom:8px"><a href="tel:+393455995697">345 599 5697</a></p>
+        <p style="margin-bottom:8px"><a href="https://wa.me/393455995697" target="_blank" rel="noopener">Scrivici su WhatsApp →</a></p>
+        <p><a href="https://maps.google.com/?cid=10070534960470300715" target="_blank" rel="noopener">Via Giuseppe Garibaldi 31/A, 37051 Bovolone (VR) →</a></p>
+      </div>
+      <div>
+        <h4>Salone</h4>
+        <p>Parrucchiere per donna e uomo a Bovolone. Taglio, colore, meches e trattamenti con prodotti Davines.</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 HairLove di Giorgia Tarocco · Bovolone (VR)</span>
+      <span>Sito dimostrativo — HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+393455995697" class="call">Chiama</a>
+  <a href="https://wa.me/393455995697" class="bk">WhatsApp</a>
+</div>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const periods={1:null,2:[900,1900],3:[900,1900],4:[1200,2100],5:[900,1830],6:[900,1630],0:null};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const p=periods[day],badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+if(p&&hm>=p[0]&&hm<p[1]){badge.className='open-badge open';txt.textContent='Aperto ora';}
+else{badge.className='open-badge closed';txt.textContent='Chiuso ora';}
+</script>
+</body>
+</html>

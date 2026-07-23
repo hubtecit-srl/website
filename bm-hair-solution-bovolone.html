@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BM Hair Solution — Parrucchiere a Bovolone (VR) | Prenota</title>
+<meta name="description" content="BM Hair Solution | Metodo Corè a Bovolone: taglio, colore, nanoplastia e trattamenti liscianti. Capelli facili e gestibili. 5,0★ su 15 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --peach:#ee965b; --peach-d:#d97f44; --dark:#2a2320; --ink:#2e2723; --ink2:#5f554e; --sub:#978c82;
+  --line:#ece3d8; --cream:#faf5ee; --soft:#f5ece1; --white:#fff; --green:#25d366;
+  --h:'Fraunces',Georgia,serif; --b:'Mulish',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--peach);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:15px 30px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--peach)}
+.btn-peach{background:var(--peach);color:#fff}
+.btn-peach:hover{background:var(--peach-d);border-color:var(--peach-d)}
+.btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.5)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:600;font-size:1.6rem;letter-spacing:.01em}
+header nav{display:flex;gap:30px}
+header nav a{font-weight:600;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--peach)}
+
+/* Hero */
+.hero{padding:150px 0 100px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero .kick{display:block;margin-bottom:18px}
+.hero h1{font-family:var(--h);font-weight:500;font-size:clamp(2.8rem,6.5vw,5rem);line-height:1.02;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--peach)}
+.hero p{color:var(--ink2);font-size:1.1rem;margin-bottom:30px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img img{width:100%;height:540px;object-fit:cover;background:var(--soft)}
+
+/* Why */
+.why{padding:100px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 54px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:500;font-size:clamp(2.1rem,4.5vw,3.3rem);line-height:1.14}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.why-c{text-align:center;padding:20px}
+.why-c .ic{width:64px;height:64px;margin:0 auto 16px;background:var(--soft);color:var(--peach);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.why-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:8px}
+.why-c p{color:var(--ink2);font-size:.94rem}
+
+/* Services */
+.serv{padding:100px 0;background:var(--cream)}
+.serv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px;max-width:900px;margin:0 auto}
+.serv-c{display:flex;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.serv-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:4px}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+.serv-c .price{font-family:var(--h);font-weight:600;font-size:1.3rem;color:var(--peach);white-space:nowrap}
+
+/* Gallery */
+.gallery{padding:100px 0}
+.gal-head{text-align:center;margin-bottom:44px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:500;font-size:clamp(2rem,4.4vw,3rem)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+
+/* FAQ */
+.faq{padding:100px 0;background:var(--cream)}
+.faq-wrap{max-width:780px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{list-style:none;cursor:pointer;padding:22px 4px;font-family:var(--h);font-weight:600;font-size:1.15rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--peach);font-size:1.4rem}
+.faq-item[open] summary::after{content:"–"}
+.faq-item .a{padding:0 4px 22px;color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:var(--soft);padding:32px}
+.rv .st{color:var(--peach);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.15rem;color:var(--ink);margin-bottom:16px;line-height:1.45}
+.rv b{font-weight:700;font-size:.9rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjg_6_aGDLdg5viXlGJ7gc5gukA7IuArnYkT442mGX15ALzDR5Mx7IywejtXgIHYGv6FAYzQxBEocybY-VQ3X2XvYgKy_5PRFX-S7f9bAJWQP355dR4qL6KGOrG7KBoS-iupF5YJ6YekkuJbTNBxQv-1XKFQZ3b4TqBahuuHl7-Pw0OoHcq2Kbfo1lahPFmbs07iKiO0_WbwNH783Fcgum76WZ6dEcbHzb-3gHNXdMG5KuL_ykUZfncAkw209cVKaAjjfZjCkm8Vr08YQmLq993HMhbW7U4iundsZOsUtnoFmfwIulINK_AodizM3UBLfO19EbHv32wqqUy2DYcNZJIabnK26Nl0Y4XfTxR52qom1OSY0D2SnRuSwSmdTgiDKaqwb3ZrPqYAxzHGN5K5C9-xT8PnyTmE843dRPYBH3SSMFN&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(42,35,32,.72)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:500;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--dark);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#f0b58c;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-img img{height:380px}
+  .why-grid,.rv-grid{grid-template-columns:1fr}
+  .serv-grid{grid-template-columns:1fr;gap:0}
+  .gal-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .mbar .call{color:var(--peach)}
+  .mbar .book{background:var(--peach);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">BM Hair Solution</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#lavori">Lavori</a>
+      <a href="#faq">FAQ</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Parrucchiere · Bovolone (VR)</span>
+      <h1>Capelli facili e <em>gestibili</em></h1>
+      <p>Il salone di Barbara e Anna a Bovolone. Metodo Corè, nanoplastia e colore studiati per la salute del tuo capello: ordine e piega impeccabile ogni giorno.</p>
+      <div class="hero-cta">
+        <a href="#prenota" class="btn btn-peach">Prenota ora</a>
+        <a href="#servizi" class="btn btn-out">Listino</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydiUuc1m1qMaFpVM6lla-Bjwm__Z5iUpgCyLohqaaCovJG2mu3QpY4FP8__LmTPsjZi9B1bQq7iMVSNEqQyENryMVZS48gAjopxyMnjO6W6MV02xTOlwDz4ARuw0V-gJ2ra1vA_dhXljPDaJSDmnOotMA4RpSwpCMgrOS5Du98bh_7zB-xw1VQV3sw_wCYHzguyq-bZIPjOVY7gICYSpZGsoFlfls82qwlshIr6KJpXRUPn2Ra5NsTJRPj6uLwdGPVhVLizG-Hnd9l78oA6cqflLlooG3AsKba3rlUi74Ytq00r3-RCC0hKptjCZsHXu1ok8Q90lwghUcMXkJxPBOdA7YDRhMBDaQzXwAkxB6p_rMHISL1_Md4nCk2KgbFZVG4j41HJO_qdEe-zmYFmhBv1nARlvFb29gEnJmDx3mg0Dkg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Salone BM Hair Solution"></div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Perché sceglierci</span><h2>Cura, tecnica ed esperienza</h2></div>
+    <div class="why-grid">
+      <div class="why-c"><div class="ic">🌿</div><h3>Metodo Corè</h3><p>Un approccio che rispetta capelli e cuoio capelluto per risultati duraturi.</p></div>
+      <div class="why-c"><div class="ic">✨</div><h3>Nanoplastia</h3><p>Capelli lisci, morbidi e disciplinati senza stress quotidiano.</p></div>
+      <div class="why-c"><div class="ic">💆‍♀️</div><h3>Consulenza pre-colore</h3><p>Colore su misura e ravvivante, a prezzi onesti, studiato su di te.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Listino</span><h2>I nostri servizi</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div><h3>Taglio &amp; piega</h3><p>Consulenza, taglio e styling</p></div><div class="price">su richiesta</div></div>
+      <div class="serv-c"><div><h3>Colore &amp; ricrescita</h3><p>Colore rapido e disciplinante</p></div><div class="price">su richiesta</div></div>
+      <div class="serv-c"><div><h3>Nanoplastia</h3><p>Lisciante e anticrespo duraturo</p></div><div class="price">su richiesta</div></div>
+      <div class="serv-c"><div><h3>Trattamenti</h3><p>Ricostruzione e cura profonda</p></div><div class="price">su richiesta</div></div>
+      <div class="serv-c"><div><h3>Metodo Corè</h3><p>Taglio studiato su misura</p></div><div class="price">su richiesta</div></div>
+      <div class="serv-c"><div><h3>Piega</h3><p>Styling e messa in piega</p></div><div class="price">su richiesta</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="lavori" class="gallery">
+  <div class="wrap">
+    <div class="gal-head"><span class="kick">I nostri lavori</span><h2>Look &amp; atmosfera</h2></div>
+    <div class="gal-grid">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydgwUdcETkwmjPpDZ6qN_K_31mZ76KFurDiCdD-6t91zrD3sflpcOn8dk-7314W8mXGsESDCpDK5xjzqhJ_iZQq4T3nieQetd88HAjOJbfVaAj1Lg8rDZhdDJ-vLg1xw1sdpj8jhTS8rjlOiwCG4irrWi23dJ5L74UzX5vCNSdw-8ktU9jPEh_bN59s9jbzO0ADJILaQFuqXBxhQVINLXN4mOZrkQxHa1kvmYoGZvvEhc5EPwjOWyQieQYsGOtaNVkaHnIDEf-493JQfk9US-1ywwQbsJdX8d5iWMGB_qVei2CT1HWFkjIPpRPZ_dr6w82_tNzuMvErHGFwSd0cKnqQ-7M5a4-3WobE0Hh8-P-_T59JeCi8Y-WJX8jnZKNHqY8fP3fa81TihxvpS9rN0DMU3j4CU9lK0oMhy9Zy2iLGL03KDTMY1816ihqom5X0y&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 1">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydgZx46e-o1tTQvQNAaFiBQHR8TBse5m_3x29SQldbO1R2qWdLilpepSTGU4ihKaXqYC73EgXKp13mxhkT5YH9SEuOhwrn_m7YTjBGH3P3y_7yrw4XzaOEeM_JZB0NRbJY3tlMUzBFum5vWudK4N0DFLt4MVygU0YX8EraTcUD7QjL0tPBZW0LA-fnnRKDyTPlkwYgK-alKBhNW5X363LhRUVZzmR23GmPSyoXf2SJb27YLQQeuOLKHPh0jx_qzNtOs9q-smAxiEnEklOkIVEBuNXga1gyn2y5eFrYwUbvuL7t0Gp7XImEKFXCDJtezPbc9tLqUsjsrac8ONLuLbFWbK7y0af09Lv_4CvVd0XhRkzxvK0d4Y8UA7_f7X8b08OCHIEEDFWzk4nWXTDLJm2aUI-n0n19iX57IQF524T66-9Q&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 2">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydjO-gnCgMGacAPB4ZZisKfPcCo3hpwtuy_XdkSfKjsl8rS4YgI06qKZX1b5WptWcKiV2fbcSLkBE0AoCbstT3uvJITe-KzRy0__1NNGWgiutXxamQfTNuBkUjmRTTOKCfm7A5Da5JOmnxLfDKzGTVM5DbXxVYAgV3tJvcdlUpDHCAS0GxblSDODlz1GzXXFd9s7_T7CCINd01AF8N1O5h6RcIaeSKrEAz9oBSoWJE7_2g9RH96fyI1VjOSpoQnUqYZfnMV7bVX-pgCicSHoiedFLFYX3mrqsWLewV-Uu9uY_O5OrqYjECwTUkqXYrs0ZGICiXk0N8LtO2dONibjzkGyIt2WdIzqT_diK9UzFCmzTrcp2DpXuZEBZIRr_j-CVJZGm0PIXwBb4rIAIejaeYUMqerGD_3PciQGvFV0tfG44MmS&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 3">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydiborgpNtmwtwqlci7b_sS0oqP6yLvRU0kv1T7zAO6evJHulKuGnN5rkGnseh5UrEPszRAGxjebqmgsojOFIq-y05aLGQOtFgNOtIUisWPZEhVmN7Ax972xQIBVjeuaddluOfbd85EAzmtezBTpeuinBvIqACvvtcho7ITDGE-nlE3UkjKsAYWOr61KbhKz3PG6fthdOK3IzG0iC1p6TjNZgq87-kb4AruFTCUeGbp8po6lZO1K0DXbicp5WnE5-tmkA7UKvqDOkVNb6uFGF3EkfEEFDkRzfnd_AX35ALYV497T7sPRzFROkC32Dt_JQTzeCrG8dNuRdRWJj4gYfNa9Eh8IfzMjVs4zvdYPP6hRCTTuG8tA01ymIERZ0fWrHz2Fd5cx3K7iOdgR2PU_GoAQu-hDOWYigNd4WcSbFMe8CA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 4">
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Domande frequenti</span><h2>Le risposte per te</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item" open><summary>Serve prenotare?</summary><div class="a">Consigliamo la prenotazione per garantirti il momento migliore. Puoi chiamarci o scriverci su WhatsApp.</div></details>
+      <details class="faq-item"><summary>Che cos'è il Metodo Corè?</summary><div class="a">È un approccio che studia il taglio su misura per rendere i capelli facili da gestire, riducendo tempi e stress di ogni mattina.</div></details>
+      <details class="faq-item"><summary>La nanoplastia rovina i capelli?</summary><div class="a">No: è un trattamento lisciante e disciplinante che punta alla salute del capello, con risultati morbidi e duraturi.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>Le nostre clienti</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Con l'ultimo taglio studiato su misura sistemo i capelli in pochi minuti e senza stress. Il colore rapido da 10 minuti è impagabile. Grazie a tutto il team!"</p><b>Laura Lovato</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Il mio capello bianco e crespo è diventato bello lucido grazie alle idee e alla professionalità di Barbara. Prezzi super onesti e grande consulenza pre-colore."</p><b>Arianna Errico</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Mi hanno convinta con la Nanoplastia e la straconsiglio! Capelli sempre in ordine, morbidi e soprattutto lisci. Due ragazze che fanno per dieci!"</p><b>Jennifer Bazzani</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci o scrivici su WhatsApp: troviamo insieme il momento giusto per te.</p>
+    <div class="btns">
+      <a href="tel:+393407894110" class="btn btn-light">📞 340 789 4110</a>
+      <a href="https://wa.me/393407894110" class="btn btn-glass">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">BM Hair Solution</div><p>Parrucchiere a Bovolone — Metodo Corè. Capelli facili e gestibili.</p></div>
+      <div><h4>Contatti</h4><p>Via San Pierino 63, 37051 Bovolone (VR)<br><a href="tel:+393407894110">340 789 4110</a><br><a href="https://wa.me/393407894110" target="_blank" rel="noopener">WhatsApp</a><br><a href="https://maps.google.com/?cid=16407319785491286558" target="_blank" rel="noopener">Mappa →</a></p></div>
+      <div><h4>Orari</h4><p>Mar 9:00–15:00<br>Mer 12:00–20:00<br>Gio 12:00–21:00<br>Ven 9:00–18:00<br>Sab 8:00–16:00<br>Lun e Dom chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© 2026 BM Hair Solution — Bovolone (VR)</span><span>Sito dimostrativo — HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393407894110" class="call">Chiama</a>
+  <a href="https://wa.me/393407894110" class="book">WhatsApp</a>
+</div>
+
+</body>
+</html>
