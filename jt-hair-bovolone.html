@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>J&T HAIR — Parrucchiere a Bovolone (VR) | Prenota</title>
+<meta name="description" content="J&T HAIR, parrucchiere a Bovolone (VR): taglio, colore e styling. 4,4★ su 24 recensioni Google. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111111; --ink2:#3f3f3f; --sub:#8b8b8b; --line:#e6e6e6; --paper:#f5f3f0; --white:#fff; --green:#25d366;
+  --h:'Bodoni Moda',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.8;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.kick{letter-spacing:.34em;text-transform:uppercase;font-size:.7rem;color:var(--ink2);font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:400;letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;padding:15px 32px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:500;font-size:1.5rem;letter-spacing:.28em;padding-left:.28em}
+header nav{display:flex;gap:34px}
+header nav a{letter-spacing:.16em;text-transform:uppercase;font-size:.76rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgMQXYfzSoFUHwvaEzdPr1lv7cyZyeZidLA-Hd0f6REC-jfn_uNIVy4SXos8Om589jxXewa_0U3yG6OS_jqHh0l09Rb1DyPPaMOJQixVOSJ5GP7JYCr7xLG6NkYiA9RnWenyNI0_nIsBkJPXnkoqNJSeyeWzSvTy7LVT7bX7IKsEh3vCq_NjFvxjNMIcLek8rnjMRPVCUPQkaCFNw6AEicJAcIMNBjTRvS_3gUTWtqFPokaPwmyE9-oWgCjKuQJt4IyMQe_hoIC10hLvQWBHbOaBCS14vXy-ApZWDcm3SSlnQDK7zhjB5RL3QDXbVCqKbb9WVxYpxtw34NeTPhLL2yUPhUYU5RrfmuB-GWJI7hWLWjaZ9q7sDJuOTEye0-b3ouKnQza2WLEZ5XRJ6Ci_gXYxs5uPY4Wn_DO2FZHn_Zg9jmr&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0;filter:grayscale(.4)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:rgba(17,17,17,.42)}
+.hero-inner{position:relative;z-index:2;padding:80px 24px 0;max-width:900px}
+.hero .kick{color:rgba(255,255,255,.85);display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;font-size:clamp(3rem,9vw,7rem);line-height:1;margin-bottom:26px;letter-spacing:.02em}
+.hero p{font-size:1.05rem;color:rgba(255,255,255,.85);max-width:460px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center}
+.intro .kick{display:block;margin-bottom:22px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4.2vw,3rem);line-height:1.32;max-width:22ch;margin:0 auto}
+
+/* Services */
+.serv{padding:0 0 110px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.serv-c{background:#fff;padding:44px 34px;text-align:center;transition:.25s}
+.serv-c:hover{background:var(--paper)}
+.serv-c .n{font-family:var(--h);font-size:.9rem;color:var(--sub);letter-spacing:.1em}
+.serv-c h3{font-family:var(--h);font-weight:400;font-size:1.5rem;margin:12px 0 8px;letter-spacing:.02em}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+
+/* Portfolio */
+.folio{padding:0 0 110px}
+.folio-head{text-align:center;margin-bottom:50px}
+.folio-head .kick{display:block;margin-bottom:14px}
+.folio-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2rem,4.4vw,3rem);letter-spacing:.02em}
+.folio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.folio-grid figure{overflow:hidden;position:relative}
+.folio-grid img{width:100%;height:360px;object-fit:cover;filter:grayscale(.3);transition:.6s}
+.folio-grid figure:hover img{filter:grayscale(0);transform:scale(1.05)}
+
+/* Split */
+.split{padding:110px 0;background:var(--paper)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover;filter:grayscale(.2);background:#ddd url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydj4lIS-xwVn8tPIKsjN9XtJkH9fP9WaqyyYjtnTTjL_y4owDOVnwgoISLwChlAm15_TW105jdIM7mC6_0xGA9JYp5xT9fIaRpmGNPvXxXAhAHEYvxkHrQh5lpXVUGjvTFt_JSGpGUcgpf-swpg38SMzEnk86yRP0oQElxuhx07oLEWfFPiPNzcaHkbEP47UAakbhjG6WwMpsY1K8ZZGw8qUWGgRsnFv0II3BqCecoM31MMAb4UPkLMq4LosTYczGweblMgvLIlfM2jPrvq0pz8Z2fV-IZycYFU4xq7U8CYSMTFvwcHgdlewPP6spkGxdGA-gj_1R3GNEcBV9PIGjnpiGCq1bYtNei_iVYhKk1gBGSWIFh-SyublZQFx2q3f-45fh3GRsg6UbZkI4VoapmCHuWRrzNH6vxf6JO5fW8cBGmA0pDFwK8ImhZnZbxrp&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:18px;line-height:1.2;letter-spacing:.02em}
+.split-txt p{color:var(--ink2);margin-bottom:16px}
+.split-hours{list-style:none;margin-top:18px;border-top:1px solid var(--line)}
+.split-hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.split-hours span:last-child{letter-spacing:.06em}
+
+/* Reviews */
+.reviews{padding:110px 0;text-align:center}
+.reviews .kick{display:block;margin-bottom:30px}
+.rv-track{max-width:760px;margin:0 auto}
+.rv q{font-family:var(--h);font-weight:400;font-size:clamp(1.4rem,3vw,2rem);line-height:1.4;display:block;margin-bottom:20px;font-style:italic}
+.rv .st{color:var(--ink);letter-spacing:3px;margin-bottom:10px}
+.rv b{letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:400;color:var(--ink2)}
+.rv-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:60px;text-align:left}
+.rv-row .c q{font-size:1.05rem;margin-bottom:12px;font-style:normal}
+
+/* CTA */
+.cta{position:relative;padding:130px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0;filter:grayscale(.4)}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(17,17,17,.6)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:16px;letter-spacing:.02em}
+.cta p{max-width:480px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px;padding-left:0}
+.foot-grid h4{letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;color:rgba(255,255,255,.55);margin-bottom:14px}
+.foot-grid p,.foot-grid a{font-size:.9rem;line-height:2;color:rgba(255,255,255,.7)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.78rem;letter-spacing:.06em;color:rgba(255,255,255,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .serv-grid{grid-template-columns:1fr}
+  .folio-grid{grid-template-columns:1fr 1fr}
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .rv-row{grid-template-columns:1fr;gap:26px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 22px}
+  .folio-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem}
+  .mbar .call{color:var(--ink)}
+  .mbar .book{background:var(--ink);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">J&T HAIR</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#studio">Studio</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Parrucchiere · Bovolone</span>
+    <h1>J&T HAIR</h1>
+    <p>Taglio, colore e styling d'autore. Un salone dove l'eleganza incontra la cura del dettaglio.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-light">Prenota ora</a>
+      <a href="#portfolio" class="btn btn-ghost">Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <span class="kick">Il salone</span>
+    <h2>Uno studio dedicato allo stile, in ogni dettaglio</h2>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="serv-grid">
+      <div class="serv-c"><div class="n">01</div><h3>Cut &amp; Style</h3><p>Taglio e styling personalizzati sul tuo viso.</p></div>
+      <div class="serv-c"><div class="n">02</div><h3>Hair Color</h3><p>Colore, meches e balayage d'autore.</p></div>
+      <div class="serv-c"><div class="n">03</div><h3>Treatment</h3><p>Trattamenti di cura e ricostruzione.</p></div>
+      <div class="serv-c"><div class="n">04</div><h3>Piega &amp; Styling</h3><p>Messa in piega ed eventi speciali.</p></div>
+      <div class="serv-c"><div class="n">05</div><h3>Acconciature</h3><p>Sposa e cerimonie su misura.</p></div>
+      <div class="serv-c"><div class="n">06</div><h3>Consulenza</h3><p>Analisi e consulenza d'immagine.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="folio">
+  <div class="wrap folio-head">
+    <span class="kick">Portfolio</span>
+    <h2>I nostri lavori</h2>
+  </div>
+  <div class="folio-grid">
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydik5uIIH1rBWHv6-WBMKUqNNBQCeBdUpTWbpO8I2RAUGqvSwbNZPWCvH3Nk7rKL6L-9Vpe1ZnkdEC8I5p1x86DZaErZVPulUvArHfT5arUwLvALx5FmiiRdiu6hsGb5oKsPTr7erOxHibUivJgPZOjJKAhoL2MGjrT2LfUyB50stxFVl0bI1ultBU0KZydcDf-H5Fx59l2XyAsgvtmxDz3U-74Lem4kbnZtQ6thuytRtnCLjJsGy27qv0M5ZW7cdiwHp_CTFQv5niAKPHD6OIaVULXFeBlVKhKmDPxgaVc4b6Cqab7E2VLfDeN1HlxbyLoi_85X8-D-5iCchfSzE0GJeYfCQc-tBzyNwxGaRC2HSFEQbZm31WnrFoIv_jVh-nT3nyw2MeYXuWoTDGxP6QCNfwU6tMzGXDgr0Wr8Vic54YiH&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 1"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydirC2ncSvR1QhVmN_JGf-YIwiF5PPzzwG9wFp2OZXsVEmQIi_zf2k6D46-dG6xWcrekjpeHKuNGiZS5noXWyYxSh3hl_WSVP4AANi4z7QJNi0FgzCYIRJw_LA9AIF1MfnMtP1qcJAr_nTpVisMdusmZ6zPOIBhNMov8_RRWexyUDpkwCpSpecNUFmZ_uM5vRF-DigYISRQ0efCmE1HGTEQui4sFy3oMF7mzzQfh--2QmL7bEn0sa20Wrtzx7VAbk2hfyQ3KKGdIrD3gUfnWolybFXDfWxbccagWEm-i1y5jG2ql4w0UVsvk98XRQCRjw_rlwbp6j5sp08qzOa9JCOTQvKQ5uY0c9pMuTO7WKXINsY8uzEmZcSlu7-mviRgHVAAA6F-dd4U6srYlx1xEHs0wuPdD9baOJ_6OxnkjYPE&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 2"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydgKHdGEaTlhCboQI-1j-LriqJ8n7lOQnmnyiBVeGndYWXI8z9AhKqYtg6ukyEGutAL7_0F2Ddy27KYjwWr2mer4LzBJkvZLKj-eP8F7WJ6k9NVwzy6U1yLfqAGt-Ivjy_7U9L3rgSD9N7zoiW7HexnbL4OE0XXMbOPwY2D035uujpLx087SVxTxs1Zy9YVKEZ4S4Cs6B0zBOSAtciSdBZHYCMEJ2uPVKkiLC1JiK5BLOA4k-883DhElsazRgzN6DAytjHf2mbWFgV5Sf3PgROxND2Gb4eTwqHtvBIvTCdug2XIsiswOM8kpu0nmi-7Bsif01Y_AAOk7acrWCfw2bxn_mwlyvftaApeAWOI72bet8BYttD1is0fMN9HOpD0uylLtOcq8gi7vJMs8X3kI0edoxO_cju0ZKcX37s5fgkl1YLn2yMo7K4NP6Yju0FSj&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 3"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydi33BTSN71tGrKBH927FW1ghQ0Ags8_RccorZROWF6anoYJG-vfr1Z3NHybsoCpH8kLF3smpCNXto5oM1IqJHKlKbJVvziGORbpw73jC94G8K_B03cXnP969eLPCtqJsS3ozMfXkwpdPT3XxtLIhYLdd87cJM04otWcWSluQog5Nysxf5ia3PWsOQbqP_374sSM7DY_F_G_RhmITudesSjH4NbSpGFRibUb5edDeHOhrTZndxdDKEAXhQilupc3ZivSEeZF0W2niD83Mjfa5rQIeFzOyCiUpkHncyK_1JRzMpe1unk85ohSFI3XIVzWuVcj2p0kzLfMJebSmK__gbq75NBGICtGWqRMifC9klR8lJUIMmg-eWfkPjmNNvkp-owb93JZ_NWKMhoZsUYhJGI3ecEuhncKWRN118w-oxcJwCxU&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 4"></figure>
+  </div>
+</section>
+
+<section id="studio" class="split">
+  <div class="wrap split-grid">
+    <div class="split-img" role="img" aria-label="Lo studio"></div>
+    <div class="split-txt">
+      <span class="kick">Lo studio</span>
+      <h2>Dove il tuo stile prende forma</h2>
+      <p>Un ambiente essenziale ed elegante, pensato per farti vivere un'esperienza di bellezza fuori dal comune. Professionisti attenti, tecniche moderne e ascolto.</p>
+      <ul class="split-hours"><li><span>Lunedì</span><span>Chiuso</span></li><li><span>Martedì</span><span>08:00–19:30</span></li><li><span>Mercoledì</span><span>08:00–19:30</span></li><li><span>Giovedì</span><span>08:00–19:30</span></li><li><span>Venerdì</span><span>08:00–19:30</span></li><li><span>Sabato</span><span>08:00–19:30</span></li><li><span>Domenica</span><span>08:00–13:00</span></li></ul>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <span class="kick">Recensioni</span>
+    <div class="rv-track rv">
+      <div class="st">★★★★★</div>
+      <q>Tutto sommato buono ho accorciato un po i capelli che non tagliavo da 3 mesi mi ha tagliato i capelli il ragazzo molto nel chill</q>
+      <b>oscar chen</b>
+    </div>
+    <div class="rv-row">
+      <div class="c rv"><div class="st">★★★★★</div><q>"Veloce, capace, a buon mercato, disponibile. Adatto a chi non vuole trasformare un gesto ripetitivo semplice in un evento da prenotare come…"</q><b>Sum Pionner</b></div>
+      <div class="c rv"><div class="st">★★★★★</div><q>"Molto bravi e gentili, veloci, ottimi prezzi, senza appuntamento, negozio pulito. Consiglio vivamente!"</q><b>Aldo Bonetti</b></div>
+      <div class="c rv"><div class="st">★★★★★</div><q>"Unico parrucchiere in tutta la zona (Bovolone e Salizzole) che riceve senza appuntamento. Prezzi davvero buoni. All'interno del negozio trov…"</q><b>Istevan Bernardini</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci o scrivici su WhatsApp: dai forma al tuo nuovo look.</p>
+    <div class="btns">
+      <a href="tel:+393778828236" class="btn btn-light">377 882 8236</a>
+      <a href="https://wa.me/393778828236" class="btn btn-ghost">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff;letter-spacing:.22em">J&T HAIR</div><p>Parrucchiere a Bovolone (VR): taglio, colore e styling.</p></div>
+      <div><h4>Contatti</h4><p>Via Trieste 1, 37051 Bovolone (VR)<br><a href="tel:+393778828236">377 882 8236</a><br><a href="https://maps.google.com/?cid=8327456279288571131" target="_blank">Come arrivare →</a></p></div>
+      <div><h4>Orari</h4><p>Mar–Ven 9:00–19:00<br>Sab 9:00–18:00</p></div>
+    </div>
+    <div class="foot-bot"><span>© J&T HAIR — Bovolone (VR)</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393778828236" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>
