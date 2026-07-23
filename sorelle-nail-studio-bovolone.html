@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorelle Nail Studio — Centro estetico a Bovolone | Prenota</title>
+<meta name="description" content="Sorelle Nail Studio a Bovolone (VR): trattamenti viso e corpo, unghie ed epilazione. 5★ su 11 recensioni Google. Prenota il tuo appuntamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#7c8a5e; --sage-d:#65724a; --clay:#b98b6e; --ink:#33362b; --ink2:#5f6353; --sub:#928f80;
+  --line:#e7e5da; --cream:#f6f4ec; --soft:#eef0e6; --white:#fff; --green:#25d366;
+  --h:'Cormorant Garamond',Georgia,serif; --b:'Manrope',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:var(--sage);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:600;font-size:.86rem;letter-spacing:.03em;padding:14px 28px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--sage)}
+.btn-sage{background:var(--sage);color:#fff}
+.btn-sage:hover{background:var(--sage-d);border-color:var(--sage-d)}
+.btn-out{background:transparent;color:var(--sage)}
+.btn-out:hover{background:var(--sage);color:#fff}
+.btn-light{background:#fff;color:var(--sage);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.5)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{font-family:var(--h);font-weight:600;font-size:1.7rem;letter-spacing:.02em}
+header nav{display:flex;gap:30px}
+header nav a{font-weight:500;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--sage)}
+
+/* Hero */
+.hero{padding:150px 0 100px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero .kick{display:block;margin-bottom:18px}
+.hero h1{font-family:var(--h);font-weight:500;font-size:clamp(2.8rem,6.5vw,5rem);line-height:1.04;margin-bottom:20px}
+.hero p{color:var(--ink2);font-size:1.1rem;margin-bottom:30px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img img{width:100%;height:520px;object-fit:cover;border-radius:260px 260px 0 0;background:var(--soft) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhS1yU0Ci4EeFJG9nrxZyLSsTYNlOhkzxBxftd7ksa6tqZl5pRjmZs9OD7nVVUbagDLKmwyGam-HVCU1QK5Vj0NBaILp9MjQ7EFAQwV3G5rFULsAJcg2227UqC_tYZ09sZiSoWj4c4aKfUNurCdoP0ssLD6nht04f6ol1ia_xRoslVN_p4QI6exQFzw-M90TDyHy8HzPZvsiWFHSQ3xbfy35JbS02GWgO6KtEahhWvQ2-a1_wdLpuvszmqxzv8UQEEZNcqI3Ajfh0k6L-9Nrl4a5GfUPr-XqGl8-Z2c-eKAmtN64RgbiR3Ovv3Aq1K6QsbRnKTxJp9xf1N4zwtK6ECOCiBnmV1Mu_Xye_JhZA4tsAZOTtUfqj8JpWtZs41quBrGriDb-bVj3Rx0c7cS-TcqcoAjHafZd93MOjyr3Is&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+
+/* Services */
+.serv{padding:100px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 54px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:500;font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.12}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.serv-c{padding:36px 30px;background:var(--cream);border-radius:4px;transition:.25s}
+.serv-c:hover{background:var(--soft);transform:translateY(-5px)}
+.serv-c .ic{font-size:2rem;margin-bottom:14px}
+.serv-c h3{font-family:var(--h);font-weight:600;font-size:1.5rem;margin-bottom:8px}
+.serv-c p{color:var(--ink2);font-size:.94rem}
+
+/* Gallery */
+.gallery{padding:0 0 100px}
+.gal-head{text-align:center;margin-bottom:44px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:500;font-size:clamp(2rem,4.4vw,3rem)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:14px}
+.gal-grid figure{overflow:hidden}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gal-grid figure:hover img{transform:scale(1.07)}
+.gal-grid .tall{grid-row:span 2}
+
+/* Hours split */
+.hours{padding:100px 0;background:var(--soft)}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hours-img{width:100%;height:440px;object-fit:cover;background:#fff url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjW9lUwe-346n1lekKTt09qY38IwtoTphDhJznoh_N8xfElhna-TEJibPIamrzywqaI8Lgcck2jmQ6WrKEE5708lBNGhoLrM5VX5d1BKLFtPSB7G36u03OixumnyfI84ojYgCgJuEedrqH_zp8_nc-P355fFG008MZcyjD_OAR7YYZa9bx39Bt_hT6ARaLUcEYFb4wWzWYMlPX2Z2q4deH4M-slqvh08lIDMyN4Tnp_645QGshC5-qcy2NL-F6A8BiVeDKenOVM06EVX-9uP2D0euoKr7J3hOyYEqZ5wZO7au9U7QhKF42CxnEx5PmkkyJRTJ-uraFuboIGLAqg-P7kOklgr0ptsMEye8DPyY47yWX6c0Sd2B4Kq3tzryFPh_IKNQA0szgEct9mZugEJ1NBSXFC-xTbLDvGD_8vJIE75A&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.hours-txt .kick{display:block;margin-bottom:14px}
+.hours-txt h2{font-family:var(--h);font-weight:500;font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:20px}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:.98rem}
+.hours-list li span:first-child{color:var(--ink2)}
+.hours-list li span:last-child{font-weight:600}
+
+/* Reviews */
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{border:1px solid var(--line);border-radius:4px;padding:32px}
+.rv .st{color:var(--clay);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.2rem;color:var(--ink);margin-bottom:16px;line-height:1.45}
+.rv b{font-weight:600;font-size:.9rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhzpKrk1sMTi5vFlSkwDVSO_iapSCtR0dSxx98KTordPZTiq4-70LuGYuLni0clizDHYPGEiLgnH7eXMjYzPiAyvwi_6A_RTPmdLtyyBWmFHJiZxMgpq9HSEgW7zj1XebpmvfnvXcrHk2Kiaai8pCT0oKFKNu82IZ2vXFLuYGxfhikXNpezWiMhNU6EsjTmQdRrzmxFGBwzbxYFVIa7NLs34s1fpmP7lIT86vjqN9A_ScWK9hEWksIOhrzNLpCT9DHHINObgrNAvhYO-9stiFUV-aEZFCC_tXmI9O-RDAUPHsOiUrTM5UMIfX2OiVwwBp0aGSWQJlVp604nsXuCLXqrpJCT4c7FjKBUYyi46lJOSsagSIFvV5ry4jcmXtq4c9kvakE9Sq1LjBMWLV66kbTj7N-F-ZsH7HZKoabN1w3tqw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(51,54,43,.7)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:500;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#c3cba7;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-img img{height:380px}
+  .serv-grid,.rv-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  .gal-grid .tall{grid-row:span 1}
+  .hours-grid{grid-template-columns:1fr;gap:28px}
+  .hours-img{height:320px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr;grid-auto-rows:240px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:600;font-size:.9rem}
+  .mbar .call{color:var(--sage)}
+  .mbar .book{background:var(--sage);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Sorelle Nail Studio</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#lavori">Lavori</a>
+      <a href="#orari">Orari</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Centro estetico · Bovolone</span>
+      <h1>Bellezza naturale, cura autentica</h1>
+      <p>Trattamenti viso e corpo, unghie ed epilazione. Un centro curato dove ti senti a casa, nel cuore di Bovolone.</p>
+      <div class="hero-cta">
+        <a href="#prenota" class="btn btn-sage">Prenota ora</a>
+        <a href="#servizi" class="btn btn-out">I servizi</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhS1yU0Ci4EeFJG9nrxZyLSsTYNlOhkzxBxftd7ksa6tqZl5pRjmZs9OD7nVVUbagDLKmwyGam-HVCU1QK5Vj0NBaILp9MjQ7EFAQwV3G5rFULsAJcg2227UqC_tYZ09sZiSoWj4c4aKfUNurCdoP0ssLD6nht04f6ol1ia_xRoslVN_p4QI6exQFzw-M90TDyHy8HzPZvsiWFHSQ3xbfy35JbS02GWgO6KtEahhWvQ2-a1_wdLpuvszmqxzv8UQEEZNcqI3Ajfh0k6L-9Nrl4a5GfUPr-XqGl8-Z2c-eKAmtN64RgbiR3Ovv3Aq1K6QsbRnKTxJp9xf1N4zwtK6ECOCiBnmV1Mu_Xye_JhZA4tsAZOTtUfqj8JpWtZs41quBrGriDb-bVj3Rx0c7cS-TcqcoAjHafZd93MOjyr3Is&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Studio estetico"></div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">I nostri servizi</span><h2>Trattamenti naturali su misura</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div class="ic">🌸</div><h3>Viso</h3><p>Pulizia, trattamenti anti-età e luminosità con cosmesi naturale.</p></div>
+      <div class="serv-c"><div class="ic">🌿</div><h3>Corpo &amp; massaggi</h3><p>Massaggi rilassanti e trattamenti corpo rigeneranti.</p></div>
+      <div class="serv-c"><div class="ic">🕊️</div><h3>Epilazione</h3><p>Ceretta e trattamenti delicati per una pelle liscia.</p></div>
+      <div class="serv-c"><div class="ic">💅</div><h3>Unghie</h3><p>Manicure, pedicure e ricostruzione con smalti di qualità.</p></div>
+      <div class="serv-c"><div class="ic">✨</div><h3>Make-up</h3><p>Trucco per cerimonie e occasioni speciali.</p></div>
+      <div class="serv-c"><div class="ic">🌼</div><h3>Rituali benessere</h3><p>Percorsi personalizzati per corpo e mente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="lavori" class="gallery">
+  <div class="wrap">
+    <div class="gal-head"><span class="kick">I nostri lavori</span><h2>Uno sguardo al nostro studio</h2></div>
+    <div class="gal-grid">
+      <figure class="tall"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhZW1X82LUGrv7liQ8E8IAxh7DiE9LrGoCCs4Imf-u_DmMGL0Oypk1Q8E2ywZzR0BzQ2L5E0hcS5KSAEC0x6QWESfyNipWNSfbti_x6R7tY_7RILBERBvVAjaT9zEd6EqiX1ykxO6Vd5BTJdUbeTJh_xfpgSCVwQHjYgkF8LnbahggPuRdiHJsr8XEREeB4BepQo-wOohnADTHkCi8jw-aGr3wDyBwLTmMneRAxpm4w1S1WvUmlE_IrKs9IaJSNX3Pid4rSyjfAIBHXQEi3T0g8Llx0sh8bzLTKf5mFGQUE90U9pAaRBh8sE3o5rC5dwF0zEdGot-kNBx9kqS06pif6G270Cv_PdjUtQG0MHXxnWSmLMQRrDEcaO0DTwISZoGSTGik5qSs-HX1SRL-EhSg9b59ShGv1bQHFFsLQkKmpdw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattamento"></figure>
+      <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydg1lDpMB5yNhEQB5fC2PYUpsV39Hfhj_ODygEWpPBdpnl07F8v1ZCpAgGXScv2PatNSsFInl5HvAnwvOcGjFl_D-E57-UXZIXt0gba3i49nKic3yWxcGxzfpeji8xT-rBdjZz-6rDnxOPX69crdhR6J-VqcqO7m1IoDbG4u1pHEOSnQZUNeXWbaCy7KdXxn6vNKb2ZAmApo2Pfx-jiB3wU2G7CEm4pgEBsTtuhqbRcUBySyxRp8TDDgSaLpUiWDeFAyl9lyKovSmdry_X5iyRIYv6347_AKzhVePqh10zg9sPTiQiMEyujLwWIEYlDK1s6x2D9lX-XqLAJxrZk_gsrFwgjkpf8cJYI09uMMemgkTPvTobOU91waVZSdzZOXxq_HIY78aVVGYfejF9QgNqX_v1PGR-dC0ObxZ0ogv8QS5A&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio"></figure>
+      <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgudtLx9J00Hi0zeNK4dvjV7WcPD6cmgPTqA9S9P-nAc5FyfjffJBMcT5d7xNajCzxJg2sSjGor24e0dZ4y-auDf09RXh3RbRmBJSAjRG2gamMXCm3OBTqk24weN8Iz1j9DCF0UtsfsLcPQqgNPXposKcOkEL_E7kngSZr5uRy_5WlZV9g0Cg0KoxGVQXbI2EawyS-EVx0kifJ8dX0Lj8gZfveINMHARcUwE4gDeoaOUFgQ2FwzeYmRMKNHb99ke_3iVURMVry3lu-gSiQx4IFb5vFYMsmFbM7gd3Xt0sUycSR2RFP2mv13Agy9bNIMu691WXUH8ggj0BhDXnrKIn46G9LVNXlBLMva59i2fG7W7qKQeyFCHMS-nZlEDySSVp-S-GUNlYNEAKhMcaWTeaKfnp0sNmDgXslq7Wdp3fXDZ8y1&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Ambiente"></figure>
+      <figure class="tall"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgiDmtsQ4zJvIkb8DuqvxXw_HB-RB5C4vhE_zzAhiO07DfOVaBEPU8_IHhVu6hBIZP9_Drz4wuOWAnFn5SiCrx39-V7K071BenwGnlN4IxYpcxoMUTp5uN-h4oENFuZ3dfa3jtPuu1p0VRsc92ZqunxH4_iSNbo9Pqt9F-xNoZmUzbh3vV3NuEOgL1lCE6Dd8a8D5TbJgBbF0sGyBdM_ml6g4Ps2JjPNKJEpNMp9QjkC8bqL2z4NwinvHQ9umYhvSjQBEAbYqQ7rP-vMgWHtxnWgJKP5o0_sWEualCBeSa6oCZPim4hmaGZXO9esVocpiM1-Pd02lfKP1axu5L8RFXG7pmHP1wy5CwmBcZ9S3htqJmLtvF3Kh9Oz-28q-LzeWA9dooP4-hAVZ6Rq9aqRvCRgTCYWFMKO4fbFQqoFN0HxA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Cura"></figure>
+      <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydh4Y3AuZRMIN-ew71oHlJrc2wds-aWpVo7T3-z-1MGwXaAvalm8kg0j1xavmMTa5w9UZezggmsZkUO0ePzdaYcj7yJIW3BKBmbboFUhh91ASsqBRky0jkA6dEcwFJXOX9Yp0Obx6w_BaR49_adHLBlGbpucVzeOywy4HHBtiCdGREzrm8BgQBMQurjBoR6W7BqtfyS10Rz_aJ9Wg10s4mgFw1GCT2jX7nTJaMSDr0wZWbQZPOWMQr8YnlDeIXgukUZ3za0c1wDbKZDfGq2oMOBe8etUDyScJIIBxoUn2JSUi1OJAsmimxBifAW2kfb13EO62pzwhs30TpEuRlZa-gMvToKinEg0712PQfcx9nyKqVpacOPvQ_HVHh7gdtlRs-Fr0drVo-jLiYBHAm0OnM-d-9y1Ao6tNu4jUuGwjit_RQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Relax"></figure>
+      <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgFoME282StiZnDvZmY4JZtQ5Cjuy5P8LXZyuJxsCFgohhydfiGf95I_iWS8ah2DPqBHonOvWjx449gDDsiqgD3Tr889swwiQqWjPkQZFpmDZ5rAWb2alcx1WeZy9yEvVQtzzuQ5HS6ECrCT6aXajEuInITxMI5WkFRzeyYLD1g9ffHwjvMP0lTavTt4fUlZrlzOcZSd6mm8dipeh1dq8Qz0POlWFLCXQPhgk2bgTzXPujCC9xB5wD0ZfhuhnLmgQTrEkQWDez71ceU8aJw66oJ6gzO2fvslrZi4CiuEM9TNv16goe757aB8GTTpLDTNa_j1X9eTPo2uQbcDE03MJ6afOqyUkbyw2TESKKl28w7Qod8IY_o3qtQlBaW0qqoksWB_MH5Sw_yDOSDB65RAnBn-4SWjXC0J_gABDvqwXGaPaB2&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Studio"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="orari" class="hours">
+  <div class="wrap hours-grid">
+    <div class="hours-img" role="img" aria-label="Lo studio"></div>
+    <div class="hours-txt">
+      <span class="kick">Orari di apertura</span>
+      <h2>Quando trovarci</h2>
+      <ul class="hours-list">
+        <li><span>Lunedì – Sabato</span><span>9:00 – 19:30</span></li>
+        <li><span>Domenica</span><span>Chiuso</span></li>
+      </ul>
+      <a href="#prenota" class="btn btn-sage" style="margin-top:22px">Prenota un appuntamento</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>5★ su 11 recensioni Google</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Estetiste molto professionali e disponibili, pulizia del negozio impeccabile. Ceretta completa indolore e pelle morbida senza irritazione. Pedicure con smalto: ottima."</p><b>MASOTTI LORENA</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Se potessi metterei mille stelle. Ho fatto ricostruzione in gel e pedicure. Tutto perfetto. Le ragazze sono gentilissime, era da anni che non avevo delle unghie così belle 🥹💘"</p><b>Diletta nalin</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Wau!! Personalmente gentile, veloce, preciso ed efficiente! Le unghie non hanno nessun tipo di sbavatura e hanno una forma perfetta!"</p><b>Veronica Favalli</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo momento di cura</h2>
+    <p>Chiamaci o scrivici su WhatsApp: ti aspettiamo nel nostro studio.</p>
+    <div class="btns">
+      <a href="tel:+393284222598" class="btn btn-light">📞 328 422 2598</a>
+      <a href="https://wa.me/393284222598" target="_blank" rel="noopener" class="btn btn-glass">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Sorelle Nail Studio</div><p>Centro estetico a Bovolone (VR).</p></div>
+      <div><h4>Contatti</h4><p><a href="https://maps.google.com/?cid=12868594393966553528" target="_blank" rel="noopener">Via Giuseppe Garibaldi, 5, 37051 Bovolone VR</a><br><a href="tel:+393284222598">328 422 2598</a></p></div>
+      <div><h4>Orari</h4><p>Lun–Sab 9:00–19:30<br>Domenica chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Sorelle Nail Studio — Bovolone</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393284222598" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>
