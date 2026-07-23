@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estetica Experience — Estetica &amp; benessere a Bovolone</title>
+<meta name="description" content="Estetica Experience a Bovolone (VR): trattamenti viso e corpo, epilazione, unghie e benessere. 5★ su 74 recensioni. Prenota il tuo appuntamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --sage:#7c8a5e; --sage-d:#65724a; --clay:#b98b6e; --ink:#33362b; --ink2:#5f6353; --sub:#928f80;
+  --line:#e7e5da; --cream:#f6f4ec; --soft:#eef0e6; --white:#fff; --green:#25d366;
+  --h:'Cormorant Garamond',Georgia,serif; --b:'Manrope',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:var(--sage);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:600;font-size:.86rem;letter-spacing:.03em;padding:14px 28px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--sage)}
+.btn-sage{background:var(--sage);color:#fff}
+.btn-sage:hover{background:var(--sage-d);border-color:var(--sage-d)}
+.btn-out{background:transparent;color:var(--sage)}
+.btn-out:hover{background:var(--sage);color:#fff}
+.btn-light{background:#fff;color:var(--sage);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.5)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{font-family:var(--h);font-weight:600;font-size:1.7rem;letter-spacing:.02em}
+header nav{display:flex;gap:30px}
+header nav a{font-weight:500;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--sage)}
+
+/* Hero */
+.hero{padding:150px 0 100px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero .kick{display:block;margin-bottom:18px}
+.hero h1{font-family:var(--h);font-weight:500;font-size:clamp(2.8rem,6.5vw,5rem);line-height:1.04;margin-bottom:20px}
+.hero p{color:var(--ink2);font-size:1.1rem;margin-bottom:30px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img img{width:100%;height:520px;object-fit:cover;border-radius:260px 260px 0 0;background:var(--soft) url('https://images.pexels.com/photos/3997391/pexels-photo-3997391.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+
+/* Services */
+.serv{padding:100px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 54px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:500;font-size:clamp(2.2rem,4.6vw,3.4rem);line-height:1.12}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.serv-c{padding:36px 30px;background:var(--cream);border-radius:4px;transition:.25s}
+.serv-c:hover{background:var(--soft);transform:translateY(-5px)}
+.serv-c .ic{font-size:2rem;margin-bottom:14px}
+.serv-c h3{font-family:var(--h);font-weight:600;font-size:1.5rem;margin-bottom:8px}
+.serv-c p{color:var(--ink2);font-size:.94rem}
+
+/* Gallery */
+.gallery{padding:0 0 100px}
+.gal-head{text-align:center;margin-bottom:44px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:500;font-size:clamp(2rem,4.4vw,3rem)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:14px}
+.gal-grid figure{overflow:hidden}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gal-grid figure:hover img{transform:scale(1.07)}
+.gal-grid .tall{grid-row:span 2}
+
+/* Hours split */
+.hours{padding:100px 0;background:var(--soft)}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.hours-img{width:100%;height:440px;object-fit:cover;background:#fff url('https://images.pexels.com/photos/3985360/pexels-photo-3985360.jpeg?auto=compress&cs=tinysrgb&w=1000') center/cover}
+.hours-txt .kick{display:block;margin-bottom:14px}
+.hours-txt h2{font-family:var(--h);font-weight:500;font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:20px}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:.98rem}
+.hours-list li span:first-child{color:var(--ink2)}
+.hours-list li span:last-child{font-weight:600}
+
+/* Reviews */
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{border:1px solid var(--line);border-radius:4px;padding:32px}
+.rv .st{color:var(--clay);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.2rem;color:var(--ink);margin-bottom:16px;line-height:1.45}
+.rv b{font-weight:600;font-size:.9rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/6663571/pexels-photo-6663571.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(51,54,43,.7)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:500;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#c3cba7;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-img img{height:380px}
+  .serv-grid,.rv-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:200px}
+  .gal-grid .tall{grid-row:span 1}
+  .hours-grid{grid-template-columns:1fr;gap:28px}
+  .hours-img{height:320px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr;grid-auto-rows:240px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:600;font-size:.9rem}
+  .mbar .call{color:var(--sage)}
+  .mbar .book{background:var(--sage);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Estetica Experience</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#lavori">Lavori</a>
+      <a href="#orari">Orari</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Estetica &amp; benessere · Bovolone</span>
+      <h1>Bellezza naturale, cura autentica</h1>
+      <p>Trattamenti viso e corpo con prodotti naturali, epilazione e unghie. Un piccolo studio dove ti senti a casa.</p>
+      <div class="hero-cta">
+        <a href="#prenota" class="btn btn-sage">Prenota ora</a>
+        <a href="#servizi" class="btn btn-out">I servizi</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydj9ZDL5vxDmg_vyXIUEJabVgEc-qTz_NtA-lG0z-PcDs4Lcrd5G9IYRbhGFEEn3KMpJ3KWJkR88tJaZeUeIzUYEn7UC9Rds60Vz9HAuFFYZGOqxU8FoNQCKZRJsDTXvwPp57l53a1QwRbR1Vg_JQlRXpKJnqzWWrbUCRboNY5qRyYNs7ar0Mj1L9TRw_tQVztdh-cqb50Y-lJ0uJjoXpfJ1jg3LibmbCrA67sUOlsIl8PnbCd_iRLfYwPlkhiSQq0wIxPAWVDE8F6JW_PiGp47uqyDOLRDA7EtJCL3HTBTq8lZimtSI8CaaQaZ_D83D8vFwY4bKojsDmdpyXgOkW2u_C3fN6m_2OuCjUOESICsekVMlyOCL3Xf9NkmvJE4r0wRcWGteW6pU2p5QhD1a2yn8WhxWJEMPG-kxLCWUYS_8QiJo&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Estetica Experience"></div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">I nostri servizi</span><h2>Trattamenti naturali su misura</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div class="ic">🌸</div><h3>Viso</h3><p>Pulizia, trattamenti anti-età e luminosità con cosmesi naturale.</p></div>
+      <div class="serv-c"><div class="ic">🌿</div><h3>Corpo &amp; massaggi</h3><p>Massaggi rilassanti e trattamenti corpo rigeneranti.</p></div>
+      <div class="serv-c"><div class="ic">🕊️</div><h3>Epilazione</h3><p>Ceretta e trattamenti delicati per una pelle liscia.</p></div>
+      <div class="serv-c"><div class="ic">💅</div><h3>Unghie</h3><p>Manicure, pedicure e ricostruzione con smalti di qualità.</p></div>
+      <div class="serv-c"><div class="ic">✨</div><h3>Make-up</h3><p>Trucco per cerimonie e occasioni speciali.</p></div>
+      <div class="serv-c"><div class="ic">🌼</div><h3>Rituali benessere</h3><p>Percorsi personalizzati per corpo e mente.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="lavori" class="gallery">
+  <div class="wrap">
+    <div class="gal-head"><span class="kick">I nostri lavori</span><h2>Uno sguardo al nostro studio</h2></div>
+    <div class="gal-grid">
+      <figure class="tall"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhI4fIxAVeTQCDlmXB1VfhFUsBjMhr7o11MWmJ4rH5O2JL03z3BiYapsekwpgiFUw4WPriyIEdouYu4tgxRIDoqSN_zzeJYmbalVHbFuDDMNdo8svhDjDNNhq1a6cGIAyRIqPybpFql52BKqjuzllEHTSfyggZSW_4Kzc_25plyz5dOV-i95rK57t7cuCXORYkcA9PLbCAT-A3f37hSZ2M146v-CF-hQrofgr2uhrC1Jy6rJrYFEdKZy8R8Md6_vAapdAoTc55CKGeBnyEY2fGmTtgHxWwh4d8fo810hbVTfpvchxCbJ6FRCyfCHwbNeuj_SN-be3V_uEhXYYDyNhSCY8ZrGCb7ZtNlQst8FzPX5OwzQEV_SAu7guLmyXdP0VMqAxpSxrsNwvnTQVQmxF5cLs9FAaXneU1m_-LVKyKpCA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattamento"></figure>
+      <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjMmCBKgZgknLWyGw5d3CeYBCoZTZUw3nQFn9ATAm_9dagPN3QX8ErJrofbf9swLV2ynkzI3vH8FrUYTbpJTJckSMio5rUMp15UAp1KueJ6Gdcq19udpLUIdaylFwJ1E9POiEFezjI5T1Z1pw8gI3vPwYwy3MwmS-26wqi18uXmG2SdxFQAEHYYkRjwxbn9S7hTHdFqmU5mqxLNIJMABl9gAL3yzsD9oDxQm_W_oSfnsuybh9KdwF0e6Wp0Rlu7NyUbD13YeBh5nqzz--bTDP1URDPtwcR9qFyiG_cf02yt1nCD_mLWrU2cI6RsrVSC2MkbPUj6em0oUqTILBjBw-lqIEI1ynsZb6ky_AtV1qSaHXUDqdtQCblkalyzZ1eEAsuKG-9gwSZs2Z1NAZHEg8naMaQ6OlczMoVx1vtu-H6E_3mX&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio"></figure>
+      <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiCde2qeZVETfzwH9Ibes-PVWMVAlqhRl5XIi1oTb6Vt65YtTlb8FG47H1L_FAPEdnRUwyMlSKXmYIKfHUgbpuoFm5sYGAU935rxyDxa3-Njo4H9gIgQKq-oS0MnWDPHZOgKCOxHNeulBFSN2VD35lwpdJ4Bk5LDaBZIQJikI7rX3DXLb6Q3IX5Y_BPcv75zVpY04BY-XDdKnDKkLEGw-SSn_sPLBV8PhN8Ez_w7Ux1TapqqJ-Mw0VXTu82inGxAdRGCZSLTahVqf3xrUFYs6ZqSWlpPOqWGhRPoc-nuIvRXxnESdalDcRlhA85a-otU0-BAu9iCn8PKl1V7wtNYS92DtFLdpRxWknojC9xEdrheuicmemepADf-2dNbfyKJ5J-wmSi-aQTeVwH10ZcZvI9bgfSeAIk1hY-8LJT5VmKaUuR&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Ambiente"></figure>
+      <figure class="tall"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiRy9Bf6vjSVgu8nwDSylt2tJOs3ianRzEwvfIA868eS7J0lRxV3VF1-9-ACf3Xv0w6n08-GIxsxORHMU4XpYt_Fpj58Eyza1YvLyzY57lQ0rLUEDENodrj12blhcp2F64LI-Mzz4UGmVGvqCjQ4Anh4_cYvmnlz0X15iaJobUl58XGYD24mo-oTg9ce24xHNdGAN1y3jVsxvwmkb3XMrCfs0f254drhhf7JPnyXZ6XOsToF2lxb4jiyRZVUt6KDjAo62vbWI632qeZj_bCpovbTF1fQjeF5nUEdFspJVJe69RzOnHOef5TDuRBuVmByT8acsErlq_-cm9-95hcpaf2JmR43jpOyu_eAs13Ltx_U_1SkViK4AIsJ4JlOORYXAtA7GCfz18L6PIeQwCDqMmPp20rC59G3gjp1qXetx8zWA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Cura"></figure>
+      <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiSS2GTqb11YMlb6d5LpW2C86DGkjfIq70wMYlcMIObAR39a0v0Up76CyitTl9ZPO6yAT37mPhyZujZ6VOytwHiOg7uCm0uvo2Q3qerXxebqjLE_u9s2Dc-5iJAofW_-ATaXRuahPQXZfeOXh5ZoM0lek2NEj9ROzYASY-l4xLWmDaFGR4ly3bxz0b7gbIr5NWnDKWffnCXLnAg_wTxMAp1XWmpC5W90OQAS3j036FgRxf6lcwWOhLx_tOpGSRPJRkVXSden04acHHUwAbBfvLYQGpVp2Pf8INeUs_tcNYPcFPLrtkt5F-sc_cwOx3nkNcm8gfxaZZrs0RCqEv4hFwMMcOoURRuHOF6iebuJChIG5Hmhn627hJRKj9NHh2E17GV1vOdfC147EI-29AogQU5hWgxqJoF5s99gK-W5lETLQcS&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Relax"></figure>
+      <figure><img src="https://images.pexels.com/photos/3768926/pexels-photo-3768926.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Studio"></figure>
+    </div>
+  </div>
+</section>
+
+<section id="orari" class="hours">
+  <div class="wrap hours-grid">
+    <div class="hours-img" role="img" aria-label="Lo studio"></div>
+    <div class="hours-txt">
+      <span class="kick">Orari di apertura</span>
+      <h2>Quando trovarci</h2>
+      <ul class="hours-list"><li><span>Lunedì</span><span>10:00–20:00</span></li><li><span>Martedì</span><span>10:00–20:00</span></li><li><span>Mercoledì</span><span>10:00–20:00</span></li><li><span>Giovedì</span><span>10:00–20:00</span></li><li><span>Venerdì</span><span>10:00–20:00</span></li><li><span>Sabato</span><span>Chiuso</span></li><li><span>Domenica</span><span>Chiuso</span></li></ul>
+      <a href="#prenota" class="btn btn-sage" style="margin-top:22px">Prenota un appuntamento</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>Le parole delle clienti</h2></div>
+    <div class="rv-grid"><div class="rv"><div class="st">★★★★★</div><p>"Ho avuto un’esperienza davvero fantastica in questo centro estetico. Era da tanto tempo che cercavo qualcuno capace di fare le sopracciglia esattamente come le desidero, e finalmente l’ho…"</p><b>Gabriela Cafagna</b></div><div class="rv"><div class="st">★★★★★</div><p>"Finalmente ho trovato un centro estetico stupendo, curatissimo e rilassante,per nn parlare di Paola una ragazza dolcissima,davvero brava e professionale!ho fatto diversi servizi..ceretta…"</p><b>francesca mirici cappa</b></div><div class="rv"><div class="st">★★★★★</div><p>"Mi sono rivolta in questo centro tramite google e sono rimasta piacevolmente colpita dall’ accoglienza di Paola gentile e sorridente. Ambiente intimo e rilassante ed ottimo servizio. Ho…"</p><b>Martina Scioletti</b></div></div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo momento di cura</h2>
+    <p>Chiamaci o scrivici su WhatsApp: ti aspettiamo nel nostro studio.</p>
+    <div class="btns">
+      <a href="tel:+393517673507" class="btn btn-light">📞 351 767 3507</a>
+      <a href="https://wa.me/393517673507" class="btn btn-glass">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Estetica Experience</div><p>Estetica e benessere a Bovolone.</p></div>
+      <div><h4>Contatti</h4><p><a href="https://maps.google.com/?cid=9590697094228168420" target="_blank" rel="noopener">Via Silvio Pellico, 12, Bovolone (VR)</a><br><a href="tel:+393517673507">351 767 3507</a></p></div>
+      <div><h4>Orari</h4><p>Lun 10:00–20:00<br>Mar 10:00–20:00<br>Mer 10:00–20:00<br>Gio 10:00–20:00</p></div>
+    </div>
+    <div class="foot-bot"><span>© Estetica Experience — Bovolone (VR)</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393517673507" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>
