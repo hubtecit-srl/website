@@ -265,5 +265,37 @@
   "tmpl": "ristorante-juniper",
   "url": "https://hubtecit-srl.github.io/website/gatto-verde-belfiore.html",
   "email": "algattoverde@gmail.com"
+ },
+ {
+  "name": "D&B I Parrucchieri Unisex Borin Lisa",
+  "file": "deb-parrucchieri-borin-belfiore.html",
+  "phone": "045 764 0652",
+  "intl": "390457640652",
+  "comune": "Belfiore",
+  "zona": "Via Roma",
+  "cid": "10478558949285349103",
+  "tmpl": "parrucchieri-genv2",
+  "cat": "parrucchieri",
+  "url": "https://hubtecit-srl.github.io/website/deb-parrucchieri-borin-belfiore.html",
+  "email": "",
+  "canale": "Da contattare a mano",
+  "sito_reale": "Solo social/booking",
+  "data": "2026-07-23"
+ },
+ {
+  "name": "Cristyle Di Sarti Cristina",
+  "file": "cristyle-sarti-belfiore.html",
+  "phone": "045 614 9081",
+  "intl": "390456149081",
+  "comune": "Belfiore",
+  "zona": "Via Strà",
+  "cid": "12374833090623843488",
+  "tmpl": "parrucchieri-genv2",
+  "cat": "parrucchieri",
+  "url": "https://hubtecit-srl.github.io/website/cristyle-sarti-belfiore.html",
+  "email": "",
+  "canale": "Da contattare a mano",
+  "sito_reale": "No",
+  "data": "2026-07-23"
  }
 ]
