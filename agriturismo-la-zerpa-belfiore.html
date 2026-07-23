@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agriturismo La Zerpa — Cucina casalinga a Belfiore (VR) | Prenota</title>
+<meta name="description" content="Agriturismo La Zerpa a Belfiore (VR): cucina casalinga tradizionale veronese, primi fatti in casa e carne alla brace. 4,2★ su 193 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c140d; --ink2:#4a3f33; --sub:#8a7d6c; --line:#e4dccb; --cream:#f6f0e6; --white:#fff;
+  --accent:#a8461c; --accent-d:#8c3813; --olive:#5b5330; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.up{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:transparent;transition:.3s}
+header.solid{background:var(--ink)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;color:#fff}
+header nav{display:flex;gap:28px}
+header nav a{font-family:var(--h);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:rgba(255,255,255,.85);transition:.2s}
+header nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;padding:13px 24px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid transparent}
+.btn-fill{background:var(--accent);color:#fff}
+.btn-fill:hover{background:var(--accent-d)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent)}
+
+/* Hero full-bleed */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydg8xwMYp97rXnaFfnWFBsF9p3q4ymwJuf4-HXX5fbh1ehIk311Jg5SljOnEMUneC3KPaxLW3lqaRi98bk2SxVvPocpbwjGnExCRNP1NK9XBdNzUfjfPN2fOogzadSv178q4R9wvz4H_p7YQoHGT0tuBVC4y9AVV93U5TtnERwnNsOEu1_bOpdx_hj10MYGfboEdyjQFCyeNJskUTCL5GnYBB6wnW4hv3Mt4BjjtGHbzCWcwds6eil2Zg7Mr2tJVDt0HGtCmhUgTn3mZJelwaCzgRWcuDiDCTE1izRkfBtp9gSQkW2SyJJUGI_8ydia1fKBF8v2XKYl0VQovhNNP3k6wk1vM_D2XXaQS8pc9yaOdEZm89afJ56rNkqyde7ER_SRgRf1SXbex1u65hxBhSvPhA_DoUjkPhFRWifkQWtXJ_SHhfwJ4SmvyY5N7SA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,9,.55),rgba(20,14,9,.72))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:900px}
+.hero .kick{color:#e8b48f;margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,6.6rem);text-transform:uppercase;font-family:var(--h);font-weight:900;letter-spacing:.01em;line-height:.98;margin-bottom:24px}
+.hero p{font-size:1.12rem;color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Experience */
+.exp{padding:100px 0;text-align:center;background:var(--cream)}
+.exp .kick{display:block;margin-bottom:16px}
+.exp h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.5vw,3.4rem);letter-spacing:.01em;max-width:16ch;margin:0 auto 20px;line-height:1.04}
+.exp p{color:var(--ink2);max-width:620px;margin:0 auto}
+.exp-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
+.exp-imgs img{width:100%;height:340px;object-fit:cover}
+
+/* Menu */
+.menu{padding:100px 0;background:var(--ink);color:#fff}
+.menu-head{text-align:center;margin-bottom:56px}
+.menu-head .kick{color:#e8b48f;display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:.01em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:50px 70px;max-width:980px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:1rem;color:#e8b48f;padding-bottom:12px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:11px 0}
+.dish h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish span{color:rgba(255,255,255,.6);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;color:#fff;white-space:nowrap}
+
+/* Address / hours */
+.addr{padding:100px 0;background:var(--cream)}
+.addr-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.addr-img{width:100%;height:460px;object-fit:cover;background:url('https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover}
+.addr-txt .kick{display:block;margin-bottom:14px}
+.addr-txt h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:22px;letter-spacing:.01em}
+.addr-row{margin-bottom:18px}
+.addr-row h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--accent);margin-bottom:5px}
+.addr-row p{color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--white);text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:8px}
+.reviews h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:44px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+.rv{background:var(--cream);padding:28px;border-top:3px solid var(--accent)}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:14px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.9rem}
+
+/* Reserve */
+.reserve{position:relative;padding:120px 0;text-align:center;color:#fff}
+.reserve-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.reserve-bg::after{content:"";position:absolute;inset:0;background:rgba(20,14,9,.72)}
+.reserve .wrap{position:relative;z-index:2}
+.reserve h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:16px;letter-spacing:.01em}
+.reserve p{max-width:520px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:56px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.74rem;color:#e8b48f;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .exp-imgs{grid-template-columns:1fr}
+  .exp-imgs img{height:260px}
+  .menu-cols{grid-template-columns:1fr;gap:36px}
+  .addr-grid{grid-template-columns:1fr;gap:28px}
+  .addr-img{height:320px}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .btn-line.hd{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#top" class="brand">La Zerpa</a>
+    <nav>
+      <a href="#exp">L'osteria</a>
+      <a href="#menu">Menù</a>
+      <a href="#adresse">Dove siamo</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+    <a href="#prenota" class="btn btn-line hd">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Agriturismo · Belfiore</span>
+    <h1>La cucina di una volta</h1>
+    <p>Un vero agriturismo di famiglia immerso nella campagna di Belfiore: piatti casalinghi, primi fatti in casa e carne alla brace, lungo l'Adige.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-fill">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-line">Scopri il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="exp" class="exp">
+  <div class="wrap">
+    <span class="kick">Un'esperienza unica</span>
+    <h2>Tutto fatto in casa, come tradizione</h2>
+    <p>Alla Zerpa la cucina è quella genuina di una volta: primi fatti in casa, carne alla brace e ricette tradizionali veronesi. Gestione familiare, ambiente rustico e accogliente, con un bel giardino e una sala dove i bambini possono giocare.</p>
+    <div class="exp-imgs">
+      <img src="https://images.pexels.com/photos/2233729/pexels-photo-2233729.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Brace">
+      <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Piatto">
+      <img src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sala">
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La cucina</span>
+      <h2>Il nostro menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><div><h5>Tagliere della casa</h5><span>Salumi e formaggi del territorio</span></div><div class="price">14 €</div></div>
+        <div class="dish"><div><h5>Polenta e funghi</h5><span>Polenta abbrustolita, porcini trifolati</span></div><div class="price">11 €</div></div>
+        <div class="dish"><div><h5>Bruschette miste</h5><span>Pane di casa, pomodoro, lardo</span></div><div class="price">9 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><div><h5>Pastissada de caval</h5><span>Con gnocchi fatti in casa</span></div><div class="price">15 €</div></div>
+        <div class="dish"><div><h5>Tagliatelle al ragù</h5><span>Ragù lungo di manzo</span></div><div class="price">13 €</div></div>
+        <div class="dish"><div><h5>Risotto all'Amarone</h5><span>Mantecato al Monte Veronese</span></div><div class="price">16 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Dalla brace</h3>
+        <div class="dish"><div><h5>Costata di scottona</h5><span>Alla griglia, 500g</span></div><div class="price">28 €</div></div>
+        <div class="dish"><div><h5>Grigliata mista</h5><span>Selezione di carni alla brace</span></div><div class="price">24 €</div></div>
+        <div class="dish"><div><h5>Costine glassate</h5><span>Marinate e cotte lentamente</span></div><div class="price">18 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Vini &amp; Dolci</h3>
+        <div class="dish"><div><h5>Calice Valpolicella</h5><span>Selezione della casa</span></div><div class="price">6 €</div></div>
+        <div class="dish"><div><h5>Calice Amarone</h5><span>Selezione della casa</span></div><div class="price">10 €</div></div>
+        <div class="dish"><div><h5>Sbrisolona</h5><span>Con zabaione</span></div><div class="price">7 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="adresse" class="addr">
+  <div class="wrap addr-grid">
+    <div class="addr-img" role="img" aria-label="Ingresso dell'osteria"></div>
+    <div class="addr-txt">
+      <span class="kick">Dove siamo</span>
+      <h2>Vieni a trovarci</h2>
+      <div class="addr-row"><h4>Indirizzo</h4><p><a href="https://maps.google.com/?cid=17946789116032420197" target="_blank" rel="noopener">SP7b, 37050 Belfiore (VR)</a></p></div>
+      <div class="addr-row"><h4>Orari</h4><p>Ven–Sab 19:30–23:00<br>Domenica 12:30–15:00<br>Lun–Gio chiuso</p></div>
+      <div class="addr-row"><h4>Contatti</h4><p><a href="tel:+390457640735">045 764 0735</a> · <a href="https://wa.me/393467943064" target="_blank" rel="noopener">WhatsApp 346 794 3064</a></p></div>
+      <a href="#prenota" class="btn btn-dark" style="margin-top:8px">Prenota ora</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,2 su 193 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Vero agriturismo di una volta! Gestione familiare, tutto fatto in casa, buonissimi i primi e la carne alla brace è fantastica."</p><b>Marius I.</b></div>
+      <div class="rv"><div class="st">★★★★☆</div><p>"Siamo rimasti contenti dal servizio e dal cibo. Tutto casalingo e molto buono, personale e gestori bravi e gentili."</p><b>Mirco M.</b></div>
+      <div class="rv"><div class="st">★★★★☆</div><p>"Cucina tradizionale veronese, il cibo merita davvero. Ottimo rapporto qualità prezzo."</p><b>Lucia A.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="reserve">
+  <div class="reserve-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo tavolo</h2>
+    <p>Per pranzi di famiglia, gruppi o occasioni speciali chiamaci: vi aspettiamo alla Zerpa.</p>
+    <div class="btns">
+      <a href="tel:+390457640735" class="btn btn-fill">Chiama 045 764 0735</a>
+      <a href="https://wa.me/393467943064" class="btn btn-line">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">La Zerpa</div>
+        <p>Agriturismo di famiglia con cucina casalinga a Belfiore.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>SP7b, Belfiore (VR)<br><a href="tel:+390457640735">045 764 0735</a><br><a href="https://wa.me/393467943064" target="_blank" rel="noopener">346 794 3064</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Ven–Sab 19:30–23<br>Dom 12:30–15<br>Lun–Gio chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Agriturismo La Zerpa — Belfiore (VR)</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390457640735" class="call">Chiama</a>
+  <a href="https://wa.me/393467943064" class="wa">WhatsApp</a>
+</div>
+
+<script>
+addEventListener('scroll',()=>{document.getElementById('hd').classList.toggle('solid',scrollY>60)});
+</script>
+</body>
+</html>
