@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUSAN — Burger Pub a Bovolone (VR) | All you can eat</title>
+<meta name="description" content="SUSAN, burger pub a Bovolone (VR): mini hamburger gourmet all you can eat, fritti, dolci e serate a tema. Ambiente accogliente e personale simpatico. 4,3★ su 707 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#14100e; --bg2:#1c1613; --panel:#211a16; --cream:#f4ece0; --muted:#b8a998;
+  --gold:#c9a24b; --gold2:#e0bf74; --line:rgba(244,236,224,.12); --terra:#b56a3d;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+:root{--bg:#15130e;--bg2:#1e1a11;--panel:#251f14;--gold:#d9a441;--gold2:#f0c463;--terra:#c98a2f}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 26px}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
+.kicker{font-family:var(--sans);font-weight:400;letter-spacing:.42em;text-transform:uppercase;font-size:.7rem;color:var(--gold)}
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:82px}
+.brand{font-family:var(--serif);font-size:1.6rem;color:var(--cream);letter-spacing:.04em}
+.brand span{color:var(--gold)}
+header nav{display:flex;gap:36px;align-items:center}
+header nav a{color:rgba(244,236,224,.82);font-size:.88rem;letter-spacing:.06em;transition:.2s}
+header nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;padding:14px 28px;border-radius:2px;transition:.3s;cursor:pointer;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#211a16}
+.btn-gold:hover{background:var(--gold2)}
+.btn-out{background:transparent;color:var(--cream);border-color:rgba(244,236,224,.4)}
+.btn-out:hover{border-color:var(--gold);color:var(--gold)}
+.btn-wa{background:#25d366;color:#0b3d1f;border-color:#25d366}
+.btn-wa:hover{background:#1eb658}
+header.scrolled{background:rgba(20,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.menu-toggle{display:none;background:none;border:0;color:var(--cream);font-size:1.6rem;cursor:pointer}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhElTDJ5V3I_p6-lDz1SRniLXpNMqEI0Gd5Dg2N1NorjX9Dme6yNkTuetn4H6bqy0RQf-4NgvnfglWBdmz8eSor2OOsuMutTP5DkOjNVECEB-amvmWbDbt4NH4sj0-lMFOf83lhcICCPgBj9owJvuTEd4I36H-ti2XQxeWdAlWf6CHlKvXbN30rW4qXNX-C7N3kQ5onUJdPemVavtuFYLXTjiziMPSiyOEIAZ-As7s2M0msseViieO5h4KTY-2cz7U6LFMwD39knnAhfELm7AeuU-y27DZEAi0jdEUYgS_I-d_K7CZnMoJV5T67QNTFy3mXK4KexbII2rsEtdPfwXur69trUXu9G1sGFxyLhZD-StTiZUz5DQfzZAdDG7QH_hSoeb_FMNBF6DRkAapvE6HQi6iEH7NwE3bHKvZ-vD6UQA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.06)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.6) 0%,rgba(20,16,14,.15) 45%,rgba(20,16,14,.92) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 0 88px;width:100%}
+.hero .kicker{color:var(--gold2)}
+.hero h1{font-size:clamp(2.4rem,8.5vw,6.6rem);line-height:.98;margin:16px 0 14px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero .sub{font-size:1.2rem;max-width:560px;color:rgba(244,236,224,.9);margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-meta{display:flex;gap:26px;align-items:center;margin-top:34px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.hero-meta .stars{color:var(--gold);letter-spacing:2px}
+.hero-meta b{color:var(--cream);font-family:var(--serif);font-size:1.25rem}
+.hero-meta .sep{width:1px;height:28px;background:var(--line)}
+section{padding:110px 0}
+.head{text-align:center;max-width:620px;margin:0 auto 60px}
+.head h2{font-size:clamp(2rem,4.5vw,3.3rem);margin:14px 0}
+.head p{color:var(--muted)}
+.orn{color:var(--gold);letter-spacing:.5em;font-size:.9rem;margin-top:10px}
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.about-txt .kicker{margin-bottom:14px;display:block}
+.about-txt h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:20px;line-height:1.1}
+.about-txt p{color:var(--muted);margin-bottom:16px}
+.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold2);margin-top:8px}
+.about-img{position:relative}
+.about-img img{width:100%;height:560px;object-fit:cover;border-radius:3px}
+.about-img::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,162,75,.5);border-radius:3px;pointer-events:none;margin:-14px;top:22px;left:22px;right:-22px;bottom:-22px;z-index:-1}
+.menu{background:var(--bg)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 60px;max-width:960px;margin:0 auto}
+.dish{border-bottom:1px dashed var(--line);padding-bottom:16px}
+.dish .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.dish h4{font-family:var(--serif);font-size:1.5rem;color:var(--cream);font-weight:600}
+.dish .tag{font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:6px}
+.dish p{color:var(--muted);font-size:.94rem;margin-top:4px}
+.menu-note{text-align:center;color:var(--muted);font-style:italic;margin-top:48px;font-family:var(--serif);font-size:1.25rem}
+.gallery{background:var(--bg2)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
+.gal-grid figure{overflow:hidden;border-radius:3px;cursor:pointer;position:relative;margin:0}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.7s;filter:saturate(1.02)}
+.gal-grid figure:hover img{transform:scale(1.09)}
+.gal-grid .tall{grid-row:span 2}
+.gal-grid .wide{grid-column:span 2}
+.reviews{background:var(--bg);position:relative}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:32px}
+.rev .stars{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
+.rev p{color:rgba(244,236,224,.86);font-size:.98rem;margin-bottom:20px;font-weight:300}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.rev .who b{font-family:var(--sans);font-weight:500;font-size:.92rem;color:var(--cream)}
+.rev .who span{display:block;font-size:.78rem;color:var(--muted)}
+.rev-foot{text-align:center;margin-top:36px}
+.rev-foot a{color:var(--gold);border-bottom:1px solid rgba(201,162,75,.4);padding-bottom:2px;font-size:.9rem;letter-spacing:.04em}
+.info{background:var(--bg2)}
+.info-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:stretch}
+.hours-card h3{font-size:1.9rem;margin-bottom:6px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin:14px 0 22px}
+.open-badge.open{background:rgba(120,180,120,.16);color:#8fd08f}
+.open-badge.closed{background:rgba(200,90,70,.16);color:#e09a86}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted);gap:16px}
+.hours-list li.today{color:var(--cream)}
+.hours-list li.today .d{color:var(--gold)}
+.hours-list li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.contact-rows{margin-top:28px}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
+.crow .ic{color:var(--gold);font-size:1.05rem;width:26px}
+.crow h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:2px}
+.crow a,.crow p{color:var(--cream);font-size:1rem}
+.info-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+.map-wrap{border-radius:3px;overflow:hidden;min-height:480px;filter:grayscale(.3) contrast(1.05)}
+.map-wrap iframe{width:100%;height:100%;min-height:480px;border:0}
+footer{background:#0e0b09;padding:66px 0 28px;text-align:center;border-top:1px solid var(--line)}
+footer .brand{font-size:2rem;display:inline-block;margin-bottom:12px}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:.25s}
+.socials a:hover{background:var(--gold);color:#14100e;border-color:var(--gold)}
+.foot-line{color:var(--muted);font-size:.82rem;margin-top:18px}
+.foot-note{color:rgba(184,169,152,.5);font-size:.72rem;margin-top:8px}
+.lb{position:fixed;inset:0;background:rgba(10,8,6,.96);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%;border-radius:3px}
+.lb .x{position:absolute;top:22px;right:30px;color:var(--cream);font-size:2rem;cursor:pointer;opacity:.8}
+.mobile-bar{display:none}
+@media(max-width:960px){
+  .about-grid,.info-grid{grid-template-columns:1fr;gap:40px}
+  .menu-grid{grid-template-columns:1fr;gap:22px}
+  .rev-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  header nav{display:none}
+  .menu-toggle{display:block}
+  .about-img::after{display:none}
+}
+@media(max-width:560px){
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
+  section{padding:76px 0}
+  .header-cta{display:none}
+  .hero h1{font-size:2.1rem}
+  .hero .sub{font-size:1.02rem}
+  body{font-size:15px}
+  .hero-cta .btn{flex:1;justify-content:center}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:15px 6px;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;font-weight:500}
+  .mobile-bar .m-call{color:#211a16;background:var(--gold)}
+  .mobile-bar .m-wa{color:#0b3d1f;background:#25d366}
+  body{padding-bottom:52px}
+  html,body{overflow-x:hidden;max-width:100vw}
+  img,iframe{max-width:100%}
+}
+</style>
+</head>
+<body>
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand">SUSAN<span>.</span></a>
+    <nav>
+      <a href="#storia">Il locale</a>
+      <a href="#menu">Menù</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="tel:+393342418654" class="btn btn-gold header-cta">Chiama</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav').scrollIntoView()">&#9776;</button>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Burger Pub &middot; Bovolone (VR)</div>
+    <h1>Hamburger gourmet,<br><em>all you can eat</em></h1>
+    <p class="sub">Mini panini hamburger sfiziosi, fritti, dolci e serate a tema in un locale accogliente e curato. Aperti dal mattino fino a notte, sette giorni su sette.</p>
+    <div class="hero-cta">
+      <a href="tel:+393342418654" class="btn btn-gold">&#9742; Chiama ora</a>
+      <a href="#menu" class="btn btn-out">Guarda le proposte</a>
+    </div>
+    <div class="hero-meta">
+      <div><span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span> <b>4,3</b></div>
+      <div class="sep"></div>
+      <div>707 recensioni Google</div>
+      <div class="sep"></div>
+      <div>Via Trieste 2, Bovolone (VR)</div>
+    </div>
+  </div>
+</section>
+<section class="about" id="storia">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <span class="kicker">Il locale</span>
+      <h2>Un pub dove stare bene</h2>
+      <p>SUSAN è il burger pub di Bovolone famoso per la formula all you can eat di mini hamburger gourmet: buoni, sfiziosi e sorprendentemente leggeri.</p>
+      <p>Ambiente ben pensato e accogliente, titolare simpatico e disponibile, con serate a tema che rendono ogni visita un’esperienza. Fritti, dolci e sgroppino completano il tutto.</p>
+      <div class="sign">&mdash; buon cibo e ottima compagnia</div>
+    </div>
+    <div class="about-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydjj1-65clDQjwCfVPnuBNShfD5aMlR_VhAQZcWcqiwyO2Z_nac221TjimQdsTAoAYXJkbu_Gic0Mcf1aNeK8T5IxpPY0aUCB5-LJvt3CHtQz3TaLYY0ovQkevoEEzXaAFjxFJIcyJgzES9_CKwHLsXk1VQRtxH3p9orEFuxeBg-ELkzS3NJND9SLqPjD-wgDFjKWAzhVhPrBXPpExCs0K5Fxx0A5A02aEWeods4SU0iVu2itnZdL5f-ROv_RbtOvIIwHeQYA_DG-2jBoQ_hkdhxBHDXamtNyMdJdZGMPu2dOZphmuWZdNkCKRR4LylWyu_JrsnPcZNPFiz8mgc1LZ8k4Gj1CoJYBydLYxQItN87DFRwG0Vr4t7dBaeE36qPkOi_JElM1gybFK_9JW96QRKQxbgm2ldq7RCYa92elrhyFfF3&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="SUSAN">
+    </div>
+  </div>
+</section>
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Cosa offriamo</span>
+      <h2>Le proposte del pub</h2>
+      <div class="orn">&#10022; &#10022; &#10022;</div>
+      <p>Una selezione di ciò che potete trovare da noi, tra hamburger, fritti e serate speciali.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="dish"><div class="r"><h4>All you can eat hamburger</h4><span class="tag">La firma</span></div><p>Mini panini hamburger gourmet a volontà, buoni e sfiziosi.</p></div>
+      <div class="dish"><div class="r"><h4>Serate a tema</h4><span class="tag">Eventi</span></div><p>Serate speciali (anche a tema Harry Potter) con menù dedicati.</p></div>
+      <div class="dish"><div class="r"><h4>Fritti misti</h4><span class="tag">Sfizi</span></div><p>Frittini golosi da accompagnare a birra e drink.</p></div>
+      <div class="dish"><div class="r"><h4>Dolci &amp; sgroppino</h4><span class="tag">Dessert</span></div><p>Dolci e sgroppino per chiudere la serata come si deve.</p></div>
+      <div class="dish"><div class="r"><h4>Birre &amp; drink</h4><span class="tag">Bar</span></div><p>Selezione di birre e bevande per ogni gusto.</p></div>
+      <div class="dish"><div class="r"><h4>Colazioni &amp; aperitivi</h4><span class="tag">Tutto il giorno</span></div><p>Aperti dal mattino: dalla colazione all’aperitivo.</p></div>
+    </div>
+    <p class="menu-note">Le serate a tema e le formule all you can eat cambiano — seguiteci e chiamate per prenotare.</p>
+  </div>
+</section>
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Galleria</span>
+      <h2>Uno sguardo al locale</h2>
+      <div class="orn">&#10022; &#10022; &#10022;</div>
+    </div>
+    <div class="gal-grid">
+      <figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydhElTDJ5V3I_p6-lDz1SRniLXpNMqEI0Gd5Dg2N1NorjX9Dme6yNkTuetn4H6bqy0RQf-4NgvnfglWBdmz8eSor2OOsuMutTP5DkOjNVECEB-amvmWbDbt4NH4sj0-lMFOf83lhcICCPgBj9owJvuTEd4I36H-ti2XQxeWdAlWf6CHlKvXbN30rW4qXNX-C7N3kQ5onUJdPemVavtuFYLXTjiziMPSiyOEIAZ-As7s2M0msseViieO5h4KTY-2cz7U6LFMwD39knnAhfELm7AeuU-y27DZEAi0jdEUYgS_I-d_K7CZnMoJV5T67QNTFy3mXK4KexbII2rsEtdPfwXur69trUXu9G1sGFxyLhZD-StTiZUz5DQfzZAdDG7QH_hSoeb_FMNBF6DRkAapvE6HQi6iEH7NwE3bHKvZ-vD6UQA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto locale"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydjj1-65clDQjwCfVPnuBNShfD5aMlR_VhAQZcWcqiwyO2Z_nac221TjimQdsTAoAYXJkbu_Gic0Mcf1aNeK8T5IxpPY0aUCB5-LJvt3CHtQz3TaLYY0ovQkevoEEzXaAFjxFJIcyJgzES9_CKwHLsXk1VQRtxH3p9orEFuxeBg-ELkzS3NJND9SLqPjD-wgDFjKWAzhVhPrBXPpExCs0K5Fxx0A5A02aEWeods4SU0iVu2itnZdL5f-ROv_RbtOvIIwHeQYA_DG-2jBoQ_hkdhxBHDXamtNyMdJdZGMPu2dOZphmuWZdNkCKRR4LylWyu_JrsnPcZNPFiz8mgc1LZ8k4Gj1CoJYBydLYxQItN87DFRwG0Vr4t7dBaeE36qPkOi_JElM1gybFK_9JW96QRKQxbgm2ldq7RCYa92elrhyFfF3&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto locale"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydiFr9ZeiQ2Mc1b8c4dxcbw89D61xKk8zr6u9Q4QmWG_fQjuKOENDcKWYC6blvn9A7ZHCqivvc6dBkrLPzfIi39Hm5OqbZw58lsvAxa_oHjOLslsZmnToe7ar7-iRegZIfbUxSP_35jwNVrhQqoxZPa8WHGCq4f0I_0kBDJ9Sae7lwPERFPrWtaSMFPxleN-xsbnag7hxCY86ItDoo4RDWIoOVNHgoKzBf7DN60-TaxtCd8Z6s1Dtqvl6WgDJP8L9l276u7OgkzbDyeR0Zzk4S9rCzhei0h_CR58-QQ68BsV0eRszLWrSsx6HKeY3YPInGmtDYaZK4kW_GRw2bkyz8RjxCn_h4P8HQHRG_Hu1Mlb-S5b4Lh-prPwWsd3it4TLqcnqYjgDHbUAj_m1QMuG88R7m0R0dhGG-SSl7_kQ8CausvEX1fPlHVgiYsDpSVg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto locale"></figure>
+      <figure class="wide"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydjEAJubJTdPa_tZUvHGpBxS2LeHfSS-H-oIxYTCMDyPD6HXumIHEAgpOhDm2iiF2s8EnYuyZ2sUQ7F1FX6mLxOUAP7Qog-tfpGRR3moRUSRPdK-rnCs2_qNNCSu4YkaTeXSPL_fM_g3p12EOCPK--cSw5KjbKN5e1C0CvWeoAeJCyYKt8Le_lHdWXpPZ6xrujn92441NAZx2TNZttTWkndHoeULXglCznrcQx9VgFYaPnKQJ9z6kjlKKXtP4n8E76ckm7zpyeOVB0T6J_P6oXwXx7FJxHSYqJ_SGZeG9WZVS2ULjUhbqKG2iIksA_dfkOsNk5Otl5DCMRtC7edZm5uY6POhPU2B6g25zDulZ68mO3RS8cVI2oPeDC6gwIs6cvl40JixMOcTZM7r_Q6CL7896tHoC8xmCiZnQ9dEfbI7phx7&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto locale"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydjj1-65clDQjwCfVPnuBNShfD5aMlR_VhAQZcWcqiwyO2Z_nac221TjimQdsTAoAYXJkbu_Gic0Mcf1aNeK8T5IxpPY0aUCB5-LJvt3CHtQz3TaLYY0ovQkevoEEzXaAFjxFJIcyJgzES9_CKwHLsXk1VQRtxH3p9orEFuxeBg-ELkzS3NJND9SLqPjD-wgDFjKWAzhVhPrBXPpExCs0K5Fxx0A5A02aEWeods4SU0iVu2itnZdL5f-ROv_RbtOvIIwHeQYA_DG-2jBoQ_hkdhxBHDXamtNyMdJdZGMPu2dOZphmuWZdNkCKRR4LylWyu_JrsnPcZNPFiz8mgc1LZ8k4Gj1CoJYBydLYxQItN87DFRwG0Vr4t7dBaeE36qPkOi_JElM1gybFK_9JW96QRKQxbgm2ldq7RCYa92elrhyFfF3&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto locale"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydiFr9ZeiQ2Mc1b8c4dxcbw89D61xKk8zr6u9Q4QmWG_fQjuKOENDcKWYC6blvn9A7ZHCqivvc6dBkrLPzfIi39Hm5OqbZw58lsvAxa_oHjOLslsZmnToe7ar7-iRegZIfbUxSP_35jwNVrhQqoxZPa8WHGCq4f0I_0kBDJ9Sae7lwPERFPrWtaSMFPxleN-xsbnag7hxCY86ItDoo4RDWIoOVNHgoKzBf7DN60-TaxtCd8Z6s1Dtqvl6WgDJP8L9l276u7OgkzbDyeR0Zzk4S9rCzhei0h_CR58-QQ68BsV0eRszLWrSsx6HKeY3YPInGmtDYaZK4kW_GRw2bkyz8RjxCn_h4P8HQHRG_Hu1Mlb-S5b4Lh-prPwWsd3it4TLqcnqYjgDHbUAj_m1QMuG88R7m0R0dhGG-SSl7_kQ8CausvEX1fPlHVgiYsDpSVg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto locale"></figure>
+    </div>
+  </div>
+</section>
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dicono di noi</span>
+      <h2>4,3 su 707 recensioni</h2>
+      <div class="orn">&#10022; &#10022; &#10022;</div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Semplicemente spettacolare! Serata a tema Harry Potter super consigliata: dagli hamburgerini gourmet ai frittini fino ai dolci, tutto buonissimo. Personale gentilissimo e locale ben pensato.&rdquo;</p><div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocIdPTu5C16pHsMRwNZapIv8a-TExB9fVWzFJENr0euFZWBv9A=s128-c0x00000000-cc-rp-mo-ba3" alt="Giulia Caldon"><div><b>Giulia Caldon</b><span>8 mesi fa</span></div></div></div>
+      <div class="rev"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Bella esperienza. Ottimo cibo e ambiente a tema. Cena con formula all you can eat di hamburger davvero buoni e sfiziosi. Titolare molto simpatico e disponibile. Consigliatissimo!&rdquo;</p><div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUvl9TU7afxbVlOhOPy00QlmL2cFqYGdF78FLAgTe2fRKXfchQ=s128-c0x00000000-cc-rp-mo-ba5" alt="Vincenzo"><div><b>Vincenzo</b><span>un anno fa</span></div></div></div>
+      <div class="rev"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>&ldquo;Hamburger veramente gustosi e leggeri, digeriti subito senza pesantezza. Bravi! Appena ho l’occasione torno sicuramente.&rdquo;</p><div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjU2o3qBK7n3KfeI0OSXJ6c4uPdwaQ4pwtbErBHl0RqmmoitvN2k=s128-c0x00000000-cc-rp-mo-ba4" alt="Paolo Salan"><div><b>Paolo Salan</b><span>3 mesi fa</span></div></div></div>
+    </div>
+    <div class="rev-foot"><a href="https://maps.google.com/?cid=1807957917749766593" target="_blank" rel="noopener">Leggi tutte le recensioni su Google &rarr;</a></div>
+  </div>
+</section>
+<section class="info" id="contatti">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dove trovarci</span>
+      <h2>Orari &amp; Contatti</h2>
+      <div class="orn">&#10022; &#10022; &#10022;</div>
+    </div>
+    <div class="info-grid">
+      <div class="hours-card">
+        <h3>Orari</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">&mdash;</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>07:00–01:00</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>07:00–01:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>07:00–01:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>07:00–01:00</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>07:00–01:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>07:00–02:00</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>07:00–01:00</span></li>
+        </ul>
+        <div class="contact-rows">
+          <div class="crow"><div class="ic">&#9673;</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=1807957917749766593" target="_blank" rel="noopener">Via Trieste 2, 37051 Bovolone (VR)</a></div></div>
+          <div class="crow"><div class="ic">&#9742;</div><div><h4>Telefono</h4><a href="tel:+393342418654">334 241 8654</a></div></div>
+        </div>
+        <div class="info-cta">
+          <a href="tel:+393342418654" class="btn btn-gold">&#9742; Chiama ora</a>
+          <a href="https://wa.me/393342418654" target="_blank" rel="noopener" class="btn btn-wa">WhatsApp</a>
+        </div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Trieste+2,+37051+Bovolone+VR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="brand">SUSAN<span style="color:var(--gold)">.</span></div>
+    <div class="foot-line">Burger Pub &middot; Bovolone (VR)</div>
+    <div class="socials">
+      <a href="tel:+393342418654" title="Telefono">&#9742;</a>
+      <a href="https://wa.me/393342418654" target="_blank" rel="noopener" title="WhatsApp">&#128172;</a>
+      <a href="https://maps.google.com/?cid=1807957917749766593" target="_blank" rel="noopener" title="Mappa">&#9673;</a>
+    </div>
+    <div class="foot-line">&copy; 2026 SUSAN &middot; Via Trieste 2, 37051 Bovolone (VR)</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec &mdash; bozza a scopo di proposta commerciale.</div>
+  </div>
+</footer>
+<div class="mobile-bar">
+  <a class="m-call" href="tel:+393342418654">&#9742; Chiama</a>
+  <a class="m-wa" href="https://wa.me/393342418654" target="_blank" rel="noopener">&#128172; WhatsApp</a>
+</div>
+<div class="lb" id="lb"><span class="x">&times;</span><img id="lbImg" src="" alt=""></div>
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1500');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+const periods={0:[[700,2400]],1:[[700,2400]],2:[[700,2400]],3:[[700,2400]],4:[[700,2400]],5:[[700,2400]],6:[[700,2400]]};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const open=(periods[day]||[]).some(p=>hm>=p[0]&&hm<p[1]);
+const badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+badge.className='open-badge '+(open?'open':'closed');
+txt.textContent=open?'Aperto ora':'Chiuso ora';
+</script>
+</body>
+</html>
