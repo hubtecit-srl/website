@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>I Ciuski — Paninoteca e street food a Bovolone (VR)</title>
+<meta name="description" content="I Ciuski a Bovolone (VR): panini, piadine, taglieri e birre. 4,9★ su Google. Passa a trovarci al Piazzale Mulino.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c140d; --ink2:#4a3f33; --sub:#8a7d6c; --line:#e4dccb; --cream:#f6f0e6; --white:#fff;
+  --accent:#a8461c; --accent-d:#8c3813; --olive:#5b5330; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.up{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:transparent;transition:.3s}
+header.solid{background:var(--ink)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;color:#fff}
+header nav{display:flex;gap:28px}
+header nav a{font-family:var(--h);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:rgba(255,255,255,.85);transition:.2s}
+header nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;padding:13px 24px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid transparent}
+.btn-fill{background:var(--accent);color:#fff}
+.btn-fill:hover{background:var(--accent-d)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent)}
+
+/* Hero full-bleed */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhjHPYcqgROZcFhRAo-8e0Utq2vod8-kPCVEUeicIFAz-oFIZo13ZWX5gYAfpQFljaexaJ3MqDMEvisIR-OaB0APhi9PhZRHBCzTmweSNHmRpP4LoA0LnCMj0CljDSTaFBgzCJtznl4NYi1nyT5MbUBQGkWQbqSbPtg80O855yNK2aRxNJ8311oLl1ieSD8fLLVRHovbxjeayE1vZqEB_74ARwCdyqagHZISG-dpapw9Ga5M43pPFvauQdpV8EsgX5gSeIEqGubPy-i0TkvN39nOagVt6x7m_Y5zprX26uxkjIiLUuVdxjl8S5gGmeVe1YiXCJJQcKR5k8muuDYudeA6bC9InNMsDkh40L4K95Fk4UOIgMIlrgbAOjkiB7aghNLJokmPffW3Ip-stv5UIrXlAfYhNrSp_Zh-Y8x9Y3lFA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,9,.55),rgba(20,14,9,.72))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:900px}
+.hero .kick{color:#e8b48f;margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,6.6rem);text-transform:uppercase;font-family:var(--h);font-weight:900;letter-spacing:.01em;line-height:.98;margin-bottom:24px}
+.hero p{font-size:1.12rem;color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Experience */
+.exp{padding:100px 0;text-align:center;background:var(--cream)}
+.exp .kick{display:block;margin-bottom:16px}
+.exp h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.5vw,3.4rem);letter-spacing:.01em;max-width:16ch;margin:0 auto 20px;line-height:1.04}
+.exp p{color:var(--ink2);max-width:620px;margin:0 auto}
+.exp-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
+.exp-imgs img{width:100%;height:340px;object-fit:cover}
+
+/* Menu */
+.menu{padding:100px 0;background:var(--ink);color:#fff}
+.menu-head{text-align:center;margin-bottom:56px}
+.menu-head .kick{color:#e8b48f;display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:.01em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:50px 70px;max-width:980px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:1rem;color:#e8b48f;padding-bottom:12px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:11px 0}
+.dish h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish span{color:rgba(255,255,255,.6);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;color:#fff;white-space:nowrap}
+
+/* Address / hours */
+.addr{padding:100px 0;background:var(--cream)}
+.addr-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.addr-img{width:100%;height:460px;object-fit:cover;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydh7-SouAGl0RifVuT0Q509ye9Ky7sY95V4iF9-iGS4CdmBDdJ7me5GiimRVIjAX_ZKehlgByT2bVZ2JqplbsxlXDSY0GFT_VhxaRNUWQMGrjL21trcCXY4yBYJve_J_7v8YkqmGfRY0C-ForOlUs8Ib2r08Nhcy_7V7Yz3gB4JdDzYio5-WvKsNUSoz_5rIdLQ9WqIHUVyRZpAbxT5iyx14V8l1dNbb7_ptkmMl8GCKQzRYc1S5usZvlBRm_EaveDgbFeSEHJcwgCj9Dc3S2pNnmpML7egCD2JL5pxUJ6AyOFP98VtkSWcKG8C8QnW8y0SkWediy2O63OLJLzhccdSZ41gUGyBgRzYY3ZX5AK3H3oHZ7Q7zUYhEYG5BC2zSPCtz0AJ-YP4u1QcdBi01v018PWXTlX40pfMEoFyGlkr_TJhHXs_C5gGIAjdnLund&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.addr-txt .kick{display:block;margin-bottom:14px}
+.addr-txt h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:22px;letter-spacing:.01em}
+.addr-row{margin-bottom:18px}
+.addr-row h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--accent);margin-bottom:5px}
+.addr-row p{color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--white);text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:8px}
+.reviews h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:44px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+.rv{background:var(--cream);padding:28px;border-top:3px solid var(--accent)}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:14px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.9rem}
+
+/* Reserve */
+.reserve{position:relative;padding:120px 0;text-align:center;color:#fff}
+.reserve-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhycyOh4QaUZw6Yw0IvSJ_VowmYKdsOU1T1bDdYi9tM5RBi1ZLuEBZ1okeIsTyA3DF3-lPx2813w6qQa_1pCFBQCf6V7YJvelIcqQiM6QigT__SJdpo29yLNzBUhWp7eE5EAj-58ZkTAwsya13aSNFMsGJ3AOZF2v478AlVYsAs3ketG3_VWkpfJdzLIa1ODFL20k1v3nKWlGqXy08OO7cWYgPZiQnJfk9nvU-b6fTxb1Eny9BHDljpSqrFa1e8_6JHQA6IX4neXWURs_WkgEG2taG_CuxfNmXI7zTzOX9G2c-8KzmN-L6mWKbFFQv6o8t883t6z2rc_vz-Bq9M3_10LwgafhhxhKNz1CRHEBNW5s19bMLiaaDLNbE4ZmIEQu4F4gcPy4OCtII3m2-wJLXI5aK3-ByQzmwaAINdl8_pbZLQDg4a4g9JpkPWBMVB&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.reserve-bg::after{content:"";position:absolute;inset:0;background:rgba(20,14,9,.72)}
+.reserve .wrap{position:relative;z-index:2}
+.reserve h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:16px;letter-spacing:.01em}
+.reserve p{max-width:520px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:56px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.74rem;color:#e8b48f;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .exp-imgs{grid-template-columns:1fr}
+  .exp-imgs img{height:260px}
+  .menu-cols{grid-template-columns:1fr;gap:36px}
+  .addr-grid{grid-template-columns:1fr;gap:28px}
+  .addr-img{height:320px}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .btn-line.hd{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#top" class="brand">I Ciuski</a>
+    <nav>
+      <a href="#exp">L'osteria</a>
+      <a href="#menu">Menù</a>
+      <a href="#adresse">Dove siamo</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+    <a href="#prenota" class="btn btn-line hd">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Cucina di brace · Bovolone (VR)</span>
+    <h1>Il gusto del fuoco</h1>
+    <p>Carni alla brace, primi della tradizione e una cantina che racconta il territorio. Nel cuore di Bovolone (VR).</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-fill">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-line">Scopri il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="exp" class="exp">
+  <div class="wrap">
+    <span class="kick">Un'esperienza unica</span>
+    <h2>Sapori decisi, materie prime scelte</h2>
+    <p>All'I Ciuski la cucina parte dalla brace e dalla stagionalità. Piatti generosi, servizio caloroso e un ambiente rustico ed elegante insieme.</p>
+    <div class="exp-imgs">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhYTw8DrOSHrJqhUc7ilNnK99hJUtrI37fpkdfe4JVrAQEAGOTLIlZEhD8ZmQd_fxzi0AflGxtkgTvwtyGtswl2tnADKUFlbobgWowzEwkmcxN9gwyXb3FQR2JQ99WOlYCq-ESUjtEZ1hTIxFWIWNs66uVSPR2RTu9BbiYiwePwQCkMQf6TABA0mQaLn5m27_2-dbngFwXc7te_j6PqL8oGGDeM1y0MTRQ9IjeC4qTtXx8H8LUrv9FozWlN_XMWhvOfCpIz5XPC7pa_NFS6niFucAW_eyA_MEH_CLfK6VbcZagdIq6q9ldPZNnd0KIRx-XvDoI8Voo7Oc1iTDqRqbjBA-RkXyTchWqrRJGOTSl7oMPA8oH0u2UGZ-KG2zn0DK0UMGRSU7Hc_HmcQV-b1Y3Qvh0wBWFvKx-DeIoP2fkMuRa0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Brace">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgf9UpuDhDhXAHqnkaKDzCRpNstusPBx_ecZglSG_3kHPkMQ0uz0PuSvPv5YIdNMa7ow0ndq0mTzNzZXiWNxWhDHxvcpOletp4ptULYuUP_AE-seeGyshGalWh3CtV6ZkLr9V9CGDGyEM9193Tz1jeSgMNj0JYcG58q8_AM63RTNCySODYXv21lW7GqgXoKKyWoEqLXRRQ_7TcuA2mYsnXD13kKOp3zfzNVsQkMdCmONIoI8yjGiE1jTEqP_AzNQFBrMv_SNOd9XkUkFJUnbzvMpGGvAbI8nenz7b7xcY1wDkbF3kBbqXbZ3uJAada1NoxelUHgn0RQmmk1TcR_ZJHFaIEoTAjgJZV3p8WDaixDV9HKYgD7vk_-ASl4H8cDSAZtZDrDVi90lhBAZtwMGpTZwLYn5gr5KBtFjKfcAlPgV5hT&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhiQfhhhRB56gNeatv9QgEWxRr0nZAS4dmSco55R75c6q0MdmfgXKZaIOgE6HQiS5XygCzTRyKxADKqV6gmqxlXqixM6RbUjjmPg8xHcKLDVt0_-R2bR_4uol48X5Z4ZUyColba4vyeF-QW_94UfVTbeMSr-UQq8KtWWvHnaTCoPRdCwsh-OtKFpUR7SqLs7_2Ij6xTuGG8I7ncGo95SHXMPRUIAGpNBi2YZhlhOemgkwHiq72hkgn5yu7FlUJt9czu6P8HRJygODMmvVWr9r4FDodV_201OZHYLoAkj-JaCDNh6--UOrGB6HH-OOF490yxcER2CyUIXit3kKFcH6F0pgXieOed0Hpjtb1wr1D5vtNbPquFA9MRSmVh-dQNq74l-1LlhPkHoatBLmZPtqMT7hEIJis1iPByhFPO7sKg_uE&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala">
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La cucina</span>
+      <h2>Il nostro menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><div><h5>Tagliere della casa</h5><span>Salumi e formaggi del territorio</span></div><div class="price">14 €</div></div>
+        <div class="dish"><div><h5>Polenta e funghi</h5><span>Polenta abbrustolita, porcini trifolati</span></div><div class="price">11 €</div></div>
+        <div class="dish"><div><h5>Bruschette miste</h5><span>Pane di casa, pomodoro, lardo</span></div><div class="price">9 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><div><h5>Pastissada de caval</h5><span>Con gnocchi fatti in casa</span></div><div class="price">15 €</div></div>
+        <div class="dish"><div><h5>Tagliatelle al ragù</h5><span>Ragù lungo di manzo</span></div><div class="price">13 €</div></div>
+        <div class="dish"><div><h5>Risotto all'Amarone</h5><span>Mantecato al Monte Veronese</span></div><div class="price">16 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Dalla brace</h3>
+        <div class="dish"><div><h5>Costata di scottona</h5><span>Alla griglia, 500g</span></div><div class="price">28 €</div></div>
+        <div class="dish"><div><h5>Grigliata mista</h5><span>Selezione di carni alla brace</span></div><div class="price">24 €</div></div>
+        <div class="dish"><div><h5>Costine glassate</h5><span>Marinate e cotte lentamente</span></div><div class="price">18 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Vini &amp; Dolci</h3>
+        <div class="dish"><div><h5>Calice Valpolicella</h5><span>Selezione della casa</span></div><div class="price">6 €</div></div>
+        <div class="dish"><div><h5>Calice Amarone</h5><span>Selezione della casa</span></div><div class="price">10 €</div></div>
+        <div class="dish"><div><h5>Sbrisolona</h5><span>Con zabaione</span></div><div class="price">7 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="adresse" class="addr">
+  <div class="wrap addr-grid">
+    <div class="addr-img" role="img" aria-label="Ingresso dell'osteria"></div>
+    <div class="addr-txt">
+      <span class="kick">Dove siamo</span>
+      <h2>Vieni a trovarci</h2>
+      <div class="addr-row"><h4>Indirizzo</h4><p>Piazzale Mulino, 37051 Bovolone (VR)</p></div>
+      <div class="addr-row"><h4>Orari</h4><p>Lun Chiuso<br>Mar Chiuso<br>Mer Chiuso<br>Gio 19:00–01:00<br>Ven 19:00–01:00<br>Sab 19:00–01:00<br>Dom 19:00–01:00</p></div>
+      <div class="addr-row"><h4>Contatti</h4><p><a href="tel:+393514494523">351 449 4523</a> · <a href="https://maps.google.com/?cid=18091728821413875577" target="_blank" rel="noopener">Indicazioni</a></p></div>
+      <a href="#prenota" class="btn btn-dark" style="margin-top:8px">Prenota ora</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,9 su 16 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Panini super,da bere non manca di certo la scelta, posto stupendo e ottima gestione e presidio di vivacità all'aperto. Patatine fritte top! 🌭🌮🌯🍔🍟🥐🖤"</p><b>Sum P.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Il Ciuski offre svariata scelta di panini, piadine e patatine per tutti i gusti e a ottimo prezzo. Hamburger, salsiccia, hot dog, affettati vari,…"</p><b>Anna M.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Al Ciuski bisogna dare per forza 4 stelle, non lo batte nessuno. Ormai è riuscito a farsi amare da tutto Bovolone e dintorni. Fa del cibo ottimo…"</p><b>Alice R.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="reserve">
+  <div class="reserve-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo tavolo</h2>
+    <p>Per gruppi, eventi o serate speciali chiamaci: ti aspettiamo attorno al fuoco.</p>
+    <div class="btns">
+      <a href="tel:+393514494523" class="btn btn-fill">Chiama 351 449 4523</a>
+      <a href="https://wa.me/393514494523" class="btn btn-line">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">I Ciuski</div>
+        <p>Cucina di brace e sapori del territorio, a Bovolone (VR).</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Piazzale Mulino, 37051 Bovolone (VR)<br><a href="tel:+393514494523">351 449 4523</a><br><a href="https://maps.google.com/?cid=18091728821413875577" target="_blank" rel="noopener">Indicazioni</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Lun Chiuso<br>Mar Chiuso<br>Mer Chiuso<br>Gio 19:00–01:00<br>Ven 19:00–01:00<br>Sab 19:00–01:00<br>Dom 19:00–01:00</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© I Ciuski — Bovolone (VR)</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393514494523" class="call">Chiama</a>
+  <a href="https://wa.me/393514494523" class="wa">WhatsApp</a>
+</div>
+
+<script>
+addEventListener('scroll',()=>{document.getElementById('hd').classList.toggle('solid',scrollY>60)});
+</script>
+</body>
+</html>
