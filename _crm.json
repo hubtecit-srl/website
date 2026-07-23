@@ -268,34 +268,36 @@
  },
  {
   "name": "D&B I Parrucchieri Unisex Borin Lisa",
-  "file": "deb-parrucchieri-borin-belfiore.html",
+  "file": "db-parrucchieri-belfiore.html",
   "phone": "045 764 0652",
   "intl": "390457640652",
   "comune": "Belfiore",
   "zona": "Via Roma",
   "cid": "10478558949285349103",
-  "tmpl": "parrucchieri-genv2",
+  "tmpl": "parrucchieri-salonkit",
   "cat": "parrucchieri",
-  "url": "https://hubtecit-srl.github.io/website/deb-parrucchieri-borin-belfiore.html",
+  "url": "https://hubtecit-srl.github.io/website/db-parrucchieri-belfiore.html",
   "email": "",
   "canale": "Da contattare a mano",
   "sito_reale": "Solo social/booking",
-  "data": "2026-07-23"
+  "data": "2026-07-23",
+  "note": "Sito canonico pubblicato da run concorrente; riga allineata."
  },
  {
   "name": "Cristyle Di Sarti Cristina",
-  "file": "cristyle-sarti-belfiore.html",
+  "file": "cristyle-belfiore.html",
   "phone": "045 614 9081",
   "intl": "390456149081",
   "comune": "Belfiore",
   "zona": "Via Strà",
   "cid": "12374833090623843488",
-  "tmpl": "parrucchieri-genv2",
+  "tmpl": "parrucchieri-salonkit",
   "cat": "parrucchieri",
-  "url": "https://hubtecit-srl.github.io/website/cristyle-sarti-belfiore.html",
+  "url": "https://hubtecit-srl.github.io/website/cristyle-belfiore.html",
   "email": "",
   "canale": "Da contattare a mano",
   "sito_reale": "No",
-  "data": "2026-07-23"
+  "data": "2026-07-23",
+  "note": "Sito canonico pubblicato da run concorrente; riga allineata."
  }
 ]
