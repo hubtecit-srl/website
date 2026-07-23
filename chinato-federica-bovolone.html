@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chinato Federica — Parrucchiere a Bovolone (VR) | Prenota</title>
+<meta name="description" content="Chinato Federica, parrucchiere a Bovolone (VR): taglio, colore, acconciature e trattamenti su misura. 5,0★ su 16 recensioni Google. Prenota il tuo appuntamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dark:#241d18; --dark2:#1b1510; --cream:#f3ece2; --cream2:#efe5d8; --card:#f7f1e8;
+  --ink:#2e2620; --sub:#8a7d6f; --red:#b02a1c; --red-d:#94210f; --line:#e4d9c9; --white:#fff;
+  --f:'Archivo',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1280px;margin:0 auto;padding:0 34px}
+.display{font-weight:900;letter-spacing:-.02em;line-height:.92;text-transform:uppercase}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.tag b{background:var(--red);color:#fff;padding:3px 9px;border-radius:4px;font-weight:700}
+
+header{position:absolute;top:0;left:0;right:0;z-index:40}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:88px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:1.25rem;letter-spacing:.02em;color:#f3ece2}
+.brand .mk{width:26px;height:26px;background:var(--red);border-radius:6px;display:inline-block;transform:rotate(45deg)}
+.hd-right{display:flex;align-items:center;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--f);font-weight:600;font-size:.9rem;padding:13px 22px;border-radius:8px;cursor:pointer;transition:.22s;border:1px solid transparent}
+.btn-white{background:#f3ece2;color:var(--ink)}
+.btn-white:hover{background:#fff}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-dark{background:rgba(255,255,255,.1);color:#f3ece2;border-color:rgba(255,255,255,.25)}
+.btn-dark:hover{background:rgba(255,255,255,.18)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;background:var(--dark);color:#f3ece2;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydh7nxRG44yiRExmUWiT85K8FVQsmFUmsAkbK7EwdC3sQNtKbc3WF_Z92GzO3ON4_FYCUTevpLrd8k8wpD80TpPd3oU66idK9de3Vu8_KzwePRVdT-EKi2xF4sxM6o91cT0AMUCeRdP40slE6x2bT1j1o0KAjkZF9TzVOuXng45lsgC_hrVUIU7tls6YKbc1hV-jjmSiMpCF6cbLj10moXtCwwWvcayXTyfYil8osxKRkTIZdlPAPAhukal7JLRo0XkILm4F6odpJUx-7rueIvJuiI0FzkQOOXuY_teOGuRf9Dh89xGRtcseqkgOe6AG_zE9roUzatDgiQ3LX9Q538p8k7b1b3T82goD21P21t5AQjUjFoPaqd4X-9QwzB0Bj0FvWLPtqDGwRljHEzQyiaJ3GxZiyC3YIunQbL45S-7FYCvf&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,21,16,.92) 0%,rgba(28,21,16,.7) 42%,rgba(28,21,16,.25) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-top:70px}
+.hero .tag{color:#e9dccb;margin-bottom:22px}
+.hero h1{font-size:clamp(3.4rem,10vw,8.5rem);margin-bottom:22px}
+.hero .sub{max-width:440px;color:rgba(243,236,226,.82);font-size:1.06rem;margin-bottom:30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.float-card{position:absolute;left:34px;bottom:38px;z-index:3;display:flex;align-items:center;gap:16px;background:rgba(35,28,22,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px;max-width:340px}
+.float-card img{width:66px;height:66px;border-radius:10px;object-fit:cover}
+.float-card h4{font-weight:800;text-transform:uppercase;font-size:1rem;color:#f3ece2;letter-spacing:.02em}
+.float-card p{font-size:.82rem;color:rgba(243,236,226,.7)}
+.float-card .plus{margin-left:auto;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.dots{position:absolute;right:40px;bottom:52px;z-index:3;display:flex;gap:8px}
+.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35)}
+.dots i.on{background:#fff}
+
+/* Statement + gallery */
+.state{background:var(--cream);padding:100px 0 0;text-align:center}
+.rev-badge{display:inline-flex;flex-direction:column;align-items:center;margin-bottom:26px}
+.rev-badge .st{color:var(--red);letter-spacing:2px}
+.rev-badge small{font-size:.78rem;color:var(--sub);font-weight:500;margin-top:2px}
+.state h2{font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.9rem);line-height:1.12;max-width:920px;margin:0 auto 26px;color:var(--ink)}
+.gallery4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:60px}
+.gallery4 img{width:100%;height:440px;object-fit:cover}
+
+/* Services */
+.services{background:var(--cream2);padding:110px 0}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:56px}
+.svc-top .lab{color:var(--red);font-weight:700;letter-spacing:.14em;font-size:.78rem;text-transform:uppercase}
+.svc-top h2{font-size:clamp(3rem,7vw,6rem);margin:12px 0 10px}
+.svc-top p{color:var(--sub);max-width:420px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 30px 30px;position:relative;min-height:220px;transition:.25s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(46,38,32,.1)}
+.svc .no{font-weight:900;font-size:3rem;color:rgba(46,38,32,.12);line-height:1}
+.svc .ic{position:absolute;top:34px;right:30px;color:var(--red);font-size:1.6rem}
+.svc h3{font-weight:800;text-transform:uppercase;font-size:1.3rem;margin:44px 0 8px;letter-spacing:.01em}
+.svc p{color:var(--sub);font-size:.94rem}
+.svc-note{text-align:center;margin-top:32px;color:var(--sub)}
+
+/* Reviews */
+.reviews{background:var(--dark);color:#f3ece2;padding:110px 0}
+.reviews .svc-top h2{font-size:clamp(2.6rem,6vw,5rem)}
+.reviews .svc-top .lab{color:#e09b8f}
+.reviews .svc-top p{color:rgba(243,236,226,.6)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:30px}
+.rv .st{color:var(--red);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:rgba(243,236,226,.86);font-size:.96rem;margin-bottom:18px}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.rv .who b{font-weight:700;font-size:.9rem}
+.rv .who span{display:block;font-size:.76rem;color:rgba(243,236,226,.55)}
+
+/* Contact / footer */
+.foot{background:var(--dark2);color:#f3ece2;padding:100px 0 34px}
+.foot-cta{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;padding-bottom:70px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-cta h2{font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,6vw,5rem);line-height:.95}
+.foot-cta .lab{color:var(--red);font-weight:700;letter-spacing:.14em;font-size:.78rem;text-transform:uppercase;margin-bottom:10px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding:60px 0 40px}
+.foot-grid h4{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,236,226,.5);font-weight:600;margin-bottom:16px}
+.foot-grid p,.foot-grid a{color:rgba(243,236,226,.9);font-weight:400}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.92rem;color:rgba(243,236,226,.75);gap:16px}
+.hours-list li.today{color:#fff;font-weight:600}
+.hours-list li.today .d{color:var(--red)}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:600;padding:5px 12px;border-radius:40px;margin-bottom:14px}
+.open-badge.open{background:rgba(120,180,120,.2);color:#93d19a}
+.open-badge.closed{background:rgba(176,42,28,.22);color:#e79b8f}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.foot-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem;color:rgba(243,236,226,.5)}
+
+.mobile-bar{display:none}
+@media(max-width:960px){
+  .gallery4{grid-template-columns:repeat(2,1fr)}
+  .svc-grid,.rv-grid{grid-template-columns:1fr 1fr}
+  .svc-top,.foot-cta{flex-direction:column;align-items:flex-start}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hd-right .btn{display:none}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  .gallery4{grid-template-columns:1fr 1fr}
+  .gallery4 img{height:230px}
+  .svc-grid,.rv-grid,.foot-grid{grid-template-columns:1fr}
+  .hero h1{font-size:3.6rem}
+  .float-card{left:16px;right:16px;bottom:74px;max-width:none}
+  .dots{display:none}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:15px;font-weight:700;font-size:.82rem;text-transform:uppercase;color:#fff}
+  .mobile-bar .call{background:var(--dark)}
+  .mobile-bar .bk{background:var(--red)}
+  body{padding-bottom:50px}
+}
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#" class="brand"><span class="mk"></span>CHINATO FEDERICA</a>
+    <div class="hd-right">
+      <a href="+393486703666" class="btn btn-white">Prenota →</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="tag"><b>★</b> Parrucchiere · Bovolone (VR)</div>
+    <h1 class="display">Chinato<br>Federica</h1>
+    <p class="sub">Taglio, colore e acconciature su misura — studiati sul tuo viso, sul tuo capello e sullo stile che desideri davvero. A Bovolone.</p>
+    <div class="hero-cta">
+      <a href="#servizi" class="btn btn-white">I servizi →</a>
+      <a href="#contatti" class="btn btn-dark">Contatti →</a>
+    </div>
+  </div>
+  <div class="float-card">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photo_reference=AWCwydj_Emu1XXk4nF8uJ2PWrvfu-jdU7J4V9sZh8-t64GyzmNJt761APBNIPks6csTKuCzsLz4ptiSTUaR3dEZAvYTyzYb59vuYSdLPWZtp_nG8Ad0clrVYEzJTD65Gezdp2GfxspyqfD2ntUoWxf2el7CzATEf8BrCSjLJTNwPwOCoKIYorDPMO2m1e3n91uFhC8l8mNMz7xT0KJHQDeDbLN24c-t3ZaHd9ZmWnsCEo8WwBw9r2umFUnFPYq23sHx_58s3TVHncLqHINtqb2DCQ56q26W5AdXivcuzva6IQMSK8X0UN2llAKIe1ElOeiphrQb7PiIZxuhyqAcnvY4HT9rY5S3NK2Lj6giA76uQb02f7fZfOnR20F9UIXXaBaZ6rJJfDq6-dUsAG_eTUd7dK9N-Or0-Fkwtu70ldaDyYbQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piega e colore">
+    <div>
+      <h4>Piega &amp; Colore</h4>
+      <p>Il servizio più richiesto · su appuntamento →</p>
+    </div>
+    <div class="plus">+</div>
+  </div>
+  <div class="dots"><i class="on"></i><i></i><i></i></div>
+</section>
+
+<section class="state">
+  <div class="wrap">
+    <div class="rev-badge"><span class="st">★★★★★</span><small>5,0 / 5 · 16 recensioni Google</small></div>
+    <h2>Mani esperte, prodotti di qualità e un salone dove ti senti subito a casa.</h2>
+    <a href="+393486703666" class="btn btn-red">Prenota un appuntamento →</a>
+    <div class="gallery4">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydhlqhaWuHHCYN2NDMTr9HFe3re1blHw-7rdIdUNmMqv0-qM5BImqZLa5h6CBZrjR0DGTu1OcSbWd0pFUDpRzKm0vj0wFwZULF-wR5Oi2WyPLUloPID7Q-ezn-3CacsVy-9owcVi_VxjmpeqM6ntHx86LCyARIjlpWipDUJ-eH35gKBGJ-EpfK0_JCC_SIebGshgBh7HkGNxPY1lzYXUI7rsFP_EQQwcQ63bfvvFn0cd21ldURbRMS2d4TUDZBSZRYIindG062l-6ugdegJbHjW868eQMYBWBlkR6lvai3aOBGd-MUCxeEsO9MIPPqCXjXK0VuLo4Hu7OtJvzUr-hERDNekstZWz0Ei7edOINtVBYrwc7JeWGIW1hRGmJLlRk35xKH7oXzJtDyJqVNlC2xvOFrW6zwSY5oaD15FMGVDGgu5l&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro capelli">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydh7nxRG44yiRExmUWiT85K8FVQsmFUmsAkbK7EwdC3sQNtKbc3WF_Z92GzO3ON4_FYCUTevpLrd8k8wpD80TpPd3oU66idK9de3Vu8_KzwePRVdT-EKi2xF4sxM6o91cT0AMUCeRdP40slE6x2bT1j1o0KAjkZF9TzVOuXng45lsgC_hrVUIU7tls6YKbc1hV-jjmSiMpCF6cbLj10moXtCwwWvcayXTyfYil8osxKRkTIZdlPAPAhukal7JLRo0XkILm4F6odpJUx-7rueIvJuiI0FzkQOOXuY_teOGuRf9Dh89xGRtcseqkgOe6AG_zE9roUzatDgiQ3LX9Q538p8k7b1b3T82goD21P21t5AQjUjFoPaqd4X-9QwzB0Bj0FvWLPtqDGwRljHEzQyiaJ3GxZiyC3YIunQbL45S-7FYCvf&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Colore">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydj_Emu1XXk4nF8uJ2PWrvfu-jdU7J4V9sZh8-t64GyzmNJt761APBNIPks6csTKuCzsLz4ptiSTUaR3dEZAvYTyzYb59vuYSdLPWZtp_nG8Ad0clrVYEzJTD65Gezdp2GfxspyqfD2ntUoWxf2el7CzATEf8BrCSjLJTNwPwOCoKIYorDPMO2m1e3n91uFhC8l8mNMz7xT0KJHQDeDbLN24c-t3ZaHd9ZmWnsCEo8WwBw9r2umFUnFPYq23sHx_58s3TVHncLqHINtqb2DCQ56q26W5AdXivcuzva6IQMSK8X0UN2llAKIe1ElOeiphrQb7PiIZxuhyqAcnvY4HT9rY5S3NK2Lj6giA76uQb02f7fZfOnR20F9UIXXaBaZ6rJJfDq6-dUsAG_eTUd7dK9N-Or0-Fkwtu70ldaDyYbQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Acconciatura">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydhlqhaWuHHCYN2NDMTr9HFe3re1blHw-7rdIdUNmMqv0-qM5BImqZLa5h6CBZrjR0DGTu1OcSbWd0pFUDpRzKm0vj0wFwZULF-wR5Oi2WyPLUloPID7Q-ezn-3CacsVy-9owcVi_VxjmpeqM6ntHx86LCyARIjlpWipDUJ-eH35gKBGJ-EpfK0_JCC_SIebGshgBh7HkGNxPY1lzYXUI7rsFP_EQQwcQ63bfvvFn0cd21ldURbRMS2d4TUDZBSZRYIindG062l-6ugdegJbHjW868eQMYBWBlkR6lvai3aOBGd-MUCxeEsO9MIPPqCXjXK0VuLo4Hu7OtJvzUr-hERDNekstZWz0Ei7edOINtVBYrwc7JeWGIW1hRGmJLlRk35xKH7oXzJtDyJqVNlC2xvOFrW6zwSY5oaD15FMGVDGgu5l&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Salone">
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servizi">
+  <div class="wrap">
+    <div class="svc-top">
+      <div>
+        <div class="lab">[ Servizi ]</div>
+        <h2 class="display">Servizi</h2>
+        <p>Ogni testa è unica: studiamo insieme il look che ti valorizza di più.</p>
+      </div>
+      <a href="+393486703666" class="btn btn-red">Prenota →</a>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="no">01</div><span class="ic">✂</span><h3>Taglio &amp; Piega</h3><p>Tagli personalizzati e pieghe che durano, pensati per la forma del tuo viso.</p></div>
+      <div class="svc"><div class="no">02</div><span class="ic">✦</span><h3>Colore &amp; Riflessi</h3><p>Colorazioni, meches e schiariture con prodotti delicati, risultati naturali e luminosi.</p></div>
+      <div class="svc"><div class="no">03</div><span class="ic">♛</span><h3>Acconciature Sposa</h3><p>Prove e acconciature per il tuo giorno speciale, per sentirti una vera principessa.</p></div>
+      <div class="svc"><div class="no">04</div><span class="ic">❋</span><h3>Trattamenti</h3><p>Trattamenti ristrutturanti e nutrienti per capelli forti, sani e pieni di vita.</p></div>
+      <div class="svc"><div class="no">05</div><span class="ic">✄</span><h3>Uomo &amp; Bambini</h3><p>Tagli per tutta la famiglia, con pazienza e simpatia anche per i più piccoli.</p></div>
+      <div class="svc"><div class="no">06</div><span class="ic">✚</span><h3>Consulenza</h3><p>Analisi del capello e consigli su misura per la cura anche a casa.</p></div>
+    </div>
+    <p class="svc-note">Prezzi onesti e trasparenti — chiamaci per il listino e per prenotare.</p>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="svc-top">
+      <div>
+        <div class="lab">[ Recensioni ]</div>
+        <h2 class="display">Dicono di noi</h2>
+        <p>5,0 stelle su 16 recensioni Google verificate.</p>
+      </div>
+    </div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>“Lavora davvero bene, ha una bella mano, è preparata, sincera, ti dice cosa ti può stare bene e cosa no. È aggiornata sulle mode del momento, è veloce. Ti mette a tuo agio, simpatica, aperta e alla mano, prezzi buoni, la consiglio.”</p><div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocIusPcV-nbNr0NQiqtOcx1eRLXPpp_ZmmWdyiyl3OqQH48zpA=s128-c0x00000000-cc-rp-mo-ba4" alt="Serena Mantoan"><div><b>Serena Mantoan</b><span>7 anni fa</span></div></div></div>
+      <div class="rv"><div class="st">★★★★★</div><p>“Brava preparata con un occhio in più per quello che chiede la cliente”</p><div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjXvLvEjiKyy04uYqMMik5YW-xxOcOaNgJALOYoSS096tROjORR1YA=s128-c0x00000000-cc-rp-mo-ba4" alt="Valentina Altobel (Vale)"><div><b>Valentina Altobel (Vale)</b><span>5 anni fa</span></div></div></div>
+      <div class="rv"><div class="st">★★★★★</div><p>“Ottima esperienza e professionalità”</p><div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjUARuLJF14KyLfiGdvXEb5dWLPtw3AMWvc43TOOyy_ONVOPY38RaA=s128-c0x00000000-cc-rp-mo-ba3" alt="Adriana Noventa"><div><b>Adriana Noventa</b><span>3 anni fa</span></div></div></div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" id="contatti">
+  <div class="wrap">
+    <div class="foot-cta">
+      <div>
+        <div class="lab">[ Prenota ]</div>
+        <h2 class="display">Il tuo prossimo<br>look ti aspetta</h2>
+      </div>
+      <a href="+393486703666" class="btn btn-red">Prenota ora →</a>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h4>Orari</h4>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li><span class="d">Su appuntamento</span><span>Chiama per orari</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p style="margin-bottom:8px"><a href="tel:+393486703666">348 670 3666</a></p>
+        <p style="margin-bottom:8px"><a href="https://wa.me/393486703666?text=Buongiorno%2C%0ASono%20Laura%20di%20HubTec%2C%20azienda%20di%20Verona.%0A%0AHo%20notato%20che%20avete%20ottime%20recensioni%20ma%20nessun%20sito%20web%2C%20cosi%20ne%20ho%20gia%20preparato%20uno%20per%20voi%2C%20potete%20vederlo%20qui%3A%20https%3A%2F%2Fhubtecit-srl.github.io%2Fwebsite%2Fchinato-federica-bovolone.html%0A%0ASe%20vi%20piace%2C%20lo%20attiviamo%20con%20soli%20200%E2%82%AC.%0A%0AIn%20piu%2C%20se%20volete%20gestirlo%20in%20autonomia%20%28cambiare%20testi%2C%20foto%2C%20orari%E2%80%A6%29%2C%20possiamo%20aggiungere%20un%20gestionale%20semplice%20a%20soli%20100%E2%82%AC.%0A%0AChiaramente%20lo%20possiamo%20modificare%20con%20logo%20e%20altri%20minimi%20dettagli%20vostri.%0A%0ANessun%20impegno%3A%20dateci%20un%27occhiata%20e%20fatemi%20sapere%20cosa%20ne%20pensate%21%0A%0ALaura%20Borin%20-%20HubTec" target="_blank" rel="noopener">Scrivici su WhatsApp</a></p>
+        <p><a href="https://maps.google.com/?cid=6815088014527832611" target="_blank" rel="noopener">Via San Pierino 107, 37051 Bovolone (VR) →</a></p>
+      </div>
+      <div>
+        <h4>Salone</h4>
+        <p>Parrucchiere a Bovolone (VR). Taglio, colore, acconciature e trattamenti con prodotti di qualità, su appuntamento.</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Chinato Federica · Bovolone (VR)</span>
+      <span>Sito dimostrativo — HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="+393486703666" class="call">Chiama</a>
+  <a href="https://wa.me/393486703666?text=Buongiorno%2C%0ASono%20Laura%20di%20HubTec%2C%20azienda%20di%20Verona.%0A%0AHo%20notato%20che%20avete%20ottime%20recensioni%20ma%20nessun%20sito%20web%2C%20cosi%20ne%20ho%20gia%20preparato%20uno%20per%20voi%2C%20potete%20vederlo%20qui%3A%20https%3A%2F%2Fhubtecit-srl.github.io%2Fwebsite%2Fchinato-federica-bovolone.html%0A%0ASe%20vi%20piace%2C%20lo%20attiviamo%20con%20soli%20200%E2%82%AC.%0A%0AIn%20piu%2C%20se%20volete%20gestirlo%20in%20autonomia%20%28cambiare%20testi%2C%20foto%2C%20orari%E2%80%A6%29%2C%20possiamo%20aggiungere%20un%20gestionale%20semplice%20a%20soli%20100%E2%82%AC.%0A%0AChiaramente%20lo%20possiamo%20modificare%20con%20logo%20e%20altri%20minimi%20dettagli%20vostri.%0A%0ANessun%20impegno%3A%20dateci%20un%27occhiata%20e%20fatemi%20sapere%20cosa%20ne%20pensate%21%0A%0ALaura%20Borin%20-%20HubTec" class="bk">WhatsApp</a>
+</div>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const periods={};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const p=periods[day],badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+if(p&&hm>=p[0]&&hm<p[1]){badge.className='open-badge open';txt.textContent='Aperto ora';}
+else{badge.className='open-badge closed';txt.textContent='Chiuso ora';}
+</script>
+</body>
+</html>
