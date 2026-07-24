@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bonus Food Buttapietra — Pizza, kebab e consegna a domicilio | Ordina</title>
+<meta name="description" content="Bonus Food a Buttapietra (VR): pizza, kebab, panini e fritti con consegna a domicilio. Servizio veloce e gentile. Ordina al 388 453 7698 o su WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c140d; --ink2:#4a3f33; --sub:#8a7d6c; --line:#e4dccb; --cream:#f6f0e6; --white:#fff;
+  --accent:#a8461c; --accent-d:#8c3813; --olive:#5b5330; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.up{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:transparent;transition:.3s}
+header.solid{background:var(--ink)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;color:#fff}
+header nav{display:flex;gap:28px}
+header nav a{font-family:var(--h);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:rgba(255,255,255,.85);transition:.2s}
+header nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;padding:13px 24px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid transparent}
+.btn-fill{background:var(--accent);color:#fff}
+.btn-fill:hover{background:var(--accent-d)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent)}
+
+/* Hero full-bleed */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1400&photo_reference=AWCwydikV1y2LfhbBmwK51zTj80L2F2DNVqF1jcAPvTrapGbXfeC41DrnAq_M_LhEDgPuqhnpRjlxmvtEH4dWCzUmmziaVHViPgNtbOvFqlxpXott2uUBU68ncsOPhBd4J6W33yLfkBCke1-CJ9tug1i8HHr2z8wjHMdumgxjJ2ppAUx97n4TmSn7TZEGWigezn9x12hQ7-aLLuf-UH9r4PRFB74UpMhzG9_aE14DkhFz5FBTkfnUBMyHRQK0Ey72AGQfAerXUsSzVMxY-WCMSuFKqeffU-9B2wpa9ljSVTtVvfG49SO0cfi6AWJu1_n8VhTVdOp911-myupC35Y3XaGbgXp01tH1MZS7ouUzofswvofJr3KoNUrv7_Qu-FEeNRIeQSCKewC_NvMpGpWzOzAqlrVQy23eXIvdfVjYMXm-tHDVyb2ontdxx42nUY9vA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,9,.55),rgba(20,14,9,.72))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:900px}
+.hero .kick{color:#e8b48f;margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,6.6rem);text-transform:uppercase;font-family:var(--h);font-weight:900;letter-spacing:.01em;line-height:.98;margin-bottom:24px}
+.hero p{font-size:1.12rem;color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Experience */
+.exp{padding:100px 0;text-align:center;background:var(--cream)}
+.exp .kick{display:block;margin-bottom:16px}
+.exp h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.5vw,3.4rem);letter-spacing:.01em;max-width:16ch;margin:0 auto 20px;line-height:1.04}
+.exp p{color:var(--ink2);max-width:620px;margin:0 auto}
+.exp-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
+.exp-imgs img{width:100%;height:340px;object-fit:cover}
+
+/* Menu */
+.menu{padding:100px 0;background:var(--ink);color:#fff}
+.menu-head{text-align:center;margin-bottom:56px}
+.menu-head .kick{color:#e8b48f;display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:.01em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:50px 70px;max-width:980px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:1rem;color:#e8b48f;padding-bottom:12px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:11px 0}
+.dish h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish span{color:rgba(255,255,255,.6);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;color:#fff;white-space:nowrap}
+
+/* Address / hours */
+.addr{padding:100px 0;background:var(--cream)}
+.addr-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.addr-img{width:100%;height:460px;object-fit:cover;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1400&photo_reference=AWCwydgnkxTE2GwQjlKC6JZOn_mEJUqlv0eUizLPMsc-0XIquXTih1dXguMsqt_VgsAS1_mePlUK5zZr4wa5YJVBKV7rqMumWFRNRmouTrwYIle9Bz_cneu52TDoLAlNdHe9dy5g_BuV0Dte1Jjwc1JtqVCs0Hb3b2NBsrzBzNQO1HGHCmVlQfPjSBTqLyfz9kgUDee8MTRvfdx2yEOdENP8xOnclvMMfN4HofHZTv5mv2bbpeLKjyH_Czx4fOWC1dKzY4oFrn9x118_xH88HnCD7nHYawv5NZpxZOgHb_eauCDOopJugjvzzy7woBX1xK2hf0oDn6DXoTBviuNSAPq7C1Gh_XnBtTNkZqjkbog5Q1Dwb0Uc1a8wI30lLoaq09u6kytFo7rMi-vcOVC_cgQBT9PKX-Re3kV1LhHBqWQO2ASLi5S1-Kr8UoS4UUkcZdgo&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.addr-txt .kick{display:block;margin-bottom:14px}
+.addr-txt h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:22px;letter-spacing:.01em}
+.addr-row{margin-bottom:18px}
+.addr-row h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--accent);margin-bottom:5px}
+.addr-row p{color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--white);text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:8px}
+.reviews h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:44px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+.rv{background:var(--cream);padding:28px;border-top:3px solid var(--accent)}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:14px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.9rem}
+
+/* Reserve */
+.reserve{position:relative;padding:120px 0;text-align:center;color:#fff}
+.reserve-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1400&photo_reference=AWCwydiyc_g7TpTGHwIhBNgU3PGGxkv-mPRsNnJE3MDZoM6MNNGd-TCoCe8khUvInGcRh4nVIqXITpx55_rueUY1hMJ_8Gff6NfJFN8BEBBY_LR0DwaGcF25yd5lO_ZKcLmEmoUGKctQOG3EZNtfTAJOMiKtRmZcQ7aJg2qtk11pYIgP-Q9Tx30wpL0HoTvlJW-v64Oo3hLgDZWwME5ZPHJnJHu2DC0MmAxa27-NcUSLDWruv6Qhmf2jitxZiy6s8S3bxI0lER8tT_27WhXad1Ur89lCWVJ0CUu1DxljIiSWLoQk_nlTlBXEKmirYSDGeOufHms_Cw2-OoMoXuKU7H28mthg4QLRgdi8LsZYXsnDVj_mXiu4qsTRzI2JNVQnaw5fh3Ap_5OA1npmtYYVQkRECgsew4FmvbbvbzH9c2q9R1rituLAGvFDfxueOa7yOQt8&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.reserve-bg::after{content:"";position:absolute;inset:0;background:rgba(20,14,9,.72)}
+.reserve .wrap{position:relative;z-index:2}
+.reserve h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:16px;letter-spacing:.01em}
+.reserve p{max-width:520px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:56px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.74rem;color:#e8b48f;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .exp-imgs{grid-template-columns:1fr}
+  .exp-imgs img{height:260px}
+  .menu-cols{grid-template-columns:1fr;gap:36px}
+  .addr-grid{grid-template-columns:1fr;gap:28px}
+  .addr-img{height:320px}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .btn-line.hd{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#top" class="brand">Bonus Food</a>
+    <nav>
+      <a href="#exp">L'osteria</a>
+      <a href="#menu">Menù</a>
+      <a href="#adresse">Dove siamo</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+    <a href="#prenota" class="btn btn-line hd">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Pizza · Kebab · Domicilio · Buttapietra</span>
+    <h1>Fame? Ci pensa Bonus Food</h1>
+    <p>Pizza, kebab, panini e fritti preparati al momento. Ambiente pulito, servizio veloce e consegna a domicilio a Buttapietra e dintorni.</p>
+    <div class="hero-cta">
+      <a href="https://wa.me/3884537698" class="btn btn-fill">Ordina su WhatsApp</a>
+      <a href="#menu" class="btn btn-line">Scopri il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="exp" class="exp">
+  <div class="wrap">
+    <span class="kick">Chi siamo</span>
+    <h2>Veloci, buoni e a domicilio</h2>
+    <p>Da Bonus Food trovi pizza, kebab e tanti sfizi da asporto, con un occhio all'ordine e alla pulizia. Consegniamo a casa tua e ti teniamo aggiornato sullo stato dell'ordine.</p>
+    <div class="exp-imgs">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydikV1y2LfhbBmwK51zTj80L2F2DNVqF1jcAPvTrapGbXfeC41DrnAq_M_LhEDgPuqhnpRjlxmvtEH4dWCzUmmziaVHViPgNtbOvFqlxpXott2uUBU68ncsOPhBd4J6W33yLfkBCke1-CJ9tug1i8HHr2z8wjHMdumgxjJ2ppAUx97n4TmSn7TZEGWigezn9x12hQ7-aLLuf-UH9r4PRFB74UpMhzG9_aE14DkhFz5FBTkfnUBMyHRQK0Ey72AGQfAerXUsSzVMxY-WCMSuFKqeffU-9B2wpa9ljSVTtVvfG49SO0cfi6AWJu1_n8VhTVdOp911-myupC35Y3XaGbgXp01tH1MZS7ouUzofswvofJr3KoNUrv7_Qu-FEeNRIeQSCKewC_NvMpGpWzOzAqlrVQy23eXIvdfVjYMXm-tHDVyb2ontdxx42nUY9vA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto Bonus Food">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydgnkxTE2GwQjlKC6JZOn_mEJUqlv0eUizLPMsc-0XIquXTih1dXguMsqt_VgsAS1_mePlUK5zZr4wa5YJVBKV7rqMumWFRNRmouTrwYIle9Bz_cneu52TDoLAlNdHe9dy5g_BuV0Dte1Jjwc1JtqVCs0Hb3b2NBsrzBzNQO1HGHCmVlQfPjSBTqLyfz9kgUDee8MTRvfdx2yEOdENP8xOnclvMMfN4HofHZTv5mv2bbpeLKjyH_Czx4fOWC1dKzY4oFrn9x118_xH88HnCD7nHYawv5NZpxZOgHb_eauCDOopJugjvzzy7woBX1xK2hf0oDn6DXoTBviuNSAPq7C1Gh_XnBtTNkZqjkbog5Q1Dwb0Uc1a8wI30lLoaq09u6kytFo7rMi-vcOVC_cgQBT9PKX-Re3kV1LhHBqWQO2ASLi5S1-Kr8UoS4UUkcZdgo&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Pizza">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydiyc_g7TpTGHwIhBNgU3PGGxkv-mPRsNnJE3MDZoM6MNNGd-TCoCe8khUvInGcRh4nVIqXITpx55_rueUY1hMJ_8Gff6NfJFN8BEBBY_LR0DwaGcF25yd5lO_ZKcLmEmoUGKctQOG3EZNtfTAJOMiKtRmZcQ7aJg2qtk11pYIgP-Q9Tx30wpL0HoTvlJW-v64Oo3hLgDZWwME5ZPHJnJHu2DC0MmAxa27-NcUSLDWruv6Qhmf2jitxZiy6s8S3bxI0lER8tT_27WhXad1Ur89lCWVJ0CUu1DxljIiSWLoQk_nlTlBXEKmirYSDGeOufHms_Cw2-OoMoXuKU7H28mthg4QLRgdi8LsZYXsnDVj_mXiu4qsTRzI2JNVQnaw5fh3Ap_5OA1npmtYYVQkRECgsew4FmvbbvbzH9c2q9R1rituLAGvFDfxueOa7yOQt8&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Locale">
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La cucina</span>
+      <h2>Il nostro menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Pizze</h3>
+        <div class="dish"><div><h5>Margherita</h5><span>Pomodoro e mozzarella</span></div><div class="price">5 €</div></div>
+        <div class="dish"><div><h5>Diavola</h5><span>Salame piccante</span></div><div class="price">6,50 €</div></div>
+        <div class="dish"><div><h5>Quattro formaggi</h5><span>Mix di formaggi</span></div><div class="price">7 €</div></div>
+        <div class="dish"><div><h5>Bufala</h5><span>Mozzarella di bufala e basilico</span></div><div class="price">7,50 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Kebab &amp; Panini</h3>
+        <div class="dish"><div><h5>Kebab nel panino</h5><span>Carne, insalata, salse</span></div><div class="price">5,50 €</div></div>
+        <div class="dish"><div><h5>Hamburger</h5><span>Con patatine</span></div><div class="price">5 €</div></div>
+        <div class="dish"><div><h5>Panino di pollo</h5><span>Croccante, con salse</span></div><div class="price">6 €</div></div>
+        <div class="dish"><div><h5>Piadina farcita</h5><span>A scelta</span></div><div class="price">5 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Fritti</h3>
+        <div class="dish"><div><h5>Patatine fritte</h5><span>Porzione abbondante</span></div><div class="price">3 €</div></div>
+        <div class="dish"><div><h5>Nuggets di pollo</h5><span>6 pezzi</span></div><div class="price">5 €</div></div>
+        <div class="dish"><div><h5>Mozzarelline</h5><span>Fritte, croccanti</span></div><div class="price">4 €</div></div>
+        <div class="dish"><div><h5>Onion rings</h5><span>Anelli di cipolla</span></div><div class="price">4 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Bibite &amp; Dolci</h3>
+        <div class="dish"><div><h5>Bibita in lattina</h5><span>Cola, aranciata, tè</span></div><div class="price">2 €</div></div>
+        <div class="dish"><div><h5>Acqua</h5><span>Naturale o frizzante</span></div><div class="price">1 €</div></div>
+        <div class="dish"><div><h5>Birra</h5><span>In bottiglia</span></div><div class="price">3,50 €</div></div>
+        <div class="dish"><div><h5>Tiramisù</h5><span>Fatto in casa</span></div><div class="price">3,50 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="adresse" class="addr">
+  <div class="wrap addr-grid">
+    <div class="addr-img" role="img" aria-label="Bonus Food Buttapietra"></div>
+    <div class="addr-txt">
+      <span class="kick">Dove siamo</span>
+      <h2>Vieni a trovarci</h2>
+      <div class="addr-row"><h4>Indirizzo</h4><p><a href="https://maps.google.com/?cid=7732589089538638128" target="_blank" rel="noopener">Piazza 4 Novembre 21, 37060 Buttapietra (VR)</a></p></div>
+      <div class="addr-row"><h4>Orari</h4><p>Tutti i giorni 10:00–01:30</p></div>
+      <div class="addr-row"><h4>Contatti</h4><p><a href="tel:+393884537698">388 453 7698</a> · <a href="https://wa.me/3884537698">WhatsApp</a></p></div>
+      <a href="https://wa.me/3884537698" class="btn btn-dark" style="margin-top:8px">Ordina ora</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★☆</div>
+    <h2>Dicono di noi</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Ho ordinato in orario di chiusura per 5 persone e sono stati gentili e disponibili: rispondono al telefono e ti aggiornano sull'ordine. Fattorino super gentile. Servizio stupendo!"</p><b>Lucia Pisciotta</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Ambiente molto pulito, servizio veloce e cibo buono! In più consegnano anche a domicilio. Assolutamente consigliato!"</p><b>Lavinia Scapini</b></div>
+      <div class="rv"><div class="st">★★★★☆</div><p>"Cibo e servizio buoni."</p><b>Filippo Stornati</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="reserve">
+  <div class="reserve-bg"></div>
+  <div class="wrap">
+    <h2>Ordina adesso</h2>
+    <p>Chiamaci o scrivici su WhatsApp: prepariamo tutto al momento e, se vuoi, consegniamo a casa tua.</p>
+    <div class="btns">
+      <a href="tel:+393884537698" class="btn btn-fill">Chiama 388 453 7698</a>
+      <a href="https://wa.me/3884537698" class="btn btn-line">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Bonus Food</div>
+        <p>Pizza, kebab e sfizi con consegna a domicilio, a Buttapietra (VR).</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Piazza 4 Novembre 21, Buttapietra<br><a href="tel:+393884537698">388 453 7698</a><br><a href="https://wa.me/3884537698">WhatsApp</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Tutti i giorni<br>10:00–01:30</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Bonus Food — Buttapietra (VR)</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393884537698" class="call">Chiama</a>
+  <a href="https://wa.me/3884537698" class="wa">WhatsApp</a>
+</div>
+
+<script>
+addEventListener('scroll',()=>{document.getElementById('hd').classList.toggle('solid',scrollY>60)});
+</script>
+</body>
+</html>
