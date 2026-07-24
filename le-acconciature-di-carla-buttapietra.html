@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Le Acconciature di Carla — Parrucchiere a Buttapietra (VR) | Prenota</title>
+<meta name="description" content="Le Acconciature di Carla di Mariotti Carla, parrucchiere a Buttapietra (VR): taglio, colore, piega e styling. 4,7★ su 19 recensioni Google. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111111; --ink2:#3f3f3f; --sub:#8b8b8b; --line:#e6e6e6; --paper:#f5f3f0; --white:#fff; --green:#25d366;
+  --h:'Bodoni Moda',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.8;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.kick{letter-spacing:.34em;text-transform:uppercase;font-size:.7rem;color:var(--ink2);font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:400;letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;padding:15px 32px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:500;font-size:1.5rem;letter-spacing:.28em;padding-left:.28em}
+header nav{display:flex;gap:34px}
+header nav a{letter-spacing:.16em;text-transform:uppercase;font-size:.76rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgCVMYkhrnOVtx6nxCDeb-pTjdhIf4iZ6Ypo5g8jmLoH0FtzE-CJWmN2a6WmL7HXONVRIi7KoPviW3-e6hMHZmnsPsEvA9Lv65hxhdNMoKu6fvD6i_Krx8hKQUSaYS2_Cw2RpfZn6cRvt-6TAMtT8PY9m400x5tEUt1-Wh2gBwkwI1ilR0vwJfYvOTzTQk-RuOUv-sZYiEE7YgvcJ9sxm_KY1Lfsye3VpThRyY_tIFaN2EY08tmvYifOyUzI464BSj7GVBptTj1z7iCBHBumE8OHpwTCU2W3pYjfSOL23vQ4FdKauw2nViDw46nf1F3C8Vl-e2rpkZ7h-fjpQm7phBf6CPE-AEdvaHJeWDDQS5bi8l9SfKtqVnMXyfWHbAApDyWpTWz9ELTC7IjFMbEcQgNm0GeJn2ED3K1MfG8AgMSL_lTpW4_vMzHwx4WCqAS&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0;filter:grayscale(.4)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:rgba(17,17,17,.42)}
+.hero-inner{position:relative;z-index:2;padding:80px 24px 0;max-width:900px}
+.hero .kick{color:rgba(255,255,255,.85);display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;font-size:clamp(3rem,9vw,7rem);line-height:1;margin-bottom:26px;letter-spacing:.02em}
+.hero p{font-size:1.05rem;color:rgba(255,255,255,.85);max-width:460px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center}
+.intro .kick{display:block;margin-bottom:22px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4.2vw,3rem);line-height:1.32;max-width:22ch;margin:0 auto}
+
+/* Services */
+.serv{padding:0 0 110px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.serv-c{background:#fff;padding:44px 34px;text-align:center;transition:.25s}
+.serv-c:hover{background:var(--paper)}
+.serv-c .n{font-family:var(--h);font-size:.9rem;color:var(--sub);letter-spacing:.1em}
+.serv-c h3{font-family:var(--h);font-weight:400;font-size:1.5rem;margin:12px 0 8px;letter-spacing:.02em}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+
+/* Portfolio */
+.folio{padding:0 0 110px}
+.folio-head{text-align:center;margin-bottom:50px}
+.folio-head .kick{display:block;margin-bottom:14px}
+.folio-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2rem,4.4vw,3rem);letter-spacing:.02em}
+.folio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.folio-grid figure{overflow:hidden;position:relative}
+.folio-grid img{width:100%;height:360px;object-fit:cover;filter:grayscale(.3);transition:.6s}
+.folio-grid figure:hover img{filter:grayscale(0);transform:scale(1.05)}
+
+/* Split */
+.split{padding:110px 0;background:var(--paper)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover;filter:grayscale(.2);background:#ddd url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydjW9JA9yhP7hKQjBbDrEV1ojHYNHs46Y_Yr-UhzV-Ankz1zqOZ9nED6ZmyiMlHm1fMPg76xyA9et0gpPgpS5J1nEy4-KAPKe0amIM_EemNXBqL3hh4t9vh0WCVh93w7QOpoO-uaAuuh6wEizZiYePinYROeTGg7zDaAzQDsqQdUCAvFM0zJz5aEUibQzy0CgzmVb5n9UQr0T7pW7h5NjpAIQw9liWLdDE71XZe4JenFLISAfD0v0RF6Sz2id_lWjWLD9GHxNoRkZXbjUUYLR6AekC4C5WBRJhjW_EULGC6jl5YPGVOS5k8JpkLjUUeFK53i8F19ORuad7MZqzbWK_UR2fu17jtqCCNQo0qLK5I7ojtJrNrqm57Sj0aW_8L0wgXCysATngdTQuc_DcBMfAv14wqVuHK-90hmOW9a5FjvXVXchAqsXm7UcYM15w&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:18px;line-height:1.2;letter-spacing:.02em}
+.split-txt p{color:var(--ink2);margin-bottom:16px}
+.split-hours{list-style:none;margin-top:18px;border-top:1px solid var(--line)}
+.split-hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.split-hours span:last-child{letter-spacing:.06em}
+
+/* Reviews */
+.reviews{padding:110px 0;text-align:center}
+.reviews .kick{display:block;margin-bottom:30px}
+.rv-track{max-width:760px;margin:0 auto}
+.rv q{font-family:var(--h);font-weight:400;font-size:clamp(1.4rem,3vw,2rem);line-height:1.4;display:block;margin-bottom:20px;font-style:italic}
+.rv .st{color:var(--ink);letter-spacing:3px;margin-bottom:10px}
+.rv b{letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:400;color:var(--ink2)}
+.rv-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:60px;text-align:left}
+.rv-row .c q{font-size:1.05rem;margin-bottom:12px;font-style:normal}
+
+/* CTA */
+.cta{position:relative;padding:130px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0;filter:grayscale(.4)}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(17,17,17,.6)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:16px;letter-spacing:.02em}
+.cta p{max-width:480px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px;padding-left:0}
+.foot-grid h4{letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;color:rgba(255,255,255,.55);margin-bottom:14px}
+.foot-grid p,.foot-grid a{font-size:.9rem;line-height:2;color:rgba(255,255,255,.7)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.78rem;letter-spacing:.06em;color:rgba(255,255,255,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .serv-grid{grid-template-columns:1fr}
+  .folio-grid{grid-template-columns:1fr 1fr}
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .rv-row{grid-template-columns:1fr;gap:26px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 22px}
+  .folio-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem}
+  .mbar .call{color:var(--ink)}
+  .mbar .book{background:var(--ink);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">CARLA</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#studio">Studio</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Parrucchiere · Buttapietra (VR)</span>
+    <h1>Carla</h1>
+    <p>Taglio, colore, piega e acconciature. Professionalità, puntualità e prezzi onesti, a Buttapietra.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-light">Prenota ora</a>
+      <a href="#portfolio" class="btn btn-ghost">Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <span class="kick">Il salone</span>
+    <h2>Uno studio dedicato allo stile, in ogni dettaglio</h2>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="serv-grid">
+      <div class="serv-c"><div class="n">01</div><h3>Cut &amp; Style</h3><p>Taglio e styling personalizzati sul tuo viso.</p></div>
+      <div class="serv-c"><div class="n">02</div><h3>Hair Color</h3><p>Colore, meches e balayage d'autore.</p></div>
+      <div class="serv-c"><div class="n">03</div><h3>Treatment</h3><p>Trattamenti di cura e ricostruzione.</p></div>
+      <div class="serv-c"><div class="n">04</div><h3>Piega &amp; Styling</h3><p>Messa in piega ed eventi speciali.</p></div>
+      <div class="serv-c"><div class="n">05</div><h3>Acconciature</h3><p>Sposa e cerimonie su misura.</p></div>
+      <div class="serv-c"><div class="n">06</div><h3>Consulenza</h3><p>Analisi e consulenza d'immagine.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="folio">
+  <div class="wrap folio-head">
+    <span class="kick">Portfolio</span>
+    <h2>I nostri lavori</h2>
+  </div>
+  <div class="folio-grid">
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydgCVMYkhrnOVtx6nxCDeb-pTjdhIf4iZ6Ypo5g8jmLoH0FtzE-CJWmN2a6WmL7HXONVRIi7KoPviW3-e6hMHZmnsPsEvA9Lv65hxhdNMoKu6fvD6i_Krx8hKQUSaYS2_Cw2RpfZn6cRvt-6TAMtT8PY9m400x5tEUt1-Wh2gBwkwI1ilR0vwJfYvOTzTQk-RuOUv-sZYiEE7YgvcJ9sxm_KY1Lfsye3VpThRyY_tIFaN2EY08tmvYifOyUzI464BSj7GVBptTj1z7iCBHBumE8OHpwTCU2W3pYjfSOL23vQ4FdKauw2nViDw46nf1F3C8Vl-e2rpkZ7h-fjpQm7phBf6CPE-AEdvaHJeWDDQS5bi8l9SfKtqVnMXyfWHbAApDyWpTWz9ELTC7IjFMbEcQgNm0GeJn2ED3K1MfG8AgMSL_lTpW4_vMzHwx4WCqAS&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 1"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydiHE1q1spPXjktSNTAN27i8vIFPjzeK48XfTCDbGoevmrwjjp6AuAj40bp99dWOR6KERtqQ0s2CJRKHrONfnZ6vbRDZT1yrtxPyTjCij45IwO0Sbn73P2dkeS5JZRiqlzK0DPQfOtfHTexJkIWpLGqDRTDyYQ8HqtTGsi_kfjKDaiqiGhr7KS8bBke9v0Z34dfAP0Ak7nz6tHb38aLJlJL5flVD2DcbsreWnuYTwdX6cTaScbkLYFRVa5y6ElOxAurAI9BhmbxAoDOtVz7natbct5eWaQLIsnwJlmZQf-vXIJPuJsLvsCDZzPVMb4t2tTkATi82alGV-fZf4G0teTDHpyOYjy-h4-G-aMAxgl70Jie73hmlXS381Bgoje3YOi0EETRIOq_G5CLnyQDN1Lz-BRKDuBAgXrUT-oqqr4rRWoKgwo-KUXFFioOLyuq0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 2"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydh2zIJcTYqvHiNgCEdLuYrN-t0sBskQG7ZQ8c2Tx0ZQOQaLxbat5uO6nPklN-xB8vrtTa4bSE6zcgghQo0MB-TRwn7nVkzmIklQ14xmRrGG01hQ5v1DnHd7vXPaOQBv5YTGby0-AJQAB3T2K2GBkXRzBqjNsEj4rRWGD-0jsbv49zVN4QFCYnWVvIllK6oUBJVS9kstuz69B8j2RylkMUzqmX41aBHrpifpuM7NfEm3_9jeVrIypxti5Q5uMkK7XHhyhNsijqQNQyw1Dd17XiJkZHSwgoQ6rfyT98PwKfvuYrtWIuEqMrBs7SiQeBrlM9X6so9uOFQsN576njZkVuONbjoZ4CuvwlJEpOHIHZ38G9rGWd6Jm6d6n_HeHr6Cx0VkClsBKOm6qUoh-6YikYPetO5-mF3q7HyNtUoOL6KUNykcjeJvQviYv84zkhMO&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 3"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydinoEMdmTBfiNtYWYYRAjEyztmLc7EVo1WWpq1BkI817rjPBbULgutrrus_owGzfQs8UbzHbZnx-BZMFXnL0Zto-yDjJT6VVJnnhsYyYpxDclTI_oP76DpM3Oo6WUsI9iBsx8F95F8uaOpMUPYt05fEwrz6bo4tp_N_H1AbNXkT_jZYVm_PsbGwCFUIhU26aj4g60DBCpRgqb3UmavQyZrVjyDDdhEAdC2eA9E0wIRx-8-pB-0KboEK608vcWGHMl_TYLbmHy7pMEbvej-cEtdMhWxl1vt2Qa3yhk0btkqC416gZyKzFF_wbiIs2TFylbJE0hfzDR3amwMslOUVr_XoXgP5GszU4frCjF-IZdIWcFreXefOl0x_cWl7gig4t9RAdmKgwgwvUfhy17mKlr2F98_xeB80qpZdxG2PBKdHYf6f2PKnJ0ccfPp54aof&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 4"></figure>
+  </div>
+</section>
+
+<section id="studio" class="split">
+  <div class="wrap split-grid">
+    <div class="split-img" role="img" aria-label="Lo studio"></div>
+    <div class="split-txt">
+      <span class="kick">Lo studio</span>
+      <h2>Dove il tuo stile prende forma</h2>
+      <p>Un ambiente essenziale ed elegante, pensato per farti vivere un'esperienza di bellezza fuori dal comune. Professionisti attenti, tecniche moderne e ascolto.</p>
+      <ul class="split-hours">
+        <li><span>Martedì – Sabato</span><span>Su appuntamento</span></li>
+        <li><span>Domenica &amp; Lunedì</span><span>Chiuso</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <span class="kick">Recensioni</span>
+    <div class="rv-track rv">
+      <div class="st">★★★★★</div>
+      <q>Carla è una professionista: ascolta le richieste e crea lo stile desiderato lasciando la cliente soddisfatta. Prezzi onesti e puntualità sacra. Consiglio!</q>
+      <b>Giusy Elisa Cuttitta</b>
+    </div>
+    <div class="rv-row">
+      <div class="c rv"><div class="st">★★★★★</div><q>"Professionale e cortese, paziente e capace. In Carla ho trovato la parrucchiera che fa per me: puntuale, veloce ma precisa, prezzi ottimi."</q><b>Irene Di Silvestro</b></div>
+      <div class="c rv"><div class="st">★★★★★</div><q>"Come sempre la mia parrucchiera Carla è strepitosa: consigli e professionalità impeccabile. Soddisfatta e felice."</q><b>Erica Mirandola</b></div>
+      <div class="c rv"><div class="st">★★★★★</div><q>"Puntualità, velocità, pulizia, prezzi buoni e rispetto per le esigenze dei clienti. Piace anche ai bambini."</q><b>Lavinia Panait</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci o scrivici su WhatsApp: dai forma al tuo nuovo look.</p>
+    <div class="btns">
+      <a href="tel:+393426396224" class="btn btn-light">342 639 6224</a>
+      <a href="https://wa.me/393426396224?text=Buongiorno%2C%0ASono%20Laura%20di%20HubTec%2C%20azienda%20di%20Verona.%0A%0AHo%20notato%20che%20avete%20ottime%20recensioni%20ma%20nessun%20sito%20web%2C%20cosi%20ne%20ho%20gia%20preparato%20uno%20per%20voi%2C%20potete%20vederlo%20qui%3A%20https%3A//hubtecit-srl.github.io/website/le-acconciature-di-carla-buttapietra.html%0A%0ASe%20vi%20piace%2C%20lo%20attiviamo%20con%20soli%20200%E2%82%AC.%0A%0AIn%20piu%2C%20se%20volete%20gestirlo%20in%20autonomia%20%28cambiare%20testi%2C%20foto%2C%20orari%E2%80%A6%29%2C%20possiamo%20aggiungere%20un%20gestionale%20semplice%20a%20soli%20100%E2%82%AC.%0A%0AChiaramente%20lo%20possiamo%20modificare%20con%20logo%20e%20altri%20minimi%20dettagli%20vostri.%0A%0ANessun%20impegno%3A%20dateci%20un%27occhiata%20e%20fatemi%20sapere%20cosa%20ne%20pensate%21%0A%0ALaura%20Borin%20-%20HubTec" class="btn btn-ghost">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff;letter-spacing:.22em">CARLA</div><p>Parrucchiere a Buttapietra (VR). Salone di Carla Mariotti.</p></div>
+      <div><h4>Contatti</h4><p>Via Dante Alighieri 4, Buttapietra (VR)<br><a href="tel:+393426396224">342 639 6224</a><br><a href="https://maps.google.com/?cid=2545259864175625613" target="_blank" rel="noopener">Vedi su Google Maps</a></p></div>
+      <div><h4>Orari</h4><p>Mar–Sab · Su appuntamento</p></div>
+    </div>
+    <div class="foot-bot"><span>© Le Acconciature di Carla — Buttapietra (VR)</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393426396224" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>

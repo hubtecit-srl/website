@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Francy Crea — Parrucchiere a Buttapietra (VR) | Prenota</title>
+<meta name="description" content="Francy Crea di Bonizzato Francesca, parrucchiere a Buttapietra (VR): taglio, colore, cheratina e acconciature. 4,8★ su 64 recensioni Google. Chiama e prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --peach:#ee965b; --peach-d:#d97f44; --dark:#2a2320; --ink:#2e2723; --ink2:#5f554e; --sub:#978c82;
+  --line:#ece3d8; --cream:#faf5ee; --soft:#f5ece1; --white:#fff; --green:#25d366;
+  --h:'Fraunces',Georgia,serif; --b:'Mulish',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--peach);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:15px 30px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--peach)}
+.btn-peach{background:var(--peach);color:#fff}
+.btn-peach:hover{background:var(--peach-d);border-color:var(--peach-d)}
+.btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.5)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:600;font-size:1.6rem;letter-spacing:.01em}
+header nav{display:flex;gap:30px}
+header nav a{font-weight:600;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--peach)}
+
+/* Hero */
+.hero{padding:150px 0 100px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero .kick{display:block;margin-bottom:18px}
+.hero h1{font-family:var(--h);font-weight:500;font-size:clamp(2.8rem,6.5vw,5rem);line-height:1.02;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--peach)}
+.hero p{color:var(--ink2);font-size:1.1rem;margin-bottom:30px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img img{width:100%;height:540px;object-fit:cover;background:var(--soft) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydgW2f29G6cJ5o7lXUTG-GEKusHCXfuhMlyiAndYHYIKxHVm8FQRnBjzoyJSVu0LaFUvLQo2xlS0aYEEZR1XcAJvS-5kq3SumuHO313JhqNxMDyNklzkTrwFa0jBQZzMocNEASfpK-AFCBWAGZJ5tkzXBPjAoYz7g4B8PEHv_JEOUa_PEaJvLppJ9YZ8ELEOFyfx9OF5k9b7UJP3a4B_xA4SvLtYs1umi75H-QVON1fRZl0Bk3fUN3p6CAXisYfo2hjn9xXoPo4YmQKqKRXVrjt7OfCBH7f5vCdeF6gYIA21EJAz7JLP8aNO9sU-bU_Tu_oguWXKfW8FcQiLH5X_hHijXmiz3Le5TgeQoHpP1ns27ns3aEMjeEgzFQc4XJ_hJ0fKAXCgJ8sm3NcPfJtb40XYpvj_5ZG6A9665iG2eI-L5w&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+
+/* Why */
+.why{padding:100px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 54px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:500;font-size:clamp(2.1rem,4.5vw,3.3rem);line-height:1.14}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.why-c{text-align:center;padding:20px}
+.why-c .ic{width:64px;height:64px;margin:0 auto 16px;background:var(--soft);color:var(--peach);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.why-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:8px}
+.why-c p{color:var(--ink2);font-size:.94rem}
+
+/* Services */
+.serv{padding:100px 0;background:var(--cream)}
+.serv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px;max-width:900px;margin:0 auto}
+.serv-c{display:flex;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.serv-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:4px}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+.serv-c .price{font-family:var(--h);font-weight:600;font-size:1.3rem;color:var(--peach);white-space:nowrap}
+
+/* Gallery */
+.gallery{padding:100px 0}
+.gal-head{text-align:center;margin-bottom:44px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:500;font-size:clamp(2rem,4.4vw,3rem)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+
+/* FAQ */
+.faq{padding:100px 0;background:var(--cream)}
+.faq-wrap{max-width:780px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{list-style:none;cursor:pointer;padding:22px 4px;font-family:var(--h);font-weight:600;font-size:1.15rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--peach);font-size:1.4rem}
+.faq-item[open] summary::after{content:"–"}
+.faq-item .a{padding:0 4px 22px;color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:var(--soft);padding:32px}
+.rv .st{color:var(--peach);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.15rem;color:var(--ink);margin-bottom:16px;line-height:1.45}
+.rv b{font-weight:700;font-size:.9rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/3992874/pexels-photo-3992874.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(42,35,32,.72)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:500;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--dark);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#f0b58c;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-img img{height:380px}
+  .why-grid,.rv-grid{grid-template-columns:1fr}
+  .serv-grid{grid-template-columns:1fr;gap:0}
+  .gal-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .mbar .call{color:var(--peach)}
+  .mbar .book{background:var(--peach);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Francy Crea</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#lavori">Lavori</a>
+      <a href="#faq">FAQ</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Parrucchiere · Buttapietra (VR)</span>
+      <h1>Il tuo stile, <em>su misura</em></h1>
+      <p>Taglio, colore e trattamenti pensati per te e per la salute dei tuoi capelli. Un salone dove bellezza e benessere si incontrano.</p>
+      <div class="hero-cta">
+        <a href="#prenota" class="btn btn-peach">Prenota ora</a>
+        <a href="#servizi" class="btn btn-out">Listino</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydgW2f29G6cJ5o7lXUTG-GEKusHCXfuhMlyiAndYHYIKxHVm8FQRnBjzoyJSVu0LaFUvLQo2xlS0aYEEZR1XcAJvS-5kq3SumuHO313JhqNxMDyNklzkTrwFa0jBQZzMocNEASfpK-AFCBWAGZJ5tkzXBPjAoYz7g4B8PEHv_JEOUa_PEaJvLppJ9YZ8ELEOFyfx9OF5k9b7UJP3a4B_xA4SvLtYs1umi75H-QVON1fRZl0Bk3fUN3p6CAXisYfo2hjn9xXoPo4YmQKqKRXVrjt7OfCBH7f5vCdeF6gYIA21EJAz7JLP8aNO9sU-bU_Tu_oguWXKfW8FcQiLH5X_hHijXmiz3Le5TgeQoHpP1ns27ns3aEMjeEgzFQc4XJ_hJ0fKAXCgJ8sm3NcPfJtb40XYpvj_5ZG6A9665iG2eI-L5w&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Salone di parrucchiere"></div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Perché sceglierci</span><h2>Cura, stile ed esperienza</h2></div>
+    <div class="why-grid">
+      <div class="why-c"><div class="ic">🌿</div><h3>Prodotti naturali</h3><p>Trattamenti e colori rispettosi dei capelli e della pelle.</p></div>
+      <div class="why-c"><div class="ic">✂️</div><h3>Team esperto</h3><p>Professionisti aggiornati sulle ultime tendenze.</p></div>
+      <div class="why-c"><div class="ic">💆‍♀️</div><h3>Esperienza su misura</h3><p>Consulenza e look personalizzato ad ogni visita.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Listino</span><h2>I nostri servizi</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div><h3>Taglio &amp; piega</h3><p>Consulenza, taglio e styling</p></div><div class="price">da 28€</div></div>
+      <div class="serv-c"><div><h3>Colore</h3><p>Colorazione e ritocco</p></div><div class="price">da 40€</div></div>
+      <div class="serv-c"><div><h3>Meches &amp; balayage</h3><p>Schiariture e tecniche di luce</p></div><div class="price">da 60€</div></div>
+      <div class="serv-c"><div><h3>Trattamenti</h3><p>Ricostruzione e cura profonda</p></div><div class="price">da 25€</div></div>
+      <div class="serv-c"><div><h3>Acconciature</h3><p>Sposa, cerimonia ed eventi</p></div><div class="price">da 50€</div></div>
+      <div class="serv-c"><div><h3>Piega</h3><p>Styling e messa in piega</p></div><div class="price">da 20€</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="lavori" class="gallery">
+  <div class="wrap">
+    <div class="gal-head"><span class="kick">I nostri lavori</span><h2>Look &amp; atmosfera</h2></div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhQxs81Qc1fs9N7sc1axn9Dx7XX5txZNXjXmdjz8OJDvRN790gdJVu3L3Sj3UNYVBaeR6yEIAg1wXTpbo0bJ98uroOGmimBPol-rhV0ssxoOjAz4KQ-xJzwgBfWHA_VuzmTc9kg0VaPmauzTbvsRTfjmWUJOWzQujfZMQdtVwJnOXWCxhqwxddHHSPiKy5lgud4hiTZpmH98xWHds5S1asgUPUFLrrzMRXRfrPMlBttjA5JS3rZgTk0Jwp3oozpvmlwGFH3EYDEkpUdvq3cLWxOjgbw_UD2EyYBFBZxav8GbOviQnKTAcX7j8j3_1X8IIJ6XfPJdSnrwgoMLqZlzYAMgNxkjTLfuEO0XDu_1ISJsvt2WBkAFxaOxM30-ctNJQETPpMwtEdRFiAtL43WbBHqgJdlpeaaL2axg0kQI47z1Mb_&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 1">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydivCaGQPpyFnjRwiC7lHv1EuvYMZJ5Kqlsn2GZb147M9QtwObKuTjc7EAWjWZZqqcYJbUdwOB0eRUm5OgU1ul_IuVDEljx8SIeXqd4oRP4Wil0KxxXvZeDL11jx_Zw73CKPQP2EPM5aqbyaLXypbjti-rSBkHaW8yzA_v3dk3Yt5HNskd8GUOiYXKMTjn3wTQ5iioNC6B5MWSk5sEiO0Md3e1BUWaAmrF2dekm_zT4IEy20bingMrYKEeKM2E2AOzsPKKP4Mjqsi7m6tQHfWNmLIymdaOmdgcw5AzsHlx8NFOkftb7wEnEBdU6yjwZ2-OyjEaCX5mfxAFAuUEIgQfszbUyvI-KfhJOLioZQzoQHq2b-7IGQiT4i1OziEzRWgpbqKbWh85S9BxGH8mXOoiqUKZkm_7EDalXZTHC-GbQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 2">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydg4DLRCg2_JaaUwx5bHSglUSCS2rhOgv5I9987JdkO8yBDsmYnLvtRCncpv28jAICnHLeOA_DIJ605SPub2lx-gOjxEmAlZbFSt3udHyNSHGFRqbssqtNbfMKfrju13P0IiKo8WHLiTwZcA_Q5Zd4bix875egFMjkT3sNe9JSsH1mG-U6CU1AyjAwPhu7a31e5yXW5BctW9hjzu6Sxm66b10v0itKs2vMKRgPJBmtdTyMfImYCbq3Gm7KrDEPnV_qGmlP4HeB5Djyo0FxGDpyHKZxwcR4lg_D2ecgg8CG4gWZ45_vMpeMm2cDNFDF-FAQfa2a1CHF55UNNY2hZ9y3a40nGFnbKJ4XCqLWrFH04Q-9PzWNXdDJMSj0Mf1OvSEuBUVbd834JaqCwB-5MlvnzjW_oJmKdFZ61eeZz-Cl8ZPJ2C&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 3">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydg-69jfy_US4PG9h16TL03bBmy9RbXZ-P_NiY_al5oMMVnlQgx1Qxec41l4Vn1uEwENfiGH9dS2Rd2WqZTfLb49vxBb1eQDUK5P68e4TJ7OG0qbBqzgl-X9saPrcA2H0RGeiD6J76BddcI6-udFjZfdkIUerezc6ZhIfGbeKRm7RYLIfPrjEslaOC8_AD0lbBeZWfEZXHRgKkF1Z1bX1_4kLaRkeeBHqmuTXwSwjysgDXZcN40mGLjZwP9sjfHZRH4Q397eC7Cw9_tdqUZwC_fk8aanECsG-PuKfwCWbINLKSt_AvblZlZViyJ_nvLcSOGH6DZmNc-9nz_5x-4xqHOQLqh88Ov6RAf8O66kfB3_vAX0-bnNSPgnJLxPCVANnG3qoN9l6HJ_pHQnb1nq7Kq9wmgLdwoEVHfPuXLxwK9L5rkg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Lavoro 4">
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Domande frequenti</span><h2>Le risposte per te</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item" open><summary>Serve prenotare?</summary><div class="a">Consigliamo la prenotazione per garantirti il momento migliore. Puoi chiamarci o scriverci su WhatsApp.</div></details>
+      <details class="faq-item"><summary>Fate una consulenza prima del taglio?</summary><div class="a">Sì, ogni servizio inizia con una breve consulenza per capire i tuoi desideri e la salute dei capelli.</div></details>
+      <details class="faq-item"><summary>Usate prodotti naturali?</summary><div class="a">Lavoriamo con linee professionali attente al rispetto di capelli e cuoio capelluto.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni</span><h2>Le nostre clienti</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Ambiente familiare e titolare solare, preparata e sa mettere a proprio agio. Ha tagliato i capelli anche a mio figlio, molto veloce e precisa. La consiglio."</p><b>Federica Leso</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Simpatica e bravissima con i bambini e molto onesta! Ottime acconciature da sposa e colori wow. Cheratina a prezzi super onesti!"</p><b>Lisa Gabriele</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Ambiente accogliente e simpatico. Non devo aspettare molto, sono veloci e il risultato finale è molto gradevole."</p><b>Daniela Curci</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci o scrivici su WhatsApp: troviamo insieme il momento giusto per te.</p>
+    <div class="btns">
+      <a href="tel:+390458550490" class="btn btn-light">📞 045 855 0490</a>
+      <a href="tel:+390458550490" class="btn btn-glass">Chiama ora</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Francy Crea</div><p>Parrucchiere a Buttapietra, in provincia di Verona. Salone di Francesca Bonizzato.</p></div>
+      <div><h4>Contatti</h4><p>Via Monte Carega 4, Buttapietra (VR)<br><a href="tel:+390458550490">045 855 0490</a></p></div>
+      <div><h4>Orari</h4><p>Mar–Ven 9:00–12:00 · 14:30–19:30<br>Sab 9:00–18:00 · Lun e Dom chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Francy Crea — Buttapietra (VR)</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390458550490" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>
