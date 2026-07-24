@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Creativity Studio — Parrucchiere a Bussolengo | Prenota</title>
+<meta name="description" content="Creativity Studio, parrucchiere a Bussolengo (VR): taglio, colore, meches, acconciature e trattamenti. 4,8★ su 65 recensioni Google. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --dark:#241d18; --dark2:#1b1510; --cream:#f3ece2; --cream2:#efe5d8; --card:#f7f1e8;
+  --ink:#2e2620; --sub:#8a7d6f; --red:#b02a1c; --red-d:#94210f; --line:#e4d9c9; --white:#fff;
+  --f:'Archivo',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--ink);background:var(--cream);line-height:1.65;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1280px;margin:0 auto;padding:0 34px}
+.display{font-weight:900;letter-spacing:-.02em;line-height:.92;text-transform:uppercase}
+.tag{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
+.tag b{background:var(--red);color:#fff;padding:3px 9px;border-radius:4px;font-weight:700}
+
+header{position:absolute;top:0;left:0;right:0;z-index:40}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:88px}
+.brand{display:flex;align-items:center;gap:9px;font-weight:800;font-size:1.25rem;letter-spacing:.02em;color:#f3ece2}
+.brand .mk{width:26px;height:26px;background:var(--red);border-radius:6px;display:inline-block;transform:rotate(45deg)}
+.hd-right{display:flex;align-items:center;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--f);font-weight:600;font-size:.9rem;padding:13px 22px;border-radius:8px;cursor:pointer;transition:.22s;border:1px solid transparent}
+.btn-white{background:#f3ece2;color:var(--ink)}
+.btn-white:hover{background:#fff}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-dark{background:rgba(255,255,255,.1);color:#f3ece2;border-color:rgba(255,255,255,.25)}
+.btn-dark:hover{background:rgba(255,255,255,.18)}
+.btn-ghost{background:transparent;color:var(--ink);border-color:var(--line)}
+.btn-ghost:hover{border-color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;background:var(--dark);color:#f3ece2;overflow:hidden;display:flex;align-items:center}
+.hero-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/3993462/pexels-photo-3993462.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(28,21,16,.92) 0%,rgba(28,21,16,.7) 42%,rgba(28,21,16,.25) 100%)}
+.hero-inner{position:relative;z-index:2;width:100%;padding-top:70px}
+.hero .tag{color:#e9dccb;margin-bottom:22px}
+.hero h1{font-size:clamp(3.4rem,10vw,8.5rem);margin-bottom:22px}
+.hero .sub{max-width:440px;color:rgba(243,236,226,.82);font-size:1.06rem;margin-bottom:30px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.float-card{position:absolute;left:34px;bottom:38px;z-index:3;display:flex;align-items:center;gap:16px;background:rgba(35,28,22,.72);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:14px;max-width:340px}
+.float-card img{width:66px;height:66px;border-radius:10px;object-fit:cover}
+.float-card h4{font-weight:800;text-transform:uppercase;font-size:1rem;color:#f3ece2;letter-spacing:.02em}
+.float-card p{font-size:.82rem;color:rgba(243,236,226,.7)}
+.float-card .plus{margin-left:auto;width:26px;height:26px;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;justify-content:center;font-size:.9rem}
+.dots{position:absolute;right:40px;bottom:52px;z-index:3;display:flex;gap:8px}
+.dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.35)}
+.dots i.on{background:#fff}
+
+/* Statement + gallery */
+.state{background:var(--cream);padding:100px 0 0;text-align:center}
+.rev-badge{display:inline-flex;flex-direction:column;align-items:center;margin-bottom:26px}
+.rev-badge .st{color:var(--red);letter-spacing:2px}
+.rev-badge small{font-size:.78rem;color:var(--sub);font-weight:500;margin-top:2px}
+.state h2{font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.9rem);line-height:1.12;max-width:920px;margin:0 auto 26px;color:var(--ink)}
+.gallery4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:60px}
+.gallery4 img{width:100%;height:440px;object-fit:cover}
+
+/* Services */
+.services{background:var(--cream2);padding:110px 0}
+.svc-top{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:56px}
+.svc-top .lab{color:var(--red);font-weight:700;letter-spacing:.14em;font-size:.78rem;text-transform:uppercase}
+.svc-top h2{font-size:clamp(3rem,7vw,6rem);margin:12px 0 10px}
+.svc-top p{color:var(--sub);max-width:420px}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:34px 30px 30px;position:relative;min-height:220px;transition:.25s}
+.svc:hover{transform:translateY(-6px);box-shadow:0 20px 44px rgba(46,38,32,.1)}
+.svc .no{font-weight:900;font-size:3rem;color:rgba(46,38,32,.12);line-height:1}
+.svc .ic{position:absolute;top:34px;right:30px;color:var(--red);font-size:1.6rem}
+.svc h3{font-weight:800;text-transform:uppercase;font-size:1.3rem;margin:44px 0 8px;letter-spacing:.01em}
+.svc p{color:var(--sub);font-size:.94rem}
+.svc-note{text-align:center;margin-top:32px;color:var(--sub)}
+
+/* Reviews */
+.reviews{background:var(--dark);color:#f3ece2;padding:110px 0}
+.reviews .svc-top h2{font-size:clamp(2.6rem,6vw,5rem)}
+.reviews .svc-top .lab{color:#e09b8f}
+.reviews .svc-top p{color:rgba(243,236,226,.6)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:16px;padding:30px}
+.rv .st{color:var(--red);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:rgba(243,236,226,.86);font-size:.96rem;margin-bottom:18px}
+.rv .who{display:flex;align-items:center;gap:12px}
+.rv img{width:42px;height:42px;border-radius:50%;object-fit:cover}
+.rv .who b{font-weight:700;font-size:.9rem}
+.rv .who span{display:block;font-size:.76rem;color:rgba(243,236,226,.55)}
+
+/* Contact / footer */
+.foot{background:var(--dark2);color:#f3ece2;padding:100px 0 34px}
+.foot-cta{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;padding-bottom:70px;border-bottom:1px solid rgba(255,255,255,.12)}
+.foot-cta h2{font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,6vw,5rem);line-height:.95}
+.foot-cta .lab{color:var(--red);font-weight:700;letter-spacing:.14em;font-size:.78rem;text-transform:uppercase;margin-bottom:10px}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:40px;padding:60px 0 40px}
+.foot-grid h4{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:rgba(243,236,226,.5);font-weight:600;margin-bottom:16px}
+.foot-grid p,.foot-grid a{color:rgba(243,236,226,.9);font-weight:400}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);font-size:.92rem;color:rgba(243,236,226,.75);gap:16px}
+.hours-list li.today{color:#fff;font-weight:600}
+.hours-list li.today .d{color:var(--red)}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.76rem;font-weight:600;padding:5px 12px;border-radius:40px;margin-bottom:14px}
+.open-badge.open{background:rgba(120,180,120,.2);color:#93d19a}
+.open-badge.closed{background:rgba(176,42,28,.22);color:#e79b8f}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.foot-bot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:14px;padding-top:24px;border-top:1px solid rgba(255,255,255,.12);font-size:.8rem;color:rgba(243,236,226,.5)}
+
+.mobile-bar{display:none}
+@media(max-width:960px){
+  .gallery4{grid-template-columns:repeat(2,1fr)}
+  .svc-grid,.rv-grid{grid-template-columns:1fr 1fr}
+  .svc-top,.foot-cta{flex-direction:column;align-items:flex-start}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hd-right .btn{display:none}
+}
+@media(max-width:560px){
+  .wrap{padding:0 20px}
+  .gallery4{grid-template-columns:1fr 1fr}
+  .gallery4 img{height:230px}
+  .svc-grid,.rv-grid,.foot-grid{grid-template-columns:1fr}
+  .hero h1{font-size:3.6rem}
+  .float-card{left:16px;right:16px;bottom:74px;max-width:none}
+  .dots{display:none}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:15px;font-weight:700;font-size:.82rem;text-transform:uppercase;color:#fff}
+  .mobile-bar .call{background:var(--dark)}
+  .mobile-bar .bk{background:var(--red)}
+  body{padding-bottom:50px}
+}
+@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#" class="brand"><span class="mk"></span>CREATIVITY STUDIO</a>
+    <div class="hd-right">
+      <a href="tel:+390456700715" class="btn btn-white">Prenota →</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="tag"><b>#01</b> Parrucchiere · Bussolengo</div>
+    <h1 class="display">Creativity<br>Studio</h1>
+    <p class="sub">Taglio, colore e acconciature su misura — studiati sul tuo viso, sul tuo capello e sullo stile che desideri davvero.</p>
+    <div class="hero-cta">
+      <a href="#servizi" class="btn btn-white">I servizi →</a>
+      <a href="#contatti" class="btn btn-dark">Contatti →</a>
+    </div>
+  </div>
+  <div class="float-card">
+    <img src="https://images.pexels.com/photos/3993456/pexels-photo-3993456.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Piega e colore">
+    <div>
+      <h4>Piega &amp; Colore</h4>
+      <p>Il servizio più richiesto · su appuntamento →</p>
+    </div>
+    <div class="plus">+</div>
+  </div>
+  <div class="dots"><i class="on"></i><i></i><i></i></div>
+</section>
+
+<section class="state">
+  <div class="wrap">
+    <div class="rev-badge"><span class="st">★★★★★</span><small>4,8 / 5 · 65 recensioni Google</small></div>
+    <h2>Mani esperte, prodotti di qualità e un salone dove ti senti subito a casa.</h2>
+    <a href="tel:+390456700715" class="btn btn-red">Prenota un appuntamento →</a>
+    <div class="gallery4">
+      <img loading="lazy" src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Lavoro capelli">
+      <img loading="lazy" src="https://images.pexels.com/photos/3992855/pexels-photo-3992855.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Colore">
+      <img loading="lazy" src="https://images.pexels.com/photos/3065209/pexels-photo-3065209.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Acconciatura">
+      <img loading="lazy" src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=700" alt="Salone">
+    </div>
+  </div>
+</section>
+
+<section class="services" id="servizi">
+  <div class="wrap">
+    <div class="svc-top">
+      <div>
+        <div class="lab">[ Servizi ]</div>
+        <h2 class="display">Servizi</h2>
+        <p>Ogni testa è unica: studiamo insieme il look che ti valorizza di più.</p>
+      </div>
+      <a href="tel:+390456700715" class="btn btn-red">Prenota →</a>
+    </div>
+    <div class="svc-grid">
+      <div class="svc"><div class="no">01</div><span class="ic">✂</span><h3>Taglio &amp; Piega</h3><p>Tagli personalizzati e pieghe che durano, pensati per la forma del tuo viso.</p></div>
+      <div class="svc"><div class="no">02</div><span class="ic">✦</span><h3>Colore &amp; Riflessi</h3><p>Colorazioni, meches e schiariture con prodotti delicati, risultati naturali e luminosi.</p></div>
+      <div class="svc"><div class="no">03</div><span class="ic">♛</span><h3>Acconciature Sposa</h3><p>Prove e acconciature per il tuo giorno speciale, per sentirti una vera principessa.</p></div>
+      <div class="svc"><div class="no">04</div><span class="ic">❋</span><h3>Trattamenti</h3><p>Trattamenti ristrutturanti e nutrienti per capelli forti, sani e pieni di vita.</p></div>
+      <div class="svc"><div class="no">05</div><span class="ic">✄</span><h3>Uomo &amp; Bambini</h3><p>Tagli per tutta la famiglia, con pazienza e simpatia anche per i più piccoli.</p></div>
+      <div class="svc"><div class="no">06</div><span class="ic">✚</span><h3>Consulenza</h3><p>Analisi del capello e consigli su misura per la cura anche a casa.</p></div>
+    </div>
+    <p class="svc-note">Prezzi onesti e trasparenti — chiamaci per il listino e per prenotare.</p>
+  </div>
+</section>
+
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="svc-top">
+      <div>
+        <div class="lab">[ Recensioni ]</div>
+        <h2 class="display">Dicono di noi</h2>
+        <p>4,8 stelle su 65 recensioni Google verificate.</p>
+      </div>
+    </div>
+    <div class="rv-grid">
+      <div class="rv">
+        <div class="st">★★★★★</div>
+        <p>“Sono state bravissime a farmi il toner biondo perlato e il trattamento. Sorridenti, professionali, prodotti ottimi e capelli setosi. Tornerò!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocKYZPC0FPjNxUab_ETwBd7kApfKgRmGFmITmWnEOMvhFEO5qQ=s128-c0x00000000-cc-rp-mo" alt="Veronica"><div><b>Nushin Y.</b><span>recensione Google</span></div></div>
+      </div>
+      <div class="rv">
+        <div class="st">★★★★★</div>
+        <p>“Taglio e colore per un battesimo: mi sono trovata molto bene! Dopo il nero siamo riusciti a ottenere un bel ramato con tanti riflessi. Molto soddisfatta.”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjXDqjipjbXDEVfR6Ex17SsDv0OkSOvQBDhTJX94eqyjVUXW-XsywA=s128-c0x00000000-cc-rp-mo-ba3" alt="Manuel"><div><b>Giusy Bossio</b><span>recensione Google</span></div></div>
+      </div>
+      <div class="rv">
+        <div class="st">★★★★★</div>
+        <p>“Vengo da Napoli e ci sono andata per un matrimonio: professionalità, accoglienza e pulizia. Mi hanno accontentata nei minimi dettagli. Grazie di cuore!”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocLOGzP9U04fQ6GRRAbhOV40jVUffHXYEKyHKz2YWv7XwIcA2A=s128-c0x00000000-cc-rp-mo" alt="Jessica"><div><b>Carmen Consalvi</b><span>recensione Google</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="foot" id="contatti">
+  <div class="wrap">
+    <div class="foot-cta">
+      <div>
+        <div class="lab">[ Prenota ]</div>
+        <h2 class="display">Il tuo prossimo<br>look ti aspetta</h2>
+      </div>
+      <a href="tel:+390456700715" class="btn btn-red">Prenota ora →</a>
+    </div>
+    <div class="foot-grid">
+      <div>
+        <h4>Orari</h4>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>09:00 – 17:00</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>09:00 – 12:30 · 14:30 – 19:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>09:00 – 19:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>09:00 – 12:30 · 14:30 – 19:00</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>08:30 – 17:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>08:30 – 17:00</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>Chiuso</span></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p style="margin-bottom:8px"><a href="tel:+390456700715">045 670 0715</a></p>
+        <p><a href="https://maps.google.com/?cid=3921381417259043545" target="_blank" rel="noopener">Via A. dall'Oca Bianca 1, 37012 Bussolengo (VR) →</a></p>
+      </div>
+      <div>
+        <h4>Salone</h4>
+        <p>Parrucchiere a Bussolengo (VR). Taglio, colore, meches, acconciature ed eventi, con prodotti di qualità e tanta cura.</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Creativity Studio · Bussolengo (VR)</span>
+      <span>Sito dimostrativo — HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mobile-bar">
+  <a href="tel:+390456700715" class="call">Chiama</a>
+  <a href="tel:+390456700715" class="bk">Prenota</a>
+</div>
+
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const periods={1:[900,1700],2:[900,1900],3:[900,1900],4:[900,1900],5:[830,1700],6:[830,1700],0:null};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const p=periods[day],badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+if(p&&hm>=p[0]&&hm<p[1]){badge.className='open-badge open';txt.textContent='Aperto ora';}
+else{badge.className='open-badge closed';txt.textContent='Chiuso ora';}
+</script>
+</body>
+</html>
