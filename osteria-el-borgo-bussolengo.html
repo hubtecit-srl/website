@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Osteria El Borgo — Ristorante a Bussolengo (VR) | Prenota</title>
+<meta name="description" content="Osteria El Borgo a Bussolengo (VR). Osteria e ristopub in stile rustico nel centro di Bussolengo. Piatti tipici veronesi, birre e accoglienza col… 4,6★ su 428 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414; --ink2:#3a3a3a; --sub:#7a756e; --line:#e7e3dc; --paper:#fbfaf7; --white:#fff;
+  --accent:#b3421f; --accent-d:#96361a; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.display{font-family:var(--h);font-weight:800;letter-spacing:-.02em;line-height:.98}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;color:var(--accent)}
+
+/* Header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:var(--h);font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
+header nav{display:flex;gap:30px}
+header nav a{font-family:var(--h);font-weight:600;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;font-size:.88rem;padding:12px 22px;border-radius:2px;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent);border-color:var(--accent)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.hd-cta{display:flex;gap:10px;align-items:center}
+.burger{display:none}
+
+/* Hero */
+.hero{padding:140px 0 0;text-align:center}
+.hero .kick{margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,7rem);margin:0 auto 26px;max-width:15ch}
+.hero .lead{font-size:1.12rem;color:var(--ink2);max-width:600px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:60px}
+.hero-img{width:100%;height:62vh;min-height:420px;object-fit:cover;background:var(--paper) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjxwNSTwV8tH0vqtCD0Rz3kEgt4pi6GVMykcXiruE6_ZCvNULSrnecl1F-XPQLLcnXbddEG4RE3MJ8PL4ggEA7E7amRExmApH0P_sABRqHeXavuesFEYRtLCm2eGWhBYXVRAnzEaEKF2-Ft9-p2Q0uyjlVy7VV0KlUWxt3MzKkaOCAwRZ2czlb9G9CmDsLqfSVao6yhiYMDF-Ypo9KKqHdLuMRdDST6sYjTJjRr5JiiCHYf7HnvzcDcUWc8TCeCt0RLBd-9ynpqi-shvW_2hlyExni-3rsWATf5YzjPt8oxb6QTOLPieReCv4gMCtHERoH69oY_28sDG4_suNvhFZ7ltG2YBC4noIYCHPoKJdFXR2EWa8V5J49p7hgagx3HcDc-rvwRkbqMojMmoSwXZq0SPHDf7RV27NhwNlFfM3gL-1E&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+
+/* Story */
+.story{padding:100px 0}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story-img{width:100%;height:520px;object-fit:cover;background:var(--paper) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjxwNSTwV8tH0vqtCD0Rz3kEgt4pi6GVMykcXiruE6_ZCvNULSrnecl1F-XPQLLcnXbddEG4RE3MJ8PL4ggEA7E7amRExmApH0P_sABRqHeXavuesFEYRtLCm2eGWhBYXVRAnzEaEKF2-Ft9-p2Q0uyjlVy7VV0KlUWxt3MzKkaOCAwRZ2czlb9G9CmDsLqfSVao6yhiYMDF-Ypo9KKqHdLuMRdDST6sYjTJjRr5JiiCHYf7HnvzcDcUWc8TCeCt0RLBd-9ynpqi-shvW_2hlyExni-3rsWATf5YzjPt8oxb6QTOLPieReCv4gMCtHERoH69oY_28sDG4_suNvhFZ7ltG2YBC4noIYCHPoKJdFXR2EWa8V5J49p7hgagx3HcDc-rvwRkbqMojMmoSwXZq0SPHDf7RV27NhwNlFfM3gL-1E&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.story-txt .kick{display:block;margin-bottom:16px}
+.story-txt h2{font-family:var(--h);font-weight:800;font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;margin-bottom:20px;letter-spacing:-.02em}
+.story-txt p{color:var(--ink2);margin-bottom:16px}
+
+/* Info band */
+.info{background:var(--ink);color:#fff;padding:70px 0}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.info-col h4{font-family:var(--h);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:#c9a999;margin-bottom:14px}
+.info-col p{color:rgba(255,255,255,.82);font-size:1rem;line-height:1.7}
+.info-col a{color:#fff;border-bottom:1px solid rgba(255,255,255,.3)}
+
+/* Menu */
+.menu{padding:100px 0}
+.menu-head{text-align:center;max-width:640px;margin:0 auto 60px}
+.menu-head h2{font-family:var(--h);font-weight:800;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:-.02em;margin:14px 0 12px}
+.menu-head p{color:var(--sub)}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:56px 72px}
+.menu-cat{margin-bottom:6px}
+.menu-cat h3{font-family:var(--h);font-weight:700;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:12px;margin-bottom:18px;border-bottom:2px solid var(--ink)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.dish:last-child{border-bottom:none}
+.dish .d-main h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish .d-main span{color:var(--sub);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;font-size:1.02rem;white-space:nowrap}
+
+/* Gallery */
+.gallery{padding:0 0 100px}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+
+/* Reviews */
+.reviews{background:var(--paper);padding:100px 0;text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:10px}
+.reviews>.wrap>h2{font-family:var(--h);font-weight:800;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:50px;letter-spacing:-.01em}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left}
+.rv{background:#fff;border:1px solid var(--line);padding:28px}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:16px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.92rem}
+
+/* Reserve / Footer */
+.reserve{padding:110px 0;text-align:center}
+.reserve h2{font-family:var(--h);font-weight:800;font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.02em;margin-bottom:16px}
+.reserve p{color:var(--ink2);max-width:520px;margin:0 auto 30px}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--ink);color:rgba(255,255,255,.75);padding:60px 0 40px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#c9a999;margin-bottom:14px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* Mobile sticky bar */
+.mbar{display:none}
+
+@media(max-width:860px){
+  .story-grid{grid-template-columns:1fr;gap:30px}
+  .story-img{height:340px}
+  .menu-cols{grid-template-columns:1fr;gap:40px}
+  .info-grid{grid-template-columns:1fr;gap:28px;text-align:center}
+  .rv-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-cta .btn-out{display:none}
+  .wrap{padding:0 20px}
+  .hero{padding:100px 0 0}
+  .hero-img{height:46vh;min-height:300px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:240px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;border-top:1px solid var(--line);background:#fff}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;font-size:.9rem;color:#fff}
+  .mbar .call{background:var(--ink)}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Osteria El Borgo</a>
+    <nav>
+      <a href="#storia">Storia</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+    <div class="hd-cta">
+      <a href="tel:+393471380815" class="btn btn-out">Chiama</a>
+      <a href="#prenota" class="btn btn-dark">Prenota</a>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap">
+    <span class="kick">Osteria · Bussolengo</span>
+    <h1 class="display">Osteria El Borgo</h1>
+    <p class="lead">Osteria e ristopub in stile rustico nel centro di Bussolengo. Piatti tipici veronesi, birre e accoglienza col sorriso.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-dark">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-out">Vedi il menù</a>
+    </div>
+  </div>
+  <img class="hero-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjxwNSTwV8tH0vqtCD0Rz3kEgt4pi6GVMykcXiruE6_ZCvNULSrnecl1F-XPQLLcnXbddEG4RE3MJ8PL4ggEA7E7amRExmApH0P_sABRqHeXavuesFEYRtLCm2eGWhBYXVRAnzEaEKF2-Ft9-p2Q0uyjlVy7VV0KlUWxt3MzKkaOCAwRZ2czlb9G9CmDsLqfSVao6yhiYMDF-Ypo9KKqHdLuMRdDST6sYjTJjRr5JiiCHYf7HnvzcDcUWc8TCeCt0RLBd-9ynpqi-shvW_2hlyExni-3rsWATf5YzjPt8oxb6QTOLPieReCv4gMCtHERoH69oY_28sDG4_suNvhFZ7ltG2YBC4noIYCHPoKJdFXR2EWa8V5J49p7hgagx3HcDc-rvwRkbqMojMmoSwXZq0SPHDf7RV27NhwNlFfM3gL-1E&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala del ristorante">
+</section>
+
+<section id="storia" class="story">
+  <div class="wrap story-grid">
+    <div class="story-img" role="img" aria-label="Piatto dello chef"></div>
+    <div class="story-txt">
+      <span class="kick">La nostra storia</span>
+      <h2>Cucina d'autore, ospitalità sincera</h2>
+      <p>Osteria El Borgo e una realta molto amata a Bussolengo: piatti generosi, materie prime scelte e un'accoglienza calorosa che i clienti premiano ogni giorno.</p>
+      <p>Una sala accogliente, un servizio attento e una carta dei vini pensata per accompagnare ogni portata: il posto giusto per una cena tra amici o un'occasione speciale.</p>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap info-grid">
+    <div class="info-col">
+      <h4>Dove siamo</h4>
+      <p>Via Borgolecco 7<br>37012 Bussolengo (VR)</p>
+      <p><a href="https://maps.google.com/?cid=5498894861519765741" target="_blank" rel="noopener">Indicazioni →</a></p>
+    </div>
+    <div class="info-col">
+      <h4>Orari</h4>
+      <p>Mar-Mer 10:00-15:00 · 17:30-24:00<br>Gio 08:30-15:00 · Ven-Sab fino a 24:00<br>Lunedi e domenica chiuso</p>
+    </div>
+    <div class="info-col">
+      <h4>Contatti</h4>
+      <p><a href="tel:+393471380815">347 138 0815</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">Il menù</span>
+      <h2>Cucina di stagione</h2>
+      <p>Una selezione della nostra proposta. La carta cambia con le stagioni e la disponibilità del mercato.</p>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><div class="d-main"><h5>Tartare di manzo</h5><span>Battuta al coltello, senape, tuorlo croccante</span></div><div class="price">14 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Baccalà mantecato</h5><span>Crostone di polenta, olio EVO</span></div><div class="price">12 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Flan di stagione</h5><span>Verdure dell'orto, fonduta leggera</span></div><div class="price">11 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><div class="d-main"><h5>Risotto all'Amarone</h5><span>Mantecato al Monte Veronese</span></div><div class="price">16 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Bigoli al torchio</h5><span>Ragù bianco d'anatra</span></div><div class="price">15 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Gnocchi di patate</h5><span>Burro, salvia, ricotta affumicata</span></div><div class="price">13 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Secondi</h3>
+        <div class="dish"><div class="d-main"><h5>Guancia di manzo brasata</h5><span>Purè affumicato, jus al vino rosso</span></div><div class="price">22 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Filetto di branzino</h5><span>Verdure croccanti, salsa agli agrumi</span></div><div class="price">24 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Tagliata di scottona</h5><span>Rucola, scaglie, riduzione balsamica</span></div><div class="price">26 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Vini &amp; Dolci</h3>
+        <div class="dish"><div class="d-main"><h5>Calice Valpolicella</h5><span>Selezione della casa</span></div><div class="price">6 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Calice Soave</h5><span>Selezione della casa</span></div><div class="price">6 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Tiramisù</h5><span>Ricetta della tradizione</span></div><div class="price">7 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galleria" class="gallery">
+  <div class="wrap gal-grid">
+    <img src="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Piatto 1">
+    <img src="https://images.pexels.com/photos/262918/pexels-photo-262918.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sala">
+    <img src="https://images.pexels.com/photos/1058277/pexels-photo-1058277.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Piatto 2">
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,6 su 428 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Posto veramente bello, rustico e anche se piccolo molto accogliente. Personale molto cordiale e disponibile, mangiare veramente buono. Da tornarci."</p><b>Andrea G.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Il cibo di ottima qualita e porzioni adeguate. Servizio ottimo, cordiale e veloce. Ambiente accogliente con caratteristiche familiari."</p><b>Alex V.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Accolti col sorriso, ottima accoglienza e molto gentili. Ambiente confortevole prevalentemente in legno. Cibo ottimo, prezzi onesti. Consigliato."</p><b>Mauro G.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="reserve">
+  <div class="wrap">
+    <span class="kick">Prenotazioni</span>
+    <h2>Prenota il tuo tavolo</h2>
+    <p>Siamo aperti dal martedì alla domenica. Per gruppi o eventi speciali, chiamaci: troveremo la soluzione migliore per voi.</p>
+    <div class="btns">
+      <a href="tel:+393471380815" class="btn btn-dark">Chiama 347 138 0815</a>
+      <a href="https://wa.me/393471380815?text=Buongiorno%2C%0ASono%20Laura%20di%20HubTec%2C%20azienda%20di%20Verona.%0A%0AHo%20notato%20che%20avete%20ottime%20recensioni%20ma%20nessun%20sito%20web%2C%20cosi%20ne%20ho%20gia%20preparato%20uno%20per%20voi%2C%20potete%20vederlo%20qui%3A%20https%3A//hubtecit-srl.github.io/website/osteria-el-borgo-bussolengo.html%0A%0ASe%20vi%20piace%2C%20lo%20attiviamo%20con%20soli%20200%E2%82%AC.%0A%0AIn%20piu%2C%20se%20volete%20gestirlo%20in%20autonomia%20%28cambiare%20testi%2C%20foto%2C%20orari%E2%80%A6%29%2C%20possiamo%20aggiungere%20un%20gestionale%20semplice%20a%20soli%20100%E2%82%AC.%0A%0AChiaramente%20lo%20possiamo%20modificare%20con%20logo%20e%20altri%20minimi%20dettagli%20vostri.%0A%0ANessun%20impegno%3A%20dateci%20un%27occhiata%20e%20fatemi%20sapere%20cosa%20ne%20pensate%21%0A%0ALaura%20Borin%20-%20HubTec" class="btn btn-out">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Osteria El Borgo</div>
+        <p>Osteria e ristopub a Bussolengo (VR).</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via Borgolecco 7, 37012 Bussolengo (VR)<br><a href="tel:+393471380815">347 138 0815</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Mar-Mer 10:00-15:00 · 17:30-24:00<br>Gio 08:30-15:00 · Ven-Sab fino a 24:00<br>Lunedi e domenica chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Osteria El Borgo — Bussolengo (VR)</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393471380815" class="call">Chiama</a>
+  <a href="https://wa.me/393471380815?text=Buongiorno%2C%0ASono%20Laura%20di%20HubTec%2C%20azienda%20di%20Verona.%0A%0AHo%20notato%20che%20avete%20ottime%20recensioni%20ma%20nessun%20sito%20web%2C%20cosi%20ne%20ho%20gia%20preparato%20uno%20per%20voi%2C%20potete%20vederlo%20qui%3A%20https%3A//hubtecit-srl.github.io/website/osteria-el-borgo-bussolengo.html%0A%0ASe%20vi%20piace%2C%20lo%20attiviamo%20con%20soli%20200%E2%82%AC.%0A%0AIn%20piu%2C%20se%20volete%20gestirlo%20in%20autonomia%20%28cambiare%20testi%2C%20foto%2C%20orari%E2%80%A6%29%2C%20possiamo%20aggiungere%20un%20gestionale%20semplice%20a%20soli%20100%E2%82%AC.%0A%0AChiaramente%20lo%20possiamo%20modificare%20con%20logo%20e%20altri%20minimi%20dettagli%20vostri.%0A%0ANessun%20impegno%3A%20dateci%20un%27occhiata%20e%20fatemi%20sapere%20cosa%20ne%20pensate%21%0A%0ALaura%20Borin%20-%20HubTec" class="wa">WhatsApp</a>
+</div>
+
+</body>
+</html>
