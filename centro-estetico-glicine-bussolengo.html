@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centro Estetico Glicine — Centro estetico &amp; SPA a Bussolengo | Prenota</title>
+<meta name="description" content="Centro Estetico Glicine a Bussolengo: trattamenti viso, massaggi, corpo e percorsi benessere. 4,8★ su 73 recensioni. Prenota il tuo momento di relax.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --teal:#01796f; --teal-d:#015d55; --dark:#12312d; --gold:#b89664; --ink:#20302d; --ink2:#556661; --sub:#8a978f;
+  --line:#e4e6df; --cream:#f5f2ea; --soft:#eef4f1; --white:#fff; --green:#25d366;
+  --h:'Antic Didone',Georgia,serif; --b:'Public Sans',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.26em;text-transform:uppercase;font-size:.72rem;color:var(--teal);font-weight:600}
+.serif{font-family:var(--h)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:600;font-size:.86rem;letter-spacing:.04em;padding:14px 28px;border-radius:4px;cursor:pointer;transition:.2s;border:1px solid var(--teal)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-teal:hover{background:var(--teal-d);border-color:var(--teal-d)}
+.btn-out{background:transparent;color:var(--teal)}
+.btn-out:hover{background:var(--teal);color:#fff}
+.btn-light{background:#fff;color:var(--teal);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.5)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{font-family:var(--h);font-size:1.5rem;letter-spacing:.02em}
+header nav{display:flex;gap:30px}
+header nav a{font-weight:500;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--teal)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydh_Yr2o2rGU-B4qVlVqXhcCwtGIncVWNncnMjGprAlSMMa8fSiLNZ8GDF8PvQAFGANUBUhtFUquCcSAOlkM-xiXo0QcsAjWLxzZCCdZsSKSAD6KKsNRavsyMm-Z7kXt_RnuxWQitHazaprtd0ArRtmIJtKcJPFVe8MTTNIA3U8OndGMhqdezHNtoB_uH0Zcn3aibSgNTt8zHw0xK0-BcCigs7o7FJSUQMF6f6fCr-1unCVELu-cF8p5w7TT5sX3l3xzc3brXgF5j9Mdm8F8Q3u36ZWNH6VV43bFFlvABPW0NgJyGeA8eG3E3T94YvlzZhfxmub-_ro31FJ_kSryPiuVPYb8PJtZprOuCfRbdN15dPdEIAruJE4bgDdJG2yB8yXQz2ByjNNXx7QLX8G1CczxhgTGf9R3JqkHbF-vX-M&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(18,49,45,.82),rgba(18,49,45,.45))}
+.hero-inner{position:relative;z-index:2;max-width:640px;padding-top:60px}
+.hero .kick{color:#a9d8cf;display:block;margin-bottom:20px}
+.hero h1{font-family:var(--h);font-size:clamp(2.8rem,7vw,5.4rem);line-height:1.02;margin-bottom:22px}
+.hero p{font-size:1.12rem;color:rgba(255,255,255,.9);max-width:500px;margin-bottom:32px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:100px 0;text-align:center;background:var(--cream)}
+.intro .kick{display:block;margin-bottom:16px}
+.intro h2{font-family:var(--h);font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.2;max-width:20ch;margin:0 auto 18px}
+.intro p{color:var(--ink2);max-width:600px;margin:0 auto}
+
+/* Services */
+.serv{padding:100px 0}
+.sec-h{text-align:center;max-width:620px;margin:0 auto 54px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.15}
+.serv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.serv-c{text-align:center;padding:34px 22px;border:1px solid var(--line);border-radius:6px;transition:.25s}
+.serv-c:hover{border-color:var(--teal);box-shadow:0 18px 40px rgba(1,121,111,.1);transform:translateY(-5px)}
+.serv-c .ic{width:64px;height:64px;margin:0 auto 16px;background:var(--soft);color:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.serv-c h3{font-family:var(--h);font-size:1.35rem;margin-bottom:8px}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+
+/* Split */
+.split{padding:0 0 100px}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split-img{width:100%;height:520px;object-fit:cover;border-radius:6px;background:var(--soft) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgKFFKUYsnttXKlrtbpCgW9NTW1uL4-tjR1x1PwoEOvTErHz5fgA-lNVnV6epj2rXcKNvkcuOBfk07GpkHgvcIR6YA40rB2GjHN7GkwLZ8qfcGYtT7D9uQ5qoRGqBw754nf5LnxI2YyTd5otdH_HM_oGt9gT-1WIZ1edDFcDyzFGIiBSJibukcEXhWakWxZ8280LFzrAKh15Chf6mHBc7pWdc4KBabdj30rfgMupQ4glZECvIOkV5c0wCO6fl9aIy7rkoSNkqYurhVCkEzC_b2cm4RpykANvmwgFaKNp0Yg-IWWqMy1nNKI8J3Yoxqj_hUYlszC1NssP-Qy7WKTIhLuEKC5E2mjlYh30LMDzFgCZ-bkGDx4I6xO-1iMh435hD7rpeeCHPwaLTHAIq4hk-gX6gV03JQ24qT0Nv1m5VFeThkB&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.split-txt .kick{display:block;margin-bottom:14px}
+.split-txt h2{font-family:var(--h);font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:18px;line-height:1.2}
+.split-txt p{color:var(--ink2);margin-bottom:14px}
+.split-list{list-style:none;margin-top:14px}
+.split-list li{display:flex;gap:12px;align-items:center;margin-bottom:11px;font-weight:500}
+.split-list .ck{width:26px;height:26px;flex:0 0 26px;background:var(--teal);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem}
+
+/* Pricing */
+.pricing{padding:100px 0;background:var(--cream)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.price-c{background:#fff;border:1px solid var(--line);border-radius:8px;padding:40px 30px;text-align:center;transition:.25s}
+.price-c.feat{background:var(--dark);color:#fff;border-color:var(--dark)}
+.price-c:hover{transform:translateY(-6px);box-shadow:0 22px 48px rgba(18,49,45,.12)}
+.price-c h3{font-family:var(--h);font-size:1.5rem;margin-bottom:6px}
+.price-c .amt{font-family:var(--h);font-size:2.6rem;color:var(--teal);margin:10px 0}
+.price-c.feat .amt{color:var(--gold)}
+.price-c ul{list-style:none;margin:18px 0 26px;text-align:left}
+.price-c li{padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem;color:var(--ink2)}
+.price-c.feat li{border-color:rgba(255,255,255,.14);color:rgba(255,255,255,.82)}
+
+/* Reviews */
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:var(--soft);border-radius:8px;padding:32px}
+.rv .st{color:var(--gold);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.1rem;color:var(--ink);margin-bottom:16px;line-height:1.5}
+.rv b{font-weight:600;font-size:.9rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/36436447/pexels-photo-36436447.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(18,49,45,.78)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--dark);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#a9d8cf;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .serv-grid{grid-template-columns:1fr 1fr}
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:340px}
+  .price-grid,.rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .serv-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:600;font-size:.9rem}
+  .mbar .call{color:var(--teal)}
+  .mbar .book{background:var(--teal);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Centro Estetico Glicine</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#centro">Il centro</a>
+      <a href="#prezzi">Listino</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap"><div class="hero-inner">
+    <span class="kick">Centro estetico &amp; Spa · Bussolengo</span>
+    <h1>Ritrova il tuo splendore naturale</h1>
+    <p>Trattamenti viso e corpo, massaggi e percorsi benessere in un'oasi di relax nel cuore di Bussolengo.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-light">Prenota un trattamento</a>
+      <a href="#servizi" class="btn btn-glass">Scopri i servizi</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <span class="kick">Benvenuta</span>
+    <h2>Il tuo momento di bellezza e benessere</h2>
+    <p>Da Centro Estetico Glicine ci prendiamo cura di te con trattamenti personalizzati, prodotti selezionati e mani esperte. Un luogo pensato per rigenerare corpo e mente.</p>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">I nostri servizi</span><h2>Trattamenti su misura per te</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div class="ic">🌿</div><h3>Trattamenti viso</h3><p>Pulizia, anti-age e luminosità per una pelle radiosa.</p></div>
+      <div class="serv-c"><div class="ic">💆‍♀️</div><h3>Massaggi</h3><p>Rilassanti, drenanti e decontratturanti su misura.</p></div>
+      <div class="serv-c"><div class="ic">✨</div><h3>Corpo</h3><p>Trattamenti corpo, scrub e rituali rassodanti.</p></div>
+      <div class="serv-c"><div class="ic">💅</div><h3>Mani &amp; piedi</h3><p>Manicure, pedicure e ricostruzione unghie.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="centro" class="split">
+  <div class="wrap split-grid">
+    <div class="split-img" role="img" aria-label="Il centro estetico"></div>
+    <div class="split-txt">
+      <span class="kick">Il centro</span>
+      <h2>Un'oasi di relax nel cuore della città</h2>
+      <p>Ambienti curati, atmosfera avvolgente e professioniste qualificate: tutto è pensato per farti staccare dalla routine e ritrovare l'equilibrio.</p>
+      <ul class="split-list">
+        <li><span class="ck">✓</span> Consulenza personalizzata gratuita</li>
+        <li><span class="ck">✓</span> Prodotti professionali di alta qualità</li>
+        <li><span class="ck">✓</span> Percorsi benessere e pacchetti su misura</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="prezzi" class="pricing">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Listino</span><h2>I nostri pacchetti</h2></div>
+    <div class="price-grid">
+      <div class="price-c"><h3>Viso Glow</h3><div class="amt">45€</div><ul><li>Pulizia profonda</li><li>Trattamento illuminante</li><li>Maschera personalizzata</li></ul><a href="#prenota" class="btn btn-out">Prenota</a></div>
+      <div class="price-c feat"><h3>Relax Total</h3><div class="amt">80€</div><ul><li>Massaggio 50 min</li><li>Trattamento viso</li><li>Percorso relax</li></ul><a href="#prenota" class="btn btn-light">Prenota</a></div>
+      <div class="price-c"><h3>Corpo &amp; Benessere</h3><div class="amt">60€</div><ul><li>Scrub corpo</li><li>Massaggio drenante</li><li>Idratazione finale</li></ul><a href="#prenota" class="btn btn-out">Prenota</a></div>
+    </div>
+    <p style="text-align:center;color:var(--sub);margin-top:22px;font-size:.9rem">I prezzi possono variare in base al trattamento. Chiedici un preventivo personalizzato.</p>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Recensioni · 4,8★ (73)</span><h2>Le nostre clienti</h2></div>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Vado da anni da Glicine ed è il centro estetico migliore di Bussolengo, ma ne ho provati molti e direi proprio in assoluto."</p><b>Siria Bassi</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Direi eccezionale per cortesia ,professionalità,prezzi e qualità dei prodotti,ogni persona a cui le consiglio (e ovviamente io in primis) siamo super soddisfatti Da andarci!"</p><b>Max Giacon</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Mariuccia ed Alice sono persone molto accoglienti attente e preparate. Andare da liro è sempre un piacere. Buono il rapporto qualità /prezzo in quanto utilizzano prodotti ottimi."</p><b>flò dompieri</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Regalati un momento di benessere</h2>
+    <p>Prenota il tuo trattamento: chiamaci o scrivici su WhatsApp, ti aspettiamo.</p>
+    <div class="btns">
+      <a href="tel:+393335990814" class="btn btn-light">📞 333 599 0814</a>
+      <a href="https://wa.me/393335990814" class="btn btn-glass">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Mappa" style="padding:0"><iframe title="Dove siamo" loading="lazy" style="width:100%;height:380px;border:0;display:block" src="https://www.google.com/maps?q=Via+Roma%2C+55A%2C+37012+Bussolengo+VR%2C+Italia&output=embed"></iframe></section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Centro Estetico Glicine</div><p>Centro estetico e spa nel cuore di Bussolengo.</p></div>
+      <div><h4>Contatti</h4><p>Via Roma, 55A, 37012 Bussolengo VR<br><a href="tel:+393335990814">333 599 0814</a></p></div>
+      <div><h4>Orari</h4><p>Mar–Sab 9:00–19:00<br>Lun e Dom chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Centro Estetico Glicine — Bussolengo</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393335990814" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>
