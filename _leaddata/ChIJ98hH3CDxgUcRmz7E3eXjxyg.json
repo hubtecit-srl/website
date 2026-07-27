@@ -1,0 +1,320 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "formatted_address" : "Località Porcino, 37013 Caprino Veronese VR, Italia",
+      "formatted_phone_number" : "045 726 5061",
+      "international_phone_number" : "+39 045 726 5061",
+      "name" : "Ristorante Cima 11",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 0,
+                  "time" : "1345"
+               },
+               "open" : 
+               {
+                  "day" : 0,
+                  "time" : "1230"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 0,
+                  "time" : "2130"
+               },
+               "open" : 
+               {
+                  "day" : 0,
+                  "time" : "1930"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "2130"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "1930"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "1345"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "1230"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "2130"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "1930"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1345"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "1230"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "2130"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "1930"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1345"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "1230"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "2130"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "1930"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 6,
+                  "time" : "1345"
+               },
+               "open" : 
+               {
+                  "day" : 6,
+                  "time" : "1230"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 6,
+                  "time" : "2130"
+               },
+               "open" : 
+               {
+                  "day" : 6,
+                  "time" : "1930"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "lunedì: Chiuso",
+            "martedì: 19:30–21:30",
+            "mercoledì: 12:30–13:45, 19:30–21:30",
+            "giovedì: 12:30–13:45, 19:30–21:30",
+            "venerdì: 12:30–13:45, 19:30–21:30",
+            "sabato: 12:30–13:45, 19:30–21:30",
+            "domenica: 12:30–13:45, 19:30–21:30"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 2268,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103204131910713475933\"\u003eMichele Grott\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjTUaDIThVnIP2919oP_NXn1_0OmULpBOyUwqZiozef6k0thI8pYiQ0pft-enWYS29frBWnXbIZ3IyzvxfENl18w0nXgr89w0_himltp1zzgcWnyzvfGw_KZZ0pOCpPLFOhU_eWYH-5-b1XCjJCjtC_xEfd0J9jFF5q3qmgI8RQFH7F6Obbr_5mYXL1oAQdcDoybp01FFp9ZJj6JxQ_pWqjT0vo_rhw8zsA_lM2Azk9vKLVsdQ5JMBKP6pJTTYHD3SUNcQHJgQxfHyPNzYksD5T4eNSm0UIOU217KPop2jYt433h9is8VbLn5Js9Pb_um4x_QnRF7uiBWxW4GJsRUYOL85m6mI__8WsYKJT6YS5PQwBRp6bLJXvdKgHcQcuPf9NcPePv2JyZGwRwXS6LQUWGNx1dVzItMw5YFt4lrOZRw",
+            "width" : 4032
+         },
+         {
+            "height" : 3401,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104802111713362975117\"\u003eGianfranco Cerasuolo\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhO6ui-4PRFcaMhOUL0usyGMyXVZktIWc6Wp9VnAzNJrlffoU-mppENhnGcVwX_vRvB0frtUrDPo_oQcCRGYq9z7PPoMmsSlgimTQX08P5mj93s8F670BMSIP10E2Hej8WVM747mOCDbb1kc9gvnag2rMIdi8-xM-E-LqoDQ6ZCrKes6xZr2wHe5LP_wzOKQFtHqSiYYHYsmedddxJuZEmzwZ0YsnACKwJfuqPkvxxYI_QnnH6bdxP9wr9Nz9w8PK9ZB_A2cp5LRlvMPlWNl6Yl8ZKjcwjjy1cAcedmbnhySRgvlSSk1bM17mbxBpnuO5JcDWQgBHN4Gxd_SXJJRlbKCjwsycW0Q9Xmz47Sk_nleqcD8RhpKcIeQqJqD5sT3CxkAKyOMt1J6pV5t0kFPxishAXrnYdnQJA3ARbpTHoK-XLU7GAXWPRAR9N5Rg",
+            "width" : 3051
+         },
+         {
+            "height" : 3072,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/109775181425700273696\"\u003efabrizio ferrari\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydivPMCujp8vztdda6drYpGqW1QaZiwyq4bNaLa1e-vXZMykDd-qPGrYpKx_e3_adbqjkygpOvvn_OjlsslrMA6ufCI99oZ9Eme4Wb5zpVt4XKAKEEnWFeiGR3Me-TvLhnLNU7FbTgloqVxnMcWgaxV0_46alwjZTX6cxijb8JObH7zWNnmZPz3jVOazOLAQQA5vFXciJETL5GUaqrgavJl5mOwe_IissqlAs12n2IvTqQOxx-L-nwa2Ia2ZiaYSxKTXkyEaEQ3FwPrqcp7NljSxRdnu32is1czhG0pkCA1lZiVVrDRh871L0YoqYT_1v35lbMLGKYM4oAgPgthKzZcgqaK2A9CZZrFXV2_J34Uk0VqECNbERfZUwqfDNjWb6I628kR1CFkvFmalrv5qAIQFyaiGgROjqpJKgVrWiGMdX8iq-Ggu-Qq7AqFnHqVq",
+            "width" : 4080
+         },
+         {
+            "height" : 4000,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/110506741868839782245\"\u003eAlbino Sambenati\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiOaV9mhWQwmjthlsC5rwDufRd4q22ZNBR1tQ4WLgfQ-F0PAv9f2BnF6XtT2FqLwshtxpy3WGa8i0DlF3cwJQrexGO2Kzjc4Wl3Q2Kbi-ktSddAi6mLWKkAwOkRF-QkThStdrBOBHwi-2yXmKk9y8k305Vrd8c89hqkq5rzT0PznwceygZnBfBo1OVk8KGeoXIvtX4JQA7xvUW9EDZsqksapXJv7fGneyouJwGfT21EKUuAyTxFechlJ1lbDxbNXHjS9J-4b-G8ooC6_9N7qrbv939m6KQrFFLwA66w8tfrwQjqdKZJIx5FEybSCBDtJOcK1Ya_mLkE12Nmhy8OXX87SCk-4WLCx2EhFGaT5u3U1dUuGm8wVBtZ1GIvmyNTp5bJ0DkpchjJ3OqYIbItLj14zjG6AbRinHfN2doIVeZ61VavxYFbfiP42pkufdtM",
+            "width" : 3000
+         },
+         {
+            "height" : 4000,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/110506741868839782245\"\u003eAlbino Sambenati\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgEEArgmFdvkqlZmcyLP_cNxHV0nd2RXzEwXuXiTCjgP973IQ6cQNRDKFQ523yFOGblCzpatTG6d7wsbVt_-3-FGwb46wtxctsbuDXoNm0Ti3akeiwCtlDfqcvJA4iMQgoztt0QKGnyCxiKL-q7MF4dmdDX_Ac-5_sT89daK4mfSgRmLS3Ek-I0umKO2duJHPtPqi-tTy-AFCUYyJhiLsl4WLmvQKQgCqiPUIKtoh2SJQXGolxF6Tzu1IKmTY6mO793weg1A_T7Y5Dh4bKGoiKQcPKlvImdfOdmzR2QXVkzmxmBV3UvannXEPp5f2lDudV0JpKFDM0q4SitgjagOkkLuBCpdY_MNsOoW9DiCkQeABQz35mfZjxptFDAinZn7EIApwEH2fMehKTu_JqNPBfJdVbRKjH5QEFU-z5kSqITznzzuh-uiSPaYICF1_bb",
+            "width" : 3000
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/107878604968770026398\"\u003eMirko S.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydg4QNm42-4b7Cdup-sSVVFJWbgS90oETBxBuSM4S4EsfuvPjfgTFUo9oRuleumYGeL7R1XWFIXfJdKhue2xGzQ6PV4X6GNyorecx8vHoX33f_YbPI25f4cXD-H6FgCfT3Xilu9Rs7xGn17UQK2YjpmljqIPhU2ZC1_SJrJDQacxlrWDTO2E2wLvxNqGGPFL2HG9kDI48E3pcRiry4oBtB6rWBsdJc0kEGc3gHhFXcp_1RW12dTJbMrOy9YnAYsP6Tz-cS8EPtsjj4oqv-hFPUCmecRfhmFOV0zhibfxo_hyWJtAdLITebv_hZQKScoPmmwYBlfSb1r3O0cJ2NxtWWaBLxWgL9hIfyBaWFJuUq41rtTQACj5mVTwmPe7fU0pA8q976KJPZwyT2Udy23hhqhM3ZbHcYZrofHR905mNeCuci0lUUwa-XbYQVMvDkHr",
+            "width" : 3024
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102081116947753315792\"\u003eNadine Finckbohner\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydipuwId660eZCn6ctZ62KHfI0MvNNo2ce1xXXzT6ko19-vtAjG-b1fkxNCX3S7IWN5-ozfDpZVbUlXudwHiFC_2JoCIa-RYK1SACR5BmC39KaEx98g86T7iL4m2jg0ndZaloFtxn0-ATv_7vnZNO1kGet7DcUdQ-eeFF0kTLTFKNKvtO8r6nsJlciZFI__1UZPINIMPcNwhiwSn9mwag4eJjnIvyWyqt1IqrvoejjWXUWYDxHgyTtsQGZ_me1ZrVlyPppEQopTYwsccfzHQVt7n_R1JA1JhDZ72pKld_NZImAHRoDiaJzBsCUxZg_UMm_Om7U4u3YmqtwkpNMaTppNgQs6MZJufqeKDU8DCglWtkulde_bJvbiu9e9XIbmPUOVum1yURV28kY_6lIX8QRb4AOKfXJ17opqq1QyB8UVxHA",
+            "width" : 4032
+         },
+         {
+            "height" : 4800,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117618457644679048939\"\u003eFouzia Hamrlahia\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiTU7c4Xw2sIm97Ps6xIFTgkTWdAmSvbSW9ImZJwRTw7Wpv9VS5Xp9ilzzHpx3WmEdwMphRT2wSfn0ErvX7Gpi2uruedL0CHyA-MJwm26XH-a8J9Jy9aki7yPJQBpDT4zFZjeyS7e9JePWkBzJ-s_gdz0Puhjx6hIZ966_MtpZAy4I0JXEu6sS6WYFWtF1GhiBi1BTA_3oBraif-wezTIcJw-lS9I-1qW_5QC_apSAsZi7EpgeJYnL_7kErHhBH68G7ULpot2ewrdRZgG5hh6w9QIPFTXwqows4z73mjAYqaYqLcu-EjA3wCaoo9m7tbYMU6YujEPN5aeOIpazU_upSgzvk7vNGRz9P6JWnG4ec5BiGY6ZhHLgcInBN-K0vXgNwbwH6ufA-9Rqgflv828EhwChIBM5X3pt1xkMaJPbmiwIxeXslLizfa5iThA",
+            "width" : 3600
+         },
+         {
+            "height" : 4080,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/114254547471824403785\"\u003eDrago Pavo\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgAjsoMmc-6Wsj2dIeaZPfkq3WkUWjLW27UOuHXZupRZXo8rakTiemM2rXAB-w6gXL_qmqYiefUOI4LWAKeBBiPGC_ST7mT76hchGkyfla8eYOineqHCho7dKraBezWzUrW55IYD_EDa8XrBuGWhgAUmQTbqs8QKz9ARFVjIHX8W7suk3WMqJEQrv35AHq0SLI5B4_sdXojuZNX6OHQh3SpkC5vU2NU7JYFHU8HBGjFT3T6tEVUpoo5jDo6wITHNbq6oWzwoJGI1IjAYUPV6UhaidqOa9KNBmQXBAsTw3vrUiIRNe369qamKpojo0anSj76anXsCyleinQ0BjO37u59B8YS1S2w3tlJVX60IRuQrN7Ik-5GbSr2WtcPUlDN8QFpJloKXOaWgckLKMmzx4pJ3f9pM0xc8ib-FAnSwVZnRoX5",
+            "width" : 2304
+         },
+         {
+            "height" : 3468,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101315400534226557251\"\u003eGiovanni Bonoli\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhzgnOj6_PJi30vWt50ANGCspNZVpFkqwF_MnuJ3O9sQZgXoT2323khNRoqjlWawlSB54RpxoeisGN_DHaqKR2x_QNeLiB7aaPWz6FEZyXeZk4uE0_7wTxYfD1mYJOpnE0T4kNp3c-NFOmxFELYW3OrLXpbXLDB-KRjWiKHHZLic850wNwpytPRdwWkNB6Rp-ZzA6v3u_YxJrgNhvbGsFbN8-JXY1_4bZVoy5hitPBwk3DoNB4c9fIkgbjSOEkS2RMHnkUKWUS1pUk8kC2_XB1a_BXvFtNImwtHCGSU6BcamB_yzqXNq3Lvv-7g9pwfyD_uyeeLgnJeLMn5ZEBJTbc_wmGXHOfGGV-pF8cQeIYKOSLSvZ6GScU2hHyimA7ul_namKVwxDCed4cyoyVB4P0kN1GnJYrKPGpGOvwWK4ChaJis3ZFVIBIy-8YDdQ",
+            "width" : 4624
+         }
+      ],
+      "price_level" : 3,
+      "rating" : 4.6,
+      "reviews" : 
+      [
+         {
+            "author_name" : "Giorgia Rinaldi",
+            "author_url" : "https://www.google.com/maps/contrib/114350562414434522170/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjVq8g3-Fp0hmx3zIM6qkUhqQB5ES3SWf4B1inLAN2xoB0fwm6M5=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating" : 4,
+            "relative_time_description" : "2 mesi fa",
+            "text" : "Cibo davvero ottimo, si sente la qualità. Il ristorante è molto bello, sia all’esterno che nella sala. Noi eravamo in una zona di passaggio, quindi non l’abbiamo vissuto al massimo. L’atmosfera era un po’ rumorosa  per la presenza di una famiglia con bambini davvero vivaci, ma nel complesso l’esperienza è stata positiva. Unica nota: il servizio di contorni e dolci con i carrelli può non essere comodissimo.",
+            "time" : 1777705308,
+            "translated" : false
+         },
+         {
+            "author_name" : "Francesca Facchinetti",
+            "author_url" : "https://www.google.com/maps/contrib/102295429145148033921/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjUhYLOEsa4TPnsdfEXV79jecKV4gN8uPsbxvc6EsepEXtaAHzfc=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating" : 5,
+            "relative_time_description" : "6 mesi fa",
+            "text" : "Il cibo é eccellente e il personale a conduzione familiare ti fa sentire come a casa. Nel periodo natalizio l’ambiente é bellissimo, molto caldo e accogliente. Da sempre una dei miei ristoranti preferiti.",
+            "time" : 1767129814,
+            "translated" : false
+         },
+         {
+            "author_name" : "Fouzia Hamrlahia",
+            "author_url" : "https://www.google.com/maps/contrib/117618457644679048939/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjXgCFpjIWZtz2PpeZJ65hhPus8Vhfltc6OwZX95M0UzpJq7Mro8Jw=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "5 mesi fa",
+            "text" : "Cima 11 ci ha rubato il cuore. L’ambiente è meraviglioso, uno dei più belli mai visitati in provincia. Abbiamo mangiato benissimo: dall'antipasto della casa ai primi piatti (risotto e capriolo super!), ogni portata era un’esplosione di gusto.\nRapporto qualità-prezzo incredibile: abbiamo pagato 130€ in tre persone e siamo rimasti stupiti dall'onestà del conto rispetto all'altissimo livello della cucina. Grazie a tutto lo staff per averci regalato una serata perfetta. Torneremo senza dubbio!\"",
+            "time" : 1770153283,
+            "translated" : false
+         },
+         {
+            "author_name" : "Il sogno sta arrivando",
+            "author_url" : "https://www.google.com/maps/contrib/104335605333170560989/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjU8tLXOAp6qZIeGL2aY177JX9TOVmAjdaFuAln1l4iBMbq7MrWG=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating" : 4,
+            "relative_time_description" : "4 mesi fa",
+            "text" : "Ambiente molto carino e ricercato sia l'interno che l'esterno.\nottima la qualità dei prodotti, prezzo in linea con la qualità.\nVarietà di scelta per i funghi\nA chi piacciono si trovano anche le lumache",
+            "time" : 1773255444,
+            "translated" : false
+         },
+         {
+            "author_name" : "Marco golfre",
+            "author_url" : "https://www.google.com/maps/contrib/103496965451267170276/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjV8ONKCgQLsnpga1UG4qhmz6zQFtrfaL4sH6pnTI1m2i6nh-FAi1w=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating" : 5,
+            "relative_time_description" : "5 mesi fa",
+            "text" : "Da tempo desideravamo provare questo ristorante e vedere la sua favolosa location.\nCi siamo stati proprio per San Valentino cena il 14 febbraio. Ci siamo fatti presenti la mattina apprezzando immediatamente il buon gusto di come è stato preparata la parte esterna così graziosa del ristorante e siamo rimasti subito catturati dai profumi provenienti dalla cucina, un ottimo biglietto da visita. Purtroppo ci aveva accolto una giornata piovosa, ma quando uscì il sole abbiamo subito apprezzato il posto, i suoi panorami e un'aria frizzantina e pulita a cui non siamo purtroppo più abituati.  Abbiamo conosciuto subito una gentile signora  anche lei proprietaria con la sua famiglia, Margherita dedita soprattutto alla cucina, eravamo già a nostro agio con lei come se l'avessimo conosciuta da sempre.  Ci ha dato il benvenuto anche la simpatica sorella e un po’ tutto il preparato e carino personale.\nA cena abbiamo scelto tagliatelle con il tartufo di monte Baldo e tagliatelle con funghi porcini, poi come secondo carne salà di manzo cotta e cruda e tagliata di manzo con tartufo. A seguire contorni misti di stagione dolce, amaro, il tutto accompagnato da acqua ed un ottimo cabernet sfuso. Ebbene, tutto è stato stupendamente eccellente e lo possiamo consigliare a tutti, Ci torneremo anche con la bella stagione, è una promessa perché ne vale veramente la pena, anche per rivedere panorami verso il monte Baldo , la cucina e ritrovare le simpaticissime signore e tutta la famiglia dedita al ristorante.\nMarco Golfrè Andreasi\nMara Silvestri\nCasale sul Sile  Treviso\n14 febbraio 2026",
+            "time" : 1771343954,
+            "translated" : false
+         }
+      ],
+      "url" : "https://maps.google.com/?cid=2938567858290179739",
+      "user_ratings_total" : 1425
+   },
+   "status" : "OK"
+}

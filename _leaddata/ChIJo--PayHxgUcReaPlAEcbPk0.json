@@ -1,0 +1,272 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "formatted_address" : "Via G. Mazzini, 29, 37013 Caprino Veronese VR, Italia",
+      "formatted_phone_number" : "045 623 0016",
+      "international_phone_number" : "+39 045 623 0016",
+      "name" : "Ostaria de cavrin",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 0,
+                  "time" : "2200"
+               },
+               "open" : 
+               {
+                  "day" : 0,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "2200"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "2200"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 3,
+                  "time" : "2200"
+               },
+               "open" : 
+               {
+                  "day" : 3,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "2200"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "2200"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 6,
+                  "time" : "2230"
+               },
+               "open" : 
+               {
+                  "day" : 6,
+                  "time" : "1900"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "lunedì: 19:00–22:00",
+            "martedì: 19:00–22:00",
+            "mercoledì: 19:00–22:00",
+            "giovedì: 19:00–22:00",
+            "venerdì: 19:00–22:00",
+            "sabato: 19:00–22:30",
+            "domenica: 19:00–22:00"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 3200,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/104948054133682109294\"\u003eGiuliano\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjERabLIbyyu9x_f-ks0PHuaTFQz5jo-NvFWKGmZ4ss2bCl4WSe15ZHBUHcQyyqE07yC_3C5JtFaobHaGc5FoWKjoOJXe2Zic219OSc2vq2c09GSG9vTlHr74UQ0IPi0v372XzWrRXVUgEh6kWUgSBlNZtICfOQekhgibuDQtdFsMtfP7G835AeiAt5oPSfrqJlE099eZMh9mJQ3KUIv-TAjpVMibPWd9t1dIfcND3q-zpYHv1KnCo2G3YAO3uMMKh_os1k0Tr2e8-zimMPVIVqo-1dsZ8hPY9vFjohRt1zwl78TzbBn7YAPY4m42glvleRfhtueoFVy0PiiLpSnhVx5aF93v_Lrcne4tIhfMQL7AK2Ee3Motn3fbe342AfwYHp4KVNKd_pnNgI3WjangZp40F1Yo6mn5f_-KcomsYZ7ekE",
+            "width" : 4800
+         },
+         {
+            "height" : 3060,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103527562456371059719\"\u003eFoodTrip Go\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhhnyMSH5axLhM7FL7IEj_7xDcKHGP3y7W1N_xVqfMdP4IRm03XlEHs8kiPib9ZerHhXHAdTKuoQEjqWNcj7vwqrn-IztUrIe3-oNVkADGUL7dcvkGXuoACfk8UNy5faK7EyVNaXpsR1kr6dDn0MvK-pAHLkeBiIkxdsFO5Vs8ERyDLo8ZI2wmusWBerkHYQDms6nK0Yrdab1Hd7K6Gb7ra7UjbI1jErpFtTIaW9xjoaSxRynLp6RMBl60nrLAFh8Y07sQvr2dyyHmtlo3G5F03wnxxe8wkl9M6HWbQ0iYIxLBRBO1Iuw9suGmN_dsLsawjjIeHbFVSpFIdBGkDtny-ZkS66eggsRPIzNhvfYg8W9yP0pJEIKLniZhs_Zn4F9zPu0dzaBxR_ACRPkcMauY9So6XajeJMuMgAJ8nctCmljrgiv7cX5EkwxKhwg",
+            "width" : 4080
+         },
+         {
+            "height" : 3328,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/102144021860494146043\"\u003eanja rajgl\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgTx3Awa3cgq29BTK7sasYwOi6JbxsikwD50dM3I5YECWIP79M9HOfRMNPhuBHonFdzQZfxV4qFlyZ5SjflZMCMswGby3UMdLU3HJpPgyHPpmh3X100ssi1FuwJJA1q085iNVbxSs9r8NwjytIbsqxSIVphXx1w68bF1eWG9lC7pZITO5NWn2eE_tlIhgI6iuvfZmZQZ7xm6Vst1hfjr49GpK4WGr57qSPPeYZaiYilpXbmerbE0vPeKIM4BF_Hl2MLYjEpOPfaHKQI5SedkuqTob92j0JYaw5LIPSkSWZRF7ez7i3-_83mXD_jG4cG7RBh2nhXoYl8uM962-21MSVrwgU3JIYtXI53H88EZ2PMFyEHy4_zBufWn0-E6pUgsywRY3YJyYwDwogCJIKz1jvdZ9IXRV94Shno-q97oS8JWEKqqjxDXXwSJSVk5A",
+            "width" : 3000
+         },
+         {
+            "height" : 1024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/111717011294449628487\"\u003eKerstin F\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjv58KvbJICN-RgzeeENriHgPMpczeUttynGqK4zdkjlQij791-EVcwgC8s0l9iUKwTKSincBTCIJLAyGT3UdhON-NHMKbn3mTdFG53O3ncde7N2w18c2XiwFb_EtrPcTrtFP68JJTivZOveiR42tD_mkpPVfWLS7m-izxzHyzEEg8qJxrwewx8a9VHoD-ZVUlhQrQvqzf41rYUGh_s1Da6AUnQ8vbycgXIjaQqtdxwrOce_SKWApuOSIntlPF9OnguP6-8SsJy3BzH3N1sP4wKIR-QGt8fg8L3fRmrJaoNi1nGGkXmpdv2f-Y-503U8t2srRflKgQ5RiFQWCnWB4gxByhoZz82ylF9ilkBsu9Fxnu9DUUgFcIfY6XkBasiGQIHrVTIELE49HRVNYBdwJftFayReIMNJcas4_4q-A_z4GUz",
+            "width" : 768
+         },
+         {
+            "height" : 3264,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103497295423595385144\"\u003eSabrina K.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydixmRCy5JH2U_3WiKSlhDqzzitb0GuJ16niUUgeiExqRqE_dG6dL0e27fGjtXdpO4W2B_fCeWgsMPtAW5MuOBEatyfwwCLy0kPWxJrBmia14r4BQvNFDYsOQpleXC5PTBb86O_lekVAaajz7pbOEyLnxd_jjz_y5am2SBFydcS5xtquqs6ft4A8be0g1RP2yLHWid5P4YHy3uJH6QU0UakIOXWWoVwFPrLZBzhcOaeyc0fYvmV6hvuqfImGkB0hup0KWqz2RLpdlOvJ1V8_wVJByc9w0oJy5FMh2q0njYCZVTmysqZ_ltMCaRHd3B7p9kregEhcUlWm8QIDrdhSvvF7EYvesiyumTgnfzsQk3kx2J_zJLqKoe9PNtDD6mgMWHboqEYYv-SJ-z4WOznbMKNfRXYxLrtIaXIcyoaHKA_WddXd6u8IZdQ_QtxAtPcE",
+            "width" : 2448
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108626270095705082080\"\u003eMario Italiano\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgYxwuYay88tRGx9C22qPKbiXfImtZUrZchNRr-QlVOdWN5SA1eBgO2-ydSKiN3vrg1kxN1CaVCEXCrMvUNJiO2_NJsm1dOA6i7F5I59cz94IfuPpRnzkS4Jrtt8C4v2MfWfjVZr6sFyFgDN6IVsmx4zlWfQpu-p2DzF3SBWEGyty3x6SDokyrMkxaB_ShVWs7UfQv91OYYyd253STT4nE_cqEMyA_y6MsdHKO4bL-NOCZ8yMjLpnw-j-wh8cLutSfMALIqxDTE7NZ0Lo4NGj1P7C-tP--8c_T5biR-ZAIrAFMniuHvGKgp-FFNLRU5fQ7ROL4Ttr5q9jN5UEyozO4IvKyv5pSRtyqgf3Em7mWGLE3MHlsyKHGBzUBaJvm1hym14yd15Qq4huUrnVMwNoZxc4N8FLYgr-1XaGzzkwwt7Q",
+            "width" : 3024
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108626270095705082080\"\u003eMario Italiano\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgciIttbp8c0dG-bZ0BBWHeJ75AzsLuzegsJVGapLoHhVSznB_1ptFT1SwXRxWi1rLefKe1UI6NQtYynwTl49fKSk5Z8xYkRbO_cYfDCR3_F4iM2hFQjiZy1nOOBufpw9E74f6bub8wmRyOlF6CnFD8N9Vt9gxNI3OynbRo2Iuau4JSfdipaiWRTLWfojG0F9GUdGnNZ5sV8jnAKz04NmBff32Cum0EBbbXK2Zvor461HNss8poJgF_xDhPgfP1vC5W4JvzNYp9H6PoJ1xV_DqAz7W1CJViN-jG2_cac0MBXqApZC3JIFyynZzsl1oBmS4VChy0TUG6Mb85Vbrdr5v222xrh5J4IdgnybYm07XTaQikPCzrYWFpCYQCI6K6aVH330Hm_L6qghgheczKr9iJd0NyySLLg-oNvkQmoxgHYA",
+            "width" : 3024
+         },
+         {
+            "height" : 4152,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103497295423595385144\"\u003eSabrina K.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydh2Nh0ISSewtD7QMU-Q2OFk1N6b4-qdJum8E_4ElVxnNtEVOIicCoQePaz_O8pYuYyT9iOgPxGYW3-nZ2Qy-rvF_h9yrcV3XU0lYuj5bU-Xbt9lzzAe5gIr4jc1XrVtOx2FLgBa_zYOD2NVZQ0jr5Uwq2YQDf48bHuKr3lZ2v-KenBqEljjIaJZflVHr35fLL_ecAQWWDsJq5PAnkvrjJ8n__zHrE3ORVM9QL2aMfYAEmiFmWpgAYxBv8hvv-caSqrW26FW55jlT0CO2L0dz0dQnGNGTiigYOjTCevpge8VyqrVuzjFBgyJMQQ7ASAZoG1TGd_LahtGeu5Hm5F5-gnJv4TpeVhQffTx8No1T_5uSqLnLKOBJLeDnLLoizq4tGXygAYyALRUpLyMKUpdiMhTY_73HVK4BNAUFBLkf3RS_UAU_PFyqOEKWwwv9Tk-",
+            "width" : 3464
+         },
+         {
+            "height" : 1920,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117755437490259806785\"\u003eSebastiano Stimatini\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydj72IrLbScIpEuQwAo6yQfgMogr4LgMSu4m3cnR0eH5ouV8aBAxApyB9ECxYyrMt3TrHq74VyAA9d25GmIPYXcwPe5Ay8UTu-JmrR5PABVBIaTuTY99kxFspD1qbF3g8wRX5OvwA-lHgjYlHOcBLEadCOC-8ENobQFZrGI5MXRtjAsHfN7oEP3RwQds5erEfD-bVK7qRrewFDJL2jWgxAaAocvJS-Cz-1SVJQm5mzALJDFS98Iukfdxu_pRCog3R1aY7NokM1WLBeTxH1Z7pFh7rY6xv8m4Q7CLDiB2HyVbXBs_ESsuV92k4FFvz0uJnXQLedpLSsvg_MI01FUxGcOAWBPHqFdpRAbAIQ3ORAsIOZUDvuT0jdsqZXKl8gPbiN0GLm4VARbIXFJHykdxSF14mA7hSsxHJYQrOm9LNaK2Hw",
+            "width" : 1080
+         },
+         {
+            "height" : 4000,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116470505628579965582\"\u003eSamuel Hammer\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydg4soBnKb4DUXyzS2tWcmjX7Kq7ZXr8tbqPOP9HPU1xW928nsUOR9ynIl8h0iTjReBiAmTjDTIU_LI8TtIZTQ0oT192_03mDv5V8MtRo_JMWqKOI6-8sFEvET939WXgC3duo5kHleULSh2mjC5kIrNLT7BGJlaL1fpERnpik2G09XFxYL_U03p6jA2MOZPl_NPOmXBHqVyXuhx0nXh9ELEMbuNrvqVOkGEMrDAd33W_7UXp4S02vlv00WF4A1WdP2v3lyRYrGSutK8B9GMXAVUUxPsq0ba6sdd-YinpApUoPcAn0Bb1Sub9VIjqFiFfyqT6lR2bZgeNzVw2OqfPLdmXPnN-s_kZcRSxNccy0xcsKcWhunAqFpPS_LkpaUKhoItBtSVCC92XFC8ivrIxcuvXrUo7NuibqNLOGKPAken2zg",
+            "width" : 3000
+         }
+      ],
+      "price_level" : 2,
+      "rating" : 4.8,
+      "reviews" : 
+      [
+         {
+            "author_name" : "FoodTrip Go",
+            "author_url" : "https://www.google.com/maps/contrib/103527562456371059719/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjWnEosvM4NA5LxZ1K9LtzOekCn5_iHvpKAi_2PbwsnMlKCVq3vQ=s128-c0x00000000-cc-rp-mo-ba7",
+            "rating" : 5,
+            "relative_time_description" : "7 mesi fa",
+            "text" : "Se cercate una cena che unisca tradizione veneta e cura estrema dei dettagli, l’Ostaria de Cavrin non delude.\n\nAbbiamo provato faraona, selezione di formaggi e millefoglie, accompagnati da un Amarone eccellente che esalta ogni sapore. La cucina rivisita i piatti tipici senza snaturarli, con attenzione alla qualità degli ingredienti e alla presentazione. Il personale è accogliente, professionale e sa guidare con competenza nella scelta dei vini.\n\nPerché tornare: esperienza gastronomica autentica, perfetta combinazione di sapori e vini selezionati, atmosfera calda e curata.\n\n💡 Consiglio: ideale per una cena raffinata dopo una giornata sul Lago di Garda o una passeggiata nei dintorni di Caprino Veronese.\n\n🍷 Non perdete l’occasione di assaggiare i piatti tipici con abbinamenti di vino impeccabili. Venite a scoprire il gusto autentico della tradizione veneta!",
+            "time" : 1765213741,
+            "translated" : false
+         },
+         {
+            "author_name" : "Franco Pelloni",
+            "author_url" : "https://www.google.com/maps/contrib/100707972611450921618/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjUp4mhRhfZGYjLyRns-9Y60-khRoegdi-vSJFDABe60KK5GAthm0g=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating" : 5,
+            "relative_time_description" : "2 mesi fa",
+            "text" : "Locale scelto per caso, dopo un trekking di 7 ore. Servizio impeccabile. Cordiali e simpatici. Ottime tutte le portate scelte.\nCe lo ricorderemo!",
+            "time" : 1777700693,
+            "translated" : false
+         },
+         {
+            "author_name" : "Sharden",
+            "author_url" : "https://www.google.com/maps/contrib/110981540476214449014/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjXVX6yXurbQN251W-Dde6GI5qKvdImXrNShRvT63OFrAQWy5kY=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating" : 5,
+            "relative_time_description" : "9 mesi fa",
+            "text" : "mangiato veramente bene. ingredienti di qualità eccezionale, preparazione professionalissima, gentilezza infinita.\nsiamo stati benissimo, eravamo tre ragazzi ventenni.",
+            "time" : 1759608576,
+            "translated" : false
+         },
+         {
+            "author_name" : "Andrea Rizzo",
+            "author_url" : "https://www.google.com/maps/contrib/103321600828618418339/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocIzDIRJmRa6hPRGIPWHA9DGjnipglj_FCLhg2M-_VDuOqs2ZA=s128-c0x00000000-cc-rp-mo-ba3",
+            "rating" : 5,
+            "relative_time_description" : "un mese fa",
+            "text" : "Petto d'anatra fenomenale\nOttimi i vini\nDeliziosa la sbrisolona\nIl tutto in un cortile molto accogliente",
+            "time" : 1781096344,
+            "translated" : false
+         },
+         {
+            "author_name" : "Francesca Cargnoni",
+            "author_url" : "https://www.google.com/maps/contrib/107585253555850294395/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjXxh2AahG9NVW-6rPqSqTEU4CwsVAYoM-G84g1FWmow9rO2W1e71g=s128-c0x00000000-cc-rp-mo",
+            "rating" : 5,
+            "relative_time_description" : "3 anni fa",
+            "text" : "Abitiamo da qualche anno a Caprino e abbiamo scoperto solo ieri sera questo stupendo e accogliente locale in centro a Caprino Veronese. Ottima la qualità del risotto e dall'antipasto.  Vino buono e prezzo onesto in rapporto ai piatti proposti.\nIl cameriere che ci ha serviti è davvero professionale e cordiale, come la sua collega. Consigliatissimo! Torneremo!",
+            "time" : 1682925613,
+            "translated" : false
+         }
+      ],
+      "url" : "https://maps.google.com/?cid=5565916181248189305",
+      "user_ratings_total" : 70
+   },
+   "status" : "OK"
+}

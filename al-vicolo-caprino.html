@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ristorante Al Vicolo — Cucina tipica · Caprino Veronese | Prenota</title>
+<meta name="description" content="Ristorante Al Vicolo a Caprino Veronese: piatti tipici e cucina gustosa in un ambiente rustico e familiare, tra sasso e camino. 4,7★ su 185 recensioni. Prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#22261f; --ink2:#4c5145; --sub:#8b9082; --line:#e2e4dc; --paper:#f4f5ef; --white:#fff;
+  --accent:#4a5c3f; --accent-d:#3a4a31; --gold:#a08a5a; --green:#25d366;
+  --h:'Playfair Display',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--b);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.serif{font-family:var(--h);font-weight:400}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:var(--h);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:1.2rem}
+header nav{display:flex;gap:32px}
+header nav a{font-family:var(--b);font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;padding:13px 26px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-fill{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-fill:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.65)}
+.btn-light:hover{background:#fff;color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydiD3Pq8AImq8KPxIqvLGO9j-2PPsa0I_h47iWMHOCAXJlrcg68JihLqn-jWF6JvP2hVXPHLnriBTnqQDgpXEN1zYBvnh7pEdPmKrARYEsqnSKVuyUV4UH6nghW8C648luv12E0NLnfx0Fg_Fm1D2L0i7iUl6O-aUafu5yK1FOa7RQkPPzvD7uRoHKiMq_EIWpjZhAv9Bf8qxrPUHamkwkK3grcHB_D9jy-2ILz4kPStBxdVtwVdhgmrUwxFSlpXW2MDEUEiPKzsbQBggpc1GzJ2PSYZgD4-qQ1vCy159tpRRtImI8AORIgMyeVxnjoEPY73zht0oGq9HN7QLV5ravOmrxt9TdiML7j-Qn6H8BX4KHwz9O6QhPk1vRroXxW519qwKnNjK5JZ2oJiE3COcVoF6imbqI-Jq5h5rkol8oDuhg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,38,31,.5),rgba(34,38,31,.68))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:820px}
+.hero .kick{color:#d8ddcf;display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(2.4rem,7vw,5.4rem);line-height:1.06;margin-bottom:26px}
+.hero p{font-size:1.08rem;font-weight:300;color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center;background:var(--white)}
+.intro .kick{display:block;margin-bottom:20px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.3;max-width:20ch;margin:0 auto 22px}
+.intro p{color:var(--ink2);font-weight:300;max-width:600px;margin:0 auto;font-size:1.05rem}
+
+/* Split */
+.split{padding:0 0 110px;background:var(--white)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h3{font-family:var(--h);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:18px;line-height:1.2}
+.split-txt p{color:var(--ink2);font-weight:300;margin-bottom:16px}
+
+/* Menu */
+.menu{padding:110px 0;background:var(--paper)}
+.menu-head{text-align:center;margin-bottom:60px}
+.menu-head .kick{display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;letter-spacing:.05em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:52px 72px;max-width:960px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem;text-align:center;padding-bottom:14px;margin-bottom:20px;border-bottom:1px solid var(--sub)}
+.dish{text-align:center;padding:14px 0}
+.dish h5{font-family:var(--h);font-weight:400;font-size:1.12rem;margin-bottom:4px}
+.dish span{color:var(--sub);font-weight:300;font-size:.9rem;display:block;margin-bottom:6px}
+.dish .price{font-family:var(--b);font-weight:500;letter-spacing:.1em;color:var(--accent);font-size:.92rem}
+
+/* Gallery */
+.gallery{padding:110px 0;background:var(--white)}
+.gal-head{text-align:center;margin-bottom:50px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);text-transform:uppercase;letter-spacing:.05em}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal-grid img{width:100%;height:360px;object-fit:cover}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--paper);text-align:center}
+.reviews .stars{color:var(--gold);letter-spacing:4px;font-size:1.1rem;margin-bottom:10px}
+.reviews h2{font-family:var(--h);font-weight:400;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:46px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.rv{background:#fff;border:1px solid var(--line);padding:34px 28px}
+.rv .st{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.rv p{font-family:var(--h);font-weight:400;font-style:italic;color:var(--ink2);font-size:1.05rem;margin-bottom:16px;line-height:1.5}
+.rv b{font-family:var(--b);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem}
+
+/* Visit / reserve */
+.visit{position:relative;padding:130px 0;text-align:center;color:#fff}
+.visit-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhlQeMmUHsiSvgVCgqbK4uRWvzq7WzWxC3ATbvXryatGvbBKextmQOEj2NuftxsrgkNq2z6Q8qhpK_VlZUOSaUPQZmJT0SeT_pVC5LaL8rlRBY1vVdH7QtehNWYvqB0o64-sB9VjUGDj64qx_sA1v01Ld2cgbBxbQnfepnugimW0mpM1DHCOiowjuGhqfM1dB0qZ0_i6LPhJWL-Bg2-uVMkri5xil_ayk05ptcQaVNyuwJ7bXNd9qazQZye7E7VoLbH-joDTlieUUVb4cbdsdhTs3BajHxaPmxhw6saxVyMyKsI6BYcqJ76mlQOfj9d5_2nb4l855IUo8dlep_F6YwD45sClm-KDBlK9QHER2XitSxI4ByfFZbu1sVFKn6Dw77YgFabCQ8TlNk1dcC6JDOZEn44nT989ZI_o7SvD1TIUsSZv_rk35uxhqGNhhBC&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.visit-bg::after{content:"";position:absolute;inset:0;background:rgba(34,38,31,.72)}
+.visit .wrap{position:relative;z-index:2}
+.visit .kick{color:#d8ddcf;display:block;margin-bottom:18px}
+.visit h2{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px}
+.visit p{max-width:520px;margin:0 auto 18px;font-weight:300;color:rgba(255,255,255,.88)}
+.visit .hours{font-weight:300;color:rgba(255,255,255,.82);margin-bottom:28px;line-height:1.9}
+.visit .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 38px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#d8ddcf;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;font-weight:300;line-height:1.95;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.8rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;letter-spacing:.06em}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .menu-cols{grid-template-columns:1fr;gap:38px}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-hide{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:260px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--b);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Al Vicolo</a>
+    <nav>
+      <a href="#intro">Il ristorante</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#visita">Prenota</a>
+    </nav>
+    <a href="#visita" class="btn btn-out hd-hide">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Cucina tipica · Caprino Veronese</span>
+    <h1>Come a casa, tra sasso e camino</h1>
+    <p>Ambiente rustico con soffitto a volta, pareti in sasso e camino. Piatti tipici, cucina gustosa e una gestione familiare che ti fa sentire a casa.</p>
+    <div class="hero-cta">
+      <a href="#visita" class="btn btn-light">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-light">Il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="intro" class="intro">
+  <div class="wrap">
+    <span class="kick">Il ristorante</span>
+    <h2>Dove ogni piatto è un piccolo racconto</h2>
+    <p>Al Ristorante Al Vicolo celebriamo la materia prima con tecnica e misura. Percorsi degustazione che cambiano con le stagioni, una cantina curata e un servizio discreto e attento.</p>
+  </div>
+</section>
+
+<section class="split">
+  <div class="wrap split-grid">
+    <img class="split-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgxiiK9J2Rp2cie4xvGy63XBUoKWfxqUiicx9rLxt1O-yCGYj52FrN7BeIdjuDQSf1EEzQL6YUjgsdkpYbEc7l0wkmqJL8C7DAP45h9Z4Jv646-ukkFGBRT605JiFaXQZOYNcVNFxeKSJ7zi4Kh9tGFTSZL9Nr6e9aHl8W6VtBvWojV3Xi7sQHrDlVY6bsSBcjLKz_Y8xnmMNT4Ues2UvLi1JVcLD-HxLyY1Zoynb5D0obiz_7GzeFTk35VCsSY_B3ffEUYHq9acp5DL9NvevRyqwvM8kT2Er3mzI0YnBnPwUNLEPfF5ijeJ7jeg2n-d55rPdC2FJJFr_e--6lL4nyHpkUE8liFkFq_glUk1MGEwnt0yi9s2UhTnV1NzNGFEfLVCjUgt61bx1syG3jVqrQzT5b0CCyJzFXO8WisUJROSkuQFATvc88ej78SoInf&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto d'autore">
+    <div class="split-txt">
+      <span class="kick">La filosofia</span>
+      <h3>Stagionalità, territorio, eleganza</h3>
+      <p>Lavoriamo con piccoli produttori locali per portare in tavola solo il meglio di ogni stagione. Ogni dettaglio, dalla mise en place al calice, è pensato per l'ospite.</p>
+      <p>Un luogo intimo, ideale per cene speciali, anniversari e occasioni da ricordare.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La carta</span>
+      <h2>Menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><h5>Capasanta scottata</h5><span>Topinambur, nocciola, agrumi</span><div class="price">18 €</div></div>
+        <div class="dish"><h5>Uovo &amp; tartufo</h5><span>Fonduta leggera, tartufo nero</span><div class="price">16 €</div></div>
+        <div class="dish"><h5>Tartare di manzo</h5><span>Senape antica, capperi, tuorlo</span><div class="price">17 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><h5>Risotto agli agrumi</h5><span>Mantecato, gambero rosso</span><div class="price">20 €</div></div>
+        <div class="dish"><h5>Raviolo di zucca</h5><span>Burro nocciola, amaretto</span><div class="price">18 €</div></div>
+        <div class="dish"><h5>Tagliolino al tartufo</h5><span>Fatto in casa, tartufo nero</span><div class="price">22 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Secondi</h3>
+        <div class="dish"><h5>Filetto di manzo</h5><span>Jus al vino rosso, sedano rapa</span><div class="price">28 €</div></div>
+        <div class="dish"><h5>Branzino in crosta</h5><span>Verdure di stagione, beurre blanc</span><div class="price">26 €</div></div>
+        <div class="dish"><h5>Piccione arrosto</h5><span>Frutti rossi, patata affumicata</span><div class="price">30 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Degustazione &amp; Dolci</h3>
+        <div class="dish"><h5>Percorso del Vicolo</h5><span>5 portate a sorpresa dello chef</span><div class="price">65 €</div></div>
+        <div class="dish"><h5>Abbinamento vini</h5><span>Calici in accompagnamento</span><div class="price">35 €</div></div>
+        <div class="dish"><h5>Dessert del giorno</h5><span>Creazione del pasticcere</span><div class="price">10 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galleria" class="gallery">
+  <div class="wrap">
+    <div class="gal-head">
+      <span class="kick">Galleria</span>
+      <h2>Atmosfera &amp; piatti</h2>
+    </div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjrfKe9qGEH-dVhczIVwT92HpAOJGcGD5FCQaZBloMqqXQdVhyvM93c3GMktULH-3SxHsLDmRjkFbUXmFBc0ml3VRtZ8cxl0_XxxjhBa6G1_F84gabOVakJ3ITrY8oxdt41aepYuzC71ThuqpyxMRN6eYndJiaVKSB2zpu4a5FGeZ6ajRXhPJK2SKM8blmjS61GzmoHWb376gK0wKW-6uhWcTDvVCRr5UEiVE1GYJTfXp4qn_SJ6_Dkl65tN0iuRr1dZtvjVshfRdQm2BbzH8e4jak8JYMK0MTU3DoJGgg3mFT__y5rMuwPKMK9cAxa4-_fo6wRlrem9gJO-dqpndykhTmj9Qc8Osf_OUqpBop7H10YHKh5X3xPdqtPTUjqbrGxj18QyabuAEwRh_hV9QJYFLMKN1xtLcSMNj8uFm-9Y_k8&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhVmgX2OpAR04oXv66KBZRIlnOfkWFGB6B9w3jaKifA8TDIQTysZyBUh69d3_5AD3vV7_5AfX4Urs4k-OtqdMosWJrewpTGMUTMDr-AXtYpHsmJJuUTzfCzKbq11C0_g24XRcNE4edIYw70hv_inRFVfrv6n8aXkL_D70DSakXP0E_166tX958t7yGnjcDeQpBmXtBy8Easwhd8teKjEOuniRAED9Y947p1X8BFhwR-taFKfpGYrPmWfmcunmhqh-cLkF_C0_Ly0FgdQl99wmJlVe-ZTiP7hWV67qQrBTey8K5a6_rXMA3F6IGnStAi2k1Oz6N9yjWWkkKpvKplGUXP1giKAW2SxDbbPr4r9FAYnfDUVfboyg5YhU3V3UCrh7IiiZ-GZ23q5Rkm9ZXCPyDKCUCiza-tBQbUOqzC0O2l1r0fc1cX1Zj9nzB0NsOy&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydj-IJswSxu1Qsgp1ovh-hgqikpw50m3HhCTMHorYvWW9cDC789ROBVeLXbVLmeMMLdywRl_KSIzO7BxVbt0SdUu-HRRjkLzlYtY_6mK5HWlrhy0y-36HuRkoKN_Aq2_x_L6gNjOgWRRLMAQZd12-FE5MoMUgYqitEY7WMojrggvYycx-R4XhhH6ITb_f9nM1a8Ne_QY98i20mXPW6fXqT8rRIyhXOIszBIwp7Q2ljdC3Sg_1vBcxiGLWS3sphHXlw1jIk4kuBP2NGar5VZcqJkvCrEIaIie6vy_zNXdiTSORb2goYnPulieIo9FpNWrWZ1658fBGRxcjcx2WAja3w9XEqVs-ApzMXQw23liZfkfvHGMawIuTJW7Gq5v32fiNUY_SvDaotsIR9iYUcK-n4c94mjlNjGNTBz3KdqhaBpPFZCK&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio">
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,7 su 185 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Entrare in questo locale ti proietta immediatamente in un&#x27;altra epoca. Ambiente rustico con soffitto a volta e pareti in sasso, camino e stufa di maiolica. Si viene accolti dai proprietari che hanno sempre un bellissimo sorriso…"</p><b>Paolo Bellè</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"This wasn’t an ordinary restaurant visit — it was an experience. In my opinion, this place is built by its staff. Instead of a menu, there was a conversation with an incredibly kind lady, discussing all the details of the order.…"</p><b>Piotr Grzechnik</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Ambiente: semplice..MA... Professionalmente validissimo Per chi ama SIMPATIA ALLEGRIA Abbinate a UMANITA&#x27; e professionalita&#x27; data da lunga esperienza di famiglia. *Qualita&#x27; del cibo super eccellente. *Qualita&#x27; del servizio super…"</p><b>Luciana Ferrandi</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="visita" class="visit">
+  <div class="visit-bg"></div>
+  <div class="wrap">
+    <span class="kick">Prenotazioni</span>
+    <h2>Prenota la tua serata</h2>
+    <p>Consigliamo la prenotazione. Per menù degustazione ed eventi privati, contattaci.</p>
+    <div class="hours">Via Vicolo Cieco 3/A, Caprino Veronese · Lun–Sab 11:00–14:00 · 19:00–21:00 · Domenica chiuso</div>
+    <div class="btns">
+      <a href="tel:+393288595197" class="btn btn-fill">Chiama 328 859 5197</a>
+      <a href="https://wa.me/393288595197" class="btn btn-light">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Al Vicolo</div>
+        <p>Cucina raffinata e stagionale nel cuore di Verona.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via Vicolo Cieco 3/A, Caprino Veronese<br><a href="tel:+393288595197">328 859 5197</a><br><a href="mailto:alvicolo.caprino@gmail.com">alvicolo.caprino@gmail.com</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Lun–Sab 11:00–14:00<br>19:00–21:00<br>Domenica chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Ristorante Al Vicolo — Verona</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393288595197" class="call">Chiama</a>
+  <a href="https://wa.me/393288595197" class="wa">WhatsApp</a>
+</div>
+
+</body>
+</html>

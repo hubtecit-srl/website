@@ -1,0 +1,332 @@
+{
+   "html_attributions" : [],
+   "result" : 
+   {
+      "formatted_address" : "Via Canal, 115, 37013 Caprino Veronese VR, Italia",
+      "formatted_phone_number" : "045 923 2145",
+      "international_phone_number" : "+39 045 923 2145",
+      "name" : "Trattoria \"Al Frantoio\"",
+      "opening_hours" : 
+      {
+         "open_now" : false,
+         "periods" : 
+         [
+            {
+               "close" : 
+               {
+                  "day" : 0,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 0,
+                  "time" : "1200"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 0,
+                  "time" : "2100"
+               },
+               "open" : 
+               {
+                  "day" : 0,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "1200"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 1,
+                  "time" : "2100"
+               },
+               "open" : 
+               {
+                  "day" : 1,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "1200"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 2,
+                  "time" : "2100"
+               },
+               "open" : 
+               {
+                  "day" : 2,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "1200"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 4,
+                  "time" : "2100"
+               },
+               "open" : 
+               {
+                  "day" : 4,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "1200"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 5,
+                  "time" : "2100"
+               },
+               "open" : 
+               {
+                  "day" : 5,
+                  "time" : "1900"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 6,
+                  "time" : "1400"
+               },
+               "open" : 
+               {
+                  "day" : 6,
+                  "time" : "1200"
+               }
+            },
+            {
+               "close" : 
+               {
+                  "day" : 6,
+                  "time" : "2100"
+               },
+               "open" : 
+               {
+                  "day" : 6,
+                  "time" : "1900"
+               }
+            }
+         ],
+         "weekday_text" : 
+         [
+            "lunedì: 12:00–14:00, 19:00–21:00",
+            "martedì: 12:00–14:00, 19:00–21:00",
+            "mercoledì: Chiuso",
+            "giovedì: 12:00–14:00, 19:00–21:00",
+            "venerdì: 12:00–14:00, 19:00–21:00",
+            "sabato: 12:00–14:00, 19:00–21:00",
+            "domenica: 12:00–14:00, 19:00–21:00"
+         ]
+      },
+      "photos" : 
+      [
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115480020582303608878\"\u003eTrattoria &quot;Al Frantoio&quot;\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgcjc_4SdvbblUgLXRUqKGIjxyp-HBKGpxezvwW7s3thw5fLZPSelZhPJeIcgiC8ysU-bwhIDftbVH9OiWpVOCZp74s0NdGMVruN6I7ZBaNJ8chZgE5o2JW-Wzwox0nPRZlPjddZynpxu5Q0QWo5WEN55DTh5l68H-_RvIst6C_zdz0f0BsosNFmFvBrLAqYrf7bBKPwoYqMCeT5WhYWSfJGYOHHM336MXBuZ4oDDpZBhTo9IY4Bkoygv2MC1pQnfsXvySbsF4FA5mqIkgTGHKv0AF04pBaKF_uMn-0lbSGgmuWtqs1hqTDs6D085hqPgSb046zHPW5BVWs5CJRxKL9J-A0-N5_-VR1Zs6cV12YAbmf_OYtxPRrIbcjLogMWhY9ki0KapuJYW4FToXkbOB_yCMxwGXyhp7oe6cX4to",
+            "width" : 4032
+         },
+         {
+            "height" : 3024,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115480020582303608878\"\u003eTrattoria &quot;Al Frantoio&quot;\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhwgFOf96R_OPzwzBJGYXG80Q0doNVJBd6thBQ32Bb0K_lQsjoJ81zv4pEUpJ7iiDecBf9eJVAdM3QJZxgRXPnEgumo9wSKl7nvjSoDA7h6M6R64rQAVg5O9-fil8lokL7JZgjuXVioECDknemBK3T9fACdT4y64F-WDcCYJ5kDSIpQOnW_udZ9I_Hpyb0TSDOpMkXXTo-MPFiAp2d75a3PY6KWT5RL8opde-aoHqgbdjQNjmqSt0LEySPuQ6aqqjiJjHUZHIyzU72JTgA8lG3zyGQ_ZEqprfJgtQEfuOsQZftvSAe8-981VQm5izwvp5Dnu_dxgiCiwxplXWckVn9VV5e0fPcLr8w4Yq3n97U3eHlNICG49OWACRTmP5oWQ50n8Pwxwt2OyOb9WYxN6kDer80IncykDnp3wIZ-kagtLfOY",
+            "width" : 4032
+         },
+         {
+            "height" : 2269,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/115480020582303608878\"\u003eTrattoria &quot;Al Frantoio&quot;\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgDhm1QvR_5h8mRsjZSZoluStkSszZsVPsjjtxAyrpkwLjdqk8Yv8L5TAjfW38mh-8qQUDMnasS3zCPbRzEn3qcVY20LgyTmh7U9i_0_u70MGVxZlwiLnPPev5RahOQ3ZcE8nCI8M3_kWaRNk6paMjmeTiXT_DQgIJ0GEt8xt7tJEi2lS_TNFbb7hmtOMtPEidaRJg21i1DuGgGx7pZb5H4-0sSc4kSaJPW7h4pALTzcF6nNzPH0oG2eanR4BUPEEQSGl3fBuE3JOuaaQ2BTSJfZHfJOFuf3nNd7x4jr6RvD2gn4BQh1gYWyp0nsjqdORBD8I2LQO8V8bCH3tRWSTlmdzlVzZG13RIJE4Pwf25ZDRh7ibJRitGPru36Qz6Lbb6ibsOaq1XzwbuFgomnPSTNBgeJe0kYss-TqHj2m1Gb_5o",
+            "width" : 4032
+         },
+         {
+            "height" : 1350,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/101449200378322112442\"\u003eRaffaele Messetti\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydibjKk41PSCJdRSKOlL-Cu0usM4vW9foqtGzgmg5VGSQr49CKdeFAf8yOeaPkqDJK2s_Y96A260FpHCXsoU9fB1dwX9YZ48_OTlZQ7gTyrIlR-y9qx7ZKPARI-8YTFeMiXwcMTU9UNuntwHuuGlinGIPgFUkn-ZcBl-76bTvu3BD7t8U0FgYdawiMbU2R4b1YH8bZcafBxuKIcTX57C_cbOJYYKPc4q0xQDrXvYlrQmaM4nypPjCA6O1sKq8lUqPEnAPRfJdHyCIwzh9rpAoiLUPQaBxkqgKhcOgRep2JOfDieFgEhKpmGsrQ8rJTPxx1zRGNAbPpaNVzpbw6g6yw-D1HZEWszafaxsAVphjqIp0USst24-1uL8LkKtGhm7RV2NCuXhRUv3MgCqaydSlC1vqencdcA70pD4FjapyCiWDhTd2o4g3jRYD4r5hv_M",
+            "width" : 1800
+         },
+         {
+            "height" : 2016,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/112656178564060714727\"\u003eKini 909\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgyRqXPLQft8CkOBRmYL5CgGh4kLCYP9PL0xG2k51Dooo7qr6lVDWo0CnYUeQuJfIZf7X83s4NvPnkB2KFhlQ2SC2wpi56-nZVVWsAyvGkF5wDyATDDXwOhXNsCX6mwDLTw8yQfJG2HUdAMigFWbI_9-KXF4_N-fDF-JweG7iBPF0jhjGFnDlKtL5YZ3y6pOkN_1kweV4YLsulWquWoGd0Nm7C62HOCsfNbm08pD-utAaLWWIAocUL-1SipVJ3K4BkGGRZ78vkmScmO0QyNY0jwJF5eaqzU1Hg3Msg9sgftPzv86TzupkzL77od-5S0rLBXNRp1aGPSVvp2QeAkRzKvLCXDOVuv1_z5bANcS1uJMOk56AtjJZ50Of0jg0iC5AHFZeWyc5ef8YlfgWOFTtXJJzdfP9ZHyRICYAfH7YWg7AF1OI9oa_cy_0BbYC9A",
+            "width" : 1512
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/117515444584540334738\"\u003eV.M.S.\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydjx7zj4aAJuPtXlZmzH06qa2L6JOhk6RX-9nzAoiZyUGsAMaA4J53V-SCv-0_8Q2z-T3qOLff_6ibwyryjNdknb_OaSLsN2W9zYV92MbLWJDAc78jywurdkrr00UFkHq_J_UlQaHzyc5X43X-KNFP8olU6edQ2iybxQ9ZdN4nzuGzJbzBcw54fsaqpI4-TYYIwewv-8yYSR3uOWV2E0fvBMzi1djiO77xxqhENOA8dxIZIIZdnWtLhj1iHCH0GCzx3kTKvB-ZauxGpzfbTjFfzywhEk8lKQ5QrPtXgeYob69OVIclYX1JwHb13StDEH4FuaE9Fo0PliIhsEkGwtBkePW_gy9izkrP9TeznW2oluYXiAqfcARRF-T4AEe8zUOvNFkXEoQq7U3eqvQLbdJbyb430ak8RbATEKgwjSXCGwGUuUYGY9Y_8dtdqVQlzr",
+            "width" : 3024
+         },
+         {
+            "height" : 2268,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/108786696597822628351\"\u003eSven Wacker\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydiBQiNJV7-KJqoIzfRVz4R0HDnsop8a3JsuFKgAs7HEKOLp-sWFjSrpk9xT-5ukAikv4Wqc-I5-m-wliTsMOdk06LMug4kRXOsC1EqzB27_jPyGPRkUd_f1CtRKloyJrwFi4fP07Va-MMiNBR8BqzpPT_6iOqLjLFEE-n-u74AhPz_fdjSz2eunrpliF8Vf4LIbPLBgQzBq6YwI89LHlpCNZ2KaGn8ltr3HJn844L_390RKneW9MAewj8D-TCE8hEP6vTbHROD71IN-grNOnfIM8qfmt4mH0bTxSCwo6ha8SWr5TKsla30GSt-OP6Dh2q1yaxA26bgQLLmjg8RSsrfJNiKw1wpCRE2Or0PBUEEIAdqFWf68AWhKGwJkQMICsjVtP4jzeX6AdsAlIys8IuxgULrI5esSKVymWMHlZe14eAY",
+            "width" : 4032
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/103911128180572264515\"\u003eVic Hillier\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydijBVQ0bwRd25Hssj8D976N3XSbxGVdWnvj1YTCcPp96FSKkMr90QKUmcL7JmP1VMOK7byzqVGg9xUAq3YOL6WSOYHJCG0F3k325LU3MBurUHHuX-CNv9aI5oio_foTtj8TpLVUmn2xnIHyiNmwa4hxOLyqgdeqy3XAxIxSLVCOYDi7QtGvM4TFGjNeCKOvJtnRCGviV06oEK-Nc-oGOpoituBfpbGjvjpHddSrIhMDTFucnYuXHjlPYSYLfIesXdvnAOVUJW1HWyMsU3yAUkTC__G8oRbrvAgHAZaHo7i70wE0fR8kJk66rZinOH-fp9u8kjuV8FoILD1yz0nIsHiMcsLOcIe74NVGJ0BRfUStdYhZmP9rhYWbPgZ1UAmWCOgvgAXUBmWraP_PxJi5mQgvSsXsRU4tL04ybSBCuMJQ-WSYy9dlXrNdiA_2HVWR",
+            "width" : 1816
+         },
+         {
+            "height" : 1658,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/116752133980657925476\"\u003eChristian Thoeni\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydgGnr3KxsCthviTUNudow-unJR4ljTZsUMzWRwWLNlbfX5Le6oZn-l-UTObU5yJsRRu5Sp1I2yAhclxqvlX6P0lSduaI7LxLy4knoZn63PNIeMsFaST5zCAg0u0DpZ4PDwdFu1Q8Khilo9Wuif8sek4f80U622k0BZQob1frVRiG1tGTPiZlsP8VNMaInYig3wncCMq-0p2VdjCiYYdetBivsA31Lf1z4SlKHvHnlvkHNV4Xkpkz4NLz3sbY4JsRd5xbK7LE87vQNcW2LGH5mjCJ3DrTfscabN0sqdRz6r5-NbFFOJ029KVgt807Lypz4WZT9Dpo4Fj90Fm7oGnR_04Gf3mMbrGi5ejfKeSNHX5buzHaKUb8nZXNSmG-0PMSNXSQk1mxNz1hIdUR9-jGZXACSMHGgKin6XI7o5wsxqDnNI1dB2p5lp6CuDleAEU",
+            "width" : 2600
+         },
+         {
+            "height" : 4032,
+            "html_attributions" : 
+            [
+               "\u003ca href=\"https://maps.google.com/maps/contrib/106744450233978950666\"\u003eJana Gi\u003c/a\u003e"
+            ],
+            "photo_reference" : "AWCwydhXF_pbThIr3CM9vlZrb0gDJS2LNcTWzSjrolzYa99mV-LC4xWf0LOuPb-xaTjhtgDSwb8Y4VfBQr4mX-qN3s51et_9PlrPaz_sC28nnR3ZDbaRWCAlJAcq8ZTkKBPC0Z4Nz45bHFM8dXFUai5NJ65c6ndRpeDtK9jOcqwi0clpdYttBlKv8HKa3wT0py1UwmyKVCFYyoSskA8_cPYsMorXCHuF5STdRQEJX7sEHn8F5DbhMLqkazv3zSHjAHABqHxBAV3Cu6-WwOH1PayRqFLuhtfQr03thuGvagjlPo7AJCaMDbTXZISV7NRQW9tuPwrZW38zsq9Pexgk52Co5jftcm0csmHrj0oMXysU8yRKwUtX6o9AqxabOfaMdyZDhpJFFyFAHu4KzkTVgGAXaCyLyEn7kMUAnPZqElK5653-AVvVwa3EKFB_sy5ULxPo",
+            "width" : 3024
+         }
+      ],
+      "price_level" : 3,
+      "rating" : 4.8,
+      "reviews" : 
+      [
+         {
+            "author_name" : "Gianni C",
+            "author_url" : "https://www.google.com/maps/contrib/112269803555837629563/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a/ACg8ocKkPu6LPbjkwGwOL6PcpY56_xM_zZ6KpyGDaDbwcnQisJXJ6w=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating" : 4,
+            "relative_time_description" : "5 mesi fa",
+            "text" : "Ci siamo fermati durante una gita a metà settembre del '25.\nAnche se in ritardo merita la recensione.\nPosto molto tranquillo, lontano dalle strade affollate, parcheggio gratuito, l'edificio in stile rustico racconta la sua storia con il suo ambiente accogliente d'altri tempi.\nCi siamo accomodati nel cortile sotto i gazebo sotto a piante raffrescanti e ombrose.\nOttima l'accoglienza del gestore, che con la sua tranquillità mette a proprio agio l'ospite senza però alcuna perdita di tempo o attese lunghe, quindi servizio molto buono.\nBuone le specialità di stagione e anche le materie prime.",
+            "time" : 1771573706,
+            "translated" : false
+         },
+         {
+            "author_name" : "Dany Ela",
+            "author_url" : "https://www.google.com/maps/contrib/100785745484640106556/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjXHGkbble0dbzfDrWmjHnWJ0Q7eIeS2Y5PYNydoe4xHRDs1TjAe=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating" : 5,
+            "relative_time_description" : "11 mesi fa",
+            "text" : "Abbiamo mangiato a Ferragosto qui, non c'era un menù a prezzo fisso come di solito ho trovato in questo giorno festivo. Un po' mi è dispiaciuto.\nMa si ordinava alla carta.\nAbbiamo preso un tagliere misto con salumi buonissimi.\nTagliatelle ai funghi porcini e tartufo\nCostine alla birra con polenta.\nDolci tiramisù e lemon cheesecake.\nTutto molto buono.\nLa giornata era caldissima ma gli ombrelloni facevano una buona ombra.",
+            "time" : 1755345527,
+            "translated" : false
+         },
+         {
+            "author_name" : "Michele Sganzerla",
+            "author_url" : "https://www.google.com/maps/contrib/102909024674489793361/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjU5TRkBjZm4hyu6kGWyEC8uqw8ryPfk1syZ5H0HHJTNVVs9vbV-=s128-c0x00000000-cc-rp-mo-ba5",
+            "rating" : 5,
+            "relative_time_description" : "12 mesi fa",
+            "text" : "Simone e i suoi fratelli, dopo anni di onorato servizio come ristoratori a Torri del Benaco 🧑‍🍳, hanno deciso di dare nuova vita e cura a questa trattoria immersa nel fresco e nel verde delle colline di Caprino Veronese 🌿\nLa cucina, curata con passione dalla sorella 👩‍🍳, è essenziale quanto genuina: sapori schietti, mai artefatti 🍽️\nL'atmosfera è ricercata, con persino una galleria d'arte 🎨 laddove avrebbero potuto trovare posto ulteriori coperti.\nLa corte, un tempo nota per la produzione della seta, oggi ospita un giardino rigoglioso 🌸 perfetto per le calde sere d’estate ✨\nDa provare assolutamente le tagliatelle ai porcini 🍝 (nella foto vedete la mezza porzione) e la tagliata con patate 🥩🥔\nUn posto decisamente da non consigliare a tutte le persone che vi stanno antipatiche 😎✌️",
+            "time" : 1753789482,
+            "translated" : false
+         },
+         {
+            "author_name" : "Marco Mama'",
+            "author_url" : "https://www.google.com/maps/contrib/107241394758793238865/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjWnIHQI0M_iXArFts9ZWoIBgMQIJLlvMBj7APWHU_MBxdPy7sRa=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating" : 5,
+            "relative_time_description" : "2 anni fa",
+            "text" : "Mi sono basato sulle recensioni non essendo della zona e devo dire che la scelta è stata super azzeccata..posto molto ma molto bello,molto intimo e soprattutto rilassante dopo una giornata stancante ci voleva proprio ..immerso nel verde con pochi tavoli(cosa meravigliosa).. ! Piatti uno più buono dell'altro ..dopo aver provato la pasta con pesce di lago super buonissima davvero ottima come secondo mi sono lasciato convincere dal titolare(simpaticissimo)prendendo il baccalà che non è baccalà così si chiama ... Maaaaamma mia penso sia uno dei piatti più buoni più saporiti che io abbia mai assaggiato ... GRAZIE x l'ottima cena .. avete un posto magico continuate così ... Un saluto anche alla cameriera molto gentile e simpatica.. CONSIGLIATISSIMO..se sarò di passaggio torno sicuro 💯",
+            "time" : 1720938772,
+            "translated" : false
+         },
+         {
+            "author_name" : "Cristiano Polese",
+            "author_url" : "https://www.google.com/maps/contrib/110946497363550969457/reviews",
+            "language" : "it",
+            "original_language" : "it",
+            "profile_photo_url" : "https://lh3.googleusercontent.com/a-/ALV-UjVY2F12stSLorespRzSP6wiBLbRlDlv-zU37Ac3cVR7tnE_Ichong=s128-c0x00000000-cc-rp-mo-ba4",
+            "rating" : 5,
+            "relative_time_description" : "2 anni fa",
+            "text" : "Scoperto quasi per caso è stato un ottimo pranzo, all'aperto in un contesto naturale e rilassante. Simone è davvero empatico e trasmette la passione per il suo lavoro; davvero buono l'antipasto di lago e la pluma di maiale, con un ottimo Valpolicella della casa. Consiglio davvero questa trattoria!",
+            "time" : 1716579173,
+            "translated" : false
+         }
+      ],
+      "url" : "https://maps.google.com/?cid=8462549058225191571",
+      "user_ratings_total" : 235
+   },
+   "status" : "OK"
+}
