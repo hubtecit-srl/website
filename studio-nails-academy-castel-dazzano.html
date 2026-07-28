@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Studio Nails Academy — Nail studio &amp; Academy a Castel d'Azzano (VR)</title>
+<meta name="description" content="Studio Nails Academy a Castel d&#x27;Azzano (VR): ricostruzione unghie, manicure, pedicure, nail art e corsi professionali. Prenota il tuo appuntamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Antic+Didone&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{ --teal:#6d5ba3; --teal-d:#584a86; --dark:#241f33; --gold:#c6a15b; --ink:#20302d; --ink2:#556661; --sub:#8a978f; --line:#e4e6df; --cream:#f4f2f8; --soft:#eeeaf4; --white:#fff; --green:#25d366;
+  --h:'Antic Didone',Georgia,serif; --b:'Public Sans',system-ui,sans-serif; }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.26em;text-transform:uppercase;font-size:.72rem;color:var(--teal);font-weight:600}
+.serif{font-family:var(--h)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:600;font-size:.86rem;letter-spacing:.04em;padding:14px 28px;border-radius:4px;cursor:pointer;transition:.2s;border:1px solid var(--teal)}
+.btn-teal{background:var(--teal);color:#fff}
+.btn-out{background:transparent;color:var(--teal)}
+.btn-out:hover{background:var(--teal);color:#fff}
+.btn-light{background:#fff;color:var(--teal);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.15);color:#fff;border-color:rgba(255,255,255,.5)}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:76px}
+.brand{font-family:var(--h);font-size:1.5rem;letter-spacing:.02em}
+header nav{display:flex;gap:30px}
+header nav a{font-weight:500;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--teal)}
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1400&photo_reference=AWCwydj6Rt9UEiQdqr7EWE_ukzll0D4P3Dh9l3fBy6sQV71NSp51qCkM4bf2Ugyep4npcM0AUvFe8Cn1MzSxRQ6XD2iPE4fcLs9UzyFclFbdQG2RtcxUiedbsb6VJEU0eBJxAxNvol44TeO9dE11ZVKQ3Yyr7srsq70pPtQ8ljC7Bj_iqVdCljVu8w6K6Z21Vq6Fwb-Ym-KBiOOX9DfXeqsDeJIjESgnH5AJwWIO13FWqpLwI9qYwMbsXGDagU1NBIVBRgwF2TcYopzVHwTTbrm1Rp4AzGdRTmfYX65o__nO5WglLZr2KZhXka6wXXaQo2L6n7FPp1xcWijPwrcZB5XPhDPbNBPWccBNBI1NSfOHOVhnqlyUvIxBgqBkK1jJC_bLhwWNdDT4ZnPsa7ywtaGd6SIB4Xs1X3eSwxeW5ulss2DACoBBR4ulP6w_LjBZ-ACk&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(36,31,51,.82),rgba(36,31,51,.42))}
+.hero-inner{position:relative;z-index:2;max-width:640px;padding-top:60px}
+.hero .kick{color:#cabfe6;display:block;margin-bottom:20px}
+.hero h1{font-family:var(--h);font-size:clamp(2.4rem,7vw,5.4rem);line-height:1.04;margin-bottom:22px}
+.hero p{font-size:1.12rem;color:rgba(255,255,255,.9);max-width:500px;margin-bottom:32px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.4);padding:7px 15px;border-radius:40px;font-size:.82rem;margin-bottom:20px}
+.intro{padding:100px 0;text-align:center;background:var(--cream)}
+.intro .kick{display:block;margin-bottom:16px}
+.intro h2{font-family:var(--h);font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.2;max-width:22ch;margin:0 auto 18px}
+.intro p{color:var(--ink2);max-width:640px;margin:0 auto}
+.serv{padding:100px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 54px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.15}
+.serv-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.serv-c{text-align:center;padding:34px 22px;border:1px solid var(--line);border-radius:6px;transition:.25s}
+.serv-c:hover{border-color:var(--teal);box-shadow:0 18px 40px rgba(0,0,0,.08);transform:translateY(-5px)}
+.serv-c .ic{width:64px;height:64px;margin:0 auto 16px;background:var(--soft);color:var(--teal);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.serv-c h3{font-family:var(--h);font-size:1.3rem;margin-bottom:8px}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+.split{padding:0 0 100px}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.split-img{width:100%;height:520px;object-fit:cover;border-radius:6px;background:var(--soft) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1400&photo_reference=AWCwydj4ieDWJqVU2ltas-jlxZmMHiMghmbAd4iaxYTGrWR_KTGulHHsHpmaFNmOGHs420U0qU1mwcE3FARcZslTRD5bSw2Hvkmu5v3vcwyzq4p1klI0iMVKswlyFL9B4ieHjajsVY54VZyacTKZRYclchldpHgwGQMfw6Nbf29HRUX7r5pmz5qHtxDS2T9Y2yKX7HtXE4rue_v9yvYOb1jQzfnTqbFPdW7az8iRSxXIZysnDYTgSlsGj20Uf4KigSU0OOHMhaS7NdckwbOK_u5IOMZpIyYGmMQPJC15Dhj1Ia46nPJ45UHqsOT7nuMqbBStxIDVZwzHPC7UUy0ip68thkDRkpyQGV4e20Wucfc6QVyXgy0t6Mmmfl6_u1fbTVos0SQPSwKob8X07J38DRgvt-SXqHfzbvR6LdqSoesENsscMbQFU9CPLsE8qcPYYQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.split-txt .kick{display:block;margin-bottom:14px}
+.split-txt h2{font-family:var(--h);font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:18px;line-height:1.2}
+.split-txt p{color:var(--ink2);margin-bottom:14px}
+.split-list{list-style:none;margin-top:14px}
+.split-list li{display:flex;gap:12px;align-items:center;margin-bottom:11px;font-weight:500}
+.split-list .ck{width:26px;height:26px;flex:0 0 26px;background:var(--teal);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.8rem}
+.pricing{padding:100px 0;background:var(--cream)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.price-c{background:#fff;border:1px solid var(--line);border-radius:8px;padding:40px 30px;text-align:center;transition:.25s}
+.price-c.feat{background:var(--dark);color:#fff;border-color:var(--dark)}
+.price-c:hover{transform:translateY(-6px);box-shadow:0 22px 48px rgba(0,0,0,.12)}
+.price-c h3{font-family:var(--h);font-size:1.5rem;margin-bottom:6px}
+.price-c .amt{font-family:var(--h);font-size:2.6rem;color:var(--teal);margin:10px 0}
+.price-c.feat .amt{color:var(--gold)}
+.price-c ul{list-style:none;margin:18px 0 26px;text-align:left}
+.price-c li{padding:8px 0;border-bottom:1px solid var(--line);font-size:.92rem;color:var(--ink2)}
+.price-c.feat li{border-color:rgba(255,255,255,.14);color:rgba(255,255,255,.82)}
+.reviews{padding:100px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rv{background:var(--soft);border-radius:8px;padding:32px}
+.rv .st{color:var(--gold);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.08rem;color:var(--ink);margin-bottom:16px;line-height:1.5}
+.rv b{font-weight:600;font-size:.9rem}
+.contact{padding:100px 0;background:var(--cream)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.contact-info p{margin-bottom:10px;color:var(--ink2)}
+.hours-t{width:100%;border-collapse:collapse;margin-top:10px}
+.hours-t td{padding:9px 0;border-bottom:1px solid var(--line);font-size:.94rem}
+.hours-t td:last-child{text-align:right;color:var(--ink2)}
+.map-embed{width:100%;height:340px;border:0;border-radius:8px}
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/5240818/pexels-photo-5240818.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(36,31,51,.78)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.9)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--dark);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#cabfe6;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.mbar{display:none}
+@media(max-width:920px){
+  .serv-grid{grid-template-columns:1fr 1fr}
+  .split-grid,.contact-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:340px}
+  .price-grid,.rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .serv-grid{grid-template-columns:1fr}
+  .hero h1{font-size:2.2rem}
+  .sec-h h2,.intro h2{font-size:1.9rem}
+  body{padding-bottom:66px}
+  .btn{font-size:.9rem;padding:14px 20px}
+  .hero-cta .btn{flex:1}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:600;font-size:.95rem}
+  .mbar .call{color:var(--teal)}
+  .mbar .book{background:var(--green);color:#fff}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Studio Nails</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#centro">Chi siamo</a>
+      <a href="#prezzi">Listino</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="#contatti" class="btn btn-out">Contattaci</a>
+  </div>
+</header>
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap"><div class="hero-inner">
+    <span class="badge">★ 5,0 · nuove recensioni Google</span>
+    <h1>Unghie perfette, in ogni dettaglio</h1>
+    <p>Ricostruzione, manicure, pedicure e nail art a Castel d&#x27;Azzano. E se vuoi imparare, ci sono anche i corsi della nostra academy.</p>
+    <div class="hero-cta">
+      <a href="tel:+393333310986" class="btn btn-light">📞 333 331 0986</a>
+      <a href="https://wa.me/393333310986?text=Buongiorno,%20ho%20visto%20il%20vostro%20sito%20e%20vorrei%20maggiori%20informazioni." class="btn btn-glass">💬 WhatsApp</a>
+    </div>
+  </div></div>
+</section>
+<section class="intro">
+  <div class="wrap">
+    <span class="kick">Benvenuti</span>
+    <h2>Il tuo studio unghie a Castel d&#x27;Azzano</h2>
+    <p>Tecnica, cura del dettaglio e prodotti professionali per unghie belle e curate. Da noi trovi anche percorsi di formazione per diventare nail artist.</p>
+  </div>
+</section>
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">I nostri servizi</span><h2>I nostri servizi</h2></div>
+    <div class="serv-grid"><div class="serv-c"><div class="ic">💅</div><h3>Ricostruzione unghie</h3><p>Gel e acrilico per unghie resistenti e naturali.</p></div><div class="serv-c"><div class="ic">✨</div><h3>Manicure</h3><p>Manicure estetica e curativa con semipermanente.</p></div><div class="serv-c"><div class="ic">🦶</div><h3>Pedicure</h3><p>Pedicure estetica per piedi curati tutto l&#x27;anno.</p></div><div class="serv-c"><div class="ic">🎨</div><h3>Nail art &amp; Corsi</h3><p>Decorazioni personalizzate e corsi per nail artist.</p></div></div>
+  </div>
+</section>
+<section id="centro" class="split">
+  <div class="wrap split-grid">
+    <div class="split-img" role="img" aria-label="Studio Nails Academy"></div>
+    <div class="split-txt">
+      <span class="kick">Chi siamo</span>
+      <h2>Passione per il dettaglio</h2>
+      <p>Ogni set di unghie è studiato su di te: forma, colore e finiture. Lavoriamo con prodotti professionali per un risultato che dura nel tempo.</p>
+      <ul class="split-list">
+        <li><span class="ck">✓</span> Prodotti professionali</li><li><span class="ck">✓</span> Igiene e cura in ogni fase</li><li><span class="ck">✓</span> Corsi di formazione dedicati</li>
+      </ul>
+    </div>
+  </div>
+</section>
+<section id="prezzi" class="pricing">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Listino</span><h2>Trattamenti e prezzi</h2></div>
+    <div class="price-grid"><div class="price-c"><h3>Semipermanente</h3><div class="amt">da 20€</div><ul><li>Manicure</li><li>Applicazione</li><li>Finitura lucida</li></ul><a href="#prenota" class="btn btn-out">Prenota</a></div><div class="price-c feat"><h3>Ricostruzione</h3><div class="amt">da 40€</div><ul><li>Allungamento gel/acrilico</li><li>Forma personalizzata</li><li>Nail art base</li></ul><a href="#prenota" class="btn btn-light">Prenota</a></div><div class="price-c"><h3>Refill</h3><div class="amt">da 30€</div><ul><li>Ritocco</li><li>Rinforzo</li><li>Cambio colore</li></ul><a href="#prenota" class="btn btn-out">Prenota</a></div></div>
+    <p style="text-align:center;color:var(--sub);margin-top:22px;font-size:.9rem">Prezzi indicativi. Contattaci per un preventivo personalizzato.</p>
+  </div>
+</section>
+
+<section id="contatti" class="contact">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Dove siamo</span><h2>Vieni a trovarci</h2></div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p><strong>Studio Nails Academy</strong></p>
+        <p>📍 Via P. Mascagni 100, 37060 Castel d&#x27;Azzano (VR)</p>
+        <p>📞 <a href="tel:+393333310986">333 331 0986</a></p>
+        <p>💬 <a href='https://wa.me/393333310986?text=Buongiorno,%20ho%20visto%20il%20vostro%20sito%20e%20vorrei%20maggiori%20informazioni.'>Scrivici su WhatsApp</a></p>
+        
+        <p style="margin-top:16px"><a href="https://maps.google.com/?cid=4901830946432857618" target="_blank" class="btn btn-out">Apri in Google Maps</a></p>
+        <table class="hours-t"><tr><td>Lunedì</td><td>14:00–20:00</td></tr><tr><td>Martedì</td><td>09:00–20:00</td></tr><tr><td>Mercoledì</td><td>09:00–20:00</td></tr><tr><td>Giovedì</td><td>09:00–20:00</td></tr><tr><td>Venerdì</td><td>09:00–20:00</td></tr><tr><td>Sabato</td><td>09:00–15:00</td></tr><tr><td>Domenica</td><td>Chiuso</td></tr></table>
+      </div>
+      <div>
+        <iframe class="map-embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Via+Mascagni+100,+37060+Castel+d'Azzano+VR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci o scrivici: saremo felici di accoglierti.</p>
+    <div class="btns">
+      <a href="tel:+393333310986" class="btn btn-light">📞 333 331 0986</a>
+      <a href="https://wa.me/393333310986?text=Buongiorno,%20ho%20visto%20il%20vostro%20sito%20e%20vorrei%20maggiori%20informazioni." class="btn btn-glass">💬 WhatsApp</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Studio Nails</div><p>Nail studio &amp; Academy a Castel d'Azzano (VR).</p></div>
+      <div><h4>Contatti</h4><p>Via P. Mascagni 100, 37060 Castel d&#x27;Azzano (VR)<br><a href="tel:+393333310986">333 331 0986</a></p></div>
+      <div><h4>Orari</h4><p>Lunedì: 14:00–20:00<br>Martedì: 09:00–20:00<br>Mercoledì: 09:00–20:00<br>Giovedì: 09:00–20:00<br>Venerdì: 09:00–20:00<br>Sabato: 09:00–15:00<br>Domenica: Chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Studio Nails Academy — Castel d'Azzano (VR)</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+<div class="mbar">
+  <a href="tel:+393333310986" class="call">📞 Chiama</a>
+  <a href="https://wa.me/393333310986?text=Buongiorno,%20ho%20visto%20il%20vostro%20sito%20e%20vorrei%20maggiori%20informazioni." class="book">WhatsApp</a>
+</div>
+</body>
+</html>
