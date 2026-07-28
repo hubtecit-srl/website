@@ -821,5 +821,57 @@
   "tmpl": "parrucchieri-silvia",
   "url": "https://hubtecit-srl.github.io/website/estro-acconciature-caprino.html",
   "wa": ""
+ },
+ {
+  "name": "Osteria Colomba",
+  "file": "osteria-colomba-caprino.html",
+  "phone": "045 978 3039",
+  "intl": "+39 045 978 3039",
+  "comune": "Caprino Veronese",
+  "cid": "16927062851313449217",
+  "tmpl": "ristorante-atlantic",
+  "url": "https://hubtecit-srl.github.io/website/osteria-colomba-caprino.html",
+  "wa": "",
+  "place_id": "ChIJ70xqPyHxgUcRAbk_1_oB6eo",
+  "email": "nelubandula@yahoo.com"
+ },
+ {
+  "name": "Ristorante Pizzeria Gaon",
+  "file": "gaon-caprino.html",
+  "phone": "045 623 0531",
+  "intl": "+39 045 623 0531",
+  "comune": "Caprino Veronese",
+  "cid": "13677601068215534663",
+  "tmpl": "ristorante-auburn",
+  "url": "https://hubtecit-srl.github.io/website/gaon-caprino.html",
+  "wa": "",
+  "place_id": "ChIJi2tmqSjxgUcRR4R9WrSZ0L0",
+  "email": ""
+ },
+ {
+  "name": "Ristorante Pizzeria Alle Querce",
+  "file": "alle-querce-caprino.html",
+  "phone": "045 657 3332",
+  "intl": "+39 045 657 3332",
+  "comune": "Caprino Veronese",
+  "cid": "6769964942816447143",
+  "tmpl": "ristorante-juniper",
+  "url": "https://hubtecit-srl.github.io/website/alle-querce-caprino.html",
+  "wa": "",
+  "place_id": "ChIJSwNUEQTxgUcRpwpsJj-_810",
+  "email": ""
+ },
+ {
+  "name": "Trattoria Pizzeria Marconi",
+  "file": "marconi-caprino.html",
+  "phone": "045 724 1363",
+  "intl": "+39 045 724 1363",
+  "comune": "Caprino Veronese",
+  "cid": "8137659185310991548",
+  "tmpl": "il-vicoletto",
+  "url": "https://hubtecit-srl.github.io/website/marconi-caprino.html",
+  "wa": "",
+  "place_id": "ChIJD4TR8drwgUcRvASo8-nF7nA",
+  "email": ""
  }
 ]
