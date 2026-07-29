@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lei di Seghetto Susanna — Parrucchiere a Cerea | Prenota</title>
+<meta name="description" content="Lei, salone di Susanna Seghetto a Cerea: taglio, colore, acconciature e piega. 4,9★ su 15 recensioni Google. Chiama per un appuntamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#111111; --ink2:#3f3f3f; --sub:#8b8b8b; --line:#e6e6e6; --paper:#f5f3f0; --white:#fff; --green:#25d366;
+  --h:'Bodoni Moda',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.8;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.kick{letter-spacing:.34em;text-transform:uppercase;font-size:.7rem;color:var(--ink2);font-weight:400}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:400;letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;padding:15px 32px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:#000}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:500;font-size:1.5rem;letter-spacing:.28em;padding-left:.28em}
+header nav{display:flex;gap:34px}
+header nav a{letter-spacing:.16em;text-transform:uppercase;font-size:.76rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydh1jilMB8R8v6Px_WE4w8uVl3cRUc5z1KyACDTM9wI-UOWiSXHwvmPJETlR5PoojYNwdOkg7B3idHU4v-u1YD9MwkeP1PW56iq70e19b8aJiz6I5qVqaUYzsBggXWLSg0w_lTMB5I8gVueM_-ucMgqPo9oWtjkua0AwPx0IjSuSIe8D2pJBeNSo3YeCfnDI9RE5EX2zA8gC_3bcg5nAYo2fEraHauGPorT21rlZUXaKgJ3y1yhJ_0GN36rsLtixAW978dWMp02IxhXYQeqU86LideRUDErLInZ3phVKTkVP73OdFsKz_rHj6CNUGEXRpdrTI_A_qcjf6DuX0SMfuM61VL-F_KJ0G2fibZts5UX-Y7Q9FGcOMz_yy57QaVGL1VjfbadMJP0L6jgCE6M3CRJ00dUZpvKb9rZ9_EFut9yh3QGTSo0QdC44A7iD6Q&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0;filter:grayscale(.4)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:rgba(17,17,17,.42)}
+.hero-inner{position:relative;z-index:2;padding:80px 24px 0;max-width:900px}
+.hero .kick{color:rgba(255,255,255,.85);display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;font-size:clamp(3rem,9vw,7rem);line-height:1;margin-bottom:26px;letter-spacing:.02em}
+.hero p{font-size:1.05rem;color:rgba(255,255,255,.85);max-width:460px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center}
+.intro .kick{display:block;margin-bottom:22px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4.2vw,3rem);line-height:1.32;max-width:22ch;margin:0 auto}
+
+/* Services */
+.serv{padding:0 0 110px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.serv-c{background:#fff;padding:44px 34px;text-align:center;transition:.25s}
+.serv-c:hover{background:var(--paper)}
+.serv-c .n{font-family:var(--h);font-size:.9rem;color:var(--sub);letter-spacing:.1em}
+.serv-c h3{font-family:var(--h);font-weight:400;font-size:1.5rem;margin:12px 0 8px;letter-spacing:.02em}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+
+/* Portfolio */
+.folio{padding:0 0 110px}
+.folio-head{text-align:center;margin-bottom:50px}
+.folio-head .kick{display:block;margin-bottom:14px}
+.folio-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2rem,4.4vw,3rem);letter-spacing:.02em}
+.folio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.folio-grid figure{overflow:hidden;position:relative}
+.folio-grid img{width:100%;height:360px;object-fit:cover;filter:grayscale(.3);transition:.6s}
+.folio-grid figure:hover img{filter:grayscale(0);transform:scale(1.05)}
+
+/* Split */
+.split{padding:110px 0;background:var(--paper)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover;filter:grayscale(.2);background:#ddd url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiMd7eUBC4fylB7ErzCLwigvT8lTlTkVNMCnUgDbn_ZmHm_TPsY2L7W3clVy4PYFeC2AwmAM1ICPuG6Vptceas2eFkcSaCK9qy8foT3hW9WoKxIi2f9GM5Ny8S_6hsD-wXJgjQoEG21HgTTvfWAW8K0BqG8GLht-iuqRkGhe_2-Vt_wWqMaD4UIM6QRcHkcT_gkMvJLAyLmMDOAff19bPNaSTaS1eSu7gs3XjpgsRA8I38i_P0tat7sXPoIFicRa40ethgl0seT4GABSINuG2UWQUbhdrx1ATZfZRy6Vg6KV18r68O2AXvU2kw2_i_EaovmR_G7I6gB4s2Eq1jKu0LOxoHtbmU--gBSY1mYC9Hl8hNpw4UPlW0Uqx4G8dBI65B9GxFwNrZiAp3fBACi4jO1E_d3OKYKQ4RAp-dBSwEdSwSc&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,3.8vw,2.8rem);margin-bottom:18px;line-height:1.2;letter-spacing:.02em}
+.split-txt p{color:var(--ink2);margin-bottom:16px}
+.split-hours{list-style:none;margin-top:18px;border-top:1px solid var(--line)}
+.split-hours li{display:flex;justify-content:space-between;padding:11px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+.split-hours span:last-child{letter-spacing:.06em}
+
+/* Reviews */
+.reviews{padding:110px 0;text-align:center}
+.reviews .kick{display:block;margin-bottom:30px}
+.rv-track{max-width:760px;margin:0 auto}
+.rv q{font-family:var(--h);font-weight:400;font-size:clamp(1.4rem,3vw,2rem);line-height:1.4;display:block;margin-bottom:20px;font-style:italic}
+.rv .st{color:var(--ink);letter-spacing:3px;margin-bottom:10px}
+.rv b{letter-spacing:.16em;text-transform:uppercase;font-size:.78rem;font-weight:400;color:var(--ink2)}
+.rv-row{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;margin-top:60px;text-align:left}
+.rv-row .c q{font-size:1.05rem;margin-bottom:12px;font-style:normal}
+
+/* CTA */
+.cta{position:relative;padding:130px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/3065171/pexels-photo-3065171.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0;filter:grayscale(.4)}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(17,17,17,.6)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);margin-bottom:16px;letter-spacing:.02em}
+.cta p{max-width:480px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px;padding-left:0}
+.foot-grid h4{letter-spacing:.16em;text-transform:uppercase;font-size:.72rem;color:rgba(255,255,255,.55);margin-bottom:14px}
+.foot-grid p,.foot-grid a{font-size:.9rem;line-height:2;color:rgba(255,255,255,.7)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.78rem;letter-spacing:.06em;color:rgba(255,255,255,.45);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .serv-grid{grid-template-columns:1fr}
+  .folio-grid{grid-template-columns:1fr 1fr}
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .rv-row{grid-template-columns:1fr;gap:26px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 22px}
+  .folio-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem}
+  .mbar .call{color:var(--ink)}
+  .mbar .book{background:var(--ink);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">LEI</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#studio">Studio</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Parrucchiere · Cerea</span>
+    <h1>Lei</h1>
+    <p>Il salone di Susanna a Cerea: taglio, colore e acconciature con stile e professionalità.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-light">Prenota ora</a>
+      <a href="#portfolio" class="btn btn-ghost">Portfolio</a>
+    </div>
+  </div>
+</section>
+
+<section class="intro">
+  <div class="wrap">
+    <span class="kick">Il salone</span>
+    <h2>Uno studio dedicato allo stile, in ogni dettaglio</h2>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="serv-grid">
+      <div class="serv-c"><div class="n">01</div><h3>Cut &amp; Style</h3><p>Taglio e styling personalizzati sul tuo viso.</p></div>
+      <div class="serv-c"><div class="n">02</div><h3>Hair Color</h3><p>Colore, meches e balayage d'autore.</p></div>
+      <div class="serv-c"><div class="n">03</div><h3>Treatment</h3><p>Trattamenti di cura e ricostruzione.</p></div>
+      <div class="serv-c"><div class="n">04</div><h3>Piega &amp; Styling</h3><p>Messa in piega ed eventi speciali.</p></div>
+      <div class="serv-c"><div class="n">05</div><h3>Acconciature</h3><p>Sposa e cerimonie su misura.</p></div>
+      <div class="serv-c"><div class="n">06</div><h3>Consulenza</h3><p>Analisi e consulenza d'immagine.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="folio">
+  <div class="wrap folio-head">
+    <span class="kick">Portfolio</span>
+    <h2>I nostri lavori</h2>
+  </div>
+  <div class="folio-grid">
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydi4yM5iTiOcrZ_MGtyqUaeKdfoVo_qNWGcdgM6e8d5OeZ3IgR70qg3rj8ttIX5A4n80VIZjEYWX1YX4qsjcaiG_-fRX5HxwWRswlbZ92lNlBztkPz1fLyJPYYQ4m-GJ4ZgzW1phKsJXLQpNs7ZaAuK9NCYTfeEzGnzQZ_6RyUlTpE0i7BoG0QI4IE56fd48inXhVNbZQ5GbTJSn0z1fQiZhOxIIFCgIc_zcNbKleO3YD85_JCb_hqOiebrRNuNpVNK8lzHI2mOvlE3_6FbAuqFkvgmJE6jimb5hZTbeZNj7bu-D6mdU7-gR6O00a7wx_sxbvPAURWr1IE6EKs-REIGMXmB-raexU6B-Kdgok3z2T5vy3eMoUBPjyRsHc4nqGGypGCzLP4TCvkvPUZSU8vNUkB9icXxX9EsnzT9pqmmRwqrBBBBJMSrliunh1Gg0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 1"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgS1PKP9yCHLgmZczno7_Jj8j8DnPL1t3OZtbuaPODJkx7EimWk5im_9jKW5kgOI0rCGZryWIAd5JAIKz16a88WOgRfF7JY7IGmaRsZd7o85bCipD9l_1oXIb0n3gSKub-Dt7eH5tEMjAv1Lli50obMJ_3ZHLIM0eAAx3raWVXnoNLUMYDASo2dO-UHN6gNqBSeIM2fRH5VZF6NjqIabGEHvPH-ctM5AuInogPrxsHyU3Fe0g7Lsa-WXuadEWrqWiLvL7w_3iK9b_YMXEFnzWDz79i-9951bAenrQG5RgNGCFB_NGDGVEerLf1i4cVeKm73BRTcxNPbAljO679Kd6OwhQ2NkZxQBWfiNzmI0bxNUHpvCa9qZqs7CCcg9IAcfkQRe2ZOrmJc62tfCTRXYeemmVhHP_3dIaAHf20Z9mXXar_TQB_4qggaGNwZKcTF&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 2"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiZMn2OWF5blLIaDxUYE2cr1itg2P-lLCJMkDpo8-CKDvZNBdvTKEXflHqwIJ9hH-FU4ab0eG9Uj-tT0Gm10BmHspeq960mOMfKNjBFPmeFZ2cLDJuuBQyBvFq5HaJu0j3Z2mVJ5N1sxq5t5FdhzZIo71awlou79jErsMkjZ5yBVUudCE733XmJmhjf27J0xerEFuBWIGMg4-DcqX7IIOOjiu_3NGXD6Fpwdzuya9BA91kJY-nbbfcrwwvgcVMQMZd4ZVgKgJUrCutdk02PPYrkaXCsnxL24sdDgNGLoVtMvIxoNhSc0j8vuf7_PGebNISutW9DF3H7z0XLiYadyaZRuoBqO8_p8j1ipKlsgEuj_Qpp1-hcjPzpNnbVqzsXbNgCmNU7CMgSfSEJbfGyuew4Hn_8uOydRzf34e32-iAq4sg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 3"></figure>
+    <figure><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjOvyG9fTCL-vofsGcJJNNhVS26ha_y0YvguClncefxOUH7ELOu3-ZKz6jjjzHSXbgHJFF2rKiAPbA6-n4scjHXzw9CrXCtKGKKh_u29CqXig2meaq40YonwiKdvnBLLiWXRt-IDDESk4x4UQ3kg25CoAL8nB_cG7yGZB_Da6xezFN6k86Jeu6ZaNsRhaq7AG5Phld5S83Vl__geqNw8t__iOFwL91Ym-3NFpV6BMyaAbJgScTZj_IY5M7KM0eGqfYb7lAyEX8QUkSIqV01M-X2HHDch8zdNup3xQhD_02uywhw8zmUMjcgJMTt0G4QqTui1FjQJr3O-gmgf3lWdRNBFohbCRrZwR-_JPbXBKe-qE0xfyIAqn49_s7dbEWzEwtggcaOoWTCtWkpW7lyM_OGn5E75UCdquW8QspsY-zwGtgZF5EIHgRkZc8GfCnj&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Look 4"></figure>
+  </div>
+</section>
+
+<section id="studio" class="split">
+  <div class="wrap split-grid">
+    <div class="split-img" role="img" aria-label="Lo studio"></div>
+    <div class="split-txt">
+      <span class="kick">Lo studio</span>
+      <h2>Dove il tuo stile prende forma</h2>
+      <p>Un ambiente essenziale ed elegante, pensato per farti vivere un'esperienza di bellezza fuori dal comune. Professionisti attenti, tecniche moderne e ascolto.</p>
+      <ul class="split-hours">
+        <li><span>Martedì – Venerdì</span><span>8:30 – 19:00</span></li>
+        <li><span>Sabato</span><span>8:00 – 19:00</span></li>
+        <li><span>Domenica &amp; Lunedì</span><span>Chiuso</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <span class="kick">Recensioni</span>
+    <div class="rv-track rv">
+      <div class="st">★★★★★</div>
+      <q>Perfette le acconciature e tutti i tipi di taglio che desideri.</q>
+      <b>Gaia R.</b>
+    </div>
+    <div class="rv-row">
+      <div class="c rv"><div class="st">★★★★★</div><q>"Salone gestito in maniera molto professionale, titolare estrosa e simpatica."</q><b>Antonella</b></div>
+      <div class="c rv"><div class="st">★★★★★</div><q>"Sempre in linea con le ultime tendenze: Susi è una garanzia."</q><b>Stefania T.</b></div>
+      <div class="c rv"><div class="st">★★★★★</div><q>"Parrucchiera molto professionale e prodotti per i capelli ottimi."</q><b>Romina P.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci o scrivici su WhatsApp: dai forma al tuo nuovo look.</p>
+    <div class="btns">
+      <a href="tel:+39044235377" class="btn btn-light">0442 35377</a>
+      <a href="https://maps.google.com/?cid=8979705227145449713" class="btn btn-ghost">Come arrivare</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff;letter-spacing:.22em">LEI</div><p>Parrucchiere a Cerea dal tocco professionale.</p></div>
+      <div><h4>Contatti</h4><p><a href="https://maps.google.com/?cid=8979705227145449713">Via Giuseppe Ungaretti, 4, Cerea (VR)</a><br><a href="tel:+39044235377">0442 35377</a></p></div>
+      <div><h4>Orari</h4><p>Mar–Ven 8:30–19:00<br>Sab 8:00–19:00 · Lun e Dom chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Lei di Seghetto Susanna — Verona</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+39044235377" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>
