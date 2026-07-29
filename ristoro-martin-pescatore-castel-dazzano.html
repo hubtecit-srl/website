@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ristoro Martin Pescatore — Ristoro nel parco a Castel d'Azzano (VR)</title>
+<meta name="description" content="Ristoro Martin Pescatore, immerso in un grande parco a Castel d'Azzano: pizza, aperitivi e piatti genuini. Nel weekend chioschetti e musica dal vivo. 4,3★ su 1.347 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0f140f; --bg2:#141b14; --panel:#18211a; --cream:#eef2e8; --muted:#a7b6a0;
+  --gold:#8ab24f; --gold2:#b2d179; --line:rgba(238,242,232,.12); --terra:#6f9a3f;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 26px}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
+.kicker{font-family:var(--sans);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.7rem;color:var(--gold)}
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:82px}
+.brand{font-family:var(--serif);font-size:1.6rem;color:var(--cream);letter-spacing:.04em}
+.brand span{color:var(--gold)}
+header nav{display:flex;gap:32px;align-items:center}
+header nav a{color:rgba(244,236,224,.82);font-size:.88rem;letter-spacing:.06em;transition:.2s}
+header nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;padding:14px 26px;border-radius:2px;transition:.3s;cursor:pointer;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#1a1410}
+.btn-gold:hover{background:var(--gold2)}
+.btn-out{background:transparent;color:var(--cream);border-color:rgba(244,236,224,.4)}
+.btn-out:hover{border-color:var(--gold);color:var(--gold)}
+.btn-wa{background:#25d366;color:#08331c}
+.btn-wa:hover{background:#39e07c}
+header.scrolled{background:rgba(20,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.menu-toggle{display:none;background:none;border:0;color:var(--cream);font-size:1.6rem;cursor:pointer}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydi1xiQAS38PLpqNVoLP3oTgT1Kgl3wticantUCJIfzKyd-DuudroKLRakF05ti9QmvSwCklgFedDRt2NIXB11SDk7gWyuW9lyY1RA2q5ZBBIEDj6nz9IDAGyEAg-r0ML26JuowwbWLzAkwyWJUmleC3LYRdTN7u4IbMENzTy50XJojq5n9xzF34q45WYXnJOEbKJlnmeZwbG7OVaVxJVRW3Tn7NxTKsrErY180otXcE1pc1fZQVxuaHNq2WgiYvl6MVpoxkHWkUYppi3o77Bw7k9MMITLKkj56BB_nyqADXQ0yEsk_gO1dxhgI7GcN8kFFKkV7hHB_ZkLKqiF43Gb8RVC_AWJ4gVoyijbpJmGMx5o3OwV4191w69cwfB0gjzzHVEEqHVL3mfg9QPjnr3w_Ir5kLqOzvPZbtd6fbLps&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.06)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.6) 0%,rgba(20,16,14,.15) 45%,rgba(20,16,14,.94) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 0 88px;width:100%}
+.hero .kicker{color:var(--gold2)}
+.hero h1{font-size:clamp(2.6rem,8.5vw,6.4rem);line-height:.98;margin:16px 0 14px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero .sub{font-size:1.15rem;max-width:560px;color:rgba(244,236,224,.9);margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-meta{display:flex;gap:22px;align-items:center;margin-top:34px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.hero-meta .stars{color:var(--gold);letter-spacing:2px}
+.hero-meta b{color:var(--cream);font-family:var(--serif);font-size:1.25rem}
+.hero-meta .sep{width:1px;height:28px;background:var(--line)}
+section{padding:104px 0}
+.head{text-align:center;max-width:620px;margin:0 auto 56px}
+.head h2{font-size:clamp(2.1rem,4.5vw,3.2rem);margin:14px 0}
+.head p{color:var(--muted)}
+.orn{color:var(--gold);letter-spacing:.5em;font-size:.9rem;margin-top:10px}
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-txt .kicker{margin-bottom:14px;display:block}
+.about-txt h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:20px;line-height:1.1}
+.about-txt p{color:var(--muted);margin-bottom:16px}
+.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold2);margin-top:8px}
+.about-img{position:relative}
+.about-img img{width:100%;height:540px;object-fit:cover;border-radius:3px}
+.about-img::after{content:"";position:absolute;border:1px solid rgba(201,162,75,.5);border-radius:3px;pointer-events:none;top:22px;left:22px;right:-22px;bottom:-22px;z-index:-1}
+.menu{background:var(--bg)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px 60px;max-width:960px;margin:0 auto}
+.dish{border-bottom:1px dashed var(--line);padding-bottom:16px}
+.dish .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.dish h4{font-family:var(--serif);font-size:1.45rem;color:var(--cream);font-weight:600}
+.dish .tag{font-family:var(--sans);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:6px}
+.dish p{color:var(--muted);font-size:.92rem;margin-top:4px}
+.menu-note{text-align:center;color:var(--muted);font-style:italic;margin-top:44px;font-family:var(--serif);font-size:1.2rem}
+.gallery{background:var(--bg2)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
+.gal-grid figure{overflow:hidden;border-radius:3px;cursor:pointer;position:relative}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.gal-grid figure:hover img{transform:scale(1.09)}
+.gal-grid .tall{grid-row:span 2}
+.gal-grid .wide{grid-column:span 2}
+.reviews{background:var(--bg)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:30px}
+.rev .stars{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
+.rev p{color:rgba(244,236,224,.86);font-size:.96rem;margin-bottom:20px;font-weight:300}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.rev .who b{font-family:var(--sans);font-weight:500;font-size:.9rem;color:var(--cream)}
+.rev .who span{display:block;font-size:.78rem;color:var(--muted)}
+.rev-foot{text-align:center;margin-top:34px}
+.rev-foot a{color:var(--gold);border-bottom:1px solid rgba(201,162,75,.4);padding-bottom:2px;font-size:.9rem}
+.info{background:var(--bg2)}
+.info-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:stretch}
+.hours-card h3{font-size:1.9rem;margin-bottom:6px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin:14px 0 22px}
+.open-badge.open{background:rgba(120,180,120,.16);color:#8fd08f}
+.open-badge.closed{background:rgba(200,90,70,.16);color:#e09a86}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted);gap:16px}
+.hours-list li.today{color:var(--cream)}
+.hours-list li.today .d{color:var(--gold)}
+.hours-list li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.contact-rows{margin-top:24px}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
+.crow .ic{color:var(--gold);font-size:1.05rem;width:26px}
+.crow h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:2px}
+.crow a,.crow p{color:var(--cream);font-size:1rem;word-break:break-word}
+.info-cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.map-wrap{border-radius:3px;overflow:hidden;min-height:460px;filter:grayscale(.3) contrast(1.05)}
+.map-wrap iframe{width:100%;height:100%;min-height:460px;border:0}
+footer{background:#0e0b09;padding:60px 0 26px;text-align:center;border-top:1px solid var(--line)}
+footer .brand{font-size:2rem;display:inline-block;margin-bottom:12px}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:.25s}
+.socials a:hover{background:var(--gold);color:#14100e;border-color:var(--gold)}
+.foot-line{color:var(--muted);font-size:.82rem;margin-top:16px}
+.foot-note{color:rgba(184,169,152,.5);font-size:.72rem;margin-top:8px}
+.lb{position:fixed;inset:0;background:rgba(10,8,6,.96);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%;border-radius:3px}
+.lb .x{position:absolute;top:22px;right:30px;color:var(--cream);font-size:2rem;cursor:pointer;opacity:.8}
+.mobile-bar{display:none}
+@media(max-width:960px){
+  .about-grid,.info-grid{grid-template-columns:1fr;gap:38px}
+  .menu-grid{grid-template-columns:1fr;gap:20px}
+  .rev-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  header nav{display:none}
+  .menu-toggle{display:block}
+  .about-img::after{display:none}
+}
+@media(max-width:560px){
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
+  section{padding:70px 0}
+  .header-cta{display:none}
+  .hero h1{font-size:clamp(2.2rem,10vw,3rem)}
+  .hero .sub{font-size:1.02rem}
+  .btn{padding:13px 20px;font-size:.76rem}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:15px 6px;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:#12100e;font-weight:600}
+  .mobile-bar a.call{background:var(--gold)}
+  .mobile-bar a.wa{background:#25d366;color:#08331c}
+  body{padding-bottom:52px}
+  .wrap{padding:0 20px}
+}
+</style>
+</head>
+<body>
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand">Martin Pescatore<span>.</span></a>
+    <nav>
+      <a href="#storia">Chi siamo</a>
+      <a href="#menu">Cosa offriamo</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="https://wa.me/393447432775" target="_blank" rel="noopener" class="btn btn-gold header-cta">WhatsApp</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav a').scrollIntoView()">☰</button>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Ristoro & Pizzeria nel parco · Castel d'Azzano</div>
+    <h1>Buona cucina<br><em>immersi nel verde</em></h1>
+    <p class="sub">Un ristoro nel cuore di un grande parco: pizza, aperitivi e piatti genuini. Nel weekend chioschetti all'aperto, serate con musica dal vivo e tanto spazio per una passeggiata nel verde.</p>
+    <div class="hero-cta"><a href="tel:+393447432775" class="btn btn-gold">Chiama ora</a><a href="https://wa.me/393447432775" target="_blank" rel="noopener" class="btn btn-out">Scrivici su WhatsApp</a></div>
+    <div class="hero-meta">
+      <div><span class="stars">★★★★★</span> <b>4,3</b></div>
+      <div class="sep"></div>
+      <div>1.347 recensioni Google</div>
+      <div class="sep"></div>
+      <div>Via IV Novembre 41</div>
+    </div>
+  </div>
+</section>
+<section class="about" id="storia">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <span class="kicker">Chi siamo</span>
+      <h2>Una fuga dalla città, immersi nella natura</h2>
+      <p>Il Ristoro Martin Pescatore si trova all'interno di un bellissimo parco: durante la settimana bar e ristoro, nel weekend e nei giorni festivi aprono i caratteristici chioschetti esterni per bere e mangiare all'aperto.</p>
+      <p>Atmosfera rilassata da vacanza, personale giovane e cortese e la possibilità di passare un pomeriggio in mezzo al verde. Spesso ci sono anche serate con musica dal vivo.</p>
+      <div class="sign">— la natura a due passi da casa</div>
+    </div>
+    <div class="about-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydiyil4fSSq4q4feKyAePDukO8uqFu46KoKvLha_ooTQeCnoujY-Xq4jasUZajwX6K-g0cXetdWoeROKTpG78eveU4aPXbXN9Yu6SpkzuCnXpPbRkg5TqSu1ACFctrbupBncvDMXa6OUD5agKfwPix25-cC_WTgbMuB2Md1Ki4dbuUf9_J2x6xSTo1rlpf-DZTFRaZ8ILfHRCMUcEZWE5pAHAtpCsxKQsU5UVxIFAZqisYU1EbzTqt64ihFp5RXJ7ASrygg54iYDqv3ZP-nUbeVtOQCXr8WdGRIx3-VbXv2IBoS5d_E9OL3Q6yD1Q8M1iZU79wqLpbyNVJCpRP7ixDr_plojW2iylYXnq3tASJchGCA-4OaPO-U974EeH0804UD8EPQKBXtZZV-pYjchK-kynD3UUo2pvXPf1xIati0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Martin Pescatore">
+    </div>
+  </div>
+</section>
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Cosa offriamo</span>
+      <h2>Pizza, aperitivi e sfizi</h2>
+      <div class="orn">✦ ✦ ✦</div>
+      <p>Proposte semplici e genuine, dal bar alla pizza serale.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="dish"><div class="r"><h4>Pizza classica &amp; speciali</h4><span class="tag">Pizzeria</span></div><p>Pizze cotte come si deve, dalle classiche alle proposte più sfiziose.</p></div>
+      <div class="dish"><div class="r"><h4>Aperitivi &amp; taglieri</h4><span class="tag">Aperitivo</span></div><p>Spritz, cocktail e taglieri da gustare all&#x27;aperto nel parco.</p></div>
+      <div class="dish"><div class="r"><h4>Primi del giorno</h4><span class="tag">Cucina</span></div><p>Piatti caldi e genuini che cambiano di giorno in giorno.</p></div>
+      <div class="dish"><div class="r"><h4>Grigliate &amp; secondi</h4><span class="tag">Secondi</span></div><p>Carni alla griglia e piatti sostanziosi per tutti i gusti.</p></div>
+      <div class="dish"><div class="r"><h4>Panini &amp; sfizi</h4><span class="tag">Sfizi</span></div><p>Da mangiare al volo ai chioschetti, comodi e buoni.</p></div>
+      <div class="dish"><div class="r"><h4>Dolci &amp; gelati</h4><span class="tag">Dessert</span></div><p>La dolce chiusura, perfetta dopo una passeggiata.</p></div>
+    </div>
+    <p class="menu-note">Nel weekend chioschetti all'aperto e musica dal vivo.</p>
+  </div>
+</section>
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Galleria</span>
+      <h2>Dai un'occhiata</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="gal-grid">
+      <figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydgy-IyYkG-lk4hleTuCXBxYjNZdj5WecJ5BgZyHOKiqI-YnG8VJM9xFsUfJXsoiQA3HiBaVrGK4gTkgKZ-pz7azEqy1dPtocJ9Zq-O4LZBycKhzQILB4_hXFn5ApwoIdmq3l4k9hRZZz9ltZlB4H5-enerR8qQls5Y0iRw97EzLwJCKQ7_td3FeKgn-oj9gzbreMS8zK0012_t9fXFr3PjvvmFLBSkX9QyB9c5Vi1QNp1aBW7r2jxI-iC3T3wjbcenRtVIZrnlzwT7Ymp8whLRHUAmrhXoS9GeoVtJH70CulUYm_TJG-c80ZdrjIMoKjKhbKtvGql89hqX0Wn6sLawQNJW98aD0HHRrSfNDHHP9OPz7rZL3hxc3_0hHA-jGgKSBl0bwnQZ9VIRQHdbhWS5jPRbN609jeCOQ8GDX2oduRQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydgJu5xJ4UZ8l3ewEgsQKnjhy5t2brhZI0Gh8F0VcwqKTyGF-5wcJqeRW8nBa_wdC00xZzlqbRlEyrPQc5tlMHPWxW8kUm1MLcg6G00rBbFu3YBojCgp2Jv7gLdJl7AIZ6CVngg_obWBhfo_eoHB2NXhQA04gQbxeD9J0Zv5F8P93Ra2naXSnV3TqcbzAnBy3TqF32LcxAgJFE4tlvm9kHuloHThtv5-ZT8lSN2Z-ORlIceO1tZr5pCuV8OBQSNgrxoSMKa-3-4d0vI2JXZcvcCgQWQKtcGH2cMpsNI8uu3OYon0iLsMBQ_sT45Ib-rp6YaaOfV_GAjOJCychU4yO--PwmrDtrS6w25oR7T9lhfDNHKJUL3jvh6etornENpUnW2BDCTnECNBgJNVqiOpXHY_xS5mDJJcpOBUK8JJ0t6NGbGEAKTkBgFxyyXeG871&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydgqAVTjwvBkiKyRFOW-0zL783PaRCveoB2kcCoyNN-uTC9pK55rA4e6Tm93DU2nRuzirqTkp2cVIQYLLc8d4KeR4FXrPpOZ2JWHdF0j0VXdrsR9fXFteD7NeIPhQ7y4v0vO6z_O8U4j-mvW_kU7QNbWDmLYHq2z5GoraRqWubUqsWUuzyr_82A-uQg9hf7HJAR6b5cjWnQAI3PnHM9wL1QQeMjLrXgxvu_zRWhq7r4zGsbKzI_Exazk2OsIlJek1oOyIhZLFCwYI36X4qQtuT8NreJVdAl85qlaJzoYN0oHa3jH2JAGKTis48LY5dDAjoEvfx4HgWKSLQLhaAetlK4rPbgNjNbTw6BfNF0zCn6VvvDH9rO4BkHPmDYFsHOFYNo_E4FdKLsgLHD9bewsdHPRHIyy9FhwOcTguIRhxV-pddCMOtCvzSsfHfRqjE19&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure class="wide"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydipCuVOZ80pr-PIPTdmXWgc-d7ffLVy4S2vL-gGtJe5F2fxcp8ghUffjwYBkvOJxFeV0Bl3vuf0Lpt4VidgG2qQMEHQOMuDnufVo4n0n4BmlYjdFPG_8hFT8LEezZgT-ajrkATkOru4m-8uVzZia0qmA4dPoSu-bx4W5YIkrfICyov6UB1GnWJgZT_Bmk3vw2UuZLSUFPMKI5L22Zgnczt7ocvC_lI2yer1gHcXXwAVfsfECHGbjogKVoi2bqiOm_brWe-cT0Q0VmlwdsoyxcIZyNcTzRWGYIwwUkHO4h-XM--vp-our9XVzbauNxMqQba_yj7mYAn3rcZYry4MyDhRxKfIS6Ljuhk3xJts3Ov6Th568mGl3wsMScO_OhQ38fwYFeuEAiORc9eIzlKKhjAOH4QlyeQYZY0FR1p6bw5rnw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydhHEJJ0oB0fuyImHHZHlPvAypiGdUHDcdK_adlDRePLD505A9UHLI5oskXvoUwy-KB6LqwC5JuPOee8nib2PTph6Ch78frcCUfPFasw5i-Ce5VABelqDI980taqzhBHIZV1J6QfM0Mcy92MJjK4G04HNPER7UzWvxL_7DrPrArIdfjMA3FbNVTdmoTYP-9JGyuGKHOuvvMxz20VnbVqUtW7jJjntkjNpLZTq9rATFogdELcmBAUvpklCY-YQCmM5QBOdsm3AalvTuyOgEOMW9GKonk9F37DcHpDpEuSyoVZlhf8yQzujcPT-WPvSMTcadX9gDhq0xfAirvAspzCijZDSkrZqhMYgFkbUHTweTF0_X8Jyk7Q2mttsNd0eKvrmLbRNntliVktjvgkXfTTS4kr50QXxiGZEsQzC_WMy6qNeQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydjFs-cDaBQhO5l4-h4_4ovzUpaX179lYM2W8GJHELqQRIJouFhD3V0LHDIwpbuN2tdeYlUn1QLoCzNGOX587_DUjBoZrqgXjXDycxjUZQ0TGO5WgOGITvqMzfQWWihlSNScoJBo4CrqsKmJKL31V1Cw5xVhDLv9mI61UI5zHHglFo1g7kN74nOLLqCwBadEI-aBOSgj6luKjDyIvEvqXb0lmnZOEHadFhZeEQdcI9jbKiqoyHXEqJs1vci8ItSMCtaWiYoeKyYOD1CsYi4FFdlDWWp2S6_J4AyRDsyyGKf474miFnouwROywFdnKQpEcBKYNcNGbXPG7CV5eRDuXMj-dogWFPaHZuwemtrEXHaT84faScQwkUE85yAb7NxDPc_YfiAoUJqmhdBjm0CZprLr9H89Xk9pnR2Is7amjfU&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+    </div>
+  </div>
+</section>
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dicono di noi</span>
+      <h2>4,3 su 1.347 recensioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★</div>
+        <p>“Mi sono fermato per un aperitivo, la peculiarità è la location all&#x27;interno di una vasta area verde, atmosfera che ne scaturisce crea l&#x27;impressione di essere in ferie, personale giovane e molto cortese, merita una passeggiata il parco adiacente, lo…”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocIVJ8OI47iqOmbY4P-PO-3LFFUw8uR3crbFL9__R_b3572eEw=s128-c0x00000000-cc-rp-mo-ba6" alt="Roberto" loading="lazy"><div><b>Roberto</b><span>10 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Ho avuto la possibilità di suonare con il mio gruppo La grande onda. Cosa dire posto stupendo, una fuga dalla città per viversi la natura, immerso nel verde con la possibilità di passare un pomeriggio piacevole potendo camminare nel parco…”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a/ACg8ocJIChf4XmEy3wtngSKwVN3ymX3jHplLXK9eE5GZiyKoWUtm=s128-c0x00000000-cc-rp-mo-ba2" alt="Andrea Nicolin" loading="lazy"><div><b>Andrea Nicolin</b><span>un anno fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Il ristoro Martin pescatore si trova all&#x27; interno di un parco bellissimo, durante la settimana offrono servizio di bar normale ma il fine settimana o nei giorni festivi aprono i chioschetti esterni molto carini in modo da poter prendere da bere o da…”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjWs1Uktv04SYtUKfP6xd1HE_UHOrOqYZ_zHi4nufOmjtOtrx0Sc=s128-c0x00000000-cc-rp-mo-ba3" alt="Maria Grablovitz" loading="lazy"><div><b>Maria Grablovitz</b><span>4 mesi fa</span></div></div>
+      </div>
+    </div>
+    <div class="rev-foot"><a href="https://maps.google.com/?cid=4239334027808050883" target="_blank" rel="noopener">Leggi tutte le recensioni su Google →</a></div>
+  </div>
+</section>
+<section class="info" id="contatti">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dove trovarci</span>
+      <h2>Orari & Contatti</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="info-grid">
+      <div class="hours-card">
+        <h3>Orari</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>08:00–21:00</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>08:00–21:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>08:00–21:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>08:00–21:00</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>08:00–23:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>08:00–23:00</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>08:00–23:00</span></li>
+        </ul>
+        <div class="contact-rows">
+          <div class="crow"><div class="ic">◉</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=4239334027808050883" target="_blank" rel="noopener">Via IV Novembre 41, 37060 Castel d'Azzano (VR)</a></div></div>
+          <div class="crow"><div class="ic">☎</div><div><h4>Telefono</h4><a href="tel:+393447432775">344 743 2775</a></div></div>
+          
+        </div>
+        <div class="info-cta"><a href="tel:+393447432775" class="btn btn-gold">Chiama</a><a href="https://wa.me/393447432775" target="_blank" rel="noopener" class="btn btn-out">WhatsApp</a></div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+IV+Novembre+41,+37060+Castel+d'Azzano+VR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="brand">Martin Pescatore<span style="color:var(--gold)">.</span></div>
+    <div class="foot-line">Ristoro & Pizzeria nel parco</div>
+    <div class="socials"><a href="tel:+393447432775" title="Telefono">☎</a><a href="https://maps.google.com/?cid=4239334027808050883" target="_blank" rel="noopener" title="Mappa">◉</a></div>
+    <div class="foot-line">© 2026 Ristoro Martin Pescatore · Via IV Novembre 41 · Castel d'Azzano (VR)</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
+  </div>
+</footer>
+<div class="mobile-bar"><a class="call" href="tel:+393447432775">☎ Chiama</a><a class="wa" href="https://wa.me/393447432775" target="_blank" rel="noopener">WhatsApp</a></div>
+<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1500');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+const periods={"1": [[800, 2100]], "2": [[800, 2100]], "3": [[800, 2100]], "4": [[800, 2100]], "5": [[800, 2300]], "6": [[800, 2300]], "0": [[800, 2300]]};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const open=(periods[day]||[]).some(p=>hm>=p[0]&&hm<p[1]);
+const badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+badge.className='open-badge '+(open?'open':'closed');
+txt.textContent=open?'Aperto ora':'Chiuso ora';
+</script>
+</body>
+</html>

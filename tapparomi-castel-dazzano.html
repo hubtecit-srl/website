@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tapparomi — Bistrot & Pasticceria a Castel d'Azzano (VR)</title>
+<meta name="description" content="Tapparomi, bistrot e pasticceria a Castel d'Azzano: brioches artigianali, colazioni, pranzi, cocktail e selezione di vini. Ambiente industriale e dehor. 4,8★ su 372 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#12140f; --bg2:#181b14; --panel:#1d211a; --cream:#eff1e7; --muted:#adb4a2;
+  --gold:#a8a24e; --gold2:#cbc57e; --line:rgba(239,241,231,.12); --terra:#8f8a3e;
+  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 26px}
+h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
+.kicker{font-family:var(--sans);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.7rem;color:var(--gold)}
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:82px}
+.brand{font-family:var(--serif);font-size:1.6rem;color:var(--cream);letter-spacing:.04em}
+.brand span{color:var(--gold)}
+header nav{display:flex;gap:32px;align-items:center}
+header nav a{color:rgba(244,236,224,.82);font-size:.88rem;letter-spacing:.06em;transition:.2s}
+header nav a:hover{color:var(--gold)}
+.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;padding:14px 26px;border-radius:2px;transition:.3s;cursor:pointer;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:#1a1410}
+.btn-gold:hover{background:var(--gold2)}
+.btn-out{background:transparent;color:var(--cream);border-color:rgba(244,236,224,.4)}
+.btn-out:hover{border-color:var(--gold);color:var(--gold)}
+.btn-wa{background:#25d366;color:#08331c}
+.btn-wa:hover{background:#39e07c}
+header.scrolled{background:rgba(20,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.menu-toggle{display:none;background:none;border:0;color:var(--cream);font-size:1.6rem;cursor:pointer}
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhl17k_sAZ3Mg4UEyCLazSnqKKzcfMIFUUmE-5ovGeiKjuAj3MpBLN8X14DM1VOGF0yw8IgDCFmIlL-RTMv8qZnWdv7oliSwOxswQSGKgD6sDVzYt6N9agEN5HDFP99jqOvSagaHdfIWB0ktZrxRbvbm_XiF1dZmp9IAjntcnCB4Kuj5xiQTeHPhKy9k3u4fpXIRMJChLE88KYLL2IoqR_4hRBWgmD3Pn2_wbhSfmD997bV0OfsBVO7PVR1qECKJvAnU4eHDts7ta4zroJvkFYDbB8R-JvXTVpC1zQFFCwkR6p_QP7lNqmhXfp8d9W6eCvIP8JLyH_Eo_Uf9tMW-5t0-b2AWopDhIYQM4MoSjdzau7XUbDrjZZXZqgHLtUEQSb0BnmB6nvEQlgGJYYy7a8sX921mfB8uC5x4g0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.06)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.6) 0%,rgba(20,16,14,.15) 45%,rgba(20,16,14,.94) 100%)}
+.hero-inner{position:relative;z-index:2;padding:0 0 88px;width:100%}
+.hero .kicker{color:var(--gold2)}
+.hero h1{font-size:clamp(2.6rem,8.5vw,6.4rem);line-height:.98;margin:16px 0 14px;font-weight:600}
+.hero h1 em{font-style:italic;color:var(--gold2)}
+.hero .sub{font-size:1.15rem;max-width:560px;color:rgba(244,236,224,.9);margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+.hero-meta{display:flex;gap:22px;align-items:center;margin-top:34px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
+.hero-meta .stars{color:var(--gold);letter-spacing:2px}
+.hero-meta b{color:var(--cream);font-family:var(--serif);font-size:1.25rem}
+.hero-meta .sep{width:1px;height:28px;background:var(--line)}
+section{padding:104px 0}
+.head{text-align:center;max-width:620px;margin:0 auto 56px}
+.head h2{font-size:clamp(2.1rem,4.5vw,3.2rem);margin:14px 0}
+.head p{color:var(--muted)}
+.orn{color:var(--gold);letter-spacing:.5em;font-size:.9rem;margin-top:10px}
+.about{background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.about-txt .kicker{margin-bottom:14px;display:block}
+.about-txt h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-bottom:20px;line-height:1.1}
+.about-txt p{color:var(--muted);margin-bottom:16px}
+.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold2);margin-top:8px}
+.about-img{position:relative}
+.about-img img{width:100%;height:540px;object-fit:cover;border-radius:3px}
+.about-img::after{content:"";position:absolute;border:1px solid rgba(201,162,75,.5);border-radius:3px;pointer-events:none;top:22px;left:22px;right:-22px;bottom:-22px;z-index:-1}
+.menu{background:var(--bg)}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px 60px;max-width:960px;margin:0 auto}
+.dish{border-bottom:1px dashed var(--line);padding-bottom:16px}
+.dish .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+.dish h4{font-family:var(--serif);font-size:1.45rem;color:var(--cream);font-weight:600}
+.dish .tag{font-family:var(--sans);font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:6px}
+.dish p{color:var(--muted);font-size:.92rem;margin-top:4px}
+.menu-note{text-align:center;color:var(--muted);font-style:italic;margin-top:44px;font-family:var(--serif);font-size:1.2rem}
+.gallery{background:var(--bg2)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
+.gal-grid figure{overflow:hidden;border-radius:3px;cursor:pointer;position:relative}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.gal-grid figure:hover img{transform:scale(1.09)}
+.gal-grid .tall{grid-row:span 2}
+.gal-grid .wide{grid-column:span 2}
+.reviews{background:var(--bg)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.rev{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:30px}
+.rev .stars{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
+.rev p{color:rgba(244,236,224,.86);font-size:.96rem;margin-bottom:20px;font-weight:300}
+.rev .who{display:flex;align-items:center;gap:12px}
+.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.rev .who b{font-family:var(--sans);font-weight:500;font-size:.9rem;color:var(--cream)}
+.rev .who span{display:block;font-size:.78rem;color:var(--muted)}
+.rev-foot{text-align:center;margin-top:34px}
+.rev-foot a{color:var(--gold);border-bottom:1px solid rgba(201,162,75,.4);padding-bottom:2px;font-size:.9rem}
+.info{background:var(--bg2)}
+.info-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:stretch}
+.hours-card h3{font-size:1.9rem;margin-bottom:6px}
+.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin:14px 0 22px}
+.open-badge.open{background:rgba(120,180,120,.16);color:#8fd08f}
+.open-badge.closed{background:rgba(200,90,70,.16);color:#e09a86}
+.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted);gap:16px}
+.hours-list li.today{color:var(--cream)}
+.hours-list li.today .d{color:var(--gold)}
+.hours-list li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
+.contact-rows{margin-top:24px}
+.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
+.crow .ic{color:var(--gold);font-size:1.05rem;width:26px}
+.crow h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:2px}
+.crow a,.crow p{color:var(--cream);font-size:1rem;word-break:break-word}
+.info-cta{margin-top:24px;display:flex;gap:12px;flex-wrap:wrap}
+.map-wrap{border-radius:3px;overflow:hidden;min-height:460px;filter:grayscale(.3) contrast(1.05)}
+.map-wrap iframe{width:100%;height:100%;min-height:460px;border:0}
+footer{background:#0e0b09;padding:60px 0 26px;text-align:center;border-top:1px solid var(--line)}
+footer .brand{font-size:2rem;display:inline-block;margin-bottom:12px}
+.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
+.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:.25s}
+.socials a:hover{background:var(--gold);color:#14100e;border-color:var(--gold)}
+.foot-line{color:var(--muted);font-size:.82rem;margin-top:16px}
+.foot-note{color:rgba(184,169,152,.5);font-size:.72rem;margin-top:8px}
+.lb{position:fixed;inset:0;background:rgba(10,8,6,.96);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
+.lb.on{display:flex}
+.lb img{max-width:92%;max-height:90%;border-radius:3px}
+.lb .x{position:absolute;top:22px;right:30px;color:var(--cream);font-size:2rem;cursor:pointer;opacity:.8}
+.mobile-bar{display:none}
+@media(max-width:960px){
+  .about-grid,.info-grid{grid-template-columns:1fr;gap:38px}
+  .menu-grid{grid-template-columns:1fr;gap:20px}
+  .rev-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
+  header nav{display:none}
+  .menu-toggle{display:block}
+  .about-img::after{display:none}
+}
+@media(max-width:560px){
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
+  section{padding:70px 0}
+  .header-cta{display:none}
+  .hero h1{font-size:clamp(2.2rem,10vw,3rem)}
+  .hero .sub{font-size:1.02rem}
+  .btn{padding:13px 20px;font-size:.76rem}
+  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
+  .mobile-bar a{flex:1;text-align:center;padding:15px 6px;font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:#12100e;font-weight:600}
+  .mobile-bar a.call{background:var(--gold)}
+  .mobile-bar a.wa{background:#25d366;color:#08331c}
+  body{padding-bottom:52px}
+  .wrap{padding:0 20px}
+}
+</style>
+</head>
+<body>
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#" class="brand">Tapparomi<span>.</span></a>
+    <nav>
+      <a href="#storia">Chi siamo</a>
+      <a href="#menu">Cosa offriamo</a>
+      <a href="#gallery">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="tel:+39045519289" class="btn btn-gold header-cta">Chiama</a>
+    <button class="menu-toggle" onclick="document.querySelector('nav a').scrollIntoView()">☰</button>
+  </div>
+</header>
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap hero-inner">
+    <div class="kicker">Bistrot & Pasticceria · Castel d'Azzano</div>
+    <h1>Dalla colazione<br><em>all'aperitivo</em></h1>
+    <p class="sub">Un bistrot contemporaneo dallo stile industriale: brioches artigianali, colazioni e pranzi, selezione di vini e cocktail. Accoglienza cordiale, energia familiare e dehor esterno.</p>
+    <div class="hero-cta"><a href="tel:+39045519289" class="btn btn-gold">Chiama</a><a href="#menu" class="btn btn-out">Scopri il menù</a></div>
+    <div class="hero-meta">
+      <div><span class="stars">★★★★★</span> <b>4,8</b></div>
+      <div class="sep"></div>
+      <div>372 recensioni Google</div>
+      <div class="sep"></div>
+      <div>Via Piave 50</div>
+    </div>
+  </div>
+</section>
+<section class="about" id="storia">
+  <div class="wrap about-grid">
+    <div class="about-txt">
+      <span class="kicker">Chi siamo</span>
+      <h2>Un locale con una identità ben delineata</h2>
+      <p>Tapparomi è un bistrot contemporaneo in stile industriale: accoglienza, cordialità e ottima materia prima, dalla colazione al pranzo fino all'aperitivo con una bella selezione di vini.</p>
+      <p>Punto forte è la pasticceria, con brioches artigianali abbondantemente farcite, ma anche primi fatti a mano e proposte gourmet per eventi e ricorrenze. Servizio veloce e cortese.</p>
+      <div class="sign">— un gioiellino a Castel d'Azzano</div>
+    </div>
+    <div class="about-img">
+      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydimIGLyjY3ZWWpEHfQDBfp3BBSQ3kZa6dOUDAHDxioZ8lf8Zf2IzneB3CpFT33cVGiEuczO8uqehfP4z4uW1ecrELkPzOtx03mBbSF8DQrTlQfatfZNpZKCIslqqCL8QuitjmmyZ_KlHhrLXPo_A9n6-WiyqIfkX9DP21FbsQq6H4b3c-LXL0gkOFzs4JWb9FEp5e0pZE4SspOw8znK_ss8qxeRkiIW4wYjUdNVB-DuOPlinsjWeko5ti23BmhHrDuUXc4NPMkVyF_cGd9Jjg-eCMfwfp2Hv-0zbAl02rckoA8uLgeOp-Gz5VP3EYGViDkIb79gbl7ThiTWgd1jyezvaWjjytlKb9oKcydIxTYuJtqUvPmzjOH4Sjax1ww9D3ZnJBpoo-Ufl4ptlG5a2k2OxLHejLDYDitLRSRnwOgls5YZ0_kdhF2qUNjlXA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Tapparomi">
+    </div>
+  </div>
+</section>
+<section class="menu" id="menu">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Cosa offriamo</span>
+      <h2>Colazione, pranzo & aperitivo</h2>
+      <div class="orn">✦ ✦ ✦</div>
+      <p>Materia prima di qualità, dal mattino fino a sera.</p>
+    </div>
+    <div class="menu-grid">
+      <div class="dish"><div class="r"><h4>Brioches artigianali</h4><span class="tag">Pasticceria</span></div><p>Sfornate e farcite abbondantemente, il nostro punto forte.</p></div>
+      <div class="dish"><div class="r"><h4>Colazioni &amp; brunch</h4><span class="tag">Colazione</span></div><p>Il modo giusto per iniziare la giornata, anche nel weekend.</p></div>
+      <div class="dish"><div class="r"><h4>Primi fatti a mano</h4><span class="tag">Cucina</span></div><p>Gnocchetti e carbonara tra i più apprezzati, fatti come si deve.</p></div>
+      <div class="dish"><div class="r"><h4>Pranzo del giorno</h4><span class="tag">Bistrot</span></div><p>Proposte fresche e genuine per la pausa pranzo.</p></div>
+      <div class="dish"><div class="r"><h4>Taglieri &amp; aperitivi</h4><span class="tag">Aperitivo</span></div><p>Spritz, gin tonic e stuzzichini per una serata in compagnia.</p></div>
+      <div class="dish"><div class="r"><h4>Cocktail &amp; vini</h4><span class="tag">Drink</span></div><p>Una selezione curata per accompagnare ogni momento.</p></div>
+    </div>
+    <p class="menu-note">Menù gourmet dedicati per eventi e ricorrenze.</p>
+  </div>
+</section>
+<section class="gallery" id="gallery">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Galleria</span>
+      <h2>Dai un'occhiata</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="gal-grid">
+      <figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydh4Wq27Ve_cHYDftb7t7-lvsxzzr_YXeuf6XJ11-Cj3cePv1MZnQ1_IZ8X1IKPGN-GwPZw7aM-j863fPq4s1sWgXgn4SyI_UdVHunnNpNwC51N-t2X8nHV7KWHlVbugt2sI-Yhn89lKUZf0pK2rVARBQjBL-37yz-VJNSswu7XwRL95Tz6YZoU-Of1JQbKtj2N4uHKcN7zh67_vazgikoptvoTjrvdBNlpW8fDQaap7VZL67GlcidjKa5A4i7tT38E7H9DaDOzkOjYwSLholjRzzaz1liDrJYjrG7WkrOKQp0_S_hraQm8FLQoldBQoXY6DLtvfii-9dzvH4lapRucFBUzrvdXn5qTLTWG5_IJoNB1jS3VwNJqJ6SgHfLDfVmFxe78uT7vuMwPaZISyQd802zZGGX498wWJictR94-w9OXuTdXi6N7t10WNEQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydhHRnXygj5jNLmmqpgSa9yqIMh87yjjKAlxWKqhkz1sLpdtGAVGA_O-OWOXcpHehumN9d7B6mzRCrZqESlsOdKG0eY5116ZwwQjUd5KNpuJZp8IkPPiEa-IZ1n3lOIfSCtK_CFNz0ZNmaAtksXstV3pLpSC5sJyhZvuxo1D1A3YTkO4La_eMkV35W5Ht4XDpkPJjyrm22TC-_1UHrZNBn9zVoLVcqPpk4FWU5eyIynPL2panS2Tp39-nyhMSpwTLa23bmenX1oz9r3ybg4bg162BeQY0BlrjonB52OWBcf0cABJWGnpVI7UXyZ4yMA49LXrvtpuCuskR8BEJxas6K884YluQ4EXjZz0azv4vdVpr90Cdj7ebiVstFc5UI8e4NlAg7DPL1yL4RckllVaiF7WtwteTaawdYwA6iIr0bSttfWLqwzppUGE4pSEdw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydikbfwn0K3VkP-3nA-CEcuy5xQYoRQH6pPrg8tzFg7MZviZJqfidqOGVQ_79u_69LhWhYHEV9L2QrwYINpWnU9hooVpIudPDJCpvdp5jLMBbKwS0vkhserwoigXXsbts9ixXtMh_gOinf_SrKFxgdUIpOc9umpPVb9nmyjxkycpLLmUGRC5Fw7uY5ccB7BqGekSD5eJ3KRQtFJelyMH4lC63ffrk-eCcQp6ZyELD2lH9Izt4NBAPi-MDFY1a-kLJTZMNEwr_asmCaBADDv6-7_MwIulrk2s3M8nRE1xT2DSPQqviLkqeP69336PJYiPkdNQNBmqVMNgPW4lhFgiVNAxR2pQZiYckLM_-ZrhROwfUXILht-rB0oeE7R9FyRk_swi1zuUXpjQyEGrw6f7V3Y0G34LbG806qF4iZaQcHobVZReyZ8oOrp8xdaxxdGz&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure class="wide"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydgB1wEs1VFAuhFvOgbgpc0J8NZUwQwMqAEkYmN-LkoR1WpKua9uEBLZ5Va3uSZ1DbtWNi5gtC8iIZvjwMFZxAe2q58-AseX5v12dcpOLw7bvf-T_Dw7gMtuvQ7IIDQroowYmUEAkpLij2R8KwexvHmR2Cnrp1lFRIc6esc483Elp-YeS7VI32YxzKTwZQoySf830TZqtmpW3vJ_RR7CLO38KgoWB-1FQ0XoJKMK_hjc4Ctwuv4Rm2q4QqJ3y3fmTcZE7hT3hR4mwlu2YjFc8XDoDAsKgvqnz4dG2wOXakSKOdipV-PA64Uk1jWqprUzWaXDd_FwnXu4ZYicMEPD10K1tnRYLDgK3OuFlSVQZKmhRcoFIDS-c-vMKEqWqRvUrG69UjnPLOwSu6Kd8Z2FqkKRmDsEXxqwEGtO7lfbVNA8nRo&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydi_bs4zPA1KRIMn_FyrrhX75QR91Y34HzSji6vuGNdr9sCVirg2DyjAF4TwZROVI7f_8S3Cc_p4-sRBXXF89i3XSQM81ksuqYgsXj_ZEipH0DsimLXcwEPuTmGvqIrHAvjBnR0VjQEdIaiVUv6FnOjyKQH0_1hJz6nQ-0VrFO64E8B4mWd6S7KewGzEFDuDn0OtHUVh2y0acge67C9XVcYBC-hbwVYSAsZiEedN0CNIKCUBkgu06-WVTw-6xQXnPw2h1lR3aiwDM72ObdTaR3MUF0GT7s0SKpXIIuRPB3jfIOizd1l0o61Wt3DVznn6lhcZfsN9m3QThX2HUaRWJK8wg6CEpiJiP-7-bfa3-V1gr8OumyZce3OQCZyz7A16aOB3ykx6TA77P637jLrGLfMSXJboYa3UlzHTZv9Sgi_FlimkfrnmfR4O72pSSKkm&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydgaCorV6GyQ9ugRS0h-l3-OE2-y3GBKPHd9VsdV5WgDZb_VpQYPsZpmEZet0Z_gIWBCshRRYwI_cB0aVXovRsSvlkFxu9NpJ2_hgtQHAWHUCO30zXu5-DaM649V0Ywv_dKi_NzTRy3o7VXdkYvTTD9xDChFkaLVa_WHDM0-y6dgg79m2IXnh_awJ-Yq2fTkodoJM97GHgoqFeGqmocORWJrwvOJk_vV0GFX5dyeA7rFkx-iOPukPfmhPTzmkWxsKZyZpEkHQvHi6pWZv7yU0v9jkK-oSqPHl_a3E-ZrD96p4_EC4ftIq0bTy_wSsFkPiRXdPaHr-N2jS_h3E6aMgE-mo9Uq3TD2fJprsZs8A0tHnxnRxUqIhM1jFIEHcE_0Xi6Ts6v6JidnYHpNct8nlg61iY4LAwV_hBXeq7XHcUqNf_tR&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Foto"></figure>
+    </div>
+  </div>
+</section>
+<section class="reviews" id="recensioni">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dicono di noi</span>
+      <h2>4,8 su 372 recensioni</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Mi sono fermato a pranzo in questo bistrot ed è stato un&#x27;autentica scoperta. Ho ordinato gnocchetti con pomodoro, stracciatella e polvere di origano per primo. Gli gnocchetti sono fatti a mano, erano soffici e col pomodoro e la stracciatella sono…”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjWacXB6iGFgvHtHeB_Ygw1MYzkgkGOB_jcpe64l46wDak7LTuQ8=s128-c0x00000000-cc-rp-mo-ba6" alt="Albert Travels &amp; Food" loading="lazy"><div><b>Albert Travels &amp; Food</b><span>un anno fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Tutto molto positivo. Eravamo due coppie e cercavamo il giusto posto per passare una serata stuzzicando e bevendo qualcosa di fresco. Abbiamo ordinato spritz e gin tonic. Per accompagnare i cocktail, oltre alle patatine, noccioline grissini e una…”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjULC-L24gHspEV6eaxUabJmurQn6XPOtEGt_IYvInzLxcLjsU-f=s128-c0x00000000-cc-rp-mo-ba4" alt="Simone Giudici (Mastro Genesaio)" loading="lazy"><div><b>Simone Giudici (Mastro Genesaio)</b><span>3 mesi fa</span></div></div>
+      </div>
+      <div class="rev">
+        <div class="stars">★★★★★</div>
+        <p>“Locale molto contemporaneo in stile industriale dall’ambiente cordiale e familiare, l’accoglienza e l’energia si sentono subito! Hanno anche un dehor esterno Punti forte sicuramente la parte di pasticceria con le loro brioches artigianali (io ho…”</p>
+        <div class="who"><img src="https://lh3.googleusercontent.com/a-/ALV-UjXUkaN1GCh827d9DKjH8ftOhMD8N-QCzHFVhpxqL_guirw0_Jpg=s128-c0x00000000-cc-rp-mo-ba5" alt="Mattia D&#x27;Addato" loading="lazy"><div><b>Mattia D&#x27;Addato</b><span>11 mesi fa</span></div></div>
+      </div>
+    </div>
+    <div class="rev-foot"><a href="https://maps.google.com/?cid=6686212144005356875" target="_blank" rel="noopener">Leggi tutte le recensioni su Google →</a></div>
+  </div>
+</section>
+<section class="info" id="contatti">
+  <div class="wrap">
+    <div class="head">
+      <span class="kicker">Dove trovarci</span>
+      <h2>Orari & Contatti</h2>
+      <div class="orn">✦ ✦ ✦</div>
+    </div>
+    <div class="info-grid">
+      <div class="hours-card">
+        <h3>Orari</h3>
+        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
+        <ul class="hours-list" id="hoursList">
+          <li data-day="1"><span class="d">Lunedì</span><span>06:00–15:00</span></li>
+          <li data-day="2"><span class="d">Martedì</span><span>06:00–15:00 · 17:00–22:00</span></li>
+          <li data-day="3"><span class="d">Mercoledì</span><span>06:00–22:00</span></li>
+          <li data-day="4"><span class="d">Giovedì</span><span>06:00–15:00 · 16:30–22:00</span></li>
+          <li data-day="5"><span class="d">Venerdì</span><span>06:00–15:00 · 16:30–22:00</span></li>
+          <li data-day="6"><span class="d">Sabato</span><span>06:00–15:00 · 16:30–22:00</span></li>
+          <li data-day="0"><span class="d">Domenica</span><span>07:00–15:00</span></li>
+        </ul>
+        <div class="contact-rows">
+          <div class="crow"><div class="ic">◉</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=6686212144005356875" target="_blank" rel="noopener">Via Piave 50, 37060 Castel d'Azzano (VR)</a></div></div>
+          <div class="crow"><div class="ic">☎</div><div><h4>Telefono</h4><a href="tel:+39045519289">045 519289</a></div></div>
+          
+        </div>
+        <div class="info-cta"><a href="tel:+39045519289" class="btn btn-gold">Chiama</a></div>
+      </div>
+      <div class="map-wrap">
+        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Piave+50,+37060+Castel+d'Azzano+VR&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="brand">Tapparomi<span style="color:var(--gold)">.</span></div>
+    <div class="foot-line">Bistrot & Pasticceria</div>
+    <div class="socials"><a href="tel:+39045519289" title="Telefono">☎</a><a href="https://maps.google.com/?cid=6686212144005356875" target="_blank" rel="noopener" title="Mappa">◉</a></div>
+    <div class="foot-line">© 2026 Tapparomi · Via Piave 50 · Castel d'Azzano (VR)</div>
+    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
+  </div>
+</footer>
+<div class="mobile-bar"><a class="call" href="tel:+39045519289">☎ Chiama</a><a class="wa" style="background:var(--gold);color:#12100e" href="#contatti">Contatti</a></div>
+<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
+<script>
+const hd=document.getElementById('hd');
+addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
+const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
+document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1500');lb.classList.add('on')}));
+lb.addEventListener('click',()=>lb.classList.remove('on'));
+const periods={"1": [[600, 1500]], "2": [[600, 1500], [1700, 2200]], "3": [[600, 2200]], "4": [[600, 1500], [1630, 2200]], "5": [[600, 1500], [1630, 2200]], "6": [[600, 1500], [1630, 2200]], "0": [[700, 1500]]};
+const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
+document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
+const open=(periods[day]||[]).some(p=>hm>=p[0]&&hm<p[1]);
+const badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
+badge.className='open-badge '+(open?'open':'closed');
+txt.textContent=open?'Aperto ora':'Chiuso ora';
+</script>
+</body>
+</html>
