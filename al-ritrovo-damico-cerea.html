@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Al Ritrovo D'Amico — Ristorante Pizzeria a Cerea</title>
+<meta name="description" content="Ristorante Pizzeria Al Ritrovo D'Amico a Cerea: pizza cotta come si deve, cucina e menù di lavoro. 4,2★ su 1.809 recensioni. Via Calcara 151, Cerea.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414; --ink2:#3a3a3a; --sub:#7a756e; --line:#e7e3dc; --paper:#fbfaf7; --white:#fff;
+  --accent:#b3421f; --accent-d:#96361a; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.display{font-family:var(--h);font-weight:800;letter-spacing:-.02em;line-height:.98}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;color:var(--accent)}
+
+/* Header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:var(--h);font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
+header nav{display:flex;gap:30px}
+header nav a{font-family:var(--h);font-weight:600;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;font-size:.88rem;padding:12px 22px;border-radius:2px;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent);border-color:var(--accent)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.hd-cta{display:flex;gap:10px;align-items:center}
+.burger{display:none}
+
+/* Hero */
+.hero{padding:140px 0 0;text-align:center}
+.hero .kick{margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,7rem);margin:0 auto 26px;max-width:15ch}
+.hero .lead{font-size:1.12rem;color:var(--ink2);max-width:600px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:60px}
+.hero-img{width:100%;height:62vh;min-height:420px;object-fit:cover;background:var(--paper) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhAfvk1dr2JJwuTVrlfB59LUZBx2dISeuNKOTcuRm-4tg8Dmm39cYWVQVmBgbMOL2tQfGd66WZgbyJfkhWBjAtYXvuZ6ex8xYw4vUw6s749xZDMD_C6Z0_0GBDde9Tond63E82VituJXXQjfU7qomAghs3DFx2tihQTKYi-VLj1cUr87l6ZNVGG7mMI_VXrj2hnTadJOlnFUrnOuIBMsP3mWR-XzQKJaGFeZSACZfx-hfZK8unOjgjBEuAT1jln3-DPn3buwUQaIAXRLKAb-SaD4aXarehXb5CmL3cJZkLNuXDzcxN8A43KC7t86wmxVaSQ0PI05wyC9AnxzJVOeHOyqs95f0qxO3Gw7rBHcQEltTb6vSGoDgUVyPxWBXsiZ_z4FctZlZCJtstgV8Z86BsP4fgqx8olACTcm6lCVIzffUPv&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+
+/* Story */
+.story{padding:100px 0}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story-img{width:100%;height:520px;object-fit:cover;background:var(--paper) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydj3JaVdA7WBloyGUB-CbympKNeDqDLpz54EgGe2ZtR7mR5Hd1YQqyQkysrOVogaqt8p5e0lObc5ccPoFHWchaYBqk0QL0qQjmx2EOMY1XGYjp_aXi5m6mw1HeVAuztYbsWL28g5NyG7hgFnKWMDWwD9SlmNBXXbRJDH8xsf3T67NkIQKCqmWTJ0VtCoVRGbCdRmp2-cVL8rMYr6Q50ZRZwcJTuWJ1EaLpygW5_L8bE1JJ-LFOvVBWzdXwOlFt_lsdVR0qqwmTDwTaQhyIKSCSMmvtDg8MHN1y8F7NWP4lz5BPnJFwS37WDsbp4bjFMIzaLrUfUFtuojX1GM0-_HjnlmGAvm13E8s4ZwglCQhs5F7ZnrIGZEpolbFKA7tQ5HEyZwNZvQaXBi_PzBK4WnMPHB0cnqmw-RB08Psv3_K7dTQYha&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.story-txt .kick{display:block;margin-bottom:16px}
+.story-txt h2{font-family:var(--h);font-weight:800;font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;margin-bottom:20px;letter-spacing:-.02em}
+.story-txt p{color:var(--ink2);margin-bottom:16px}
+
+/* Info band */
+.info{background:var(--ink);color:#fff;padding:70px 0}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.info-col h4{font-family:var(--h);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:#c9a999;margin-bottom:14px}
+.info-col p{color:rgba(255,255,255,.82);font-size:1rem;line-height:1.7}
+.info-col a{color:#fff;border-bottom:1px solid rgba(255,255,255,.3)}
+
+/* Menu */
+.menu{padding:100px 0}
+.menu-head{text-align:center;max-width:640px;margin:0 auto 60px}
+.menu-head h2{font-family:var(--h);font-weight:800;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:-.02em;margin:14px 0 12px}
+.menu-head p{color:var(--sub)}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:56px 72px}
+.menu-cat{margin-bottom:6px}
+.menu-cat h3{font-family:var(--h);font-weight:700;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:12px;margin-bottom:18px;border-bottom:2px solid var(--ink)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.dish:last-child{border-bottom:none}
+.dish .d-main h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish .d-main span{color:var(--sub);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;font-size:1.02rem;white-space:nowrap}
+
+/* Gallery */
+.gallery{padding:0 0 100px}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+
+/* Reviews */
+.reviews{background:var(--paper);padding:100px 0;text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:10px}
+.reviews>.wrap>h2{font-family:var(--h);font-weight:800;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:50px;letter-spacing:-.01em}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left}
+.rv{background:#fff;border:1px solid var(--line);padding:28px}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:16px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.92rem}
+
+/* Reserve / Footer */
+.reserve{padding:110px 0;text-align:center}
+.reserve h2{font-family:var(--h);font-weight:800;font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.02em;margin-bottom:16px}
+.reserve p{color:var(--ink2);max-width:520px;margin:0 auto 30px}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--ink);color:rgba(255,255,255,.75);padding:60px 0 40px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#c9a999;margin-bottom:14px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* Mobile sticky bar */
+.mbar{display:none}
+
+@media(max-width:860px){
+  .story-grid{grid-template-columns:1fr;gap:30px}
+  .story-img{height:340px}
+  .menu-cols{grid-template-columns:1fr;gap:40px}
+  .info-grid{grid-template-columns:1fr;gap:28px;text-align:center}
+  .rv-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-cta .btn-out{display:none}
+  .wrap{padding:0 20px}
+  .hero{padding:100px 0 0}
+  .hero-img{height:46vh;min-height:300px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:240px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;border-top:1px solid var(--line);background:#fff}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;font-size:.9rem;color:#fff}
+  .mbar .call{background:var(--ink)}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Al Ritrovo D'Amico</a>
+    <nav>
+      <a href="#storia">Storia</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+    <div class="hd-cta">
+      <a href="tel:+39044282130" class="btn btn-out">Chiama</a>
+      <a href="#prenota" class="btn btn-dark">Prenota</a>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap">
+    <span class="kick">Ristorante &amp; Pizzeria · Cerea</span>
+    <h1 class="display">La pizza e la cucina di Cerea</h1>
+    <p class="lead">Ristorante e pizzeria nel cuore di Cerea: pizze fragranti, piatti della tradizione e un conveniente menù di lavoro. Un punto di riferimento da migliaia di clienti.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-dark">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-out">Vedi il menù</a>
+    </div>
+  </div>
+  <img class="hero-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydiRPwd16WorUdWevR3WfVluiqZbHWtvhoQL92depAVCkF5DuGgWyVqHry3Afs3TlLX7dgAqJrEy141DgNvvMvzTOXkjLGN3LsmzwlgPaE5F70EiAD5jn0OjJ_WF1qUJyjinmHSY75wKFjahl2qmtFu28qwyA_dvSaNbZe4TByIinKVdclqQmCXdqDYMGHu_HaC2ZSAo53I-yRiHqqbRTPOJvvmFbk5vdk0Ul0Nwp3EOZjoYY4OwPQaXzQp_N-VilFjo-L1wIqOhyKP9ja9Bw0S8TU4gO5d8ABqgi58JcwPR8WeYMQZS4ExY3x9g-VKAsPfl5EXxQ-sFGDeAyp0lCmwcV4KfIctdELKO6mW0WV82Tz40BWQSfnGD1w-qwbDBUDq4p_KUt7_kEoWPXlx9iezH0cgrrnTckf8Df5u8MnLBEUUhwi2PMNTz2k1Ou7wX&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala del ristorante">
+</section>
+
+<section id="storia" class="story">
+  <div class="wrap story-grid">
+    <div class="story-img" role="img" aria-label="Piatto dello chef"></div>
+    <div class="story-txt">
+      <span class="kick">La nostra storia</span>
+      <h2>Una pizzeria punto di riferimento</h2>
+      <p>Al Ritrovo D'Amico è una delle pizzerie più conosciute di Cerea: pizze cotte come si deve, un menù ricco e un servizio veloce e cordiale, apprezzato da migliaia di clienti.</p>
+      <p>Una sala ampia e accogliente, ideale per una serata in famiglia o tra amici, con il pratico menù di lavoro per la pausa pranzo.</p>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap info-grid">
+    <div class="info-col">
+      <h4>Dove siamo</h4>
+      <p>Via Calcara 151<br>37053 Cerea (VR)</p>
+      <p><a href="https://maps.google.com/?cid=4733923342795321347" target="_blank" rel="noopener">Indicazioni →</a></p>
+    </div>
+    <div class="info-col">
+      <h4>Orari</h4>
+      <p>Lun 12:00–15:00, 18:00–23:30<br>Mar 12:00–15:00, 18:00–00:00<br>Mer 12:00–15:00, 18:00–00:00<br>Gio 12:00–15:00, 18:00–00:00<br>Ven 12:00–15:00, 18:00–00:00<br>Sab 18:00–00:00<br>Dom 12:00–15:00, 18:00–00:00</p>
+    </div>
+    <div class="info-col">
+      <h4>Contatti</h4>
+      <p><a href="tel:+39044282130">0442 82130</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">Il menù</span>
+      <h2>Pizze &amp; cucina</h2>
+      <p>Una selezione dal nostro menù. Chiedi in sala le proposte del giorno e il menù di lavoro.</p>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><div class="d-main"><h5>Bruschette miste</h5><span>Pane, pomodoro, basilico</span></div><div class="price">7 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Antipasto della casa</h5><span>Salumi e sfizi da condividere</span></div><div class="price">10 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Supplì e fritti</h5><span>Croccanti, fatti in casa</span></div><div class="price">6 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Pizze classiche</h3>
+        <div class="dish"><div class="d-main"><h5>Margherita</h5><span>Pomodoro, mozzarella, basilico</span></div><div class="price">6 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Marinara</h5><span>Pomodoro, aglio, origano</span></div><div class="price">5 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Diavola</h5><span>Salame piccante</span></div><div class="price">8 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Prosciutto e funghi</h5><span>Cotto e funghi</span></div><div class="price">8 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Pizze speciali</h3>
+        <div class="dish"><div class="d-main"><h5>Ortolana</h5><span>Verdure grigliate di stagione</span></div><div class="price">9 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Quattro formaggi</h5><span>Filante e saporita</span></div><div class="price">9 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Capricciosa</h5><span>Il grande classico ricco</span></div><div class="price">9 €</div></div>
+        <div class="dish"><div class="d-main"><h5>La D'Amico</h5><span>La nostra specialità</span></div><div class="price">11 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi & Dolci</h3>
+        <div class="dish"><div class="d-main"><h5>Pasta del giorno</h5><span>Chiedi la proposta in sala</span></div><div class="price">9 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Menù di lavoro</h5><span>Primo, secondo, contorno</span></div><div class="price">12 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Tiramisù</h5><span>Ricetta della casa</span></div><div class="price">5 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Dolce del giorno</h5><span>Dal nostro banco</span></div><div class="price">5 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galleria" class="gallery">
+  <div class="wrap gal-grid">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydj3kuT78Vq9hZwYjW1gVO5_4qgJlnOtWKSxyadnThI6l6e5qadOzMtl9_ut69lO3e70zNLoQ7xnkKix8FcSda3KPrbaJwudQqGj_a9aj0l0PzR7VcL81_NSzp92IHixkjmmnG2JhAklEmrNNi4IXhArCJ2VAvmUNMhLWSfrsTHs-dgRLm29NwTMfeFueqXaAQ9rpqlEYIIvcxB6NTlWpwLGPOkUgn_VUr3ncel6Cb2e08wtOU2zPoHN4meBx-xr5wUOqU7rvrhQuCYyAxWSZZotvYJjFxVBMBs7zEzFuchJWBzthgirfhkAuXmPmS98UWNpklPenwugISAlHKeqcznrYmoX9STnMIbmp8auIE9wpJkn2WBrBWeWDX5eldajtNgF7nJgYXF49sMX0breX7C5eA-0wQwKDcz__J866EbPxKcK&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto 1">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhAfvk1dr2JJwuTVrlfB59LUZBx2dISeuNKOTcuRm-4tg8Dmm39cYWVQVmBgbMOL2tQfGd66WZgbyJfkhWBjAtYXvuZ6ex8xYw4vUw6s749xZDMD_C6Z0_0GBDde9Tond63E82VituJXXQjfU7qomAghs3DFx2tihQTKYi-VLj1cUr87l6ZNVGG7mMI_VXrj2hnTadJOlnFUrnOuIBMsP3mWR-XzQKJaGFeZSACZfx-hfZK8unOjgjBEuAT1jln3-DPn3buwUQaIAXRLKAb-SaD4aXarehXb5CmL3cJZkLNuXDzcxN8A43KC7t86wmxVaSQ0PI05wyC9AnxzJVOeHOyqs95f0qxO3Gw7rBHcQEltTb6vSGoDgUVyPxWBXsiZ_z4FctZlZCJtstgV8Z86BsP4fgqx8olACTcm6lCVIzffUPv&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydj3JaVdA7WBloyGUB-CbympKNeDqDLpz54EgGe2ZtR7mR5Hd1YQqyQkysrOVogaqt8p5e0lObc5ccPoFHWchaYBqk0QL0qQjmx2EOMY1XGYjp_aXi5m6mw1HeVAuztYbsWL28g5NyG7hgFnKWMDWwD9SlmNBXXbRJDH8xsf3T67NkIQKCqmWTJ0VtCoVRGbCdRmp2-cVL8rMYr6Q50ZRZwcJTuWJ1EaLpygW5_L8bE1JJ-LFOvVBWzdXwOlFt_lsdVR0qqwmTDwTaQhyIKSCSMmvtDg8MHN1y8F7NWP4lz5BPnJFwS37WDsbp4bjFMIzaLrUfUFtuojX1GM0-_HjnlmGAvm13E8s4ZwglCQhs5F7ZnrIGZEpolbFKA7tQ5HEyZwNZvQaXBi_PzBK4WnMPHB0cnqmw-RB08Psv3_K7dTQYha&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto 2">
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,2 su 1.809 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>“Pizza morbida e fine. Locale ben tenuto. Prezzi e tempi di attesa ok. Se siete di passaggio passateci.”</p><b>Amedeo Rossi</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>“Il Ristorante Pizzeria Al Ritrovo D'Amico Di D'Amico Serena è un luogo incantevole dove trascorrere una serata deliziosa. Il personale è incredibilmente gentile e preparato, fornendo un servizio di altissima qualità che ci ha fatto sentire accolti e coccolati. L'ambiente del ristorante è accogliente”</p><b>Fabio Maisto</b></div>
+      <div class="rv"><div class="st">★★★☆☆</div><p>“Pizza buona anche se molto sottile ma non è secca ed è gustosa. Sorbetto alla mela verde particolare e buono. Servizio un po’ lento nonostante fossero quasi le dieci di sera, personale gentile e cortese. Andando in un giorno feriale per il menù pranzo fisso ho notato molta lentezza tra la presa dell”</p><b>Martina</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="reserve">
+  <div class="wrap">
+    <span class="kick">Prenotazioni</span>
+    <h2>Prenota il tuo tavolo</h2>
+    <p>Siamo aperti dal martedì alla domenica. Per gruppi o eventi speciali, chiamaci: troveremo la soluzione migliore per voi.</p>
+    <div class="btns">
+      <a href="tel:+39044282130" class="btn btn-dark">Chiama 0442 82130</a>
+      <a href="https://maps.google.com/?cid=4733923342795321347" class="btn btn-out">Come arrivare</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Al Ritrovo D'Amico</div>
+        <p>Ristorante e pizzeria nel cuore di Cerea.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via Calcara 151, Cerea<br><a href="tel:+39044282130">0442 82130</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Lun 12:00–15:00, 18:00–23:30<br>Mar 12:00–15:00, 18:00–00:00<br>Mer 12:00–15:00, 18:00–00:00<br>Gio 12:00–15:00, 18:00–00:00<br>Ven 12:00–15:00, 18:00–00:00<br>Sab 18:00–00:00<br>Dom 12:00–15:00, 18:00–00:00</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Al Ritrovo D'Amico — Cerea</span>
+      <span>Bozza dimostrativa realizzata da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+39044282130" class="call">Chiama</a>
+  <a href="https://maps.google.com/?cid=4733923342795321347" class="wa">Come arrivare</a>
+</div>
+
+</body>
+</html>
