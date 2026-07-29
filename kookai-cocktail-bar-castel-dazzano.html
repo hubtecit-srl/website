@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kookai — Cocktail Bar a Castel d'Azzano | Cocktail, birre e cucina</title>
+<meta name="description" content="Kookai Cocktail Bar a Castel d'Azzano: cocktail d'autore, birre, burger e focacce in un locale curato e accogliente. 4,6★ su 399 recensioni. Aperto dal martedì alla domenica sera.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c140d; --ink2:#4a3f33; --sub:#8a7d6c; --line:#e4dccb; --cream:#f6f0e6; --white:#fff;
+  --accent:#a8461c; --accent-d:#8c3813; --olive:#5b5330; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.up{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:transparent;transition:.3s}
+header.solid{background:var(--ink)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;color:#fff}
+header nav{display:flex;gap:28px}
+header nav a{font-family:var(--h);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:rgba(255,255,255,.85);transition:.2s}
+header nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;padding:13px 24px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid transparent}
+.btn-fill{background:var(--accent);color:#fff}
+.btn-fill:hover{background:var(--accent-d)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent)}
+
+/* Hero full-bleed */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhTWDHLDe0rnWL1o_uxXR5h8toyg5qtxeJIDons6Js0ASr0gfZ_PbYbPTTSlKaXOT3jOs_loqrSeZXuooGqsXJDoNGIjs6jEsdWQrBpFcdcs0DeLhgAIiRKWJYrOm5be8ojQVpa8lxMahjZgqICHNlH5yvcAhXKWS1zUJB_wKDgiuixUOMaKAKY9eODEokOp1qcXwPGcM5NBJiLBj9CgzS7dlKBcZatqHyaZ0nImIiBNgRj1sQCVVrplv0C70V1LU3j5Dhdnbf5pgxHxjvEZR_twzpcuhCnrWqkn3XZDU7BRQeV_thziNtDeRS9ZrQ-26415hznnRGj_G5xKNl2v0fdopH7Ivna14t-T2BH_wfjck-x1pd5hCAuzaoDHbOWzoJSc24t0dEpv-Vdv6RChMvcpfyKZv6Ty90JuxThRxmqmiPb&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,9,.55),rgba(20,14,9,.74))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:900px}
+.hero .kick{color:#e8b48f;margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,6.6rem);text-transform:uppercase;font-family:var(--h);font-weight:900;letter-spacing:.01em;line-height:.98;margin-bottom:24px}
+.hero p{font-size:1.12rem;color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Experience */
+.exp{padding:100px 0;text-align:center;background:var(--cream)}
+.exp .kick{display:block;margin-bottom:16px}
+.exp h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.5vw,3.4rem);letter-spacing:.01em;max-width:16ch;margin:0 auto 20px;line-height:1.04}
+.exp p{color:var(--ink2);max-width:620px;margin:0 auto}
+.exp-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
+.exp-imgs img{width:100%;height:340px;object-fit:cover}
+
+/* Menu */
+.menu{padding:100px 0;background:var(--ink);color:#fff}
+.menu-head{text-align:center;margin-bottom:56px}
+.menu-head .kick{color:#e8b48f;display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:.01em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:50px 70px;max-width:980px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:1rem;color:#e8b48f;padding-bottom:12px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:11px 0}
+.dish h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish span{color:rgba(255,255,255,.6);font-size:.9rem}
+
+/* Address / hours */
+.addr{padding:100px 0;background:var(--cream)}
+.addr-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.addr-img{width:100%;height:460px;object-fit:cover;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjR6QnysvHDYAN7mrdCJgiixGARlCJcDDDF9fHREPLQz09ZHmrgXXlMT0cHACKLH1gokSzSs1zlHIJDUKZQPuuxSINILoLujtMGHwT4cCGkvpXFJ6FoJVovQlG6aShoENG2fei8ctRdy6RH8KrQc2qSmHclN_4S-Y13jGqLN1Pk0SLx-GrWvYJkrd2yv6_OsyTyokKvRFDXdqERnJCbQkHVi-3NwRYCCIGSBBPTUUaFCvhCu7KQ5KYabeP3MhMrGMDMcAp16nya6WZDCyZOrxElaSpxXTWD6mt5tYFQ0K3sPmDzudKkLraie_PPaYKbmXbofZ8bEaNoZ38CKDoo2p-aMDB2kgkKYvMRqnNTVjwofpfPGkW6bsoLrqkbmVsWJyzJFOh3kkQjF_aZZOfWiN17gw4qILYN84D3x73LsyNAOQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.addr-txt .kick{display:block;margin-bottom:14px}
+.addr-txt h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:22px;letter-spacing:.01em}
+.addr-row{margin-bottom:18px}
+.addr-row h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--accent);margin-bottom:5px}
+.addr-row p{color:var(--ink2)}
+.addr-row a{color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--white);text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:8px}
+.reviews h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:44px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+.rv{background:var(--cream);padding:28px;border-top:3px solid var(--accent)}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:14px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.9rem}
+
+/* Reserve */
+.reserve{position:relative;padding:120px 0;text-align:center;color:#fff}
+.reserve-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjAV0h8DuSHC3tYZGnq-F3pojow2ybWZF4HlCd43q2WNnumMXYaUlLZYD2dK-RLKqzhcIr5B0eeh4pphsSNB-hs6zeGxZFcXQbAUaz-vt7HImI5MtO_ZvNOMGBz62h7R8D0H3VUZI7b7NlQWrdv8dBUoIgTWYAP2Cdib6mX-UbD2VTELh5XPKtcEkgzOKOjvDvQXJMDDRmGU8uc4KhKruLvm9kia5YY0JGJlO1sNYklKL0t-6jdFKKF1ZoPNbtjeBH4kqqvdvw5_J29FlUjg6vecJb9ze37A2A9zJ1eHOxenrTlMA2Hx0aAPDyZY3xe9XWrSDR2Hju08B3YeMfGmdJJXJ1boUN289MYgWFif4b5XPLj2EM8GsCNuscVSaw_PeTC8fdgfDMyMfYFhH6pfJr3RaTvBb-NYa2JvT4W9ZSL-pdH7IzMCv8p38lzPlw0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.reserve-bg::after{content:"";position:absolute;inset:0;background:rgba(20,14,9,.74)}
+.reserve .wrap{position:relative;z-index:2}
+.reserve h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:16px;letter-spacing:.01em}
+.reserve p{max-width:520px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:56px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.74rem;color:#e8b48f;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .exp-imgs{grid-template-columns:1fr}
+  .exp-imgs img{height:260px}
+  .menu-cols{grid-template-columns:1fr;gap:36px}
+  .addr-grid{grid-template-columns:1fr;gap:28px}
+  .addr-img{height:320px}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .btn-line.hd{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;color:#fff}
+  .mbar .call{background:var(--ink)}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#top" class="brand">Kookai</a>
+    <nav>
+      <a href="#exp">Il locale</a>
+      <a href="#menu">Cosa offriamo</a>
+      <a href="#adresse">Dove siamo</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a href="#contatti" class="btn btn-line hd">Contatti</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Cocktail Bar · Castel d'Azzano</span>
+    <h1>Kookai</h1>
+    <p>Cocktail d'autore, birre selezionate e cucina sfiziosa in un locale curato e accogliente. L'angolo giusto per il tuo aperitivo e dopocena.</p>
+    <div class="hero-cta">
+      <a href="tel:+393457058433" class="btn btn-fill">Chiama 345 705 8433</a>
+      <a href="#menu" class="btn btn-line">Cosa offriamo</a>
+    </div>
+  </div>
+</section>
+
+<section id="exp" class="exp">
+  <div class="wrap">
+    <span class="kick">Il locale</span>
+    <h2>Bere bene e sentirsi a casa</h2>
+    <p>Il cocktail bar di riferimento a Castel d'Azzano: un ambiente curato e confortevole dove Max e il team ti accolgono tra cocktail ben fatti, birre, burger e focacce. Atmosfera chill e intima, a pochi minuti da Verona.</p>
+    <div class="exp-imgs">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhsszBwutFxv9j2xBD4_uhd2fArsxtaZ3vbfOSoh4LnWrHgdn64RauvAmg6puGoqcWhWe0Q2T6hkGAAjRY2eoXU5OhUHY9z8imfsx4S6pnSYd9jUnjf4rjxpn7aukhutlZ1I9BK3TNhug3LM7fHsg4OXS1teSCOYR02tJz-jEhxdesF64li0jp1m_Z91IujViVdRgoWiJJfuFkm1YEts1LVUGN3-LnndkFN-tJ3RcV6lGZXu6S5xgLs_grT-VAQmwCMTBE2zA2mePqYEzzz4Jfh0BtdWmttESRT5bvbks8Lq5jE3CIGkg0RGnbWsblb078HFyupmHKjC6TbXemdIqSLcAki19ru1tDoK5QFV4kaLlZwE07BEuurEHN3wA0tzOvW2KuxuB58ccuP3ft4iM3dB6TkuBPVCFLbtZb-4ayDgw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Cocktail da Kookai">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydh17zp0qWHLmUlUy9MZJIzj7ZjXcsEPLiAnifpI_8VXHBe9zDxSO4R9pRVEXcXYpIi7pmVDGKxyHCudzm_0YLbh0WtZwWsBGUNE48xO-Nww1-9AJQ5hr17qN7Mx_ot4vFAlIdGtPLMGnlhfZBRsdxobYRoRbmaLnxi5mC8nL8thika3AGjQgHrxffumiiylpDDI1GcB7j7d2CzUGnS3AffOvcpKtXUawg8EMhO3SIz6PH_PfPAhIeZh8P5bUiKIECLijcY7cfqBZOcHhqIsjcL3N19h8Tph09ntA2GITDg8BFpTLrvM7-uQhFbRy7gGnvxXjMAcMGJDzZWWBVwAGk3eb1Kx3qYbyvb4cTF1tX2BQFpzBdDe8oxVZuklcqAa1ggUOGKlcn7yofZvBKmdwVii6JDlI3TguhSL7GDlwNfNpKQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Ambiente di Kookai">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydgr8-8XRL0EkWRE0TGn8h2ix56X87wvb1YSSS0zcIBbnLBhePRoXhtSQy3RZTSB1NF-_i907fMY_XhvFKgATd1Zr_VDn6bhoi6OrXOGauBLi2VzwoWcgEniNY-GNNZjh8ut5nXyOz6hHQlzU_bGzxKIobky-ETkjLkIF2rASZ7J7TMSkiRlfPJvEadaW6ShF9vK_vU43cqgomIVNULOXMvSWSq3293RQPyQsaX0tYdacF-HfQEBpzq7-NHUmatCafi26ocV3qXrGIOHJJMfXOBqa0ggOUYbdvkpU0jXkkVqBi9ZxboJmTIRzUOgaM-RZj--TQtERMo-3fyMj1vQ0fEL6Z64RjypR-UIwwduz4OYHtpeL8GWHKruHmE1K6QaAstTtML07eAkRQo5AaAhG1GU6ExH0Ght0E7P6PlEOd-C6LDy&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Bancone di Kookai">
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La proposta</span>
+      <h2>Cosa offriamo</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Cocktail</h3>
+        <div class="dish"><div><h5>Signature &amp; classici</h5><span>Cocktail d'autore preparati al momento</span></div></div>
+        <div class="dish"><div><h5>Analcolici &amp; tisane</h5><span>Anche in versione chill per il dopocena</span></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Birre &amp; Bollicine</h3>
+        <div class="dish"><div><h5>Birre selezionate</h5><span>Alla spina e in bottiglia</span></div></div>
+        <div class="dish"><div><h5>Calici &amp; bollicine</h5><span>Per il tuo aperitivo</span></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Cucina</h3>
+        <div class="dish"><div><h5>Burger</h5><span>Preparati con cura</span></div></div>
+        <div class="dish"><div><h5>Focacce</h5><span>Farcite e fragranti</span></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Sfizi</h3>
+        <div class="dish"><div><h5>Taglieri &amp; stuzzichini</h5><span>Da condividere</span></div></div>
+        <div class="dish"><div><h5>Sfizi del banco</h5><span>Per accompagnare il drink</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="adresse" class="addr">
+  <div class="wrap addr-grid">
+    <div class="addr-img" role="img" aria-label="Interno del Kookai Cocktail Bar"></div>
+    <div class="addr-txt">
+      <span class="kick">Dove siamo</span>
+      <h2>Vieni a trovarci</h2>
+      <div class="addr-row"><h4>Indirizzo</h4><p>Via G. Marconi, 66 · 37060 Castel d'Azzano (VR)</p></div>
+      <div class="addr-row"><h4>Orari</h4><p>Mar–Sab 18:00–02:00 · Dom 18:00–00:00<br>Lunedì chiuso</p></div>
+      <div class="addr-row"><h4>Contatti</h4><p><a href="tel:+393457058433">345 705 8433</a> · <a href="mailto:kookaicafe008@gmail.com">kookaicafe008@gmail.com</a></p></div>
+      <a href="https://maps.google.com/?cid=348427653884783710" target="_blank" rel="noopener" class="btn btn-dark" style="margin-top:8px">Indicazioni</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,6 su 399 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Cocktail bar unico a Castel d'Azzano. Locale molto curato con ampia scelta tra cocktail, birre e tanto altro. Ottimo anche il mangiare, con burger e focacce."</p><b>Davide Ambrosini</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Un piccolo angolo di paradiso a pochi minuti dal centro di Verona, un luogo dove bere bene e sentirsi a casa. Uno dei migliori cocktail bar della città!"</p><b>Bruce Turri</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Posto molto carino per un dopo cena appena fuori Verona. Tisane e cocktail ottimi, prezzi adeguati. Atmosfera molto chill e intima."</p><b>Marianna Spezie</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="contatti" class="reserve">
+  <div class="reserve-bg"></div>
+  <div class="wrap">
+    <h2>Ti aspettiamo da Kookai</h2>
+    <p>Aperto dal martedì alla domenica sera. Scrivici su WhatsApp o chiamaci per info, tavoli e serate speciali.</p>
+    <div class="btns">
+      <a href="tel:+393457058433" class="btn btn-fill">Chiama 345 705 8433</a>
+      <a href="https://wa.me/393457058433" target="_blank" rel="noopener" class="btn btn-line">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Kookai</div>
+        <p>Cocktail bar, birre e cucina sfiziosa a Castel d'Azzano.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via G. Marconi, 66, Castel d'Azzano (VR)<br><a href="tel:+393457058433">345 705 8433</a><br><a href="mailto:kookaicafe008@gmail.com">kookaicafe008@gmail.com</a><br><a href="https://instagram.com/kookai_cda" target="_blank" rel="noopener">Instagram @kookai_cda</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Mar–Sab 18–02<br>Dom 18–00<br>Lun chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Kookai Cocktail Bar — Castel d'Azzano (VR)</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393457058433" class="call">Chiama</a>
+  <a href="https://wa.me/393457058433" target="_blank" rel="noopener" class="wa">WhatsApp</a>
+</div>
+
+<script>
+addEventListener('scroll',()=>{document.getElementById('hd').classList.toggle('solid',scrollY>60)});
+</script>
+</body>
+</html>
