@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pizzeria Il Castello — Pizza al taglio a Castel d'Azzano</title>
+<meta name="description" content="Pizzeria Il Castello, pizza al taglio a Castel d'Azzano. Impasto leggero e digeribile, prezzi onesti, gestori cordiali. 4,6★ su 178 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#141414; --ink2:#3a3a3a; --sub:#7a756e; --line:#e7e3dc; --paper:#fbfaf7; --white:#fff;
+  --accent:#b3421f; --accent-d:#96361a; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.display{font-family:var(--h);font-weight:800;letter-spacing:-.02em;line-height:.98}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;color:var(--accent)}
+
+/* Header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:var(--h);font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
+header nav{display:flex;gap:30px}
+header nav a{font-family:var(--h);font-weight:600;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;font-size:.88rem;padding:12px 22px;border-radius:2px;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent);border-color:var(--accent)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.hd-cta{display:flex;gap:10px;align-items:center}
+.burger{display:none}
+
+/* Hero */
+.hero{padding:140px 0 0;text-align:center}
+.hero .kick{margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,7rem);margin:0 auto 26px;max-width:15ch}
+.hero .lead{font-size:1.12rem;color:var(--ink2);max-width:600px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:60px}
+.hero-img{width:100%;height:62vh;min-height:420px;object-fit:cover;background:var(--paper) url('https://images.pexels.com/photos/958545/pexels-photo-958545.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover}
+
+/* Story */
+.story{padding:100px 0}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story-img{width:100%;height:520px;object-fit:cover;background:var(--paper) url('https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover}
+.story-txt .kick{display:block;margin-bottom:16px}
+.story-txt h2{font-family:var(--h);font-weight:800;font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;margin-bottom:20px;letter-spacing:-.02em}
+.story-txt p{color:var(--ink2);margin-bottom:16px}
+
+/* Info band */
+.info{background:var(--ink);color:#fff;padding:70px 0}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.info-col h4{font-family:var(--h);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:#c9a999;margin-bottom:14px}
+.info-col p{color:rgba(255,255,255,.82);font-size:1rem;line-height:1.7}
+.info-col a{color:#fff;border-bottom:1px solid rgba(255,255,255,.3)}
+
+/* Menu */
+.menu{padding:100px 0}
+.menu-head{text-align:center;max-width:640px;margin:0 auto 60px}
+.menu-head h2{font-family:var(--h);font-weight:800;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:-.02em;margin:14px 0 12px}
+.menu-head p{color:var(--sub)}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:56px 72px}
+.menu-cat{margin-bottom:6px}
+.menu-cat h3{font-family:var(--h);font-weight:700;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:12px;margin-bottom:18px;border-bottom:2px solid var(--ink)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.dish:last-child{border-bottom:none}
+.dish .d-main h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish .d-main span{color:var(--sub);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;font-size:1.02rem;white-space:nowrap}
+
+/* Gallery */
+.gallery{padding:0 0 100px}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+
+/* Reviews */
+.reviews{background:var(--paper);padding:100px 0;text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:10px}
+.reviews>.wrap>h2{font-family:var(--h);font-weight:800;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:50px;letter-spacing:-.01em}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left}
+.rv{background:#fff;border:1px solid var(--line);padding:28px}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:16px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.92rem}
+
+/* Reserve / Footer */
+.reserve{padding:110px 0;text-align:center}
+.reserve h2{font-family:var(--h);font-weight:800;font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.02em;margin-bottom:16px}
+.reserve p{color:var(--ink2);max-width:520px;margin:0 auto 30px}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--ink);color:rgba(255,255,255,.75);padding:60px 0 40px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#c9a999;margin-bottom:14px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* Mobile sticky bar */
+.mbar{display:none}
+
+@media(max-width:860px){
+  .story-grid{grid-template-columns:1fr;gap:30px}
+  .story-img{height:340px}
+  .menu-cols{grid-template-columns:1fr;gap:40px}
+  .info-grid{grid-template-columns:1fr;gap:28px;text-align:center}
+  .rv-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-cta .btn-out{display:none}
+  .wrap{padding:0 20px}
+  .hero{padding:100px 0 0}
+  .hero-img{height:46vh;min-height:300px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:240px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;border-top:1px solid var(--line);background:#fff}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;font-size:.9rem;color:#fff}
+  .mbar .call{background:var(--ink)}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Il Castello</a>
+    <nav>
+      <a href="#storia">Chi siamo</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <div class="hd-cta">
+      <a href="tel:+393461867826" class="btn btn-out">Chiama</a>
+      <a href="https://wa.me/393461867826" class="btn btn-dark">WhatsApp</a>
+    </div>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap">
+    <span class="kick">Pizza al taglio · Castel d'Azzano</span>
+    <h1 class="display">La pizza al taglio come piace a te</h1>
+    <p class="lead">Impasto leggero e digeribile, ingredienti genuini e prezzi onesti. Da asporto o al volo, la pizza fragrante di quartiere dal 2010.</p>
+    <div class="hero-cta">
+      <a href="tel:+393461867826" class="btn btn-dark">Chiama 346 186 7826</a>
+      <a href="#menu" class="btn btn-out">Vedi il menù</a>
+    </div>
+  </div>
+  <img class="hero-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhIlBrBtgS6NN9GLY0JfsMmyfANi9bJs7I81e6-BQn65rfCpP1BBBCMtbJ4yraZahCqwZcs4xQYOE6T15BI807JynxO2HhIjfETysZgWp40uTy9c7fg7q2jyYKHCOBM12o17RCKNdbLXd2hPWjfLRT_5jdzeXXCEMV57qR2rOqh8ID1GmPD6gH84oCldF-b_mggNnFsys9zrs2L50bajKHnfHyaCq20OjHSlDRi14tJG8AWwU3ioXw66tth6wroLOM0WAYXFP_2CzpLNig-tvrduAYaf2RohYW0MSRIynd06KUgFCttvjnjVZ4s4BcwUrKEIXlGxJB_AZNFTgcubAze-3W3cmpjZ1d-vGDfB4O75B9Umjq-qd3zXLJ7YfsdchUnfuU8IxLnkgH3OpUFVCQuRHxLx13akHpwuYXZtQY96xk&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Pizza al taglio Il Castello">
+</section>
+
+<section id="storia" class="story">
+  <div class="wrap story-grid">
+    <div class="story-img" role="img" aria-label="La nostra pizza" style="background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhEj-wxjbOx0A-Grm_99hLwzzYOEFno4K7cN2D7_g0WEpvUTot4cOar8cx9hd0Fq-LUaAecbwrjRYm5XfzlCaInrhcijVMK0WPDEIsOzdQH5U4f8viIEPCAZiG-heEemrxXhlwy-8RV23ffqJoS-RK5_XuRYDSAT69ue1_hxhzV9b288O87GRyOzwvAYk33JTE-m6RBdd62N_2rUCZFktoYwW2wSd0IsedR1Yr4AFDTEbg3V3Zy52d2taDrTMPJXKd8gNchtwwpdlGZZZzFtl2wT2GGd2uKkwgxo3qa_J7e19FuArU0jBMtpGL0JT2YME_a_oXGyZExBhdUysfIVXaBCT53_ussjnFyOnYVHYb4PPEmJFz9J7jvgggyErRLU7D6MAj0TaGrnTgyLPrK25l8yOGGeYAFwfJu5G2IomeIOHwmeI7MFVlhOBaOGfqm&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover"></div>
+    <div class="story-txt">
+      <span class="kick">Chi siamo</span>
+      <h2>Onesti, cordiali e con una gran pizza</h2>
+      <p>Pizzeria Il Castello è il punto di riferimento per la pizza al taglio a Castel d'Azzano: tanti clienti l'hanno resa il loro appuntamento fisso settimanale, per la famiglia e per gli amici.</p>
+      <p>La nostra forza? Un impasto gustoso e digeribile, sfizi sempre freschi e gestori sempre gentili. E non dimentichiamo gli amici a quattro zampe: da noi c'è anche il dog bar.</p>
+    </div>
+  </div>
+</section>
+
+<section class="info">
+  <div class="wrap info-grid">
+    <div class="info-col">
+      <h4>Dove siamo</h4>
+      <p>Via Bassette 2<br>37060 Castel d'Azzano (VR)</p>
+      <p><a href="https://maps.google.com/?cid=11901620635569546078" target="_blank" rel="noopener">Indicazioni →</a></p>
+    </div>
+    <div class="info-col">
+      <h4>Orari</h4>
+      <p>Mer–Dom 17:30–21:00<br>Lunedì e Martedì chiuso</p>
+    </div>
+    <div class="info-col">
+      <h4>Contatti</h4>
+      <p><a href="tel:+393461867826">346 186 7826</a><br><a href="https://wa.me/393461867826">Scrivici su WhatsApp</a></p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">Il menù</span>
+      <h2>La nostra pizza al taglio</h2>
+      <p>Una selezione delle nostre proposte. Trovi sempre tante varianti fresche in teglia — chiedi le pizze del giorno.</p>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Le classiche</h3>
+        <div class="dish"><div class="d-main"><h5>Margherita</h5><span>Pomodoro, mozzarella, basilico</span></div><div class="price">al trancio</div></div>
+        <div class="dish"><div class="d-main"><h5>Marinara</h5><span>Pomodoro, aglio, origano</span></div><div class="price">al trancio</div></div>
+        <div class="dish"><div class="d-main"><h5>Patate & rosmarino</h5><span>Bianca con patate a fette</span></div><div class="price">al trancio</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Le farcite</h3>
+        <div class="dish"><div class="d-main"><h5>Diavola</h5><span>Salame piccante e mozzarella</span></div><div class="price">al trancio</div></div>
+        <div class="dish"><div class="d-main"><h5>Verdure di stagione</h5><span>Ortaggi freschi grigliati</span></div><div class="price">al trancio</div></div>
+        <div class="dish"><div class="d-main"><h5>Crudo & funghi</h5><span>Prosciutto crudo e champignon</span></div><div class="price">al trancio</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Sfizi</h3>
+        <div class="dish"><div class="d-main"><h5>Fagottino</h5><span>Lo sfizio più amato dai clienti</span></div><div class="price">€</div></div>
+        <div class="dish"><div class="d-main"><h5>Fritti del giorno</h5><span>Croccanti e sempre freschi</span></div><div class="price">€</div></div>
+        <div class="dish"><div class="d-main"><h5>Focacce</h5><span>Semplici o farcite</span></div><div class="price">€</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Bibite</h3>
+        <div class="dish"><div class="d-main"><h5>Bibite in lattina</h5><span>Assortite</span></div><div class="price">€</div></div>
+        <div class="dish"><div class="d-main"><h5>Acqua</h5><span>Naturale / frizzante</span></div><div class="price">€</div></div>
+        <div class="dish"><div class="d-main"><h5>Birra</h5><span>Chiara in bottiglia</span></div><div class="price">€</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="galleria" class="gallery">
+  <div class="wrap gal-grid">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhf6Sr6my_Chnq5cfqLE9pqdsU43mPvEqLOrYX9VUPgjeUD1l7iu6tt06lcm0xsJqiOOgKCHz9qiDk1M05LlTd3FCK9F01WvtnVGPQ9e4ERuhUx8kNZotFoXUucQvKSYw6CikTgOuZaAGw42AcwyE12bUG9FOjl9U67S1Zo-TDk2lvFpwXa3WHRTJFfZ_MRezH20lOvmp1ySg9httH-JDNcV4bMl7uBvCTYqab1nLgzhF0UoBvsk8T609DWHdtczDMdWUTNc9T3nXc9MBjknxuCsjICIznCzsNbqJ2l0jwJV1DkTa9UkJucxjnkQ5YaqbK3I0E2DY8poG_FQhxC1dHKpiHWEdyUYlO1XCO0H8v4JfkW-FGPtJa-XLbXJccHYJ87exxdFbKxmf4wFMctm-LU7rHfJZt5AesXBiteQqXZ5BpgCjXFwha3QuCjXAi-&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Pizza 1">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydicBDk3NUs-bIG44i4qr5OO4GsGUnnbXcUK17rJ0eCjD_2OTt78rwLZYJFMcKvnooSxj5jSE-dl4wt13N7uR-bHwwQqiei2SROgipTva6x8LFYCGGZoxTySftKhy75LkmabU1dalCC_1-uOkltvkk-U-hLQLXYKkiculWQWmcq5h7fCujLGC5hzqeomTleUv3r4b6gK-jOWT-LqFYV9kpH8sLqerojFw1it9fz3fPlk9K2HxRcuvxjyWGvFJ_dEDt5vnPRdZAaXm4RpmNNt8u9cvi2NAqQDzMwVfmLdHwjxKxAG-JBMP_epWkgMRFFewdNuR6OfU43dTgY-IpnzmNt0GHi0ywMbjhTo_TYnHw5qFTj0h4zqdXswZo2_ijEF8G6TbPEVMsFowhIzs3dZXm520rZsL8HLJV2qS-P5zOHYmw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Pizza 2">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhIlBrBtgS6NN9GLY0JfsMmyfANi9bJs7I81e6-BQn65rfCpP1BBBCMtbJ4yraZahCqwZcs4xQYOE6T15BI807JynxO2HhIjfETysZgWp40uTy9c7fg7q2jyYKHCOBM12o17RCKNdbLXd2hPWjfLRT_5jdzeXXCEMV57qR2rOqh8ID1GmPD6gH84oCldF-b_mggNnFsys9zrs2L50bajKHnfHyaCq20OjHSlDRi14tJG8AWwU3ioXw66tth6wroLOM0WAYXFP_2CzpLNig-tvrduAYaf2RohYW0MSRIynd06KUgFCttvjnjVZ4s4BcwUrKEIXlGxJB_AZNFTgcubAze-3W3cmpjZ1d-vGDfB4O75B9Umjq-qd3zXLJ7YfsdchUnfuU8IxLnkgH3OpUFVCQuRHxLx13akHpwuYXZtQY96xk&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Pizza 3">
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,6 su 178 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Fantastica pizza al taglio! I gestori sono veramente gentili e la pizza è ottima."</p><b>Marco C.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Fantastici, onesti e bravissimi. La migliore pizzeria della zona."</p><b>Howl</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Appuntamento fisso settimanale per me e la mia famiglia. Personale cordiale, pizza gustosa e digeribile."</p><b>Francy G.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="reserve">
+  <div class="wrap">
+    <span class="kick">Ordina & ritira</span>
+    <h2>Chiama o scrivici su WhatsApp</h2>
+    <p>Siamo aperti dal mercoledì alla domenica, dalle 17:30 alle 21:00. Prenota le tue teglie o chiedi le pizze del giorno: ti aspettiamo!</p>
+    <div class="btns">
+      <a href="tel:+393461867826" class="btn btn-dark">Chiama 346 186 7826</a>
+      <a href="https://wa.me/393461867826" class="btn btn-out">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Pizzeria Il Castello</div>
+        <p>Pizza al taglio, sfizi e cordialità a Castel d'Azzano.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via Bassette 2, Castel d'Azzano<br><a href="tel:+393461867826">346 186 7826</a><br><a href="https://wa.me/393461867826">WhatsApp</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Mer–Dom 17:30–21:00<br>Lun–Mar chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Pizzeria Il Castello — Castel d'Azzano</span>
+      <span>Sito dimostrativo realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393461867826" class="call">Chiama</a>
+  <a href="https://wa.me/393461867826" class="wa">WhatsApp</a>
+</div>
+
+</body>
+</html>
