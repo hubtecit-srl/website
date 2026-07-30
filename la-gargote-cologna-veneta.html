@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>La Gargote — Paninoteca & Bar a Cologna Veneta (VR) | Ordina</title>
+<meta name="description" content="La Gargote, paninoteca e bar a Cologna Veneta (VR), Piazza Mazzini 5. Panini, piadine, bruschette e aperitivi. 4,5★ su 462 recensioni Google. Vieni a trovarci.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c140d; --ink2:#4a3f33; --sub:#8a7d6c; --line:#e4dccb; --cream:#f6f0e6; --white:#fff;
+  --accent:#a8461c; --accent-d:#8c3813; --olive:#5b5330; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.up{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:transparent;transition:.3s}
+header.solid{background:var(--ink)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;color:#fff}
+header nav{display:flex;gap:28px}
+header nav a{font-family:var(--h);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:rgba(255,255,255,.85);transition:.2s}
+header nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;padding:13px 24px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid transparent}
+.btn-fill{background:var(--accent);color:#fff}
+.btn-fill:hover{background:var(--accent-d)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent)}
+
+/* Hero full-bleed */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://lh3.googleusercontent.com/place-photos/AG9NLjC-O7KcL7r4BVnyvYt7FwMEjlh2TTT0xmo6eC06vfZp53QUHrtWY2w9g32fm0fS5zH9pvrczLzPFRXw2lhCFerOKvQcV0Nk8k-joNIFbtF8ZjGRtXNvVgMdMkkuGcqbCoqKKFuxmoJc8XNK6w=s1600-w1024') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,9,.55),rgba(20,14,9,.72))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:900px}
+.hero .kick{color:#e8b48f;margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,6.6rem);text-transform:uppercase;font-family:var(--h);font-weight:900;letter-spacing:.01em;line-height:.98;margin-bottom:24px}
+.hero p{font-size:1.12rem;color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Experience */
+.exp{padding:100px 0;text-align:center;background:var(--cream)}
+.exp .kick{display:block;margin-bottom:16px}
+.exp h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.5vw,3.4rem);letter-spacing:.01em;max-width:16ch;margin:0 auto 20px;line-height:1.04}
+.exp p{color:var(--ink2);max-width:620px;margin:0 auto}
+.exp-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
+.exp-imgs img{width:100%;height:340px;object-fit:cover}
+
+/* Menu */
+.menu{padding:100px 0;background:var(--ink);color:#fff}
+.menu-head{text-align:center;margin-bottom:56px}
+.menu-head .kick{color:#e8b48f;display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:.01em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:50px 70px;max-width:980px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:1rem;color:#e8b48f;padding-bottom:12px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:11px 0}
+.dish h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish span{color:rgba(255,255,255,.6);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;color:#fff;white-space:nowrap}
+
+/* Address / hours */
+.addr{padding:100px 0;background:var(--cream)}
+.addr-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.addr-img{width:100%;height:460px;object-fit:cover;background:url('https://lh3.googleusercontent.com/place-photos/AG9NLjDwzInTveIO9k_j8g7de3u1aTcrFS7QxHJTxHbIqp5k1kHNuaSBOFLZtQyfzJuTNzHvqJ71SFqTS1ts_I2COjWuc7YKVF8qlp4umF1wSAKgXWe59xDNofU4wx8CVGHS0qRehdIKuLF5L9slU9jfD7dKTw=s1600-w1200') center/cover}
+.addr-txt .kick{display:block;margin-bottom:14px}
+.addr-txt h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:22px;letter-spacing:.01em}
+.addr-row{margin-bottom:18px}
+.addr-row h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--accent);margin-bottom:5px}
+.addr-row p{color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--white);text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:8px}
+.reviews h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:44px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+.rv{background:var(--cream);padding:28px;border-top:3px solid var(--accent)}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:14px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.9rem}
+
+/* Reserve */
+.reserve{position:relative;padding:120px 0;text-align:center;color:#fff}
+.reserve-bg{position:absolute;inset:0;background:url('https://lh3.googleusercontent.com/place-photos/AG9NLjAw5gs2j1gWylnrXRSndgtLE6JTbmMSFmhkj2lI6aapBFLbjbup0ZLxDvwdQlCJUbQXUwBblNAXVVncTb5yZC1WFb4mpAnly9nf9jtTv3s4zrBB0OMHzExcxatZq0328zNwLe8_2-aW4s4bCV8=s1600-w1200') center/cover;z-index:0}
+.reserve-bg::after{content:"";position:absolute;inset:0;background:rgba(20,14,9,.72)}
+.reserve .wrap{position:relative;z-index:2}
+.reserve h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:16px;letter-spacing:.01em}
+.reserve p{max-width:520px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:56px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.74rem;color:#e8b48f;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .exp-imgs{grid-template-columns:1fr}
+  .exp-imgs img{height:260px}
+  .menu-cols{grid-template-columns:1fr;gap:36px}
+  .addr-grid{grid-template-columns:1fr;gap:28px}
+  .addr-img{height:320px}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .btn-line.hd{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#top" class="brand">La Gargote</a>
+    <nav>
+      <a href="#exp">L'osteria</a>
+      <a href="#menu">Menù</a>
+      <a href="#adresse">Dove siamo</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+    <a href="#prenota" class="btn btn-line hd">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Paninoteca & Bar · Cologna Veneta</span>
+    <h1>Panini, sfizi & aperitivi</h1>
+    <p>Panini generosi, piadine, bruschette e taglieri, con un ottimo aperitivo. In Piazza Mazzini, nel cuore di Cologna Veneta.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-fill">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-line">Scopri il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="exp" class="exp">
+  <div class="wrap">
+    <span class="kick">Un locale di famiglia</span>
+    <h2>Porzioni generose, qualità e sorriso</h2>
+    <p>La Gargote è un bar e paninoteca a conduzione familiare: panini, piadine e bruschette con materie prime scelte, porzioni abbondanti e un servizio sempre gentile.</p>
+    <div class="exp-imgs">
+      <img src="https://lh3.googleusercontent.com/place-photos/AG9NLjB8WWyzMmfDowEZE7F1VrLTau43BEBtGXZAuPkN24-qjBjtppUyN8g8JbHVHTUQthBLXHQjVUI_Kwhdsm3kkwgVqMzG2n522Behy_DNWPnOEFwiHcpooO-GKscD91XlKPPRM3aa_ltFTvQuU8A=s1600-w1200" alt="Brace">
+      <img src="https://lh3.googleusercontent.com/place-photos/AG9NLjC-O7KcL7r4BVnyvYt7FwMEjlh2TTT0xmo6eC06vfZp53QUHrtWY2w9g32fm0fS5zH9pvrczLzPFRXw2lhCFerOKvQcV0Nk8k-joNIFbtF8ZjGRtXNvVgMdMkkuGcqbCoqKKFuxmoJc8XNK6w=s1600-w1024" alt="Piatto">
+      <img src="https://lh3.googleusercontent.com/place-photos/AG9NLjDwzInTveIO9k_j8g7de3u1aTcrFS7QxHJTxHbIqp5k1kHNuaSBOFLZtQyfzJuTNzHvqJ71SFqTS1ts_I2COjWuc7YKVF8qlp4umF1wSAKgXWe59xDNofU4wx8CVGHS0qRehdIKuLF5L9slU9jfD7dKTw=s1600-w1200" alt="Sala">
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La cucina</span>
+      <h2>Il nostro menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><div><h5>Tagliere della casa</h5><span>Salumi e formaggi del territorio</span></div><div class="price">14 €</div></div>
+        <div class="dish"><div><h5>Polenta e funghi</h5><span>Polenta abbrustolita, porcini trifolati</span></div><div class="price">11 €</div></div>
+        <div class="dish"><div><h5>Bruschette miste</h5><span>Pane di casa, pomodoro, lardo</span></div><div class="price">9 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Panini & Piadine</h3>
+        <div class="dish"><div><h5>Panino gourmet</h5><span>Pane di casa, ingredienti scelti</span></div><div class="price">8 €</div></div>
+        <div class="dish"><div><h5>Piadina classica</h5><span>Crudo, squacquerone, rucola</span></div><div class="price">7 €</div></div>
+        <div class="dish"><div><h5>Club sandwich</h5><span>Con patatine fritte</span></div><div class="price">9 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Bruschette & Sfizi</h3>
+        <div class="dish"><div><h5>Bruschette miste</h5><span>Pane di casa, condimenti freschi</span></div><div class="price">6 €</div></div>
+        <div class="dish"><div><h5>Tagliere aperitivo</h5><span>Salumi e formaggi del territorio</span></div><div class="price">12 €</div></div>
+        <div class="dish"><div><h5>Patatine & sfizi</h5><span>Fritti misti da condividere</span></div><div class="price">5 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Vini &amp; Dolci</h3>
+        <div class="dish"><div><h5>Calice Valpolicella</h5><span>Selezione della casa</span></div><div class="price">6 €</div></div>
+        <div class="dish"><div><h5>Aperol Spritz</h5><span>Il nostro aperitivo</span></div><div class="price">5 €</div></div>
+        <div class="dish"><div><h5>Dolce della casa</h5><span>Chiedi la disponibilità</span></div><div class="price">5 €</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="adresse" class="addr">
+  <div class="wrap addr-grid">
+    <div class="addr-img" role="img" aria-label="Ingresso dell'osteria"></div>
+    <div class="addr-txt">
+      <span class="kick">Dove siamo</span>
+      <h2>Vieni a trovarci</h2>
+      <div class="addr-row"><h4>Indirizzo</h4><p>Piazza Mazzini, 5, 37044 Cologna Veneta (VR)</p></div>
+      <div class="addr-row"><h4>Orari</h4><p>Aperto a pranzo, aperitivo e cena<br>Consulta gli orari aggiornati su Google</p></div>
+      <div class="addr-row"><h4>Contatti</h4><p><a href="tel:+393332304019">333 230 4019</a> · <a href="https://www.facebook.com/La-Gargote-Paninoteca-296329040820786" target="_blank" rel="noopener">Facebook</a></p></div>
+      <a href="#prenota" class="btn btn-dark" style="margin-top:8px">Prenota ora</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,5 su 462 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Ottima esperienza. Vasta scelta di panini, piadine e bruschette. Porzioni enormi e ottima qualità."</p><b>Noemi Tomasi · Google</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Un bar a conduzione familiare che fa la differenza: gentilezza, disponibilità e qualità."</p><b>Gianenrico Fiumicetti · Google</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Luogo curato e accogliente, servizio impeccabile. Ottimi aperitivi e pietanze."</p><b>Antonella Dal Ben · Google</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="reserve">
+  <div class="reserve-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo tavolo</h2>
+    <p>Per un panino al volo, un aperitivo o una serata tra amici: ti aspettiamo in Piazza Mazzini. Scrivici su WhatsApp!</p>
+    <div class="btns">
+      <a href="tel:+393332304019" class="btn btn-fill">Chiama 333 230 4019</a>
+      <a href="https://wa.me/393332304019" class="btn btn-line">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">La Gargote</div>
+        <p>Paninoteca e bar nel cuore di Cologna Veneta.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Piazza Mazzini 5, 37044 Cologna Veneta (VR)<br><a href="tel:+393332304019">333 230 4019</a><br><a href="https://www.facebook.com/La-Gargote-Paninoteca-296329040820786" target="_blank" rel="noopener">Facebook</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Aperto a pranzo,<br>aperitivo e cena<br>Orari su Google</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 La Gargote · Cologna Veneta (VR)</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393332304019" class="call">Chiama</a>
+  <a href="https://wa.me/393332304019" class="wa">WhatsApp</a>
+</div>
+
+<script>
+addEventListener('scroll',()=>{document.getElementById('hd').classList.toggle('solid',scrollY>60)});
+</script>
+</body>
+</html>
