@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ristorante Da Massimo — Trattoria a Colognola ai Colli | Prenota</title>
+<meta name="description" content="Ristorante Da Massimo, trattoria dai sapori genuini a Stra di Colognola ai Colli (VR). Ambiente rustico e accogliente, cucina della tradizione. 4,5 stelle su 147 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#22261f; --ink2:#4c5145; --sub:#8b9082; --line:#e2e4dc; --paper:#f4f5ef; --white:#fff;
+  --accent:#4a5c3f; --accent-d:#3a4a31; --gold:#a08a5a; --green:#25d366;
+  --h:'Playfair Display',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--b);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.serif{font-family:var(--h);font-weight:400}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:var(--h);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:1.2rem}
+header nav{display:flex;gap:32px}
+header nav a{font-family:var(--b);font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;padding:13px 26px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-fill{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-fill:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.65)}
+.btn-light:hover{background:#fff;color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,38,31,.5),rgba(34,38,31,.68))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:820px}
+.hero .kick{color:#d8ddcf;display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(2.4rem,7vw,5.4rem);line-height:1.06;margin-bottom:26px}
+.hero p{font-size:1.08rem;font-weight:300;color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center;background:var(--white)}
+.intro .kick{display:block;margin-bottom:20px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.3;max-width:20ch;margin:0 auto 22px}
+.intro p{color:var(--ink2);font-weight:300;max-width:600px;margin:0 auto;font-size:1.05rem}
+
+/* Split */
+.split{padding:0 0 110px;background:var(--white)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h3{font-family:var(--h);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:18px;line-height:1.2}
+.split-txt p{color:var(--ink2);font-weight:300;margin-bottom:16px}
+
+/* Menu */
+.menu{padding:110px 0;background:var(--paper)}
+.menu-head{text-align:center;margin-bottom:60px}
+.menu-head .kick{display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;letter-spacing:.05em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:52px 72px;max-width:960px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem;text-align:center;padding-bottom:14px;margin-bottom:20px;border-bottom:1px solid var(--sub)}
+.dish{text-align:center;padding:14px 0}
+.dish h5{font-family:var(--h);font-weight:400;font-size:1.12rem;margin-bottom:4px}
+.dish span{color:var(--sub);font-weight:300;font-size:.9rem;display:block;margin-bottom:6px}
+.dish .price{font-family:var(--b);font-weight:500;letter-spacing:.1em;color:var(--accent);font-size:.92rem}
+
+/* Gallery */
+.gallery{padding:110px 0;background:var(--white)}
+.gal-head{text-align:center;margin-bottom:50px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);text-transform:uppercase;letter-spacing:.05em}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal-grid img{width:100%;height:360px;object-fit:cover}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--paper);text-align:center}
+.reviews .stars{color:var(--gold);letter-spacing:4px;font-size:1.1rem;margin-bottom:10px}
+.reviews h2{font-family:var(--h);font-weight:400;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:46px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.rv{background:#fff;border:1px solid var(--line);padding:34px 28px}
+.rv .st{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.rv p{font-family:var(--h);font-weight:400;font-style:italic;color:var(--ink2);font-size:1.05rem;margin-bottom:16px;line-height:1.5}
+.rv b{font-family:var(--b);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem}
+
+/* Visit / reserve */
+.visit{position:relative;padding:130px 0;text-align:center;color:#fff}
+.visit-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/1307698/pexels-photo-1307698.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.visit-bg::after{content:"";position:absolute;inset:0;background:rgba(34,38,31,.72)}
+.visit .wrap{position:relative;z-index:2}
+.visit .kick{color:#d8ddcf;display:block;margin-bottom:18px}
+.visit h2{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px}
+.visit p{max-width:520px;margin:0 auto 18px;font-weight:300;color:rgba(255,255,255,.88)}
+.visit .hours{font-weight:300;color:rgba(255,255,255,.82);margin-bottom:28px;line-height:1.9}
+.visit .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 38px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#d8ddcf;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;font-weight:300;line-height:1.95;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.8rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;letter-spacing:.06em}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .menu-cols{grid-template-columns:1fr;gap:38px}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-hide{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:260px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--b);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Da Massimo</a>
+    <nav>
+      <a href="#intro">Il ristorante</a>
+      <a href="#menu">Menu</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#visita">Contatti</a>
+    </nav>
+    <a href="tel:0457650355" class="btn btn-out hd-hide">Chiama</a>
+  </div>
+</header>
+<section id="top" class="hero">
+  <div class="hero-bg" style="background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydiEK4eksenhE2FKN8buLAHu6a9V5dAPqxWW6zvyAzirjew5Q2mNI5TMZEzUhOFXAKqwpMIxpCbeilm0xEhasgW4wbIHQUwA7uCctEmmDH77oCRbzwSckdE7DnyKDV_baQTqfy187ntqlhUJodFSYqgbFoee1ydkwfyha5emVoLMGtSvN-zdjpohscbICvUUzToAhRXAmj6ad2BcerEyHDhSz9kzdWxiDVdkbMrLJ8P53azDxOkwL9A7Q0EP3ozp3SOvioAyY2hjpSBPNScXUY9mPLUBWmQoG72q4P5OwtyueXjGCSNVxskP9NJptVLe8q4g0bqC5qhtszlloi79oXaSHllWSvtDCvBLKGH7H32O_LubvscHyW0w4aWvjeF40zg6nRcfDrnhWXhWNFBGNuPXQKGfzAJtiO2y0PPGmjQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover"></div>
+  <div class="hero-inner">
+    <span class="kick">Trattoria &middot; Colognola ai Colli</span>
+    <h1>La cucina genuina di casa</h1>
+    <p>Un locale in stile rustico, spazioso e accogliente, dove i piatti della tradizione veronese sono preparati con qualita e passione.</p>
+    <div class="hero-cta">
+      <a href="tel:0457650355" class="btn btn-light">Chiama 045 765 0355</a>
+      <a href="#menu" class="btn btn-light">Il menu</a>
+    </div>
+  </div>
+</section>
+<section id="intro" class="intro">
+  <div class="wrap">
+    <span class="kick">Il ristorante</span>
+    <h2>Dall'antipasto al dolce, una cucina da leccarsi i baffi</h2>
+    <p>Da Massimo trovi una cucina genuina e curata, in una sala luminosa e recentemente rinnovata che conserva l'atmosfera d'un tempo. Un ambiente accogliente, perfetto per una cena in famiglia o una serata in compagnia.</p>
+  </div>
+</section>
+<section class="split">
+  <div class="wrap split-grid">
+    <img class="split-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhPvX-o98PtqrShAj2DQs4zi9KQemxgrVCUYHRVssaLobE5fsQeO7GAcnhpdr2iEG1Q_24ZxPX8PTR8XUETxk98jyX15tjmJ4Vj-s_YEA5M6aN0oRdGsiM87QaTGPVcTbgFOlLTxfcV77idRv-y5LyRsongkgIAn65u0w0DMwtSrvFtL3H3DQMsZAn8Lm_b56jzKJ3g310JaKE6ecj7YlzEmMv3pZwrBpKqsMDoz5IFO01vnr1U_O2l1jRpMsrXc4s3Y0He-GjA4APYqnbStmsr7JtnuMnRIzwSzHFr1ZKyk_w42eQUdSgsVJhJN6crfnZqfRZ-3s1cjeGMhuZI2HskyXZlk69Xiy_SRSgnI0tcGRxf2BfPKSKdUnx93jPiKi7U6g4xWe8F_nkt0VHbXkY7yowDWn4N60Hhhm8&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Un piatto della casa da Massimo">
+    <div class="split-txt">
+      <span class="kick">La nostra tavola</span>
+      <h3>Qualita, quantita e accoglienza</h3>
+      <p>Piatti abbondanti e genuini, con una qualita ottima che si sente in ogni portata. Il personale gentile e attento vi accompagna nella scelta, dall'antipasto al dolce.</p>
+      <p>Una saletta bellissima e molto accogliente per i vostri momenti speciali.</p>
+    </div>
+  </div>
+</section>
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head"><span class="kick">La carta</span><h2>Menu</h2></div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><h5>Tagliere di salumi e formaggi</h5><span>Selezione del territorio</span><div class="price"></div></div>
+        <div class="dish"><h5>Antipasto della casa</h5><span>Le nostre specialita da condividere</span><div class="price"></div></div>
+        <div class="dish"><h5>Polenta e funghi</h5><span>Polenta abbrustolita, funghi trifolati</span><div class="price"></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><h5>Bigoli all'anatra</h5><span>Pasta fresca della tradizione</span><div class="price"></div></div>
+        <div class="dish"><h5>Gnocchi fatti in casa</h5><span>Al ragu o al pomodoro</span><div class="price"></div></div>
+        <div class="dish"><h5>Risotto del giorno</h5><span>Secondo stagione</span><div class="price"></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Secondi</h3>
+        <div class="dish"><h5>Grigliata di carni miste</h5><span>Alla brace</span><div class="price"></div></div>
+        <div class="dish"><h5>Bollito con peara</h5><span>Piatto veronese della domenica</span><div class="price"></div></div>
+        <div class="dish"><h5>Stracotto all'Amarone</h5><span>Cottura lenta</span><div class="price"></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Dolci</h3>
+        <div class="dish"><h5>Dolci della casa</h5><span>Preparati da noi</span><div class="price"></div></div>
+        <div class="dish"><h5>Sbrisolona con zabaione</h5><span>La tradizione a tavola</span><div class="price"></div></div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--sub);font-weight:300;margin-top:34px;font-size:.95rem">Menu indicativo &mdash; la carta cambia secondo la stagione e la disponibilita del giorno.</p>
+  </div>
+</section>
+<section id="galleria" class="gallery">
+  <div class="wrap">
+    <div class="gal-head"><span class="kick">Galleria</span><h2>Ambiente &amp; piatti</h2></div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydiLkUii0SwGKg-jGU9Y5VLOlYPI2fhff6wmMvoRhuVDA1KHQBY6q6v7oo9aPSkckbk91amFI79-o3819gAE_CXRKq8-TGphQmzkNQDGxM4p0r008yaAmGOLCKmZoxctzxE6_M00ykq6VbSSHWifWH02rxF8PcfoAMWvIdgt4qt5AN_C5WKyBtlM7kg2e-uGZ1hh87D4TYxfHjWOcBEXotR-HflEev7A7Z699ROWekXQxkwrzqH8kTYp81z_X0naT1P2cdn-EPqnJQXlX59KQN1PnezDEM0Rh6At2QGptXcGQyXXWbUoYjgmpqP-Wn8Dvv3GbV3G1duSjwFqSsnObZwEvrgHk0EChYqMpJ4qixMnAUrPEcWIWunWHJxbOrhSb6W7CH5qEycGPLWqlsK9bl-G6EEGxwMUyajFR8F78lhZ4t-X&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Da Massimo">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhWIse_AL52YlJwkjEF967EyMST1_oeYiaHWjD5UkJtzHbDbsYrIrVEpMqf4kexbQ82V88RXYXIovRJvPcqFyH6lYeW2vH6lndBmR5-SD759bw5LOLp-lBztegE2vmVJiAwjVt1sVnys4vuP3lF0RRtMV27R629sj04Y4rcX6YGHhSU7d7xG-hb-iJjzBVqKQulCSJqT5kGGv2vsH6-I5zBLSQgpEnGwmygSRlq8n81BS5MqLNp32ik7eRHbmWOSmf0iIJnXxsAWwR-ul2XVKxINuI40F5JtIdoOCuQr9kpOimQuxv-8qeobuMTvhbeZHyYtFkSuHrMAGzUTsGIAWo0s-ZwL1x-CXpkqR5fh3VShFVRiSir_EiwRCN1Fi-Mg8-xuoDjIWcTHH9nKN4f6TqMLYua8QONVHwQ3qc-ztQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Da Massimo">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydidYLIHGd1FyAm-jYcJTU27q9rKEQLa5CyInKXO9OghTtxq8zUUNMqXuTdrAhB4GK5YCKM0w_TSN4oPYkN1vMwwPkSVBO6MLmLK-39P1eC6sanSrM38sT6PNEs35vwzxmmzbf61iWvj3cwAjzXBMi0ohB45taj0sUasqwNHIP92BJnB8Vgx8rhmhG7-IB8dUp0h9zIHeiwNC-FomeeTg9gjGmgOL-9X9HuzSWA1d9HsWBCK9gFnqPZf3JPLcdVYYAwX4eQz_ekbMpGyD4jtS6NtJVU4aGEKAMRRtxuEG4Oc5DRFCPCezzfxaGGHJZqunSEeSzh8ocgXI1DCfMwdHv1hgpjBs9uFP-PO-3z0uyjetPQFT8COrunokGOb83mXU-gTRUhqltiKI4Pg69yJ0CH9PcTsBiC735KiIffWNpVfzDAY&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Da Massimo">
+    </div>
+  </div>
+</section>
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <h2>4,5 su 147 recensioni Google</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Un locale in stile rustico molto bello. Il menu e ottimo: dall'antipasto al dolce, una qualita ottima e genuina. Una cucina da leccarsi i baffi."</p><b>Flavia Burato</b></div>
+      <div class="rv"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Ottima cena in famiglia. Personale molto gentile e attento, bel locale ristrutturato con un'atmosfera d'antan."</p><b>Giuseppe Della Penna</b></div>
+      <div class="rv"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9734;</div><p>"Ambiente spazioso e luminoso, siamo stati ospitati in una saletta bellissima e molto accogliente. Ottima cucina, consigliato!"</p><b>Beatrice Dalla Riva</b></div>
+    </div>
+  </div>
+</section>
+<section id="visita" class="visit">
+  <div class="visit-bg" style="background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjH0_KS9lpLYiEH51t1h_OlzlPIScUy-2Wnc3gZoBHwIq_AwvrpG9hVbxKCEhRUIUQ2XIkCH-t4D0e1cxtOyXh6ZFMgy1IcVgoAaNrDyiOK05G8FOaUk5QBO-g0Eiz5LzOfJ9GGqAT4NGWm-L7AV2STM6n2AaIAM2KcjKOw6tfMa0Zruz7DSt2NRwaE6BmeFBB2eofZQCduxssgM2wsS9iYJ_z-Bl5m7ntTyPKL5UIRubJf8NnfoU8FIKvAIhjOhckAqosubKhDyi5qw8wDK2VuUn45Z70Y5xBMAfegNJ9PT2gf8yhZuGoz7mVC7FwDJ3p5C9pNC6gQTnzCmVyXRDL8JwO199r3YzDo_cCGTsj02gorK9gCLcV70QTZd8yl2qgO4Tp3apP0qetaxtK40Vf-hCPGJbN8mB2uEDNelCaLsA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover"></div>
+  <div class="wrap">
+    <span class="kick">Dove siamo</span>
+    <h2>Vieni a trovarci</h2>
+    <p>Consigliamo la prenotazione, soprattutto nel fine settimana. Chiamaci per tavoli e occasioni speciali.</p>
+    <div class="hours">Via del Poggio 9, Stra &middot; 37030 Colognola ai Colli (VR)<br>Venerdi 19:30-23:00 &middot; Sabato 18:50-23:00 &middot; Domenica 12:30-16:30<br>Lunedi-Giovedi chiuso</div>
+    <div class="btns">
+      <a href="tel:0457650355" class="btn btn-fill">Chiama 045 765 0355</a>
+      <a href="https://maps.google.com/?cid=17476920244413711654" target="_blank" rel="noopener" class="btn btn-light">Come arrivare</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand">Da Massimo</div><p>Trattoria dai sapori genuini a Colognola ai Colli.</p></div>
+      <div><h4>Contatti</h4><p>Via del Poggio 9, Stra<br>37030 Colognola ai Colli (VR)<br><a href="tel:0457650355">045 765 0355</a></p></div>
+      <div><h4>Orari</h4><p>Ven 19:30-23:00<br>Sab 18:50-23:00<br>Dom 12:30-16:30<br>Lun-Gio chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>&copy; Ristorante Da Massimo &mdash; Colognola ai Colli</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+<div class="mbar">
+  <a href="tel:0457650355" class="call">Chiama</a>
+  <a href="https://maps.google.com/?cid=17476920244413711654" target="_blank" rel="noopener" class="wa" style="background:var(--accent)">Come arrivare</a>
+</div>
+</body>
+</html>

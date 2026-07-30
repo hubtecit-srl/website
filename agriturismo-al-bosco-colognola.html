@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agriturismo al Bosco &mdash; Franchi Mauro | Colognola ai Colli</title>
+<meta name="description" content="Agriturismo al Bosco di Franchi Mauro a Colognola ai Colli (VR): i sapori di una volta, prodotti dell'azienda agricola e accoglienza familiare. 4,5 stelle su 457 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c140d; --ink2:#4a3f33; --sub:#8a7d6c; --line:#e4dccb; --cream:#f6f0e6; --white:#fff;
+  --accent:#a8461c; --accent-d:#8c3813; --olive:#5b5330; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.up{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:transparent;transition:.3s}
+header.solid{background:var(--ink)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;color:#fff}
+header nav{display:flex;gap:28px}
+header nav a{font-family:var(--h);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:rgba(255,255,255,.85);transition:.2s}
+header nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;padding:13px 24px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid transparent}
+.btn-fill{background:var(--accent);color:#fff}
+.btn-fill:hover{background:var(--accent-d)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent)}
+
+/* Hero full-bleed */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/1633578/pexels-photo-1633578.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,9,.55),rgba(20,14,9,.72))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:900px}
+.hero .kick{color:#e8b48f;margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,6.6rem);text-transform:uppercase;font-family:var(--h);font-weight:900;letter-spacing:.01em;line-height:.98;margin-bottom:24px}
+.hero p{font-size:1.12rem;color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Experience */
+.exp{padding:100px 0;text-align:center;background:var(--cream)}
+.exp .kick{display:block;margin-bottom:16px}
+.exp h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.5vw,3.4rem);letter-spacing:.01em;max-width:16ch;margin:0 auto 20px;line-height:1.04}
+.exp p{color:var(--ink2);max-width:620px;margin:0 auto}
+.exp-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
+.exp-imgs img{width:100%;height:340px;object-fit:cover}
+
+/* Menu */
+.menu{padding:100px 0;background:var(--ink);color:#fff}
+.menu-head{text-align:center;margin-bottom:56px}
+.menu-head .kick{color:#e8b48f;display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:.01em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:50px 70px;max-width:980px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:1rem;color:#e8b48f;padding-bottom:12px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:11px 0}
+.dish h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish span{color:rgba(255,255,255,.6);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;color:#fff;white-space:nowrap}
+
+/* Address / hours */
+.addr{padding:100px 0;background:var(--cream)}
+.addr-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.addr-img{width:100%;height:460px;object-fit:cover;background:url('https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg?auto=compress&cs=tinysrgb&w=1200') center/cover}
+.addr-txt .kick{display:block;margin-bottom:14px}
+.addr-txt h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:22px;letter-spacing:.01em}
+.addr-row{margin-bottom:18px}
+.addr-row h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--accent);margin-bottom:5px}
+.addr-row p{color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--white);text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:8px}
+.reviews h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:44px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+.rv{background:var(--cream);padding:28px;border-top:3px solid var(--accent)}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:14px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.9rem}
+
+/* Reserve */
+.reserve{position:relative;padding:120px 0;text-align:center;color:#fff}
+.reserve-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/262047/pexels-photo-262047.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.reserve-bg::after{content:"";position:absolute;inset:0;background:rgba(20,14,9,.72)}
+.reserve .wrap{position:relative;z-index:2}
+.reserve h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:16px;letter-spacing:.01em}
+.reserve p{max-width:520px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:56px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.74rem;color:#e8b48f;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .exp-imgs{grid-template-columns:1fr}
+  .exp-imgs img{height:260px}
+  .menu-cols{grid-template-columns:1fr;gap:36px}
+  .addr-grid{grid-template-columns:1fr;gap:28px}
+  .addr-img{height:320px}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .btn-line.hd{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#top" class="brand">Al Bosco</a>
+    <nav>
+      <a href="#exp">L'agriturismo</a>
+      <a href="#menu">Cucina</a>
+      <a href="#adresse">Dove siamo</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+    <a href="tel:0457651635" class="btn btn-line hd">Chiama</a>
+  </div>
+</header>
+<section id="top" class="hero">
+  <div class="hero-bg" style="background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydiMnZXq4aSDhnnxBU1VM8-Ic8xHr0fR5YqD8JAIU-4OeofmJK4k9zV_PhkUoWNM9anvck_YKBfPMkjcVaMfnrIsof-Ovxu22Kc8ZJRkUIWcjNKssHAc75JqG-km04a0SVEaRRw9YXxDifwxKfBHwxXgpJs1htT9Mmpr5vmBrwxODm-ZpFfrnk3pLi7XXmcSAWVu7EdSLuuM-QZsMzESEKMPQ-MvxQegOxZM_om-Ys-_q6-VkXTkrnd2mKMcubWgSi6JV4hXHagWKEq6NKiBzbB_F-xFbILqH2XlVZBVb_GjE2rExqnQlXKyDmhSad9HOpZO1M5o5vUPIvxvzSWq64rwMUO2NCPPzWbS4YWCNUe7ZcCXMLFFfX2Aqtei45LDGlscWTjDohti9nTOwmqo9TJ7PGBxtBbcPktQfV6uhSJU0Q&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover"></div>
+  <div class="hero-inner">
+    <span class="kick">Agriturismo &middot; Colognola ai Colli</span>
+    <h1>I sapori di una volta</h1>
+    <p>Un agriturismo di famiglia immerso nel verde, dove ritrovare la genuinita dei prodotti dell'azienda agricola e la cucina di casa.</p>
+    <div class="hero-cta">
+      <a href="tel:0457651635" class="btn btn-fill">Chiama 045 765 1635</a>
+      <a href="#menu" class="btn btn-line">La cucina</a>
+    </div>
+  </div>
+</section>
+<section id="exp" class="exp">
+  <div class="wrap">
+    <span class="kick">Un'esperienza autentica</span>
+    <h2>La genuinita dei sapori di una volta</h2>
+    <p>All'Agriturismo al Bosco si ritrovano in tavola i sapori autentici della campagna veronese. Un locale curato e familiare, dove il proprietario vi guida nella scelta dei piatti con calore e cortesia. Ottimo rapporto qualita-prezzo.</p>
+    <div class="exp-imgs">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydj-Z97V2soL8AkazV9V2HIXdAEwVwVO-KxzALU6P7uuoc2ykERHv0AymEDe015Np4eGSKrMnDuLnHEhKBCTXN3Ji4whApP1pmYidCHpe6K0pFr1-0hZYuZQg9UM-jpndZsFnzZAeE5h6JmbcgT2JtSW6fFBc_V9u-Ele89yzKNngYBKv82nJRyJqbtNf7DbFLIT6WqlnguQkkj2r-j2ISvj4ZzPYQ5qReKxLuIa59Ov1rnlze4miRK7ivnPKaGXYU3eqLyOZeKcqJ-4W0P-e-C9HHUbS6Z_MQRVHc9eTAnzKWxrCokzlUMGKK0gAMjixAWIl7gXhwGn6OoOdBm6Cn36D1Ts1PvPYs-nrHyv8HoBeCCq8oa-CSryvSlF_koPEmV8EQA3IIG81bbPJIBKbkM_1Ccim49hSCO1QOeTH3XMe8eGXdcvH-lcsWrBt8X0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Agriturismo al Bosco">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydjFZe0TcaPZlWYAMrV4nP_lxld267uarHBV9NXp458ao0jgClmR9mRBLdVUKmtCRYnrNnva7ggC0QRvFHVsqp3opzIeAU3RT8uC_UES6f0vEDh4X4_CinNNgsY4jxLtFmOv8MNcFyBB5lQQx-KjfDglU_V7_JMSKfaaT4B2ecfMKkwScD8Pgp_uEEdpRVTE9nolCZli6fctWqCVzLrb2X22zjexmlLs6B9g5s7CqIEhCXAJ9Cg-rKvSfqaz-7hDSmNBRIhU_i_4wO7izPtVynBb2yYXAJXoKlXG0Mhhrb13HDDG4GHk_-b5JkvtEUJvAAosU5YgzRCMGKmWoY9ha6mfOB8XKx2O7CFhE3XsXWWKoDaqW10qPhRDIjE9DrFnKiLNhhta4kZzx5KLhwmexZsOJrTP3fcbnw2ZohHc3N_X-gU&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatti dell'agriturismo">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydgIdnuHzoARIKeWSBbZh4NNDITyjO_L-kdJAMup24zc4_6AGRIJ8OpJk22mXRyIIcO-xy7rY2sKPeMiAY1j0G1jrpgoBIpjxYzHSRxAi69Q-XTlcnGbLZKL5Y5TIFvlkNOnBFPr_IWv9lJ589YZLc_PFh7eymjCNeBI_aLBUvkqLg4YnyH-P7Nehz-4Rike6xgR5lPm7dz50i4kc2YrZTZtGnrlw57KFEoncZIkf1sgWLPrve42HUq0dlCWQag-VvCFM381-RPk00aKY0PA-SzTXQpd57Zpc6GNFion52fGrXIP77zSoxod_2rHhEp-9UliLxk8aTEXcbAIAJFnYUlFpUDyfN3lfRVxD2TA9BHnIrViKLtVHzTF0ISpy16EUQvAjGJJ2ovSft9nBXr5iqs1mqrspWkmLRatrYaBzInrpg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Ambiente al Bosco">
+    </div>
+  </div>
+</section>
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head"><span class="kick">La cucina</span><h2>Dalla nostra terra</h2></div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><div><h5>Salumi dell'azienda</h5><span>Produzione propria</span></div><div class="price"></div></div>
+        <div class="dish"><div><h5>Sott'oli e verdure</h5><span>Dell'orto di casa</span></div><div class="price"></div></div>
+        <div class="dish"><div><h5>Polenta e soppressa</h5><span>La tradizione contadina</span></div><div class="price"></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><div><h5>Gnocchi fatti in casa</h5><span>Al ragu della domenica</span></div><div class="price"></div></div>
+        <div class="dish"><div><h5>Bigoli con le sardele</h5><span>Ricetta di una volta</span></div><div class="price"></div></div>
+        <div class="dish"><div><h5>Risotto dell'orto</h5><span>Verdure di stagione</span></div><div class="price"></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Secondi</h3>
+        <div class="dish"><div><h5>Grigliata di carni</h5><span>Alla brace</span></div><div class="price"></div></div>
+        <div class="dish"><div><h5>Faraona arrosto</h5><span>Con polenta</span></div><div class="price"></div></div>
+        <div class="dish"><div><h5>Coniglio in umido</h5><span>Della tradizione</span></div><div class="price"></div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Dolci &amp; Vini</h3>
+        <div class="dish"><div><h5>Dolci della casa</h5><span>Fatti da noi</span></div><div class="price"></div></div>
+        <div class="dish"><div><h5>Vini del territorio</h5><span>Soave e Valpolicella</span></div><div class="price"></div></div>
+      </div>
+    </div>
+    <p style="text-align:center;color:rgba(255,255,255,.55);margin-top:34px;font-size:.95rem">Menu indicativo &mdash; i piatti cambiano secondo la stagione e la disponibilita dei nostri prodotti.</p>
+  </div>
+</section>
+<section id="adresse" class="addr">
+  <div class="wrap addr-grid">
+    <div class="addr-img" role="img" aria-label="Agriturismo al Bosco" style="background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhtKWzHzK4HAYA0kIUjmrZ1E-1WElN1EMqdDYTnCKSSwYcxD-ROODAm71Z4MnB3SvbbkcUgEN2Q0baug4-Zx6gKxdg3UxWj4y1DxNWTkmRtkGdBMiRBp2YXNGH7BxD-6PYZSXI8neC1YkY4dU5jLF5ZEvkKb1yC4I-HBRlB97g6bSekuTshSLk6zb6NNc6u2yyWAl0sOsCU1hI6_fYEXPLPQCRgiT55QZ6HVxmUQjm8qdKpThxLdR5wF_xIe3TDvedNRgRTW3MmHyKEkKJVV1lDLunwN0E_IEocZsAGXC05enfTdOvOzqt5H3FbkiAVwZVogcAkcmfCmiSNmPpP-DO-ZRjx965t-jBo5lc-60kbomN-hVGJ6urpjXbdIB02j0g5q9XOPJnPEJFB7JsYaB7PyjYWlFHBHPuN9nikr_cMEZtZO7p-wMYb14UxlA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover"></div>
+    <div class="addr-txt">
+      <span class="kick">Dove siamo</span>
+      <h2>Vieni a trovarci</h2>
+      <div class="addr-row"><h4>Indirizzo</h4><p>Localita Bosco 2, 37030 Colognola ai Colli (VR)</p></div>
+      <div class="addr-row"><h4>Orari</h4><p>Venerdi 19:30-21:30 &middot; Sabato 19:30-21:30<br>Domenica 12:00-13:30 e 19:00-21:30<br>Lunedi-Giovedi chiuso</p></div>
+      <div class="addr-row"><h4>Contatti</h4><p><a href="tel:0457651635">045 765 1635</a></p></div>
+      <a href="https://maps.google.com/?cid=17307960682488985679" target="_blank" rel="noopener" class="btn btn-dark" style="margin-top:8px">Come arrivare</a>
+    </div>
+  </div>
+</section>
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+    <h2>4,5 su 457 recensioni Google</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Ci siamo tornati dopo tanto tempo e la soddisfazione e sempre alta. Locale ben tenuto, cibo gradevole e quantita perfetta."</p><b>Alberto Gaspari</b></div>
+      <div class="rv"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Ottimo agriturismo per una domenica in famiglia. Mangiato molto bene, servizio ottimo e ambiente carino. Qualita-prezzo top."</p><b>Anna Ottaiano</b></div>
+      <div class="rv"><div class="st">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p>"Abbiamo ritrovato in tavola i sapori di una volta. Il proprietario ci ha guidato nella scelta con grande cortesia."</p><b>Katuscia Schiavoi</b></div>
+    </div>
+  </div>
+</section>
+<section id="prenota" class="reserve">
+  <div class="reserve-bg" style="background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhOIc2PE0NFS8f9fvhMV912JfrQTHG72h3Ew4wDyejVacyvd8FTEur00TWv4hrCsaAOpqP8S6K9RGQvshfx_Rr5Y-_zn4wPAwdpwbCUcyVwAzMVZfKBusQDojnIH_3sgsuhsPDle9plYj4CqRqwYeVtsZiCPFX4tHTPjfhDiKl6cCvX3moNq5Y6bliWbuW1cr0yTnTl2QIYVffzy-Cux2uMyTpjIs5TY9Ev6VjlqghOhBELdhY_s9SnaHDS5nenQtT5RqKwIHYt7VoOQzV-KzH4DNk8NE0CEpmjoHvju2eemvE1h9m1iOGI9yiAfLyyc1FB-X6wKgXFHVgt3Y9M3ZgUiTuc11iywKINepzjMjvlVfxlJ7zJDXaeSZM5mPu1zUkSTZYsnh4IJfpzS1vsO6K2h6GDa_YFFSl3Z8Qw_Tvti7PKMctU51_Q91O3vQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo tavolo</h2>
+    <p>Per pranzi in famiglia, cene e occasioni speciali chiamaci: ti aspettiamo tra i sapori della campagna.</p>
+    <div class="btns">
+      <a href="tel:0457651635" class="btn btn-fill">Chiama 045 765 1635</a>
+      <a href="https://maps.google.com/?cid=17307960682488985679" target="_blank" rel="noopener" class="btn btn-line">Come arrivare</a>
+    </div>
+  </div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand">Agriturismo al Bosco</div><p>I sapori di una volta a Colognola ai Colli.</p></div>
+      <div><h4>Contatti</h4><p>Localita Bosco 2<br>37030 Colognola ai Colli (VR)<br><a href="tel:0457651635">045 765 1635</a></p></div>
+      <div><h4>Orari</h4><p>Ven-Sab 19:30-21:30<br>Dom 12-13:30 &middot; 19-21:30<br>Lun-Gio chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>&copy; Agriturismo al Bosco di Franchi Mauro</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+<div class="mbar">
+  <a href="tel:0457651635" class="call">Chiama</a>
+  <a href="https://maps.google.com/?cid=17307960682488985679" target="_blank" rel="noopener" class="wa" style="background:var(--accent)">Come arrivare</a>
+</div>
+<script>
+addEventListener('scroll',()=>{document.getElementById('hd').classList.toggle('solid',scrollY>60)});
+</script>
+</body>
+</html>
