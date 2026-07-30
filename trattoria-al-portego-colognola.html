@@ -3,343 +3,289 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Trattoria Al Portego — Cucina veronese a Colognola ai Colli | Prenota</title>
-<meta name="description" content="Trattoria Al Portego a Colognola ai Colli (VR): cucina tradizionale veronese, bigoli all'anatra, pastissada de caval, ottime carni. 4,4★ su 590 recensioni Google. Prenota: 045 765 0083.">
+<title>Trattoria Al Portego — Bollito e cucina veronese a Colognola ai Colli</title>
+<meta name="description" content="Trattoria Al Portego a Colognola ai Colli (VR): bollito con pearà, pasta artigianale e cucina veronese in un ambiente rustico con dehors. 4,4★ su 590 recensioni.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#14100e; --bg2:#1c1613; --panel:#211a16; --cream:#f4ece0; --muted:#b8a998;
-  --gold:#c9a24b; --gold2:#e0bf74; --line:rgba(244,236,224,.12); --terra:#b56a3d;
-  --serif:'Cormorant Garamond',Georgia,serif; --sans:'Jost',system-ui,sans-serif;
+  --ink:#141414; --ink2:#3a3a3a; --sub:#7a756e; --line:#e7e3dc; --paper:#fbfaf7; --white:#fff;
+  --accent:#b3421f; --accent-d:#96361a; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:var(--sans);color:var(--cream);background:var(--bg);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 a{text-decoration:none;color:inherit}
 img{display:block;max-width:100%}
-.wrap{max-width:1200px;margin:0 auto;padding:0 26px}
-h1,h2,h3,.serif{font-family:var(--serif);font-weight:600;letter-spacing:.01em}
-.kicker{font-family:var(--sans);font-weight:400;letter-spacing:.42em;text-transform:uppercase;font-size:.7rem;color:var(--gold)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+.display{font-family:var(--h);font-weight:800;letter-spacing:-.02em;line-height:.98}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.18em;text-transform:uppercase;font-size:.74rem;color:var(--accent)}
 
-header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.4s}
-header .bar{display:flex;align-items:center;justify-content:space-between;height:82px}
-.brand{font-family:var(--serif);font-size:1.6rem;color:var(--cream);letter-spacing:.04em}
-.brand span{color:var(--gold)}
-header nav{display:flex;gap:36px;align-items:center}
-header nav a{color:rgba(244,236,224,.82);font-size:.88rem;letter-spacing:.06em;transition:.2s}
-header nav a:hover{color:var(--gold)}
-.btn{display:inline-flex;align-items:center;gap:8px;font-family:var(--sans);font-weight:400;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem;padding:14px 28px;border-radius:2px;transition:.3s;cursor:pointer;border:1px solid transparent}
-.btn-gold{background:var(--gold);color:#211a16}
-.btn-gold:hover{background:var(--gold2)}
-.btn-out{background:transparent;color:var(--cream);border-color:rgba(244,236,224,.4)}
-.btn-out:hover{border-color:var(--gold);color:var(--gold)}
-header.scrolled{background:rgba(20,16,14,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.menu-toggle{display:none;background:none;border:0;color:var(--cream);font-size:1.6rem;cursor:pointer}
+/* Header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:var(--h);font-weight:800;font-size:1.25rem;letter-spacing:-.01em}
+header nav{display:flex;gap:30px}
+header nav a{font-family:var(--h);font-weight:600;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;font-size:.88rem;padding:12px 22px;border-radius:2px;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent);border-color:var(--accent)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.hd-cta{display:flex;gap:10px;align-items:center}
+.burger{display:none}
 
-.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;overflow:hidden}
-.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydiVwnaU5stnjWWQU4GU78h8jeZhYF2ssttki48XPHwQGqdVP6qF2mxjvfRE5uhaYa3VCv5xzmK6YxW-s7-N44kjt9iKF7CJylss9r1uIDDWaJ5v7BTlvKmniLC0dskQMdNLqJKmJPzImiZoybmzLJmL0VKTJq4kWFOqsLOgFN78VpAdrYh5jOo97Kvr5nsyLX3vZXqq75K8jo6jxIauuinzL8Z0YNFp5IWDxPdLORmUXVatrYRQJmNNWbCJhFrWIf1n630S4FdntGn5WcBgvAfQVsJylv3vuPXQ2XBIhbsw1j1aPCXVWFIgv4HWUyOyoC-jHu5VBfkkvAXmOBCWqEsoBuTebSuiyakyX8MnWtJspu1-HLuO0x7Ala8YbrrLZgbLefbsX_BHHSeK0YR4JdqUXp0Xf967CuTJr1cAA7-XE8Ca&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover no-repeat;transform:scale(1.06)}
-.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,14,.6) 0%,rgba(20,16,14,.15) 45%,rgba(20,16,14,.92) 100%)}
-.hero-inner{position:relative;z-index:2;padding:0 0 88px;width:100%}
-.hero .kicker{color:var(--gold2)}
-.hero h1{font-size:clamp(3rem,8.5vw,6.6rem);line-height:.98;margin:16px 0 14px;font-weight:600}
-.hero h1 em{font-style:italic;color:var(--gold2)}
-.hero .sub{font-size:1.2rem;max-width:560px;color:rgba(244,236,224,.9);margin-bottom:30px}
-.hero-cta{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
-.hero-meta{display:flex;gap:26px;align-items:center;margin-top:34px;flex-wrap:wrap;color:var(--muted);font-size:.9rem}
-.hero-meta .stars{color:var(--gold);letter-spacing:2px}
-.hero-meta b{color:var(--cream);font-family:var(--serif);font-size:1.25rem}
-.hero-meta .sep{width:1px;height:28px;background:var(--line)}
+/* Hero */
+.hero{padding:140px 0 0;text-align:center}
+.hero .kick{margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,7rem);margin:0 auto 26px;max-width:15ch}
+.hero .lead{font-size:1.12rem;color:var(--ink2);max-width:600px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:60px}
+.hero-img{width:100%;height:62vh;min-height:420px;object-fit:cover;background:var(--paper) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgcIepfcnxpI1CXv1Hfrzjwevb1EyZwofKRZVLVjePg9NsxHYnKfe9lUlXBVcYXjIDqHEs3Nhz0sTEchiaxgkjd11k2PU2DArGhMh9Ush3jwUbFFu2BzQLwyuxomsm4UFpi6SiufRriyUApaB3_XF0HNYdT7LDS_YwCbKVcjhEXuWhECJQEFB7r4ePJyZ_N4J5LQXNB-HJXpkOIwTmFaXcvyY3ybfSw2Z-tAOFnp4Ro6-eTD4BA1OANe0bG9m-xm236yMcPGIIc-5JHQrmVjEmdLl8K7znhhHj4nyU4lH-VEsMwESNOInu6tfSuuuZei_o0UUGsqseS4BLrY0TWrg6x6w_cZAg3gV9-E0R4ctZQGVVQDvWl9CCmNZJy5r8Gb5QrJZeLgmglepS9rUrgQ2ynYcySeu9eWEelWuYk0cKO2NT5g5ifZ7e-4b9r0Q&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
 
-section{padding:110px 0}
-.head{text-align:center;max-width:620px;margin:0 auto 60px}
-.head h2{font-size:clamp(2.2rem,4.5vw,3.3rem);margin:14px 0}
-.head p{color:var(--muted)}
-.orn{color:var(--gold);letter-spacing:.5em;font-size:.9rem;margin-top:10px}
+/* Story */
+.story{padding:100px 0}
+.story-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story-img{width:100%;height:520px;object-fit:cover;background:var(--paper) url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjsardTYkNPD_xogcyahukDwIsGFs1l3V7iLIKXbLfFQIIfJeoQCGz9iAegvUi9ih8uLFEHkAKufo4CTr15D0Af8Lm002UB_mj2-93uYRAMazfk0Fzm7L27CPRkqaKsxmpOIvnLHWzTv9BftulvxtJflXjmy7r7PphqjGp1SSRQHtzfPEhlFp5dln2RfdW3VewZI0h7RwRYwvN-QySj5AR1M-d7k0IX1m-GMDnDfxNjX09x07vkN5QJgXN5wsQE4OrOiZWarxL_jfp5ECW5lNaaG1Vq4blwE-VN79clrZzsF8r9HTOm8ajaONEdj7VTxJTOx-iUnh7uMCrsnKrzdzTRfS70ee3Om4DKjV_nqcG4uK67_BNq_o8sWxVi-Y56Q33yOH69bFREJnNzYHGv0U2oUBcKSwAVzpMqDREEch-10sBibcBxOPyFDf9DlA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.story-txt .kick{display:block;margin-bottom:16px}
+.story-txt h2{font-family:var(--h);font-weight:800;font-size:clamp(2rem,4vw,3.2rem);line-height:1.05;margin-bottom:20px;letter-spacing:-.02em}
+.story-txt p{color:var(--ink2);margin-bottom:16px}
 
-.about{background:var(--bg2)}
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
-.about-txt .kicker{margin-bottom:14px;display:block}
-.about-txt h2{font-size:clamp(2rem,4vw,3rem);margin-bottom:20px;line-height:1.1}
-.about-txt p{color:var(--muted);margin-bottom:16px}
-.about-txt .sign{font-family:var(--serif);font-style:italic;font-size:1.5rem;color:var(--gold2);margin-top:8px}
-.about-img{position:relative}
-.about-img img{width:100%;height:560px;object-fit:cover;border-radius:3px}
-.about-img::after{content:"";position:absolute;inset:14px;border:1px solid rgba(201,162,75,.5);border-radius:3px;pointer-events:none;margin:-14px;top:22px;left:22px;right:-22px;bottom:-22px;z-index:-1}
+/* Info band */
+.info{background:var(--ink);color:#fff;padding:70px 0}
+.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.info-col h4{font-family:var(--h);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem;color:#c9a999;margin-bottom:14px}
+.info-col p{color:rgba(255,255,255,.82);font-size:1rem;line-height:1.7}
+.info-col a{color:#fff;border-bottom:1px solid rgba(255,255,255,.3)}
 
-.menu{background:var(--bg)}
-.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px 60px;max-width:960px;margin:0 auto}
-.dish{border-bottom:1px dashed var(--line);padding-bottom:16px}
-.dish .r{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
-.dish h4{font-family:var(--serif);font-size:1.5rem;color:var(--cream);font-weight:600}
-.dish .tag{font-family:var(--sans);font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);white-space:nowrap;padding-top:6px}
-.dish p{color:var(--muted);font-size:.94rem;margin-top:4px}
-.menu-note{text-align:center;color:var(--muted);font-style:italic;margin-top:48px;font-family:var(--serif);font-size:1.25rem}
+/* Menu */
+.menu{padding:100px 0}
+.menu-head{text-align:center;max-width:640px;margin:0 auto 60px}
+.menu-head h2{font-family:var(--h);font-weight:800;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:-.02em;margin:14px 0 12px}
+.menu-head p{color:var(--sub)}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:56px 72px}
+.menu-cat{margin-bottom:6px}
+.menu-cat h3{font-family:var(--h);font-weight:700;font-size:1.15rem;letter-spacing:.06em;text-transform:uppercase;padding-bottom:12px;margin-bottom:18px;border-bottom:2px solid var(--ink)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:12px 0;border-bottom:1px solid var(--line)}
+.dish:last-child{border-bottom:none}
+.dish .d-main h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish .d-main span{color:var(--sub);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;font-size:1.02rem;white-space:nowrap}
 
-.gallery{background:var(--bg2)}
-.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:12px}
-.gal-grid figure{overflow:hidden;border-radius:3px;cursor:pointer;position:relative}
-.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.7s;filter:saturate(1.02)}
-.gal-grid figure:hover img{transform:scale(1.09)}
-.gal-grid .tall{grid-row:span 2}
-.gal-grid .wide{grid-column:span 2}
+/* Gallery */
+.gallery{padding:0 0 100px}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
 
-.reviews{background:var(--bg);position:relative}
-.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.rev{background:var(--panel);border:1px solid var(--line);border-radius:3px;padding:32px}
-.rev .stars{color:var(--gold);letter-spacing:3px;margin-bottom:14px}
-.rev p{color:rgba(244,236,224,.86);font-size:.98rem;margin-bottom:20px;font-weight:300}
-.rev .who{display:flex;align-items:center;gap:12px}
-.rev img{width:44px;height:44px;border-radius:50%;object-fit:cover}
-.rev .who b{font-family:var(--sans);font-weight:500;font-size:.92rem;color:var(--cream)}
-.rev .who span{display:block;font-size:.78rem;color:var(--muted)}
-.rev-foot{text-align:center;margin-top:36px}
-.rev-foot a{color:var(--gold);border-bottom:1px solid rgba(201,162,75,.4);padding-bottom:2px;font-size:.9rem;letter-spacing:.04em}
+/* Reviews */
+.reviews{background:var(--paper);padding:100px 0;text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:10px}
+.reviews>.wrap>h2{font-family:var(--h);font-weight:800;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:50px;letter-spacing:-.01em}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;text-align:left}
+.rv{background:#fff;border:1px solid var(--line);padding:28px}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:16px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.92rem}
 
-.info{background:var(--bg2)}
-.info-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:52px;align-items:stretch}
-.hours-card h3{font-size:1.9rem;margin-bottom:6px}
-.open-badge{display:inline-flex;align-items:center;gap:8px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 14px;border-radius:2px;margin:14px 0 22px}
-.open-badge.open{background:rgba(120,180,120,.16);color:#8fd08f}
-.open-badge.closed{background:rgba(200,90,70,.16);color:#e09a86}
-.open-badge .dot{width:7px;height:7px;border-radius:50%;background:currentColor}
-.hours-list{list-style:none}
-.hours-list li{display:flex;justify-content:space-between;padding:12px 2px;border-bottom:1px solid var(--line);font-size:.95rem;color:var(--muted);gap:16px}
-.hours-list li.today{color:var(--cream)}
-.hours-list li.today .d{color:var(--gold)}
-.hours-list li span:last-child{text-align:right;font-variant-numeric:tabular-nums}
-.contact-rows{margin-top:28px}
-.crow{display:flex;gap:14px;align-items:flex-start;padding:13px 0;border-top:1px solid var(--line)}
-.crow .ic{color:var(--gold);font-size:1.05rem;width:26px}
-.crow h4{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:2px}
-.crow a,.crow p{color:var(--cream);font-size:1rem}
-.info-cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
-.map-wrap{border-radius:3px;overflow:hidden;min-height:480px;filter:grayscale(.3) contrast(1.05)}
-.map-wrap iframe{width:100%;height:100%;min-height:480px;border:0}
+/* Reserve / Footer */
+.reserve{padding:110px 0;text-align:center}
+.reserve h2{font-family:var(--h);font-weight:800;font-size:clamp(2.2rem,5vw,3.6rem);letter-spacing:-.02em;margin-bottom:16px}
+.reserve p{color:var(--ink2);max-width:520px;margin:0 auto 30px}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--ink);color:rgba(255,255,255,.75);padding:60px 0 40px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#c9a999;margin-bottom:14px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 
-footer{background:#0e0b09;padding:66px 0 28px;text-align:center;border-top:1px solid var(--line)}
-footer .brand{font-size:2rem;display:inline-block;margin-bottom:12px}
-.socials{display:flex;gap:14px;justify-content:center;margin:18px 0}
-.socials a{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--cream);transition:.25s}
-.socials a:hover{background:var(--gold);color:#14100e;border-color:var(--gold)}
-.foot-line{color:var(--muted);font-size:.82rem;margin-top:18px}
-.foot-note{color:rgba(184,169,152,.5);font-size:.72rem;margin-top:8px}
+/* Mobile sticky bar */
+.mbar{display:none}
 
-.lb{position:fixed;inset:0;background:rgba(10,8,6,.96);display:none;align-items:center;justify-content:center;z-index:100;cursor:zoom-out;padding:30px}
-.lb.on{display:flex}
-.lb img{max-width:92%;max-height:90%;border-radius:3px}
-.lb .x{position:absolute;top:22px;right:30px;color:var(--cream);font-size:2rem;cursor:pointer;opacity:.8}
-.mobile-bar{display:none}
-
-@media(max-width:960px){
-  .about-grid,.info-grid{grid-template-columns:1fr;gap:40px}
-  .menu-grid{grid-template-columns:1fr;gap:22px}
-  .rev-grid{grid-template-columns:1fr}
-  .gal-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:170px}
-  header nav{display:none}
-  .menu-toggle{display:block}
-  .about-img::after{display:none}
+@media(max-width:860px){
+  .story-grid{grid-template-columns:1fr;gap:30px}
+  .story-img{height:340px}
+  .menu-cols{grid-template-columns:1fr;gap:40px}
+  .info-grid{grid-template-columns:1fr;gap:28px;text-align:center}
+  .rv-grid{grid-template-columns:1fr}
+  .gal-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-cta .btn-out{display:none}
+  .wrap{padding:0 20px}
+  .hero{padding:100px 0 0}
+  .hero-img{height:46vh;min-height:300px}
   .gal-grid{grid-template-columns:1fr}
-  .gal-grid .wide,.gal-grid .tall{grid-column:auto;grid-row:auto}
-  section{padding:76px 0}
-  .header-cta{display:none}
-  .mobile-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:70}
-  .mobile-bar a{flex:1;text-align:center;padding:16px;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;color:#14100e;background:var(--gold);font-weight:500}
-  body{padding-bottom:54px}
+  .gal-grid img{height:240px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;border-top:1px solid var(--line);background:#fff}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;font-size:.9rem;color:#fff}
+  .mbar .call{background:var(--ink)}
+  .mbar .wa{background:var(--green)}
 }
-@media(max-width:560px){html,body{overflow-x:hidden;max-width:100vw}img,iframe{max-width:100%}}
 </style>
 </head>
 <body>
 
-<header id="hd">
+<header>
   <div class="wrap bar">
-    <a href="#" class="brand">Trattoria Al Portego</a>
+    <a href="#top" class="brand">Trattoria Al Portego</a>
     <nav>
-      <a href="#storia">La trattoria</a>
+      <a href="#storia">Storia</a>
       <a href="#menu">Menù</a>
-      <a href="#gallery">Galleria</a>
-      <a href="#contatti">Contatti</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#prenota">Prenota</a>
     </nav>
-    <a href="tel:+390457650083" class="btn btn-gold header-cta">Prenota</a>
-    <button class="menu-toggle" onclick="document.querySelector('nav').scrollIntoView()">☰</button>
+    <div class="hd-cta">
+      <a href="tel:+390457650083" class="btn btn-out">Chiama</a>
+      <a href="#prenota" class="btn btn-dark">Prenota</a>
+    </div>
   </div>
 </header>
 
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="wrap hero-inner">
-    <div class="kicker">Trattoria · Colognola ai Colli</div>
-    <h1>La cucina veronese,<br><em>come una volta</em></h1>
-    <p class="sub">Antica trattoria tipica veronese, dallo stile rustico e l'anima elegante. Piatti della tradizione veneta e ottime carni, a Colognola ai Colli.</p>
+<section id="top" class="hero">
+  <div class="wrap">
+    <span class="kick">Trattoria tipica · Colognola ai Colli</span>
+    <h1 class="display">Il bollito e la cucina veronese di una volta</h1>
+    <p class="lead">Una trattoria rustica e accogliente a Colognola ai Colli: bollito con pearà, pasta artigianale e sala con dehors ventilato. Cucina genuina e prezzi onesti.</p>
     <div class="hero-cta">
-      <a href="tel:+390457650083" class="btn btn-gold">Prenota un tavolo</a>
-      <a href="#menu" class="btn btn-out">Scopri il menù</a>
+      <a href="#prenota" class="btn btn-dark">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-out">Vedi il menù</a>
     </div>
-    <div class="hero-meta">
-      <div><span class="stars">★★★★★</span> <b>4,4</b></div>
-      <div class="sep"></div>
-      <div>590 recensioni Google</div>
-      <div class="sep"></div>
-      <div>Via Giuseppe Garibaldi 5, Colognola ai Colli</div>
+  </div>
+  <img class="hero-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgcIepfcnxpI1CXv1Hfrzjwevb1EyZwofKRZVLVjePg9NsxHYnKfe9lUlXBVcYXjIDqHEs3Nhz0sTEchiaxgkjd11k2PU2DArGhMh9Ush3jwUbFFu2BzQLwyuxomsm4UFpi6SiufRriyUApaB3_XF0HNYdT7LDS_YwCbKVcjhEXuWhECJQEFB7r4ePJyZ_N4J5LQXNB-HJXpkOIwTmFaXcvyY3ybfSw2Z-tAOFnp4Ro6-eTD4BA1OANe0bG9m-xm236yMcPGIIc-5JHQrmVjEmdLl8K7znhhHj4nyU4lH-VEsMwESNOInu6tfSuuuZei_o0UUGsqseS4BLrY0TWrg6x6w_cZAg3gV9-E0R4ctZQGVVQDvWl9CCmNZJy5r8Gb5QrJZeLgmglepS9rUrgQ2ynYcySeu9eWEelWuYk0cKO2NT5g5ifZ7e-4b9r0Q&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala del ristorante">
+</section>
+
+<section id="storia" class="story">
+  <div class="wrap story-grid">
+    <div class="story-img" role="img" aria-label="Piatto dello chef"></div>
+    <div class="story-txt">
+      <span class="kick">La nostra storia</span>
+      <h2>Cucina di tradizione, ospitalità sincera</h2>
+      <p>La Trattoria Al Portego è la conferma che la cucina semplice e tradizionale, quando è fatta bene, vale più di tante mode. Piatti abbondanti, saporiti e preparati con cura.</p>
+      <p>Una sala caratteristica con pentole di rame appese e una terrazza ventilata, perfetta anche nelle sere d'estate. In sala un servizio pronto, gentile e alla mano.</p>
     </div>
   </div>
 </section>
 
-<section class="about" id="storia">
-  <div class="wrap about-grid">
-    <div class="about-txt">
-      <span class="kicker">La nostra storia</span>
-      <h2>Un vicolo, una tavola, una tradizione</h2>
-      <p>Trattoria Al Portego è un tempio della cucina tradizionale veronese, quella vera. Un locale intimo ed elegante, curato nei dettagli, dove ogni piatto racconta il territorio.</p>
-      <p>Materie prime di altissima qualità, lavorate con maestria e passione: dai bigoli all'anatra alla pastissada de caval, ogni portata è una carezza per il palato. In sala, un servizio attento, gentile e preciso che mette l'ospite al centro.</p>
-      <div class="sign">— dove si mangia bene e ci si sente a casa</div>
+<section class="info">
+  <div class="wrap info-grid">
+    <div class="info-col">
+      <h4>Dove siamo</h4>
+      <p>Via Giuseppe Garibaldi 5<br>37030 Colognola ai Colli (VR)</p>
+      <p><a href="#prenota">Indicazioni →</a></p>
     </div>
-    <div class="about-img">
-      <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=900&photo_reference=AWCwydhg_P26knMafcz29ehN0vWWvA49M6AtZoBEdkjoie--xc3UlcrVc0hf61U3W8qJfegZDSmi5WzOkzLJFAsXngdDTPiKDCPD64Wwba8ZuivA_0m6YFWAYhT4fpLAYbW3gst6aa4VAY1QGdw8RDdiwUUdGbSXYn5NzaZ48qr63bEOoL_nrxcd835dakWqnhrU5tbpYvvW29LoRyJLRJuHDF0xYEoWOT5Mg8xYrlDycAi4NDJa2pA5_q-T4M_ZGi8IIyb-e0_ClKYwyX07mTwvPW1QmNyoBmMUS_UwUXWVeRLE87NRwZCEma4WFzRudlJTdHUttHMAov2mRFrBiILRUI6tZC1bJuWiqqE9foCzmNQpV1FWBg_fL-WGYZAESojt0esmiT2mJbVg9q4UjIzoKGBZXmgieVHHCbXfHcw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto Trattoria Al Portego">
+    <div class="info-col">
+      <h4>Orari</h4>
+      <p>Gio–Ven 19:00–22:00<br>Sab–Dom 12:00–14:30 · 19:00–22:00<br>Lun–Mer chiuso</p>
+    </div>
+    <div class="info-col">
+      <h4>Contatti</h4>
+      <p><a href="tel:+390457650083">045 765 0083</a><br><a href="mailto:info@trattoriaalportego.it">info@trattoriaalportego.it</a></p>
     </div>
   </div>
 </section>
 
-<section class="menu" id="menu">
+<section id="menu" class="menu">
   <div class="wrap">
-    <div class="head">
-      <span class="kicker">Il menù</span>
+    <div class="menu-head">
+      <span class="kick">Il menù</span>
       <h2>I piatti della tradizione</h2>
-      <div class="orn">✦ ✦ ✦</div>
-      <p>Una selezione dei nostri piatti simbolo, nel rispetto della cucina veronese.</p>
+      <p>Una selezione della nostra proposta. La carta cambia con le stagioni e la disponibilità del mercato.</p>
     </div>
-    <div class="menu-grid">
-      <div class="dish"><div class="r"><h4>Prosciutto & antipasti veronesi</h4><span class="tag">Antipasti</span></div><p>Salumi selezionati e sfizi del territorio per iniziare come si deve.</p></div>
-      <div class="dish"><div class="r"><h4>Bigoli al sugo d'anatra</h4><span class="tag">Primi</span></div><p>Il nostro piatto simbolo: pasta fresca e ragù d'anatra, un classico intramontabile.</p></div>
-      <div class="dish"><div class="r"><h4>Gnocchi con pastissada de caval</h4><span class="tag">Primi</span></div><p>Gnocchi fatti in casa con l'iconico stracotto veronese, sapore autentico.</p></div>
-      <div class="dish"><div class="r"><h4>Fegato alla veneta</h4><span class="tag">Secondi</span></div><p>Ricetta della tradizione, morbido e profumato, servito con cura.</p></div>
-      <div class="dish"><div class="r"><h4>Secondi di carne del territorio</h4><span class="tag">Secondi</span></div><p>Carni selezionate cucinate secondo le ricette di casa.</p></div>
-      <div class="dish"><div class="r"><h4>Dolci della casa</h4><span class="tag">Dessert</span></div><p>Piccola pasticceria e dolci al cucchiaio per chiudere in dolcezza.</p></div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><div class="d-main"><h5>Salumi & giardiniera</h5><span>La nostra giardiniera fatta in casa, divina</span></div><div class="price">10 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Baccalà con polenta</h5><span>Ricetta della tradizione veronese</span></div><div class="price">11 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Antipasto della casa</h5><span>Sfizi caldi e freddi del territorio</span></div><div class="price">9 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><div class="d-main"><h5>Pasta artigianale</h5><span>Fatta in casa, condimenti di stagione</span></div><div class="price">10 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Bigoli al ragù</h5><span>Pasta fresca e sugo della casa</span></div><div class="price">11 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Gnocchi caserecci</h5><span>Preparati ogni giorno in cucina</span></div><div class="price">10 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Secondi</h3>
+        <div class="dish"><div class="d-main"><h5>Lesso con la pearà</h5><span>Il cavallo di battaglia (da ottobre ad aprile)</span></div><div class="price">16 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Misto di bollito</h5><span>Carrello di tagli con salse e pearà</span></div><div class="price">18 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Secondi di carne</h5><span>Le proposte del giorno, cucina di casa</span></div><div class="price">14 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Vini &amp; Dolci</h3>
+        <div class="dish"><div class="d-main"><h5>Vini della casa</h5><span>Etichette del territorio, calice o bottiglia</span></div><div class="price">alla carta</div></div>
+        <div class="dish"><div class="d-main"><h5>Dolci della casa</h5><span>Preparati artigianalmente</span></div><div class="price">6 €</div></div>
+        <div class="dish"><div class="d-main"><h5>Caffè & amaro</h5><span>Per chiudere in bellezza</span></div><div class="price">3 €</div></div>
+      </div>
     </div>
-    <p class="menu-note">Il menù cambia con la stagione — chiedi in sala i piatti del giorno e la carta dei vini.</p>
   </div>
 </section>
 
-<section class="gallery" id="gallery">
+<section id="galleria" class="gallery">
+  <div class="wrap gal-grid">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydgrSBcGQtZgz1-iLfYXmc2fIsZEAynRTpuZFwUF0YMpF4NAB4T7S5I0zD88YZ94rCIcbFAbLJfpKkGDjKO7Ug2pT24zfR_bny2SvwVqYyKEg1-NGgSxJBEjGvMPLnlyuQaoJVQ0EjDarjvy7G_mKPL45Mna7TCJ2SRTu3fVvrjjv05f6ksXxinwC9UAEknKuO_qqXs_UYgHsRkeb9C5nAS6x_yv8ja3l0jn4-yAki8WujrK1qqc4dgMDssC3p_Yej5iIQ2s2i0RxuX_sPUnANKTtYBKSlX0oleRf2bP6IDQpQ11tPPdB3embAnCZegGjVgTbckc-pdQ6ciJdzrBGnfmCg6MYlLsKPNYRXHnUiR93qXoXgq4vg9_G3GzNckEKJOkZo1TWiatIeL4q19leNulIy9YRrcrEiGsA2VY8aDs8bosxlgolOl3lQ7MJjE_&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto 1">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydja18lSw0ipzeFczUq2oypBWjyR3mkZJvAzoJ2EvB0AZ9KzWOW1px7Gj_pZb_1UTpIxE5DMnRa7WSDNp7NAtA689YxsphCpBWxXZBn-u6YmQ11vIwD2gzbpM8AgTDgLTRJfO8S6IK1kMGyX5Tc9Oz8HF9FqgF41jaHKvUxNjITajc9_bR6hwODoLDGuB8JZAcETlmo1CykKkstkywik2cz0ZPUsxnOLcKQH3W_Wv-Jqb6fl4xWRjwLlA47NREA9OYXPSk9qRQznGZdzFL3vFRh1GXVZpSRxv0UGLdgZh4V3yB_i_bJMh7BitWH7tV2hqKIM_VuU--m2-Y_crFkdI-8lzuWEPcqPaXDJdUW8GL6KZNqtu1qlQA_lUA-xSfyJpVKlxNgs0IEyulvq0m6NKZJQxB_7138Ya2tIdWFwOvdagVT6-4d94IiB402Aug&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydghkPWNO22CQNjm7UYkYBmKVQNKn1QCfZcc_GrH5jrdHzg_D9z73MRsEzIo77D5UCDgtEOQbC4PM1KxRlpKCktl2_7HKqf5en2u8wodbHP5piujUtgIcLcdoVUQZfli198YRD49pKhld0-HPQfDNl3rECnI4VAyaGAuW0829IVqhOtgDkOl0Zggc9hbmjK7fU1ESoDelKgJHssd4JVTx0oghXP1Ak1zvVHWoLrtcAM4590XuM6OND0dFcB8xUFELR7aTQmCsLRP6Oaqzww-e5pSemLS73OXDHisDsNH4BKXgl4Je12eLDb9IPIV_A6r-mnRGKymV3DQSiEEHVSUEhuuy-tm2DVf6_H-d1JbhKTNVPA9V1wCRIbhl3eBDD--sY-uYEqE6F8LO9XfV9cfrVyZE2asoM4aktUyYo89xzB2dp0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto 2">
+  </div>
+</section>
+
+<section class="reviews">
   <div class="wrap">
-    <div class="head">
-      <span class="kicker">Galleria</span>
-      <h2>Assaggia con gli occhi</h2>
-      <div class="orn">✦ ✦ ✦</div>
-    </div>
-    <div class="gal-grid">
-      <figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AWCwydjOFUK5C48r5Kcjj8-_nIL74UGlt9YiVuza8Wji-TbXvIQBo0ytVxQjO1SK1yw77xxAmsdGibH3FFqvsP7RKq31ry2jpYsJYkYfFQS4bBJU2GA_hVTpQPoz_sdx_9mMljKMzyU_8E0vEavgrUHJV2Cmh5RvjWOPMu3dX7C6UNl2b5WY0YXFfRV4EZLQPIsNUBpKyqy5HNp6mNkIfjV7TJg6NSNmdQbQv_liFgqwKQ9NX4rS4RcZ312gfmJ13ViP-rvRG7ATVcKHaqkZWfly9R0XZ0G435leqe2Qztsix4fPj7sqqbwmxNe_gnPx1lupMZfEO-WyMg4JsqVFqKao1oBkS7E14NJAwvZN4b3U-wUsK2ovwDO6F_hHDkmxFHa3DtberaIFli7E6rfF_esoM23DMMKaIIqBrvCNGZ_tDoBGgw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
-      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydiVwnaU5stnjWWQU4GU78h8jeZhYF2ssttki48XPHwQGqdVP6qF2mxjvfRE5uhaYa3VCv5xzmK6YxW-s7-N44kjt9iKF7CJylss9r1uIDDWaJ5v7BTlvKmniLC0dskQMdNLqJKmJPzImiZoybmzLJmL0VKTJq4kWFOqsLOgFN78VpAdrYh5jOo97Kvr5nsyLX3vZXqq75K8jo6jxIauuinzL8Z0YNFp5IWDxPdLORmUXVatrYRQJmNNWbCJhFrWIf1n630S4FdntGn5WcBgvAfQVsJylv3vuPXQ2XBIhbsw1j1aPCXVWFIgv4HWUyOyoC-jHu5VBfkkvAXmOBCWqEsoBuTebSuiyakyX8MnWtJspu1-HLuO0x7Ala8YbrrLZgbLefbsX_BHHSeK0YR4JdqUXp0Xf967CuTJr1cAA7-XE8Ca&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
-      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydhg_P26knMafcz29ehN0vWWvA49M6AtZoBEdkjoie--xc3UlcrVc0hf61U3W8qJfegZDSmi5WzOkzLJFAsXngdDTPiKDCPD64Wwba8ZuivA_0m6YFWAYhT4fpLAYbW3gst6aa4VAY1QGdw8RDdiwUUdGbSXYn5NzaZ48qr63bEOoL_nrxcd835dakWqnhrU5tbpYvvW29LoRyJLRJuHDF0xYEoWOT5Mg8xYrlDycAi4NDJa2pA5_q-T4M_ZGi8IIyb-e0_ClKYwyX07mTwvPW1QmNyoBmMUS_UwUXWVeRLE87NRwZCEma4WFzRudlJTdHUttHMAov2mRFrBiILRUI6tZC1bJuWiqqE9foCzmNQpV1FWBg_fL-WGYZAESojt0esmiT2mJbVg9q4UjIzoKGBZXmgieVHHCbXfHcw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Interno"></figure>
-      <figure class="wide"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1000&photo_reference=AWCwydjOFUK5C48r5Kcjj8-_nIL74UGlt9YiVuza8Wji-TbXvIQBo0ytVxQjO1SK1yw77xxAmsdGibH3FFqvsP7RKq31ry2jpYsJYkYfFQS4bBJU2GA_hVTpQPoz_sdx_9mMljKMzyU_8E0vEavgrUHJV2Cmh5RvjWOPMu3dX7C6UNl2b5WY0YXFfRV4EZLQPIsNUBpKyqy5HNp6mNkIfjV7TJg6NSNmdQbQv_liFgqwKQ9NX4rS4RcZ312gfmJ13ViP-rvRG7ATVcKHaqkZWfly9R0XZ0G435leqe2Qztsix4fPj7sqqbwmxNe_gnPx1lupMZfEO-WyMg4JsqVFqKao1oBkS7E14NJAwvZN4b3U-wUsK2ovwDO6F_hHDkmxFHa3DtberaIFli7E6rfF_esoM23DMMKaIIqBrvCNGZ_tDoBGgw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala"></figure>
-      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydiVwnaU5stnjWWQU4GU78h8jeZhYF2ssttki48XPHwQGqdVP6qF2mxjvfRE5uhaYa3VCv5xzmK6YxW-s7-N44kjt9iKF7CJylss9r1uIDDWaJ5v7BTlvKmniLC0dskQMdNLqJKmJPzImiZoybmzLJmL0VKTJq4kWFOqsLOgFN78VpAdrYh5jOo97Kvr5nsyLX3vZXqq75K8jo6jxIauuinzL8Z0YNFp5IWDxPdLORmUXVatrYRQJmNNWbCJhFrWIf1n630S4FdntGn5WcBgvAfQVsJylv3vuPXQ2XBIhbsw1j1aPCXVWFIgv4HWUyOyoC-jHu5VBfkkvAXmOBCWqEsoBuTebSuiyakyX8MnWtJspu1-HLuO0x7Ala8YbrrLZgbLefbsX_BHHSeK0YR4JdqUXp0Xf967CuTJr1cAA7-XE8Ca&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio"></figure>
-      <figure><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=600&photo_reference=AWCwydhg_P26knMafcz29ehN0vWWvA49M6AtZoBEdkjoie--xc3UlcrVc0hf61U3W8qJfegZDSmi5WzOkzLJFAsXngdDTPiKDCPD64Wwba8ZuivA_0m6YFWAYhT4fpLAYbW3gst6aa4VAY1QGdw8RDdiwUUdGbSXYn5NzaZ48qr63bEOoL_nrxcd835dakWqnhrU5tbpYvvW29LoRyJLRJuHDF0xYEoWOT5Mg8xYrlDycAi4NDJa2pA5_q-T4M_ZGi8IIyb-e0_ClKYwyX07mTwvPW1QmNyoBmMUS_UwUXWVeRLE87NRwZCEma4WFzRudlJTdHUttHMAov2mRFrBiILRUI6tZC1bJuWiqqE9foCzmNQpV1FWBg_fL-WGYZAESojt0esmiT2mJbVg9q4UjIzoKGBZXmgieVHHCbXfHcw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto"></figure>
+    <div class="stars">★★★★★</div>
+    <h2>4,4 su 590 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Cucina semplice e tradizionale fatta bene. Piatti abbondanti e saporiti, personale accogliente, prezzi super onesti. Super approvato!"</p><b>Mattia M.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Lode al loro cavallo di battaglia: il lesso con la pearà. Un carrello colmo di tagli, ottimi i vini della casa. Rapporto qualità-prezzo ottimo."</p><b>Vanessa S.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Locale delizioso, sala con pentole di rame e terrazza ventilata. La giardiniera coi salumi è divina, servizio pronto e cortese."</p><b>Paola V.</b></div>
     </div>
   </div>
 </section>
 
-<section class="reviews" id="recensioni">
+<section id="prenota" class="reserve">
   <div class="wrap">
-    <div class="head">
-      <span class="kicker">Dicono di noi</span>
-      <h2>4,4 su 590 recensioni</h2>
-      <div class="orn">✦ ✦ ✦</div>
-    </div>
-    <div class="rev-grid">
-      <div class="rev">
-        <div class="stars">★★★★★</div>
-        <p>“Un'esperienza fantastica! La Trattoria Al Portego è la conferma che la cucina semplice e tradizionale, quando è fatta bene, batte qualsiasi cosa. Consigliatissima.”</p>
-        <div class="who"><div><b>Mattia M.</b><span>un mese fa</span></div></div>
-      </div>
-      <div class="rev">
-        <div class="stars">★★★★★</div>
-        <p>“Sono stata a cena sabato sera, posto scelto da cugini che abitano nelle vicinanze: davvero fantastico! L'arredo rende tutto caloroso e i piatti sono ottimi.”</p>
-        <div class="who"><div><b>Vanessa S.</b><span>un mese fa</span></div></div>
-      </div>
-      <div class="rev">
-        <div class="stars">★★★★★</div>
-        <p>“Locale delizioso a Colognola ai Colli, sulle colline della val d'Illasi. Sala interna decorata da pentole di rame appese ovunque, piatti curati e genuini.”</p>
-        <div class="who"><div><b>Paola V.</b><span>2 mesi fa</span></div></div>
-      </div>
-    </div>
-    <div class="rev-foot"><a href="https://maps.google.com/?cid=11331194487899919135" target="_blank" rel="noopener">Leggi tutte le 590 recensioni su Google →</a></div>
-  </div>
-</section>
-
-<section class="info" id="contatti">
-  <div class="wrap">
-    <div class="head">
-      <span class="kicker">Dove trovarci</span>
-      <h2>Orari & Prenotazioni</h2>
-      <div class="orn">✦ ✦ ✦</div>
-    </div>
-    <div class="info-grid">
-      <div class="hours-card">
-        <h3>Orari</h3>
-        <div id="openBadge" class="open-badge closed"><span class="dot"></span><span id="openText">—</span></div>
-        <ul class="hours-list" id="hoursList">
-          <li data-day="1"><span class="d">Lunedì</span><span>Chiuso</span></li>
-          <li data-day="2"><span class="d">Martedì</span><span>Chiuso</span></li>
-          <li data-day="3"><span class="d">Mercoledì</span><span>Chiuso</span></li>
-          <li data-day="4"><span class="d">Giovedì</span><span>19:00–22:00</span></li>
-          <li data-day="5"><span class="d">Venerdì</span><span>19:00–22:00</span></li>
-          <li data-day="6"><span class="d">Sabato</span><span>12:00–14:30 · 19:00–22:00</span></li>
-          <li data-day="0"><span class="d">Domenica</span><span>12:00–14:30 · 19:00–22:00</span></li>
-        </ul>
-        <div class="contact-rows">
-          <div class="crow"><div class="ic">◉</div><div><h4>Indirizzo</h4><a href="https://maps.google.com/?cid=11331194487899919135" target="_blank" rel="noopener">Via Giuseppe Garibaldi 5, 37030 Colognola ai Colli (VR)</a></div></div>
-          <div class="crow"><div class="ic">☎</div><div><h4>Telefono / Prenotazioni</h4><a href="tel:+390457650083">045 765 0083</a></div></div>
-        </div>
-        <div class="info-cta">
-          <a href="tel:+390457650083" class="btn btn-gold">Prenota un tavolo</a>
-          <a href="https://maps.google.com/?cid=11331194487899919135" target="_blank" rel="noopener" class="btn btn-out">Come arrivare</a>
-        </div>
-      </div>
-      <div class="map-wrap">
-        <iframe loading="lazy" allowfullscreen src="https://www.google.com/maps?q=Via+Giuseppe+Garibaldi+5,+37030+Colognola+ai+Colli&output=embed"></iframe>
-      </div>
+    <span class="kick">Prenotazioni</span>
+    <h2>Prenota il tuo tavolo</h2>
+    <p>Siamo aperti da giovedì a domenica. Per prenotazioni, gruppi o per gustare al meglio il lesso, chiamaci o scrivici: troveremo la soluzione migliore per voi.</p>
+    <div class="btns">
+      <a href="tel:+390457650083" class="btn btn-dark">Chiama 045 765 0083</a>
+      <a href="mailto:info@trattoriaalportego.it" class="btn btn-out">Scrivici</a>
     </div>
   </div>
 </section>
 
 <footer>
   <div class="wrap">
-    <div class="brand">Trattoria Al Portego</div>
-    <div class="foot-line">Trattoria · Cucina tradizionale veronese</div>
-    <div class="socials">
-      <a href="https://maps.google.com/?cid=11331194487899919135" target="_blank" rel="noopener" title="Mappa">◉</a>
-      <a href="tel:+390457650083" title="Telefono">☎</a>
-      <a href="https://maps.google.com/?cid=11331194487899919135" target="_blank" rel="noopener" title="Mappa">◉</a>
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Trattoria Al Portego</div>
+        <p>Bollito, pasta artigianale e cucina veronese a Colognola ai Colli.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via G. Garibaldi 5, Colognola ai Colli (VR)<br><a href="tel:+390457650083">045 765 0083</a><br><a href="mailto:info@trattoriaalportego.it">info@trattoriaalportego.it</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Gio–Ven 19–22<br>Sab–Dom 12–14:30 · 19–22<br>Lun–Mer chiuso</p>
+      </div>
     </div>
-    <div class="foot-line">© 2026 Trattoria Al Portego · Via Giuseppe Garibaldi 5, Colognola ai Colli · P.IVA da inserire</div>
-    <div class="foot-note">Sito dimostrativo realizzato da HubTec — bozza a scopo di proposta commerciale.</div>
+    <div class="foot-bot">
+      <span>© Trattoria Al Portego — Colognola ai Colli</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
   </div>
 </footer>
 
-<div class="mobile-bar">
-  <a href="tel:+390457650083">☎ Prenota un tavolo</a>
+<div class="mbar">
+  <a href="tel:+390457650083" class="call">Chiama</a>
+  <a href="mailto:info@trattoriaalportego.it" class="wa">Scrivici</a>
 </div>
 
-<div class="lb" id="lb"><span class="x">✕</span><img id="lbImg" src="" alt=""></div>
-
-<script>
-const hd=document.getElementById('hd');
-addEventListener('scroll',()=>hd.classList.toggle('scrolled',scrollY>40));
-document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const t=document.querySelector(a.getAttribute('href'));if(t){e.preventDefault();t.scrollIntoView({behavior:'smooth'})}}));
-const lb=document.getElementById('lb'),lbImg=document.getElementById('lbImg');
-document.querySelectorAll('.gal-grid img').forEach(img=>img.addEventListener('click',()=>{lbImg.src=img.src.replace(/maxwidth=\d+/,'maxwidth=1500');lb.classList.add('on')}));
-lb.addEventListener('click',()=>lb.classList.remove('on'));
-const periods={0:[[1200,1500],[1900,2230]],1:[[1200,1430],[1900,2230]],2:[[1200,1430],[1900,2230]],3:[[1200,1430],[1900,2230]],4:[[1200,1430],[1900,2230]],5:[[1200,1430],[1900,2300]],6:[[1200,1500],[1900,2300]]};
-const now=new Date(),day=now.getDay(),hm=now.getHours()*100+now.getMinutes();
-document.querySelectorAll('#hoursList li').forEach(li=>{if(+li.dataset.day===day)li.classList.add('today')});
-const open=(periods[day]||[]).some(p=>hm>=p[0]&&hm<p[1]);
-const badge=document.getElementById('openBadge'),txt=document.getElementById('openText');
-badge.className='open-badge '+(open?'open':'closed');
-txt.textContent=open?'Aperto ora':'Chiuso ora';
-</script>
 </body>
 </html>
