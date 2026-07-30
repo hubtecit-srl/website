@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trattoria Al Galo — Cucina veronese e carne alla brace a Colognola ai Colli</title>
+<meta name="description" content="Trattoria Al Galo a Colognola ai Colli (VR): carne alla brace, fiorentina e costata, cucina veronese. 4,7★ su 1.120 recensioni. Prenota il tuo tavolo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#22261f; --ink2:#4c5145; --sub:#8b9082; --line:#e2e4dc; --paper:#f4f5ef; --white:#fff;
+  --accent:#4a5c3f; --accent-d:#3a4a31; --gold:#a08a5a; --green:#25d366;
+  --h:'Playfair Display',Georgia,serif; --b:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;font-weight:400;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1140px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--b);font-weight:400;letter-spacing:.34em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.serif{font-family:var(--h);font-weight:400}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:var(--h);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:1.2rem}
+header nav{display:flex;gap:32px}
+header nav a{font-family:var(--b);font-weight:400;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--accent)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.74rem;padding:13px 26px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--ink)}
+.btn-fill{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn-fill:hover{background:var(--accent-d);border-color:var(--accent-d)}
+.btn-out{background:transparent;color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:transparent;color:#fff;border-color:rgba(255,255,255,.65)}
+.btn-light:hover{background:#fff;color:var(--ink)}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydjmtM8tkoxx9ixvNi3Hbwr2eL7p5egy4_MoQzNzIigKbmqXBz7M048Y6dMKDF9HwivahpiXZrdJkihUDKdj-siThvo7-XonExhnnT6PMRf9YGJoQNB8jswlSAlDJIzmv8r-m3WvijZArniuKJv3MkGMHw74veIIA2A1iAMT0JpI8533HPLM3xbzztPKtXH06LgDsZjMELU5pH6lcQznggZo1lPoqGsPqdvp8M9RKMkbZrUnp0TzLKi3prH7WZSwVJfEVBrnX56p4ZICvKY_ZWZ0BJHc5zZ-5_f4zZX-Pq4kJxU6p75ni3TB4jpgERJ2VnFoC4iYyAlIntXXfHswoklQxHkF1dtcYUvCJVss-W9inuaUFkGheM_q5SzQBxC-dGsWSF5MNQ8mVAoFekbda5zyIU8i_xPQklT177sxTvmeGQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(34,38,31,.5),rgba(34,38,31,.68))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:820px}
+.hero .kick{color:#d8ddcf;display:block;margin-bottom:26px}
+.hero h1{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.08em;font-size:clamp(2.4rem,7vw,5.4rem);line-height:1.06;margin-bottom:26px}
+.hero p{font-size:1.08rem;font-weight:300;color:rgba(255,255,255,.9);max-width:520px;margin:0 auto 34px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Intro */
+.intro{padding:110px 0;text-align:center;background:var(--white)}
+.intro .kick{display:block;margin-bottom:20px}
+.intro h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,3rem);line-height:1.3;max-width:20ch;margin:0 auto 22px}
+.intro p{color:var(--ink2);font-weight:300;max-width:600px;margin:0 auto;font-size:1.05rem}
+
+/* Split */
+.split{padding:0 0 110px;background:var(--white)}
+.split-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.split-img{width:100%;height:560px;object-fit:cover}
+.split-txt .kick{display:block;margin-bottom:16px}
+.split-txt h3{font-family:var(--h);font-weight:400;font-size:clamp(1.7rem,3.4vw,2.5rem);margin-bottom:18px;line-height:1.2}
+.split-txt p{color:var(--ink2);font-weight:300;margin-bottom:16px}
+
+/* Menu */
+.menu{padding:110px 0;background:var(--paper)}
+.menu-head{text-align:center;margin-bottom:60px}
+.menu-head .kick{display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:400;font-size:clamp(2.2rem,5vw,3.6rem);text-transform:uppercase;letter-spacing:.05em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:52px 72px;max-width:960px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:500;text-transform:uppercase;letter-spacing:.12em;font-size:1.05rem;text-align:center;padding-bottom:14px;margin-bottom:20px;border-bottom:1px solid var(--sub)}
+.dish{text-align:center;padding:14px 0}
+.dish h5{font-family:var(--h);font-weight:400;font-size:1.12rem;margin-bottom:4px}
+.dish span{color:var(--sub);font-weight:300;font-size:.9rem;display:block;margin-bottom:6px}
+.dish .price{font-family:var(--b);font-weight:500;letter-spacing:.1em;color:var(--accent);font-size:.92rem}
+
+/* Gallery */
+.gallery{padding:110px 0;background:var(--white)}
+.gal-head{text-align:center;margin-bottom:50px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:400;font-size:clamp(1.9rem,4vw,2.8rem);text-transform:uppercase;letter-spacing:.05em}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.gal-grid img{width:100%;height:360px;object-fit:cover}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--paper);text-align:center}
+.reviews .stars{color:var(--gold);letter-spacing:4px;font-size:1.1rem;margin-bottom:10px}
+.reviews h2{font-family:var(--h);font-weight:400;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:46px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.rv{background:#fff;border:1px solid var(--line);padding:34px 28px}
+.rv .st{color:var(--gold);letter-spacing:2px;margin-bottom:14px}
+.rv p{font-family:var(--h);font-weight:400;font-style:italic;color:var(--ink2);font-size:1.05rem;margin-bottom:16px;line-height:1.5}
+.rv b{font-family:var(--b);font-weight:500;letter-spacing:.1em;text-transform:uppercase;font-size:.78rem}
+
+/* Visit / reserve */
+.visit{position:relative;padding:130px 0;text-align:center;color:#fff}
+.visit-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydif495Y0DybIBeNYNG9ZDETq2ZIZFhdy_TQehmrCYMVuIHdFWr_NARcUqyU8jKaKP3d8-T0-17R47I-ziYW1Q0RwjTND0SmNyrcbnk93d4ZIyIm0eGOKU1q8gOTs1Q2ThEX8GOHynYJTeuxp33JKBTU7aSMYD0xvomOdYXAqGchub_OfLSqDjdtJhCQTgo96DYBucgUpQKGlbzjZib9yVb96vj58uMsfmdhc-qdyn_jkRpykNTCIVz-0RjfeaGvfYBjYnUdPbxXgViCJUSTiTvcaCywOlcKHrR5bFGbBgTaA3-UmG3dLzeWL0TMk_oSIpdajpzOC-O7Hq6p_lrBTiO9nMsXR6MjBRlPRGdckBRtB_MyzF9RkFfDvOK2FJv4DeGo5Hm48NkwhYzqve4Yt_tLl6Kgxpk4Jw6S7oA1saS7jINX49eCKvhASFFDvZgi&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.visit-bg::after{content:"";position:absolute;inset:0;background:rgba(34,38,31,.72)}
+.visit .wrap{position:relative;z-index:2}
+.visit .kick{color:#d8ddcf;display:block;margin-bottom:18px}
+.visit h2{font-family:var(--h);font-weight:400;text-transform:uppercase;letter-spacing:.06em;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:16px}
+.visit p{max-width:520px;margin:0 auto 18px;font-weight:300;color:rgba(255,255,255,.88)}
+.visit .hours{font-weight:300;color:rgba(255,255,255,.82);margin-bottom:28px;line-height:1.9}
+.visit .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:60px 0 38px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:500;letter-spacing:.14em;text-transform:uppercase;font-size:.72rem;color:#d8ddcf;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;font-weight:300;line-height:1.95;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.8rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;letter-spacing:.06em}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .split-grid{grid-template-columns:1fr;gap:30px}
+  .split-img{height:360px}
+  .menu-cols{grid-template-columns:1fr;gap:38px}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .hd-hide{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  .gal-grid img{height:260px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--b);font-weight:500;letter-spacing:.12em;text-transform:uppercase;font-size:.8rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Al Galo</a>
+    <nav>
+      <a href="#intro">Il ristorante</a>
+      <a href="#menu">Menù</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#visita">Prenota</a>
+    </nav>
+    <a href="#visita" class="btn btn-out hd-hide">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Trattoria tipica · Colognola ai Colli</span>
+    <h1>La carne alla brace, come una volta</h1>
+    <p>Trattoria di famiglia a Colognola ai Colli: carne selezionata alla griglia, ambiente accogliente e servizio che ti coccola.</p>
+    <div class="hero-cta">
+      <a href="#visita" class="btn btn-light">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-light">Il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="intro" class="intro">
+  <div class="wrap">
+    <span class="kick">Il ristorante</span>
+    <h2>La tradizione veronese, in tavola</h2>
+    <p>Da Al Galo la protagonista è la carne: fiorentine, costate e tagliate cotte alla brace, accompagnate da una cantina di vini del territorio e da un'accoglienza calorosa.</p>
+  </div>
+</section>
+
+<section class="split">
+  <div class="wrap split-grid">
+    <img class="split-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjtnPw59mFdFJDe5a2MZKIKTl8i9P31r82RvZDs8LYQ80sQdOlt0CvI1HHeNsOTPS9DdVV21gCEdYSZUT9ZWoUNmY4j93Q93YfWrcRvhu6F5bqKS04WyTvbV5tw2QI71alaAz7zTWSO-Tt_GB9975z5pvHKuHxu7LZLL0okTzU_Cc6_-XclvSkiVEaRNCihL6gvF6eYg97dDFBkyFBb-qbEzMwGXa12TpHP8ChFhGVRz81GZ4nLIAepO6U1GycV4s43j77xSBTfVRGPAncWtudmfQk1fmPJr4uMaP8ejb9QunJp0k20fnVoMG518IfKXui5p8GshrwhVgnV6jclEnCGmoaY7qcwrkE2qzgtLwKl1274Ha4VlmXkvPiLJCOhDQg3dfR6ABSdmRUz5O80wWtOvrS5aJ75GX6p6SQ5va0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto d'autore">
+    <div class="split-txt">
+      <span class="kick">La filosofia</span>
+      <h3>Carne selezionata e cottura alla brace</h3>
+      <p>Scegliamo tagli di alta qualità e li cuciniamo con cura sulla brace, per esaltare il sapore autentico della carne. Prezzi giusti per quello che si mangia.</p>
+      <p>Una trattoria intima e informale, perfetta per una cena in compagnia o un pranzo di lavoro.</p>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La carta</span>
+      <h2>Menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Antipasti</h3>
+        <div class="dish"><h5>Tartare di manzo</h5><span>Battuta al coltello, condita al momento</span><div class="price">15 €</div></div>
+        <div class="dish"><h5>Tagliere di salumi</h5><span>Selezione di salumi del territorio</span><div class="price">12 €</div></div>
+        <div class="dish"><h5>Antipasto della casa</h5><span>Sfizi caldi e freddi da condividere</span><div class="price">10 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Primi</h3>
+        <div class="dish"><h5>Primi fatti in casa</h5><span>Pasta e gnocchi secondo tradizione</span><div class="price">10 €</div></div>
+        <div class="dish"><h5>Bigoli al ragù</h5><span>Pasta fresca, ragù della casa</span><div class="price">11 €</div></div>
+        <div class="dish"><h5>Risotto del giorno</h5><span>Chiedi in sala la proposta di oggi</span><div class="price">12 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Dalla brace</h3>
+        <div class="dish"><h5>Costata di manzo</h5><span>Alla griglia, cottura a piacere</span><div class="price">25 €</div></div>
+        <div class="dish"><h5>Fiorentina</h5><span>Il taglio simbolo, al kg</span><div class="price">alla brace</div></div>
+        <div class="dish"><h5>Costolette & tagliata</h5><span>Carni selezionate cotte alla brace</span><div class="price">18 €</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Vini &amp; Dolci</h3>
+        <div class="dish"><h5>Vini del territorio</h5><span>Carta con etichette veronesi</span><div class="price">alla carta</div></div>
+        <div class="dish"><h5>Dolci della casa</h5><span>Preparati artigianalmente</span><div class="price">6 €</div></div>
+        <div class="dish"><h5>Caffè & amari</h5><span>Per chiudere in bellezza</span><div class="price">2 €</div></div>
+      </div>
+    </div>
+    <p style="text-align:center;color:var(--sub);font-weight:300;margin-top:34px;max-width:640px;margin-left:auto;margin-right:auto">Il menù varia in base al mercato e alla stagione: chiedi in sala le proposte del giorno e i prezzi delle carni.</p>
+  </div>
+</section>
+
+<section id="galleria" class="gallery">
+  <div class="wrap">
+    <div class="gal-head">
+      <span class="kick">Galleria</span>
+      <h2>Atmosfera &amp; piatti</h2>
+    </div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhz_3BZ0YWz10pqNoj4zHuNtA87BbyIU_h1tfurd7Vz-NKYhwiHPk4F8O-dYpK0wZe7Al3LZjAJ8yc2SJXdXyB_HzVJcscO87i2g0xZXs8fE9AzEzRk_0jdpYfnA4nS0PlX2m-ADD8pnkP7o521tv-NOJGDW_UElLFlW4VrtqAYh-3p6zl6zc7D8ytiXLzrs8b1TqSyqMpn1qZ4MbV6AYikZGyNO4J9WNRNSpwyNKT06xiCiX0l48hXUGNR-l35A3bP_Y7EHB_NXBTVfQZD9yntcAYAsTQIoD0_GrV2ZrRg8iRVWLsPrs8beA0Kg1JQjSpxSkuHDLgLf-uGeX-DO4q2c1EPq2hz3j1lL2oVMWWW6c-n_fZwmiwak74rDF8n4hPE_Sr4Wye0YgWbdhPjQkPKTroWUFeUtqJalKdBTmJM014ASBO2eWMQJHMaebsO&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydhTWx6hbkJ9QbetxpDRgQo-x01y7VbggQBP1u9kpuOF0Jq7LJmSC65hsVISyyKR8RvZrT_f-vGfA3LTZl4LxT8e37x0cbU-iBCl9QBMk-hxT1HrXlwwygUKQZ_4RQB3xl8lrSDVx2I1UFc5buPUS4nMS-rYc7dKY0c1IBDnaYYXPKhuarEortxn-kasn594cu4ng_k0uhTkgrwzfiWq0r3BNOvnWH_intj2a6eVjg8AfV97glCHS69Qtkvdzt6lKiyo1bT9h58lZzU3EBaIaZItE9ODNYMFjlddod39kmbWj5Ne2mT1SNCPedJOwJbz-KyaaAc0PbbRH7eEKBwS7ZruwtIiyyKMQO-jSOxb6Kmq0pDBf-ShjhifGZYDujBTsvk7lIogKUlUOsb_9_GlpZOKAw08iPmjOHSKMmUG3vHLl6_L3IZhvDkV8sQYvw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AWCwydjTO7V9H7pWtkE3ItfBrwClMYUXb0Elur62_gbEd84_E8ezvD6bHYquGORd0zhliJbOcGCYCbIgc9oJ7Rjs3LEoPzyT3ulArWXt-1g7gYlEQupv09bwgB90iauBOmIYI9GFK0Djlb2AfuC9jmrcoJY1SI8MSQGGWJ7vI49Kp7J8IZmjl0S6T86-9C6Zal9imCn0MGjlnc4Z_mLpElzK-w16UkXRKWI7p4sl4tkVyNpqGLExs4GnSyl22z3tYz0FLoUIS2XdCpAxjZeqhZHFvVLon3dPeAO8FMjssfMH0x04vuAzeJmyIOM4e6qo6Ro-opVvW4EDWfi8KlEP6CHStIKtd1R9APA0qnF3PVIyYkopDxMJGhID9Vh7PBLR0tz0uUEYeF3rJy-j9A8sIVkEzCkffDcsa9PdPqR5R-M_eGgA8oyFtkMfI8cfF9T5IBx4&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Dettaglio">
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,7 su 1.120 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Semplicemente stupendo. Trattoria bella e intima, personale che ti coccola. Fiorentina che si scioglie in bocca. Super consigliato."</p><b>Zeno M.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Le costolette più buone in assoluto le ho mangiate qui! Cena ottima dall'inizio alla fine, posto accogliente e staff gentile."</p><b>Tanja L.</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Servizio impeccabile, piatti e vini di alta qualità, staff gentilissimo. Location molto carina per cene speciali."</p><b>Michele V.</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="visita" class="visit">
+  <div class="visit-bg"></div>
+  <div class="wrap">
+    <span class="kick">Prenotazioni</span>
+    <h2>Prenota la tua serata</h2>
+    <p>Consigliamo la prenotazione. Per menù degustazione ed eventi privati, contattaci.</p>
+    <div class="hours">Via Cavour 9, Colognola ai Colli (VR)<br>Mar–Sab 11:00–15:00 · 18:00–24:00 · Dom e Lun chiuso</div>
+    <div class="btns">
+      <a href="tel:+390456151631" class="btn btn-fill">Chiama 045 615 1631</a>
+      <a href="https://maps.google.com/?cid=2982711827784274142" target="_blank" rel="noopener" class="btn btn-light">Come arrivare</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Al Galo</div>
+        <p>Trattoria tipica e carne alla brace a Colognola ai Colli.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Via Cavour 9<br>37030 Colognola ai Colli (VR)<br><a href="tel:+390456151631">045 615 1631</a><br><a href="https://maps.google.com/?cid=2982711827784274142" target="_blank" rel="noopener">Come arrivare →</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Mar–Sab 11–15 · 18–24<br>Dom e Lun chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© Trattoria Al Galo — Colognola ai Colli</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390456151631" class="call">Chiama</a>
+  <a href="https://maps.google.com/?cid=2982711827784274142" target="_blank" rel="noopener" class="wa">Come arrivare</a>
+</div>
+
+</body>
+</html>
