@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Da Guido Osteria — Cicchetti, vini e cocktail a Cologna Veneta (VR)</title>
+<meta name="description" content="Da Guido Osteria, cicchetti veneziani, taglieri, ottimi vini e cocktail nel cuore di Cologna Veneta (VR). 4,5★ su 18 recensioni. Scrivici su WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c140d; --ink2:#4a3f33; --sub:#8a7d6c; --line:#e4dccb; --cream:#f6f0e6; --white:#fff;
+  --accent:#a8461c; --accent-d:#8c3813; --olive:#5b5330; --green:#25d366;
+  --h:'Archivo',system-ui,sans-serif; --b:'Inter',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1200px;margin:0 auto;padding:0 30px}
+.kick{font-family:var(--h);font-weight:700;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+.up{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.01em;line-height:1}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:transparent;transition:.3s}
+header.solid{background:var(--ink)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{font-family:var(--h);font-weight:800;text-transform:uppercase;letter-spacing:.06em;font-size:1.15rem;color:#fff}
+header nav{display:flex;gap:28px}
+header nav a{font-family:var(--h);font-weight:600;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:rgba(255,255,255,.85);transition:.2s}
+header nav a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;padding:13px 24px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid transparent}
+.btn-fill{background:var(--accent);color:#fff}
+.btn-fill:hover{background:var(--accent-d)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-line:hover{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-dark:hover{background:var(--accent)}
+
+/* Hero full-bleed */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydhV0pdl5m1CSWigOOhw0xxBUl14p5NkCkd6ffCuj93tqlKl1Nepei86ud-PNuiNj9i4q_cB-LZ8QnpOhSPqMZhoDzatdd8zqQAbIaL-MNAia-B8n5s-CtYx7fgn5Up045o2lzvzo3MpXUOQgxzVF7g6V2W3Qm4DF4DVz5gWbR-RFo4yt8Cbam4WmQ60ZC2fk2M40Uoz_9XWzIEjPtdt94-2z0GZTQX_7EAvl4BL93U2qojfcdTBEfnde1XQ9RJc4l3sx6VSh4_tF0omGPs6-S6_gr1v1bvWkpwI1eOAjWBBOeGw1FUgLur7uKiiq7p_H8-Oz__CgZyEUNMa2rb7Gab6bjm_QL6P8Hx5oQB-MSN1Ct-K2U-w_s0zJN0_cPY5eEEOlMmyq9WQ_saCXtQUm8WWyNLIFd1rGf_6yrv9Vg0LvFxfuIk0-YjElcC6Gd-W&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,14,9,.55),rgba(20,14,9,.72))}
+.hero-inner{position:relative;z-index:2;padding:0 24px;max-width:900px}
+.hero .kick{color:#e8b48f;margin-bottom:22px;display:block}
+.hero h1{font-size:clamp(2.8rem,9vw,6.6rem);text-transform:uppercase;font-family:var(--h);font-weight:900;letter-spacing:.01em;line-height:.98;margin-bottom:24px}
+.hero p{font-size:1.12rem;color:rgba(255,255,255,.88);max-width:560px;margin:0 auto 32px}
+.hero-cta{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+/* Experience */
+.exp{padding:100px 0;text-align:center;background:var(--cream)}
+.exp .kick{display:block;margin-bottom:16px}
+.exp h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,4.5vw,3.4rem);letter-spacing:.01em;max-width:16ch;margin:0 auto 20px;line-height:1.04}
+.exp p{color:var(--ink2);max-width:620px;margin:0 auto}
+.exp-imgs{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:56px}
+.exp-imgs img{width:100%;height:340px;object-fit:cover}
+
+/* Menu */
+.menu{padding:100px 0;background:var(--ink);color:#fff}
+.menu-head{text-align:center;margin-bottom:56px}
+.menu-head .kick{color:#e8b48f;display:block;margin-bottom:14px}
+.menu-head h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.4rem,5vw,4rem);letter-spacing:.01em}
+.menu-cols{display:grid;grid-template-columns:1fr 1fr;gap:50px 70px;max-width:980px;margin:0 auto}
+.menu-cat h3{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:1rem;color:#e8b48f;padding-bottom:12px;margin-bottom:16px;border-bottom:1px solid rgba(255,255,255,.2)}
+.dish{display:flex;justify-content:space-between;gap:16px;padding:11px 0}
+.dish h5{font-family:var(--h);font-weight:600;font-size:1.02rem;margin-bottom:3px}
+.dish span{color:rgba(255,255,255,.6);font-size:.9rem}
+.dish .price{font-family:var(--h);font-weight:700;color:#fff;white-space:nowrap}
+
+/* Address / hours */
+.addr{padding:100px 0;background:var(--cream)}
+.addr-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.addr-img{width:100%;height:460px;object-fit:cover;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydildaHyVx-QJSf9i9OdrAGQv7YEXkhY9PAyhTwdxgue9ZwV5uO8EpcUFNOFbmGAUSWoSAuXMndPTk6t331VuwrFZkc5M535jAZzuUYmMAVo5cHedPTrLmdaEyAzoDrh9BXoad6bS0gdf4YnP9ELo_Mj72WKNd9ouMMMjZT0yrz6PRN2oakyMXeGrsLSquzpjpIadzg5GI8rflnrOVGvAh_G0LDitK1FZJvsLDJXxMBs3wT8Di-Ygw6OKRxUxSHW7i_XckLc4xpVj8qHKH4kl0_3xJajuW0rVQTHiyetn4qksc3_lSoc715YhMBV6INDCYmyUXD-jPgMymHy2GwsT-ublsqLm56URM0Cm1PAc6Z5bXtz_qOU5te3FBkKbF2kI9OR5n3aABPXYKc6rzdwrdDkLHD1dANNrKtVpT0o9xdL5JBOX3oUwFoymPHUSuLz&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.addr-txt .kick{display:block;margin-bottom:14px}
+.addr-txt h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.9rem,4vw,2.8rem);margin-bottom:22px;letter-spacing:.01em}
+.addr-row{margin-bottom:18px}
+.addr-row h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.76rem;color:var(--accent);margin-bottom:5px}
+.addr-row p{color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:90px 0;background:var(--white);text-align:center}
+.reviews .stars{color:var(--accent);letter-spacing:3px;font-size:1.1rem;margin-bottom:8px}
+.reviews h2{font-family:var(--h);font-weight:800;text-transform:uppercase;font-size:clamp(1.7rem,3.6vw,2.4rem);margin-bottom:44px}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+.rv{background:var(--cream);padding:28px;border-top:3px solid var(--accent)}
+.rv .st{color:var(--accent);letter-spacing:2px;margin-bottom:12px}
+.rv p{color:var(--ink2);font-size:.96rem;margin-bottom:14px}
+.rv b{font-family:var(--h);font-weight:700;font-size:.9rem}
+
+/* Reserve */
+.reserve{position:relative;padding:120px 0;text-align:center;color:#fff}
+.reserve-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydillueCq_GFnFr-87KOCA_MKpKREwuE_h8ePQF7r6y-lMiNjmPWdKwUyfQAnfUQFGU5Eje31KRAc04osCTDWgqzwKGAvsKBTFXh2qSCfjsoBB00-Dunq5a300rP0gXWTHJS2JJhBo7t5WtxSN1diGDTf1VO7O9OcoXCPeeiDve2CrCw2Gf1WW-eBueNjMtjpbwIknHcDRk8kxcIt1lrO4L7TPxneRNzlJzPnGj2k6HmtIGyU0E3Qc03UJk7oBGQyFQMYBM2jQg47d62E-M6xWsm9DtngZ1y2knbf-HiQodaRi6GnmT_fgTLFYC6JlAeTpy27BUF3idA9V9fOW2PDW6ryBK19l2CDM2appDohRr050W2MMeGWWoEi77P_oDmK8XL5b-J6k-lwT7-d_ZdTuygMDASjXnwxN-WRn71zv6tfB3zFll3pg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.reserve-bg::after{content:"";position:absolute;inset:0;background:rgba(20,14,9,.72)}
+.reserve .wrap{position:relative;z-index:2}
+.reserve h2{font-family:var(--h);font-weight:900;text-transform:uppercase;font-size:clamp(2.2rem,5vw,3.8rem);margin-bottom:16px;letter-spacing:.01em}
+.reserve p{max-width:520px;margin:0 auto 30px;color:rgba(255,255,255,.85)}
+.reserve .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--ink);color:rgba(255,255,255,.72);padding:56px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.1em;font-size:.74rem;color:#e8b48f;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:860px){
+  .exp-imgs{grid-template-columns:1fr}
+  .exp-imgs img{height:260px}
+  .menu-cols{grid-template-columns:1fr;gap:36px}
+  .addr-grid{grid-template-columns:1fr;gap:28px}
+  .addr-img{height:320px}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .btn-line.hd{display:none}
+  .wrap{padding:0 20px}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--ink)}
+  .mbar a{flex:1;text-align:center;padding:16px 8px;font-family:var(--h);font-weight:700;text-transform:uppercase;letter-spacing:.06em;font-size:.82rem;color:#fff}
+  .mbar .wa{background:var(--green)}
+}
+</style>
+</head>
+<body>
+
+<header id="hd">
+  <div class="wrap bar">
+    <a href="#top" class="brand">Da Guido Osteria</a>
+    <nav>
+      <a href="#exp">L'osteria</a>
+      <a href="#menu">Menù</a>
+      <a href="#adresse">Dove siamo</a>
+      <a href="#prenota">Prenota</a>
+    </nav>
+    <a href="#prenota" class="btn btn-line hd">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-inner">
+    <span class="kick">Cicchetti &amp; Vini · Cologna Veneta</span>
+    <h1>Cicchetti, vini e buona musica</h1>
+    <p>Cicchetti in stile veneziano, taglieri, ottimi vini e cocktail d'autore. Nella bellissima piazza del centro di Cologna Veneta.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-fill">Prenota un tavolo</a>
+      <a href="#menu" class="btn btn-line">Scopri il menù</a>
+    </div>
+  </div>
+</section>
+
+<section id="exp" class="exp">
+  <div class="wrap">
+    <span class="kick">Un'esperienza unica</span>
+    <h2>Un bacaro veneziano, nel cuore della piazza</h2>
+    <p>Da Da Guido Osteria si sta bene: cicchetti freschi come in un bacaro veneziano, sfiziosità preparate al momento, una carta dei vini curata e drink da American bar. Ambiente nuovo e accogliente, con salottini all'aperto.</p>
+    <div class="exp-imgs">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgIz3386w6AuliFx7KMbknb8icpfvUOdoeNlZX1SQVBlaJl2C8Q2SHreheFGLpsHsonzo--6Z3SRDgKXexMbB9lPnQx-pPv1S4yVzIkX0tVqWYoLSs1-kBCfGhjNibnEpeXFtt7CvxdUTf0WKKf5NwVTzVyIPr7avmNVESo_wUDllrt2esvJyFLqQ4AmiDFre8FvOKfFehXY_MceGxPIpie1venfwqrUYiewVX9aMHkCFGg-VNtO4_bNxTXbpzzn5RWFQ_j9V0yYDFIjHQCkWjyVQt857kyVFnzNYeKMZnhQg_2iwHUl6l4uKO5ROlNnh1h4PIPrhgMFbHdIkw72NqXzJfuEpYIXwzppUxTrsk-TTLV0pdHVq-lnwFHeHrA2eyiatvsfOoKe0N-tdlgIeYoAS6sLqVdo9ZG8LVyAEUCe1WeHqL-EJ5fY2vPJBX0&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Brace">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgNbpEyIASy6RWuR5W8Z5gNNMBMCc_dc8xkDe16bj9eJC0wU3AQlX2ulZ_1KY_vel4omx2f784_onwXYS_Mwb2u9Gckx_dj6o_O_8ftBQEkqTzWjIR_fpQl1nzeBTrpEKhPFAcuW9wK3WGsmMm67WYIvf3oRvMeNpzR_MVFxPWLVU0qPY4MrGkDQuHMwUspYmsgJYQuSS9yny7Ei6yV8q51RwkwBbi4IZbcbAnVR0-vOVbvvziymamTtbXqBRQR0ZboDAgbhMLxs8VCwJG493h5pVhTLKjLEQe3Q0hl4O4Rx2Zrd7AKQ5q7-WRO3Ljc_apljQl_Udf9wPxbElJVeSjBq_mjACKBJRWfMDnDphlJWoABUGYCn5_rn1Pt32QFndSFxuqs_FZktxmc66QiPVy5HwRbc-PKW1TCvn2L0TdpLjOiuIYIAsv6wIwXcMiO&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Piatto">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=AWCwydgkXW0dokfyA_DUl2LHs8HFf0Rck4Axmei21jTJsiC_OgmXmeg0_KRHY3lzqIYccyaPD8YrTiEtiPZ5sqP4nZ2ehrbxooJKW-G1BAlbg1WCwVgdqhqVKGyGjaRreflxV518B_Ob2NFeaV1Kfo4-wn2iQqMZFvvXwg69kJDFqxHWLWHSW1knYWwJrkop64lxhFvOAyL89HGG__W1vRfB60VdQ1PkS8UM7Cac-GXxCclDypiCkB45xmAQmDVcFaFEU2xNFSDoF2ip6DXLLsD_8YvGF7dAcM0SN8qNcGjp54m8XMUDfjfGBV177QtLbNRz_VVJfu_qrfB_tCEN9j4J8TCcRXlu9-DQPnQQ_chURadD9TO70fJHkSdYigYYjP7P0zfWBpeiwTCOxrwQBDWcQMTQMHNbLsnH3cC3Z6lde3UhNxE6Un6h38xao--0zxl-&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Sala">
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="wrap">
+    <div class="menu-head">
+      <span class="kick">La cucina</span>
+      <h2>Il nostro menù</h2>
+    </div>
+    <div class="menu-cols">
+      <div class="menu-cat">
+        <h3>Cicchetti</h3>
+        <div class="dish"><div><h5>Cicchetti misti</h5><span>Sfizi in stile veneziano, preparati al momento</span></div><div class="price">—</div></div>
+        <div class="dish"><div><h5>Crostini &amp; polpette</h5><span>Selezione del giorno</span></div><div class="price">—</div></div>
+        <div class="dish"><div><h5>Sfizi caldi</h5><span>Preparazioni espresse dalla cucina</span></div><div class="price">—</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Taglieri</h3>
+        <div class="dish"><div><h5>Tagliere di salumi</h5><span>Selezione del territorio</span></div><div class="price">—</div></div>
+        <div class="dish"><div><h5>Tagliere misto</h5><span>Salumi e formaggi</span></div><div class="price">—</div></div>
+        <div class="dish"><div><h5>Sfizioserie da condividere</h5><span>Perfette per l'aperitivo</span></div><div class="price">—</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>American Bar</h3>
+        <div class="dish"><div><h5>Cocktail d'autore</h5><span>Classici e signature</span></div><div class="price">—</div></div>
+        <div class="dish"><div><h5>Aperitivi della casa</h5><span>Anche in versione analcolica</span></div><div class="price">—</div></div>
+        <div class="dish"><div><h5>Amari &amp; distillati</h5><span>Ampia selezione</span></div><div class="price">—</div></div>
+      </div>
+      <div class="menu-cat">
+        <h3>Cantina</h3>
+        <div class="dish"><div><h5>Vini al calice</h5><span>Ottima carta dei vini</span></div><div class="price">—</div></div>
+        <div class="dish"><div><h5>Bollicine</h5><span>Selezione della casa</span></div><div class="price">—</div></div>
+        <div class="dish"><div><h5>In bottiglia</h5><span>Etichette selezionate</span></div><div class="price">—</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="adresse" class="addr">
+  <div class="wrap addr-grid">
+    <div class="addr-img" role="img" aria-label="Ingresso dell'osteria"></div>
+    <div class="addr-txt">
+      <span class="kick">Dove siamo</span>
+      <h2>Vieni a trovarci</h2>
+      <div class="addr-row"><h4>Indirizzo</h4><p>Piazza del Mandamento 56, 37044 Cologna Veneta (VR)</p></div>
+      <div class="addr-row"><h4>Orari</h4><p>Mer–Dom sera 18:00–24:00 · mattino dal Lun<br>Martedì chiuso</p></div>
+      <div class="addr-row"><h4>Contatti</h4><p><a href="tel:+393773075303">377 307 5303</a> · <a href="https://www.instagram.com/daguido_osteria/" target="_blank" rel="noopener">@daguido_osteria</a></p></div>
+      <a href="#prenota" class="btn btn-dark" style="margin-top:8px">Prenota ora</a>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="stars">★★★★★</div>
+    <h2>4,5 su 18 recensioni</h2>
+    <div class="rv-grid">
+      <div class="rv"><div class="st">★★★★★</div><p>"Finalmente a Cologna un locale che fa la differenza. Cicchetti niente da invidiare a un bacaro veneziano, ingredienti freschi e prezzi onesti."</p><b>Elisa Bertoldo · Google</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Un gran bel locale nel cuore storico, ottimi cicchetti veneziani e una vasta scelta di vini. Staff preparato e gentilissimo."</p><b>Federico Capuzzo · Google</b></div>
+      <div class="rv"><div class="st">★★★★★</div><p>"Ottimi drink, servizio cortese e attento, collocazione stupenda nella piazza. Interni curati, torneremo di sicuro."</p><b>Francesco de Francesco · Google</b></div>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="reserve">
+  <div class="reserve-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo tavolo</h2>
+    <p>Per aperitivi, serate o eventi scrivici su WhatsApp o passa a trovarci in piazza: ti aspettiamo!</p>
+    <div class="btns">
+      <a href="tel:+393773075303" class="btn btn-fill">Chiama 377 307 5303</a>
+      <a href="https://wa.me/393773075303" class="btn btn-line">WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">Da Guido Osteria</div>
+        <p>Cicchetti, vini e cocktail nel cuore di Cologna Veneta.</p>
+      </div>
+      <div>
+        <h4>Contatti</h4>
+        <p>Piazza del Mandamento 56, Cologna Veneta<br><a href="tel:+393773075303">377 307 5303</a><br><a href="https://www.instagram.com/daguido_osteria/" target="_blank" rel="noopener">@daguido_osteria</a></p>
+      </div>
+      <div>
+        <h4>Orari</h4>
+        <p>Mer–Dom 18–24<br>mattino dal Lun<br>Mar chiuso</p>
+      </div>
+    </div>
+    <div class="foot-bot">
+      <span>© 2026 Da Guido Osteria · Cologna Veneta (VR)</span>
+      <span>Sito realizzato da HubTec</span>
+    </div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+393773075303" class="call">Chiama</a>
+  <a href="https://wa.me/393773075303" class="wa">WhatsApp</a>
+</div>
+
+<script>
+addEventListener('scroll',()=>{document.getElementById('hd').classList.toggle('solid',scrollY>60)});
+</script>
+</body>
+</html>
