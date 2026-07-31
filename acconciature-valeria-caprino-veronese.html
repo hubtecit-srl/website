@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acconciature Valeria — Parrucchiere a Caprino Veronese | Prenota</title>
+<meta name="description" content="Acconciature Valeria, parrucchiere a Caprino Veronese (VR): taglio, colore, trattamenti e acconciature. Un salone di fiducia in un bel borgo. Chiama e prenota.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Mulish:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --peach:#ee965b; --peach-d:#d97f44; --dark:#2a2320; --ink:#2e2723; --ink2:#5f554e; --sub:#978c82;
+  --line:#ece3d8; --cream:#faf5ee; --soft:#f5ece1; --white:#fff; --green:#25d366;
+  --h:'Fraunces',Georgia,serif; --b:'Mulish',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--white);line-height:1.75;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--peach);font-weight:700}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--b);font-weight:700;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;padding:15px 30px;border-radius:0;cursor:pointer;transition:.2s;border:1px solid var(--peach)}
+.btn-peach{background:var(--peach);color:#fff}
+.btn-peach:hover{background:var(--peach-d);border-color:var(--peach-d)}
+.btn-out{background:transparent;color:var(--ink);border-color:var(--ink)}
+.btn-out:hover{background:var(--ink);color:#fff}
+.btn-light{background:#fff;color:var(--ink);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.5)}
+
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{font-family:var(--h);font-weight:600;font-size:1.6rem;letter-spacing:.01em}
+header nav{display:flex;gap:30px}
+header nav a{font-weight:600;font-size:.9rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--peach)}
+
+/* Hero */
+.hero{padding:150px 0 100px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:60px;align-items:center}
+.hero .kick{display:block;margin-bottom:18px}
+.hero h1{font-family:var(--h);font-weight:500;font-size:clamp(2.4rem,6.5vw,5rem);line-height:1.02;margin-bottom:20px}
+.hero h1 em{font-style:italic;color:var(--peach)}
+.hero p{color:var(--ink2);font-size:1.1rem;margin-bottom:30px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img img{width:100%;height:540px;object-fit:cover;background:var(--soft)}
+
+/* Why */
+.why{padding:100px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 54px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:500;font-size:clamp(1.9rem,4.5vw,3.3rem);line-height:1.14}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.why-c{text-align:center;padding:20px}
+.why-c .ic{width:64px;height:64px;margin:0 auto 16px;background:var(--soft);color:var(--peach);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.7rem}
+.why-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:8px}
+.why-c p{color:var(--ink2);font-size:.94rem}
+
+/* Services */
+.serv{padding:100px 0;background:var(--cream)}
+.serv-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px 40px;max-width:900px;margin:0 auto}
+.serv-c{display:flex;justify-content:space-between;gap:20px;padding:22px 0;border-bottom:1px solid var(--line)}
+.serv-c h3{font-family:var(--h);font-weight:600;font-size:1.3rem;margin-bottom:4px}
+.serv-c p{color:var(--ink2);font-size:.92rem}
+.serv-c .price{font-family:var(--h);font-weight:600;font-size:1.3rem;color:var(--peach);white-space:nowrap}
+
+/* Gallery */
+.gallery{padding:100px 0}
+.gal-head{text-align:center;margin-bottom:44px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:500;font-size:clamp(1.8rem,4.4vw,3rem)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal-grid img{width:100%;height:300px;object-fit:cover}
+
+/* Info / Map */
+.info{padding:100px 0;background:var(--cream)}
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;max-width:960px;margin:0 auto}
+.info-grid h2{font-family:var(--h);font-weight:500;font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:18px}
+.info-grid ul{list-style:none}
+.info-grid li{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line);font-size:1rem}
+.info-grid li span{color:var(--peach);font-weight:700}
+.hours{font-size:.98rem}
+.hours div{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px dashed var(--line)}
+
+/* FAQ */
+.faq{padding:100px 0}
+.faq-wrap{max-width:780px;margin:0 auto}
+.faq-item{border-bottom:1px solid var(--line)}
+.faq-item summary{list-style:none;cursor:pointer;padding:22px 4px;font-family:var(--h);font-weight:600;font-size:1.15rem;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";color:var(--peach);font-size:1.4rem}
+.faq-item[open] summary::after{content:"–"}
+.faq-item .a{padding:0 4px 22px;color:var(--ink2)}
+
+/* Reviews */
+.reviews{padding:100px 0;background:var(--cream)}
+.rv-top{text-align:center;margin-bottom:36px}
+.rv-badge{display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);padding:12px 22px;border-radius:40px;font-weight:700}
+.rv-badge .st{color:var(--peach);letter-spacing:2px}
+.rv-single{max-width:640px;margin:0 auto;background:#fff;padding:38px;text-align:center;border:1px solid var(--line)}
+.rv-single .st{color:var(--peach);letter-spacing:3px;margin-bottom:14px}
+.rv-single p{font-family:var(--h);font-size:1.3rem;color:var(--ink);margin-bottom:16px;line-height:1.5}
+.rv-single b{font-weight:700;font-size:.92rem}
+
+/* CTA */
+.cta{position:relative;padding:120px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://images.pexels.com/photos/3992874/pexels-photo-3992874.jpeg?auto=compress&cs=tinysrgb&w=1600') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(42,35,32,.72)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:500;font-size:clamp(2rem,5vw,3.6rem);margin-bottom:14px}
+.cta p{max-width:520px;margin:0 auto 28px;color:rgba(255,255,255,.88)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+
+footer{background:var(--dark);color:rgba(255,255,255,.75);padding:60px 0 36px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.foot-grid .brand{color:#fff;margin-bottom:12px}
+.foot-grid h4{font-family:var(--b);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:#f0b58c;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.75)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:22px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+.mbar{display:none}
+@media(max-width:920px){
+  .hero-grid{grid-template-columns:1fr;gap:34px}
+  .hero-img img{height:380px}
+  .why-grid{grid-template-columns:1fr}
+  .serv-grid{grid-template-columns:1fr;gap:0}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .info-grid{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 20px}
+  .gal-grid{grid-template-columns:1fr}
+  body{padding-bottom:66px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.9rem;text-transform:uppercase;letter-spacing:.04em}
+  .mbar .call{color:var(--peach)}
+  .mbar .book{background:var(--peach);color:#fff}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap bar">
+    <a href="#top" class="brand">Acconciature Valeria</a>
+    <nav>
+      <a href="#servizi">Servizi</a>
+      <a href="#lavori">Lavori</a>
+      <a href="#dove">Dove siamo</a>
+      <a href="#prenota">Contatti</a>
+    </nav>
+    <a href="#prenota" class="btn btn-out">Prenota</a>
+  </div>
+</header>
+
+<section id="top" class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kick">Parrucchiere · Caprino Veronese</span>
+      <h1>Il tuo salone di <em>fiducia</em> nel borgo</h1>
+      <p>Taglio, colore, trattamenti e acconciature con cura e professionalità. Un ambiente accogliente a Località Acque, Caprino Veronese.</p>
+      <div class="hero-cta">
+        <a href="tel:+390456230015" class="btn btn-peach">Chiama ora</a>
+        <a href="#servizi" class="btn btn-out">Servizi</a>
+      </div>
+    </div>
+    <div class="hero-img"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhh0gxCsXU0qpXB5G_eOnizZS22WhNdDkzOMCAI4K3RQx0F6lg5v_fC8UUqI5nsDPMoUP5AwPC0iC0IYQzR0xD9_30XjsUixvdvqwiJ1-WAawideX1s86pGqaiq9oQH2gOnwOumcmd39z6K5zTxHACEnGJUZlD7udZOtivJN6FA-PvztTbjFlKW12FDiO_aRhLL98luBgSBsTMJQ0VdgL42-oAoMTYlRPTSiR8Yj6GrKpbEkteACJYFb4eysu-E9HYmrpQuzsVWwzH-pZUrJNM4iqaZd4BQ_EbWe7_7xNjdfsUDM47YJwsze7dM9TkVBuiBc9To4GHFdny5k2_unwGQCKycWbrjllJEy5y-vXTmAQsgTDny7rDnQ0X4FW9zy3DEPdbNFLYIN4q8TXIInfoKTBtiJHY3Ryotda6Dyy81ag&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Interno del salone Acconciature Valeria a Caprino Veronese"></div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Perché sceglierci</span><h2>Cura, stile ed esperienza</h2></div>
+    <div class="why-grid">
+      <div class="why-c"><div class="ic">✂️</div><h3>Professionalità</h3><p>Un salone di esperienza, apprezzato dai clienti del territorio.</p></div>
+      <div class="why-c"><div class="ic">💇‍♀️</div><h3>Look su misura</h3><p>Taglio, colore e piega pensati per te e per il tuo stile.</p></div>
+      <div class="why-c"><div class="ic">🌿</div><h3>Ambiente accogliente</h3><p>Un bel borgo tranquillo dove prenderti cura di te con calma.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="servizi" class="serv">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">I nostri servizi</span><h2>Taglio, colore e styling</h2></div>
+    <div class="serv-grid">
+      <div class="serv-c"><div><h3>Taglio &amp; piega</h3><p>Consulenza, taglio e styling</p></div><div class="price">·</div></div>
+      <div class="serv-c"><div><h3>Colore</h3><p>Colorazione e ritocco</p></div><div class="price">·</div></div>
+      <div class="serv-c"><div><h3>Meches &amp; schiariture</h3><p>Tecniche di luce e balayage</p></div><div class="price">·</div></div>
+      <div class="serv-c"><div><h3>Trattamenti</h3><p>Ricostruzione e cura dei capelli</p></div><div class="price">·</div></div>
+      <div class="serv-c"><div><h3>Acconciature</h3><p>Cerimonie ed eventi</p></div><div class="price">·</div></div>
+      <div class="serv-c"><div><h3>Piega</h3><p>Messa in piega e styling</p></div><div class="price">·</div></div>
+    </div>
+    <p style="text-align:center;color:var(--ink2);margin-top:26px;font-size:.95rem">Chiama per informazioni sul listino e per fissare il tuo appuntamento.</p>
+  </div>
+</section>
+
+<section id="lavori" class="gallery">
+  <div class="wrap">
+    <div class="gal-head"><span class="kick">Il salone</span><h2>Look &amp; atmosfera</h2></div>
+    <div class="gal-grid">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhh0gxCsXU0qpXB5G_eOnizZS22WhNdDkzOMCAI4K3RQx0F6lg5v_fC8UUqI5nsDPMoUP5AwPC0iC0IYQzR0xD9_30XjsUixvdvqwiJ1-WAawideX1s86pGqaiq9oQH2gOnwOumcmd39z6K5zTxHACEnGJUZlD7udZOtivJN6FA-PvztTbjFlKW12FDiO_aRhLL98luBgSBsTMJQ0VdgL42-oAoMTYlRPTSiR8Yj6GrKpbEkteACJYFb4eysu-E9HYmrpQuzsVWwzH-pZUrJNM4iqaZd4BQ_EbWe7_7xNjdfsUDM47YJwsze7dM9TkVBuiBc9To4GHFdny5k2_unwGQCKycWbrjllJEy5y-vXTmAQsgTDny7rDnQ0X4FW9zy3DEPdbNFLYIN4q8TXIInfoKTBtiJHY3Ryotda6Dyy81ag&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Salone Acconciature Valeria">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydisacC3Q9uSyE8aqUNVoX_xTgBgWKwMomF6XS9sxjMdkZ3zwnFjlBBOlTWfdTp1_S9nBlETBRlflaYALUH3HkeoOn133IkAuqFiMaHvJhVp1m8Q4J1Wij4IipHeq1WEXyXOBJ5HUEnQKvJFqX31gQ9rVo2ovrmyq2XU43Bbd7W8XQ2KVlfMrm9fM5hBICtXKbM9H8LPt-B-NJ9N_SOmEkUpx704t8OCaA5YlUQ5LuYUapkKhHxY0O5cOA6-0W0W74lv5AXKlhFbwzmsRZsVey_SmaruLw2BbOP4jRGQQirgIEFah0eIaNFIEZYwywUrUWRqU8N5P4iyxap6PJWSZTtYdm6KuacaGzUtEO1xHvhHjiPKeMilMwNTXoePU3HGltjZRXMuC-PLkDnU4amvnZLz6vSjVxC2zjFshBEY5hx_QQ&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Interno Acconciature Valeria">
+      <img src="https://images.pexels.com/photos/3993449/pexels-photo-3993449.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dettaglio hairstyling">
+      <img src="https://images.pexels.com/photos/3738349/pexels-photo-3738349.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Cura dei capelli">
+    </div>
+  </div>
+</section>
+
+<section id="dove" class="info">
+  <div class="wrap">
+    <div class="info-grid">
+      <div>
+        <h2>Dove siamo</h2>
+        <ul>
+          <li><span>📍</span> Località Acque, 4 — 37013 Caprino Veronese (VR)</li>
+          <li><span>📞</span> <a href="tel:+390456230015">045 623 0015</a></li>
+        </ul>
+        <p style="margin-top:20px"><a href="https://maps.google.com/?cid=15653613519516522649" target="_blank" rel="noopener" class="btn btn-out">Apri su Google Maps</a></p>
+      </div>
+      <div>
+        <h2 style="font-size:1.4rem">Orari di apertura</h2>
+        <div class="hours">
+          <div><span>Lunedì</span><span>Chiuso</span></div>
+          <div><span>Martedì</span><span>08:30–17:00</span></div>
+          <div><span>Mercoledì</span><span>08:30–20:00</span></div>
+          <div><span>Giovedì</span><span>08:30–17:00</span></div>
+          <div><span>Venerdì</span><span>08:30–18:30</span></div>
+          <div><span>Sabato</span><span>08:30–16:00</span></div>
+          <div><span>Domenica</span><span>Chiuso</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="sec-h"><span class="kick">Domande frequenti</span><h2>Le risposte per te</h2></div>
+    <div class="faq-wrap">
+      <details class="faq-item" open><summary>Serve prenotare?</summary><div class="a">Consigliamo di chiamare per fissare l'appuntamento e trovare il momento migliore per te.</div></details>
+      <details class="faq-item"><summary>Dove vi trovate?</summary><div class="a">Siamo a Località Acque, 4 a Caprino Veronese (VR), in un bel borgo tranquillo poco fuori dal centro.</div></details>
+      <details class="faq-item"><summary>Che servizi offrite?</summary><div class="a">Taglio, colore, schiariture, trattamenti, pieghe e acconciature per cerimonie ed eventi.</div></details>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="rv-top">
+      <span class="kick">Recensioni</span>
+      <div style="margin-top:14px"><span class="rv-badge"><span class="st">★★★★</span> 4,0 su Google · 2 recensioni</span></div>
+    </div>
+    <div class="rv-single">
+      <div class="st">★★★★</div>
+      <p>"Buon posto per sistemarsi. Un po' fuori dal paese, in un bel borgo. Professionale."</p>
+      <b>Domenico P. — recensione Google</b>
+    </div>
+  </div>
+</section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Chiamaci: troviamo insieme il momento giusto per prenderci cura dei tuoi capelli.</p>
+    <div class="btns">
+      <a href="tel:+390456230015" class="btn btn-light">📞 045 623 0015</a>
+      <a href="https://maps.google.com/?cid=15653613519516522649" target="_blank" rel="noopener" class="btn btn-glass">Come raggiungerci</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div><div class="brand" style="color:#fff">Acconciature Valeria</div><p>Parrucchiere a Caprino Veronese, Località Acque.</p></div>
+      <div><h4>Contatti</h4><p>Località Acque, 4<br>37013 Caprino Veronese (VR)<br><a href="tel:+390456230015">045 623 0015</a></p></div>
+      <div><h4>Orari</h4><p>Mar–Sab dalle 8:30<br>Lun e Dom chiuso</p></div>
+    </div>
+    <div class="foot-bot"><span>© Acconciature Valeria — Caprino Veronese (VR)</span><span>Sito realizzato da HubTec</span></div>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a href="tel:+390456230015" class="call">Chiama</a>
+  <a href="#prenota" class="book">Prenota</a>
+</div>
+
+</body>
+</html>
