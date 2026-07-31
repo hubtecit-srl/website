@@ -1418,5 +1418,49 @@
   "url": "https://hubtecit-srl.github.io/website/salone-anna-caldiero.html",
   "wa": "",
   "canale": "Da contattare a mano"
+ },
+ {
+  "name": "Ristorante Pizzeria Bar Miralago",
+  "file": "miralago-costermano.html",
+  "phone": "045 720 0397",
+  "intl": "+39 045 720 0397",
+  "comune": "Costermano sul Garda",
+  "cid": "8398151467699523043",
+  "tmpl": "ristorante-vicoletto",
+  "url": "https://hubtecit-srl.github.io/website/miralago-costermano.html",
+  "wa": ""
+ },
+ {
+  "name": "Trattoria La Val",
+  "file": "trattoria-la-val-costermano.html",
+  "phone": "045 620 1079",
+  "intl": "+39 045 620 1079",
+  "comune": "Costermano sul Garda",
+  "cid": "6134275226609427610",
+  "tmpl": "ristorante-atlantic",
+  "url": "https://hubtecit-srl.github.io/website/trattoria-la-val-costermano.html",
+  "wa": ""
+ },
+ {
+  "name": "Marciaga Bistrot",
+  "file": "marciaga-bistrot-costermano.html",
+  "phone": "045 450 0452",
+  "intl": "+39 045 450 0452",
+  "comune": "Costermano sul Garda",
+  "cid": "14471058160239958407",
+  "tmpl": "ristorante-auburn",
+  "url": "https://hubtecit-srl.github.io/website/marciaga-bistrot-costermano.html",
+  "wa": ""
+ },
+ {
+  "name": "Ristorante Golf Cà degli Ulivi",
+  "file": "ristorante-ca-degli-ulivi-costermano.html",
+  "phone": "045 627 9031",
+  "intl": "+39 045 627 9031",
+  "comune": "Costermano sul Garda",
+  "cid": "17782783526160178188",
+  "tmpl": "ristorante-juniper",
+  "url": "https://hubtecit-srl.github.io/website/ristorante-ca-degli-ulivi-costermano.html",
+  "wa": ""
  }
 ]

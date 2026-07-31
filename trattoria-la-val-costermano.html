@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trattoria La Val — Costermano sul Garda | Prenota un tavolo</title>
+<meta name="description" content="Trattoria La Val: Cucina di terra e di mare in una trattoria familiare immersa nel verde, con parco giochi e musica dal vivo. a Costermano sul Garda. 4.4★ su 792 recensioni. Prenota chiamando 045 620 1079.">
+<meta property="og:title" content="Trattoria La Val — Costermano sul Garda">
+<meta property="og:description" content="Cucina di terra e di mare in una trattoria familiare immersa nel verde, con parco giochi e musica dal vivo.. 4.4★ su 792 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#10232b;--accent:#0e6b7a;--accent2:#d98a3d;--cream:#f4f7f7;--band:#12303a;--line:#e7ded1;--sub:#7d7266;--white:#fff;--h:'Fraunces',Georgia,serif;--b:'Inter',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+.kick{font-family:var(--b);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+h1,h2,h3{font-family:var(--h);font-weight:700;line-height:1.1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:.95rem;padding:14px 26px;border-radius:6px;cursor:pointer;transition:.2s;border:2px solid transparent}
+.btn-fill{background:var(--accent);color:#fff}.btn-fill:hover{filter:brightness(1.1)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}.btn-line:hover{background:#fff;color:var(--ink)}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.3s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{font-family:var(--h);font-weight:800;font-size:1.3rem;color:#fff;letter-spacing:.02em}
+header.solid{background:var(--band);box-shadow:0 2px 18px rgba(0,0,0,.18)}
+nav.main{display:flex;gap:26px}
+nav.main a{color:rgba(255,255,255,.9);font-weight:600;font-size:.9rem;transition:.2s}
+nav.main a:hover{color:#fff}
+.navcta{background:var(--accent);color:#fff;padding:9px 18px;border-radius:6px;font-weight:700;font-size:.85rem}
+/* hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.72)),url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjKXg6-c278rUxZxmGmIbF8cUMscwbRGSzt7fWjXKcinhtSTbM0mM4aOM6gumgaTnYA7lQRIl_Z02UZFu_x6hcdvEFgafNkjbcDbagEHrB0mUulGKlFhPFRxF0TqijUaoWsq80rH5-Hcx7lUtCjaLgEJzQA9TDuSnvbLDBAyWa1gFOD8EBlXUEzwjr1qIQ4FB8Ce585-EO4V4tHpG3FhNfgn8xTitF575IH0UsOVrMS2l7RLdLPgWkUuAoeNWUtWoFa_0NA_ME9cT8SHVc2d8f1EOctp_atZAN_-IYfBKZBQrEkX1R4Urbt51PUKT3LBzqHBtenyWHgpbTHlghsu_-1nexuUl49dCM-O8tXBrERK2F3uI2tSQqnjzWTCkwoxzLnZoCaXj0p462yXsO3BlVmoxXd-S83uRgyhMEHqSI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:-1}
+.hero .wrap{padding-bottom:66px;padding-top:110px}
+.hero h1{font-size:clamp(2.5rem,7vw,4.6rem);margin:.35em 0 .25em;max-width:14ch}
+.hero p.lead{font-size:1.15rem;max-width:44ch;color:rgba(255,255,255,.92)}
+.rate{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);backdrop-filter:blur(4px);padding:8px 15px;border-radius:40px;font-weight:600;font-size:.95rem;margin-bottom:8px}
+.rate .s{color:#ffc94d;letter-spacing:2px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+/* sections */
+section{padding:76px 0}
+.sec-head{max-width:620px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.9rem);margin:.25em 0}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
+.about img{border-radius:12px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.about p{font-size:1.06rem;margin-bottom:16px;color:#3a3128}
+.menu{background:var(--band);color:#fff}
+.menu .kick{color:var(--accent2)}
+.menu .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:44px}
+.mcol h3{font-size:1.4rem;color:var(--accent2);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.18)}
+.mcol ul{list-style:none}
+.mcol li{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dotted rgba(255,255,255,.14);font-size:1rem}
+.mcol li b{color:var(--accent2);white-space:nowrap}
+.mnote{text-align:center;margin-top:34px;color:rgba(255,255,255,.6);font-size:.9rem}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gitem img{width:100%;height:230px;object-fit:cover;border-radius:10px;transition:.3s}
+.gitem:hover img{transform:scale(1.03)}
+/* reviews */
+.reviews{background:var(--white)}
+.revgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:26px}
+.rstars{color:#f0a91c;letter-spacing:2px;margin-bottom:12px}
+.rev blockquote{font-size:1rem;color:#3a3128;margin-bottom:14px}
+.rev figcaption{font-weight:600;font-size:.9rem;color:var(--sub)}
+/* contact */
+.contact{background:var(--band);color:#fff}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.cinfo h2{color:#fff}
+.cinfo .kick{color:var(--accent2)}
+.cline{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:1.02rem}
+.cline b{min-width:96px;color:var(--accent2)}
+.hrow{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dotted rgba(255,255,255,.14);font-size:.97rem}
+.hrow .closed{color:#e08a8a}
+.map{border-radius:12px;overflow:hidden;min-height:340px;border:0}
+.contact .cta{margin-top:24px;display:flex;gap:14px;flex-wrap:wrap}
+footer{background:var(--ink);color:rgba(255,255,255,.7);text-align:center;padding:40px 22px}
+footer .fbrand{font-family:var(--h);font-weight:800;font-size:1.4rem;color:#fff;margin-bottom:8px}
+footer a{color:var(--accent2)}
+.hubcredit{margin-top:14px;font-size:.82rem;color:rgba(255,255,255,.4)}
+/* mobile bar */
+.mbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:70;background:var(--band);padding:9px;gap:9px;box-shadow:0 -2px 16px rgba(0,0,0,.28)}
+.mbar a{flex:1;text-align:center;padding:14px 0;border-radius:8px;font-weight:700;font-size:1rem;color:#fff}
+.mbar .call{background:var(--accent)}
+.mbar .book{background:var(--accent2)}
+@media(max-width:900px){
+ nav.main,.navcta{display:none}
+ .about,.cgrid{grid-template-columns:1fr;gap:30px}
+ .menu .grid{grid-template-columns:1fr;gap:30px}
+ .gal{grid-template-columns:repeat(2,1fr)}
+ .revgrid{grid-template-columns:1fr}
+ .mbar{display:flex}
+ body{padding-bottom:70px}
+ section{padding:52px 0}
+}
+@media(max-width:560px){
+ .hero h1{font-size:2.1rem}
+ .hero .cta .btn{width:100%}
+ .sec-head h2,.about h2{font-size:1.7rem}
+ .gal{grid-template-columns:1fr 1fr}
+ .gitem img{height:150px}
+ body{font-size:15.5px}
+}
+</style></head>
+<body>
+<header id="hd"><div class="wrap bar">
+ <a href="#top" class="brand">Trattoria La Val</a>
+ <nav class="main">
+   <a href="#chi-siamo">Chi siamo</a>
+   <a href="#menu">Menù</a>
+   <a href="#galleria">Galleria</a>
+   <a href="#recensioni">Recensioni</a>
+   <a href="#contatti">Contatti</a>
+ </nav>
+ <a href="tel:0456201079" class="navcta">Prenota: 045 620 1079</a>
+</div></header>
+
+<a id="top"></a>
+<section class="hero"><div class="wrap">
+ <div class="rate"><span class="s">★★★★☆</span> 4.4 · 792 recensioni Google</div>
+ <span class="kick">Costermano sul Garda · Lago di Garda</span>
+ <h1>Trattoria La Val</h1>
+ <p class="lead">Cucina di terra e di mare in una trattoria familiare immersa nel verde, con parco giochi e musica dal vivo.</p>
+ <div class="cta">
+   <a href="tel:0456201079" class="btn btn-fill">Chiama e prenota</a>
+   <a href="#menu" class="btn btn-line">Scopri il menù</a>
+ </div>
+</div></section>
+
+<section id="chi-siamo"><div class="wrap about">
+ <div>
+   <span class="kick">La nostra cucina</span>
+   <h2>Benvenuti da Trattoria La Val</h2>
+   <p>Immersa nella tranquilla Valle dei Mulini, a due passi dal centro di Garda, La Val è la trattoria dove sentirsi come a casa: arredi informali, tanto verde e prati con sdraio dove sorseggiare uno spritz.</p>
+   <p>Cucina genuina della tradizione, carne e pesce, un parco giochi per i più piccoli e serate con musica dal vivo. Un angolo di paradiso lontano dalla confusione turistica.</p>
+   <a href="#contatti" class="btn btn-fill" style="margin-top:8px">Vieni a trovarci</a>
+ </div>
+ <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydh1QmdYa8K0vz42sSbaxudgjU4Hg_stHCEFFMWxSVR2lJcu5_RiPfAxkzlXPvPhj3JaejRNKIbFMqNld74NbB_9TaWxZ-E6VDlI-PikdMvHHScaBjTg-VsJB11vPdtBGiLcAEWcpXlgWDtjroDBdlLDddNbKoCSEtP-HWbHtiaJrcb95e89nslYqzAaIvwqjxOqaq6areZqPT_1hD_UKcF71pkZASm5Mac43lPA5Hj5qVcW6BQgaTe7EYi05sEmf074DFmZdJX0h1pEyu0-hCz11m2RY_AmJ6kgtAtBgGDTdqAk9H0Ik2SeHgsfRg26RTVcGJfQY5nTMuLdILjNnpqYNHHBKDfy_FTfKoENhK7yFivp0bwP6PUaKeAlIpY-bH9pNKPNAa-DfrVovL3Wbb-schFdiDc0XtqSxrmVLAZMQA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Ambiente di Trattoria La Val">
+</div></section>
+
+<section id="menu" class="menu"><div class="wrap">
+ <div class="sec-head"><span class="kick">La proposta</span><h2>Il nostro menù</h2></div>
+ <div class="grid"><div class="mcol"><h3>Antipasti</h3><ul><li><span>Carne salada con rucola e grana</span><b>10</b></li><li><span>Baccalà fritto</span><b>9</b></li><li><span>Tagliere di salumi e formaggi</span><b>12</b></li></ul></div><div class="mcol"><h3>Primi</h3><ul><li><span>Bigoli all&#x27;anatra</span><b>11</b></li><li><span>Risotto all&#x27;Amarone</span><b>13</b></li><li><span>Pasta e fagioli</span><b>9</b></li></ul></div><div class="mcol"><h3>Le grigliate</h3><ul><li><span>Costata di manzo</span><b>con supplemento</b></li><li><span>Grigliata mista di carne</span><b>18</b></li><li><span>Pollo alle spezie con riso</span><b>14</b></li></ul></div><div class="mcol"><h3>Dolci</h3><ul><li><span>Sbrisolona con gelato alla grappa</span><b>6</b></li><li><span>Panna cotta</span><b>5</b></li><li><span>Dolce della casa</span><b>5</b></li></ul></div></div>
+ <p class="mnote">Il menù può variare in base alla stagione e alla disponibilità del mercato. Chiama per conoscere i piatti del giorno.</p>
+</div></section>
+
+<section id="galleria"><div class="wrap">
+ <div class="sec-head"><span class="kick">Galleria</span><h2>Uno sguardo da noi</h2></div>
+ <div class="gal"><a class="gitem" href="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjKXg6-c278rUxZxmGmIbF8cUMscwbRGSzt7fWjXKcinhtSTbM0mM4aOM6gumgaTnYA7lQRIl_Z02UZFu_x6hcdvEFgafNkjbcDbagEHrB0mUulGKlFhPFRxF0TqijUaoWsq80rH5-Hcx7lUtCjaLgEJzQA9TDuSnvbLDBAyWa1gFOD8EBlXUEzwjr1qIQ4FB8Ce585-EO4V4tHpG3FhNfgn8xTitF575IH0UsOVrMS2l7RLdLPgWkUuAoeNWUtWoFa_0NA_ME9cT8SHVc2d8f1EOctp_atZAN_-IYfBKZBQrEkX1R4Urbt51PUKT3LBzqHBtenyWHgpbTHlghsu_-1nexuUl49dCM-O8tXBrERK2F3uI2tSQqnjzWTCkwoxzLnZoCaXj0p462yXsO3BlVmoxXd-S83uRgyhMEHqSI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" target="_blank" rel="noopener"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjKXg6-c278rUxZxmGmIbF8cUMscwbRGSzt7fWjXKcinhtSTbM0mM4aOM6gumgaTnYA7lQRIl_Z02UZFu_x6hcdvEFgafNkjbcDbagEHrB0mUulGKlFhPFRxF0TqijUaoWsq80rH5-Hcx7lUtCjaLgEJzQA9TDuSnvbLDBAyWa1gFOD8EBlXUEzwjr1qIQ4FB8Ce585-EO4V4tHpG3FhNfgn8xTitF575IH0UsOVrMS2l7RLdLPgWkUuAoeNWUtWoFa_0NA_ME9cT8SHVc2d8f1EOctp_atZAN_-IYfBKZBQrEkX1R4Urbt51PUKT3LBzqHBtenyWHgpbTHlghsu_-1nexuUl49dCM-O8tXBrERK2F3uI2tSQqnjzWTCkwoxzLnZoCaXj0p462yXsO3BlVmoxXd-S83uRgyhMEHqSI&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria La Val foto 1"></a><a class="gitem" href="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydh1QmdYa8K0vz42sSbaxudgjU4Hg_stHCEFFMWxSVR2lJcu5_RiPfAxkzlXPvPhj3JaejRNKIbFMqNld74NbB_9TaWxZ-E6VDlI-PikdMvHHScaBjTg-VsJB11vPdtBGiLcAEWcpXlgWDtjroDBdlLDddNbKoCSEtP-HWbHtiaJrcb95e89nslYqzAaIvwqjxOqaq6areZqPT_1hD_UKcF71pkZASm5Mac43lPA5Hj5qVcW6BQgaTe7EYi05sEmf074DFmZdJX0h1pEyu0-hCz11m2RY_AmJ6kgtAtBgGDTdqAk9H0Ik2SeHgsfRg26RTVcGJfQY5nTMuLdILjNnpqYNHHBKDfy_FTfKoENhK7yFivp0bwP6PUaKeAlIpY-bH9pNKPNAa-DfrVovL3Wbb-schFdiDc0XtqSxrmVLAZMQA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" target="_blank" rel="noopener"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydh1QmdYa8K0vz42sSbaxudgjU4Hg_stHCEFFMWxSVR2lJcu5_RiPfAxkzlXPvPhj3JaejRNKIbFMqNld74NbB_9TaWxZ-E6VDlI-PikdMvHHScaBjTg-VsJB11vPdtBGiLcAEWcpXlgWDtjroDBdlLDddNbKoCSEtP-HWbHtiaJrcb95e89nslYqzAaIvwqjxOqaq6areZqPT_1hD_UKcF71pkZASm5Mac43lPA5Hj5qVcW6BQgaTe7EYi05sEmf074DFmZdJX0h1pEyu0-hCz11m2RY_AmJ6kgtAtBgGDTdqAk9H0Ik2SeHgsfRg26RTVcGJfQY5nTMuLdILjNnpqYNHHBKDfy_FTfKoENhK7yFivp0bwP6PUaKeAlIpY-bH9pNKPNAa-DfrVovL3Wbb-schFdiDc0XtqSxrmVLAZMQA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria La Val foto 2"></a><a class="gitem" href="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydi9Scp8ZxM81UG0ofQOwFMAOH_GMna-n9uqtJOkYMPrqPJpPE4bbHspLYm_cfMr31OwbbYUANjgnfNzSb_eBXWF1cXUtFNBLf-lxPX-MnCS-A2UPkDO8xzhuEu3QtN35twao2PXsro88FwenD_d5ciuYvi2ZlzUswmPjEN7oLdlx7BOfyKhZ20Q94H1mQm_uSSqLZF2tOs34hFnG6TE9DtsoPhEwlMpWlqfMF13IPuDcQllwKAVpNEX87dp-gvlq93lA6O9ai8TcjK3pwLUgICUAuRfHx9LXvqV27tUNRUeD8TbwbbGIVFPopWGye-v-g3Frz4PdmFZTt_FaNOhqd1VGx8-AGDfborwMNwYtixwm32gkYkwiPAHPhJsOoM8wWiUx92Df8lmqEFpZdVwUF2TelMo6sUDApcPxJq8YY_Bmw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" target="_blank" rel="noopener"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydi9Scp8ZxM81UG0ofQOwFMAOH_GMna-n9uqtJOkYMPrqPJpPE4bbHspLYm_cfMr31OwbbYUANjgnfNzSb_eBXWF1cXUtFNBLf-lxPX-MnCS-A2UPkDO8xzhuEu3QtN35twao2PXsro88FwenD_d5ciuYvi2ZlzUswmPjEN7oLdlx7BOfyKhZ20Q94H1mQm_uSSqLZF2tOs34hFnG6TE9DtsoPhEwlMpWlqfMF13IPuDcQllwKAVpNEX87dp-gvlq93lA6O9ai8TcjK3pwLUgICUAuRfHx9LXvqV27tUNRUeD8TbwbbGIVFPopWGye-v-g3Frz4PdmFZTt_FaNOhqd1VGx8-AGDfborwMNwYtixwm32gkYkwiPAHPhJsOoM8wWiUx92Df8lmqEFpZdVwUF2TelMo6sUDApcPxJq8YY_Bmw&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria La Val foto 3"></a><a class="gitem" href="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhFu2t0b18lZOw6fHNUIRG8Bz1ONzrlyGhWu18TSTizc847z7BiONhN8rCmQ9I9pWQe_qfQw90XLN-Pz7-xohFqmjbhBOoWS1F4FDgFhymLst51pkLeFC4eOxRvJfo43y-Y8Yhhho2Tz-jKmpXEv2m6HkgG9nxX-OxfoOUUfd5e9n2Dj0GEdQqynVLVFQ6DlmgWpgqIqbhrEJ2jgu84daVbm5HJSXcssU1pRlF00MagKRm_N0r11HYDsS3IOczNI8F-LcOWl3c4VQVoMMujp_sCV0TsAmklOtY2rJ_EFRTgTgPFEHqAaoxI-hu8GDtExnQ6fa4PZoYOn-WazccJ2AX5x8zMhAsWkV28nUWvErvDhZWdmVZDPDonw2JwjTXMGHy6ENYnVR8s7ZinehiuyH97KdSwCsx-S8K_KsblZibx26Y&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" target="_blank" rel="noopener"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhFu2t0b18lZOw6fHNUIRG8Bz1ONzrlyGhWu18TSTizc847z7BiONhN8rCmQ9I9pWQe_qfQw90XLN-Pz7-xohFqmjbhBOoWS1F4FDgFhymLst51pkLeFC4eOxRvJfo43y-Y8Yhhho2Tz-jKmpXEv2m6HkgG9nxX-OxfoOUUfd5e9n2Dj0GEdQqynVLVFQ6DlmgWpgqIqbhrEJ2jgu84daVbm5HJSXcssU1pRlF00MagKRm_N0r11HYDsS3IOczNI8F-LcOWl3c4VQVoMMujp_sCV0TsAmklOtY2rJ_EFRTgTgPFEHqAaoxI-hu8GDtExnQ6fa4PZoYOn-WazccJ2AX5x8zMhAsWkV28nUWvErvDhZWdmVZDPDonw2JwjTXMGHy6ENYnVR8s7ZinehiuyH97KdSwCsx-S8K_KsblZibx26Y&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria La Val foto 4"></a></div>
+</div></section>
+
+<section id="recensioni" class="reviews"><div class="wrap">
+ <div class="sec-head"><span class="kick">Dicono di noi</span><h2>4.4★ su 792 recensioni</h2></div>
+ <div class="revgrid"><figure class="rev">
+        <div class="rstars">★★★★★</div>
+        <blockquote>Posto bellissimo, un clima e un&#x27;energia magica! Eravamo un gruppo numeroso con bambini e hanno gestito tutto in maniera eccelsa. Ottimi consigli, musica dal vivo di altissima qualità, mangiato benissimo. Ci siamo sentiti come amici di lunga data!</blockquote>
+        <figcaption>— Paolo Alexandre</figcaption></figure><figure class="rev">
+        <div class="rstars">★★★★☆</div>
+        <blockquote>Questo ristorante è buonissimo, mi piace molto. Per fortuna c&#x27;è anche il parco giochi per il mio bambino. Bellissimo ambiente, è la mia prima volta e già mi piace tantissimo.</blockquote>
+        <figcaption>— Silvia Zanchetta</figcaption></figure><figure class="rev">
+        <div class="rstars">★★★★☆</div>
+        <blockquote>Location bella, immersa nel verde, con sentiero per una passeggiata. Pietanze buone in linea con lo stile da trattoria, primi gustosi, carne e pesce ottimi, prezzo non esagerato. Un posto diverso dal solito locale del lago.</blockquote>
+        <figcaption>— Christian Lupo</figcaption></figure></div>
+</div></section>
+
+<section id="contatti" class="contact"><div class="wrap cgrid">
+ <div class="cinfo">
+   <span class="kick">Dove siamo</span>
+   <h2>Contatti &amp; orari</h2>
+   <div class="cline"><b>Indirizzo</b><span>Località Valle dei Mulini, 1/A, 37010 Costermano sul Garda VR</span></div>
+   <div class="cline"><b>Telefono</b><a href="tel:0456201079">045 620 1079</a></div>
+   
+   <div class="cline"><b>Mappa</b><a href="https://maps.google.com/?cid=6134275226609427610" target="_blank" rel="noopener">Apri su Google Maps</a></div>
+   <div style="margin-top:18px"><div class="hrow"><span>Lunedì</span><span>17:00–23:00</span></div><div class="hrow"><span>Martedì</span><span class="closed">Chiuso</span></div><div class="hrow"><span>Mercoledì</span><span>17:00–23:00</span></div><div class="hrow"><span>Giovedì</span><span>17:00–23:00</span></div><div class="hrow"><span>Venerdì</span><span>17:00–23:00</span></div><div class="hrow"><span>Sabato</span><span>12:00–23:00</span></div><div class="hrow"><span>Domenica</span><span>12:00–23:00</span></div></div>
+   <div class="cta"><a href="tel:0456201079" class="btn btn-fill">Chiama e prenota</a></div>
+ </div>
+ <iframe class="map" src="https://maps.google.com/maps?q=45.5895507,10.7309159&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa Trattoria La Val"></iframe>
+</div></section>
+
+<footer>
+ <div class="fbrand">Trattoria La Val</div>
+ <div>Località Valle dei Mulini, 1/A, 37010 Costermano sul Garda VR · <a href="tel:0456201079">045 620 1079</a></div>
+ <div class="hubcredit">Sito realizzato da HubTec · Verona</div>
+</footer>
+
+<div class="mbar">
+ <a class="call" href="tel:0456201079">Chiama</a>
+ <a class="book" href="#contatti">Prenota</a>
+</div>
+<script>
+document.addEventListener('scroll',function(){document.getElementById('hd').classList.toggle('solid',window.scrollY>60)});
+</script>
+</body></html>

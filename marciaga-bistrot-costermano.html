@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Marciaga Bistrot — Costermano sul Garda | Prenota un tavolo</title>
+<meta name="description" content="Marciaga Bistrot: Bistrot di charme a Marciaga: taglieri di salumi e formaggi fatti in casa, cucina curata e cocktail, tra sentieri panoramici. a Costermano sul Garda. 4.8★ su 408 recensioni. Prenota chiamando 045 450 0452.">
+<meta property="og:title" content="Marciaga Bistrot — Costermano sul Garda">
+<meta property="og:description" content="Bistrot di charme a Marciaga: taglieri di salumi e formaggi fatti in casa, cucina curata e cocktail, tra sentieri panoramici.. 4.8★ su 408 recensioni.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1c140d;--accent:#a8461c;--accent2:#5b5330;--cream:#f6f0e6;--band:#241a12;--line:#e7ded1;--sub:#7d7266;--white:#fff;--h:'Archivo',Georgia,serif;--b:'Inter',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:var(--cream);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 22px}
+.kick{font-family:var(--b);font-weight:700;letter-spacing:.22em;text-transform:uppercase;font-size:.72rem;color:var(--accent)}
+h1,h2,h3{font-family:var(--h);font-weight:700;line-height:1.1}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:.95rem;padding:14px 26px;border-radius:6px;cursor:pointer;transition:.2s;border:2px solid transparent}
+.btn-fill{background:var(--accent);color:#fff}.btn-fill:hover{filter:brightness(1.1)}
+.btn-line{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}.btn-line:hover{background:#fff;color:var(--ink)}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:60;transition:.3s}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{font-family:var(--h);font-weight:800;font-size:1.3rem;color:#fff;letter-spacing:.02em}
+header.solid{background:var(--band);box-shadow:0 2px 18px rgba(0,0,0,.18)}
+nav.main{display:flex;gap:26px}
+nav.main a{color:rgba(255,255,255,.9);font-weight:600;font-size:.9rem;transition:.2s}
+nav.main a:hover{color:#fff}
+.navcta{background:var(--accent);color:#fff;padding:9px 18px;border-radius:6px;font-weight:700;font-size:.85rem}
+/* hero */
+.hero{position:relative;min-height:92vh;display:flex;align-items:flex-end;color:#fff}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,.72)),url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjN9hbCBTdY_OiZ_updAgj6Uv42GltINFx4oCHDFs1627bC4PRQ3vDQZB5UuwevOlg4CLYMyvdBTHLGv5ODjte3XMJvMq20MSdOufqk-Fkhjfycn8x58-RACxdo-VCtUWBkD2m3jf1phhRVmIr1qxplotvc67Lt1J-zWEvu5ePF4qjBGB8bCI6eiOqKh1gV_MhvO_GkW1JcFhFEpv7scjK_2cOQOUHNLH4RljEsr7wzxfZjq1_MsN9AGSlRhFiHZSWqlgWKNnUslKcO_k3ayU-GzApSgZcQ10cuylWy8ez4RMf0vl-jubDzBC21RNh_5YUZZjbKPH_3VS0O7qMhYxOArgH0YrOvCJ5sh0Ru_d-3NcrRjPH9vbhyNsHm6ySevH051zFXvpBbO_UJw48VS_2DG5tG_MrurgrfhZ0kjAILRg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:-1}
+.hero .wrap{padding-bottom:66px;padding-top:110px}
+.hero h1{font-size:clamp(2.5rem,7vw,4.6rem);margin:.35em 0 .25em;max-width:14ch}
+.hero p.lead{font-size:1.15rem;max-width:44ch;color:rgba(255,255,255,.92)}
+.rate{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,.14);backdrop-filter:blur(4px);padding:8px 15px;border-radius:40px;font-weight:600;font-size:.95rem;margin-bottom:8px}
+.rate .s{color:#ffc94d;letter-spacing:2px}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+/* sections */
+section{padding:76px 0}
+.sec-head{max-width:620px;margin-bottom:40px}
+.sec-head h2{font-size:clamp(1.9rem,4vw,2.9rem);margin:.25em 0}
+.about{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
+.about img{border-radius:12px;aspect-ratio:4/5;object-fit:cover;width:100%}
+.about p{font-size:1.06rem;margin-bottom:16px;color:#3a3128}
+.menu{background:var(--band);color:#fff}
+.menu .kick{color:var(--accent2)}
+.menu .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:44px}
+.mcol h3{font-size:1.4rem;color:var(--accent2);margin-bottom:16px;padding-bottom:10px;border-bottom:1px solid rgba(255,255,255,.18)}
+.mcol ul{list-style:none}
+.mcol li{display:flex;justify-content:space-between;gap:14px;padding:9px 0;border-bottom:1px dotted rgba(255,255,255,.14);font-size:1rem}
+.mcol li b{color:var(--accent2);white-space:nowrap}
+.mnote{text-align:center;margin-top:34px;color:rgba(255,255,255,.6);font-size:.9rem}
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gitem img{width:100%;height:230px;object-fit:cover;border-radius:10px;transition:.3s}
+.gitem:hover img{transform:scale(1.03)}
+/* reviews */
+.reviews{background:var(--white)}
+.revgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rev{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:26px}
+.rstars{color:#f0a91c;letter-spacing:2px;margin-bottom:12px}
+.rev blockquote{font-size:1rem;color:#3a3128;margin-bottom:14px}
+.rev figcaption{font-weight:600;font-size:.9rem;color:var(--sub)}
+/* contact */
+.contact{background:var(--band);color:#fff}
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:start}
+.cinfo h2{color:#fff}
+.cinfo .kick{color:var(--accent2)}
+.cline{display:flex;gap:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.14);font-size:1.02rem}
+.cline b{min-width:96px;color:var(--accent2)}
+.hrow{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dotted rgba(255,255,255,.14);font-size:.97rem}
+.hrow .closed{color:#e08a8a}
+.map{border-radius:12px;overflow:hidden;min-height:340px;border:0}
+.contact .cta{margin-top:24px;display:flex;gap:14px;flex-wrap:wrap}
+footer{background:var(--ink);color:rgba(255,255,255,.7);text-align:center;padding:40px 22px}
+footer .fbrand{font-family:var(--h);font-weight:800;font-size:1.4rem;color:#fff;margin-bottom:8px}
+footer a{color:var(--accent2)}
+.hubcredit{margin-top:14px;font-size:.82rem;color:rgba(255,255,255,.4)}
+/* mobile bar */
+.mbar{display:none;position:fixed;bottom:0;left:0;right:0;z-index:70;background:var(--band);padding:9px;gap:9px;box-shadow:0 -2px 16px rgba(0,0,0,.28)}
+.mbar a{flex:1;text-align:center;padding:14px 0;border-radius:8px;font-weight:700;font-size:1rem;color:#fff}
+.mbar .call{background:var(--accent)}
+.mbar .book{background:var(--accent2)}
+@media(max-width:900px){
+ nav.main,.navcta{display:none}
+ .about,.cgrid{grid-template-columns:1fr;gap:30px}
+ .menu .grid{grid-template-columns:1fr;gap:30px}
+ .gal{grid-template-columns:repeat(2,1fr)}
+ .revgrid{grid-template-columns:1fr}
+ .mbar{display:flex}
+ body{padding-bottom:70px}
+ section{padding:52px 0}
+}
+@media(max-width:560px){
+ .hero h1{font-size:2.1rem}
+ .hero .cta .btn{width:100%}
+ .sec-head h2,.about h2{font-size:1.7rem}
+ .gal{grid-template-columns:1fr 1fr}
+ .gitem img{height:150px}
+ body{font-size:15.5px}
+}
+</style></head>
+<body>
+<header id="hd"><div class="wrap bar">
+ <a href="#top" class="brand">Marciaga Bistrot</a>
+ <nav class="main">
+   <a href="#chi-siamo">Chi siamo</a>
+   <a href="#menu">Menù</a>
+   <a href="#galleria">Galleria</a>
+   <a href="#recensioni">Recensioni</a>
+   <a href="#contatti">Contatti</a>
+ </nav>
+ <a href="tel:0454500452" class="navcta">Prenota: 045 450 0452</a>
+</div></header>
+
+<a id="top"></a>
+<section class="hero"><div class="wrap">
+ <div class="rate"><span class="s">★★★★★</span> 4.8 · 408 recensioni Google</div>
+ <span class="kick">Costermano sul Garda · Lago di Garda</span>
+ <h1>Marciaga Bistrot</h1>
+ <p class="lead">Bistrot di charme a Marciaga: taglieri di salumi e formaggi fatti in casa, cucina curata e cocktail, tra sentieri panoramici.</p>
+ <div class="cta">
+   <a href="tel:0454500452" class="btn btn-fill">Chiama e prenota</a>
+   <a href="#menu" class="btn btn-line">Scopri il menù</a>
+ </div>
+</div></section>
+
+<section id="chi-siamo"><div class="wrap about">
+ <div>
+   <span class="kick">La nostra cucina</span>
+   <h2>Benvenuti da Marciaga Bistrot</h2>
+   <p>Marciaga Bistrot è un piccolo gioiello sulle colline sopra il Lago di Garda: ambiente arredato con stile impeccabile, cura per ogni dettaglio e materie prime selezionate con passione.</p>
+   <p>Salumi e formaggi fatti in casa, piatti della tradizione rivisitati e ottimi cocktail, serviti da uno staff sempre sorridente. Tutt&#x27;intorno, sentieri panoramici e ombreggiati per una passeggiata.</p>
+   <a href="#contatti" class="btn btn-fill" style="margin-top:8px">Vieni a trovarci</a>
+ </div>
+ <img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgyJgCDbIHNOlQNTUIirjRwAxy2PsP2ThN6yzywbbyLdE_bnf4auD6G-x53FqEnkrv4GfFjQVgBBHrM-C3Y73qEE2kzFkKCw3WL_AMI8wZ9sERu0XZsdrZQEjL8to20i2v0gTBZD9TYzhol0kz5TkcPQk20aV9A2PVnGfw18VBreU7cQ66cQhq31mcLeJfLS8xUcf7fMMJl2EDdU8N41zuObHAIWx8y720wyQI-RhRwmzzVGtq-0dJYWIO1Iq-JTBh-dM4A8MSvpVA9R56Y7Z7ODfpM_uom3pNKVuNRolIeyEjGI4ZWXS_WLcgvhHvkmvcI_d207JOLNdorlBdJBC1vnseXwxt_FzacsYdmyjowlSj5WiY3y8LF_ZwY4drL3KrIf00wGRfwozDEEJTgGp6FpV3wIgt6wCjKDmw6ZnQUuma11ELZSop_yuOfrlKf&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Ambiente di Marciaga Bistrot">
+</div></section>
+
+<section id="menu" class="menu"><div class="wrap">
+ <div class="sec-head"><span class="kick">La proposta</span><h2>Il nostro menù</h2></div>
+ <div class="grid"><div class="mcol"><h3>Taglieri &amp; Antipasti</h3><ul><li><span>Tagliere di salumi e formaggi della casa</span><b>16</b></li><li><span>Carne salada e baccalà fritto</span><b>12</b></li><li><span>Selezione di affettati locali</span><b>11</b></li></ul></div><div class="mcol"><h3>La cucina</h3><ul><li><span>Pasta e fagioli cremosa</span><b>10</b></li><li><span>Costata alla brace</span><b>con supplemento</b></li><li><span>Bollito con pearà</span><b>14</b></li></ul></div><div class="mcol"><h3>Dolci</h3><ul><li><span>Sbrisolona con gelato alla grappa</span><b>6</b></li><li><span>Dolce del giorno</span><b>5</b></li><li><span>Semifreddo della casa</span><b>6</b></li></ul></div><div class="mcol"><h3>Cocktail &amp; Bar</h3><ul><li><span>Americano</span><b>7</b></li><li><span>Spritz</span><b>6</b></li><li><span>Selezione di vini al calice</span><b>da 5</b></li></ul></div></div>
+ <p class="mnote">Il menù può variare in base alla stagione e alla disponibilità del mercato. Chiama per conoscere i piatti del giorno.</p>
+</div></section>
+
+<section id="galleria"><div class="wrap">
+ <div class="sec-head"><span class="kick">Galleria</span><h2>Uno sguardo da noi</h2></div>
+ <div class="gal"><a class="gitem" href="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjN9hbCBTdY_OiZ_updAgj6Uv42GltINFx4oCHDFs1627bC4PRQ3vDQZB5UuwevOlg4CLYMyvdBTHLGv5ODjte3XMJvMq20MSdOufqk-Fkhjfycn8x58-RACxdo-VCtUWBkD2m3jf1phhRVmIr1qxplotvc67Lt1J-zWEvu5ePF4qjBGB8bCI6eiOqKh1gV_MhvO_GkW1JcFhFEpv7scjK_2cOQOUHNLH4RljEsr7wzxfZjq1_MsN9AGSlRhFiHZSWqlgWKNnUslKcO_k3ayU-GzApSgZcQ10cuylWy8ez4RMf0vl-jubDzBC21RNh_5YUZZjbKPH_3VS0O7qMhYxOArgH0YrOvCJ5sh0Ru_d-3NcrRjPH9vbhyNsHm6ySevH051zFXvpBbO_UJw48VS_2DG5tG_MrurgrfhZ0kjAILRg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" target="_blank" rel="noopener"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjN9hbCBTdY_OiZ_updAgj6Uv42GltINFx4oCHDFs1627bC4PRQ3vDQZB5UuwevOlg4CLYMyvdBTHLGv5ODjte3XMJvMq20MSdOufqk-Fkhjfycn8x58-RACxdo-VCtUWBkD2m3jf1phhRVmIr1qxplotvc67Lt1J-zWEvu5ePF4qjBGB8bCI6eiOqKh1gV_MhvO_GkW1JcFhFEpv7scjK_2cOQOUHNLH4RljEsr7wzxfZjq1_MsN9AGSlRhFiHZSWqlgWKNnUslKcO_k3ayU-GzApSgZcQ10cuylWy8ez4RMf0vl-jubDzBC21RNh_5YUZZjbKPH_3VS0O7qMhYxOArgH0YrOvCJ5sh0Ru_d-3NcrRjPH9vbhyNsHm6ySevH051zFXvpBbO_UJw48VS_2DG5tG_MrurgrfhZ0kjAILRg&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Marciaga Bistrot foto 1"></a><a class="gitem" href="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgyJgCDbIHNOlQNTUIirjRwAxy2PsP2ThN6yzywbbyLdE_bnf4auD6G-x53FqEnkrv4GfFjQVgBBHrM-C3Y73qEE2kzFkKCw3WL_AMI8wZ9sERu0XZsdrZQEjL8to20i2v0gTBZD9TYzhol0kz5TkcPQk20aV9A2PVnGfw18VBreU7cQ66cQhq31mcLeJfLS8xUcf7fMMJl2EDdU8N41zuObHAIWx8y720wyQI-RhRwmzzVGtq-0dJYWIO1Iq-JTBh-dM4A8MSvpVA9R56Y7Z7ODfpM_uom3pNKVuNRolIeyEjGI4ZWXS_WLcgvhHvkmvcI_d207JOLNdorlBdJBC1vnseXwxt_FzacsYdmyjowlSj5WiY3y8LF_ZwY4drL3KrIf00wGRfwozDEEJTgGp6FpV3wIgt6wCjKDmw6ZnQUuma11ELZSop_yuOfrlKf&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" target="_blank" rel="noopener"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgyJgCDbIHNOlQNTUIirjRwAxy2PsP2ThN6yzywbbyLdE_bnf4auD6G-x53FqEnkrv4GfFjQVgBBHrM-C3Y73qEE2kzFkKCw3WL_AMI8wZ9sERu0XZsdrZQEjL8to20i2v0gTBZD9TYzhol0kz5TkcPQk20aV9A2PVnGfw18VBreU7cQ66cQhq31mcLeJfLS8xUcf7fMMJl2EDdU8N41zuObHAIWx8y720wyQI-RhRwmzzVGtq-0dJYWIO1Iq-JTBh-dM4A8MSvpVA9R56Y7Z7ODfpM_uom3pNKVuNRolIeyEjGI4ZWXS_WLcgvhHvkmvcI_d207JOLNdorlBdJBC1vnseXwxt_FzacsYdmyjowlSj5WiY3y8LF_ZwY4drL3KrIf00wGRfwozDEEJTgGp6FpV3wIgt6wCjKDmw6ZnQUuma11ELZSop_yuOfrlKf&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Marciaga Bistrot foto 2"></a><a class="gitem" href="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiIIMO3Q9RYMurYikTKcU3uBfgJhdfTArKTg5p5EjgbhQr-b4hJMpqqDEso8ZWVMgJSDaUpXi-eeAI4Q03hRO9XMrHlapboceSQ2zNA6AiMeYFJ9C1bXPnUjz8fQ2OFdYofUW07115etMxTt2r_UijUgz6pu_cxPN20pJx-C_MPfB0nlkUIJP-WQ_KkbJPaqgdfJVNQ4v0fULyx027eMawIZaApiFi2sJV4IjWLVNWvrOtrbgm5HM9Q07vbvEMSamNAdCYaTMNVAFydHHsD_9Re6Cx-D00_RDB-Kqtd2eyXGdfTwZwPHTpvW8mE4ezXZKs7goQphqfjVR-2nPZj3ix-boRh15P6EfSD1nLrwk0eClZpXgi8HEoJkUFoTMwSe0e4WMPskt7nTpOs6aMniDxXNWJp2GEHPWxU25NdxdGmKXryJfuplXIe9Mtc1Sww&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" target="_blank" rel="noopener"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiIIMO3Q9RYMurYikTKcU3uBfgJhdfTArKTg5p5EjgbhQr-b4hJMpqqDEso8ZWVMgJSDaUpXi-eeAI4Q03hRO9XMrHlapboceSQ2zNA6AiMeYFJ9C1bXPnUjz8fQ2OFdYofUW07115etMxTt2r_UijUgz6pu_cxPN20pJx-C_MPfB0nlkUIJP-WQ_KkbJPaqgdfJVNQ4v0fULyx027eMawIZaApiFi2sJV4IjWLVNWvrOtrbgm5HM9Q07vbvEMSamNAdCYaTMNVAFydHHsD_9Re6Cx-D00_RDB-Kqtd2eyXGdfTwZwPHTpvW8mE4ezXZKs7goQphqfjVR-2nPZj3ix-boRh15P6EfSD1nLrwk0eClZpXgi8HEoJkUFoTMwSe0e4WMPskt7nTpOs6aMniDxXNWJp2GEHPWxU25NdxdGmKXryJfuplXIe9Mtc1Sww&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Marciaga Bistrot foto 3"></a><a class="gitem" href="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjzIrk0C9Tk3hjIKp96nq8dntuNHIp4plS85FapcdWj_FPp_aElL4YQ42a9EqzB-s1hF2L3mMUyMopZaFrzFO-o67MSd2j57sbicgcmnaEw0mLnH7RIl0JP60DH80jhEtw4AzCAlbKhaWVuHupXfHAYpTFoHAoBS1p4dLa1A9zHOMT39gReEqkTt3yOdhXnaQwBGmBqGN7vGllOICU5n4r-ri8F6Y1p9Dzy49FaBIJSTq9sNd1rqFNq5XENxqrjcl87aeKI4RC04A47vpv2P62yWMU6UbuvjQOReyHTZYAmlyfLIjrFt_qxQQW_V_UZv4XXwL6KhKdGMIqg4zHJbnmMpbbvGqxFEhDI8L-KgS3F2fP9e9EuLJLGDUfmSlMvDuYPk91ncPj5_2veqldFJXl_ha88bo5VcwuuGK8XVA7qEAn_b5rgFB65rsSPtJiG&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" target="_blank" rel="noopener"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydjzIrk0C9Tk3hjIKp96nq8dntuNHIp4plS85FapcdWj_FPp_aElL4YQ42a9EqzB-s1hF2L3mMUyMopZaFrzFO-o67MSd2j57sbicgcmnaEw0mLnH7RIl0JP60DH80jhEtw4AzCAlbKhaWVuHupXfHAYpTFoHAoBS1p4dLa1A9zHOMT39gReEqkTt3yOdhXnaQwBGmBqGN7vGllOICU5n4r-ri8F6Y1p9Dzy49FaBIJSTq9sNd1rqFNq5XENxqrjcl87aeKI4RC04A47vpv2P62yWMU6UbuvjQOReyHTZYAmlyfLIjrFt_qxQQW_V_UZv4XXwL6KhKdGMIqg4zHJbnmMpbbvGqxFEhDI8L-KgS3F2fP9e9EuLJLGDUfmSlMvDuYPk91ncPj5_2veqldFJXl_ha88bo5VcwuuGK8XVA7qEAn_b5rgFB65rsSPtJiG&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Marciaga Bistrot foto 4"></a></div>
+</div></section>
+
+<section id="recensioni" class="reviews"><div class="wrap">
+ <div class="sec-head"><span class="kick">Dicono di noi</span><h2>4.8★ su 408 recensioni</h2></div>
+ <div class="revgrid"><figure class="rev">
+        <div class="rstars">★★★★★</div>
+        <blockquote>Ambiente super carino e personale molto cordiale. Abbiamo preso un tagliere con affettati e formaggi locali in un&#x27;atmosfera rilassante. Tutt&#x27;intorno sentieri panoramici per passeggiare in pieno relax. Sicuramente da ritornare.</blockquote>
+        <figcaption>— Paul Sale</figcaption></figure><figure class="rev">
+        <div class="rstars">★★★★★</div>
+        <blockquote>Ho mangiato davvero benissimo. Piatti gustosi, ben presentati e preparati con ingredienti freschi. Ma la cosa che fa la differenza è la cortesia e la simpatia del personale: ti accolgono sempre col sorriso. Un posto dove si sta bene.</blockquote>
+        <figcaption>— Nicole Pozzi</figcaption></figure><figure class="rev">
+        <div class="rstars">★★★★★</div>
+        <blockquote>Esperienza deliziosa, ci siamo sentiti come a casa. Pasta e fagioli cremosa, costata tenerissima, bollito e pearà superlativi. Uno staff che lavora con passione e attenzione al cliente. Bravi!</blockquote>
+        <figcaption>— Lorenzo Gullotta</figcaption></figure></div>
+</div></section>
+
+<section id="contatti" class="contact"><div class="wrap cgrid">
+ <div class="cinfo">
+   <span class="kick">Dove siamo</span>
+   <h2>Contatti &amp; orari</h2>
+   <div class="cline"><b>Indirizzo</b><span>Via Villa, 13, 37010 Marciaga (Costermano sul Garda) VR</span></div>
+   <div class="cline"><b>Telefono</b><a href="tel:0454500452">045 450 0452</a></div>
+   <div class="cline"><b>Email</b><a href="mailto:rannsnc@gmail.com">rannsnc@gmail.com</a></div>
+   <div class="cline"><b>Mappa</b><a href="https://maps.google.com/?cid=14471058160239958407" target="_blank" rel="noopener">Apri su Google Maps</a></div>
+   <div style="margin-top:18px"><div class="hrow"><span>Lunedì</span><span>12:00–23:00</span></div><div class="hrow"><span>Martedì</span><span>12:00–23:00</span></div><div class="hrow"><span>Mercoledì</span><span class="closed">Chiuso</span></div><div class="hrow"><span>Giovedì</span><span>12:00–23:00</span></div><div class="hrow"><span>Venerdì</span><span>12:00–23:00</span></div><div class="hrow"><span>Sabato</span><span>12:00–23:00</span></div><div class="hrow"><span>Domenica</span><span>12:00–23:00</span></div></div>
+   <div class="cta"><a href="tel:0454500452" class="btn btn-fill">Chiama e prenota</a></div>
+ </div>
+ <iframe class="map" src="https://maps.google.com/maps?q=45.5921173,10.712325&z=15&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Mappa Marciaga Bistrot"></iframe>
+</div></section>
+
+<footer>
+ <div class="fbrand">Marciaga Bistrot</div>
+ <div>Via Villa, 13, 37010 Marciaga (Costermano sul Garda) VR · <a href="tel:0454500452">045 450 0452</a></div>
+ <div class="hubcredit">Sito realizzato da HubTec · Verona</div>
+</footer>
+
+<div class="mbar">
+ <a class="call" href="tel:0454500452">Chiama</a>
+ <a class="book" href="#contatti">Prenota</a>
+</div>
+<script>
+document.addEventListener('scroll',function(){document.getElementById('hd').classList.toggle('solid',window.scrollY>60)});
+</script>
+</body></html>
