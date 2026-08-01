@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trattoria Alla Pineta — Cucina tradizionale a Fumane (VR)</title>
+<meta name="description" content="Trattoria Alla Pineta a Fumane: cucina tradizionale veronese, piatti genuini e vino della casa. Una trattoria come una volta.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--a:#3d5a45;--ad:#2f4736;--ac:#b98b3e;--ink:#232a24;--ink2:#4c5850;--cream:#f2f4ef;--soft:#e5eae1;--line:#d8ded2;--white:#fff;--h:'Fraunces',Georgia,serif;--b:'Manrope',system-ui,sans-serif}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--b);color:var(--ink);background:#fff;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;font-size:16px}
+a{text-decoration:none;color:inherit} img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 30px}
+.kick{letter-spacing:.22em;text-transform:uppercase;font-size:.74rem;color:var(--a);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:.9rem;letter-spacing:.03em;padding:14px 26px;border-radius:6px;cursor:pointer;transition:.2s;border:1px solid var(--a)}
+.btn-a{background:var(--a);color:#fff} .btn-a:hover{background:var(--ad);border-color:var(--ad)}
+.btn-out{background:transparent;color:var(--a)} .btn-out:hover{background:var(--a);color:#fff}
+.btn-light{background:#fff;color:var(--a);border-color:#fff}
+.btn-glass{background:rgba(255,255,255,.14);color:#fff;border-color:rgba(255,255,255,.55)}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:74px}
+.brand{font-family:var(--h);font-weight:700;font-size:1.55rem;letter-spacing:.02em;color:var(--ink)}
+header nav{display:flex;gap:28px}
+header nav a{font-weight:500;font-size:.92rem;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--a)}
+.hero{padding:150px 0 96px;background:var(--cream)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero .kick{display:block;margin-bottom:16px}
+.hero h1{font-family:var(--h);font-weight:600;font-size:clamp(2.5rem,6vw,4.4rem);line-height:1.06;margin-bottom:18px;color:#232a24}
+.hero p{color:var(--ink2);font-size:1.08rem;margin-bottom:28px;max-width:480px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-img img{width:100%;height:500px;object-fit:cover;border-radius:8px;background:var(--soft)}
+.badge{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-size:.92rem;color:var(--ink2)}
+.badge b{color:var(--ac)}
+.serv{padding:96px 0}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 48px}
+.sec-h .kick{display:block;margin-bottom:12px}
+.sec-h h2{font-family:var(--h);font-weight:600;font-size:clamp(2rem,4.4vw,3.2rem);line-height:1.12;color:var(--ink)}
+.sec-h p{color:var(--ink2);margin-top:10px}
+.serv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.serv-c{padding:34px 28px;background:var(--cream);border:1px solid var(--line);border-radius:8px;transition:.25s}
+.serv-c:hover{transform:translateY(-5px)}
+.serv-c .ic{font-size:1.9rem;margin-bottom:12px}
+.serv-c h3{font-family:var(--h);font-weight:600;font-size:1.35rem;margin-bottom:8px;color:var(--ink)}
+.serv-c p{color:var(--ink2);font-size:.95rem}
+.gallery{padding:0 0 96px}
+.gal-head{text-align:center;margin-bottom:40px}
+.gal-head .kick{display:block;margin-bottom:12px}
+.gal-head h2{font-family:var(--h);font-weight:600;font-size:clamp(1.9rem,4.2vw,2.8rem);color:var(--ink)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+.gal-grid figure{overflow:hidden;border-radius:8px}
+.gal-grid img{width:100%;height:100%;object-fit:cover;transition:.6s}
+.gal-grid figure:hover img{transform:scale(1.07)}
+.gal-grid .tall{grid-row:span 2}
+.hours{padding:96px 0;background:var(--soft)}
+.hours-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.hours-img{width:100%;height:420px;object-fit:cover;border-radius:8px}
+.hours-txt .kick{display:block;margin-bottom:14px}
+.hours-txt h2{font-family:var(--h);font-weight:600;font-size:clamp(1.8rem,3.6vw,2.6rem);margin-bottom:18px;color:var(--ink)}
+.hours-list{list-style:none}
+.hours-list li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line);font-size:1rem}
+.hours-list li span:first-child{color:var(--ink2)}
+.hours-list li span:last-child{font-weight:600;color:var(--ink)}
+.reviews{padding:96px 0}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.rv{border:1px solid var(--line);border-radius:8px;padding:30px;background:#fff}
+.rv .st{color:var(--ac);letter-spacing:2px;margin-bottom:12px}
+.rv p{font-family:var(--h);font-size:1.12rem;color:var(--ink);margin-bottom:14px;line-height:1.5}
+.rv b{font-weight:600;font-size:.9rem;color:var(--a)}
+.cta{position:relative;padding:110px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background-size:cover;background-position:center;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(20,18,15,.72)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--h);font-weight:600;font-size:clamp(2rem,4.6vw,3.2rem);margin-bottom:14px}
+.cta p{max-width:540px;margin:0 auto 26px;color:rgba(255,255,255,.9)}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+#contatti{padding:90px 0;background:var(--cream)}
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.ct-grid h2{font-family:var(--h);font-weight:600;font-size:2rem;margin-bottom:14px;color:var(--ink)}
+.ct-grid p,.ct-grid a{color:var(--ink2);line-height:2}
+.ct-map{width:100%;height:300px;border:0;border-radius:8px}
+footer{background:#141310;color:rgba(255,255,255,.72);padding:56px 0 34px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:38px;margin-bottom:34px}
+.foot-grid .brand{color:#fff;margin-bottom:10px}
+.foot-grid h4{font-weight:600;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem;color:var(--ac);margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:.92rem;line-height:1.9;color:rgba(255,255,255,.72)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:20px;font-size:.82rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.mbar{display:none}
+@media(max-width:920px){
+ .hero-grid{grid-template-columns:1fr;gap:32px} .hero-img img{height:340px}
+ .serv-grid,.rv-grid{grid-template-columns:1fr} .gal-grid{grid-template-columns:1fr 1fr;grid-auto-rows:180px} .gal-grid .tall{grid-row:span 1}
+ .hours-grid,.ct-grid{grid-template-columns:1fr;gap:26px} .hours-img{height:280px}
+}
+@media(max-width:560px){
+ html,body{max-width:100vw;overflow-x:hidden} header nav{display:none} .wrap{padding:0 18px}
+ .hero{padding:120px 0 70px} .hero h1{font-size:2.1rem} .sec-h h2{font-size:1.7rem}
+ .gal-grid{grid-template-columns:1fr;grid-auto-rows:220px} body{padding-bottom:64px}
+ .btn,.hero-cta .btn{width:100%}
+ .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:#fff;border-top:1px solid var(--line)}
+ .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:700;font-size:.95rem}
+ .mbar .call{color:var(--a)} .mbar .book{background:var(--a);color:#fff}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a href="#top" class="brand">Trattoria Alla Pineta</a>
+  <nav><a href="#servizi">Menu</a><a href="#lavori">Galleria</a><a href="#orari">Orari</a><a href="#contatti">Contatti</a></nav>
+  <a href="tel:+390457701301" class="btn btn-out">045 770 1301</a>
+</div></header>
+
+<section id="top" class="hero"><div class="wrap hero-grid">
+  <div>
+    <span class="kick">Trattoria · Fumane</span>
+    <h1>La cucina di una volta, nel cuore della Valpolicella</h1>
+    <p>Una trattoria a conduzione familiare dove ti senti a casa: piatti semplici e genuini della tradizione veronese e ottimo vino della casa.</p>
+    <div class="hero-cta"><a href="#contatti" class="btn btn-a">Contattaci</a><a href="#servizi" class="btn btn-out">Scopri di più</a></div>
+    <div class="badge">⭐ <b>4,2</b> su Google · 265 recensioni</div>
+  </div>
+  <div class="hero-img"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiZiIL7HbAaOjP5mC2AJcRHcG4UmfkKT1syeRj-E1d_CyHIvpU1YRJWmVwqlHMgLDQ_N7AXuvIrUSKavwksQfSwnohwZ7zSV9rJbdCcKFPu0H06dqf9vAPwumJaCLOBdQer8-mo8u0SNqxGfWNKNdNWs0wDDE8LpCLeiT5mwRX4DBsacJo4eIxATlV_DIeCAzR4xkGSxHG5zYoGSF6GjEGTrwMWH3bO6zKXJ8SJ5kOTb5-kY9bf98JQLCXI7QSc6TcN-IgvD-8i5hUoVo8BOWSC9sVQaOxr-3jPeoQ2oZeDQwBUwZmPQV9NKiaxw60v018YZ2PEsuDl2UjA7fjSJt3PeFX9zgQpy8Tf06Zysj_VfyPrqEXCsG19TBrtc_IFD1jgkBUBn3YM4wYinBzwpavONlPDvlLh0Eo67rf0es9IqhSz&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria Alla Pineta"></div>
+</div></section>
+
+<section id="servizi" class="serv"><div class="wrap">
+  <div class="sec-h"><span class="kick">Il menu</span><h2>I nostri piatti</h2></div>
+  <div class="serv-grid"><div class="serv-c"><div class="ic">🍝</div><h3>Primi della tradizione</h3><p>Fettuccine in brodo, pasta fatta come una volta.</p></div><div class="serv-c"><div class="ic">🥩</div><h3>Lesso e pearà</h3><p>I grandi classici veronesi, cucinati con cura.</p></div><div class="serv-c"><div class="ic">🍷</div><h3>Vino della casa</h3><p>Ottimo vino locale, come da tradizione della Valpolicella.</p></div><div class="serv-c"><div class="ic">🔥</div><h3>Cucina genuina</h3><p>Piatti semplici, sazianti e dal sapore autentico.</p></div><div class="serv-c"><div class="ic">👪</div><h3>Ambiente familiare</h3><p>Accoglienza cordiale, ci si sente come in famiglia.</p></div><div class="serv-c"><div class="ic">💶</div><h3>Prezzi giusti</h3><p>Ottimo rapporto qualità-prezzo.</p></div></div>
+</div></section>
+
+<section id="lavori" class="gallery"><div class="wrap">
+  <div class="gal-head"><span class="kick">Galleria</span><h2>Uno sguardo da noi</h2></div>
+  <div class="gal-grid"><figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiZiIL7HbAaOjP5mC2AJcRHcG4UmfkKT1syeRj-E1d_CyHIvpU1YRJWmVwqlHMgLDQ_N7AXuvIrUSKavwksQfSwnohwZ7zSV9rJbdCcKFPu0H06dqf9vAPwumJaCLOBdQer8-mo8u0SNqxGfWNKNdNWs0wDDE8LpCLeiT5mwRX4DBsacJo4eIxATlV_DIeCAzR4xkGSxHG5zYoGSF6GjEGTrwMWH3bO6zKXJ8SJ5kOTb5-kY9bf98JQLCXI7QSc6TcN-IgvD-8i5hUoVo8BOWSC9sVQaOxr-3jPeoQ2oZeDQwBUwZmPQV9NKiaxw60v018YZ2PEsuDl2UjA7fjSJt3PeFX9zgQpy8Tf06Zysj_VfyPrqEXCsG19TBrtc_IFD1jgkBUBn3YM4wYinBzwpavONlPDvlLh0Eo67rf0es9IqhSz&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria Alla Pineta"></figure><figure class=""><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydijGLq2thg85zezlGapaJR9ylYoNmUuPpVa1TrFewXt0yRgH8e9p6DATpM4f8NJUfbfWehVvVS3KNLVcyAy1CEeDM9dX-yw3VODx2Zg02m-M3wPI67Ql0flvJm16OhcsUc0ZmFoQZcI_4D5ijUlzaSGuear58Eep8WZ16zohPZrgeKn_cCqOKL5lnNCHhRb65ZacYBpbd-pvf_9Lvh1p1VLQlSeAPplCaVi3xsxlEcT6h3ZTEB5g7R4TQKIzmZdeDnP8P_fpZn6VUP-z3ztuBlkRgJiL3dhoD1yTb9RCh-9GLk_1Jzgkr9WHJAbpI5FWU2VvD9Ae2c29lGPReRiNYejR9c0QdX4JRL6OBM1HuHAK0OftFiyQptyz-svit1WfZdxnw4054Rc9ZtQwRBaDalLk_jeCB6VGkatwVGUN3N5NZDdB97b5nFGH35rsA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria Alla Pineta"></figure><figure class=""><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydh0PDUL7ZgydjAaFzjDgfwcV2r9BOfOpMl4DYcvvxvdZ-J4-r8I7OjH28y8Dfgn2TEk5LRuB6HUtwahBOcWqfrBWogLig25xHEVYMFiCoCZnucAGPvvfQ7Mrog5Xh8IFkn6zCNUlsCbN1rbsUPih2rqbK2FIiMVDyIzzh2ovf47no4R29RuMEWXMIh4xvmGsznBXH8iHD_m_IL7U4E9CvxU1OwcUyGA-3YpN1zLgpyZP8PI0xvvvn6XK7aHW2-nVg_FQuIVHHg1HHKvHydSMX6QsUA6THG6gLGn_XPjOgeYjmHJ149XiaGfKBTUorTZ3gy3tEX6TaNs8Mow4EXCiledmn18lUH3DqCRO0Ww65O1C3EJJr4zHo7v91qUNWLxE3ZSiXaSR7iPklcSDIrgy-vVrYcVJBR73Wj0CnIerLRPpffkPq8QCeF-5tnhVHYV&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria Alla Pineta"></figure><figure class="tall"><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgjV6j02R0PH0mUgHpUpiRZ2q-P6boNOhWkHlatyw0yjn4wLZbuXyXH9CB90tss4XBvssc5ZPHxyI084qAFhsnKDSAFDwQe7excLptMHMF69m9gEvBIEeqDs0SvdUQkKt32cg3krxXIpEnonY7_J1zh5-xM8jI3E_9xQqNlOe1BRL6bfOwT3tubL6eJgbtJYu-Hh2WqieGSBmQ9CEUmJ542UVie8x7huWJHNcZyRt1x_mKCCkb4g9oPicwJauXzJ3RTfqne22eFVVAIAvX-3CiWfe3o8wDpA3yapZp0panno7jswpjry-sdiMbprqkMUvI_D6YSyXNneMvJ8Y6eA4hB06HR8HgKXlkMsaUh_a3iQaewAkXr-SjKwYgfPwpuWDGw8uD0OdmvzD-mK1rksLbspYUjzm5ZOin_rPADZr5cUNJO&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria Alla Pineta"></figure><figure class=""><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydhm-qBGxNGWooXGKJTDuoHh7w6diWG0h_QdJIl5mk79KJ7p7ie_uoyp6o9vVugJpcXjvcrgQtKrhj06LMx-ghXL3F1VdXsjqvNpHdoPDlSJKMAtgp7wucmzVWZXHZ7SHGoXBuLCtSb59KMeZciy4i0o_3kL5pfWrYWDwHnr94vUVGjiqBonvE-EwbC5R9X3nWOQ30ELSe_8ZYIXR6Q5MdKNaAKaaFQZy_qnFH3aXfC1_1ctx7bRIwzUy5_8O_LBTxRN5voTQLvcG10iz2V93pjYud1fTaZlJY6xkSnxvcwFgqvogLzTkxK5m_XUVO2PLfHcLUGEuP0Q463xgpDhUzsrYC_d21OldsNjRrZ4p111pmjhu-I03Z2eACNa17HigjlG0khdit-dhYGZmVOqLWvHvaX9uNLYue2obaMpBvkiN0h_&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria Alla Pineta"></figure><figure class=""><img loading="lazy" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydj9vwvkf-Rq8gtFlSfJgnof74EAWoim9zRTFAHbxrRiZICP01co2Ob2WYvemRllGOEII9NvybOKaYam_rTFenIPLzlnqjSQZvqp3_CQ6vyUCiZn9tk09W0kJNDRJIQEIKuX7eeT6Svq-z5Dp_uqpnMN8-85VaHKBtMl9skCa3QFdc7xkyG6qsOCS7Kb52mi6R7T3DOQUTG-Wo2p1d9xWK9A3QHTnV-jNiSe2WyImFDhPkO1zi8im8wUkaIFXOUYdbESTuuTA-4A4F-puVlW9_inOjeAMSekG9MCA_uXWUJhWSyGzQP-AeP20YgZqLWt9Mlfj72XayvdcuBbnslQccyQleapH0elYOnhuBDQnKQHvsaBPQyqpaijwyZzuB5KVBMvmVvpocbDok00KOvSGMi7Nmuwwb41MUEyoK675e6S1Aj-QoWT9NIb-b1PINUt&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria Alla Pineta"></figure></div>
+</div></section>
+
+<section id="orari" class="hours"><div class="wrap hours-grid">
+  <img class="hours-img" src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydijGLq2thg85zezlGapaJR9ylYoNmUuPpVa1TrFewXt0yRgH8e9p6DATpM4f8NJUfbfWehVvVS3KNLVcyAy1CEeDM9dX-yw3VODx2Zg02m-M3wPI67Ql0flvJm16OhcsUc0ZmFoQZcI_4D5ijUlzaSGuear58Eep8WZ16zohPZrgeKn_cCqOKL5lnNCHhRb65ZacYBpbd-pvf_9Lvh1p1VLQlSeAPplCaVi3xsxlEcT6h3ZTEB5g7R4TQKIzmZdeDnP8P_fpZn6VUP-z3ztuBlkRgJiL3dhoD1yTb9RCh-9GLk_1Jzgkr9WHJAbpI5FWU2VvD9Ae2c29lGPReRiNYejR9c0QdX4JRL6OBM1HuHAK0OftFiyQptyz-svit1WfZdxnw4054Rc9ZtQwRBaDalLk_jeCB6VGkatwVGUN3N5NZDdB97b5nFGH35rsA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Trattoria Alla Pineta">
+  <div class="hours-txt"><span class="kick">Orari di apertura</span><h2>Quando trovarci</h2>
+    <ul class="hours-list"><li><span>Lunedì – Giovedì</span><span>11:30–14:30 · 19:00–21:30</span></li><li><span>Venerdì</span><span>Chiuso</span></li><li><span>Sabato</span><span>11:30–14:30 · 19:00–21:30</span></li><li><span>Domenica</span><span>11:30–14:30 · 19:00–21:30</span></li></ul>
+    <a href="#contatti" class="btn btn-a" style="margin-top:20px">Contattaci</a>
+  </div>
+</div></section>
+
+<section class="reviews"><div class="wrap">
+  <div class="sec-h"><span class="kick">Recensioni</span><h2>Cosa dicono i clienti</h2></div>
+  <div class="rv-grid"><div class="rv"><div class="st">★★★★★</div><p>“Tipica trattoria a gestione familiare dove ti accolgono con simpatia e ti fanno sentire a casa. Ottime fettuccine in brodo e buonissimo lesso con la pearà. La consiglio.”</p><b>Antonio Meola</b></div><div class="rv"><div class="st">★★★★★</div><p>“Si mangia benissimo, un posto dove si sente profumo di camino tutto l&#x27;anno. Consiglio la pearà la domenica a pranzo.”</p><b>sire4918</b></div><div class="rv"><div class="st">★★★★★</div><p>“Trattoria che ti fa tuffare negli anni &#x27;80 ma la qualità è garantita come la cortesia dei titolari. Cucina tradizionale, gustosissima e a prezzo competitivo.”</p><b>Lara R.</b></div></div>
+</div></section>
+
+<section class="cta"><div class="cta-bg" style="background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiZiIL7HbAaOjP5mC2AJcRHcG4UmfkKT1syeRj-E1d_CyHIvpU1YRJWmVwqlHMgLDQ_N7AXuvIrUSKavwksQfSwnohwZ7zSV9rJbdCcKFPu0H06dqf9vAPwumJaCLOBdQer8-mo8u0SNqxGfWNKNdNWs0wDDE8LpCLeiT5mwRX4DBsacJo4eIxATlV_DIeCAzR4xkGSxHG5zYoGSF6GjEGTrwMWH3bO6zKXJ8SJ5kOTb5-kY9bf98JQLCXI7QSc6TcN-IgvD-8i5hUoVo8BOWSC9sVQaOxr-3jPeoQ2oZeDQwBUwZmPQV9NKiaxw60v018YZ2PEsuDl2UjA7fjSJt3PeFX9zgQpy8Tf06Zysj_VfyPrqEXCsG19TBrtc_IFD1jgkBUBn3YM4wYinBzwpavONlPDvlLh0Eo67rf0es9IqhSz&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU')"></div><div class="wrap">
+  <h2>Vieni a trovarci a pranzo o a cena</h2>
+  <p>Chiamaci: saremo felici di accoglierti.</p>
+  <div class="btns"><a href="tel:+390457701301" class="btn btn-light">📞 045 770 1301</a></div>
+</div></section>
+
+<section id="contatti"><div class="wrap ct-grid">
+  <div>
+    <span class="kick">Contatti</span>
+    <h2>Dove siamo</h2>
+    <p>Via Celestino Ledri 6, 37022 Fumane (VR)<br><a href="tel:+390457701301">045 770 1301</a></p>
+    <a href="https://maps.google.com/?cid=4442041616764006269" class="btn btn-a" style="margin-top:14px" target="_blank" rel="noopener">Apri in Google Maps</a>
+  </div>
+  <iframe class="ct-map" loading="lazy" src="https://maps.google.com/maps?q=Via%20Celestino%20Ledri%206%2C%2037022%20Fumane%20%28VR%29&output=embed" title="Mappa Trattoria Alla Pineta"></iframe>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div><div class="brand">Trattoria Alla Pineta</div><p>Trattoria di cucina tradizionale veronese a Fumane.</p></div>
+    <div><h4>Contatti</h4><p>Via Celestino Ledri 6, 37022 Fumane (VR)<br><a href="tel:+390457701301">045 770 1301</a></p></div>
+    <div><h4>Seguici</h4><p><a href="https://maps.google.com/?cid=4442041616764006269" target="_blank" rel="noopener">Google Maps</a></p></div>
+  </div>
+  <div class="foot-bot"><span>© Trattoria Alla Pineta — Fumane (VR)</span><span>Sito realizzato da HubTec</span></div>
+</div></footer>
+
+<div class="mbar"><a href="tel:+390457701301" class="call">Chiama</a><a href="#contatti" class="book">Prenota</a></div>
+</body></html>
