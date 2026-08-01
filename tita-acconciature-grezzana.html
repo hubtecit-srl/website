@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tita&#x27; Acconciature — Parrucchiere a Grezzana | Prenota</title>
+<meta name="description" content="Tita&#x27; Acconciature, parrucchiere a Grezzana (VR): taglio, colore, piega e trattamenti. 4.7&#9733; su Google. Chiama o prenota il tuo appuntamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6f0;--bg2:#f3e7dd;--card:#ffffff;--ink:#2c2320;--ink2:#7a6a60;--acc:#b6764f;--acc2:#9c6039;--line:#ecdfd4;--dark:#2c2320;--hf:'Playfair Display',Georgia,serif;--bf:'Poppins',system-ui,sans-serif;--heroink:#fff;}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--bf);color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden;max-width:100vw}
+a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
+.wrap{max-width:1160px;margin:0 auto;padding:0 26px}
+.kick{letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--acc);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-family:var(--bf);font-weight:600;font-size:.98rem;padding:13px 26px;border-radius:40px;cursor:pointer;transition:.2s;border:2px solid var(--acc)}
+.btn-acc{background:var(--acc);color:#fff}
+.btn-acc:hover{background:var(--acc2);border-color:var(--acc2)}
+.btn-out{background:transparent;color:var(--acc)}
+.btn-out:hover{background:var(--acc);color:#fff}
+.btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.6)}
+.btn-ghost:hover{background:#fff;color:var(--dark)}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(9px);border-bottom:1px solid var(--line)}
+header .bar{display:flex;align-items:center;justify-content:space-between;height:70px}
+.brand{font-family:var(--hf);font-size:1.4rem;font-weight:700;letter-spacing:.02em;color:var(--ink)}
+.brand b{color:var(--acc)}
+header nav{display:flex;gap:26px}
+header nav a{font-size:.94rem;font-weight:500;color:var(--ink2);transition:.2s}
+header nav a:hover{color:var(--acc)}
+.hero{position:relative;min-height:92svh;display:flex;align-items:center;color:var(--heroink)}
+.hero-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydj6cMnaBHzmoGzE7nOyJvhrNUzCJtF4bwIQAdRwj_AkzKY7PGPYenUJ__xOfJc2c92UNXpUc09htPnQ4nmuuOqnzNI1l1I9AdUue7NDfmNIncyHeBJS3_hpT_mBVq36FIh1PMAOWCOG0cK6TWr6Ek9fpdVnk_DEtv8BXIijZTndR29T__-x3LE1Zs7PrVCCH7g7Mm1XNNrx86NrOc_kF9fT2vvPA68_bd725QxoIzzIq2EvIsWaVYV97jVYrjZgKvZjgpvhyzA24sDYu_SAwxlJuD7fCLbxLM5BmJzcZoMcmS6bJ8hr0k0xoazdpqROYUtgpp0s6EOj8TpaEan7QLh3Ib7Kim5K71JYSzi2gExRscbpCyVaJIGXgypUe9SLIItTUIN2W0K3pMzIqGOHtXUhYKQhTHmsV4DGZL4XYJDFdTrp&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(44,35,32,.62),rgba(44,35,32,.30))}
+.hero-inner{position:relative;z-index:2;max-width:640px;padding-top:60px}
+.hero .kick{display:block;margin-bottom:16px;color:#fff;opacity:.9}
+.hero h1{font-family:var(--hf);font-weight:700;font-size:clamp(2.4rem,7vw,4.6rem);line-height:1.03;margin-bottom:16px}
+.hero p{font-size:1.08rem;opacity:.92;max-width:480px;margin-bottom:26px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);padding:7px 15px;border-radius:40px;font-size:.86rem;margin-bottom:20px;color:#fff}
+.badge b{color:#ffd36b}
+.ibar{background:var(--acc)}
+.ibar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:22px 0;color:#fff}
+.ibar .c h4{font-family:var(--hf);font-size:1.05rem;letter-spacing:.02em;margin-bottom:2px}
+.ibar .c p,.ibar .c a{font-size:.92rem;opacity:.95}
+.serv{padding:88px 0;background:var(--bg)}
+.sec-h{text-align:center;max-width:640px;margin:0 auto 46px}
+.sec-h .kick{display:block;margin-bottom:10px}
+.sec-h h2{font-family:var(--hf);font-weight:700;font-size:clamp(2rem,5vw,3.2rem);color:var(--ink)}
+.sec-h p{color:var(--ink2);margin-top:8px}
+.serv-grid{display:grid;grid-template-columns:1fr 1fr;gap:4px 44px;max-width:900px;margin:0 auto}
+.serv-c{display:flex;justify-content:space-between;gap:14px;align-items:baseline;padding:18px 0;border-bottom:1px solid var(--line)}
+.serv-c h3{font-family:var(--hf);font-weight:600;font-size:1.2rem;color:var(--ink)}
+.serv-c .dots{flex:1;border-bottom:1px dotted var(--ink2);opacity:.5;margin:0 6px;transform:translateY(-4px)}
+.serv-c .price{font-weight:600;color:var(--acc);white-space:nowrap}
+.serv-c small{display:block;font-size:.82rem;color:var(--ink2)}
+.about{padding:84px 0;background:var(--bg2)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center}
+.about-img{width:100%;height:440px;object-fit:cover;border-radius:14px;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiJd-NqocUPUUO5TdFslD5wVoEWHBp3yYrokCX3YOGoseEuoFbt939oVX0_ymBotXKfRDrqALdlbBkQdiGw-rPzsHSk4QzqaAR7eJMFw02L8xMp79wQYT5stiZ_A-thIVnAwk0jTeTRZ5ve3eL7A9ha983fxHquPCd6-mFOqLaIBF3BxAiJSaOWhhRm9_4JBorgDHZMQJeVHdJm-rtBWiU2sD2-leJItFNFnTAiZJhfMib0HUy3JIhpRavRMiZ1xbo14g7Ahz7ee6EzKuFJi3GnTd934OzwhbDRitzHNymPZdAGuP_8r__ttH1SvRjOHuVBsyvMoTHmUNEVolhdjgmmk1k6jvstrIY5OG4w6yNeVYNgNWLVeuCdzXv9HLSUEMP6U36GAQQVGGVHMM_bsII0KdK-9_F73svtxSuqaiaJL5xH&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover}
+.about-txt .kick{display:block;margin-bottom:12px}
+.about-txt h2{font-family:var(--hf);font-weight:700;font-size:clamp(1.8rem,4vw,2.8rem);color:var(--ink);margin-bottom:14px}
+.about-txt p{color:var(--ink2);margin-bottom:12px}
+.about-list{list-style:none;margin-top:10px}
+.about-list li{display:flex;gap:10px;align-items:center;margin-bottom:10px;font-weight:500;color:var(--ink)}
+.about-list .ck{color:var(--acc)}
+.gallery{padding:84px 0;background:var(--bg)}
+.gal-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.gal-grid img{width:100%;height:290px;object-fit:cover;border-radius:10px}
+.reviews{padding:84px 0;background:var(--bg2)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.rv{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px}
+.rv .st{color:var(--acc);letter-spacing:2px;margin-bottom:10px}
+.rv p{color:var(--ink);font-size:.96rem;margin-bottom:14px}
+.rv b{font-weight:600;color:var(--ink)}
+.mapsec{padding:0 0 0}
+.mapsec iframe{width:100%;height:360px;border:0;display:block;filter:grayscale(.1)}
+.cta{position:relative;padding:96px 0;text-align:center;color:#fff}
+.cta-bg{position:absolute;inset:0;background:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydj6cMnaBHzmoGzE7nOyJvhrNUzCJtF4bwIQAdRwj_AkzKY7PGPYenUJ__xOfJc2c92UNXpUc09htPnQ4nmuuOqnzNI1l1I9AdUue7NDfmNIncyHeBJS3_hpT_mBVq36FIh1PMAOWCOG0cK6TWr6Ek9fpdVnk_DEtv8BXIijZTndR29T__-x3LE1Zs7PrVCCH7g7Mm1XNNrx86NrOc_kF9fT2vvPA68_bd725QxoIzzIq2EvIsWaVYV97jVYrjZgKvZjgpvhyzA24sDYu_SAwxlJuD7fCLbxLM5BmJzcZoMcmS6bJ8hr0k0xoazdpqROYUtgpp0s6EOj8TpaEan7QLh3Ib7Kim5K71JYSzi2gExRscbpCyVaJIGXgypUe9SLIItTUIN2W0K3pMzIqGOHtXUhYKQhTHmsV4DGZL4XYJDFdTrp&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU') center/cover;z-index:0}
+.cta-bg::after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.62)}
+.cta .wrap{position:relative;z-index:2}
+.cta h2{font-family:var(--hf);font-weight:700;font-size:clamp(2rem,5vw,3.4rem);margin-bottom:12px}
+.cta p{max-width:520px;margin:0 auto 24px;opacity:.9}
+.cta .btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{background:var(--dark);color:rgba(255,255,255,.7);padding:52px 0 30px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px;margin-bottom:30px}
+.foot-grid .brand{color:#fff;font-size:1.3rem;margin-bottom:10px}
+.foot-grid h4{font-family:var(--hf);font-size:1rem;color:var(--acc);margin-bottom:8px}
+.foot-grid p,.foot-grid a{font-size:.9rem;line-height:1.85;color:rgba(255,255,255,.7)}
+.foot-bot{border-top:1px solid rgba(255,255,255,.14);padding-top:18px;font-size:.8rem;color:rgba(255,255,255,.5);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.hr{display:flex;justify-content:space-between;font-size:.9rem;padding:5px 0;border-bottom:1px dashed rgba(255,255,255,.14)}
+.mbar{display:none}
+@media(max-width:900px){
+  .ibar-grid{grid-template-columns:1fr;gap:12px}
+  .serv-grid{grid-template-columns:1fr;gap:0}
+  .about-grid{grid-template-columns:1fr;gap:24px}
+  .about-img{height:320px}
+  .gal-grid{grid-template-columns:1fr 1fr}
+  .rv-grid{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  html,body{max-width:100vw;overflow-x:hidden}
+  header nav{display:none}
+  .wrap{padding:0 18px}
+  .hero h1{font-size:clamp(2rem,9vw,2.7rem)}
+  .sec-h h2{font-size:1.7rem}
+  .gal-grid{grid-template-columns:1fr}
+  .btn{width:100%}
+  .hero-cta,.cta .btns{width:100%}
+  body{padding-bottom:64px;font-size:15.5px}
+  .mbar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;background:var(--dark);border-top:1px solid rgba(255,255,255,.14)}
+  .mbar a{flex:1;text-align:center;padding:15px 8px;font-weight:600;color:#fff}
+  .mbar .book{background:var(--acc)}
+}
+</style>
+</head>
+<body>
+<header><div class="wrap bar">
+  <a href="#top" class="brand">Tita&#x27; <b>Acconciature</b></a>
+  <nav>
+    <a href="#servizi">Servizi</a>
+    <a href="#studio">Chi siamo</a>
+    <a href="#lavori">Galleria</a>
+    <a href="#prenota">Contatti</a>
+  </nav>
+  <a href="#prenota" class="btn btn-out">Prenota</a>
+</div></header>
+
+<section id="top" class="hero">
+  <div class="hero-bg"></div>
+  <div class="wrap"><div class="hero-inner">
+    <span class="badge">&#9733; <b>4.7</b> · 7 recensioni Google</span>
+    <span class="kick">Parrucchiere · Grezzana</span>
+    <h1>Tita&#x27; Acconciature</h1>
+    <p>Cura del capello, ricci naturali e trattamenti su misura. Il tuo salone di fiducia a Stallavena di Grezzana.</p>
+    <div class="hero-cta">
+      <a href="#prenota" class="btn btn-acc">Prenota ora</a>
+      <a href="#servizi" class="btn btn-ghost">I servizi</a>
+    </div>
+  </div></div>
+</section>
+
+<section class="ibar"><div class="wrap ibar-grid">
+  <div class="c"><h4>Chiamaci</h4><p><a href="tel:+393478505226">347 850 5226</a></p></div>
+  <div class="c"><h4>Dove siamo</h4><p>Via Udino Bombieri, 21, 37023 Stallavena-lugo VR</p></div>
+  <div class="c"><h4>Prenota</h4><p>Su appuntamento</p></div>
+</div></section>
+
+<section id="servizi" class="serv"><div class="wrap">
+  <div class="sec-h"><span class="kick">Listino</span><h2>I nostri servizi</h2><p>Prezzi indicativi · richiedi un preventivo su misura</p></div>
+  <div class="serv-grid"><div class="serv-c"><div><h3>Taglio &amp; Piega</h3><small>Taglio personalizzato e styling</small></div><span class="dots"></span><span class="price">da 25€</span></div><div class="serv-c"><div><h3>Colore</h3><small>Colorazione professionale</small></div><span class="dots"></span><span class="price">da 30€</span></div><div class="serv-c"><div><h3>Colpi di sole / Balayage</h3><small>Schiariture e riflessi</small></div><span class="dots"></span><span class="price">da 45€</span></div><div class="serv-c"><div><h3>Trattamento ristrutturante</h3><small>Cura e salute del capello</small></div><span class="dots"></span><span class="price">da 15€</span></div><div class="serv-c"><div><h3>Piega</h3><small>Messa in piega</small></div><span class="dots"></span><span class="price">da 15€</span></div><div class="serv-c"><div><h3>Raccolti &amp; Acconciature</h3><small>Eventi e cerimonie</small></div><span class="dots"></span><span class="price">su richiesta</span></div></div>
+</div></section>
+
+<section id="studio" class="about"><div class="wrap about-grid">
+  <div class="about-img" role="img" aria-label="Tita&#x27; Acconciature"></div>
+  <div class="about-txt">
+    <span class="kick">Chi siamo</span>
+    <h2>Tita&#x27; Acconciature</h2>
+    <p>Da Tità Acconciature ogni cliente trova competenza e ascolto. Ilaria è specializzata nella salute del capello e nei ricci naturali, con prodotti di qualità e trattamenti curativi efficaci.</p>
+    <ul class="about-list"><li><span class="ck">&#10022;</span> Specialista ricci naturali</li><li><span class="ck">&#10022;</span> Trattamenti curativi e ricostruzione</li><li><span class="ck">&#10022;</span> Prodotti professionali di qualità</li></ul>
+    <div style="margin-top:18px"><a href="https://maps.google.com/?cid=211214251950862337" class="btn btn-out" target="_blank" rel="noopener">Trova su Google Maps</a></div>
+  </div>
+</div></section>
+
+<section id="lavori" class="gallery"><div class="wrap">
+  <div class="sec-h"><span class="kick">Galleria</span><h2>Il salone</h2></div>
+  <div class="gal-grid"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydj6cMnaBHzmoGzE7nOyJvhrNUzCJtF4bwIQAdRwj_AkzKY7PGPYenUJ__xOfJc2c92UNXpUc09htPnQ4nmuuOqnzNI1l1I9AdUue7NDfmNIncyHeBJS3_hpT_mBVq36FIh1PMAOWCOG0cK6TWr6Ek9fpdVnk_DEtv8BXIijZTndR29T__-x3LE1Zs7PrVCCH7g7Mm1XNNrx86NrOc_kF9fT2vvPA68_bd725QxoIzzIq2EvIsWaVYV97jVYrjZgKvZjgpvhyzA24sDYu_SAwxlJuD7fCLbxLM5BmJzcZoMcmS6bJ8hr0k0xoazdpqROYUtgpp0s6EOj8TpaEan7QLh3Ib7Kim5K71JYSzi2gExRscbpCyVaJIGXgypUe9SLIItTUIN2W0K3pMzIqGOHtXUhYKQhTHmsV4DGZL4XYJDFdTrp&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Tita&#x27; Acconciature - foto 1" loading="lazy"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiJd-NqocUPUUO5TdFslD5wVoEWHBp3yYrokCX3YOGoseEuoFbt939oVX0_ymBotXKfRDrqALdlbBkQdiGw-rPzsHSk4QzqaAR7eJMFw02L8xMp79wQYT5stiZ_A-thIVnAwk0jTeTRZ5ve3eL7A9ha983fxHquPCd6-mFOqLaIBF3BxAiJSaOWhhRm9_4JBorgDHZMQJeVHdJm-rtBWiU2sD2-leJItFNFnTAiZJhfMib0HUy3JIhpRavRMiZ1xbo14g7Ahz7ee6EzKuFJi3GnTd934OzwhbDRitzHNymPZdAGuP_8r__ttH1SvRjOHuVBsyvMoTHmUNEVolhdjgmmk1k6jvstrIY5OG4w6yNeVYNgNWLVeuCdzXv9HLSUEMP6U36GAQQVGGVHMM_bsII0KdK-9_F73svtxSuqaiaJL5xH&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Tita&#x27; Acconciature - foto 2" loading="lazy"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydgMRzafQf_WSzwhZOcNgivTUUtqGDt1EpvhY7UGc2Mb3WuVt-AmO6P2ZmwuNtS85ZwR1t1RcC6treQcA5OgFfUINC-pG0Wpasyy_Yb7PHKHPEUTgfic-KanixJH_kGvJRhRnJ0QHnh3n6NMm1L-IROIkb5DLzcktGAtkRmN78YmjHMiCe88PvRy5n4mTOPfkArnKzIunqeFpGyll4Wqo0BaFhnV2lCPWA4aHE2DNTgbYnbKdMKntHAt6PLRTbJWyqWvicA46UMm8jTaxuLD8G4hkAhvleCP0r5h6GQoLMBznhMQwwXn7-7tpGSMS0PcH8ObzxnyPp8wQczKl1fjpRk2n5h9F_-VDP4OoaWjKqqkSUumuxf7CEBb7lPpy-zD0f9Ux7D2T2E3RrtuA4qjLMdBfGR3QPoAqD9rgjBC1U6XatmB&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Tita&#x27; Acconciature - foto 3" loading="lazy"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=AWCwydiTnBcdKqbpzwUhXn5xNsaSC1xhWWHHAwst0xRnOt-PQFBEa2X6UWdzcBZ0X059d9fWzjjefATnxObIDHtvmDMeWPNoYtZkQvNeZeVSwOW74LGZ_XB0v1Nx_9pX2PzxVnB4P07pZAUhmv-A898g5QrZNlG_FVoIXBrcJzgac0nsXh_6SETEd1Ms3UrLPwHjL2DNa_6ZGeppi2UHdMwILdII2VgMIgL9Xw36lnmAt9y3rjr_OxgfaK0hx8h8nhz8bgMmaIohgIPIucbnbv29o6S47ssAjjHYQrByfuXF9BxUci1bT7_9DU5RlE-J5AoYW8nH4b6WvNpGJb-vjZOBn3uw0OhUVR479ZggLoR2_EVEH0ACwhSob3sc1-snEKRg2qcOWtiujfLxlPYsT0aUzVg9Zu_Yvy-hRvhe5TBXMPTnHA&key=AIzaSyBBHDrAQlPXrn2llGekk77Fcfwu9qpm4ZU" alt="Tita&#x27; Acconciature - foto 4" loading="lazy"></div>
+</div></section>
+
+<section class="reviews"><div class="wrap"><div class="sec-h"><span class="kick">Recensioni</span><h2>Cosa dicono i clienti</h2><p>4.7&#9733; su 7 recensioni Google</p></div><div class="rv-grid"><div class="rv"><div class="st">★★★★★</div><p>&ldquo;Sono arrivata in questo negozio grazie ad un regalo ed ho trovato una persona molto competente, imbattibile con i miei ricci naturali.&rdquo;</p><b>Nicoletta Martini</b></div><div class="rv"><div class="st">★★★★★</div><p>&ldquo;Era da qualche tempo che non riuscivo più ad avere un bel riccio, sono andata da Ilaria con la speranza di tornare come prima. Il risultato? Quello che desideravo!&rdquo;</p><b>Elisa Bertagnoli</b></div><div class="rv"><div class="st">★★★★★</div><p>&ldquo;Parrucchiera molto professionale, attenta alla salute del capello, utilizza ottimi prodotti. Consiglio vivamente questo salone.&rdquo;</p><b>Nicole Campedelli</b></div><div class="rv"><div class="st">★★★★★</div><p>&ldquo;Consiglio acconciature Tità per i curativi a tutti. Prodotti validi e trattamenti efficaci. Ilaria è professionale e molto brava!&rdquo;</p><b>Cristian Garonzi</b></div></div></div></section>
+
+<section class="mapsec"><iframe loading="lazy" src="https://maps.google.com/maps?q=Via%20Udino%20Bombieri%2C%2021%2C%2037023%20Stallavena-lugo%20VR%20Grezzana&z=15&output=embed" title="Mappa Tita&#x27; Acconciature"></iframe></section>
+
+<section id="prenota" class="cta">
+  <div class="cta-bg"></div>
+  <div class="wrap">
+    <h2>Prenota il tuo appuntamento</h2>
+    <p>Via Udino Bombieri, 21, 37023 Stallavena-lugo VR · Grezzana (VR). Chiamaci: saremo felici di accoglierti.</p>
+    <div class="btns"><a href="tel:+393478505226" class="btn btn-acc">&#128222; 347 850 5226</a><a href="https://wa.me/393478505226" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp</a></div>
+  </div>
+</section>
+
+<footer><div class="wrap">
+  <div class="foot-grid">
+    <div><div class="brand">Tita&#x27; <b>Acconciature</b></div><p>Parrucchiere a Grezzana (VR). Taglio, colore e cura del capello con passione.</p></div>
+    <div><h4>Contatti</h4><p>Via Udino Bombieri, 21, 37023 Stallavena-lugo VR<br><a href="tel:+393478505226">347 850 5226</a></p></div>
+    <div><h4>Orari</h4><div class="hr"><span>lunedì</span><span>Chiuso</span></div><div class="hr"><span>martedì</span><span>09:00–17:00</span></div><div class="hr"><span>mercoledì</span><span>09:00–13:00</span></div><div class="hr"><span>giovedì</span><span>09:00–19:00</span></div><div class="hr"><span>venerdì</span><span>09:00–19:00</span></div><div class="hr"><span>sabato</span><span>09:00–17:00</span></div><div class="hr"><span>domenica</span><span>Chiuso</span></div></div>
+  </div>
+  <div class="foot-bot"><span>© Tita&#x27; Acconciature — Grezzana (VR)</span><span>Sito realizzato da HubTec</span></div>
+</div></footer>
+
+<div class="mbar"><a href="tel:+393478505226" class="call">Chiama</a><a href="https://wa.me/393478505226" class="book" target="_blank" rel="noopener">WhatsApp</a></div>
+</body>
+</html>
